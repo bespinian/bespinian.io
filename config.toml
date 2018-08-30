@@ -1,0 +1,157 @@
+baseURL = "https://www.example.com/"
+languageCode = "en-US"
+title = "bitfuse.io"
+theme = "icon"
+publishDir = "docs"
+
+[params]
+
+[params.hero]
+img = "images/hero_bg.jpg"
+title = "bitfuse.io"
+description = "lean and cloud-native software engineering"
+
+[params.nav]
+mission = "Our Mission"
+services = "Services"
+team = "The Team"
+contact = "Get In Touch"
+
+[params.mission]
+enable = true
+
+[[params.mission.item]]
+weight = 1
+name = "lean"
+subtitle = "Easy/simple/minimalistic, Simple is hard, solutions that can be operated at scale Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate laborum sapiente officiis molestiaea."
+description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid aperiam eveniet officia molestiae temporibus beatae dolores dignissimos aspernatur eius doloremque ad, eaque pariatur, repellendus illum, nostrum velit necessitatibus molestias.</p><ul class='checked'><li>Web Development</li><li>User Interface Experts</li><li>Pixel Perfect Design</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+[params.services]
+enable = true
+video = true
+vidlink = "https://vimeo.com/channels/staffpicks/93951774"
+title = "Our Services"
+description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+[[params.services.item]]
+icon = "icon-pencil"
+title = "Design"
+description = "A diagram says more than a thousand words. Let's structure your business domain."
+
+[[params.services.item]]
+icon = "icon-present"
+title = "Build"
+description = "From napkin to code. We help you realize your ideas as lean and cloud-native software."
+
+[[params.services.item]]
+icon = "icon-eye"
+title = "Run"
+description = "Zero downtime. Together we continuously deploy your applications at scale."
+
+[[params.services.item]]
+icon = "icon-paper-plane"
+title = "Rethink"
+description = "Everything is simple in hindsight. Let's embrace that fact and take your software to the next level."
+
+[params.work]
+enable = true
+
+[[params.work.item]]
+title = "Consectetur adipisicing"
+subtitle = "Web Design"
+img = "images/img_1.jpg"
+
+[[params.work.item]]
+title = "Consectetur adipisicing"
+subtitle = "Web Design"
+img = "images/img_2.jpg"
+
+[[params.work.item]]
+title = "Consectetur adipisicing"
+subtitle = "Web Design"
+img = "images/img_3.jpg"
+
+[[params.work.item]]
+title = "Consectetur adipisicing"
+subtitle = "Web Design"
+img = "images/img_2.jpg"
+
+[[params.work.item]]
+title = "Consectetur adipisicing"
+subtitle = "Web Design"
+img = "images/img_3.jpg"
+
+[[params.work.item]]
+title = "Consectetur adipisicing"
+subtitle = "Web Design"
+img = "images/img_2.jpg"
+
+[[params.work.item]]
+title = "Consectetur adipisicing"
+subtitle = "Web Design"
+img = "images/img_3.jpg"
+
+[[params.work.item]]
+title = "Consectetur adipisicing"
+subtitle = "Web Design"
+img = "images/img_4.jpg"
+
+[params.team]
+enable = true
+title = "Meet The Team"
+description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+[[params.team.item]]
+name = "Jean Doe"
+position = "Chief legend"
+description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+img = "images/person1.jpg"
+facebook = "#"
+twitter = "#"
+dribbble = "#"
+instagram = "#"
+github = "#"
+linkedin = "#"
+
+[[params.team.item]]
+name = "Alice Doe"
+position = "Chief overlord"
+description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+img = "images/person2.jpg"
+facebook = "#"
+twitter = "#"
+dribbble = "#"
+instagram = "#"
+github = "#"
+
+[[params.team.item]]
+name = "John Doe"
+position = "Chief haranguer"
+description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+img = "images/person3.jpg"
+facebook = "#"
+twitter = "#"
+dribbble = "#"
+instagram = "#"
+github = "#"
+
+[params.contact]
+enable = true
+title = "Get In Touch"
+message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+name_placeholder = "Your name"
+email_placeholder = "Your email"
+email_disclaimer = "We'll never share your email with anyone else."
+message_placeholder = "Please enter a message."
+button_text = "Submit"
+
+[params.footer]
+enable = true
+note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></small></p>"
+github = "#"
+twitter = "#"
+facebook = "#"
+vine = "#"
+linkedin = "#"
+instagram = "#"
+
