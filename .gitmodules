@@ -1,0 +1,3 @@
+[submodule "themes/icon"]
+	path = themes/icon
+	url = https://github.com/SteveLane/hugo-icon.git
