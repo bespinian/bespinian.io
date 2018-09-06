@@ -1,4 +1,4 @@
-baseURL = "https://www.example.com/"
+baseURL = "https://bitfuseio.github.io/bitfuse.io/"
 languageCode = "en-US"
 title = "bitfuse.io"
 theme = "icon"
@@ -7,7 +7,7 @@ publishDir = "docs"
 [params]
 
 [params.hero]
-img = "images/hero_bg.jpg"
+img = "backdrop.png"
 title = "bitfuse.io"
 description = "lean and cloud-native software engineering"
 
@@ -22,16 +22,12 @@ enable = true
 
 [[params.mission.item]]
 weight = 1
-name = "lean"
-subtitle = "Easy/simple/minimalistic, Simple is hard, solutions that can be operated at scale Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate laborum sapiente officiis molestiaea."
-description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid aperiam eveniet officia molestiae temporibus beatae dolores dignissimos aspernatur eius doloremque ad, eaque pariatur, repellendus illum, nostrum velit necessitatibus molestias.</p><ul class='checked'><li>Web Development</li><li>User Interface Experts</li><li>Pixel Perfect Design</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+description = "<p>At bitfuse.io we love software. Especially if it's simple and efficient. Software should be built to fulfill its requirements and nothing more.</p><p>We focus on providing services that are to the point and solve your problems as efficiently as possible. Good solutions are</p><ul class='checked'><li>easy to operate</li><li>adaptable to change</li><li>scalable under load</li><li>essential to your business</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
 
 [params.services]
 enable = true
-video = true
-vidlink = "https://vimeo.com/channels/staffpicks/93951774"
 title = "Our Services"
-description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+description = "bitfuse.io is the right match for every phase of your project:"
 
 [[params.services.item]]
 icon = "icon-pencil"
@@ -54,7 +50,7 @@ title = "Rethink"
 description = "Everything is simple in hindsight. Let's embrace that fact and take your software to the next level."
 
 [params.work]
-enable = true
+enable = false
 
 [[params.work.item]]
 title = "Consectetur adipisicing"
@@ -99,46 +95,27 @@ img = "images/img_4.jpg"
 [params.team]
 enable = true
 title = "Meet The Team"
-description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
 
 [[params.team.item]]
-name = "Jean Doe"
-position = "Chief legend"
-description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-img = "images/person1.jpg"
-facebook = "#"
-twitter = "#"
-dribbble = "#"
-instagram = "#"
-github = "#"
-linkedin = "#"
+name = "Mathis Kretz"
+position = "Keeper of Simple"
+description = "Software Architect specialized in microservices, container technologies and cloud-native engineering"
+img = "https://pbs.twimg.com/profile_images/650392554882662400/rAxkf18s_400x400.jpg"
+twitter = "https://twitter.com/mathis_kretz"
+github = "https://github.com/mkretz"
 
 [[params.team.item]]
-name = "Alice Doe"
-position = "Chief overlord"
-description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-img = "images/person2.jpg"
-facebook = "#"
-twitter = "#"
-dribbble = "#"
-instagram = "#"
-github = "#"
-
-[[params.team.item]]
-name = "John Doe"
-position = "Chief haranguer"
-description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-img = "images/person3.jpg"
-facebook = "#"
-twitter = "#"
-dribbble = "#"
-instagram = "#"
-github = "#"
+name = "Tobi Fuhrimann"
+position = "Head in the Clouds"
+description = "Software Engineer specialized in cloud services, distributed systems and web development with modern technologies"
+img = "https://pbs.twimg.com/profile_images/928975001105166336/dhnwx8fA_400x400.jpg"
+twitter = "https://twitter.com/mastertinner"
+github = "https://github.com/mastertinner"
 
 [params.contact]
 enable = true
 title = "Get In Touch"
-message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+message = "We'd love to work with you! Let us know how we can support you."
 name_placeholder = "Your name"
 email_placeholder = "Your email"
 email_disclaimer = "We'll never share your email with anyone else."
@@ -147,11 +124,5 @@ button_text = "Submit"
 
 [params.footer]
 enable = true
-note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></small></p>"
-github = "#"
+github = "https://github.com/orgs/bitfuseio"
 twitter = "#"
-facebook = "#"
-vine = "#"
-linkedin = "#"
-instagram = "#"
-
