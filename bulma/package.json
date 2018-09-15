@@ -1,0 +1,18 @@
+{
+  "name": "bitfuse.io",
+  "version": "1.0.0",
+  "description": "website for bitfuse.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server --files ./*"
+  },
+  "author": "Mathis Kretz, Tobias Fuhrimann",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.24.7"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
