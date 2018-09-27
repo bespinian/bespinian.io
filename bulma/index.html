@@ -20,27 +20,26 @@
         </div>
       </div>
     </section>
-    <section>
-    <nav class="navbar">
+    <nav class="navbar is-dark">
       <div class="navbar-brand">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <a class="navbar-item">
+            <h1>bitfuse.io</h1>
+        </a>
+        <a role="button" class="burger navbar-burger" data-target="navbarMenu" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" id="navbarMenu">
         <div class="navbar-start">
-          <a class="navbar-item">
-            Home
-          </a>
-          <a class="navbar-item">
+          <a href="#mission" class="navbar-item">
             Our Mission
           </a>
-          <a class="navbar-item">
-            Our Service
+          <a href="#services" class="navbar-item">
+            Our Services
           </a>
-          <a class="navbar-item">
+          <a href="#team" class="navbar-item">
             Our Team
           </a>
         </div>
@@ -48,20 +47,27 @@
         </div>
       </div>
     </nav>
-    </section>
-    <section class="section">
-      <div class="container content">
-        At bitfuse.io we love software. Especially if it's simple and efficient. Software should be built to fulfill its requirements and nothing more.
-        We focus on providing services that are to the point and solve your problems as efficiently as possible. Good solutions are
-        <ul>
-          <li>easy to operate</li>
-          <li>adaptable to change</li>
-          <li>scalable under load</li>
-          <li>essential to your business</li>
-        </ul>
+    <section id="mission" class="section">
+      <div class="container">
+          <h1 class="title">
+            Our Mission
+          </h1>
+          <h2 class="subtitle">
+            At bitfuse.io we love software
+          </h2>
+          <div class="content">
+            Especially if it's simple and efficient. Software should be built to fulfill its requirements and nothing more.
+            We focus on providing services that are to the point and solve your problems as efficiently as possible. Good solutions are
+            <ul>
+              <li>easy to operate</li>
+              <li>adaptable to change</li>
+              <li>scalable under load</li>
+              <li>essential to your business</li>
+            </ul>
+          </div>
       </div>
     </section>
-    <section class="section">
+    <section id="services" class="section">
       <div class="container">
         <h1 class="title">
           Our Services
@@ -112,7 +118,7 @@
           </div>
         </div>
     </section>
-    <section class="section">
+    <section id="team" class="section">
       <div class="container">
         <h1 class="title">
           Our Team
