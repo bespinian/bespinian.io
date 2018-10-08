@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "browser-sync": "^2.24.7"
+  },
+  "dependencies": {
+    "bulma-carousel": "^3.0.0"
   }
 }
