@@ -1,6 +1,6 @@
-.has-same-height .card {
-  height: 320px;
-  overflow: hidden;
+.navbar-item {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .card-content h3 {
@@ -25,29 +25,15 @@ th {
   margin-bottom: 2em;
 }
 
-.section-heading {
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 3em;
-}
-
-.hero-body .container {
-  position: fixed;
-  left: 12rem;
-}
-
 .cloudcity {
-  height: calc(100vh - 37rem);
-  position: fixed;
-  right: 18rem;
+  width: 26rem;
 }
 
-.icon {
-  margin-right: 0.4rem;
-}
-
-.hero-body .title {
-  font-size: 7rem;
+@media only screen and (max-width: 456px) {
+  .cloudcity {
+    margin-top: 5rem;
+    width: 100%;
+  }
 }
 
 .tech-logo {
@@ -56,4 +42,8 @@ th {
 
 .tech-logo-l {
   padding: 15%;
+}
+
+.card {
+  height: 100%;
 }
