@@ -1,6 +1,6 @@
-# be|spin Website
+# team be|spin Website
 
-The be|spin homepage.
+The team be|spin homepage available at <https://teambespin.io>
 
 ## Run
 
