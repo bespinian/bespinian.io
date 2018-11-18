@@ -51,7 +51,7 @@
           <div class="columns">
             <div class="column is-offset-1-desktop" style="padding-top:7rem;">
               <h1 class="title is-1 is-spaced">
-                be<span class="cursor">|</span>spin
+                be<span class="is-blinking">|</span>spin
               </h1>
               <h2 class="subtitle is-4">
                 Cloud Native Citizens <br />
@@ -59,7 +59,7 @@
               </h2>
             </div>
             <div class="column is-offset-4-desktop has-text-centered">
-              <img src="img/cloudcity.svg" class="cloudcity" />
+              <img src="img/cloudcity.svg" class="cloud-city" />
             </div>
           </div>
         </div>
@@ -79,36 +79,46 @@
             solutions.
           </p>
           <div class="content" style="margin-top:4rem;">
-            <div class="card">
-              <div class="card-content">
-                <p class="title is-4">
-                  Together, we will create solutions which are
-                </p>
-                <div class="content">
-                  <p>
-                    <span class="icon has-text-link"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                    easy to operate
-                  </p>
-                  <p>
-                    <span class="icon has-text-link"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                    adaptable to change
-                  </p>
-                  <p>
-                    <span class="icon has-text-link"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                    scalable under load
-                  </p>
-                  <p>
-                    <span class="icon has-text-link"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                    optimized for your business goals
-                  </p>
+            <div class="columns">
+              <div
+                class="column is-centered is-half-desktop is-offset-one-quarter-desktop"
+              >
+                <div class="box">
+                  <div class="card-content">
+                    <p class="title is-4">
+                      Together, we create solutions which are
+                    </p>
+                    <div class="content">
+                      <p>
+                        <span
+                          class="icon has-text-link"
+                          style="margin-right:0.7rem"
+                          ><i class="fas fa-check"></i></span
+                        >easy to operate
+                      </p>
+                      <p>
+                        <span
+                          class="icon has-text-link"
+                          style="margin-right:0.7rem"
+                          ><i class="fas fa-check"></i></span
+                        >adaptable to change
+                      </p>
+                      <p>
+                        <span
+                          class="icon has-text-link"
+                          style="margin-right:0.7rem"
+                          ><i class="fas fa-check"></i></span
+                        >scalable under load
+                      </p>
+                      <p>
+                        <span
+                          class="icon has-text-link"
+                          style="margin-right:0.7rem"
+                          ><i class="fas fa-check"></i></span
+                        >optimized for your business goals
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -123,10 +133,10 @@
           <h3 class="title is-2 is-spaced">Our Services</h3>
           <p>
             No matter whether you are embarking on a new endeavour or reworking
-            an existing idea, we will work hands-on with your team in every
-            iteration of your project. Here are some of the services we offer.
-            If the one you require is not on the list, let us know! We're always
-            happy to innovate.
+            an existing idea, we work hands-on with your team in every iteration
+            of your project. Here are some of the services we offer. If the one
+            you require is not on the list, let us know! We're always happy to
+            innovate.
           </p>
           <div class="content" style="margin-top:4rem;">
             <div class="timeline is-centered">
@@ -202,10 +212,10 @@
           <h3 class="title is-2 is-spaced">Our Technologies</h3>
           <p>
             We are convinced that technology should follow ideas and not the
-            other way around. Together we will design and implement
-            architectures based on modern technologies which enable your team to
-            spend more time on delivering business value and less on ops tasks
-            and infrastructure maintenance. Here's a selection of the
+            other way around. Together we design and implement architectures
+            based on modern technologies which enable your team to spend more
+            time on delivering business value and less on ops tasks and
+            infrastructure maintenance. Here's a selection of the
             <strong>platforms</strong> we are native to:
           </p>
           <div class="tile is-ancestor">
@@ -213,98 +223,185 @@
               <div class="tile is-parent">
                 <div class="tile is-parent is-vertical">
                   <div class="tile is-parent">
-                    <article class="tile is-child tech-logo">
+                    <div class="tile is-child tech-logo has-text-centered">
+                      <figure class="image"><img src="img/aws.svg" /></figure>
+                      <br />
+                      <a href="https://aws.amazon.com" target="_blank">AWS</a>
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
                       <figure class="image">
-                        <img src="img/lambda.png" />
+                        <img src="img/openshift.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child tech-logo">
+                      <br />
+                      <a href="https://www.openshift.com" target="_blank"
+                        >OpenShift</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
                       <figure class="image">
-                        <img src="img/cf-vert.png" />
+                        <img src="img/cloudfoundry.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child tech-logo">
-                      <figure class="image"><img src="img/k8s.png" /></figure>
-                    </article>
-                    <article class="tile is-child tech-logo">
-                      <figure class="image"><img src="img/oc.png" /></figure>
-                    </article>
+                      <br />
+                      <a href="https://www.cloudfoundry.org" target="_blank"
+                        >Cloud Foundry</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/kubernetes.svg" />
+                      </figure>
+                      <br />
+                      <a href="https://kubernetes.io" target="_blank"
+                        >Kubernetes</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/docker.svg" />
+                      </figure>
+                      <br />
+                      <a href="https://www.docker.com" target="_blank"
+                        >Docker</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
               <p>
                 Even though we passionately write code, reinventing the wheel is
                 not our game. We know when to code and when to use an existing
-                product to solve a problem and we will share this knowledge with
-                your team. Here are some of our favorite <strong>tools</strong>:
+                product to solve a problem and we share this knowledge with your
+                team. Here are some of our favorite <strong>tools</strong>:
               </p>
               <div class="tile is-parent">
                 <div class="tile is-parent is-vertical">
                   <div class="tile is-parent">
-                    <article class="tile is-child">
-                      <figure class="image tech-logo">
-                        <img src="img/go.png" />
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/golang.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo">
-                        <img src="img/node.png" />
+                      <br />
+                      <a href="https://golang.org" target="_blank">Go</a>
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/nodejs.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo-l">
-                        <img src="img/spring.png" />
+                      <br />
+                      <a href="https://nodejs.org" target="_blank">Node.js</a>
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/springboot.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo">
-                        <img src="img/react.png" />
+                      <br />
+                      <a
+                        href="https://spring.io/projects/spring-boot"
+                        target="_blank"
+                        >Spring Boot</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image"><img src="img/react.svg" /></figure>
+                      <br />
+                      <a href="https://reactjs.org" target="_blank">React</a>
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/graphql.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo-l">
-                        <img src="img/vue.png" />
-                      </figure>
-                    </article>
+                      <br />
+                      <a href="https://graphql.org" target="_blank">GraphQL</a>
+                    </div>
                   </div>
-                  <article class="tile is-child"></article>
-                </div>
-              </div>
-              <div class="tile is-parent">
-                <div class="tile is-parent is-vertical">
                   <div class="tile is-parent">
-                    <article class="tile is-child">
-                      <figure class="image tech-logo-l">
-                        <img src="img/dynamo.png" />
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/terraform.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo-l">
-                        <img src="img/mongo.png" />
+                      <br />
+                      <a href="https://www.terraform.io" target="_blank"
+                        >Terraform</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/concourse.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo-l">
-                        <img src="img/rabbit.png" />
+                      <br />
+                      <a href="https://concourse-ci.org" target="_blank"
+                        >Concourse</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/jenkins.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo-l">
-                        <img src="img/kafka.png" />
+                      <br />
+                      <a href="https://jenkins.io" target="_blank">Jenkins</a>
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/rabbitmq.svg" />
                       </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo-l">
-                        <img src="img/redis.png" />
-                      </figure>
-                    </article>
-                    <article class="tile is-child">
-                      <figure class="image tech-logo-l">
-                        <img src="img/elastic.png" />
-                      </figure>
-                    </article>
+                      <br />
+                      <a href="https://www.rabbitmq.com" target="_blank"
+                        >RabbitMQ</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image"><img src="img/kafka.svg" /></figure>
+                      <br />
+                      <a href="https://kafka.apache.org" target="_blank"
+                        >Kafka</a
+                      >
+                    </div>
                   </div>
-                  <article class="tile is-child"></article>
+                  <div class="tile is-parent">
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image"><img src="img/redis.svg" /></figure>
+                      <br />
+                      <a href="https://redis.io" target="_blank">Redis</a>
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/elasticsearch.svg" />
+                      </figure>
+                      <br />
+                      <a
+                        href="https://www.elastic.co/products/elasticsearch"
+                        target="_blank"
+                        >Elasticsearch</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/mongodb.svg" />
+                      </figure>
+                      <br />
+                      <a href="https://www.mongodb.com" target="_blank"
+                        >MongoDB</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/postgresql.svg" />
+                      </figure>
+                      <br />
+                      <a href="https://www.postgresql.org" target="_blank"
+                        >PostgreSQL</a
+                      >
+                    </div>
+                    <div class="tile is-child has-text-centered tech-logo">
+                      <figure class="image">
+                        <img src="img/dynamodb.svg" />
+                      </figure>
+                      <br />
+                      <a href="https://aws.amazon.com/dynamodb" target="_blank"
+                        >DynamoDB</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -345,10 +442,10 @@
                         </div>
                       </div>
                       <br />
-                      <div class="content">
+                      <p>
                         Software Architect specialized in microservices,
                         container technologies and cloud-native engineering
-                      </div>
+                      </p>
                     </div>
                     <footer class="card-footer">
                       <a
