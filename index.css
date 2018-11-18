@@ -3,29 +3,7 @@
   padding-left: 1.5rem;
 }
 
-.card-content h3 {
-  text-align: center;
-}
-
-.table-profile td,
-th {
-  border: none !important;
-}
-
-.table-profile td:first-of-type {
-  font-weight: bold;
-}
-
-.custom-tags {
-  text-align: center !important;
-  display: block;
-}
-
-.portfolio-container .card {
-  margin-bottom: 2em;
-}
-
-.cloudcity {
+.cloud-city {
   width: 26rem;
 }
 
@@ -40,19 +18,12 @@ th {
   padding: 5%;
 }
 
-.tech-logo-l {
-  padding: 15%;
-}
-
 .card {
   height: 100%;
 }
 
-.cursor {
+.is-blinking {
   -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
   animation: 1s blink step-end infinite;
 }
 
@@ -66,37 +37,7 @@ th {
   }
 }
 
-@-moz-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
 @-webkit-keyframes "blink" {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: white;
-  }
-}
-
-@-o-keyframes "blink" {
   from,
   to {
     color: transparent;
