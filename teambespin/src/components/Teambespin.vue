@@ -8,11 +8,11 @@
       </div>
       <div class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item" href="#mission"> <span>Mission</span> </a>
-          <a class="navbar-item" href="#services"> <span>Services</span> </a>
-          <a class="navbar-item" href="#tech"> <span>Technologies</span> </a>
-          <a class="navbar-item" href="#team"> <span>Team</span> </a>
-          <a class="navbar-item" href="#contact"> <span>Contact</span> </a>
+          <a class="navbar-item" href="#mission"> <span>{{ $t('mission.navitem') }}</span> </a>
+          <a class="navbar-item" href="#services"> <span>{{ $t('services.navitem') }}</span> </a>
+          <a class="navbar-item" href="#tech"> <span>{{ $t('technologies.navitem') }}</span> </a>
+          <a class="navbar-item" href="#team"> <span>{{ $t('team.navitem') }}</span> </a>
+          <a class="navbar-item" href="#contact"> <span>{{ $t('contact.navitem') }}</span> </a>
         </div>
       </div>
     </nav>
@@ -25,7 +25,7 @@
               <h1 class="title is-1 is-spaced">
                 be<span class="is-blinking">|</span>spin
               </h1>
-              <h2 class="subtitle is-4">Cloud Native Citizens</h2>
+              <h2 class="subtitle is-4">{{ $t('subtitle') }}</h2>
             </div>
             <div class="column is-offset-4-desktop has-text-centered">
               <img src="../assets/cloudcity.svg" class="cloud-city" />
@@ -38,14 +38,9 @@
     <section class="section" id="mission">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-          <h3 class="title is-2 is-spaced">Our Mission</h3>
+            <h3 class="title is-2 is-spaced">{{ $t('mission.title') }}</h3>
           <p>
-            At team be|spin we love software. Especially if it's simple,
-            efficient and spot on the requirements. Awesome software is made by
-            awesome teams. That's why all of our services are focused on close
-            collaboration with your team. Also, we feel at home in private,
-            hybrid and public clouds. That makes us your ideal partner for
-            creating great cloud-native solutions.
+            {{ $t('mission.text') }}
           </p>
           <div class="content" style="margin-top:4rem;">
             <div class="columns">
@@ -55,7 +50,7 @@
                 <div class="box">
                   <div class="card-content">
                     <p class="title is-4">
-                      Together, we create solutions which are
+                    {{ $t('mission.solutions.title') }}
                     </p>
                     <div class="content">
                       <p>
@@ -63,28 +58,28 @@
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
                           ><i class="fas fa-check"></i></span
-                        >easy to operate
+                      >{{ $t('mission.solutions.operate') }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
                           ><i class="fas fa-check"></i></span
-                        >adaptable to change
+                      >{{ $t('mission.solutions.adaptable') }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
                           ><i class="fas fa-check"></i></span
-                        >scalable under load
+                      >{{ $t('mission.solutions.scalable') }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
                           ><i class="fas fa-check"></i></span
-                        >optimized for your business
+                      >{{ $t('mission.solutions.optimized') }}
                       </p>
                     </div>
                   </div>
@@ -99,13 +94,9 @@
     <section class="section" id="services">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-          <h3 class="title is-2 is-spaced">Our Services</h3>
+            <h3 class="title is-2 is-spaced">{{ $t('services.title') }}</h3>
           <p>
-            No matter whether you are embarking on a new endeavour, reworking an
-            idea or transforming your existing applications, we work hands-on
-            with your team in every iteration of your project. Here are some of
-            the services we offer. If what you require is not on the list, let
-            us know! We're always happy to innovate.
+            {{ $t('services.text') }}
           </p>
           <div class="content" style="margin-top:4rem;">
             <div class="timeline is-centered">
@@ -114,10 +105,9 @@
                   <i class="fa fa-clipboard-list"></i>
                 </div>
                 <div class="timeline-content">
-                  <p class="heading">Assess</p>
+                    <p class="heading">{{ $t('services.timeline.assess.title') }}</p>
                   <p>
-                    Perfect match or too good to be true? We help you choose the
-                    right partners for your project.
+                  {{ $t('services.timeline.assess.text') }}
                   </p>
                 </div>
               </div>
@@ -126,10 +116,9 @@
                   <i class="fa fa-recycle"></i>
                 </div>
                 <div class="timeline-content">
-                  <p class="heading">Transform</p>
+                    <p class="heading">{{ $t('services.timeline.transform.title') }}</p>
                   <p>
-                    Everyone has a history. Together, we review your existing
-                    applications and get them ready for the cloud.
+                    {{ $t('services.timeline.transform.text') }}
                   </p>
                 </div>
               </div>
@@ -138,10 +127,9 @@
                   <i class="fa fa-pencil-alt"></i>
                 </div>
                 <div class="timeline-content">
-                  <p class="heading">Design</p>
+                    <p class="heading">{{ $t('services.timeline.design.title') }}</p>
                   <p>
-                    A diagram says more than a thousand words. Let’s structure
-                    your business domain and identify crucial concepts.
+                  {{ $t('services.timeline.design.text') }}
                   </p>
                 </div>
               </div>
@@ -150,10 +138,9 @@
                   <i class="fa fa-box"></i>
                 </div>
                 <div class="timeline-content">
-                  <p class="heading">Build</p>
+                    <p class="heading">{{ $t('services.timeline.build.title') }}</p>
                   <p>
-                    From napkin to code. We help you realize your ideas in lean
-                    and cloud-native software.
+                    {{ $t('services.timeline.build.text') }}
                   </p>
                 </div>
               </div>
@@ -162,10 +149,9 @@
                   <i class="fa fa-rocket"></i>
                 </div>
                 <div class="timeline-content">
-                  <p class="heading">Run</p>
+                    <p class="heading">{{ $t('services.timeline.run.title') }}</p>
                   <p>
-                    Zero downtime. Together we continuously deploy your
-                    applications and run them at scale.
+                  {{ $t('services.timeline.run.text') }}
                   </p>
                 </div>
               </div>
@@ -174,10 +160,9 @@
                   <i class="fa fa-undo"></i>
                 </div>
                 <div class="timeline-content">
-                  <p class="heading">Rethink</p>
+                    <p class="heading">{{ $t('services.timeline.rethink.title') }}</p>
                   <p>
-                    Everything is simple in hindsight. Let’s embrace that fact
-                    and take your solution to the next level.
+                    {{ $t('services.timeline.rethink.text') }}
                   </p>
                 </div>
               </div>
@@ -668,3 +653,63 @@ export default {
   }
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "mission": {
+        "navitem": "Mission",
+        "title": "Our Mission",
+        "text": "At team be|spin we love software. Especially if it's simple, efficient and spot on the requirements. Awesome software is made by awesome teams. That's why all of our services are focused on close collaboration with your team. Also, we feel at home in private, hybrid and public clouds. That makes us your ideal partner for creating great cloud-native solutions.",
+        "solutions": {
+            "title": "Together, we create solutions which are",
+            "operate": "easy to operate",
+            "adaptable": "adaptable to change",
+            "scalable": "scalable under load",
+            "optimized": "optimized for your business"
+        }
+    },
+    "services": {
+        "navitem": "Services",
+        "title": "Our Services",
+        "text": "No matter whether you are embarking on a new endeavour, reworking an idea or transforming your existing applications, we work hands-on with your team in every iteration of your project. Here are some of the services we offer. If what you require is not on the list, let us know! We're always happy to innovate.",
+        "timeline": {
+            "assess": {
+                "title": "Assess",
+                "text": "Perfect match or too good to be true? We help you choose the right partners for your project."
+            },
+            "transform": {
+                "title": "Transform",
+                "text": "Everyone has a history. Together, we review your existing applications and get them ready for the cloud."
+            },
+            "design": {
+                "title": "Design",
+                "text": "A diagram says more than a thousand words. Let’s structure your business domain and identify crucial concepts."
+            },
+            "build": {
+                "title": "Build",
+                "text": "From napkin to code. We help you realize your ideas in lean and cloud-native software."
+            },
+            "run": {
+                "title": "Run",
+                "text": "Zero downtime. Together we continuously deploy your applications and run them at scale."
+            },
+            "rethink": {
+                "title": "Rethink",
+                "text": "Everything is simple in hindsight. Let’s embrace that fact and take your solution to the next level."
+            }
+        }
+    },
+    "technologies": {
+        "navitem": "Technologies"
+    },
+    "team": {
+        "navitem": "Team"
+    },
+    "contact": {
+        "navitem": "Contact"
+    },
+    "subtitle": "Cloud Native Citizens"
+  }
+}
+</i18n>
