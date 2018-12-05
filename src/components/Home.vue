@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <nav class="navbar is-link is-fixed-top">
       <div class="navbar-brand">
         <div class="navbar-burger burger">
@@ -13,7 +13,7 @@
           <a class="navbar-item" href="#tech"> <span>{{ $t('technologies.navitem') }}</span> </a>
           <a class="navbar-item" href="#team"> <span>{{ $t('team.navitem') }}</span> </a>
           <a class="navbar-item" href="#contact"> <span>{{ $t('contact.navitem') }}</span> </a>
-          <LocaleChange />
+          <LocaleChanger />
         </div>
       </div>
     </nav>
@@ -599,14 +599,14 @@
 </template>
 
 <script>
-import LocaleChange from './LocaleChange.vue'
+import LocaleChanger from "./LocaleChanger.vue";
 
 export default {
-  name: 'Teambespin',
-    components: {
-        LocaleChange
-    }
-}
+  name: "Teambespin",
+  components: {
+    LocaleChanger
+  }
+};
 </script>
 
 <style>

@@ -1,8 +1,13 @@
-# team be|spin Website
+# teambespin.io Website
 
 The team be|spin homepage available at <https://teambespin.io>
 
-## Run
+## Run locally
 
-1. Install the latest [Node.js and npm](https://nodejs.org)
-1. Run `npx live-server`
+1.  Run `npm install`
+1.  Run `npm run serve`
+
+## Build
+
+1.  Run `npm install`
+1.  Run `npm run build`
