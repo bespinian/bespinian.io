@@ -399,12 +399,12 @@
                           <figure class="image is-128x128">
                             <img
                               class="is-rounded"
-                              src="https://pbs.twimg.com/profile_images/928975001105166336/dhnwx8fA_400x400.jpg"
+                              src="../assets/gopher.png"
                             />
                           </figure>
                         </div>
                         <div class="media-content">
-                          <p class="title is-4">Hans Muster</p>
+                          <p class="title is-4">Gabriel Müller</p>
                           <p class="subtitle is-6">Keeper of Simple</p>
                         </div>
                       </div>
@@ -538,7 +538,7 @@
           <form
             class="content"
             style="margin-top:4rem;"
-            action="https://formspree.io/tobias.fuhrimann@gmail.com"
+            action="https://formspree.io/contact@teambespin.io"
             method="POST"
           >
             <div class="field">
