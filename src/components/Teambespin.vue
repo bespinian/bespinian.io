@@ -13,6 +13,7 @@
           <a class="navbar-item" href="#tech"> <span>{{ $t('technologies.navitem') }}</span> </a>
           <a class="navbar-item" href="#team"> <span>{{ $t('team.navitem') }}</span> </a>
           <a class="navbar-item" href="#contact"> <span>{{ $t('contact.navitem') }}</span> </a>
+          <LocaleChange />
         </div>
       </div>
     </nav>
@@ -598,13 +599,18 @@
 </template>
 
 <script>
+import LocaleChange from './LocaleChange.vue'
+
 export default {
-  name: 'Teambespin'
+  name: 'Teambespin',
+    components: {
+        LocaleChange
+    }
 }
 </script>
 
 <style>
-.navbar-item {
+.navbar-end .navbar-item {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
