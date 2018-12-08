@@ -66,31 +66,31 @@
     "navitem": "Team",
     "title": "Unser Team",
     "text":
-      "We are cloud-native software engineers with experience in both the corporate and the startup world. We pride ourselves in being expert consultants, competent coaches and seasoned coders at the same time. Interested in meeting us? Feel free to approach us on social media or at a meetup near you!",
+      "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen wie auch in startups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater, einfühlsame Coaches und erfahrene Coder. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert auf Social Media auf uns zu, treffen Sie uns an einem Meetup in Ihrer Nähe oder nutzen Sie das Kontaktformular unten.",
     "member-1": {
       "name": "Gabriel Müller",
       "catchphrase": "Keeper of Simple",
       "text":
-        "Software Architect specialized in microservices, container technologies and cloud-native engineering"
+        "Softwarearchitekt und Mitgründer. Spezialisert auf Microservices, Containertechnologien and cloud-native Engineering"
     },
     "member-2": {
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
       "text":
-        "Software Engineer specialized in cloud services, distributed systems and web development with modern technologies"
+        "Software Engineer und Mitgründer. Spezialisiert auf Clouddienste, verteilte Systeme und Webentwicklung mit modernen Technologien"
     }
   },
   "contact": {
-    "navitem": "Contact",
-    "title": "Contact Us",
+    "navitem": "Kontakt",
+    "title": "Kontaktieren Sie uns",
     "text":
-      "Have a question? Need a quote? Wanna grab a coffee or a beer? Drop us a line and we'll be happy to get back to you as soon as possible!",
+      "Haben Sie eine Frage? Benötigen Sie eine Offerte? Oder möchten Sie mal auf einen Kaffee oder ein Bier vorbeikommen? In jedem Fall freuen wir uns über Ihre Kontaktaufnahme und melden uns so schnell wie möglich bei Ihnen!",
     "form": {
       "nameplaceholder": "Name",
       "emailplaceholder": "Email",
-      "subjectplaceholder": "Subject",
-      "messageplaceholder": "Message",
-      "sendbuttonlabel": "Send"
+      "subjectplaceholder": "Betreff",
+      "messageplaceholder": "Meldung",
+      "sendbuttonlabel": "Abschicken"
     }
   },
   "subtitle": "Cloud Native Citizens"
