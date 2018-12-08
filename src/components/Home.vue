@@ -176,14 +176,9 @@
     <section class="section" id="tech">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-          <h3 class="title is-2 is-spaced">Our Technologies</h3>
+            <h3 class="title is-2 is-spaced">{{ $t('technologies.title') }}</h3>
           <p>
-            We are convinced that technology should follow ideas and not the
-            other way around. Together we design and implement architectures
-            based on modern technologies which enable your team to spend more
-            time on delivering business value and less on infrastructure
-            operations. Here's a selection of the <strong>platforms</strong> we
-            are native to:
+          <div v-html="$t('technologies.platforms.text')"></div>
           </p>
           <div class="tile is-ancestor">
             <div class="tile is-parent is-vertical">
@@ -235,10 +230,7 @@
                 </div>
               </div>
               <p>
-                Even though we passionately write code, reinventing the wheel is
-                not our game. We know when to use an existing product to solve a
-                problem and we share this knowledge with your team. Here are
-                some of our favorite <strong>tools</strong>:
+                <div v-html="$t('technologies.tools.text')"></div>
               </p>
               <div class="tile is-parent">
                 <div class="tile is-parent is-vertical">
@@ -380,13 +372,9 @@
     <section class="section" id="team">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-          <h3 class="title is-2 is-spaced">The Team</h3>
+            <h3 class="title is-2 is-spaced">{{ $t('team.title') }}</h3>
           <p>
-            We are cloud-native software engineers with experience in both the
-            corporate and the startup world. We pride ourselves in being expert
-            consultants, competent coaches and seasoned coders at the same time.
-            Interested in meeting us? Feel free to approach us on social media
-            or at a meetup near you!
+          {{ $t('team.text') }}
           </p>
           <div class="content" style="margin-top:4rem;">
             <div class="tile is-ancestor">
@@ -404,14 +392,13 @@
                           </figure>
                         </div>
                         <div class="media-content">
-                          <p class="title is-4">Gabriel Müller</p>
-                          <p class="subtitle is-6">Keeper of Simple</p>
+                            <p class="title is-4">{{ $t('team.member-1.name') }}</p>
+                            <p class="subtitle is-6">{{ $t('team.member-1.catchphrase') }}</p>
                         </div>
                       </div>
                       <br />
                       <p>
-                        Software Architect specialized in microservices,
-                        container technologies and cloud-native engineering
+                        {{ $t('team.member-1.text') }}
                       </p>
                     </div>
                     <footer class="card-footer">
@@ -467,16 +454,14 @@
                           </figure>
                         </div>
                         <div class="media-content">
-                          <p class="title is-4">Tobi Fuhrimann</p>
-                          <p class="subtitle is-6">Head in the Clouds</p>
+                            <p class="title is-4">{{ $t('team.member-2.name') }}</p>
+                            <p class="subtitle is-6">{{ $t('team.member-2.catchphrase') }}</p>
                         </div>
                       </div>
                       <br />
                       <div class="content">
                         <p>
-                          Software Engineer specialized in cloud services,
-                          distributed systems and web development with modern
-                          technologies
+                        {{ $t('team.member-2.text') }}
                         </p>
                       </div>
                     </div>
@@ -530,10 +515,9 @@
     <section class="section" id="contact">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-          <h3 class="title is-2 is-spaced">Contact Us</h3>
+            <h3 class="title is-2 is-spaced">{{ $t('contact.title') }}</h3>
           <p>
-            Have a question? Need a quote? Wanna grab a coffee or a beer? Drop
-            us a line and we'll be happy to get back to you as soon as possible!
+          {{ $t('contact.text') }}
           </p>
           <form
             class="content"
@@ -543,7 +527,7 @@
           >
             <div class="field">
               <p class="control has-icons-left">
-                <input class="input" name="name" placeholder="Name" />
+              <input class="input" name="name" :placeholder="$t('contact.form.nameplaceholder')" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -555,7 +539,7 @@
                   class="input"
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  :placeholder="$t('contact.form.emailplaceholder')"
                 />
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
@@ -564,7 +548,7 @@
             </div>
             <div class="field">
               <p class="control has-icons-left">
-                <input class="input" name="subject" placeholder="Subject" />
+                <input class="input" name="subject" :placeholder="$t('contact.form.subjectplaceholder')" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-info"></i>
                 </span>
@@ -574,14 +558,14 @@
               <textarea
                 class="textarea"
                 name="message"
-                placeholder="Message"
+                :placeholder="$t('contact.form.messageplaceholder')"
                 rows="8"
               ></textarea>
             </div>
             <div class="field">
               <input
                 type="submit"
-                value="Send"
+                :value="$t('contact.form.sendbuttonlabel')"
                 class="button is-link is-fullwidth"
               />
             </div>
