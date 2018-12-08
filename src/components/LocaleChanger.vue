@@ -1,11 +1,11 @@
 <template>
   <div id="locale-changer" class="navbar-item has-dropdown is-hoverable">
     <a class="navbar-link">{{ langs[$i18n.locale] }}</a>
-    <select class="navbar-dropdown" v-model="$i18n.locale">
-      <option class="navbar-item" v-for="(val, key) in langs" :key="key" :value="key">
-        {{ val }}
-      </option>
-    </select>
+    <div class="navbar-dropdown">
+        <a class="navbar-item" v-for="(val, key) in langs" v-on:click="$i18n.locale = key" v-bind:key="key" >
+            {{ val }}
+        </a>
+    </div>
   </div>
 </template>
 
