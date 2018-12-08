@@ -3,61 +3,95 @@
     "navitem": "Mission",
     "title": "Unsere Mission",
     "text":
-      "At team be|spin we love software. Especially if it's simple, efficient and spot on the requirements. Awesome software is made by awesome teams. That's why all of our services are focused on close collaboration with your team. Also, we feel at home in private, hybrid and public clouds. That makes us your ideal partner for creating great cloud-native solutions.",
+      "Wir von team be|spin lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams geschrieben. Aus diesem Grund bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zuhause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim kreieren von erstklassigen Cloud-basierten Lösungen.",
     "solutions": {
-      "title": "Together, we create solutions which are",
-      "operate": "easy to operate",
-      "adaptable": "adaptable to change",
-      "scalable": "scalable under load",
-      "optimized": "optimized for your business"
+      "title": "Die Lösungen, welche wir zusammen kreieren sind",
+      "operate": "einfach zu betreiben",
+      "adaptable": "leicht zu ändern",
+      "scalable": "skalierbar unter Last",
+      "optimized": "optimiert auf Ihre Geschäftsziele"
     }
   },
   "services": {
-    "navitem": "Services",
-    "title": "Our Services",
+    "navitem": "Dienstleistungen",
+    "title": "Unsere Dienstleistungen",
     "text":
-      "No matter whether you are embarking on a new endeavour, reworking an idea or transforming your existing applications, we work hands-on with your team in every iteration of your project. Here are some of the services we offer. If what you require is not on the list, let us know! We're always happy to innovate.",
+      "Egal, ob Sie ein neues Vorhaben beginnen, eine bestehende Idee überarbeiten oder Ihre bestehenden Applikationen transformieren, wir begleiten Ihr Team hands-on, in jeder Iteration Ihres Projekts. Hier sind einige Dienstleistungen, die wir anbieten. Wenn Sie etwas suchen, das nicht auf der Liste ist, lassen Sie es uns wissen. Wir sind immer offen für Innovation!",
     "timeline": {
       "assess": {
         "title": "Assess",
         "text":
-          "Perfect match or too good to be true? We help you choose the right partners for your project."
+          "Perfekter Wahl oder zu gut, um wahr zu sein? Wir helfen Ihnen, den richtigen Partner für Ihr Projekt zu finden."
       },
       "transform": {
         "title": "Transform",
         "text":
-          "Everyone has a history. Together, we review your existing applications and get them ready for the cloud."
+          "Jedes Unternehmen hat eine Geschichte. Zusammen analysieren wir Ihre bestehenden Applikationen und machen sie bereit für die Cloud."
       },
       "design": {
         "title": "Design",
         "text":
-          "A diagram says more than a thousand words. Let’s structure your business domain and identify crucial concepts."
+          "Ein Diagramm sagt mehr als tausend Worte. Wir strukturieren Ihre Geschäftsdomäne und identifizieren die Schlüsselkonzepte."
       },
       "build": {
         "title": "Build",
         "text":
-          "From napkin to code. We help you realize your ideas in lean and cloud-native software."
+          "Von der Papierserviette zum Sourcecode. Wir helfen Ihnen bei der Umsetzung Ihrer Ideen als Cloud-basierte Software."
       },
       "run": {
         "title": "Run",
         "text":
-          "Zero downtime. Together we continuously deploy your applications and run them at scale."
+          "Ohne Unterbruch. Zusammen deployen wir Ihre Applikationen und betreiben sie hochgradig skaliert."
       },
       "rethink": {
         "title": "Rethink",
         "text":
-          "Everything is simple in hindsight. Let’s embrace that fact and take your solution to the next level."
+          "Im Nachhinein ist alles einfach. Machen wir uns diese Tatsache zu Nutzen und bringen wir Ihre Lösung auf die nächste Stufe!"
       }
     }
   },
   "technologies": {
-    "navitem": "Technologies"
+    "navitem": "Technologien",
+    "title": "Unsere Technologien",
+    "platforms": {
+      "text":
+        "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen werden wir Lösungen auf der Basis von modernen Technologien entwickeln, welche Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von <strong>Plattformen</strong>, auf denen wir Experten sind:"
+    },
+    "tools": {
+      "text":
+        "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist das Rad neu erfinden nicht unser Ding! Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer <strong>Lieblingstools</strong>:"
+    }
   },
   "team": {
-    "navitem": "Team"
+    "navitem": "Team",
+    "title": "Unser Team",
+    "text":
+      "We are cloud-native software engineers with experience in both the corporate and the startup world. We pride ourselves in being expert consultants, competent coaches and seasoned coders at the same time. Interested in meeting us? Feel free to approach us on social media or at a meetup near you!",
+    "member-1": {
+      "name": "Gabriel Müller",
+      "catchphrase": "Keeper of Simple",
+      "text":
+        "Software Architect specialized in microservices, container technologies and cloud-native engineering"
+    },
+    "member-2": {
+      "name": "Tobi Fuhrimann",
+      "catchphrase": "Head in the Clouds",
+      "text":
+        "Software Engineer specialized in cloud services, distributed systems and web development with modern technologies"
+    }
   },
   "contact": {
-    "navitem": "Contact"
+    "navitem": "Contact",
+    "title": "Contact Us",
+    "text":
+      "Have a question? Need a quote? Wanna grab a coffee or a beer? Drop us a line and we'll be happy to get back to you as soon as possible!",
+    "form": {
+      "nameplaceholder": "Name",
+      "emailplaceholder": "Email",
+      "subjectplaceholder": "Subject",
+      "messageplaceholder": "Message",
+      "sendbuttonlabel": "Send"
+    }
   },
   "subtitle": "Cloud Native Citizens"
 }
