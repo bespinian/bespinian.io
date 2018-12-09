@@ -1,97 +1,97 @@
 {
+  "subtitle": "Cloud Native Citizens",
   "mission": {
-    "navitem": "Mission",
+    "nav_item": "Mission",
     "title": "Üsi Mission",
-    "text":
-      "At team be|spin we love software. Especially if it's simple, efficient and spot on the requirements. Awesome software is made by awesome teams. That's why all of our services are focused on close collaboration with your team. Also, we feel at home in private, hybrid and public clouds. That makes us your ideal partner for creating great cloud-native solutions.",
+    "body":
+      "Mir vo team be|spin liebe Software. Bsunders, wenn si eifach und effiziänt isch und ihri Aforderige erfüllt. Grossartigi Software wird vo grossartige Teams gschribe. Us däm Grund boue aui üsi Dienstleistige uf ere änge Zämearbeit mit Öiem Team uf. Mir füehle üs deheim uf private, hybride und public Clouds. Das macht üs zum ideale Partner für Öies Ungernähmä bim Kreiere vo erstklassige Cloud-basierte Lösige.",
     "solutions": {
-      "title": "Together, we create solutions which are",
-      "operate": "easy to operate",
-      "adaptable": "adaptable to change",
-      "scalable": "scalable under load",
-      "optimized": "optimized for your business"
+      "title": "D Lösige, wo mir zämä kreiere si",
+      "operate": "eifach z betribe",
+      "adaptable": "liecht z ändere",
+      "scalable": "skalierbar unter Last",
+      "optimized": "optimiert uf Öii Gschäftzziel"
     }
   },
   "services": {
-    "navitem": "Services",
-    "title": "Our Services",
-    "text":
-      "No matter whether you are embarking on a new endeavour, reworking an idea or transforming your existing applications, we work hands-on with your team in every iteration of your project. Here are some of the services we offer. If what you require is not on the list, let us know! We're always happy to innovate.",
+    "nav_item": "Dienstleistige",
+    "title": "Üsi Dienstleistige",
+    "body":
+      "Egal, öb Dir es nöis Vorhabe aföht, e bestehendi Idee überarbeitet oder Öii bestehende Applikatione tranformieret, mir begleite Öies Team hands-on, i jedere Iteration vo Öiem Projekt. Hie si es paar vo de Dienstleistige wo mir abiete. Wenn Dir öppis suechet, wo nid uf dr Liste isch, löhts üs la wüsse. Mir si immer offe für Innovation.",
     "timeline": {
       "assess": {
-        "title": "Assess",
-        "text":
-          "Perfect match or too good to be true? We help you choose the right partners for your project."
+        "title": "Bewärte",
+        "body":
+          "Di perfekti Wahl oder z guet um wahr z sy? Mir hälfä Öich di richtige Partner für Öies Projekt z finge."
       },
       "transform": {
-        "title": "Transform",
-        "text":
-          "Everyone has a history. Together, we review your existing applications and get them ready for the cloud."
+        "title": "Transformiere",
+        "body":
+          "Jedes Unternähmä het ä Gschicht. Zämä analysiere mr Öii bestehende Applikatione und mache se parat für d Cloud."
       },
       "design": {
-        "title": "Design",
-        "text":
-          "A diagram says more than a thousand words. Let’s structure your business domain and identify crucial concepts."
+        "title": "Designe",
+        "body":
+          "Es Diagramm seit meh aus tuusig Wort. Mir strukturiere öii Gschäftsdomänä und identifiziere d Schlüssukonzept."
       },
       "build": {
-        "title": "Build",
-        "text":
-          "From napkin to code. We help you realize your ideas in lean and cloud-native software."
+        "title": "Umsetze",
+        "body":
+          "Vo dr Serviette zum Source Code. Mîr hälfä Öich bi dr Umsetzig vo öine Ideene als Cloud-basierti Software."
       },
       "run": {
-        "title": "Run",
-        "text":
-          "Zero downtime. Together we continuously deploy your applications and run them at scale."
+        "title": "Betribe",
+        "body":
+          "Ohni Ungerbruch. Zämä deploye mr Öii Applikatione und betribe se hochgradig skaliert."
       },
       "rethink": {
-        "title": "Rethink",
-        "text":
-          "Everything is simple in hindsight. Let’s embrace that fact and take your solution to the next level."
+        "title": "Überdänke",
+        "body":
+          "Im Nachhinein isch alles eifach. Nütze mr di Tatsach und bringe Öii Lösig uf di nächsti Stuefe!"
       }
     }
   },
   "technologies": {
-    "navitem": "Technologies",
-    "title": "Our Technologies",
+    "nav_item": "Technologie",
+    "title": "Üsi Technologie",
     "platforms": {
-      "text":
-        "We are convinced that technology should follow ideas and not the other way around. Together we design and implement architectures based on modern technologies which enable your team to spend more time on delivering business value and less on infrastructure operations. Here's a selection of the <strong>platforms</strong> we are native to:"
+      "body":
+        "Mir si überzügt, dass Ideene d Technologie söue bestimme und nid umgekehrt. Zämä finge mir Lösige uf Basis vo moderne Technologie wo Öiem Team ermögleche meh Zyt mitem Erschaffe vo Mehrwärt z verbringe und weniger mitem Betrib vo Infrastruktur. Hie isch e Uswahl vo <strong>Plattforme</strong> wo mir Experte druff si:"
     },
     "tools": {
-      "text":
-        "Even though we passionately write code, reinventing the wheel is not our game. We know when to use an existing product to solve a problem and we share this knowledge with your team. Here are some of our favorite <strong>tools</strong>:"
+      "body":
+        "Ou wenn mir nüt meh liebe als Code z schribe, isch ds Rad nöi z erfinde nid üses Ding. Mir wüsse, wenns besser isch, es existierends Produkt izsetzä und mir teile das Wüsse mit Öiem Team. Hie si es paar vo üsne liebste <strong>Tools</strong>:"
     }
   },
   "team": {
-    "navitem": "Team",
-    "title": "The Team",
-    "text":
-      "We are cloud-native software engineers with experience in both the corporate and the startup world. We pride ourselves in being expert consultants, competent coaches and seasoned coders at the same time. Interested in meeting us? Feel free to approach us on social media or at a meetup near you!",
+    "nav_item": "Team",
+    "title": "Unser Team",
+    "body":
+      "Mir si Cloud Software Engineers vor erste Stund mit Bruefserfahrig sowohl i Grossungernähmä als ou i Startups. Mir si stolz uf üsi Fähigkeite als kompetänti Berater, iifühlsami Coaches und erfahreni Coder. Interessiert üs z träffä? De chömet eifach ungeniert über Social Media uf üs zue, träffet is amne Meetup ir Nechi oder nützet ds Kontaktformular unge.",
     "member-1": {
       "name": "Gabriel Müller",
       "catchphrase": "Keeper of Simple",
-      "text":
-        "Software Architect specialized in microservices, container technologies and cloud-native engineering"
+      "body":
+        "Softwarearchitekt und Mitgründer. Spezialisert uf Microservices, Containertechnologie and Cloud-Native Engineering."
     },
     "member-2": {
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
-      "text":
-        "Software Engineer specialized in cloud services, distributed systems and web development with modern technologies"
+      "body":
+        "Software Engineer und Mitgründer. Spezialisiert uf Clouddienst, verteilti System und Webentwicklig mit moderne Technologie."
     }
   },
   "contact": {
-    "navitem": "Contact",
-    "title": "Contact Us",
-    "text":
-      "Have a question? Need a quote? Wanna grab a coffee or a beer? Drop us a line and we'll be happy to get back to you as soon as possible!",
+    "nav_item": "Kontakt",
+    "title": "Kontaktieret üs",
+    "body":
+      "Heiter e Frag? Bruuchet dr e Offerte? Oder möchtet dr mal ufnes Kafi oder es Bier verbicho? I jedem Fall fröie mir üs über Öii Kontaktufnahm und mäldä üs so rasch wi möglech bi Öich.",
     "form": {
       "nameplaceholder": "Name",
       "emailplaceholder": "Email",
-      "subjectplaceholder": "Subject",
-      "messageplaceholder": "Message",
-      "sendbuttonlabel": "Send"
+      "subjectplaceholder": "Beträff",
+      "messageplaceholder": "Nachricht",
+      "sendbuttonlabel": "Abschicke"
     }
-  },
-  "subtitle": "Cloud Native Citizens"
+  }
 }

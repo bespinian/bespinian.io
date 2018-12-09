@@ -1,6 +1,6 @@
 # teambespin.io Website
 
-The team be|spin homepage available at <https://teambespin.io>
+The team be\|spin homepage available at <https://teambespin.io>
 
 ## Run locally
 

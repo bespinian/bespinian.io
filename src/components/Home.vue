@@ -8,11 +8,11 @@
       </div>
       <div class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item" href="#mission"> <span>{{ $t('mission.navitem') }}</span> </a>
-          <a class="navbar-item" href="#services"> <span>{{ $t('services.navitem') }}</span> </a>
-          <a class="navbar-item" href="#tech"> <span>{{ $t('technologies.navitem') }}</span> </a>
-          <a class="navbar-item" href="#team"> <span>{{ $t('team.navitem') }}</span> </a>
-          <a class="navbar-item" href="#contact"> <span>{{ $t('contact.navitem') }}</span> </a>
+          <a class="navbar-item" href="#mission"> <span>{{ $t('mission.nav_item') }}</span> </a>
+          <a class="navbar-item" href="#services"> <span>{{ $t('services.nav_item') }}</span> </a>
+          <a class="navbar-item" href="#tech"> <span>{{ $t('technologies.nav_item') }}</span> </a>
+          <a class="navbar-item" href="#team"> <span>{{ $t('team.nav_item') }}</span> </a>
+          <a class="navbar-item" href="#contact"> <span>{{ $t('contact.nav_item') }}</span> </a>
           <LocaleChanger />
         </div>
       </div>
@@ -41,7 +41,7 @@
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('mission.title') }}</h3>
           <p>
-            {{ $t('mission.text') }}
+            {{ $t('mission.body') }}
           </p>
           <div class="content" style="margin-top:4rem;">
             <div class="columns">
@@ -97,7 +97,7 @@
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('services.title') }}</h3>
           <p>
-            {{ $t('services.text') }}
+            {{ $t('services.body') }}
           </p>
           <div class="content" style="margin-top:4rem;">
             <div class="timeline is-centered">
@@ -108,7 +108,7 @@
                 <div class="timeline-content">
                     <p class="heading">{{ $t('services.timeline.assess.title') }}</p>
                   <p>
-                  {{ $t('services.timeline.assess.text') }}
+                  {{ $t('services.timeline.assess.body') }}
                   </p>
                 </div>
               </div>
@@ -119,7 +119,7 @@
                 <div class="timeline-content">
                     <p class="heading">{{ $t('services.timeline.transform.title') }}</p>
                   <p>
-                    {{ $t('services.timeline.transform.text') }}
+                    {{ $t('services.timeline.transform.body') }}
                   </p>
                 </div>
               </div>
@@ -130,7 +130,7 @@
                 <div class="timeline-content">
                     <p class="heading">{{ $t('services.timeline.design.title') }}</p>
                   <p>
-                  {{ $t('services.timeline.design.text') }}
+                  {{ $t('services.timeline.design.body') }}
                   </p>
                 </div>
               </div>
@@ -141,7 +141,7 @@
                 <div class="timeline-content">
                     <p class="heading">{{ $t('services.timeline.build.title') }}</p>
                   <p>
-                    {{ $t('services.timeline.build.text') }}
+                    {{ $t('services.timeline.build.body') }}
                   </p>
                 </div>
               </div>
@@ -152,7 +152,7 @@
                 <div class="timeline-content">
                     <p class="heading">{{ $t('services.timeline.run.title') }}</p>
                   <p>
-                  {{ $t('services.timeline.run.text') }}
+                  {{ $t('services.timeline.run.body') }}
                   </p>
                 </div>
               </div>
@@ -163,7 +163,7 @@
                 <div class="timeline-content">
                     <p class="heading">{{ $t('services.timeline.rethink.title') }}</p>
                   <p>
-                    {{ $t('services.timeline.rethink.text') }}
+                    {{ $t('services.timeline.rethink.body') }}
                   </p>
                 </div>
               </div>
@@ -177,9 +177,7 @@
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('technologies.title') }}</h3>
-          <p>
-          <div v-html="$t('technologies.platforms.text')"></div>
-          </p>
+          <p v-html="$t('technologies.platforms.body')"></p>
           <div class="tile is-ancestor">
             <div class="tile is-parent is-vertical">
               <div class="tile is-parent">
@@ -229,9 +227,7 @@
                   </div>
                 </div>
               </div>
-              <p>
-                <div v-html="$t('technologies.tools.text')"></div>
-              </p>
+                <p v-html="$t('technologies.tools.body')"></p>
               <div class="tile is-parent">
                 <div class="tile is-parent is-vertical">
                   <div class="tile is-parent">
@@ -374,7 +370,7 @@
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('team.title') }}</h3>
           <p>
-          {{ $t('team.text') }}
+          {{ $t('team.body') }}
           </p>
           <div class="content" style="margin-top:4rem;">
             <div class="tile is-ancestor">
@@ -398,7 +394,7 @@
                       </div>
                       <br />
                       <p>
-                        {{ $t('team.member-1.text') }}
+                        {{ $t('team.member-1.body') }}
                       </p>
                     </div>
                     <footer class="card-footer">
@@ -461,7 +457,7 @@
                       <br />
                       <div class="content">
                         <p>
-                        {{ $t('team.member-2.text') }}
+                        {{ $t('team.member-2.body') }}
                         </p>
                       </div>
                     </div>
@@ -517,7 +513,7 @@
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('contact.title') }}</h3>
           <p>
-          {{ $t('contact.text') }}
+          {{ $t('contact.body') }}
           </p>
           <form
             class="content"
@@ -594,7 +590,8 @@ export default {
 </script>
 
 <style>
-.navbar-end .navbar-item {
+.navbar-end .navbar-item,
+.navbar-end .navbar-link {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
