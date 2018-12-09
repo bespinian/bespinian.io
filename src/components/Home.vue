@@ -31,7 +31,7 @@
               <h2 class="subtitle is-4">{{ $t('subtitle') }}</h2>
             </div>
             <div class="column is-offset-4-desktop has-text-centered">
-              <img src="../assets/cloudcity.svg" class="cloud-city" />
+              <img class="cloud-city" src="../assets/cloudcity.svg" alt="Cloud City" />
             </div>
           </div>
         </div>
@@ -41,10 +41,8 @@
     <section id="mission" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-            <h3 class="title is-2 is-spaced">{{ $t('mission.title') }}</h3>
-          <p>
-            {{ $t('mission.body') }}
-          </p>
+          <h3 class="title is-2 is-spaced">{{ $t('mission.title') }}</h3>
+          <p>{{ $t('mission.body') }}</p>
           <div class="content" style="margin-top:4rem;">
             <div class="columns">
               <div
@@ -61,28 +59,28 @@
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
                           ><i class="fas fa-check"></i></span
-                      >{{ $t('mission.solutions.operate') }}
+                        >{{ $t('mission.solutions.operate') }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
                           ><i class="fas fa-check"></i></span
-                      >{{ $t('mission.solutions.adaptable') }}
+                        >{{ $t('mission.solutions.adaptable') }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
                           ><i class="fas fa-check"></i></span
-                      >{{ $t('mission.solutions.scalable') }}
+                        >{{ $t('mission.solutions.scalable') }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
                           ><i class="fas fa-check"></i></span
-                      >{{ $t('mission.solutions.optimized') }}
+                        >{{ $t('mission.solutions.optimized') }}
                       </p>
                     </div>
                   </div>
@@ -97,10 +95,8 @@
     <section id="services" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-            <h3 class="title is-2 is-spaced">{{ $t('services.title') }}</h3>
-          <p>
-            {{ $t('services.body') }}
-          </p>
+          <h3 class="title is-2 is-spaced">{{ $t('services.title') }}</h3>
+          <p>{{ $t('services.body') }}</p>
           <div class="content" style="margin-top:4rem;">
             <div class="timeline is-centered">
               <div class="timeline-item">
@@ -108,10 +104,8 @@
                   <i class="fa fa-clipboard-list"></i>
                 </div>
                 <div class="timeline-content">
-                    <p class="heading">{{ $t('services.timeline.assess.title') }}</p>
-                  <p>
-                  {{ $t('services.timeline.assess.body') }}
-                  </p>
+                  <p class="heading">{{ $t('services.timeline.assess.title') }}</p>
+                  <p>{{ $t('services.timeline.assess.body') }}</p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -119,10 +113,8 @@
                   <i class="fa fa-recycle"></i>
                 </div>
                 <div class="timeline-content">
-                    <p class="heading">{{ $t('services.timeline.transform.title') }}</p>
-                  <p>
-                    {{ $t('services.timeline.transform.body') }}
-                  </p>
+                  <p class="heading">{{ $t('services.timeline.transform.title') }}</p>
+                  <p>{{ $t('services.timeline.transform.body') }}</p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -130,10 +122,8 @@
                   <i class="fa fa-pencil-alt"></i>
                 </div>
                 <div class="timeline-content">
-                    <p class="heading">{{ $t('services.timeline.design.title') }}</p>
-                  <p>
-                  {{ $t('services.timeline.design.body') }}
-                  </p>
+                  <p class="heading">{{ $t('services.timeline.design.title') }}</p>
+                  <p>{{ $t('services.timeline.design.body') }}</p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -141,10 +131,8 @@
                   <i class="fa fa-box"></i>
                 </div>
                 <div class="timeline-content">
-                    <p class="heading">{{ $t('services.timeline.build.title') }}</p>
-                  <p>
-                    {{ $t('services.timeline.build.body') }}
-                  </p>
+                  <p class="heading">{{ $t('services.timeline.build.title') }}</p>
+                  <p>{{ $t('services.timeline.build.body') }}</p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -152,10 +140,8 @@
                   <i class="fa fa-rocket"></i>
                 </div>
                 <div class="timeline-content">
-                    <p class="heading">{{ $t('services.timeline.run.title') }}</p>
-                  <p>
-                  {{ $t('services.timeline.run.body') }}
-                  </p>
+                  <p class="heading">{{ $t('services.timeline.run.title') }}</p>
+                  <p>{{ $t('services.timeline.run.body') }}</p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -163,10 +149,8 @@
                   <i class="fa fa-undo"></i>
                 </div>
                 <div class="timeline-content">
-                    <p class="heading">{{ $t('services.timeline.rethink.title') }}</p>
-                  <p>
-                    {{ $t('services.timeline.rethink.body') }}
-                  </p>
+                  <p class="heading">{{ $t('services.timeline.rethink.title') }}</p>
+                  <p>{{ $t('services.timeline.rethink.body') }}</p>
                 </div>
               </div>
             </div>
@@ -178,187 +162,173 @@
     <section id="tech" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-            <h3 class="title is-2 is-spaced">{{ $t('technologies.title') }}</h3>
+          <h3 class="title is-2 is-spaced">{{ $t('technologies.title') }}</h3>
           <p v-html="$t('technologies.platforms.body')"></p>
           <div class="tile is-ancestor">
-            <div class="tile is-parent is-vertical">
+            <div class="tile is-parent">
+              <div class="tile is-child has-text-centered tech-logo">
+                <figure class="image"><img src="../assets/aws.svg" alt="AWS" /></figure>
+                <br />
+                <a href="https://aws.amazon.com" target="_blank">AWS</a>
+              </div>
+              <div class="tile is-child has-text-centered tech-logo">
+                <figure class="image">
+                  <img src="../assets/openshift.svg" alt="OpenShift" />
+                </figure>
+                <br />
+                <a href="https://www.openshift.com" target="_blank">OpenShift</a>
+              </div>
+              <div class="tile is-child has-text-centered tech-logo">
+                <figure class="image">
+                  <img src="../assets/cloudfoundry.svg" alt="Cloud Foundry" />
+                </figure>
+                <br />
+                <a href="https://www.cloudfoundry.org" target="_blank">Cloud Foundry</a>
+              </div>
+              <div class="tile is-child has-text-centered tech-logo">
+                <figure class="image">
+                  <img src="../assets/kubernetes.svg" alt="Kubernetes" />
+                </figure>
+                <br />
+                <a href="https://kubernetes.io" target="_blank">Kubernetes</a>
+              </div>
+              <div class="tile is-child has-text-centered tech-logo">
+                <figure class="image">
+                  <img src="../assets/docker.svg" alt="Docker" />
+                </figure>
+                <br />
+                <a href="https://www.docker.com" target="_blank">Docker</a>
+              </div>
+            </div>
+          </div>
+          <p v-html="$t('technologies.tools.body')"></p>
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical">
               <div class="tile is-parent">
-                <div class="tile is-parent is-vertical">
-                  <div class="tile is-parent">
-                    <div class="tile is-child tech-logo has-text-centered">
-                      <figure class="image"><img src="../assets/aws.svg" /></figure>
-                      <br />
-                      <a href="https://aws.amazon.com" target="_blank">AWS</a>
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/openshift.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://www.openshift.com" target="_blank"
-                        >OpenShift</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/cloudfoundry.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://www.cloudfoundry.org" target="_blank"
-                        >Cloud Foundry</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/kubernetes.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://kubernetes.io" target="_blank"
-                        >Kubernetes</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/docker.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://www.docker.com" target="_blank"
-                        >Docker</a
-                      >
-                    </div>
-                  </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/golang.svg" alt="Go" />
+                  </figure>
+                  <br />
+                  <a href="https://golang.org" target="_blank">Go</a>
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/nodejs.svg" alt="Node.js" />
+                  </figure>
+                  <br />
+                  <a href="https://nodejs.org" target="_blank">Node.js</a>
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/springboot.svg" alt="Spring Boot" />
+                  </figure>
+                  <br />
+                  <a
+                    href="https://spring.io/projects/spring-boot"
+                    target="_blank"
+                    >Spring Boot</a
+                  >
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image"><img src="../assets/react.svg" alt="React" /></figure>
+                  <br />
+                  <a href="https://reactjs.org" target="_blank">React</a>
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/graphql.svg" alt="GraphQL" />
+                  </figure>
+                  <br />
+                  <a href="https://graphql.org" target="_blank">GraphQL</a>
                 </div>
               </div>
-                <p v-html="$t('technologies.tools.body')"></p>
               <div class="tile is-parent">
-                <div class="tile is-parent is-vertical">
-                  <div class="tile is-parent">
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/golang.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://golang.org" target="_blank">Go</a>
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/nodejs.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://nodejs.org" target="_blank">Node.js</a>
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/springboot.svg" />
-                      </figure>
-                      <br />
-                      <a
-                        href="https://spring.io/projects/spring-boot"
-                        target="_blank"
-                        >Spring Boot</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image"><img src="../assets/react.svg" /></figure>
-                      <br />
-                      <a href="https://reactjs.org" target="_blank">React</a>
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/graphql.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://graphql.org" target="_blank">GraphQL</a>
-                    </div>
-                  </div>
-                  <div class="tile is-parent">
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/terraform.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://www.terraform.io" target="_blank"
-                        >Terraform</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/concourse.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://concourse-ci.org" target="_blank"
-                        >Concourse</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/jenkins.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://jenkins.io" target="_blank">Jenkins</a>
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/rabbitmq.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://www.rabbitmq.com" target="_blank"
-                        >RabbitMQ</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image"><img src="../assets/kafka.svg" /></figure>
-                      <br />
-                      <a href="https://kafka.apache.org" target="_blank"
-                        >Kafka</a
-                      >
-                    </div>
-                  </div>
-                  <div class="tile is-parent">
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image"><img src="../assets/redis.svg" /></figure>
-                      <br />
-                      <a href="https://redis.io" target="_blank">Redis</a>
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/elasticsearch.svg" />
-                      </figure>
-                      <br />
-                      <a
-                        href="https://www.elastic.co/products/elasticsearch"
-                        target="_blank"
-                        >Elasticsearch</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/mongodb.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://www.mongodb.com" target="_blank"
-                        >MongoDB</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/postgresql.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://www.postgresql.org" target="_blank"
-                        >PostgreSQL</a
-                      >
-                    </div>
-                    <div class="tile is-child has-text-centered tech-logo">
-                      <figure class="image">
-                        <img src="../assets/dynamodb.svg" />
-                      </figure>
-                      <br />
-                      <a href="https://aws.amazon.com/dynamodb" target="_blank"
-                        >DynamoDB</a
-                      >
-                    </div>
-                  </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/terraform.svg" alt="Terraform" />
+                  </figure>
+                  <br />
+                  <a href="https://www.terraform.io" target="_blank"
+                    >Terraform</a
+                  >
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/concourse.svg" alt="Concourse" />
+                  </figure>
+                  <br />
+                  <a href="https://concourse-ci.org" target="_blank"
+                    >Concourse</a
+                  >
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/jenkins.svg" alt="Jenkins" />
+                  </figure>
+                  <br />
+                  <a href="https://jenkins.io" target="_blank">Jenkins</a>
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/rabbitmq.svg" alt="RabbitMQ" />
+                  </figure>
+                  <br />
+                  <a href="https://www.rabbitmq.com" target="_blank"
+                    >RabbitMQ</a
+                  >
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image"><img src="../assets/kafka.svg" alt="Kafka" /></figure>
+                  <br />
+                  <a href="https://kafka.apache.org" target="_blank"
+                    >Kafka</a
+                  >
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image"><img src="../assets/redis.svg" alt="Redis" /></figure>
+                  <br />
+                  <a href="https://redis.io" target="_blank">Redis</a>
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/elasticsearch.svg" alt="Elasticsearch" />
+                  </figure>
+                  <br />
+                  <a
+                    href="https://www.elastic.co/products/elasticsearch"
+                    target="_blank"
+                    >Elasticsearch</a
+                  >
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/mongodb.svg" alt="MongoDB" />
+                  </figure>
+                  <br />
+                  <a href="https://www.mongodb.com" target="_blank"
+                    >MongoDB</a
+                  >
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/postgresql.svg" alt="PostgreSQL" />
+                  </figure>
+                  <br />
+                  <a href="https://www.postgresql.org" target="_blank"
+                    >PostgreSQL</a
+                  >
+                </div>
+                <div class="tile is-child has-text-centered tech-logo">
+                  <figure class="image">
+                    <img src="../assets/dynamodb.svg" alt="DynamoDB" />
+                  </figure>
+                  <br />
+                  <a href="https://aws.amazon.com/dynamodb" target="_blank"
+                    >DynamoDB</a
+                  >
                 </div>
               </div>
             </div>
@@ -370,10 +340,8 @@
     <section id="team" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-            <h3 class="title is-2 is-spaced">{{ $t('team.title') }}</h3>
-          <p>
-          {{ $t('team.body') }}
-          </p>
+          <h3 class="title is-2 is-spaced">{{ $t('team.title') }}</h3>
+          <p>{{ $t('team.body') }}</p>
           <div class="content" style="margin-top:4rem;">
             <div class="tile is-ancestor">
               <div class="tile is-parent">
@@ -586,7 +554,7 @@
 import LocaleChanger from "./LocaleChanger.vue";
 
 export default {
-  name: "Teambespin",
+  name: "Home",
   components: {
     LocaleChanger
   }
@@ -594,10 +562,14 @@ export default {
 </script>
 
 <style>
-.navbar-end .navbar-item,
-.navbar-end .navbar-link {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+.navbar-end .navbar-item {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.navbar-end .navbar-item.has-dropdown {
+  padding-left: 1rem !important;
+  padding-right: 0.5rem !important;
 }
 
 .cloud-city {
@@ -613,6 +585,11 @@ export default {
 
 .tech-logo {
   padding: 5%;
+  max-width: 30vw;
+}
+
+.tile.is-child.tech-logo {
+  margin: 0 auto !important;
 }
 
 .card {
