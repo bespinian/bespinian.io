@@ -1,5 +1,5 @@
 <template>
-  <div id="locale-changer" class="navbar-item has-dropdown is-hoverable" style="margin-right:0.5rem">
+  <div class="navbar-item has-dropdown is-hoverable">
     <a class="navbar-link">{{ langs[$i18n.locale] }}</a>
     <div class="navbar-dropdown">
       <a class="navbar-item" v-for="(val, key) in langs" v-on:click="$i18n.locale = key" v-bind:key="key" >
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "locale-changer",
+  name: "LocaleChanger",
   data() {
     return {
       langs: {
