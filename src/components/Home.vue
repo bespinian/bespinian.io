@@ -1,12 +1,14 @@
 <template>
   <div id="home">
-    <nav class="navbar is-link is-fixed-top">
+    <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main-navigation">
       <div class="navbar-brand">
-        <div class="navbar-burger burger">
-          <span></span> <span></span> <span></span>
-        </div>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="navbar-menu">
+      <div id="navbar-menu" class="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item" href="#mission"> <span>{{ $t('mission.nav_item') }}</span> </a>
           <a class="navbar-item" href="#services"> <span>{{ $t('services.nav_item') }}</span> </a>
@@ -36,7 +38,7 @@
       </div>
     </section>
 
-    <section class="section" id="mission">
+    <section id="mission" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('mission.title') }}</h3>
@@ -92,7 +94,7 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section id="services" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('services.title') }}</h3>
@@ -173,7 +175,7 @@
       </div>
     </section>
 
-    <section class="section" id="tech">
+    <section id="tech" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('technologies.title') }}</h3>
@@ -365,7 +367,7 @@
       </div>
     </section>
 
-    <section class="section" id="team">
+    <section id="team" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
             <h3 class="title is-2 is-spaced">{{ $t('team.title') }}</h3>
@@ -384,18 +386,19 @@
                             <img
                               class="is-rounded"
                               src="../assets/gopher.png"
+                              alt="Gabriel Müller"
                             />
                           </figure>
                         </div>
                         <div class="media-content">
-                            <p class="title is-4">{{ $t('team.member-1.name') }}</p>
-                            <p class="subtitle is-6">{{ $t('team.member-1.catchphrase') }}</p>
+                          <p class="title is-4">{{ $t('team.member-1.name') }}</p>
+                          <p class="subtitle is-6">{{ $t('team.member-1.catchphrase') }}</p>
                         </div>
                       </div>
                       <br />
-                      <p>
+                      <div class="content">
                         {{ $t('team.member-1.body') }}
-                      </p>
+                      </div>
                     </div>
                     <footer class="card-footer">
                       <a
@@ -446,19 +449,18 @@
                             <img
                               class="is-rounded"
                               src="https://pbs.twimg.com/profile_images/928975001105166336/dhnwx8fA_400x400.jpg"
+                              alt="Tobi Fuhrimann"
                             />
                           </figure>
                         </div>
                         <div class="media-content">
-                            <p class="title is-4">{{ $t('team.member-2.name') }}</p>
-                            <p class="subtitle is-6">{{ $t('team.member-2.catchphrase') }}</p>
+                          <p class="title is-4">{{ $t('team.member-2.name') }}</p>
+                          <p class="subtitle is-6">{{ $t('team.member-2.catchphrase') }}</p>
                         </div>
                       </div>
                       <br />
                       <div class="content">
-                        <p>
                         {{ $t('team.member-2.body') }}
-                        </p>
                       </div>
                     </div>
                     <footer class="card-footer">
@@ -508,12 +510,12 @@
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section id="contact" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
-            <h3 class="title is-2 is-spaced">{{ $t('contact.title') }}</h3>
+          <h3 class="title is-2 is-spaced">{{ $t('contact.title') }}</h3>
           <p>
-          {{ $t('contact.body') }}
+            {{ $t('contact.body') }}
           </p>
           <form
             class="content"
@@ -551,18 +553,20 @@
               </p>
             </div>
             <div class="field">
-              <textarea
-                class="textarea"
-                name="message"
-                :placeholder="$t('contact.form.messageplaceholder')"
-                rows="8"
-              ></textarea>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  name="message"
+                  :placeholder="$t('contact.form.messageplaceholder')"
+                  rows="8"
+                ></textarea>
+              </div>
             </div>
             <div class="field">
               <input
                 type="submit"
-                :value="$t('contact.form.sendbuttonlabel')"
                 class="button is-link is-fullwidth"
+                :value="$t('contact.form.sendbuttonlabel')"
               />
             </div>
           </form>
