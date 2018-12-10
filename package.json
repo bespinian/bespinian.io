@@ -5,13 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:docker": "docker build . -t teambespin.io"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.6.0",
     "bulma": "^0.7.2",
     "bulma-timeline": "^3.0.0",
-    "vue": "^2.5.18",
+    "vue": "^2.5.20",
     "vue-i18n": "^8.0.0"
   },
   "devDependencies": {
@@ -23,7 +24,7 @@
     "eslint": "^5.10.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-cli-plugin-i18n": "^0.5.1",
-    "vue-template-compiler": "^2.5.18"
+    "vue-template-compiler": "^2.5.20"
   },
   "eslintConfig": {
     "root": true,

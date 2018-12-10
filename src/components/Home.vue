@@ -164,6 +164,7 @@
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t('technologies.title') }}</h3>
           <p v-html="$t('technologies.platforms.body')"></p>
+          <br />
           <div class="tile is-ancestor">
             <div class="tile is-parent">
               <div class="tile is-child has-text-centered tech-logo">
@@ -202,6 +203,7 @@
             </div>
           </div>
           <p v-html="$t('technologies.tools.body')"></p>
+          <br />
           <div class="tile is-ancestor">
             <div class="tile is-vertical">
               <div class="tile is-parent">
@@ -574,6 +576,7 @@ export default {
 
 .cloud-city {
   width: 26rem;
+  max-width: 50vw;
 }
 
 @media only screen and (max-width: 456px) {
