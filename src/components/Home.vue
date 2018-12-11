@@ -10,11 +10,11 @@
       </div>
       <div id="navbar-menu" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item" href="#mission"> <span>{{ $t('mission.nav_item') }}</span> </a>
-          <a class="navbar-item" href="#services"> <span>{{ $t('services.nav_item') }}</span> </a>
-          <a class="navbar-item" href="#tech"> <span>{{ $t('technologies.nav_item') }}</span> </a>
-          <a class="navbar-item" href="#team"> <span>{{ $t('team.nav_item') }}</span> </a>
-          <a class="navbar-item" href="#contact"> <span>{{ $t('contact.nav_item') }}</span> </a>
+          <a class="navbar-item" href="#" v-scroll-to="'#mission'">{{ $t('mission.nav_item') }}</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#services'">{{ $t('services.nav_item') }}</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#tech'">{{ $t('technologies.nav_item') }}</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#team'">{{ $t('team.nav_item') }}</a>
+          <a class="navbar-item" href="#" v-scroll-to="'#contact'">{{ $t('contact.nav_item') }}</a>
           <LocaleChanger />
         </div>
       </div>
