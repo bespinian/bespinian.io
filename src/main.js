@@ -4,6 +4,7 @@ import "./../node_modules/bulma/css/bulma.css";
 import "./../node_modules/bulma-timeline/dist/css/bulma-timeline.min.css";
 import "./../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import i18n from "./i18n";
+import VueScrollTo from "vue-scrollto";
 
 // navbar burger
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+Vue.use(VueScrollTo, { offset: -30 });
 
 Vue.config.productionTip = false;
 
