@@ -1,9 +1,6 @@
 FROM node:current as builder
 WORKDIR /usr/src/teambespin.io
-COPY package*.json ./
-COPY public public/
-COPY src src/
-COPY *.js ./
+COPY . ./
 RUN npm ci
 RUN npm run build
 
