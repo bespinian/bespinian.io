@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueI18n from "vue-i18n";
+import { LocaleResolver, DETECTORS, TRANSFORMERS } from "locales-detector";
 
 Vue.use(VueI18n);
 
@@ -20,8 +21,28 @@ function loadLocaleMessages() {
   return messages;
 }
 
+function resolveLocale() {
+  const transformers = [
+    new TRANSFORMERS.FallbacksTransformer(),
+    new TRANSFORMERS.IETFTransformer(),
+    new TRANSFORMERS.InvalidLocalesTransformer(),
+    new TRANSFORMERS.LanguageOnlyTransformer()
+  ];
+  var urlLocales = new LocaleResolver(
+    [new DETECTORS.UrlDetector("lang")],
+    transformers
+  );
+  var navigatorLocales = new LocaleResolver(
+    [new DETECTORS.NavigatorDetector()],
+    transformers
+  );
+  return urlLocales.getLocales().length > 0
+    ? urlLocales.getLocales()[0]
+    : navigatorLocales.getLocales()[0];
+}
+
 export default new VueI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE || "en",
+  locale: resolveLocale(),
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en",
   messages: loadLocaleMessages()
 });
