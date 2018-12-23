@@ -11,7 +11,7 @@
 
 <script>
 import store from "store";
-
+import {localeStorageKey} from "../i18n";
 export default {
   name: "LocaleChanger",
   data() {
@@ -26,7 +26,7 @@ export default {
   methods :{
     handleLocaleChange : function(key) {
       this.$i18n.locale = key;
-      store.set('locale:teambespin', key);
+      store.set(localeStorageKey, key);
     }
   }
 };
