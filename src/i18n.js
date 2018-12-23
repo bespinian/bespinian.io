@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueI18n from "vue-i18n";
 import { LocaleResolver, DETECTORS, TRANSFORMERS } from "locales-detector";
+import store from "store";
 
 Vue.use(VueI18n);
 
@@ -21,6 +22,14 @@ function loadLocaleMessages() {
   return messages;
 }
 
+class StoredLocaleDetector {
+  getLocales() {
+    return store.get("locale:teambespin")
+      ? [store.get("locale:teambespin")]
+      : [];
+  }
+}
+
 function resolveLocale() {
   const transformers = [
     new TRANSFORMERS.FallbacksTransformer(),
@@ -32,13 +41,21 @@ function resolveLocale() {
     [new DETECTORS.UrlDetector("lang")],
     transformers
   );
+  var storedLocales = new LocaleResolver(
+    [new StoredLocaleDetector()],
+    transformers
+  );
   var navigatorLocales = new LocaleResolver(
     [new DETECTORS.NavigatorDetector()],
     transformers
   );
-  return urlLocales.getLocales().length > 0
-    ? urlLocales.getLocales()[0]
-    : navigatorLocales.getLocales()[0];
+  if (urlLocales.getLocales().length > 0) {
+    return urlLocales.getLocales()[0];
+  } else if (storedLocales.getLocales().length > 0) {
+    return storedLocales.getLocales()[0];
+  } else {
+    return navigatorLocales.getLocales()[0];
+  }
 }
 
 export default new VueI18n({
