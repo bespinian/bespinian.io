@@ -22,11 +22,11 @@ function loadLocaleMessages() {
   return messages;
 }
 
+export const localeStorageKey = "locale:teambespin";
+
 class StoredLocaleDetector {
   getLocales() {
-    return store.get("locale:teambespin")
-      ? [store.get("locale:teambespin")]
-      : [];
+    return store.get(localeStorageKey) ? [store.get(localeStorageKey)] : [];
   }
 }
 
