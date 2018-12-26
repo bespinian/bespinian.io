@@ -2,13 +2,13 @@
   <div id="home">
     <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main-navigation">
       <div class="navbar-brand">
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu" v-on:click="toggleNav()" v-bind:class="{ 'is-active' : showNav }">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbar-menu" class="navbar-menu">
+      <div id="navbar-menu" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }" v-on:click="toggleNav()">
         <div class="navbar-end">
           <a class="navbar-item" href="#" v-scroll-to="'#mission'">{{ $t('mission.nav_item') }}</a>
           <a class="navbar-item" href="#" v-scroll-to="'#services'">{{ $t('services.nav_item') }}</a>
@@ -559,6 +559,16 @@ export default {
   name: "Home",
   components: {
     LocaleChanger
+  },
+  data() {
+    return {
+      showNav: false
+    }
+  },
+  methods: {
+    toggleNav() {
+      this.showNav = !this.showNav
+    }
   }
 };
 </script>
