@@ -1,5 +1,7 @@
 import Vue from "vue";
 import VueI18n from "vue-i18n";
+import { LocaleResolver, DETECTORS, TRANSFORMERS } from "locales-detector";
+import store from "store";
 
 Vue.use(VueI18n);
 
@@ -20,8 +22,44 @@ function loadLocaleMessages() {
   return messages;
 }
 
+export const localeStorageKey = "locale:teambespin";
+
+class StoredLocaleDetector {
+  getLocales() {
+    return store.get(localeStorageKey) ? [store.get(localeStorageKey)] : [];
+  }
+}
+
+function resolveLocale() {
+  const transformers = [
+    new TRANSFORMERS.FallbacksTransformer(),
+    new TRANSFORMERS.IETFTransformer(),
+    new TRANSFORMERS.InvalidLocalesTransformer(),
+    new TRANSFORMERS.LanguageOnlyTransformer()
+  ];
+  const urlLocales = new LocaleResolver(
+    [new DETECTORS.UrlDetector("lang")],
+    transformers
+  );
+  const storedLocales = new LocaleResolver(
+    [new StoredLocaleDetector()],
+    transformers
+  );
+  const navigatorLocales = new LocaleResolver(
+    [new DETECTORS.NavigatorDetector()],
+    transformers
+  );
+  if (urlLocales.getLocales().length > 0) {
+    return urlLocales.getLocales()[0];
+  }
+  if (storedLocales.getLocales().length > 0) {
+    return storedLocales.getLocales()[0];
+  }
+  return navigatorLocales.getLocales()[0];
+}
+
 export default new VueI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE || "en",
+  locale: resolveLocale(),
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en",
   messages: loadLocaleMessages()
 });
