@@ -3,8 +3,7 @@
   "mission": {
     "nav_item": "Mission",
     "title": "Üsi Mission",
-    "body":
-      "Mir vo team be|spin liebe Software. Bsunders, wenn si eifach und effiziänt isch und ihri Aforderige erfüllt. Grossartigi Software wird vo grossartige Teams gschribe. Us däm Grund boue aui üsi Dienstleistige uf ere änge Zämearbeit mit Öiem Team uf. Mir füehle üs deheim uf private, hybride und public Clouds. Das macht üs zum ideale Partner für Öies Ungernähmä bim Kreiere vo erstklassige Cloud-basierte Lösige.",
+    "body": "Mir vo team be|spin liebe Software. Bsunders, wenn si eifach und effiziänt isch und ihri Aforderige erfüllt. Grossartigi Software wird vo grossartige Teams gschribe. Us däm Grund boue aui üsi Dienstleistige uf ere änge Zämearbeit mit Öiem Team uf. Mir füehle üs deheim uf private, hybride und public Clouds. Das macht üs zum ideale Partner für Öies Ungernähmä bim Kreiere vo erstklassige Cloud-basierte Lösige.",
     "solutions": {
       "title": "D Lösige, wo mir zämä kreiere si",
       "operate": "eifach z betribe",
@@ -16,38 +15,31 @@
   "services": {
     "nav_item": "Dienstleistige",
     "title": "Üsi Dienstleistige",
-    "body":
-      "Egal, öb Dir es nöis Vorhabe aföht, e bestehendi Idee überarbeitet oder Öii bestehende Applikatione tranformieret, mir begleite Öies Team hands-on, i jedere Iteration vo Öiem Projekt. Hie si es paar vo de Dienstleistige wo mir abiete. Wenn Dir öppis suechet, wo nid uf dr Liste isch, löhts üs la wüsse. Mir si immer offe für Innovation.",
+    "body": "Egal, öb Dir es nöis Vorhabe aföht, e bestehendi Idee überarbeitet oder Öii bestehende Applikatione tranformieret, mir begleite Öies Team hands-on, i jedere Iteration vo Öiem Projekt. Hie si es paar vo de Dienstleistige wo mir abiete. Wenn Dir öppis suechet, wo nid uf dr Liste isch, löhts üs la wüsse. Mir si immer offe für Innovation.",
     "timeline": {
       "assess": {
         "title": "Bewärte",
-        "body":
-          "Di perfekti Wahl oder z guet um wahr z sy? Mir hälfä Öich di richtige Partner für Öies Projekt z finge."
+        "body": "Di perfekti Wahl oder z guet um wahr z sy? Mir hälfä Öich di richtige Partner für Öies Projekt z finge."
       },
       "transform": {
         "title": "Transformiere",
-        "body":
-          "Jedes Unternähmä het ä Gschicht. Zämä analysiere mr Öii bestehende Applikatione und mache se parat für d Cloud."
+        "body": "Jedes Unternähmä het ä Gschicht. Zämä analysiere mr Öii bestehende Applikatione und mache se parat für d Cloud."
       },
       "design": {
         "title": "Designe",
-        "body":
-          "Es Diagramm seit meh aus tuusig Wort. Mir strukturiere Öii Gschäftsdomänä und identifiziere d Schlüssukonzept."
+        "body": "Es Diagramm seit meh aus tuusig Wort. Mir strukturiere Öii Gschäftsdomänä und identifiziere d Schlüssukonzept."
       },
       "build": {
         "title": "Umsetze",
-        "body":
-          "Vo dr Serviette zum Source Code. Mir hälfä Öich bi dr Umsetzig vo öine Ideene als Cloud-basierti Software."
+        "body": "Vo dr Serviette zum Source Code. Mir hälfä Öich bi dr Umsetzig vo öine Ideene als Cloud-basierti Software."
       },
       "run": {
         "title": "Betribe",
-        "body":
-          "Ohni Ungerbruch. Zämä deploye mr Öii Applikatione und betribe se hochgradig skaliert."
+        "body": "Ohni Ungerbruch. Zämä deploye mr Öii Applikatione und betribe se hochgradig skaliert."
       },
       "rethink": {
         "title": "Überdänke",
-        "body":
-          "Im Nachhinein isch alles eifach. Nütze mr di Tatsach und bringe Öii Lösig uf di nächsti Stuefe!"
+        "body": "Im Nachhinein isch alles eifach. Nütze mr di Tatsach und bringe Öii Lösig uf di nächsti Stuefe!"
       }
     }
   },
@@ -55,37 +47,31 @@
     "nav_item": "Technologie",
     "title": "Üsi Technologie",
     "platforms": {
-      "body":
-        "Mir si überzügt, dass Ideene d Technologie söue bestimme und nid umgekehrt. Zämä finge mir Lösige uf Basis vo moderne Technologie wo Öiem Team ermögleche meh Zyt mitem Erschaffe vo Mehrwärt z verbringe und weniger mitem Betrib vo Infrastruktur. Hie isch e Uswahl vo <strong>Plattforme</strong> wo mir Experte druf si:"
+      "body": "Mir si überzügt, dass Ideene d Technologie söue bestimme und nid umgekehrt. Zämä finge mir Lösige uf Basis vo moderne Technologie wo Öiem Team ermögleche meh Zyt mitem Erschaffe vo Mehrwärt z verbringe und weniger mitem Betrib vo Infrastruktur. Hie isch e Uswahl vo <strong>Plattforme</strong> wo mir Experte druf si:"
     },
     "tools": {
-      "body":
-        "Ou wenn mir nüt meh liebe als Code z schribe, isch ds Rad nöi z erfinde nid üses Ding. Mir wüsse, wenns besser isch, es existierends Produkt izsetzä und mir teile das Wüsse mit Öiem Team. Hie si es paar vo üsne liebste <strong>Tools</strong>:"
+      "body": "Ou wenn mir nüt meh liebe als Code z schribe, isch ds Rad nöi z erfinde nid üses Ding. Mir wüsse, wenns besser isch, es existierends Produkt izsetzä und mir teile das Wüsse mit Öiem Team. Hie si es paar vo üsne liebste <strong>Tools</strong>:"
     }
   },
   "team": {
     "nav_item": "Team",
     "title": "Üses Team",
-    "body":
-      "Mir si Cloud Software Engineers vor erste Stund mit Bruefserfahrig sowohl i Grossungernähmä als ou i Startups. Mir si stolz uf üsi Fähigkeite als kompetänti Berater, iifühlsami Coaches und erfahreni Coder. Interessiert üs z träffä? De chömet eifach ungeniert über Social Media uf üs zue, träffet is amne Meetup ir Nechi oder nützet ds Kontaktformular unge.",
+    "body": "Mir si Cloud Software Engineers vor erste Stund mit Bruefserfahrig sowohl i Grossungernähmä als ou i Startups. Mir si stolz uf üsi Fähigkeite als kompetänti Berater, iifühlsami Coaches und erfahreni Coder. Interessiert üs z träffä? De chömet eifach ungeniert über Social Media uf üs zue, träffet is amne Meetup ir Nechi oder nützet ds Kontaktformular unge.",
     "member-1": {
       "name": "Gabriel Müller",
       "catchphrase": "Keeper of Simple",
-      "body":
-        "Softwarearchitekt und Mitgründer. Spezialisert uf Microservices, Containertechnologie and Cloud-Native Engineering."
+      "body": "Softwarearchitekt und Mitgründer. Spezialisert uf Microservices, Containertechnologie and Cloud-Native Engineering."
     },
     "member-2": {
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
-      "body":
-        "Software Engineer und Mitgründer. Spezialisiert uf Clouddienst, verteilti System und Webentwicklig mit moderne Technologie."
+      "body": "Software Engineer und Mitgründer. Spezialisiert uf Clouddienst, verteilti System und Webentwicklig mit moderne Technologie."
     }
   },
   "contact": {
     "nav_item": "Kontakt",
     "title": "Kontaktieret üs",
-    "body":
-      "Heiter e Frag? Bruuchet dr e Offerte? Oder möchtet dr mal ufnes Kafi oder es Bier verbicho? I jedem Fall fröie mir üs über Öii Kontaktufnahm und mäldä üs so rasch wi möglech bi Öich.",
+    "body": "Heiter e Frag? Bruuchet dr e Offerte? Oder möchtet dr mal ufnes Kafi oder es Bier verbicho? I jedem Fall fröie mir üs über Öii Kontaktufnahm und mäldä üs so rasch wi möglech bi Öich.",
     "form": {
       "nameplaceholder": "Name",
       "emailplaceholder": "Email",

@@ -3,8 +3,7 @@
   "mission": {
     "nav_item": "Mission",
     "title": "Our Mission",
-    "body":
-      "At team be|spin we love software. Especially if it's simple, efficient and spot on the requirements. Awesome software is made by awesome teams. That's why all of our services are focused on close collaboration with your team. Also, we feel at home in private, hybrid and public clouds. That makes us your ideal partner for creating great cloud-native solutions.",
+    "body": "At team be|spin we love software. Especially if it's simple, efficient and spot on the requirements. Awesome software is made by awesome teams. That's why all of our services are focused on close collaboration with your team. Also, we feel at home in private, hybrid and public clouds. That makes us your ideal partner for creating great cloud-native solutions.",
     "solutions": {
       "title": "Together, we create solutions which are",
       "operate": "easy to operate",
@@ -16,38 +15,31 @@
   "services": {
     "nav_item": "Services",
     "title": "Our Services",
-    "body":
-      "No matter whether you are embarking on a new endeavour, reworking an idea or transforming your existing applications, we work hands-on with your team in every iteration of your project. Here are some of the services we offer. If what you require is not on the list, let us know. We're always happy to innovate.",
+    "body": "No matter whether you are embarking on a new endeavour, reworking an idea or transforming your existing applications, we work hands-on with your team in every iteration of your project. Here are some of the services we offer. If what you require is not on the list, let us know. We're always happy to innovate.",
     "timeline": {
       "assess": {
         "title": "Assess",
-        "body":
-          "Perfect match or too good to be true? We help you choose the right partners for your project."
+        "body": "Perfect match or too good to be true? We help you choose the right partners for your project."
       },
       "transform": {
         "title": "Transform",
-        "body":
-          "Everyone has a history. Together, we review your existing applications and get them ready for the cloud."
+        "body": "Everyone has a history. Together, we review your existing applications and get them ready for the cloud."
       },
       "design": {
         "title": "Design",
-        "body":
-          "A diagram says more than a thousand words. Let’s structure your business domain and identify crucial concepts."
+        "body": "A diagram says more than a thousand words. Let’s structure your business domain and identify crucial concepts."
       },
       "build": {
         "title": "Build",
-        "body":
-          "From napkin to code. We help you realize your ideas in lean and cloud-native software."
+        "body": "From napkin to code. We help you realize your ideas in lean and cloud-native software."
       },
       "run": {
         "title": "Run",
-        "body":
-          "Zero downtime. Together we continuously deploy your applications and run them at scale."
+        "body": "Zero downtime. Together we continuously deploy your applications and run them at scale."
       },
       "rethink": {
         "title": "Rethink",
-        "body":
-          "Everything is simple in hindsight. Let’s embrace that fact and take your solution to the next level!"
+        "body": "Everything is simple in hindsight. Let’s embrace that fact and take your solution to the next level!"
       }
     }
   },
@@ -55,37 +47,31 @@
     "nav_item": "Technologies",
     "title": "Our Technologies",
     "platforms": {
-      "body":
-        "We are convinced that technology should follow ideas and not the other way around. Together we design and implement architectures based on modern technologies which enable your team to spend more time on delivering business value and less on infrastructure operations. Here's a selection of the <strong>platforms</strong> we are native to:"
+      "body": "We are convinced that technology should follow ideas and not the other way around. Together we design and implement architectures based on modern technologies which enable your team to spend more time on delivering business value and less on infrastructure operations. Here's a selection of the <strong>platforms</strong> we are native to:"
     },
     "tools": {
-      "body":
-        "Even though we passionately write code, reinventing the wheel is not our game. We know when to use an existing product to solve a problem and we share this knowledge with your team. Here are some of our favorite <strong>tools</strong>:"
+      "body": "Even though we passionately write code, reinventing the wheel is not our game. We know when to use an existing product to solve a problem and we share this knowledge with your team. Here are some of our favorite <strong>tools</strong>:"
     }
   },
   "team": {
     "nav_item": "Team",
     "title": "The Team",
-    "body":
-      "We are cloud-native software engineers with experience in both the corporate and the startup world. We pride ourselves in being expert consultants, competent coaches and seasoned coders at the same time. Interested in meeting us? Feel free to approach us on social media or at a meetup near you.",
+    "body": "We are cloud-native software engineers with experience in both the corporate and the startup world. We pride ourselves in being expert consultants, competent coaches and seasoned coders at the same time. Interested in meeting us? Feel free to approach us on social media or at a meetup near you.",
     "member-1": {
       "name": "Gabriel Müller",
       "catchphrase": "Keeper of Simple",
-      "body":
-        "Software Architect and co-founder. Specialized in microservices, container technologies and cloud-native engineering."
+      "body": "Software Architect and co-founder. Specialized in microservices, container technologies and cloud-native engineering."
     },
     "member-2": {
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
-      "body":
-        "Software Engineer and co-founder. Specialized in cloud services, distributed systems and web development with modern technologies."
+      "body": "Software Engineer and co-founder. Specialized in cloud services, distributed systems and web development with modern technologies."
     }
   },
   "contact": {
     "nav_item": "Contact",
     "title": "Contact Us",
-    "body":
-      "Have a question? Need a quote? Wanna grab a coffee or a beer? Drop us a line and we'll be happy to get back to you as soon as possible.",
+    "body": "Have a question? Need a quote? Wanna grab a coffee or a beer? Drop us a line and we'll be happy to get back to you as soon as possible.",
     "form": {
       "nameplaceholder": "Name",
       "emailplaceholder": "Email",
