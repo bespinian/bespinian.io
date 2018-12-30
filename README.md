@@ -1,13 +1,37 @@
-# teambespin.io Website
+# teambespin.io
 
 The team be\|spin homepage available at <https://teambespin.io>
 
-## Run locally
+## Project setup
 
-1.  Run `npm install`
-1.  Run `npm run serve`
+```
+npm install
+```
 
-## Build
+### Compiles and hot-reloads for development
 
-1.  Run `npm install`
-1.  Run `npm run build`
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Run your tests
+
+```
+npm run test
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
