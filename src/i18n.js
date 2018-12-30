@@ -37,25 +37,25 @@ function resolveLocale() {
     new TRANSFORMERS.InvalidLocalesTransformer(),
     new TRANSFORMERS.LanguageOnlyTransformer()
   ];
-  var urlLocales = new LocaleResolver(
+  const urlLocales = new LocaleResolver(
     [new DETECTORS.UrlDetector("lang")],
     transformers
   );
-  var storedLocales = new LocaleResolver(
+  const storedLocales = new LocaleResolver(
     [new StoredLocaleDetector()],
     transformers
   );
-  var navigatorLocales = new LocaleResolver(
+  const navigatorLocales = new LocaleResolver(
     [new DETECTORS.NavigatorDetector()],
     transformers
   );
   if (urlLocales.getLocales().length > 0) {
     return urlLocales.getLocales()[0];
-  } else if (storedLocales.getLocales().length > 0) {
-    return storedLocales.getLocales()[0];
-  } else {
-    return navigatorLocales.getLocales()[0];
   }
+  if (storedLocales.getLocales().length > 0) {
+    return storedLocales.getLocales()[0];
+  }
+  return navigatorLocales.getLocales()[0];
 }
 
 export default new VueI18n({
