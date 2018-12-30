@@ -3,7 +3,8 @@
   "mission": {
     "nav_item": "Mission",
     "title": "Unsere Mission",
-    "body": "Wir von team be|spin lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams geschrieben. Aus diesem Grund bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zuhause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim kreieren von erstklassigen Cloud-basierten Lösungen.",
+    "body":
+      "Wir von team be|spin lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams geschrieben. Aus diesem Grund bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zuhause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim kreieren von erstklassigen Cloud-basierten Lösungen.",
     "solutions": {
       "title": "Die Lösungen, die wir zusammen kreieren sind",
       "operate": "einfach zu betreiben",
@@ -15,31 +16,38 @@
   "services": {
     "nav_item": "Dienstleistungen",
     "title": "Unsere Dienstleistungen",
-    "body": "Egal, ob Sie ein neues Vorhaben beginnen, eine bestehende Idee überarbeiten oder Ihre bestehenden Applikationen transformieren, wir begleiten Ihr Team hands-on, in jeder Iteration Ihres Projekts. Hier sind einige Dienstleistungen, die wir anbieten. Wenn Sie etwas suchen, das nicht auf der Liste ist, lassen Sie es uns wissen. Wir sind immer offen für Innovation.",
+    "body":
+      "Egal, ob Sie ein neues Vorhaben beginnen, eine bestehende Idee überarbeiten oder Ihre bestehenden Applikationen transformieren, wir begleiten Ihr Team hands-on, in jeder Iteration Ihres Projekts. Hier sind einige Dienstleistungen, die wir anbieten. Wenn Sie etwas suchen, das nicht auf der Liste ist, lassen Sie es uns wissen. Wir sind immer offen für Innovation.",
     "timeline": {
       "assess": {
         "title": "Bewerten",
-        "body": "Die perfekte Wahl oder zu gut, um wahr zu sein? Wir helfen Ihnen, die richtigen Partner für Ihr Projekt zu finden."
+        "body":
+          "Die perfekte Wahl oder zu gut, um wahr zu sein? Wir helfen Ihnen, die richtigen Partner für Ihr Projekt zu finden."
       },
       "transform": {
         "title": "Transformieren",
-        "body": "Jedes Unternehmen hat eine Geschichte. Zusammen analysieren wir Ihre bestehenden Applikationen und machen sie bereit für die Cloud."
+        "body":
+          "Jedes Unternehmen hat eine Geschichte. Zusammen analysieren wir Ihre bestehenden Applikationen und machen sie bereit für die Cloud."
       },
       "design": {
         "title": "Designen",
-        "body": "Ein Diagramm sagt mehr als tausend Worte. Wir strukturieren Ihre Geschäftsdomäne und identifizieren die Schlüsselkonzepte."
+        "body":
+          "Ein Diagramm sagt mehr als tausend Worte. Wir strukturieren Ihre Geschäftsdomäne und identifizieren die Schlüsselkonzepte."
       },
       "build": {
         "title": "Umsetzen",
-        "body": "Von der Papierserviette zum Source Code. Wir helfen Ihnen bei der Umsetzung Ihrer Ideen als Cloud-basierte Software."
+        "body":
+          "Von der Papierserviette zum Source Code. Wir helfen Ihnen bei der Umsetzung Ihrer Ideen als Cloud-basierte Software."
       },
       "run": {
         "title": "Betreiben",
-        "body": "Ohne Unterbruch. Zusammen deployen wir Ihre Applikationen und betreiben sie hochgradig skaliert."
+        "body":
+          "Ohne Unterbruch. Zusammen deployen wir Ihre Applikationen und betreiben sie hochgradig skaliert."
       },
       "rethink": {
         "title": "Überdenken",
-        "body": "Im Nachhinein ist alles einfach. Machen wir uns diese Tatsache zu Nutze und bringen wir Ihre Lösung auf die nächste Stufe!"
+        "body":
+          "Im Nachhinein ist alles einfach. Machen wir uns diese Tatsache zu Nutze und bringen wir Ihre Lösung auf die nächste Stufe!"
       }
     }
   },
@@ -47,31 +55,37 @@
     "nav_item": "Technologien",
     "title": "Unsere Technologien",
     "platforms": {
-      "body": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis von modernen Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von <strong>Plattformen</strong>, auf denen wir Experten sind:"
+      "body":
+        "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis von modernen Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von <strong>Plattformen</strong>, auf denen wir Experten sind:"
     },
     "tools": {
-      "body": "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist das Rad neu erfinden nicht unser Ding. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer liebsten <strong>Tools</strong>:"
+      "body":
+        "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist das Rad neu erfinden nicht unser Ding. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer liebsten <strong>Tools</strong>:"
     }
   },
   "team": {
     "nav_item": "Team",
     "title": "Unser Team",
-    "body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Startups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater, einfühlsame Coaches und erfahrene Coder. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
+    "body":
+      "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Startups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater, einfühlsame Coaches und erfahrene Coder. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
     "member-1": {
       "name": "Gabriel Müller",
       "catchphrase": "Keeper of Simple",
-      "body": "Softwarearchitekt und Mitgründer. Spezialisert auf Microservices, Containertechnologien and Cloud-Native Engineering."
+      "body":
+        "Softwarearchitekt und Mitgründer. Spezialisert auf Microservices, Containertechnologien and Cloud-Native Engineering."
     },
     "member-2": {
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
-      "body": "Software Engineer und Mitgründer. Spezialisiert auf Clouddienste, verteilte Systeme und Webentwicklung mit modernen Technologien."
+      "body":
+        "Software Engineer und Mitgründer. Spezialisiert auf Clouddienste, verteilte Systeme und Webentwicklung mit modernen Technologien."
     }
   },
   "contact": {
     "nav_item": "Kontakt",
     "title": "Kontaktieren Sie uns",
-    "body": "Haben Sie eine Frage? Benötigen Sie eine Offerte? Oder möchten Sie mal auf einen Kaffee oder ein Bier vorbeikommen? In jedem Fall freuen wir uns über Ihre Kontaktaufnahme und melden uns so rasch wie möglich bei Ihnen.",
+    "body":
+      "Haben Sie eine Frage? Benötigen Sie eine Offerte? Oder möchten Sie mal auf einen Kaffee oder ein Bier vorbeikommen? In jedem Fall freuen wir uns über Ihre Kontaktaufnahme und melden uns so rasch wie möglich bei Ihnen.",
     "form": {
       "nameplaceholder": "Name",
       "emailplaceholder": "Email",
