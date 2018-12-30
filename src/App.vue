@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style>
-body {
+#app {
   font-family: "Lato", sans-serif;
 }
 </style>
