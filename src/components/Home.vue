@@ -607,7 +607,7 @@
 
     <footer class="footer">
       <div class="content has-text-centered">
-        <p><strong>team be|spin</strong> 2018</p>
+        <p><strong>team be|spin</strong> 2019</p>
       </div>
     </footer>
   </div>
