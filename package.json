@@ -43,6 +43,9 @@
     "*.vue": [
       "vue-cli-service lint",
       "git add"
+    ],
+    "ignore": [
+      "**/docs/js/*"
     ]
   }
 }
