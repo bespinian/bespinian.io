@@ -4,7 +4,7 @@
     "nav_item": "Mission",
     "title": "Unsere Mission",
     "body":
-      "Wir von team be|spin lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams geschrieben. Aus diesem Grund bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zuhause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim kreieren von erstklassigen Cloud-basierten Lösungen.",
+      "Wir von team be|spin lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams entwickelt. Aus diesem Grund bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zuhause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim Kreieren von erstklassigen Cloud-basierten Lösungen.",
     "solutions": {
       "title": "Die Lösungen, die wir zusammen kreieren sind",
       "operate": "einfach zu betreiben",
@@ -60,7 +60,7 @@
     },
     "tools": {
       "body":
-        "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist das Rad neu erfinden nicht unser Ding. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer liebsten <strong>Tools</strong>:"
+        "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist es nicht unser Ding das Rad neu zu erfinden. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer liebsten <strong>Tools</strong>:"
     }
   },
   "team": {
