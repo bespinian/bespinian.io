@@ -6,6 +6,7 @@ import "typeface-lato";
 import "./../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import i18n from "./i18n";
 import VueScrollTo from "vue-scrollto";
+import VueAnalytics from "vue-analytics";
 
 // navbar burger
 document.addEventListener("DOMContentLoaded", () => {
@@ -26,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 Vue.use(VueScrollTo, { offset: -30 });
+
+Vue.use(VueAnalytics, { id: "UA-132338301-1" });
 
 Vue.config.productionTip = false;
 
