@@ -629,9 +629,6 @@ export default {
   methods: {
     toggleNav() {
       this.showNav = !this.showNav;
-    },
-    track() {
-      this.$ga.page("/");
     }
   }
 };
