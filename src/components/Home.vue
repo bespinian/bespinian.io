@@ -406,8 +406,8 @@
                           <figure class="image is-128x128">
                             <img
                               class="is-rounded"
-                              src="../assets/gopher.png"
-                              alt="Gabriel Müller"
+                              src="https://pbs.twimg.com/profile_images/650392554882662400/rAxkf18s_400x400.jpg"
+                              alt="Mathis Kretz"
                             />
                           </figure>
                         </div>
@@ -426,7 +426,7 @@
                     <footer class="card-footer">
                       <a
                         class="card-footer-item"
-                        href="https://twitter.com/"
+                        href="https://twitter.com/mathis_kretz"
                         target="_blank"
                       >
                         <span class="icon">
@@ -435,7 +435,7 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://github.com/"
+                        href="https://github.com/mkretz"
                         target="_blank"
                       >
                         <span class="icon">
@@ -444,7 +444,7 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://www.linkedin.com/in/"
+                        href="https://www.linkedin.com/in/mathis-kretz-02677b129"
                         target="_blank"
                       >
                         <span class="icon">
@@ -453,7 +453,7 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://www.xing.com/profile/"
+                        href="https://www.xing.com/profile/Mathis_Kretz"
                         target="_blank"
                       >
                         <span class="icon"> <i class="fab fa-xing"></i> </span>
