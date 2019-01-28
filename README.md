@@ -1,5 +1,7 @@
 # teambespin.io
 
+[![Docker Build](https://img.shields.io/docker/build/teambespin/teambespin.io.svg?style=flat-square)](https://hub.docker.com/r/teambespin/teambespin.io)
+
 The team be\|spin homepage available at <https://teambespin.io>
 
 ## Project setup
