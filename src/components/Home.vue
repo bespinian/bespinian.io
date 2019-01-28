@@ -88,28 +88,28 @@
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
-                          ><i class="fas fa-check"></i></span
+                          ><font-awesome-icon icon="check"/></span
                         >{{ $t("mission.solutions.operate") }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
-                          ><i class="fas fa-check"></i></span
+                          ><font-awesome-icon icon="check"/></span
                         >{{ $t("mission.solutions.adaptable") }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
-                          ><i class="fas fa-check"></i></span
+                          ><font-awesome-icon icon="check"/></span
                         >{{ $t("mission.solutions.scalable") }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
                           style="margin-right:0.7rem"
-                          ><i class="fas fa-check"></i></span
+                          ><font-awesome-icon icon="check"/></span
                         >{{ $t("mission.solutions.optimized") }}
                       </p>
                     </div>
@@ -131,7 +131,11 @@
             <div class="timeline is-centered">
               <div class="timeline-item">
                 <div class="timeline-marker is-icon is-link">
-                  <i class="fa fa-clipboard-list"></i>
+                  <font-awesome-icon
+                    icon="clipboard-list"
+                    size="xs"
+                    :style="{ color: 'white' }"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p class="heading">
@@ -142,7 +146,11 @@
               </div>
               <div class="timeline-item">
                 <div class="timeline-marker is-icon is-link">
-                  <i class="fa fa-recycle"></i>
+                  <font-awesome-icon
+                    icon="recycle"
+                    size="xs"
+                    :style="{ color: 'white' }"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p class="heading">
@@ -153,7 +161,11 @@
               </div>
               <div class="timeline-item">
                 <div class="timeline-marker is-icon is-link">
-                  <i class="fa fa-pencil-alt"></i>
+                  <font-awesome-icon
+                    icon="pencil-alt"
+                    size="xs"
+                    :style="{ color: 'white' }"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p class="heading">
@@ -164,7 +176,11 @@
               </div>
               <div class="timeline-item">
                 <div class="timeline-marker is-icon is-link">
-                  <i class="fa fa-box"></i>
+                  <font-awesome-icon
+                    icon="box"
+                    size="xs"
+                    :style="{ color: 'white' }"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p class="heading">
@@ -175,7 +191,11 @@
               </div>
               <div class="timeline-item">
                 <div class="timeline-marker is-icon is-link">
-                  <i class="fa fa-rocket"></i>
+                  <font-awesome-icon
+                    icon="rocket"
+                    size="xs"
+                    :style="{ color: 'white' }"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p class="heading">{{ $t("services.timeline.run.title") }}</p>
@@ -184,7 +204,11 @@
               </div>
               <div class="timeline-item">
                 <div class="timeline-marker is-icon is-link">
-                  <i class="fa fa-undo"></i>
+                  <font-awesome-icon
+                    icon="undo"
+                    size="xs"
+                    :style="{ color: 'white' }"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p class="heading">
@@ -430,7 +454,7 @@
                         target="_blank"
                       >
                         <span class="icon">
-                          <i class="fab fa-twitter"></i>
+                          <font-awesome-icon :icon="['fab', 'twitter']" />
                         </span>
                       </a>
                       <a
@@ -439,7 +463,7 @@
                         target="_blank"
                       >
                         <span class="icon">
-                          <i class="fab fa-github"></i>
+                          <font-awesome-icon :icon="['fab', 'github']" />
                         </span>
                       </a>
                       <a
@@ -448,7 +472,7 @@
                         target="_blank"
                       >
                         <span class="icon">
-                          <i class="fab fa-linkedin"></i>
+                          <font-awesome-icon :icon="['fab', 'linkedin']" />
                         </span>
                       </a>
                       <a
@@ -456,7 +480,7 @@
                         href="https://www.xing.com/profile/Mathis_Kretz"
                         target="_blank"
                       >
-                        <span class="icon"> <i class="fab fa-xing"></i> </span>
+                        <font-awesome-icon :icon="['fab', 'xing']" />
                       </a>
                     </footer>
                   </div>
@@ -495,7 +519,7 @@
                         target="_blank"
                       >
                         <span class="icon">
-                          <i class="fab fa-twitter"></i>
+                          <font-awesome-icon :icon="['fab', 'twitter']" />
                         </span>
                       </a>
                       <a
@@ -504,7 +528,7 @@
                         target="_blank"
                       >
                         <span class="icon">
-                          <i class="fab fa-github"></i>
+                          <font-awesome-icon :icon="['fab', 'github']" />
                         </span>
                       </a>
                       <a
@@ -513,7 +537,7 @@
                         target="_blank"
                       >
                         <span class="icon">
-                          <i class="fab fa-linkedin"></i>
+                          <font-awesome-icon :icon="['fab', 'linkedin']" />
                         </span>
                       </a>
                       <a
@@ -522,7 +546,7 @@
                         target="_blank"
                       >
                         <span class="icon">
-                          <i class="fas fa-rss-square"></i>
+                          <font-awesome-icon icon="rss-square" />
                         </span>
                       </a>
                     </footer>
@@ -554,7 +578,7 @@
                   :placeholder="$t('contact.form.nameplaceholder')"
                 />
                 <span class="icon is-small is-left">
-                  <i class="fas fa-user"></i>
+                  <font-awesome-icon icon="user" />
                 </span>
               </p>
             </div>
@@ -567,7 +591,7 @@
                   :placeholder="$t('contact.form.emailplaceholder')"
                 />
                 <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
+                  <font-awesome-icon icon="envelope" />
                 </span>
               </p>
             </div>
@@ -579,7 +603,7 @@
                   :placeholder="$t('contact.form.subjectplaceholder')"
                 />
                 <span class="icon is-small is-left">
-                  <i class="fas fa-info"></i>
+                  <font-awesome-icon icon="info" />
                 </span>
               </p>
             </div>
@@ -607,7 +631,7 @@
 
     <footer class="footer">
       <div class="content has-text-centered">
-        <p><strong>team be|spin</strong> {{ (new Date()).getFullYear() }}</p>
+        <p><strong>team be|spin</strong> {{ new Date().getFullYear() }}</p>
       </div>
     </footer>
   </div>
