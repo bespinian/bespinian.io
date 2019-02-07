@@ -1,8 +1,8 @@
-# teambespin.io
+# bespinian.io
 
-[![Docker Build](https://img.shields.io/docker/build/teambespin/teambespin.io.svg?style=flat-square)](https://hub.docker.com/r/teambespin/teambespin.io)
+[![Docker Build](https://img.shields.io/docker/build/bespinian/bespinian.io.svg?style=flat-square)](https://hub.docker.com/r/bespinian/bespinian.io)
 
-The team be\|spin homepage available at <https://teambespin.io>
+The be\|spinian homepage available at <https://bespinian.io>
 
 ## Project setup
 

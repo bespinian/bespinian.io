@@ -52,7 +52,7 @@
           <div class="columns">
             <div class="column is-offset-1-desktop" style="padding-top:7rem;">
               <h1 class="title is-1 is-spaced">
-                be<span class="is-blinking">|</span>spin
+                be<span class="is-blinking">|</span>spinian
               </h1>
               <h2 class="subtitle is-4">{{ $t("subtitle") }}</h2>
             </div>
@@ -631,7 +631,7 @@
 
     <footer class="footer">
       <div class="content has-text-centered">
-        <p><strong>team be|spin</strong> {{ new Date().getFullYear() }}</p>
+        <p><strong>bespinian</strong> {{ new Date().getFullYear() }}</p>
       </div>
     </footer>
   </div>

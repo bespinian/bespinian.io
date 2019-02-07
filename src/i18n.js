@@ -22,7 +22,7 @@ function loadLocaleMessages() {
   return messages;
 }
 
-export const localeStorageKey = "locale:teambespin";
+export const localeStorageKey = "locale:bespinian";
 
 class StoredLocaleDetector {
   getLocales() {
