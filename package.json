@@ -1,12 +1,12 @@
 {
-  "name": "teambespin.io",
-  "description": "the teambespin.io website",
+  "name": "bespinian.io",
+  "description": "the bespinian.io website",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:docker": "docker build . -t teambespin.io"
+    "build:docker": "docker build . -t bespinian.io"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
