@@ -21,8 +21,8 @@ import {
   faXing
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import "./../node_modules/bulma/css/bulma.css";
-import "./../node_modules/bulma-timeline/dist/css/bulma-timeline.min.css";
+import "bulma/css/bulma.css";
+import "bulma-timeline/dist/css/bulma-timeline.min.css";
 import "typeface-lato";
 import i18n from "./i18n";
 import VueScrollTo from "vue-scrollto";
