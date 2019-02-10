@@ -567,7 +567,7 @@
           <form
             class="content"
             style="margin-top:4rem;"
-            action="https://formspree.io/contact@teambespin.io"
+            action="https://formspree.io/contact@bespinian.io"
             method="POST"
           >
             <div class="field">
