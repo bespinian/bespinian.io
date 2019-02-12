@@ -9,9 +9,9 @@
     "build:docker": "docker build . -t bespinian.io"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.14",
-    "@fortawesome/free-brands-svg-icons": "^5.7.1",
-    "@fortawesome/free-solid-svg-icons": "^5.7.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/vue-fontawesome": "^0.1.5",
     "bulma": "^0.7.4",
     "bulma-timeline": "^3.0.1",
