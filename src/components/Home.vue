@@ -641,10 +641,6 @@
 import LocaleChanger from "./LocaleChanger.vue";
 
 export default {
-  name: "Home",
-  components: {
-    LocaleChanger
-  },
   data() {
     return {
       showNav: false
@@ -654,6 +650,9 @@ export default {
     toggleNav() {
       this.showNav = !this.showNav;
     }
+  },
+  components: {
+    LocaleChanger
   }
 };
 </script>
