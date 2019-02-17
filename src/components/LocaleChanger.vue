@@ -19,7 +19,6 @@ import store from "store";
 import { localeStorageKey } from "../i18n";
 
 export default {
-  name: "LocaleChanger",
   data() {
     return {
       langs: {
