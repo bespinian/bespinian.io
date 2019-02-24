@@ -236,14 +236,22 @@
                   <img src="../assets/aws.svg" alt="AWS" />
                 </figure>
                 <br />
-                <a href="https://aws.amazon.com" target="_blank">AWS</a>
+                <a
+                  href="https://aws.amazon.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >AWS</a
+                >
               </div>
               <div class="tile is-child has-text-centered tech-logo">
                 <figure class="image">
                   <img src="../assets/openshift.svg" alt="OpenShift" />
                 </figure>
                 <br />
-                <a href="https://www.openshift.com" target="_blank"
+                <a
+                  href="https://www.openshift.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >OpenShift</a
                 >
               </div>
@@ -252,7 +260,10 @@
                   <img src="../assets/cloudfoundry.svg" alt="Cloud Foundry" />
                 </figure>
                 <br />
-                <a href="https://www.cloudfoundry.org" target="_blank"
+                <a
+                  href="https://www.cloudfoundry.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Cloud Foundry</a
                 >
               </div>
@@ -261,14 +272,24 @@
                   <img src="../assets/kubernetes.svg" alt="Kubernetes" />
                 </figure>
                 <br />
-                <a href="https://kubernetes.io" target="_blank">Kubernetes</a>
+                <a
+                  href="https://kubernetes.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Kubernetes</a
+                >
               </div>
               <div class="tile is-child has-text-centered tech-logo">
                 <figure class="image">
                   <img src="../assets/docker.svg" alt="Docker" />
                 </figure>
                 <br />
-                <a href="https://www.docker.com" target="_blank">Docker</a>
+                <a
+                  href="https://www.docker.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Docker</a
+                >
               </div>
             </div>
           </div>
@@ -282,14 +303,24 @@
                     <img src="../assets/golang.svg" alt="Go" />
                   </figure>
                   <br />
-                  <a href="https://golang.org" target="_blank">Go</a>
+                  <a
+                    href="https://golang.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Go</a
+                  >
                 </div>
                 <div class="tile is-child has-text-centered tech-logo">
                   <figure class="image">
                     <img src="../assets/nodejs.svg" alt="Node.js" />
                   </figure>
                   <br />
-                  <a href="https://nodejs.org" target="_blank">Node.js</a>
+                  <a
+                    href="https://nodejs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Node.js</a
+                  >
                 </div>
                 <div class="tile is-child has-text-centered tech-logo">
                   <figure class="image">
@@ -299,6 +330,7 @@
                   <a
                     href="https://spring.io/projects/spring-boot"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >Spring Boot</a
                   >
                 </div>
@@ -307,14 +339,24 @@
                     <img src="../assets/react.svg" alt="React" />
                   </figure>
                   <br />
-                  <a href="https://reactjs.org" target="_blank">React</a>
+                  <a
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >React</a
+                  >
                 </div>
                 <div class="tile is-child has-text-centered tech-logo">
                   <figure class="image">
                     <img src="../assets/graphql.svg" alt="GraphQL" />
                   </figure>
                   <br />
-                  <a href="https://graphql.org" target="_blank">GraphQL</a>
+                  <a
+                    href="https://graphql.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GraphQL</a
+                  >
                 </div>
               </div>
               <div class="tile is-parent">
@@ -323,7 +365,10 @@
                     <img src="../assets/terraform.svg" alt="Terraform" />
                   </figure>
                   <br />
-                  <a href="https://www.terraform.io" target="_blank"
+                  <a
+                    href="https://www.terraform.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >Terraform</a
                   >
                 </div>
@@ -332,7 +377,10 @@
                     <img src="../assets/concourse.svg" alt="Concourse" />
                   </figure>
                   <br />
-                  <a href="https://concourse-ci.org" target="_blank"
+                  <a
+                    href="https://concourse-ci.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >Concourse</a
                   >
                 </div>
@@ -341,14 +389,22 @@
                     <img src="../assets/jenkins.svg" alt="Jenkins" />
                   </figure>
                   <br />
-                  <a href="https://jenkins.io" target="_blank">Jenkins</a>
+                  <a
+                    href="https://jenkins.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Jenkins</a
+                  >
                 </div>
                 <div class="tile is-child has-text-centered tech-logo">
                   <figure class="image">
                     <img src="../assets/rabbitmq.svg" alt="RabbitMQ" />
                   </figure>
                   <br />
-                  <a href="https://www.rabbitmq.com" target="_blank"
+                  <a
+                    href="https://www.rabbitmq.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >RabbitMQ</a
                   >
                 </div>
@@ -357,7 +413,12 @@
                     <img src="../assets/kafka.svg" alt="Kafka" />
                   </figure>
                   <br />
-                  <a href="https://kafka.apache.org" target="_blank">Kafka</a>
+                  <a
+                    href="https://kafka.apache.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Kafka</a
+                  >
                 </div>
               </div>
               <div class="tile is-parent">
@@ -366,7 +427,12 @@
                     <img src="../assets/redis.svg" alt="Redis" />
                   </figure>
                   <br />
-                  <a href="https://redis.io" target="_blank">Redis</a>
+                  <a
+                    href="https://redis.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Redis</a
+                  >
                 </div>
                 <div class="tile is-child has-text-centered tech-logo">
                   <figure class="image">
@@ -379,6 +445,7 @@
                   <a
                     href="https://www.elastic.co/products/elasticsearch"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >Elasticsearch</a
                   >
                 </div>
@@ -387,14 +454,22 @@
                     <img src="../assets/mongodb.svg" alt="MongoDB" />
                   </figure>
                   <br />
-                  <a href="https://www.mongodb.com" target="_blank">MongoDB</a>
+                  <a
+                    href="https://www.mongodb.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >MongoDB</a
+                  >
                 </div>
                 <div class="tile is-child has-text-centered tech-logo">
                   <figure class="image">
                     <img src="../assets/postgresql.svg" alt="PostgreSQL" />
                   </figure>
                   <br />
-                  <a href="https://www.postgresql.org" target="_blank"
+                  <a
+                    href="https://www.postgresql.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >PostgreSQL</a
                   >
                 </div>
@@ -403,7 +478,10 @@
                     <img src="../assets/dynamodb.svg" alt="DynamoDB" />
                   </figure>
                   <br />
-                  <a href="https://aws.amazon.com/dynamodb" target="_blank"
+                  <a
+                    href="https://aws.amazon.com/dynamodb"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >DynamoDB</a
                   >
                 </div>
@@ -452,6 +530,7 @@
                         class="card-footer-item"
                         href="https://twitter.com/mathis_kretz"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'twitter']" />
@@ -461,6 +540,7 @@
                         class="card-footer-item"
                         href="https://github.com/mkretz"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'github']" />
@@ -470,6 +550,7 @@
                         class="card-footer-item"
                         href="https://www.linkedin.com/in/mathis-kretz-02677b129"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -479,6 +560,7 @@
                         class="card-footer-item"
                         href="https://www.xing.com/profile/Mathis_Kretz"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <font-awesome-icon :icon="['fab', 'xing']" />
                       </a>
@@ -517,6 +599,7 @@
                         class="card-footer-item"
                         href="https://twitter.com/mastertinner"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'twitter']" />
@@ -526,6 +609,7 @@
                         class="card-footer-item"
                         href="https://github.com/mastertinner"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'github']" />
@@ -535,6 +619,7 @@
                         class="card-footer-item"
                         href="https://www.linkedin.com/in/tobi-fuhrimann-83642746"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -544,6 +629,7 @@
                         class="card-footer-item"
                         href="https://berndsgn.ch"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <span class="icon">
                           <font-awesome-icon icon="rss-square" />
