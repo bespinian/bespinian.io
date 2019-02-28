@@ -20,7 +20,7 @@
     "typeface-lato": "0.0.54",
     "vue": "^2.6.7",
     "vue-i18n": "^8.8.2",
-    "vue-scrollto": "^2.13.0"
+    "vue-scrollto": "^2.14.0"
   },
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.3.0",
@@ -32,7 +32,7 @@
     "eslint": "^5.14.1",
     "eslint-plugin-vue": "^5.2.2",
     "lint-staged": "^8.1.4",
-    "vue-cli-plugin-i18n": "^0.5.1",
+    "vue-cli-plugin-i18n": "^0.5.2",
     "vue-template-compiler": "^2.6.7"
   },
   "gitHooks": {

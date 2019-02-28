@@ -506,7 +506,7 @@
                       <figure class="image is-128x128 is-centered">
                         <img
                           class="is-rounded"
-                          src="https://pbs.twimg.com/profile_images/650392554882662400/rAxkf18s_400x400.jpg"
+                          src="../assets/mathis.jpg"
                           alt="Mathis Kretz"
                         />
                       </figure>
@@ -569,7 +569,7 @@
                       <figure class="image is-128x128">
                         <img
                           class="is-rounded"
-                          src="https://pbs.twimg.com/profile_images/928975001105166336/dhnwx8fA_400x400.jpg"
+                          src="../assets/tobi.jpg"
                           alt="Tobi Fuhrimann"
                         />
                       </figure>
