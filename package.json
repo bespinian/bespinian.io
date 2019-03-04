@@ -18,7 +18,7 @@
     "locales-detector": "^2.0.1",
     "store": "^2.0.12",
     "typeface-lato": "0.0.54",
-    "vue": "^2.6.7",
+    "vue": "^2.6.8",
     "vue-i18n": "^8.8.2",
     "vue-scrollto": "^2.14.0"
   },
@@ -29,11 +29,11 @@
     "@vue/cli-service": "^3.4.1",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.14.1",
+    "eslint": "^5.15.0",
     "eslint-plugin-vue": "^5.2.2",
-    "lint-staged": "^8.1.4",
+    "lint-staged": "^8.1.5",
     "vue-cli-plugin-i18n": "^0.5.2",
-    "vue-template-compiler": "^2.6.7"
+    "vue-template-compiler": "^2.6.8"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
