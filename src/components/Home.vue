@@ -615,7 +615,7 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://berndsgn.ch"
+                        href="https://blog.bespinian.io"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
