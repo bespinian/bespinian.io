@@ -48,7 +48,7 @@
 
     <section class="hero is-link is-fullheight">
       <div class="hero-body">
-        <div class="container" style="position:fixed;">
+        <div class="container" style="position:fixed; width:100vw">
           <div class="columns">
             <div class="column is-offset-1-desktop" style="padding-top:7rem;">
               <h1 class="title is-1 is-spaced">
