@@ -705,7 +705,7 @@
 
     <footer class="footer">
       <div class="content has-text-centered">
-        <p><strong>be|spinian</strong> {{ new Date().getFullYear() }}</p>
+        <p><strong>bespinian</strong> {{ new Date().getFullYear() }}</p>
       </div>
     </footer>
   </div>
