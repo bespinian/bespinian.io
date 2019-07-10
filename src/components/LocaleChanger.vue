@@ -3,10 +3,10 @@
     <a class="navbar-link">{{ langs[$i18n.locale] }}</a>
     <div class="navbar-dropdown">
       <a
-        class="navbar-item"
         v-for="(val, key) in langs"
-        v-on:click="handleLocaleChange(key)"
-        v-bind:key="key"
+        :key="key"
+        class="navbar-item"
+        @click="handleLocaleChange(key)"
       >
         {{ val }}
       </a>
