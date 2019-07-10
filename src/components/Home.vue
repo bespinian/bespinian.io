@@ -12,8 +12,8 @@
           aria-label="menu"
           aria-expanded="false"
           data-target="navbar-menu"
-          v-on:click="toggleNav()"
-          v-bind:class="{ 'is-active': showNav }"
+          :class="{ 'is-active': showNav }"
+          @click="toggleNav()"
         >
           <span aria-hidden="true"></span> <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -22,23 +22,23 @@
       <div
         id="navbar-menu"
         class="navbar-menu"
-        v-bind:class="{ 'is-active': showNav }"
-        v-on:click="toggleNav()"
+        :class="{ 'is-active': showNav }"
+        @click="toggleNav()"
       >
         <div class="navbar-end">
-          <a class="navbar-item" href="#" v-scroll-to="'#mission'">{{
+          <a v-scroll-to="'#mission'" class="navbar-item" href="#">{{
             $t("mission.nav_item")
           }}</a>
-          <a class="navbar-item" href="#" v-scroll-to="'#services'">{{
+          <a v-scroll-to="'#services'" class="navbar-item" href="#">{{
             $t("services.nav_item")
           }}</a>
-          <a class="navbar-item" href="#" v-scroll-to="'#tech'">{{
+          <a v-scroll-to="'#tech'" class="navbar-item" href="#">{{
             $t("technologies.nav_item")
           }}</a>
-          <a class="navbar-item" href="#" v-scroll-to="'#team'">{{
+          <a v-scroll-to="'#team'" class="navbar-item" href="#">{{
             $t("team.nav_item")
           }}</a>
-          <a class="navbar-item" href="#" v-scroll-to="'#contact'">{{
+          <a v-scroll-to="'#contact'" class="navbar-item" href="#">{{
             $t("contact.nav_item")
           }}</a>
           <LocaleChanger />
@@ -227,7 +227,7 @@
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("technologies.title") }}</h3>
-          <p v-html="$t('technologies.platforms.body')"></p>
+          <p>{{ $t("technologies.platforms.body") }}</p>
           <br />
           <div class="tile is-ancestor">
             <div class="tile is-parent">
@@ -293,7 +293,7 @@
               </div>
             </div>
           </div>
-          <p v-html="$t('technologies.tools.body')"></p>
+          <p>{{ $t("technologies.tools.body") }}</p>
           <br />
           <div class="tile is-ancestor">
             <div class="tile is-vertical">
@@ -715,6 +715,9 @@
 import LocaleChanger from "./LocaleChanger.vue";
 
 export default {
+  components: {
+    LocaleChanger
+  },
   data() {
     return {
       showNav: false
@@ -724,9 +727,6 @@ export default {
     toggleNav() {
       this.showNav = !this.showNav;
     }
-  },
-  components: {
-    LocaleChanger
   }
 };
 </script>
