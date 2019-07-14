@@ -47,10 +47,17 @@
     "nav_item": "Technologie",
     "title": "Üsi Technologie",
     "platforms": {
-      "body": "Mir si überzügt, dass Ideene d Technologie söue beschtimme und nid umgekehrt. Zäme finde mir Lösige uf Basis vo moderne Technologie wo öiem Team ermögleche meh Zit mitem Erschaffe vo Mehrwärt z verbringe und weniger mitem Betrib vo Infraschtruktur. Hie isch e Uswahl vo <strong>Plattforme</strong> wo mir Experte druf si:"
+      "body": {
+        "intro": "Mir si überzügt, dass Ideene d Technologie söue beschtimme und nid umgekehrt. Zäme finde mir Lösige uf Basis vo moderne Technologie wo öiem Team ermögleche meh Zit mitem Erschaffe vo Mehrwärt z verbringe und weniger mitem Betrib vo Infraschtruktur. Hie isch e Uswahl vo",
+        "platforms": "Plattforme",
+        "weAreNativeTo": "wo mir Experte druf si"
+      }
     },
     "tools": {
-      "body": "Ou wenn mir nüt meh liebe als Code z schribe, isches nid üses Ding ds Rad nöi z erfinde. Mir wüsse, wenns besser isch, es exischtierends Produkt izsetze und mir teile das Wüsse mit öiem Team. Hie si es paar vo üsne liebschte <strong>Tools</strong>:"
+      "body": {
+        "intro": "Ou wenn mir nüt meh liebe als Code z schribe, isches nid üses Ding ds Rad nöi z erfinde. Mir wüsse, wenns besser isch, es exischtierends Produkt izsetze und mir teile das Wüsse mit öiem Team. Hie si es paar vo üsne liebschte",
+        "tools": "Tools"
+      }
     }
   },
   "team": {
