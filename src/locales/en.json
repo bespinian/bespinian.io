@@ -47,10 +47,17 @@
     "nav_item": "Technologies",
     "title": "Our Technologies",
     "platforms": {
-      "body": "We are convinced that technology should follow ideas and not the other way around. Together we design and implement architectures based on modern technologies which enable your team to spend more time on delivering business value and less on infrastructure operations. Here's a selection of the <strong>platforms</strong> we are native to:"
+      "body": {
+        "intro": "We are convinced that technology should follow ideas and not the other way around. Together we design and implement architectures based on modern technologies which enable your team to spend more time on delivering business value and less on infrastructure operations. Here's a selection of the",
+        "platforms": "platforms",
+        "weAreNativeTo": "we are native to"
+      }
     },
     "tools": {
-      "body": "Even though we passionately write code, reinventing the wheel is not our game. We know when to use an existing product to solve a problem and we share this knowledge with your team. Here are some of our favorite <strong>tools</strong>:"
+      "body": {
+        "intro": "Even though we passionately write code, reinventing the wheel is not our game. We know when to use an existing product to solve a problem and we share this knowledge with your team. Here are some of our favorite",
+        "tools": "tools"
+      }
     }
   },
   "team": {

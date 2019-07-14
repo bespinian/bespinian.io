@@ -227,7 +227,11 @@
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("technologies.title") }}</h3>
-          <p>{{ $t("technologies.platforms.body") }}</p>
+          <p>
+            {{ $t("technologies.platforms.body.intro") }}
+            <strong>{{ $t("technologies.platforms.body.platforms") }}</strong>
+            {{ $t("technologies.platforms.body.weAreNativeTo") }}:
+          </p>
           <br />
           <div class="tile is-ancestor">
             <div class="tile is-parent">
@@ -293,7 +297,11 @@
               </div>
             </div>
           </div>
-          <p>{{ $t("technologies.tools.body") }}</p>
+          <p>
+            {{ $t("technologies.tools.body.intro") }}
+            <strong>{{ $t("technologies.tools.body.tools") }}</strong
+            >:
+          </p>
           <br />
           <div class="tile is-ancestor">
             <div class="tile is-vertical">

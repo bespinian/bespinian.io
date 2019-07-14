@@ -47,10 +47,17 @@
     "nav_item": "Technologien",
     "title": "Unsere Technologien",
     "platforms": {
-      "body": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis von modernen Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von <strong>Plattformen</strong>, auf denen wir Experten sind:"
+      "body": {
+        "intro": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis von modernen Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von",
+        "platforms": "Plattformen",
+        "weAreNativeTo": "auf denen wir Experten sind"
+      }
     },
     "tools": {
-      "body": "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist es nicht unser Ding das Rad neu zu erfinden. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer liebsten <strong>Tools</strong>:"
+      "body": {
+        "intro": "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist es nicht unser Ding das Rad neu zu erfinden. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer liebsten",
+        "tools": "Tools"
+      }
     }
   },
   "team": {
