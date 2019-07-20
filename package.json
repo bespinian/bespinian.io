@@ -17,7 +17,7 @@
     "bulma-timeline": "^3.0.4",
     "locales-detector": "^2.0.1",
     "store": "^2.0.12",
-    "typeface-lato": "0.0.54",
+    "typeface-lato": "0.0.75",
     "vue": "^2.6.10",
     "vue-i18n": "^8.12.0",
     "vue-scrollto": "^2.15.0"
@@ -26,7 +26,7 @@
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.9.2",
     "@vue/cli-plugin-eslint": "^3.9.2",
-    "@vue/cli-service": "^3.9.2",
+    "@vue/cli-service": "^3.9.3",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.2",
     "eslint": "^6.0.1",
