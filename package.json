@@ -9,9 +9,9 @@
     "build:docker": "docker build . -t bespinian.io"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.22",
-    "@fortawesome/free-brands-svg-icons": "^5.10.2",
-    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.24",
+    "@fortawesome/free-brands-svg-icons": "^5.11.1",
+    "@fortawesome/free-solid-svg-icons": "^5.11.1",
     "@fortawesome/vue-fontawesome": "^0.1.7",
     "bulma": "^0.7.5",
     "bulma-timeline": "^3.0.4",
@@ -20,7 +20,7 @@
     "typeface-lato": "0.0.75",
     "vue": "^2.6.10",
     "vue-i18n": "^8.14.1",
-    "vue-scrollto": "^2.16.3"
+    "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.4.1",
@@ -30,9 +30,9 @@
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.2.3",
-    "lint-staged": "^9.2.5",
+    "lint-staged": "^9.3.0",
     "prettier": "^1.18.2",
     "vue-cli-plugin-i18n": "^0.6.0",
     "vue-template-compiler": "^2.6.10"
