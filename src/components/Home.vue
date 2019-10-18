@@ -550,7 +550,7 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://www.linkedin.com/in/mathis-kretz-02677b129"
+                        href="https://www.linkedin.com/in/mathiskretz/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -613,7 +613,7 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://www.linkedin.com/in/tobi-fuhrimann-83642746"
+                        href="https://www.linkedin.com/in/tobi-fuhrimann/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
