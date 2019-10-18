@@ -533,6 +533,7 @@
                         href="https://twitter.com/mathis_kretz"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Twitter"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'twitter']" />
@@ -543,6 +544,7 @@
                         href="https://github.com/mkretz"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="GitHub"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'github']" />
@@ -553,6 +555,7 @@
                         href="https://www.linkedin.com/in/mathiskretz/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="LinkedIn"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -563,6 +566,7 @@
                         href="https://www.xing.com/profile/Mathis_Kretz"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Xing"
                       >
                         <font-awesome-icon :icon="['fab', 'xing']" />
                       </a>
@@ -596,6 +600,7 @@
                         href="https://twitter.com/mastertinner"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Twitter"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'twitter']" />
@@ -606,6 +611,7 @@
                         href="https://github.com/mastertinner"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="GitHub"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'github']" />
@@ -616,6 +622,7 @@
                         href="https://www.linkedin.com/in/tobi-fuhrimann/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="LinkedIn"
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -626,6 +633,7 @@
                         href="https://blog.bespinian.io"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Blog"
                       >
                         <span class="icon">
                           <font-awesome-icon icon="rss-square" />
@@ -653,41 +661,44 @@
             method="POST"
           >
             <div class="field">
-              <p class="control has-icons-left">
+              <div class="control has-icons-left">
                 <input
                   class="input"
                   name="name"
                   :placeholder="$t('contact.form.nameplaceholder')"
+                  aria-label="$t('contact.form.nameplaceholder')"
                 />
                 <span class="icon is-small is-left">
                   <font-awesome-icon icon="user" />
                 </span>
-              </p>
+              </div>
             </div>
             <div class="field">
-              <p class="control has-icons-left">
+              <div class="control has-icons-left">
                 <input
                   class="input"
                   type="email"
                   name="email"
                   :placeholder="$t('contact.form.emailplaceholder')"
+                  aria-label="$t('contact.form.emailplaceholder')"
                 />
                 <span class="icon is-small is-left">
                   <font-awesome-icon icon="envelope" />
                 </span>
-              </p>
+              </div>
             </div>
             <div class="field">
-              <p class="control has-icons-left">
+              <div class="control has-icons-left">
                 <input
                   class="input"
                   name="subject"
                   :placeholder="$t('contact.form.subjectplaceholder')"
+                  aria-label="$t('contact.form.subjectplaceholder')"
                 />
                 <span class="icon is-small is-left">
                   <font-awesome-icon icon="info" />
                 </span>
-              </p>
+              </div>
             </div>
             <div class="field">
               <div class="control">
@@ -695,6 +706,7 @@
                   class="textarea"
                   name="message"
                   :placeholder="$t('contact.form.messageplaceholder')"
+                  aria-label="$t('contact.form.messageplaceholder')"
                   rows="8"
                 ></textarea>
               </div>
