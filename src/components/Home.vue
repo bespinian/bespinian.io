@@ -752,6 +752,7 @@ export default {
 
 .cloud-city {
   width: 26rem;
+  height: 26rem;
   max-width: 50vw;
 }
 
