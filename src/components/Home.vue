@@ -315,8 +315,9 @@
                     href="https://golang.org"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Go</a
                   >
+                    Go
+                  </a>
                 </div>
                 <div class="tile is-child has-text-centered tech-logo">
                   <figure class="image">
