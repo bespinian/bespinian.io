@@ -43,6 +43,16 @@
       }
     }
   },
+  "customers": {
+    "nav_item": "Chunde",
+    "title": "Üsi Chunde",
+    "body": "Mir schaffe mit Firme us unterschidleche Branchene u vo unterschidlecher Grössi, vom Startup bis zum Grosskonzärn. Die Firme vertroue zum Bischpil uf üsi Dienschtleischtige"
+  },
+  "partners": {
+    "nav_item": "Partner",
+    "title": "Üsi Partner",
+    "body": "Mir sy stouz uf starchi Partnerschafte, wes um Plattforme u Technologie geit. Die fougende Firme dörfe mir zum Bischpil zu üsne Partner zelle"
+  },
   "technologies": {
     "nav_item": "Technologie",
     "title": "Üsi Technologie",

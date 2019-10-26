@@ -43,6 +43,16 @@
       }
     }
   },
+  "customers": {
+    "nav_item": "Customers",
+    "title": "Our Customers",
+    "body": "We work with companies from various areas of the industry and of all sizes, ranging from startups to major corporations. These are some of the companies who put their trust in our services"
+  },
+  "partners": {
+    "nav_item": "Partners",
+    "title": "Our Partners",
+    "body": "We proudly rely on strong partners when it comes to providing platforms and related technologies. Here are some of the companies we are lucky to have as our partners"
+  },
   "technologies": {
     "nav_item": "Technologies",
     "title": "Our Technologies",
