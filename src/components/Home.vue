@@ -48,9 +48,12 @@
 
     <section class="hero is-link is-fullheight">
       <div class="hero-body">
-        <div class="container" style="position:fixed; width:100vw">
+        <div class="container" :style="{ position: 'fixed', width: '100vw' }">
           <div class="columns">
-            <div class="column is-offset-1-desktop" style="padding-top:7rem;">
+            <div
+              class="column is-offset-1-desktop"
+              :style="{ paddingTop: '7rem' }"
+            >
               <h1 class="title is-1 is-spaced">
                 be<span class="is-blinking">|</span>spinian
               </h1>
@@ -69,11 +72,11 @@
     </section>
 
     <section id="mission" class="section">
-      <div class="columns is-centered" style="position:relative;">
+      <div class="columns is-centered" :style="{ position: 'relative' }">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("mission.title") }}</h3>
           <p>{{ $t("mission.body") }}</p>
-          <div class="content" style="margin-top:4rem;">
+          <div class="content" :style="{ marginTop: '4rem' }">
             <div class="columns">
               <div
                 class="column is-centered is-half-desktop is-offset-one-quarter-desktop"
@@ -87,28 +90,28 @@
                       <p>
                         <span
                           class="icon has-text-link"
-                          style="margin-right:0.7rem"
+                          :style="{ marginRight: '0.7rem' }"
                           ><font-awesome-icon icon="check"/></span
                         >{{ $t("mission.solutions.operate") }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
-                          style="margin-right:0.7rem"
+                          :style="{ marginRight: '0.7rem' }"
                           ><font-awesome-icon icon="check"/></span
                         >{{ $t("mission.solutions.adaptable") }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
-                          style="margin-right:0.7rem"
+                          :style="{ marginRight: '0.7rem' }"
                           ><font-awesome-icon icon="check"/></span
                         >{{ $t("mission.solutions.scalable") }}
                       </p>
                       <p>
                         <span
                           class="icon has-text-link"
-                          style="margin-right:0.7rem"
+                          :style="{ marginRight: '0.7rem' }"
                           ><font-awesome-icon icon="check"/></span
                         >{{ $t("mission.solutions.optimized") }}
                       </p>
@@ -123,18 +126,23 @@
     </section>
 
     <section id="services" class="section">
-      <div class="columns is-centered" style="position:relative;">
+      <div class="columns is-centered" :style="{ position: 'relative' }">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("services.title") }}</h3>
           <p>{{ $t("services.body") }}</p>
-          <div class="content" style="margin-top:4rem;">
+          <div class="content" :style="{ marginTop: '4rem' }">
             <div class="timeline is-centered">
               <div class="timeline-item">
-                <div class="timeline-marker is-icon is-link">
+                <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
                     icon="clipboard-list"
-                    size="xs"
-                    :style="{ color: 'white' }"
+                    size="lg"
+                    :style="{
+                      position: 'relative',
+                      right: -15,
+                      top: 9,
+                      color: 'white'
+                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -145,11 +153,16 @@
                 </div>
               </div>
               <div class="timeline-item">
-                <div class="timeline-marker is-icon is-link">
+                <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
                     icon="recycle"
-                    size="xs"
-                    :style="{ color: 'white' }"
+                    size="lg"
+                    :style="{
+                      position: 'relative',
+                      right: -12,
+                      top: 10,
+                      color: 'white'
+                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -160,11 +173,16 @@
                 </div>
               </div>
               <div class="timeline-item">
-                <div class="timeline-marker is-icon is-link">
+                <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
                     icon="pencil-alt"
-                    size="xs"
-                    :style="{ color: 'white' }"
+                    size="lg"
+                    :style="{
+                      position: 'relative',
+                      right: -12,
+                      top: 10,
+                      color: 'white'
+                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -175,11 +193,16 @@
                 </div>
               </div>
               <div class="timeline-item">
-                <div class="timeline-marker is-icon is-link">
+                <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
                     icon="box"
-                    size="xs"
-                    :style="{ color: 'white' }"
+                    size="lg"
+                    :style="{
+                      position: 'relative',
+                      right: -12,
+                      top: 10,
+                      color: 'white'
+                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -190,11 +213,16 @@
                 </div>
               </div>
               <div class="timeline-item">
-                <div class="timeline-marker is-icon is-link">
+                <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
                     icon="rocket"
-                    size="xs"
-                    :style="{ color: 'white' }"
+                    size="lg"
+                    :style="{
+                      position: 'relative',
+                      right: -12,
+                      top: 11,
+                      color: 'white'
+                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -203,11 +231,16 @@
                 </div>
               </div>
               <div class="timeline-item">
-                <div class="timeline-marker is-icon is-link">
+                <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
                     icon="undo"
-                    size="xs"
-                    :style="{ color: 'white' }"
+                    size="lg"
+                    :style="{
+                      position: 'relative',
+                      right: -12,
+                      top: 11,
+                      color: 'white'
+                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -224,7 +257,7 @@
     </section>
 
     <section id="tech" class="section">
-      <div class="columns is-centered" style="position:relative;">
+      <div class="columns is-centered" :style="{ position: 'relative' }">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("technologies.title") }}</h3>
           <p>
@@ -303,210 +336,23 @@
             >:
           </p>
           <br />
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical">
-              <div class="tile is-parent">
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/golang.svg" alt="Go" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://golang.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Go
-                  </a>
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/nodejs.svg" alt="Node.js" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://nodejs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Node.js</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/springboot.svg" alt="Spring Boot" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://spring.io/projects/spring-boot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Spring Boot</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/react.svg" alt="React" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >React</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/graphql.svg" alt="GraphQL" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://graphql.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >GraphQL</a
-                  >
-                </div>
-              </div>
-              <div class="tile is-parent">
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/terraform.svg" alt="Terraform" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://www.terraform.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Terraform</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/concourse.svg" alt="Concourse" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://concourse-ci.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Concourse</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/jenkins.svg" alt="Jenkins" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://jenkins.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Jenkins</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/rabbitmq.svg" alt="RabbitMQ" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://www.rabbitmq.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >RabbitMQ</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/kafka.svg" alt="Kafka" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://kafka.apache.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Kafka</a
-                  >
-                </div>
-              </div>
-              <div class="tile is-parent">
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/redis.svg" alt="Redis" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://redis.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Redis</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img
-                      src="../assets/elasticsearch.svg"
-                      alt="Elasticsearch"
-                    />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://www.elastic.co/products/elasticsearch"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Elasticsearch</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/mongodb.svg" alt="MongoDB" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://www.mongodb.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >MongoDB</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/postgresql.svg" alt="PostgreSQL" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://www.postgresql.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >PostgreSQL</a
-                  >
-                </div>
-                <div class="tile is-child has-text-centered tech-logo">
-                  <figure class="image">
-                    <img src="../assets/dynamodb.svg" alt="DynamoDB" />
-                  </figure>
-                  <br />
-                  <a
-                    href="https://aws.amazon.com/dynamodb"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >DynamoDB</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+          <figure class="image">
+            <img
+              src="../assets/technologies.svg"
+              alt="Technologies"
+              :style="{ opacity: 0.5 }"
+            />
+          </figure>
         </div>
       </div>
     </section>
 
     <section id="team" class="section">
-      <div class="columns is-centered" style="position:relative;">
+      <div class="columns is-centered" :style="{ position: 'relative' }">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("team.title") }}</h3>
           <p>{{ $t("team.body") }}</p>
-          <div class="content" style="margin-top:4rem;">
+          <div class="content" :style="{ marginTop: '4rem' }">
             <div class="tile is-ancestor">
               <div class="tile is-parent">
                 <article class="tile is-child">
@@ -651,15 +497,15 @@
     </section>
 
     <section id="contact" class="section">
-      <div class="columns is-centered" style="position:relative;">
+      <div class="columns is-centered" :style="{ position: 'relative' }">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("contact.title") }}</h3>
           <p>{{ $t("contact.body") }}</p>
           <form
             class="content"
-            style="margin-top:4rem;"
             action="https://formspree.io/contact@bespinian.io"
             method="POST"
+            :style="{ marginTop: '4rem' }"
           >
             <div class="field">
               <div class="control has-icons-left">
