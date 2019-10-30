@@ -139,8 +139,8 @@
                     size="lg"
                     :style="{
                       position: 'relative',
-                      right: -15,
-                      top: 9,
+                      right: '-31%',
+                      top: '20%',
                       color: 'white'
                     }"
                   />
@@ -159,8 +159,8 @@
                     size="lg"
                     :style="{
                       position: 'relative',
-                      right: -12,
-                      top: 10,
+                      right: '-25%',
+                      top: '21%',
                       color: 'white'
                     }"
                   />
@@ -179,8 +179,8 @@
                     size="lg"
                     :style="{
                       position: 'relative',
-                      right: -12,
-                      top: 10,
+                      right: '-26%',
+                      top: '21%',
                       color: 'white'
                     }"
                   />
@@ -199,8 +199,8 @@
                     size="lg"
                     :style="{
                       position: 'relative',
-                      right: -12,
-                      top: 10,
+                      right: '-26%',
+                      top: '21%',
                       color: 'white'
                     }"
                   />
@@ -219,8 +219,8 @@
                     size="lg"
                     :style="{
                       position: 'relative',
-                      right: -12,
-                      top: 11,
+                      right: '-24%',
+                      top: '23%',
                       color: 'white'
                     }"
                   />
@@ -237,8 +237,8 @@
                     size="lg"
                     :style="{
                       position: 'relative',
-                      right: -12,
-                      top: 11,
+                      right: '-26%',
+                      top: '22%',
                       color: 'white'
                     }"
                   />
