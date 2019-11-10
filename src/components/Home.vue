@@ -26,27 +26,27 @@
         @click="toggleNav()"
       >
         <div class="navbar-end">
-          <a v-scroll-to="'#mission'" class="navbar-item" href="#">{{
-            $t("mission.nav_item")
-          }}</a>
-          <a v-scroll-to="'#services'" class="navbar-item" href="#">{{
-            $t("services.nav_item")
-          }}</a>
-          <a v-scroll-to="'#customers'" class="navbar-item" href="#">{{
-            $t("customers.nav_item")
-          }}</a>
-          <a v-scroll-to="'#partners'" class="navbar-item" href="#">{{
-            $t("partners.nav_item")
-          }}</a>
-          <a v-scroll-to="'#tech'" class="navbar-item" href="#">{{
-            $t("technologies.nav_item")
-          }}</a>
-          <a v-scroll-to="'#team'" class="navbar-item" href="#">{{
-            $t("team.nav_item")
-          }}</a>
-          <a v-scroll-to="'#contact'" class="navbar-item" href="#">{{
-            $t("contact.nav_item")
-          }}</a>
+          <a v-scroll-to="'#mission'" class="navbar-item" href="#">
+            {{ $t("mission.nav_item") }}
+          </a>
+          <a v-scroll-to="'#services'" class="navbar-item" href="#">
+            {{ $t("services.nav_item") }}
+          </a>
+          <a v-scroll-to="'#tech'" class="navbar-item" href="#">
+            {{ $t("technologies.nav_item") }}
+          </a>
+          <a v-scroll-to="'#partners'" class="navbar-item" href="#">
+            {{ $t("partners.nav_item") }}
+          </a>
+          <a v-scroll-to="'#customers'" class="navbar-item" href="#">
+            {{ $t("customers.nav_item") }}
+          </a>
+          <a v-scroll-to="'#team'" class="navbar-item" href="#">
+            {{ $t("team.nav_item") }}
+          </a>
+          <a v-scroll-to="'#contact'" class="navbar-item" href="#">
+            {{ $t("contact.nav_item") }}
+          </a>
           <LocaleChanger />
         </div>
       </div>
@@ -352,15 +352,100 @@
         </div>
       </div>
     </section>
+
+    <section id="partners" class="section">
+      <div class="columns is-centered" style="position:relative;">
+        <div class="column is-half">
+          <h3 class="title is-2 is-spaced">{{ $t("partners.title") }}</h3>
+          <p>{{ $t("partners.body") }}:</p>
+          <br />
+          <br />
+          <div class="container">
+            <carousel
+              :per-page-custom="[
+                [480, 2],
+                [768, 4],
+                [1024, 5]
+              ]"
+              :scroll-per-page="true"
+              pagination-active-color="#3273dc"
+            >
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/redhat.png" alt="Red Hat" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://www.redhat.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Red Hat</a
+                >
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/swisscom.png" alt="Swisscom" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://www.swisscom.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Swisscom</a
+                >
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/puzzle.png" alt="Puzzle ITC" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://puzzle.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Puzzle ITC</a
+                >
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/aws.png" alt="AWS Partner Network" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://aws.amazon.com/partners/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >AWS Partner Network</a
+                >
+              </slide>
+            </carousel>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="customers" class="section">
       <div class="columns is-centered" style="position:relative;">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("customers.title") }}</h3>
           <p>{{ $t("customers.body") }}:</p>
           <br />
+          <br />
           <div class="container">
             <carousel
-              :per-page-custom="[[480, 2], [768, 4]]"
+              :per-page-custom="[
+                [480, 2],
+                [768, 4],
+                [1024, 5]
+              ]"
               :scroll-per-page="true"
               pagination-active-color="#3273dc"
             >
@@ -470,79 +555,7 @@
         </div>
       </div>
     </section>
-    <section id="partners" class="section">
-      <div class="columns is-centered" style="position:relative;">
-        <div class="column is-half">
-          <h3 class="title is-2 is-spaced">{{ $t("partners.title") }}</h3>
-          <p>{{ $t("partners.body") }}:</p>
-          <br />
-          <div class="container">
-            <carousel
-              :per-page-custom="[[480, 2], [768, 4]]"
-              :scroll-per-page="true"
-              pagination-active-color="#3273dc"
-            >
-              <slide class="has-text-centered">
-                <div class="has-image-centered customer-logo">
-                  <figure class="image">
-                    <img src="../assets/redhat.png" alt="Red Hat" />
-                  </figure>
-                  <br />
-                </div>
-                <a
-                  href="https://www.redhat.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Red Hat</a
-                >
-              </slide>
-              <slide class="has-text-centered">
-                <div class="has-image-centered customer-logo">
-                  <figure class="image">
-                    <img src="../assets/swisscom.png" alt="Swisscom" />
-                  </figure>
-                  <br />
-                </div>
-                <a
-                  href="https://www.swisscom.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Swisscom</a
-                >
-              </slide>
-              <slide class="has-text-centered">
-                <div class="has-image-centered customer-logo">
-                  <figure class="image">
-                    <img src="../assets/puzzle.png" alt="Puzzle ITC" />
-                  </figure>
-                  <br />
-                </div>
-                <a
-                  href="https://puzzle.ch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Puzzle ITC</a
-                >
-              </slide>
-              <slide class="has-text-centered">
-                <div class="has-image-centered customer-logo">
-                  <figure class="image">
-                    <img src="../assets/aws.png" alt="AWS Partner Network" />
-                  </figure>
-                  <br />
-                </div>
-                <a
-                  href="https://aws.amazon.com/partners/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >AWS Partner Network</a
-                >
-              </slide>
-            </carousel>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section id="team" class="section">
       <div class="columns is-centered" :style="{ position: 'relative' }">
         <div class="column is-half">
