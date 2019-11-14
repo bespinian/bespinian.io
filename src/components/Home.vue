@@ -54,12 +54,9 @@
 
     <section class="hero is-link is-fullheight">
       <div class="hero-body">
-        <div class="container" :style="{ position: 'fixed', width: '100vw' }">
+        <div class="container container-cloud-city">
           <div class="columns">
-            <div
-              class="column is-offset-1-desktop"
-              :style="{ paddingTop: '7rem' }"
-            >
+            <div class="column is-offset-1-desktop column-main-title">
               <h1 class="title is-1 is-spaced">
                 be<span class="is-blinking">|</span>spinian
               </h1>
@@ -78,11 +75,11 @@
     </section>
 
     <section id="mission" class="section">
-      <div class="columns is-centered" :style="{ position: 'relative' }">
+      <div class="columns is-centered columns-section">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("mission.title") }}</h3>
           <p>{{ $t("mission.body") }}</p>
-          <div class="content" :style="{ marginTop: '4rem' }">
+          <div class="content team-content">
             <div class="columns">
               <div
                 class="column is-centered is-half-desktop is-offset-one-quarter-desktop"
@@ -94,32 +91,28 @@
                     </p>
                     <div class="content">
                       <p>
-                        <span
-                          class="icon has-text-link"
-                          :style="{ marginRight: '0.7rem' }"
-                          ><font-awesome-icon icon="check"/></span
-                        >{{ $t("mission.solutions.operate") }}
+                        <span class="icon has-text-link icon-checkmark">
+                          <font-awesome-icon icon="check" />
+                        </span>
+                        {{ $t("mission.solutions.operate") }}
                       </p>
                       <p>
-                        <span
-                          class="icon has-text-link"
-                          :style="{ marginRight: '0.7rem' }"
-                          ><font-awesome-icon icon="check"/></span
-                        >{{ $t("mission.solutions.adaptable") }}
+                        <span class="icon has-text-link icon-checkmark">
+                          <font-awesome-icon icon="check" />
+                        </span>
+                        {{ $t("mission.solutions.adaptable") }}
                       </p>
                       <p>
-                        <span
-                          class="icon has-text-link"
-                          :style="{ marginRight: '0.7rem' }"
-                          ><font-awesome-icon icon="check"/></span
-                        >{{ $t("mission.solutions.scalable") }}
+                        <span class="icon has-text-link icon-checkmark">
+                          <font-awesome-icon icon="check" />
+                        </span>
+                        {{ $t("mission.solutions.scalable") }}
                       </p>
                       <p>
-                        <span
-                          class="icon has-text-link"
-                          :style="{ marginRight: '0.7rem' }"
-                          ><font-awesome-icon icon="check"/></span
-                        >{{ $t("mission.solutions.optimized") }}
+                        <span class="icon has-text-link icon-checkmark">
+                          <font-awesome-icon icon="check" />
+                        </span>
+                        {{ $t("mission.solutions.optimized") }}
                       </p>
                     </div>
                   </div>
@@ -132,23 +125,18 @@
     </section>
 
     <section id="services" class="section">
-      <div class="columns is-centered" :style="{ position: 'relative' }">
+      <div class="columns is-centered columns-section">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("services.title") }}</h3>
           <p>{{ $t("services.body") }}</p>
-          <div class="content" :style="{ marginTop: '4rem' }">
+          <div class="content team-content">
             <div class="timeline is-centered">
               <div class="timeline-item">
                 <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
+                    class="timeline-icon timeline-icon-assess"
                     icon="clipboard-list"
                     size="lg"
-                    :style="{
-                      position: 'relative',
-                      right: '-31%',
-                      top: '20%',
-                      color: 'white'
-                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -161,14 +149,9 @@
               <div class="timeline-item">
                 <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
+                    class="timeline-icon timeline-icon-transform"
                     icon="recycle"
                     size="lg"
-                    :style="{
-                      position: 'relative',
-                      right: '-25%',
-                      top: '21%',
-                      color: 'white'
-                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -181,14 +164,9 @@
               <div class="timeline-item">
                 <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
+                    class="timeline-icon timeline-icon-design"
                     icon="pencil-alt"
                     size="lg"
-                    :style="{
-                      position: 'relative',
-                      right: '-26%',
-                      top: '21%',
-                      color: 'white'
-                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -201,14 +179,9 @@
               <div class="timeline-item">
                 <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
+                    class="timeline-icon timeline-icon-build"
                     icon="box"
                     size="lg"
-                    :style="{
-                      position: 'relative',
-                      right: '-26%',
-                      top: '21%',
-                      color: 'white'
-                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -221,14 +194,9 @@
               <div class="timeline-item">
                 <div class="timeline-marker is-image is-link is-48x48">
                   <font-awesome-icon
+                    class="timeline-icon timeline-icon-run"
                     icon="rocket"
                     size="lg"
-                    :style="{
-                      position: 'relative',
-                      right: '-24%',
-                      top: '23%',
-                      color: 'white'
-                    }"
                   />
                 </div>
                 <div class="timeline-content">
@@ -241,12 +209,7 @@
                   <font-awesome-icon
                     icon="undo"
                     size="lg"
-                    :style="{
-                      position: 'relative',
-                      right: '-26%',
-                      top: '22%',
-                      color: 'white'
-                    }"
+                    class="timeline-icon timeline-icon-rethink"
                   />
                 </div>
                 <div class="timeline-content">
@@ -263,7 +226,7 @@
     </section>
 
     <section id="tech" class="section">
-      <div class="columns is-centered" :style="{ position: 'relative' }">
+      <div class="columns is-centered columns-section">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("technologies.title") }}</h3>
           <p>
@@ -346,7 +309,7 @@
             <img
               src="../assets/technologies.svg"
               alt="Technologies"
-              :style="{ opacity: 0.5 }"
+              class="technologies-img"
             />
           </figure>
         </div>
@@ -354,7 +317,7 @@
     </section>
 
     <section id="partners" class="section">
-      <div class="columns is-centered" style="position:relative;">
+      <div class="columns is-centered columns-section">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("partners.title") }}</h3>
           <p>{{ $t("partners.body") }}:</p>
@@ -433,7 +396,7 @@
     </section>
 
     <section id="customers" class="section">
-      <div class="columns is-centered" style="position:relative;">
+      <div class="columns is-centered columns-section">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("customers.title") }}</h3>
           <p>{{ $t("customers.body") }}:</p>
@@ -557,11 +520,11 @@
     </section>
 
     <section id="team" class="section">
-      <div class="columns is-centered" :style="{ position: 'relative' }">
+      <div class="columns is-centered columns-section">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("team.title") }}</h3>
           <p>{{ $t("team.body") }}</p>
-          <div class="content" :style="{ marginTop: '4rem' }">
+          <div class="content team-content">
             <div class="tile is-ancestor">
               <div class="tile is-parent">
                 <article class="tile is-child">
@@ -706,15 +669,14 @@
     </section>
 
     <section id="contact" class="section">
-      <div class="columns is-centered" :style="{ position: 'relative' }">
+      <div class="columns is-centered columns-section">
         <div class="column is-half">
           <h3 class="title is-2 is-spaced">{{ $t("contact.title") }}</h3>
           <p>{{ $t("contact.body") }}</p>
           <form
-            class="content"
+            class="content contact-form"
             action="https://formspree.io/contact@bespinian.io"
             method="POST"
-            :style="{ marginTop: '4rem' }"
           >
             <div class="field">
               <div class="control has-icons-left">
@@ -821,6 +783,11 @@ export default {
   padding-right: 0.5rem !important;
 }
 
+.container-cloud-city {
+  position: fixed;
+  width: 100vw;
+}
+
 .cloud-city {
   width: 26rem;
   height: 26rem;
@@ -832,6 +799,18 @@ export default {
     margin-top: 5rem;
     width: 100%;
   }
+}
+
+.column-main-title {
+  paddingtop: 7rem;
+}
+
+.columns-section {
+  position: relative;
+}
+
+.icon-checkmark {
+  margin-right: 0.7rem;
 }
 
 .tech-logo {
@@ -854,6 +833,53 @@ export default {
 
 .card {
   height: 100%;
+}
+
+.contact-form {
+  margin-top: 4rem;
+}
+
+.team-content {
+  margin-top: 4rem;
+}
+
+.technologies-img {
+  opacity: 0.5;
+}
+
+.timeline-icon {
+  position: relative;
+  color: white;
+}
+
+.timeline-icon-rethink {
+  right: -26%;
+  top: 22%;
+}
+
+.timeline-icon-assess {
+  right: -31%;
+  top: 20%;
+}
+
+.timeline-icon-transform {
+  right: -25%;
+  top: 21%;
+}
+
+.timeline-icon-design {
+  right: -26%;
+  top: 21%;
+}
+
+.timeline-icon-build {
+  right: -26%;
+  top: 21%;
+}
+
+.timeline-icon-run {
+  right: -24%;
+  top: 23%;
 }
 
 .is-blinking {

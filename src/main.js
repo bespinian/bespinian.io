@@ -1,5 +1,6 @@
 import Vue from "vue";
-import App from "./App.vue";
+import VueAnalytics from "vue-analytics";
+import VueScrollTo from "vue-scrollto";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faCheck,
@@ -24,8 +25,8 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "bulma/css/bulma.css";
 import "bulma-timeline/dist/css/bulma-timeline.min.css";
 import "typeface-lato";
+import App from "./App.vue";
 import i18n from "./i18n";
-import VueScrollTo from "vue-scrollto";
 
 library.add(
   faCheck,
@@ -46,6 +47,10 @@ library.add(
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
+
+Vue.use(VueAnalytics, {
+  id: "UA-132338301-1"
+});
 
 Vue.use(VueScrollTo, { offset: -30 });
 
