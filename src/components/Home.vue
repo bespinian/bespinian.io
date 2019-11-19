@@ -802,7 +802,7 @@ export default {
 }
 
 .column-main-title {
-  paddingtop: 7rem;
+  padding-top: 7rem;
 }
 
 .columns-section {
