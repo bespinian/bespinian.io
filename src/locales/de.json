@@ -15,7 +15,7 @@
   "services": {
     "nav_item": "Dienstleistungen",
     "title": "Unsere Dienstleistungen",
-    "body": "Egal, ob Sie ein neues Vorhaben beginnen, eine bestehende Idee überarbeiten oder Ihre bestehenden Applikationen transformieren, wir begleiten Ihr Team hands-on, in jeder Iteration Ihres Projekts. Hier sind einige Dienstleistungen, die wir anbieten. Wenn Sie etwas suchen, das nicht auf der Liste ist, lassen Sie es uns wissen. Wir sind immer offen für Innovation.",
+    "body": "Egal, ob Sie ein neues Vorhaben beginnen, eine existierende Idee überarbeiten oder Ihre bestehenden Applikationen transformieren, wir begleiten Ihr Team hands-on, in jeder Iteration Ihres Projekts. Hier sind einige Dienstleistungen, die wir anbieten. Wenn Sie etwas suchen, das nicht auf der Liste ist, lassen Sie es uns wissen. Wir sind immer offen für Innovation.",
     "timeline": {
       "assess": {
         "title": "Bewerten",
@@ -58,7 +58,7 @@
     "title": "Unsere Technologien",
     "platforms": {
       "body": {
-        "intro": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis von modernen Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von",
+        "intro": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis moderner Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von",
         "platforms": "Plattformen",
         "weAreNativeTo": "auf denen wir Experten sind"
       }
