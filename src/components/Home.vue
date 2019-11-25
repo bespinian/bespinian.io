@@ -235,70 +235,96 @@
             {{ $t("technologies.platforms.body.weAreNativeTo") }}:
           </p>
           <br />
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <div class="tile is-child has-text-centered tech-logo">
-                <figure class="image">
-                  <img src="../assets/aws.svg" alt="AWS" />
-                </figure>
-                <br />
+          <br />
+          <div class="container">
+            <carousel
+              :per-page-custom="[
+                [480, 2],
+                [768, 4],
+                [1024, 5]
+              ]"
+              :scroll-per-page="true"
+              pagination-active-color="#3273dc"
+            >
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/aws.svg" alt="AWS " />
+                  </figure>
+                  <br />
+                </div>
                 <a
                   href="https://aws.amazon.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >AWS</a
                 >
-              </div>
-              <div class="tile is-child has-text-centered tech-logo">
-                <figure class="image">
-                  <img src="../assets/openshift.svg" alt="OpenShift" />
-                </figure>
-                <br />
+                  AWS
+                </a>
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/openshift.svg" alt="OpenShift" />
+                  </figure>
+                  <br />
+                </div>
                 <a
                   href="https://www.openshift.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >OpenShift</a
                 >
-              </div>
-              <div class="tile is-child has-text-centered tech-logo">
-                <figure class="image">
-                  <img src="../assets/cloudfoundry.svg" alt="Cloud Foundry" />
-                </figure>
-                <br />
-                <a
-                  href="https://www.cloudfoundry.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Cloud Foundry</a
-                >
-              </div>
-              <div class="tile is-child has-text-centered tech-logo">
-                <figure class="image">
-                  <img src="../assets/kubernetes.svg" alt="Kubernetes" />
-                </figure>
-                <br />
+                  OpenShift
+                </a>
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/kubernetes.svg" alt="Kubernetes" />
+                  </figure>
+                  <br />
+                </div>
                 <a
                   href="https://kubernetes.io"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Kubernetes</a
                 >
-              </div>
-              <div class="tile is-child has-text-centered tech-logo">
-                <figure class="image">
-                  <img src="../assets/docker.svg" alt="Docker" />
-                </figure>
-                <br />
+                  Kubernetes
+                </a>
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/docker.svg" alt="Docker" />
+                  </figure>
+                  <br />
+                </div>
                 <a
                   href="https://www.docker.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Docker</a
                 >
-              </div>
-            </div>
+                  Docker
+                </a>
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/cloudfoundry.svg" alt="Cloud Foundry" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://www.cloudfoundry.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cloud Foundry
+                </a>
+              </slide>
+            </carousel>
           </div>
+          <br />
+          <br />
           <p>
             {{ $t("technologies.tools.body.intro") }}
             <strong>{{ $t("technologies.tools.body.tools") }}</strong
@@ -813,11 +839,6 @@ export default {
   margin-right: 0.7rem;
 }
 
-.tech-logo {
-  padding: 5%;
-  max-width: 30vw;
-}
-
 .customer-logo {
   max-width: 35%;
 }
@@ -825,10 +846,6 @@ export default {
 .has-image-centered {
   margin-left: auto;
   margin-right: auto;
-}
-
-.tile.is-child.tech-logo {
-  margin: 0 auto !important;
 }
 
 .card {
