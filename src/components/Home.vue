@@ -778,6 +778,7 @@
 <script>
 import LocaleChanger from "./LocaleChanger.vue";
 import { Carousel, Slide } from "vue-carousel";
+import { page } from "vue-analytics";
 
 export default {
   components: {
@@ -793,6 +794,9 @@ export default {
   methods: {
     toggleNav() {
       this.showNav = !this.showNav;
+    },
+    track() {
+      page("/");
     }
   }
 };
