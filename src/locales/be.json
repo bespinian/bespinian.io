@@ -74,16 +74,19 @@
     "nav_item": "Team",
     "title": "Üses Team",
     "body": "Mir si Cloud Software Engineers vor erste Stund mit Bruefserfahrig sowohl i Grossundernähme als ou i Startups. Mir si stolz uf üsi Fähigkeite als kompetänti Berater, ifühlsami Coaches und erfahreni Coder. Interessiert üs z träffe? De chömet eifach ungeniert über Social Media uf üs zue, träffet üs amne Meetup ir Nechi oder nützet ds Kontaktformular unde.",
-    "member-1": {
+    "mathis": {
       "name": "Mathis Kretz",
       "catchphrase": "Keeper of Simple",
       "body": "Softwarearchitekt und Mitgründer. Spezialisert uf Microservices, Containertechnologie and Cloud-Native Engineering."
     },
-    "member-2": {
+    "tobi": {
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
-      "body": "Software Engineer und Mitgründer. Spezialisiert uf Clouddienst, verteilti System und Webentwicklig mit moderne Technologie."
+      "body": "Software Engineer und Mitgründer. Spezialisiert uf Clouddienste, verteilti System und Webentwicklig mit moderne Technologie."
     }
+  },
+  "jobs": {
+    "nav_item": "Jobs"
   },
   "contact": {
     "nav_item": "Kontakt",

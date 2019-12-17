@@ -74,16 +74,19 @@
     "nav_item": "Team",
     "title": "The Team",
     "body": "We are cloud-native software engineers with experience in both the corporate and the startup world. We pride ourselves in being expert consultants, competent coaches and seasoned coders at the same time. Interested in meeting us? Feel free to approach us on social media or at a meetup near you.",
-    "member-1": {
+    "mathis": {
       "name": "Mathis Kretz",
       "catchphrase": "Keeper of Simple",
       "body": "Software Architect and co-founder. Specialized in microservices, container technologies and cloud-native engineering."
     },
-    "member-2": {
+    "tobi": {
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
       "body": "Software Engineer and co-founder. Specialized in cloud services, distributed systems and web development with modern technologies."
     }
+  },
+  "jobs": {
+    "nav_item": "Jobs"
   },
   "contact": {
     "nav_item": "Contact",

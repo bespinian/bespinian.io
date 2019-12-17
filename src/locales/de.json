@@ -74,16 +74,19 @@
     "nav_item": "Team",
     "title": "Unser Team",
     "body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Startups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater, einfühlsame Coaches und erfahrene Coder. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
-    "member-1": {
+    "mathis": {
       "name": "Mathis Kretz",
       "catchphrase": "Keeper of Simple",
       "body": "Softwarearchitekt und Mitgründer. Spezialisert auf Microservices, Containertechnologien und Cloud-Native Engineering."
     },
-    "member-2": {
+    "tobi": {
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
       "body": "Software Engineer und Mitgründer. Spezialisiert auf Clouddienste, verteilte Systeme und Webentwicklung mit modernen Technologien."
     }
+  },
+  "jobs": {
+    "nav_item": "Jobs"
   },
   "contact": {
     "nav_item": "Kontakt",
