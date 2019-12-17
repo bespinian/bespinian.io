@@ -6,44 +6,47 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:docker": "docker build . -t bespinian.io"
+    "build:docker": "docker build . -t bespinian.io",
+    "deploy": "npm run build && pushd infrastructure && make apply && popd && aws s3 sync dist s3://bespinian.io --delete"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/vue-fontawesome": "^0.1.8",
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
     "bulma": "^0.8.0",
     "bulma-timeline": "^3.0.4",
-    "locales-detector": "^2.5.0",
+    "locales-detector": "^2.8.0",
     "store": "^2.0.12",
     "typeface-lato": "0.0.75",
-    "vue": "^2.6.10",
-    "vue-analytics": "^5.18.0",
+    "vue": "^2.6.11",
+    "vue-analytics": "^5.20.1",
     "vue-carousel": "^0.18.0",
-    "vue-i18n": "^8.15.1",
+    "vue-i18n": "^8.15.3",
+    "vue-router": "^3.1.3",
     "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.4.1",
     "@vue/cli-plugin-babel": "^4.1.1",
     "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-plugin-router": "^4.1.1",
     "@vue/cli-service": "^4.1.1",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.1",
-    "eslint-plugin-prettier": "^3.1.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.0.1",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "vue-cli-plugin-i18n": "^0.6.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "!(docs)/**/*.{js,vue}": [
+    "*.{js,vue}": [
       "vue-cli-service lint",
       "git add"
     ]

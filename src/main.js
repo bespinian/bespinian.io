@@ -26,6 +26,7 @@ import "bulma/css/bulma.css";
 import "bulma-timeline/dist/css/bulma-timeline.min.css";
 import "typeface-lato";
 import App from "./App.vue";
+import router from "./router";
 import i18n from "./i18n";
 
 library.add(
@@ -49,7 +50,8 @@ library.add(
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.use(VueAnalytics, {
-  id: "UA-132338301-1"
+  id: "UA-132338301-1",
+  router
 });
 
 Vue.use(VueScrollTo, { offset: -30 });
@@ -57,6 +59,7 @@ Vue.use(VueScrollTo, { offset: -30 });
 Vue.config.productionTip = false;
 
 new Vue({
+  router,
   i18n,
   render: h => h(App)
 }).$mount("#app");
