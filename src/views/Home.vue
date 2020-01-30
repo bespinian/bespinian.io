@@ -434,6 +434,20 @@
                 >
               </slide>
               <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo-wide">
+                  <figure class="image">
+                    <img src="../assets/emmi.png" alt="Emmi" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://group.emmi.com/che/en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Emmi</a
+                >
+              </slide>
+              <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
                     <img src="../assets/legal-i.png" alt="legal-i" />
@@ -781,6 +795,10 @@ export default {
 
 .customer-logo {
   max-width: 35%;
+}
+
+.customer-logo-wide {
+  max-width: 45%;
 }
 
 .has-image-centered {
