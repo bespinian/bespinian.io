@@ -441,7 +441,7 @@
                   <br />
                 </div>
                 <a
-                  href="https://group.emmi.com/che/en"
+                  href="https://group.emmi.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Emmi</a
