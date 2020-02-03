@@ -462,6 +462,22 @@
                 >
               </slide>
               <slide class="has-text-centered">
+                <div
+                  class="has-image-centered customer-logo-extra-wide customer-logo-slim"
+                >
+                  <figure class="image">
+                    <img src="../assets/skoor.png" alt="Skoor" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://www.skoor.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Skoor</a
+                >
+              </slide>
+              <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
                     <img src="../assets/zeilenwerk.png" alt="Zeilenwerk" />
@@ -799,6 +815,15 @@ export default {
 
 .customer-logo-wide {
   max-width: 45%;
+}
+
+.customer-logo-extra-wide {
+  max-width: 50%;
+}
+
+.customer-logo-slim {
+  padding-top: 11%;
+  padding-bottom: 11%;
 }
 
 .has-image-centered {
