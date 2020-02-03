@@ -448,7 +448,9 @@
                 >
               </slide>
               <slide class="has-text-centered">
-                <div class="has-image-centered customer-logo">
+                <div
+                  class="has-image-centered customer-logo-extra-wide customer-logo-slim"
+                >
                   <figure class="image">
                     <img src="../assets/legal-i.png" alt="legal-i" />
                   </figure>
