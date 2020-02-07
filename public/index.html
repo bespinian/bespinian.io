@@ -13,14 +13,14 @@
       content="bespinian offers cloud native consulting based on a wide range of technologoies and platforms like Docker, Kubernetes or AWS."
     />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <title>bespinian</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <noscript>
-      <strong
-        >We're sorry but bespinian.io doesn't work properly without JavaScript
-        enabled. Please enable it to continue.</strong
-      >
+      <strong>
+        We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to continue.
+      </strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
