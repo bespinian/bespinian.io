@@ -99,5 +99,9 @@
       "messageplaceholder": "Nachricht",
       "sendbuttonlabel": "Abschicken"
     }
+  },
+  "cookie_consent": {
+    "message": "Wir benutzen Cookies um Ihnen die beste Experience auf unserer Website bieten zu können.",
+    "button": "Ok"
   }
 }

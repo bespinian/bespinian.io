@@ -768,6 +768,11 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p><strong>bespinian</strong> {{ new Date().getFullYear() }}</p>
+        <cookie-law
+          :message="$t('cookie_consent.message')"
+          :button-text="$t('cookie_consent.button')"
+          theme="dark-lime"
+        ></cookie-law>
       </div>
     </footer>
   </div>
@@ -776,12 +781,14 @@
 <script>
 import { Carousel, Slide } from "vue-carousel";
 import Navigation from "../components/Navigation.vue";
+import CookieLaw from "vue-cookie-law";
 
 export default {
   components: {
     Navigation,
     Carousel,
     Slide,
+    CookieLaw,
   },
 };
 </script>
@@ -928,5 +935,10 @@ export default {
   50% {
     color: white;
   }
+}
+
+.Cookie--bottom.Cookie--dark-lime .Cookie__button {
+  background-color: #3273dc;
+  font-family: "Lato", sans-serif;
 }
 </style>
