@@ -1,6 +1,6 @@
 # bespinian.io
 
-[![Docker Build](https://img.shields.io/docker/build/bespinian/bespinian.io.svg?style=flat-square)](https://hub.docker.com/r/bespinian/bespinian.io)
+[![Docker Build](https://img.shields.io/docker/cloud/build/bespinian/bespinian.io.svg?style=flat-square)](https://hub.docker.com/r/bespinian/bespinian.io)
 
 The bespinian homepage available at <https://bespinian.io>
 
