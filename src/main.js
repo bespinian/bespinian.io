@@ -13,13 +13,13 @@ import {
   faRssSquare,
   faUser,
   faEnvelope,
-  faInfo
+  faInfo,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faGithub,
   faLinkedin,
-  faXing
+  faXing,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "bulma/css/bulma.css";
@@ -51,7 +51,7 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.use(VueAnalytics, {
   id: "UA-132338301-1",
-  router
+  router,
 });
 
 Vue.use(VueScrollTo, { offset: -30 });
@@ -61,5 +61,5 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   i18n,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
