@@ -163,13 +163,13 @@
 export default {
   data() {
     return {
-      showNav: false
+      showNav: false,
     };
   },
   methods: {
     toggleNav() {
       this.showNav = !this.showNav;
-    }
-  }
+    },
+  },
 };
 </script>

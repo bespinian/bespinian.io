@@ -24,15 +24,15 @@ export default {
       langs: {
         en: "English",
         de: "Deutsch",
-        be: "Bärndütsch"
-      }
+        be: "Bärndütsch",
+      },
     };
   },
   methods: {
     handleLocaleChange(key) {
       this.$i18n.locale = key;
       store.set(localeStorageKey, key);
-    }
-  }
+    },
+  },
 };
 </script>

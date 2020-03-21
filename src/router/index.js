@@ -8,19 +8,19 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: Home
+    component: Home,
   },
   {
     path: "/jobs",
     name: "jobs",
-    component: () => import(/* webpackChunkName: "jobs" */ "../views/Jobs.vue")
-  }
+    component: () => import(/* webpackChunkName: "jobs" */ "../views/Jobs.vue"),
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;

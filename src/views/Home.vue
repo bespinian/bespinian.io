@@ -191,7 +191,7 @@
               :per-page-custom="[
                 [480, 2],
                 [768, 4],
-                [1024, 5]
+                [1024, 5],
               ]"
               :scroll-per-page="true"
               pagination-active-color="#3273dc"
@@ -304,7 +304,7 @@
               :per-page-custom="[
                 [480, 2],
                 [768, 4],
-                [1024, 5]
+                [1024, 5],
               ]"
               :scroll-per-page="true"
               pagination-active-color="#3273dc"
@@ -383,7 +383,7 @@
               :per-page-custom="[
                 [480, 2],
                 [768, 4],
-                [1024, 5]
+                [1024, 5],
               ]"
               :scroll-per-page="true"
               pagination-active-color="#3273dc"
@@ -765,8 +765,8 @@ export default {
   components: {
     Navigation,
     Carousel,
-    Slide
-  }
+    Slide,
+  },
 };
 </script>
 

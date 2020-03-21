@@ -4,10 +4,10 @@ module.exports = {
       locale: "en",
       fallbackLocale: "en",
       localeDir: "locales",
-      enableInSFC: true
-    }
+      enableInSFC: true,
+    },
   },
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     config.module
       .rule("i18n")
       .resourceQuery(/blockType=i18n/)
@@ -15,5 +15,5 @@ module.exports = {
       .use("i18n")
       .loader("@kazupon/vue-i18n-loader")
       .end();
-  }
+  },
 };

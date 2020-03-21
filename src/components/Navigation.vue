@@ -60,17 +60,17 @@ import LocaleChanger from "./LocaleChanger.vue";
 
 export default {
   components: {
-    LocaleChanger
+    LocaleChanger,
   },
   data() {
     return {
-      showNav: false
+      showNav: false,
     };
   },
   methods: {
     toggleNav() {
       this.showNav = !this.showNav;
-    }
-  }
+    },
+  },
 };
 </script>
