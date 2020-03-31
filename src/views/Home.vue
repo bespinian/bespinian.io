@@ -338,6 +338,20 @@
                 >
               </slide>
               <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo-wide">
+                  <figure class="image">
+                    <img src="../assets/vshn.svg" alt="VSHN" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://vshn.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >VSHN</a
+                >
+              </slide>
+              <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
                     <img src="../assets/puzzle.png" alt="Puzzle ITC" />
