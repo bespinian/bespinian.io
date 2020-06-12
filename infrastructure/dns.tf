@@ -21,4 +21,3 @@ resource "aws_route53_record" "email" {
     "10 ALT4.ASPMX.L.GOOGLE.COM.",
   ]
 }
-
