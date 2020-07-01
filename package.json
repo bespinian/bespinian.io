@@ -16,7 +16,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "bulma": "^0.9.0",
     "bulma-timeline": "^3.0.4",
-    "locales-detector": "^2.24.0",
+    "locales-detector": "^2.25.0",
     "store": "^2.0.12",
     "typeface-lato": "0.0.75",
     "vue": "^2.6.11",
