@@ -1,5 +1,8 @@
 module "homepage" {
   source = "github.com/mastertinner/terraform-spa"
+  providers = {
+    aws.us_east = aws.us_east
+  }
 
   service_name        = "homepage"
   domain              = local.domain
