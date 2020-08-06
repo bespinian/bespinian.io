@@ -23,9 +23,9 @@
     "vue-analytics": "^5.22.1",
     "vue-carousel": "^0.18.0",
     "vue-cookie-law": "^1.13.3",
-    "vue-i18n": "^8.19.0",
-    "vue-router": "^3.3.4",
-    "vue-scrollto": "^2.18.1"
+    "vue-i18n": "^8.20.0",
+    "vue-router": "^3.4.0",
+    "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.5.0",
@@ -35,7 +35,7 @@
     "@vue/cli-service": "^4.4.6",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.5.0",
+    "eslint": "^7.6.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^10.2.11",
