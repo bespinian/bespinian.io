@@ -24,7 +24,7 @@
     "vue-carousel": "^0.18.0",
     "vue-cookie-law": "^1.13.3",
     "vue-i18n": "^8.20.0",
-    "vue-router": "^3.4.0",
+    "vue-router": "^3.4.2",
     "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {
