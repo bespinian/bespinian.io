@@ -10,9 +10,9 @@
     "deploy": "npm run build && pushd infrastructure && make apply && popd && aws s3 sync dist s3://bespinian.io --delete"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.31",
+    "@fortawesome/free-brands-svg-icons": "^5.15.0",
+    "@fortawesome/free-solid-svg-icons": "^5.15.0",
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "bulma": "^0.9.1",
     "bulma-timeline": "^3.0.4",
@@ -37,7 +37,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-vue": "^6.2.2",
+    "eslint-plugin-vue": "^7.0.0",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
     "vue-cli-plugin-i18n": "^1.0.1",

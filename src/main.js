@@ -47,7 +47,7 @@ library.add(
   faInfo
 );
 
-Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.component("FontAwesomeIcon", FontAwesomeIcon);
 
 Vue.use(VueAnalytics, {
   id: "UA-132338301-1",
