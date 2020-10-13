@@ -16,7 +16,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "bulma": "^0.9.1",
     "bulma-timeline": "^3.0.4",
-    "locales-detector": "^2.27.5",
+    "locales-detector": "^2.27.6",
     "store": "^2.0.12",
     "typeface-lato": "^1.1.13",
     "vue": "^2.6.12",
@@ -24,8 +24,8 @@
     "vue-carousel": "^0.18.0",
     "vue-cookie-law": "^1.13.3",
     "vue-i18n": "^8.22.0",
-    "vue-router": "^3.4.5",
-    "vue-scrollto": "^2.18.2"
+    "vue-router": "^3.4.6",
+    "vue-scrollto": "^2.19.1"
   },
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.5.0",
@@ -35,7 +35,7 @@
     "@vue/cli-service": "^4.5.7",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.10.0",
+    "eslint": "^7.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.1",
     "lint-staged": "^10.4.0",
