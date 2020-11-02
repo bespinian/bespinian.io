@@ -457,12 +457,9 @@
                   </figure>
                   <br />
                 </div>
-                <a
-                  href="https://www.citechsensors.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >CI Tech Sensors</a
-                >
+                <router-link to="/customers/citechsensors">
+                  CI Tech Sensors
+                </router-link>
               </slide>
               <slide class="has-text-centered">
                 <div

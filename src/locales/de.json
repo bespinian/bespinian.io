@@ -103,5 +103,12 @@
   "cookie_consent": {
     "message": "Wir benutzen Cookies um Ihnen die beste Experience auf unserer Website bieten zu können.",
     "button": "Ok"
+  },
+  "customer_story": {
+    "customer": "Kunde",
+    "background": "Ausgangslage",
+    "goal": "Projektziel",
+    "contribution": "bespinians Rolle",
+    "technologies": "Technologien"
   }
 }
