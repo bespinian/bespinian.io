@@ -19,19 +19,33 @@ import store from "store";
 import { localeStorageKey } from "../i18n";
 
 export default {
-  data() {
-    return {
-      langs: {
+  props: {
+    langs: {
+      type: Object,
+      default: () => ({
         en: "English",
         de: "Deutsch",
         be: "Bärndütsch",
-      },
-    };
+      }),
+    },
+    localeMappings: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
+  created: function () {
+    this.applyLocaleMappings();
   },
   methods: {
     handleLocaleChange(key) {
       this.$i18n.locale = key;
       store.set(localeStorageKey, key);
+    },
+    applyLocaleMappings() {
+      const mappedLocale = this.localeMappings[this.$i18n.locale];
+      if (mappedLocale) {
+        this.handleLocaleChange(mappedLocale);
+      }
     },
   },
 };
