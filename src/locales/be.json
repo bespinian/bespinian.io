@@ -103,5 +103,12 @@
   "cookie_consent": {
     "message": "Mir benutze Cookies um öich di besti Experience uf üsere Website chönne z biete.",
     "button": "Ok"
+  },
+  "customer_story": {
+    "customer": "Chund",
+    "background": "Usgangslag",
+    "goal": "Projektziel",
+    "contribution": "Rolle vo bespinian",
+    "technologies": "Technologie"
   }
 }

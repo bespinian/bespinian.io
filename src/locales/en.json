@@ -103,5 +103,12 @@
   "cookie_consent": {
     "message": "We use cookies to ensure you get the best experience on our website.",
     "button": "Got it"
+  },
+  "customer_story": {
+    "customer": "Customer",
+    "background": "Background",
+    "goal": "Project Goal",
+    "contribution": "bespinian's Role",
+    "technologies": "Technologies"
   }
 }
