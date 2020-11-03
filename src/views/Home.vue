@@ -354,6 +354,20 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
+                    <img src="../assets/aws.png" alt="AWS Partner Network" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://aws.amazon.com/partners/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >AWS Partner Network</a
+                >
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
                     <img src="../assets/puzzle.png" alt="Puzzle ITC" />
                   </figure>
                   <br />
@@ -366,17 +380,20 @@
                 >
               </slide>
               <slide class="has-text-centered">
-                <div class="has-image-centered customer-logo">
+                <div class="has-image-centered customer-logo-extra-wide">
                   <figure class="image">
-                    <img src="../assets/aws.png" alt="AWS Partner Network" />
+                    <img
+                      src="../assets/swissmadesoftware.png"
+                      alt="swiss made software"
+                    />
                   </figure>
                   <br />
                 </div>
                 <a
-                  href="https://aws.amazon.com/partners/"
+                  href="https://www.swissmadesoftware.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >AWS Partner Network</a
+                  >swiss made software</a
                 >
               </slide>
             </carousel>
