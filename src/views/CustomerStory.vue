@@ -126,7 +126,8 @@ export default {
 
 <style>
 .customer-story-logo {
-  max-width: 25%;
+  width: 15rem;
+  max-width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
