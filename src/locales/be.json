@@ -83,6 +83,11 @@
       "name": "Tobi Fuhrimann",
       "catchphrase": "Head in the Clouds",
       "body": "Software Engineer und Mitgründer. Spezialisiert uf Clouddienste, verteilti System und Webentwicklig mit moderne Technologie."
+    },
+    "gabriel": {
+      "name": "Gabriel Koch",
+      "catchphrase": "Head in Containers",
+      "body": "Software Engineer und Cloud Architekt, mit Spezialisierung uf Containertechnologien, Cloud-Native Engineering und DevOps."
     }
   },
   "jobs": {
