@@ -49,7 +49,14 @@ library.add(
 
 Vue.component("FontAwesomeIcon", FontAwesomeIcon);
 
-Vue.use(VueGtag, { config: { id: "UA-132338301-1" } }, router);
+Vue.use(
+  VueGtag,
+  {
+    config: { id: "UA-132338301-1" },
+    enabled: window.location.hostname != "localhost",
+  },
+  router
+);
 
 Vue.use(VueScrollTo, { offset: -30 });
 
