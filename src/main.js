@@ -1,5 +1,5 @@
 import Vue from "vue";
-import VueAnalytics from "vue-analytics";
+import VueGtag from "vue-gtag";
 import VueScrollTo from "vue-scrollto";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -49,10 +49,7 @@ library.add(
 
 Vue.component("FontAwesomeIcon", FontAwesomeIcon);
 
-Vue.use(VueAnalytics, {
-  id: "UA-132338301-1",
-  router,
-});
+Vue.use(VueGtag, { config: { id: "UA-132338301-1" } }, router);
 
 Vue.use(VueScrollTo, { offset: -30 });
 
