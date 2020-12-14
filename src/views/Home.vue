@@ -946,7 +946,17 @@ export default {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-footer {
+  width: 100%;
 }
 
 .contact-form {
