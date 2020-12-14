@@ -563,7 +563,8 @@
           <h3 class="title is-2 is-spaced">{{ $t("team.title") }}</h3>
           <p>{{ $t("team.body") }}</p>
           <div class="content team-content">
-            <div class="tile is-ancestor">
+            <!-- Flex wrap is manually required since tiles do not support flex otherwise -->
+            <div class="tile is-ancestor" style="flex-wrap: wrap">
               <div class="tile is-parent">
                 <article class="tile is-child">
                   <div class="card">
@@ -696,6 +697,75 @@
                           <font-awesome-icon icon="rss-square" />
                         </span>
                       </a>
+                    </footer>
+                  </div>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child">
+                  <div class="card">
+                    <div class="card-content">
+                      <figure class="image is-128x128">
+                        <img
+                          class="is-rounded"
+                          src="../assets/gabriel.jpg"
+                          alt="Gabriel Koch"
+                        />
+                      </figure>
+                      <br />
+                      <p class="title">
+                        {{ $t("team.gabriel.name") }}
+                      </p>
+                      <p class="subtitle">
+                        {{ $t("team.gabriel.catchphrase") }}
+                      </p>
+                      <div class="content">{{ $t("team.gabriel.body") }}</div>
+                    </div>
+                    <footer class="card-footer">
+                      <a
+                        class="card-footer-item"
+                        href="https://twitter.com/elessar_ch"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Twitter"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon :icon="['fab', 'twitter']" />
+                        </span>
+                      </a>
+                      <a
+                        class="card-footer-item"
+                        href="https://github.com/elessar-ch"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon :icon="['fab', 'github']" />
+                        </span>
+                      </a>
+                      <a
+                        class="card-footer-item"
+                        href="https://www.linkedin.com/in/gabriel-koch-ch/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon :icon="['fab', 'linkedin']" />
+                        </span>
+                      </a>
+                      <!--<a
+                        class="card-footer-item"
+                        href="https://blog.bespinian.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Blog"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon icon="rss-square" />
+                        </span>
+                      </a>-->
                     </footer>
                   </div>
                 </article>
