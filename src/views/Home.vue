@@ -755,17 +755,6 @@
                           <font-awesome-icon :icon="['fab', 'linkedin']" />
                         </span>
                       </a>
-                      <!--<a
-                        class="card-footer-item"
-                        href="https://blog.bespinian.io"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Blog"
-                      >
-                        <span class="icon">
-                          <font-awesome-icon icon="rss-square" />
-                        </span>
-                      </a>-->
                     </footer>
                   </div>
                 </article>
