@@ -24,7 +24,7 @@
     "vue-carousel": "^0.18.0",
     "vue-cookie-law": "^1.13.3",
     "vue-gtag": "^1.10.0",
-    "vue-i18n": "^8.22.2",
+    "vue-i18n": "^8.22.3",
     "vue-router": "^3.4.9",
     "vue-scrollto": "^2.20.0"
   },
