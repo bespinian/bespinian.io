@@ -11,13 +11,13 @@
     "deploy": "npm run build && pushd infrastructure && make apply && popd && aws s3 sync dist s3://bespinian.io --delete --exclude 'js/*' --exclude 'css/*' --exclude 'img/*' --exclude 'fonts/*' && aws s3 sync dist s3://bespinian.io --delete --cache-control 'max-age=31536000' --exclude '*' --include 'js/*' --include 'css/*' --include 'img/*' --include 'fonts/*'"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "bulma": "^0.9.1",
     "bulma-timeline": "^3.0.4",
-    "locales-detector": "^2.27.22",
+    "locales-detector": "^2.27.23",
     "store": "^2.0.12",
     "typeface-lato": "^1.1.13",
     "vue": "^2.6.12",
