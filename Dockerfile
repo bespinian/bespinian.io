@@ -1,8 +1,8 @@
-FROM node:current AS builder
-WORKDIR /app
+FROM docker.io/library/node:current AS builder
+WORKDIR /usr/src/app
 COPY . .
 RUN npm ci
 RUN npm run build
 
-FROM nginxinc/nginx-unprivileged:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
+FROM docker.io/nginxinc/nginx-unprivileged:alpine
+COPY --from=builder --chown=nginx:nginx /usr/src/app/dist /usr/share/nginx/html/
