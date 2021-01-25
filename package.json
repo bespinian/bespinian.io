@@ -17,7 +17,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "bulma": "^0.9.1",
     "bulma-timeline": "^3.0.4",
-    "locales-detector": "^2.27.23",
+    "locales-detector": "^2.27.25",
     "store": "^2.0.12",
     "typeface-lato": "^1.1.13",
     "vue": "^2.6.12",
@@ -25,7 +25,7 @@
     "vue-cookie-law": "^1.13.3",
     "vue-gtag": "^1.10.0",
     "vue-i18n": "^8.22.4",
-    "vue-router": "^3.4.9",
+    "vue-router": "^3.5.0",
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
