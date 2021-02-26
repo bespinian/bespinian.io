@@ -1,14 +1,24 @@
 name: Lint and Test
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
-    name: Build
+    name: Build and Deploy
+    environment: aws-production
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v1
+      - uses: hashicorp/setup-terraform@v1
       - uses: actions/checkout@v2
       - run: npm audit
       - run: npm ci
       - run: npm run lint
+      - run: npm run build
+      - run: npm run deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
