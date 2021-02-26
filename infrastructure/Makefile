@@ -1,4 +1,4 @@
 .PHONY: apply
 apply:
-	terraform init -upgrade
+	terraform init
 	terraform apply

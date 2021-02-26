@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "build:docker": "docker build . -t bespinian.io",
-    "deploy": "npm run build && pushd infrastructure && make apply && popd && aws s3 sync dist s3://bespinian.io --delete --exclude 'js/*' --exclude 'css/*' --exclude 'img/*' --exclude 'fonts/*' && aws s3 sync dist s3://bespinian.io --delete --cache-control 'max-age=31536000' --exclude '*' --include 'js/*' --include 'css/*' --include 'img/*' --include 'fonts/*'"
+    "deploy": "cd infrastructure && make apply && cd .. && aws s3 sync dist s3://bespinian.io --delete --exclude 'js/*' --exclude 'css/*' --exclude 'img/*' --exclude 'fonts/*' && aws s3 sync dist s3://bespinian.io --delete --cache-control 'max-age=31536000' --exclude '*' --include 'js/*' --include 'css/*' --include 'img/*' --include 'fonts/*'"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
