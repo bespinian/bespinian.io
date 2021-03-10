@@ -4,5 +4,5 @@ COPY . .
 RUN npm ci
 RUN npm run build
 
-FROM docker.io/nginxinc/nginx-unprivileged:alpine
+FROM docker.io/nginxinc/nginx-unprivileged:1-alpine
 COPY --from=builder --chown=nginx:nginx /usr/src/app/dist /usr/share/nginx/html/
