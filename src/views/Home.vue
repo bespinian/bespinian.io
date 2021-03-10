@@ -639,8 +639,8 @@
                       <figure class="image is-128x128">
                         <img
                           class="is-rounded"
-                          src="../assets/tobi.jpg"
-                          alt="Tobi Fuhrimann"
+                          src="../assets/lena.jpg"
+                          alt="Lena Fuhrimann"
                         />
                       </figure>
                       <br />
