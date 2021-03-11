@@ -645,12 +645,12 @@
                       </figure>
                       <br />
                       <p class="title">
-                        {{ $t("team.tobi.name") }}
+                        {{ $t("team.lena.name") }}
                       </p>
                       <p class="subtitle">
-                        {{ $t("team.tobi.catchphrase") }}
+                        {{ $t("team.lena.catchphrase") }}
                       </p>
-                      <div class="content">{{ $t("team.tobi.body") }}</div>
+                      <div class="content">{{ $t("team.lena.body") }}</div>
                     </div>
                     <footer class="card-footer">
                       <a
@@ -677,7 +677,7 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://www.linkedin.com/in/tobi-fuhrimann/"
+                        href="https://www.linkedin.com/in/lena-fuhrimann/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
