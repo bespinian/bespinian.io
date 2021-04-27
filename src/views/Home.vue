@@ -312,7 +312,7 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/redhat.png" alt="Red Hat" />
+                    <img src="../assets/redhat.webp" alt="Red Hat" />
                   </figure>
                   <br />
                 </div>
@@ -326,7 +326,7 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/swisscom.png" alt="Swisscom" />
+                    <img src="../assets/swisscom.webp" alt="Swisscom" />
                   </figure>
                   <br />
                 </div>
@@ -354,7 +354,7 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/aws.png" alt="AWS Partner Network" />
+                    <img src="../assets/aws.webp" alt="AWS Partner Network" />
                   </figure>
                   <br />
                 </div>
@@ -368,7 +368,7 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/puzzle.png" alt="Puzzle ITC" />
+                    <img src="../assets/puzzle.webp" alt="Puzzle ITC" />
                   </figure>
                   <br />
                 </div>
@@ -383,7 +383,7 @@
                 <div class="has-image-centered customer-logo-extra-wide">
                   <figure class="image">
                     <img
-                      src="../assets/swissmadesoftware.png"
+                      src="../assets/swissmadesoftware.webp"
                       alt="swiss made software"
                     />
                   </figure>
@@ -422,7 +422,7 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/swisscom.png" alt="Swisscom" />
+                    <img src="../assets/swisscom.webp" alt="Swisscom" />
                   </figure>
                   <br />
                 </div>
@@ -436,22 +436,22 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/tamedia.png" alt="Tamedia" />
+                    <img src="../assets/tx-group.webp" alt="TX Group" />
                   </figure>
                   <br />
                 </div>
                 <a
-                  href="https://www.tamedia.ch"
+                  href="https://tx.group"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Tamedia</a
+                  >TX Group</a
                 >
               </slide>
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
                     <img
-                      src="../assets/citechsensors.png"
+                      src="../assets/citechsensors.webp"
                       alt="CI Tech Sensors"
                     />
                   </figure>
@@ -466,7 +466,7 @@
                   class="has-image-centered customer-logo-extra-wide customer-logo-slim"
                 >
                   <figure class="image">
-                    <img src="../assets/emmi.png" alt="Emmi" />
+                    <img src="../assets/emmi.webp" alt="Emmi" />
                   </figure>
                   <br />
                 </div>
@@ -482,7 +482,7 @@
                   class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim"
                 >
                   <figure class="image">
-                    <img src="../assets/legal-i.png" alt="legal-i" />
+                    <img src="../assets/legal-i.webp" alt="legal-i" />
                   </figure>
                   <br />
                 </div>
@@ -498,7 +498,7 @@
                   class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim"
                 >
                   <figure class="image">
-                    <img src="../assets/skoor.png" alt="Skoor" />
+                    <img src="../assets/skoor.webp" alt="Skoor" />
                   </figure>
                   <br />
                 </div>
@@ -512,7 +512,7 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/zeilenwerk.png" alt="Zeilenwerk" />
+                    <img src="../assets/zeilenwerk.webp" alt="Zeilenwerk" />
                   </figure>
                   <br />
                 </div>
@@ -526,7 +526,7 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/bfh.png" alt="Berner Fachhochschule" />
+                    <img src="../assets/bfh.webp" alt="Berner Fachhochschule" />
                   </figure>
                   <br />
                 </div>
@@ -540,7 +540,7 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/kalaidos.png" alt="Kalaidos" />
+                    <img src="../assets/kalaidos.webp" alt="Kalaidos" />
                   </figure>
                   <br />
                 </div>
@@ -572,7 +572,7 @@
                       <figure class="image is-128x128 is-centered">
                         <img
                           class="is-rounded"
-                          src="../assets/mathis.jpg"
+                          src="../assets/mathis.webp"
                           alt="Mathis Kretz"
                         />
                       </figure>
@@ -639,7 +639,7 @@
                       <figure class="image is-128x128">
                         <img
                           class="is-rounded"
-                          src="../assets/lena.jpg"
+                          src="../assets/lena.webp"
                           alt="Lena Fuhrimann"
                         />
                       </figure>
@@ -708,7 +708,7 @@
                       <figure class="image is-128x128">
                         <img
                           class="is-rounded"
-                          src="../assets/gabriel.jpg"
+                          src="../assets/gabriel.webp"
                           alt="Gabriel Koch"
                         />
                       </figure>
