@@ -10,11 +10,13 @@ jobs:
     name: Build and Deploy
     environment: aws-production
     runs-on: ubuntu-latest
+    env:
+      AWS_REGION: eu-central-1
     steps:
       - uses: actions/setup-node@v2
       - uses: hashicorp/setup-terraform@v1
       - uses: actions/checkout@v2
-      - run: npm audit
+      # - run: npm audit
       - run: npm ci
       - run: npm run lint
       - run: npm run build
