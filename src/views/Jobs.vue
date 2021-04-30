@@ -53,8 +53,8 @@
           <h4 class="title is-4">Requirements</h4>
           <ul>
             <li>
-              You have practical experience with Docker, Kubernetes, OpenShift,
-              Cloud Foundry, AWS, Azure and/or GCP
+              You have practical experience with Containers, Kubernetes,
+              OpenShift, Terraform, AWS, Azure and/or GCP
             </li>
             <li>You are excited about all things DevOps</li>
             <li>You like to work with multiple customers and technologies</li>
