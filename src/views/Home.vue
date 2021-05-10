@@ -32,7 +32,10 @@
           <div class="content team-content">
             <div class="columns">
               <div
-                class="column is-centered is-half-desktop is-offset-one-quarter-desktop"
+                class="
+                  column
+                  is-centered is-half-desktop is-offset-one-quarter-desktop
+                "
               >
                 <div class="box">
                   <div class="card-content">
@@ -463,7 +466,10 @@
               </slide>
               <slide class="has-text-centered">
                 <div
-                  class="has-image-centered customer-logo-extra-wide customer-logo-slim"
+                  class="
+                    has-image-centered
+                    customer-logo-extra-wide customer-logo-slim
+                  "
                 >
                   <figure class="image">
                     <img src="../assets/emmi.webp" alt="Emmi" />
@@ -479,7 +485,10 @@
               </slide>
               <slide class="has-text-centered">
                 <div
-                  class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim"
+                  class="
+                    has-image-centered
+                    customer-logo-extra-wide customer-logo-extra-slim
+                  "
                 >
                   <figure class="image">
                     <img src="../assets/legal-i.webp" alt="legal-i" />
@@ -495,7 +504,10 @@
               </slide>
               <slide class="has-text-centered">
                 <div
-                  class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim"
+                  class="
+                    has-image-centered
+                    customer-logo-extra-wide customer-logo-extra-slim
+                  "
                 >
                   <figure class="image">
                     <img src="../assets/skoor.webp" alt="Skoor" />
