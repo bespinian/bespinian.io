@@ -63,7 +63,6 @@
               You have worked as a software architect but also as a developing
               engineer
             </li>
-            <li>You live in Switzerland or are willing to relocate</li>
           </ul>
           <br />
           <h4 class="title is-4">Nice to Have</h4>
@@ -95,10 +94,7 @@
           <h4 class="title is-4">What We Offer</h4>
           <ul>
             <li>Flexible ways of working and a lot of responsibility</li>
-            <li>
-              Possibilities of traveling around Switzerland and meeting various
-              customers and companies
-            </li>
+            <li>Possibilities meeting various customers and companies</li>
             <li>A fast paced start up environment</li>
             <li>A great team of fun people with a similar mindset</li>
             <li>Employment level: 60-100%</li>
