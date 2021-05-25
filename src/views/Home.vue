@@ -978,22 +978,22 @@ export default {
 }
 
 .timeline-icon-rethink {
-  right: -26%;
+  right: -27.5%;
   top: 22%;
 }
 
 .timeline-icon-assess {
-  right: -31%;
+  right: -33%;
   top: 20%;
 }
 
 .timeline-icon-transform {
-  right: -25%;
-  top: 21%;
+  right: -27%;
+  top: 22%;
 }
 
 .timeline-icon-design {
-  right: -26%;
+  right: -27%;
   top: 21%;
 }
 
