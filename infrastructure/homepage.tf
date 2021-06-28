@@ -1,5 +1,5 @@
 module "homepage" {
-  source = "github.com/mastertinner/terraform-spa"
+  source = "github.com/mastertinner/terraform-spa?ref=v1.0.2"
   providers = {
     aws.us_east = aws.us_east
   }
