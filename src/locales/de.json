@@ -3,7 +3,7 @@
   "mission": {
     "nav_item": "Mission",
     "title": "Unsere Mission",
-    "body": "Wir von bespinian lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams entwickelt. Aus diesem Grund bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zuhause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim Kreieren von erstklassigen Cloud-basierten Lösungen.",
+    "body": "Wir von bespinian lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams entwickelt. Aus diesem Grund bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zu Hause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim Kreieren von erstklassigen Cloud-basierten Lösungen.",
     "solutions": {
       "title": "Die Lösungen, die wir zusammen kreieren sind",
       "operate": "einfach zu betreiben",
@@ -39,14 +39,14 @@
       },
       "rethink": {
         "title": "Überdenken",
-        "body": "Im Nachhinein ist alles einfach. Machen wir uns diese Tatsache zu Nutze und bringen wir Ihre Lösung auf die nächste Stufe!"
+        "body": "Im Nachhinein ist alles einfach. Machen wir uns diese Tatsache zunutze und bringen wir Ihre Lösung auf die nächste Stufe!"
       }
     }
   },
   "customers": {
     "nav_item": "Kunden",
     "title": "Unsere Kunden",
-    "body": "Wir arbeiten mit Firmen aus unterschiedlichen Branchen und von unterschiedlicher Grösse, vom Startup bis zum Grosskonzern. Hier sind einige Firmen, die auf unsere Dienstleistungen vertrauen"
+    "body": "Wir arbeiten mit Firmen aus unterschiedlichen Branchen und von unterschiedlicher Grösse, vom Start-Up bis zum Grosskonzern. Hier sind einige Firmen, die auf unsere Dienstleistungen vertrauen"
   },
   "partners": {
     "nav_item": "Partner",
@@ -59,7 +59,7 @@
     "platforms": {
       "body": {
         "intro": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis moderner Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von",
-        "platforms": "Plattformen",
+        "platforms": "Plattformen,",
         "weAreNativeTo": "auf denen wir Experten sind"
       }
     },
@@ -73,11 +73,11 @@
   "team": {
     "nav_item": "Team",
     "title": "Unser Team",
-    "body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Startups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater, einfühlsame Coaches und erfahrene Coder. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
+    "body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Start-Ups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater, einfühlsame Coaches und erfahrene Coder. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
     "mathis": {
       "name": "Mathis Kretz",
       "catchphrase": "Keeper of Simple",
-      "body": "Softwarearchitekt und Mitgründer. Spezialisert auf Microservices, Containertechnologien und Cloud-Native Engineering."
+      "body": "Softwarearchitekt und Mitgründer. Spezialisiert auf Microservices, Containertechnologien und Cloud-Native Engineering."
     },
     "lena": {
       "name": "Lena Fuhrimann",
