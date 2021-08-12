@@ -15,7 +15,7 @@
   "services": {
     "nav_item": "Services",
     "title": "Our Services",
-    "body": "No matter whether you are embarking on a new endeavour, reworking an idea or transforming your existing applications, we work hands-on with your team in every iteration of your project. Here are some of the services we offer. If what you require is not on the list, let us know. We're always happy to innovate.",
+    "body": "No matter whether you are embarking on a new endeavor, reworking an idea or transforming your existing applications, we work hands-on with your team in every iteration of your project. Here are some of the services we offer. If what you require is not on the list, let us know. We're always happy to innovate.",
     "timeline": {
       "assess": {
         "title": "Assess",
@@ -65,7 +65,7 @@
     },
     "tools": {
       "body": {
-        "intro": "Even though we passionately write code, reinventing the wheel is not our game. We know when to use an existing product to solve a problem and we share this knowledge with your team. Here are some of our favorite",
+        "intro": "Even though we passionately write code, reinventing the wheel is not our game. We know when to use an existing product to solve a problem, and we share this knowledge with your team. Here are some of our favorite",
         "tools": "tools"
       }
     }
@@ -96,7 +96,7 @@
   "contact": {
     "nav_item": "Contact",
     "title": "Contact Us",
-    "body": "Have a question? Need a quote? Wanna grab a coffee or a beer? Drop us a line and we'll be happy to get back to you as soon as possible.",
+    "body": "Have a question? Need a quote? Wanna grab a coffee or a beer? Drop us a line, and we'll be happy to get back to you as soon as possible.",
     "form": {
       "nameplaceholder": "Name",
       "emailplaceholder": "Email",
