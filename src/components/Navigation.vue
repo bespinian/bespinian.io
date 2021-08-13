@@ -43,7 +43,7 @@
         <a v-scroll-to="'#team'" href="#" class="navbar-item">
           {{ $t("team.nav_item") }}
         </a>
-        <router-link to="/jobs" href="#" class="navbar-item">
+        <router-link to="/jobs" class="navbar-item">
           {{ $t("jobs.nav_item") }}
         </router-link>
         <a v-scroll-to="'#contact'" href="#" class="navbar-item">
