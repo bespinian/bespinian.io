@@ -1,6 +1,6 @@
 <template>
   <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">{{ langs[$i18n.locale] }}</a>
+    <a href="#" class="navbar-link">{{ langs[$i18n.locale] }}</a>
     <div class="navbar-dropdown">
       <a
         v-for="(val, key) in langs"

@@ -25,28 +25,28 @@
       @click="toggleNav()"
     >
       <div class="navbar-end">
-        <a v-scroll-to="'#mission'" class="navbar-item" href="#">
+        <a v-scroll-to="'#mission'" href="#" class="navbar-item">
           {{ $t("mission.nav_item") }}
         </a>
-        <a v-scroll-to="'#services'" class="navbar-item" href="#">
+        <a v-scroll-to="'#services'" href="#" class="navbar-item">
           {{ $t("services.nav_item") }}
         </a>
-        <a v-scroll-to="'#tech'" class="navbar-item" href="#">
+        <a v-scroll-to="'#tech'" href="#" class="navbar-item">
           {{ $t("technologies.nav_item") }}
         </a>
-        <a v-scroll-to="'#partners'" class="navbar-item" href="#">
+        <a v-scroll-to="'#partners'" href="#" class="navbar-item">
           {{ $t("partners.nav_item") }}
         </a>
-        <a v-scroll-to="'#customers'" class="navbar-item" href="#">
+        <a v-scroll-to="'#customers'" href="#" class="navbar-item">
           {{ $t("customers.nav_item") }}
         </a>
-        <a v-scroll-to="'#team'" class="navbar-item" href="#">
+        <a v-scroll-to="'#team'" href="#" class="navbar-item">
           {{ $t("team.nav_item") }}
         </a>
-        <router-link to="/jobs" class="navbar-item" href="#">
+        <router-link to="/jobs" href="#" class="navbar-item">
           {{ $t("jobs.nav_item") }}
         </router-link>
-        <a v-scroll-to="'#contact'" class="navbar-item" href="#">
+        <a v-scroll-to="'#contact'" href="#" class="navbar-item">
           {{ $t("contact.nav_item") }}
         </a>
         <LocaleChanger />
