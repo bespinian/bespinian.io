@@ -26,8 +26,8 @@
         @click="toggleNav()"
       >
         <div class="navbar-end">
-          <router-link to="/" href="#" class="navbar-item">Home</router-link>
-          <router-link to="/jobs" href="#" class="navbar-item">
+          <router-link to="/" class="navbar-item">Home</router-link>
+          <router-link to="/jobs" class="navbar-item">
             {{ $t("jobs.nav_item") }}
           </router-link>
         </div>

@@ -26,7 +26,7 @@
         @click="toggleNav()"
       >
         <div class="navbar-end">
-          <router-link to="/" href="#" class="navbar-item">Home</router-link>
+          <router-link to="/" class="navbar-item">Home</router-link>
           <LocaleChanger
             :langs="{ en: 'English', de: 'Deutsch' }"
             :locale-mappings="{ be: 'de' }"
