@@ -313,17 +313,22 @@
               pagination-active-color="#3273dc"
             >
               <slide class="has-text-centered">
-                <div class="has-image-centered customer-logo">
+                <div
+                  class="
+                    has-image-centered
+                    customer-logo-extra-wide customer-logo-extra-slim
+                  "
+                >
                   <figure class="image">
-                    <img src="../assets/redhat.webp" alt="Red Hat" />
+                    <img src="../assets/acend.webp" alt="acend" />
                   </figure>
                   <br />
                 </div>
                 <a
-                  href="https://www.redhat.com"
+                  href="https://acend.ch"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Red Hat</a
+                  >acend</a
                 >
               </slide>
               <slide class="has-text-centered">
@@ -380,6 +385,20 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   >Puzzle ITC</a
+                >
+              </slide>
+              <slide class="has-text-centered">
+                <div class="has-image-centered customer-logo">
+                  <figure class="image">
+                    <img src="../assets/redhat.webp" alt="Red Hat" />
+                  </figure>
+                  <br />
+                </div>
+                <a
+                  href="https://www.redhat.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Red Hat</a
                 >
               </slide>
               <slide class="has-text-centered">
