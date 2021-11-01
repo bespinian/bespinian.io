@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <Navigation />
+    <MainNavigation />
 
     <section class="hero is-link is-fullheight">
       <div class="hero-body">
@@ -865,12 +865,12 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
-import Navigation from "../components/Navigation.vue";
+import MainNavigation from "../components/MainNavigation.vue";
 import CookieLaw from "vue-cookie-law";
 
 export default {
   components: {
-    Navigation,
+    MainNavigation,
     Carousel,
     Slide,
     CookieLaw,
