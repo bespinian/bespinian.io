@@ -1012,6 +1012,12 @@ export default {
   animation: 1s blink step-end infinite;
 }
 
+.navbar.is-link,
+.hero.is-link,
+.button.is-link {
+  background-color: #3273dc;
+}
+
 @keyframes "blink" {
   from,
   to {
