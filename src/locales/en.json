@@ -90,6 +90,9 @@
       "body": "Software Engineer and Cloud Architect. Specialized in container technologies, cloud-native and DevOps principles."
     }
   },
+  "blog": {
+    "nav_item": "Blog"
+  },
   "jobs": {
     "nav_item": "Jobs"
   },
