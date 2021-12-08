@@ -685,7 +685,7 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://github.com/mastertinner"
+                        href="https://github.com/cloudlena"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
