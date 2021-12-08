@@ -986,10 +986,6 @@ export default {
   margin-top: 4rem;
 }
 
-.technologies-img {
-  opacity: 0.5;
-}
-
 .timeline-icon {
   position: relative;
   color: white;
