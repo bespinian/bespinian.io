@@ -242,16 +242,16 @@
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
-                    <img src="../assets/docker.svg" alt="Docker" />
+                    <img src="../assets/azure.svg" alt="Azure" />
                   </figure>
                   <br />
                 </div>
                 <a
-                  href="https://www.docker.com"
+                  href="https://azure.microsoft.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Docker
+                  Azure
                 </a>
               </slide>
               <slide class="has-text-centered">
