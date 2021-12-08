@@ -32,10 +32,7 @@
           <div class="content team-content">
             <div class="columns">
               <div
-                class="
-                  column
-                  is-centered is-half-desktop is-offset-one-quarter-desktop
-                "
+                class="column is-centered is-half-desktop is-offset-one-quarter-desktop"
               >
                 <div class="box">
                   <div class="card-content">
@@ -485,10 +482,7 @@
               </slide>
               <slide class="has-text-centered">
                 <div
-                  class="
-                    has-image-centered
-                    customer-logo-extra-wide customer-logo-slim
-                  "
+                  class="has-image-centered customer-logo-extra-wide customer-logo-slim"
                 >
                   <figure class="image">
                     <img src="../assets/emmi.webp" alt="Emmi" />
@@ -504,10 +498,7 @@
               </slide>
               <slide class="has-text-centered">
                 <div
-                  class="
-                    has-image-centered
-                    customer-logo-extra-wide customer-logo-extra-slim
-                  "
+                  class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim"
                 >
                   <figure class="image">
                     <img src="../assets/legal-i.webp" alt="legal-i" />
@@ -523,10 +514,7 @@
               </slide>
               <slide class="has-text-centered">
                 <div
-                  class="
-                    has-image-centered
-                    customer-logo-extra-wide customer-logo-extra-slim
-                  "
+                  class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim"
                 >
                   <figure class="image">
                     <img src="../assets/skoor.webp" alt="Skoor" />
@@ -652,12 +640,14 @@
                       </a>
                       <a
                         class="card-footer-item"
-                        href="https://www.xing.com/profile/Mathis_Kretz"
+                        href="https://blog.bespinian.io"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Xing"
+                        aria-label="Blog"
                       >
-                        <font-awesome-icon :icon="['fab', 'xing']" />
+                        <span class="icon">
+                          <font-awesome-icon icon="rss-square" />
+                        </span>
                       </a>
                     </footer>
                   </div>
@@ -784,6 +774,17 @@
                       >
                         <span class="icon">
                           <font-awesome-icon :icon="['fab', 'linkedin']" />
+                        </span>
+                      </a>
+                      <a
+                        class="card-footer-item"
+                        href="https://blog.bespinian.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Blog"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon icon="rss-square" />
                         </span>
                       </a>
                     </footer>
