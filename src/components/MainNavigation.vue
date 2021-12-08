@@ -43,6 +43,14 @@
         <a v-scroll-to="'#team'" href="#" class="navbar-item">
           {{ $t("team.nav_item") }}
         </a>
+        <a
+          href="https://blog.bespinian.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="navbar-item"
+        >
+          {{ $t("blog.nav_item") }}
+        </a>
         <router-link to="/jobs" class="navbar-item">
           {{ $t("jobs.nav_item") }}
         </router-link>
