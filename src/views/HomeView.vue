@@ -7,9 +7,7 @@
         <div class="container container-cloud-city">
           <div class="columns">
             <div class="column is-offset-1-desktop column-main-title">
-              <h1 class="title is-1 is-spaced">
-                be<span class="is-blinking">|</span>spinian
-              </h1>
+              <h1 class="title is-1 is-spaced">bespinian</h1>
               <h2 class="subtitle is-4">{{ $t("subtitle") }}</h2>
             </div>
             <div class="column is-offset-4-desktop has-text-centered">
@@ -1025,11 +1023,6 @@ export default {
 .timeline-icon-run {
   right: -24%;
   top: 23%;
-}
-
-.is-blinking {
-  -webkit-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
 }
 
 .navbar.is-link,
