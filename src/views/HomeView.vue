@@ -309,10 +309,7 @@
             >
               <slide class="has-text-centered">
                 <div
-                  class="
-                    has-image-centered
-                    customer-logo-extra-wide customer-logo-extra-slim
-                  "
+                  class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim"
                 >
                   <figure class="image">
                     <img src="../assets/acend.webp" alt="acend" />
