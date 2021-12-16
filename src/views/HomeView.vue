@@ -671,7 +671,7 @@
                     <footer class="card-footer">
                       <a
                         class="card-footer-item"
-                        href="https://twitter.com/mastertinner"
+                        href="https://twitter.com/the_cloudlena"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Twitter"
