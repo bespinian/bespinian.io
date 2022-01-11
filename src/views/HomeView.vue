@@ -786,6 +786,53 @@
                   </div>
                 </article>
               </div>
+              <div class="tile is-parent">
+                <article class="tile is-child">
+                  <div class="card">
+                    <div class="card-content">
+                      <figure class="image is-128x128">
+                        <img
+                          class="is-rounded"
+                          src="../assets/paulina.webp"
+                          alt="Paulina Grochal"
+                        />
+                      </figure>
+                      <br />
+                      <p class="title">
+                        {{ $t("team.paulina.name") }}
+                      </p>
+                      <p class="subtitle">
+                        {{ $t("team.paulina.catchphrase") }}
+                      </p>
+                      <div class="content">{{ $t("team.paulina.body") }}</div>
+                    </div>
+                    <footer class="card-footer">
+                      <a
+                        class="card-footer-item"
+                        href="https://www.linkedin.com/in/paulina-grochal/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon :icon="['fab', 'linkedin']" />
+                        </span>
+                      </a>
+                      <a
+                        class="card-footer-item"
+                        href="https://blog.bespinian.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Blog"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon icon="rss-square" />
+                        </span>
+                      </a>
+                    </footer>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
