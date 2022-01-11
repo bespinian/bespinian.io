@@ -88,6 +88,11 @@
       "name": "Gabriel Koch",
       "catchphrase": "Head in Containers",
       "body": "Software Engineer und Cloud Architekt mit Spezialisierig uf Containertechnologie, Cloud-Native Engineering und DevOps."
+    },
+    "paulina": {
+      "name": "Paulina Grochal",
+      "catchphrase": "Cloud Whisperer",
+      "body": "DevOps und Cloud Solution Architektin. Begeisteret vo Outomatisierig. Spezialisiert uf Systemintegration, CI/CD und cloud-native Lösige."
     }
   },
   "blog": {
