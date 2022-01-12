@@ -579,7 +579,7 @@
           <div class="content team-content">
             <!-- Flex wrap is manually required since tiles do not support flex otherwise -->
             <div class="tile is-ancestor" style="flex-wrap: wrap">
-              <div class="tile is-parent">
+              <div class="tile is-parent is-6">
                 <article class="tile is-child">
                   <div class="card">
                     <div class="card-content">
@@ -648,7 +648,7 @@
                   </div>
                 </article>
               </div>
-              <div class="tile is-parent">
+              <div class="tile is-parent is-6">
                 <article class="tile is-child">
                   <div class="card">
                     <div class="card-content">
@@ -717,7 +717,7 @@
                   </div>
                 </article>
               </div>
-              <div class="tile is-parent">
+              <div class="tile is-parent is-6">
                 <article class="tile is-child">
                   <div class="card">
                     <div class="card-content">
@@ -786,7 +786,7 @@
                   </div>
                 </article>
               </div>
-              <div class="tile is-parent">
+              <div class="tile is-parent is-6">
                 <article class="tile is-child">
                   <div class="card">
                     <div class="card-content">
