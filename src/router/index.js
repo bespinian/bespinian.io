@@ -25,6 +25,14 @@ const routes = [
       ),
   },
   {
+    path: "/customers/:name(swisssigngroup)",
+    name: "Customer",
+    component: () =>
+      import(
+        /* webpackChunkName: "customer" */ "../views/CustomerStoryView.vue"
+      ),
+  },
+  {
     path: "*",
     name: "Catch All",
     component: HomeView,

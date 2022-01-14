@@ -1,0 +1,35 @@
+{
+  "title": "bespinian unterstützt SwissSign bei der Migration von SwissID auf Kubernetes",
+  "logo": {
+    "file": "swisssigngroup.svg",
+    "alt": "SwissSign Group"
+  },
+  "customer": "<p><a href=\"https://www.swisssign-group.com/\" target=\"_blank\">SwissSign Group</a> ist der führende Schweizer Trust Service Provider, dessen Angebot Zertifikate (SSL und Email) und managed Public Key Infrastructure, sowie Identity Services unter dem Brand SwissID umfasst.</p><p>SwissSign hat den Hauptsitz in Glattbrugg, Zürich und beschäftigt etwa 100 Spezialisten.</p>",
+  "background": "Die SwissID Lösung von SwissSign Group bietet eine einheitliche und sichere Login-Lösung für den öffentlichen Sektor, sowie private Firmen in der Schweiz. Die Lösung wird von öffentlichen Ämtern, sowie Versicherungen, Krankenkassen und Firmen wie etwa die Schweizerischen Post und der SBB benutzt. Privatkunden, sogenannte Identity Owners, können SwissID ebenfalls nutzen um rechtsgültige digitale Unterschriften zu generieren oder sicher auf ihr elektronisches Patientendossier zuzugreifen.",
+  "goal": "SwissSign Group war im Prozess die gesamte SwissID Applikationslandschaft von der Infrastruktur eines Partners in ein unabhängiges Rechenzentrum zu migrieren. Zugleich wurde ein Grossteil der Applikationen auf Kubernetes migriert, mit dem Ziel, neuste Deployment-Mechanismen und Workflows zu ermöglichen und flexibler auf Lastveränderungen reagieren zu können. Gleichzeitig sollten die hohen Sicherheitsanforderungen während und nach der Migration bewahrt werden.",
+  "contribution": {
+    "intro": "Während der Migration hat SwissSign drei Bereiche identifiziert, für sie Unterstützung durch bespinian benötigten.",
+    "topics": [
+      {
+        "title": "Produktionsreife auf  Kubernetes",
+        "text": "bespinian wurde beauftragt, die Deployments der Applikationen auf Kubernetes auf ihre Produktionsreife zu überprüfen.<br />Das Ziel war, zu ermitteln, ob die Komponenten<br /><ul><li>auf Veränderungen in der Last automatische reagieren würden und Rolling Deployments unterstützen</li><li>bei Infrastrukturausfällen korrekt auf einem Teil der Infrastruktur weiterlaufen würden</li><li>die etablierten Best Practices bezüglich Container und Kubernetes befolgen</li><li>Lücken in der Systemüberwachung (Monitoring) aufweisen</li></ul>Um die Ziele zu erreichen, hat bespinian verschiedene automatische Prüfungen auf der gesamten Applikationslandschaft durchgeführt. Zusätzlich hat bespinian spezifische Komponenten manuell überprüft hinsichtlich deren Deployment, Container-Setup, CI/CD-Pipelines und den Betrieb auf Kubernetes."
+      },
+      {
+        "title": "Monitoring",
+        "text": "SwissSign Group wollte das Monitoring der SwissID Komponenten, welche nun auf Kubernetes liefen, vor der Produktivsetzung verbessern und hat bespinian beauftragt Lücken zu identifizieren und Lösungen dafür direkt umzusetzen.Nach einem Review der Komponenten und Prozesse die für Monitoring und Alerting schon bereitstanden, hat bespinian eigenständig mit diversen Stakeholders in der Firma gearbeitet um Verbesserungen an der Alerting-Pipeline, dem versenden von Alerts aus Prometheus auf die Paging und Alerting Tools der Betriebsteams, vorzuschlagen und zu implementieren.bespinian hat desweiteren eine Lösung erarbeitet, um Komponenten die ausserhalb von Kubernetes laufen ebenfalls durch die bestehende Prometheus Infrastruktur zu überwachen. Diese Lösung wurde zusammen mit den entsprechenden Teams umgesetzt. Zudem wurden gemeinsam mit dem Betriebsteam initiale Dashboards und Alerts erstellt."
+      },
+      {
+        "title": "Training",
+        "text": "bespinian wurde beauftragt, das SwissID Betriebsteam zu unterstützen, damit sie die Deployments auf der neuen Infrastruktur nach der Produktivsetzung erfolgreich betreiben können.Dazu hat bespinian mit dem Betriebsteam zusammengearbeitet, um dieses im speziellen mit Prometheus und Grafana, sowie mit den  verschiedenen Prometheus-Metric-Types, der Query-Language, den Alerting Rules und verschiedenen Best Practices vertraut zu machen.bespinian hat zusätzlich sichergestellt, dass die entsprechenden Tools, sowie sämtliche Änderungen,  klar dokumentiert sind."
+      }
+    ]
+  },
+  "technologies": ["Kubernetes", "GitLab", "Prometheus / Grafana", "Rancher"],
+  "quote": {
+    "text": "bespinian hat uns während der letzten Migrationsphase begleitet und war schnell im Stande uns beim Identifizieren und Schliessen der letzten Lücken in der Betriebsüberwachung zu beraten und unterstützen.",
+    "stakeholder": {
+      "name": "Placi Flury",
+      "role": "Head SwissID DevOps"
+    }
+  }
+}
