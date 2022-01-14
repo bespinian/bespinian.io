@@ -62,23 +62,21 @@
           <p v-html="customer.customer"></p>
           <br />
           <h3 class="title is-3">{{ $t("customer_story.background") }}</h3>
-          <p>
-            {{ customer.background }}
-          </p>
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <p v-html="customer.background"></p>
           <br />
           <h3 class="title is-3">{{ $t("customer_story.goal") }}</h3>
-          <p>{{ customer.goal }}</p>
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <p v-html="customer.goal"></p>
           <br />
           <h3 class="title is-3">{{ $t("customer_story.contribution") }}</h3>
-          <p>
-            {{ customer.contribution.intro }}
-          </p>
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <p v-html="customer.contribution.intro"></p>
           <br />
           <div v-for="topic in customer.contribution.topics" :key="topic.title">
             <h4 class="title is-4">{{ topic.title }}</h4>
-            <p>
-              {{ topic.text }}
-            </p>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <p v-html="topic.text"></p>
             <br />
           </div>
           <h3 class="title is-3">{{ $t("customer_story.technologies") }}</h3>
