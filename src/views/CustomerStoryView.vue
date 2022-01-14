@@ -37,7 +37,7 @@
 
     <br />
     <br />
-    <section v-if="customer" class="section">
+    <section v-if="customer" class="section customer-story">
       <div class="columns is-centered columns-section">
         <div class="column is-half">
           <h2 class="title is-2 is-spaced">
@@ -80,7 +80,7 @@
             <br />
           </div>
           <h3 class="title is-3">{{ $t("customer_story.technologies") }}</h3>
-          <ul style="list-style-type: circle; padding-left: 30pt">
+          <ul>
             <li v-for="technology in customer.technologies" :key="technology">
               {{ technology }}
             </li>
@@ -129,5 +129,9 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.customer-story ul {
+  list-style-type: circle;
+  padding-left: 30pt;
 }
 </style>
