@@ -480,6 +480,22 @@
                   class="has-image-centered customer-logo-extra-wide customer-logo-slim"
                 >
                   <figure class="image">
+                    <img
+                      src="../assets/swisssigngroup.svg"
+                      alt="SwissSign Group"
+                    />
+                  </figure>
+                  <br />
+                </div>
+                <router-link to="/customers/swisssigngroup">
+                  SwissSign Group
+                </router-link>
+              </slide>
+              <slide class="has-text-centered">
+                <div
+                  class="has-image-centered customer-logo-extra-wide customer-logo-slim"
+                >
+                  <figure class="image">
                     <img src="../assets/emmi.webp" alt="Emmi" />
                   </figure>
                   <br />
