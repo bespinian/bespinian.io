@@ -296,7 +296,6 @@
           <h3 class="title is-2 is-spaced">{{ $t("partners.title") }}</h3>
           <p>{{ $t("partners.body") }}:</p>
           <br />
-          <br />
           <div class="container">
             <carousel
               :per-page-custom="[
@@ -422,7 +421,6 @@
           <h3 class="title is-2 is-spaced">{{ $t("customers.title") }}</h3>
           <p>{{ $t("customers.body") }}:</p>
           <br />
-          <br />
           <div class="container">
             <carousel
               :per-page-custom="[
@@ -475,6 +473,7 @@
                   CI Tech Sensors
                 </router-link>
               </slide>
+
               <slide class="has-text-centered">
                 <div
                   class="has-image-centered customer-logo-extra-wide customer-logo-slim"
@@ -1020,8 +1019,12 @@ export default {
 }
 
 .has-image-centered {
+  display: flex;
+  height: 64px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
 .card {
@@ -1110,5 +1113,9 @@ export default {
 .Cookie--bottom.Cookie--dark-lime .Cookie__button {
   background-color: #3273dc;
   font-family: "Lato", sans-serif;
+}
+
+.VueCarousel-slide .image {
+  flex: 1 1 auto;
 }
 </style>
