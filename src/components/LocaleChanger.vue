@@ -5,6 +5,7 @@
       <a
         v-for="(val, key) in langs"
         :key="key"
+        href="#"
         class="navbar-item"
         @click="handleLocaleChange(key)"
       >
