@@ -5,7 +5,7 @@
     "title": "Unsere Mission",
     "body": "Wir von bespinian lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams entwickelt. Aus diesem Grund bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zu Hause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim Kreieren von erstklassigen Cloud-basierten Lösungen.",
     "solutions": {
-      "title": "Die Lösungen, die wir zusammen kreieren sind",
+      "title": "Die Lösungen, die wir zusammen kreieren, sind",
       "operate": "einfach zu betreiben",
       "adaptable": "leicht zu ändern",
       "scalable": "skalierbar unter Last",
@@ -46,7 +46,7 @@
   "customers": {
     "nav_item": "Kunden",
     "title": "Unsere Kunden",
-    "body": "Wir arbeiten mit Firmen aus unterschiedlichen Branchen und von unterschiedlicher Grösse, vom Start-Up bis zum Grosskonzern. Hier sind einige Firmen, die auf unsere Dienstleistungen vertrauen"
+    "body": "Wir arbeiten mit Firmen aus unterschiedlichen Branchen und von unterschiedlicher Grösse, vom Start-up bis zum Grosskonzern. Hier sind einige Firmen, die auf unsere Dienstleistungen vertrauen"
   },
   "partners": {
     "nav_item": "Partner",
@@ -73,7 +73,7 @@
   "team": {
     "nav_item": "Team",
     "title": "Unser Team",
-    "body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Start-Ups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater, einfühlsame Coaches und erfahrene Coder. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
+    "body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Start-ups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater*innen, einfühlsame Coaches und erfahrene Coder*innen. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
     "mathis": {
       "name": "Mathis Kretz",
       "catchphrase": "Keeper of Simple",
@@ -92,7 +92,7 @@
     "paulina": {
       "name": "Paulina Grochal",
       "catchphrase": "Cloud Whisperer",
-      "body": "DevOps und Cloud Solution Architektin. Begeistert von Automatisierung. Spezialisiert auf Systemintegration, CI/CD und cloud-native Lösungen."
+      "body": "DevOps und Cloud Solution Architektin. Begeistert von Automatisierung. Spezialisiert auf Systemintegration, CI/CD und Cloud-native Lösungen."
     }
   },
   "blog": {
