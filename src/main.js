@@ -1,4 +1,6 @@
-import Vue from "vue";
+import { createApp } from "vue";
+import VueCookieAcceptDecline from "vue-cookie-accept-decline";
+import "vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css";
 import VueGtag from "vue-gtag";
 import VueScrollTo from "vue-scrollto";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -47,23 +49,18 @@ library.add(
   faInfo
 );
 
-Vue.component("FontAwesomeIcon", FontAwesomeIcon);
-
-Vue.use(
-  VueGtag,
-  {
-    config: { id: "UA-132338301-1" },
-    enabled: window.location.hostname != "localhost",
-  },
-  router
-);
-
-Vue.use(VueScrollTo, { offset: -30 });
-
-Vue.config.productionTip = false;
-
-new Vue({
-  router,
-  i18n,
-  render: (h) => h(App),
-}).$mount("#app");
+createApp(App)
+  .component("FontAwesomeIcon", FontAwesomeIcon)
+  .component("vue-cookie-accept-decline", VueCookieAcceptDecline)
+  .use(router)
+  .use(i18n)
+  .use(
+    VueGtag,
+    {
+      config: { id: "UA-132338301-1" },
+      enabled: window.location.hostname != "localhost",
+    },
+    router
+  )
+  .use(VueScrollTo, { offset: -30 })
+  .mount("#app");
