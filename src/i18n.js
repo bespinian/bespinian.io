@@ -1,36 +1,19 @@
-import Vue from "vue";
-import VueI18n from "vue-i18n";
+import { createI18n } from "vue-i18n";
 import { LocaleResolver, DETECTORS, TRANSFORMERS } from "locales-detector";
 import store from "store";
+import messagesEn from "./locales/en.json";
+import messagesDe from "./locales/de.json";
+import messagesBe from "./locales/be.json";
 
-Vue.use(VueI18n);
-
-function loadLocaleMessages() {
-  const locales = require.context(
-    "./locales",
-    true,
-    /[A-Za-z0-9-_,\s]+\.json$/i
-  );
-  const messages = {};
-  locales.keys().forEach((key) => {
-    const matched = key.match(/([A-Za-z0-9-_]+)\./i);
-    if (matched && matched.length > 1) {
-      const locale = matched[1];
-      messages[locale] = locales(key);
-    }
-  });
-  return messages;
-}
-
-export const localeStorageKey = "locale:bespinian";
+export const LOCALE_STORAGE_KEY = "locale:bespinian";
 
 class StoredLocaleDetector {
   getLocales() {
-    return store.get(localeStorageKey) ? [store.get(localeStorageKey)] : [];
+    return store.get(LOCALE_STORAGE_KEY) ? [store.get(LOCALE_STORAGE_KEY)] : [];
   }
 }
 
-function resolveLocale() {
+const resolveLocale = () => {
   const transformers = [
     new TRANSFORMERS.FallbacksTransformer(),
     new TRANSFORMERS.IETFTransformer(),
@@ -56,10 +39,16 @@ function resolveLocale() {
     return storedLocales.getLocales()[0];
   }
   return navigatorLocales.getLocales()[0];
-}
+};
 
-export default new VueI18n({
+const i18n = createI18n({
   locale: resolveLocale(),
-  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en",
-  messages: loadLocaleMessages(),
+  fallbackLocale: "en",
+  messages: {
+    en: messagesEn,
+    de: messagesDe,
+    be: messagesBe,
+  },
 });
+
+export default i18n;

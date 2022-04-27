@@ -185,15 +185,7 @@
           <br />
           <br />
           <div class="container">
-            <carousel
-              :per-page-custom="[
-                [480, 2],
-                [768, 4],
-                [1024, 5],
-              ]"
-              :scroll-per-page="true"
-              pagination-active-color="#3273dc"
-            >
+            <carousel :breakpoints="carouselBreakpoints">
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
@@ -269,6 +261,10 @@
                   Cloud Foundry
                 </a>
               </slide>
+
+              <template #addons>
+                <navigation />
+              </template>
             </carousel>
           </div>
           <br />
@@ -297,15 +293,7 @@
           <p>{{ $t("partners.body") }}:</p>
           <br />
           <div class="container">
-            <carousel
-              :per-page-custom="[
-                [480, 2],
-                [768, 4],
-                [1024, 5],
-              ]"
-              :scroll-per-page="true"
-              pagination-active-color="#3273dc"
-            >
+            <carousel :breakpoints="carouselBreakpoints">
               <slide class="has-text-centered">
                 <div
                   class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim"
@@ -409,6 +397,10 @@
                   >swiss made software</a
                 >
               </slide>
+
+              <template #addons>
+                <navigation />
+              </template>
             </carousel>
           </div>
         </div>
@@ -422,15 +414,7 @@
           <p>{{ $t("customers.body") }}:</p>
           <br />
           <div class="container">
-            <carousel
-              :per-page-custom="[
-                [480, 2],
-                [768, 4],
-                [1024, 5],
-              ]"
-              :scroll-per-page="true"
-              pagination-active-color="#3273dc"
-            >
+            <carousel :breakpoints="carouselBreakpoints">
               <slide class="has-text-centered">
                 <div class="has-image-centered customer-logo">
                   <figure class="image">
@@ -580,6 +564,10 @@
                   >Kalaidos Fachhochschule</a
                 >
               </slide>
+
+              <template #addons>
+                <navigation />
+              </template>
             </carousel>
           </div>
         </div>
@@ -930,32 +918,53 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p><strong>bespinian</strong> {{ new Date().getFullYear() }}</p>
-        <cookie-law
-          :message="$t('cookie_consent.message')"
-          :button-text="$t('cookie_consent.button')"
-          theme="dark-lime"
-        ></cookie-law>
       </div>
     </footer>
   </div>
+
+  <vue-cookie-accept-decline element-id="cookies-panel" :disable-decline="true">
+    <template #message>{{ $t("cookie_consent.message") }}</template>
+    <template #acceptContent>{{ $t("cookie_consent.button") }}</template>
+  </vue-cookie-accept-decline>
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
 import MainNavigation from "../components/MainNavigation.vue";
-import CookieLaw from "vue-cookie-law";
 
 export default {
   components: {
     MainNavigation,
     Carousel,
     Slide,
-    CookieLaw,
+    Navigation,
   },
+  data: () => ({
+    carouselBreakpoints: {
+      0: {
+        itemsToShow: 3,
+      },
+      769: {
+        itemsToShow: 4,
+      },
+      1024: {
+        itemsToShow: 5,
+      },
+    },
+  }),
 };
 </script>
 
 <style>
+:root {
+  --vc-clr-primary: #3273dc;
+}
+
+.carousel__slide.has-text-centered {
+  flex-direction: column;
+}
+
 .navbar-end .navbar-item {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
@@ -1054,18 +1063,13 @@ export default {
   color: white;
 }
 
-.timeline-icon-rethink {
-  right: -27.5%;
-  top: 22%;
-}
-
 .timeline-icon-assess {
-  right: -33%;
+  right: -34%;
   top: 20%;
 }
 
 .timeline-icon-transform {
-  right: -27%;
+  right: -28%;
   top: 22%;
 }
 
@@ -1075,12 +1079,17 @@ export default {
 }
 
 .timeline-icon-build {
-  right: -26%;
+  right: -30%;
   top: 21%;
 }
 
 .timeline-icon-run {
-  right: -24%;
+  right: -25%;
+  top: 23%;
+}
+
+.timeline-icon-rethink {
+  right: -29%;
   top: 23%;
 }
 
@@ -1110,12 +1119,7 @@ export default {
   }
 }
 
-.Cookie--bottom.Cookie--dark-lime .Cookie__button {
-  background-color: #3273dc;
-  font-family: "Lato", sans-serif;
-}
-
-.VueCarousel-slide .image {
-  flex: 1 1 auto;
+.carousel__slide img {
+  max-height: 60px;
 }
 </style>

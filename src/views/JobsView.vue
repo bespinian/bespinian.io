@@ -95,7 +95,7 @@
           <ul>
             <li>Flexible ways of working and a lot of responsibility</li>
             <li>Possibilities meeting various customers and companies</li>
-            <li>A fast-paced start up environment</li>
+            <li>A fast-paced start-up environment</li>
             <li>A great team of fun people with a similar mindset</li>
             <li>Employment level: 60-100%</li>
             <li>Employment date: Flexible</li>

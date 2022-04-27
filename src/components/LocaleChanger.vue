@@ -17,7 +17,7 @@
 
 <script>
 import store from "store";
-import { localeStorageKey } from "../i18n";
+import { LOCALE_STORAGE_KEY } from "../i18n";
 
 export default {
   props: {
@@ -40,7 +40,7 @@ export default {
   methods: {
     handleLocaleChange(key) {
       this.$i18n.locale = key;
-      store.set(localeStorageKey, key);
+      store.set(LOCALE_STORAGE_KEY, key);
     },
     applyLocaleMappings() {
       const mappedLocale = this.localeMappings[this.$i18n.locale];

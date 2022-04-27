@@ -11,46 +11,41 @@
     "deploy": "cd infrastructure && terraform init && terraform apply -auto-approve=true && cd .. && aws s3 sync dist s3://bespinian.io --delete --exclude 'js/*' --exclude 'css/*' --exclude 'img/*' --exclude 'fonts/*' && aws s3 sync dist s3://bespinian.io --delete --cache-control 'max-age=31536000' --exclude '*' --include 'js/*' --include 'css/*' --include 'img/*' --include 'fonts/*'"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@fortawesome/fontawesome-svg-core": "^6.1.0",
+    "@fortawesome/free-brands-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/vue-fontawesome": "^3.0.0-5",
     "bulma": "^0.9.2",
     "bulma-timeline": "^3.0.4",
     "core-js": "^3.9.1",
     "locales-detector": "^3.0.1",
     "store": "^2.0.12",
     "typeface-lato": "^1.1.13",
-    "vue": "^2.6.12",
-    "vue-carousel": "^0.18.0",
-    "vue-cookie-law": "^1.13.3",
-    "vue-gtag": "^1.11.0",
-    "vue-i18n": "^8.23.0",
-    "vue-router": "^3.5.1",
-    "vue-scrollto": "^2.20.0"
+    "vue": "^3.2.30",
+    "vue-cookie-accept-decline": "^6.0.0",
+    "vue-gtag": "^2.0.1",
+    "vue-i18n": "^9.1.9",
+    "vue-router": "^4.0.0",
+    "vue-scrollto": "^2.20.0",
+    "vue3-carousel": "^0.1.36"
   },
   "devDependencies": {
-    "@kazupon/vue-i18n-loader": "^0.5.0",
-    "@vue/cli-plugin-babel": "^4.5.11",
-    "@vue/cli-plugin-eslint": "^4.5.11",
-    "@vue/cli-plugin-router": "^4.5.11",
-    "@vue/cli-service": "^4.5.11",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "^7.17.0",
+    "@intlify/vue-i18n-loader": "^4.1.0",
+    "@vue/cli-plugin-babel": "^5.0.1",
+    "@vue/cli-plugin-eslint": "^5.0.1",
+    "@vue/cli-plugin-router": "^5.0.1",
+    "@vue/cli-service": "^5.0.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "lint-staged": "^12.0.2",
     "prettier": "^2.2.1",
-    "vue-cli-plugin-i18n": "^2.0.0",
-    "vue-template-compiler": "^2.6.12"
+    "vue-cli-plugin-i18n": "^2.0.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint"
-    ]
   }
 }
