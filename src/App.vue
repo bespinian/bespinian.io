@@ -5,7 +5,9 @@
 </template>
 
 <style>
-#app {
+#app,
+input,
+textarea {
   font-family: "Lato", sans-serif;
 }
 </style>
