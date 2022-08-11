@@ -2,30 +2,25 @@
 
 The bespinian homepage available at <https://bespinian.io>
 
-## Project setup
+## Developing
 
-```
-npm install
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-### Compiles and hot-reloads for development
+## Building
 
-```
-npm run serve
-```
+To create a production version of your app:
 
-### Compiles and minifies for production
-
-```
+```bash
 npm run build
 ```
 
-### Lints and fixes files
+You can preview the production build with `npm run preview`.
 
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

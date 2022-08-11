@@ -1,0 +1,46 @@
+name: Lint, Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Audit dependencies
+        run: npm audit
+      - name: Install dependencies
+        run: npm ci
+      - name: Check code
+        run: npm run check
+      - name: Lint code
+        run: npm run lint
+  build:
+    name: Build and Deploy
+    environment: aws-production
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: eu-central-1
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v2
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm ci
+      - name: Build application
+        run: npm run build
+      - name: Deploy to production
+        run: npm run deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
