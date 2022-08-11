@@ -1,0 +1,127 @@
+{
+	"subtitle": "Cloud Native Citizens",
+	"mission": {
+		"nav_item": "Mission",
+		"title": "Unsere Mission",
+		"body": "Wir von bespinian lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams entwickelt. Deswegen bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zu Hause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim Kreieren von erstklassigen Cloud-basierten Lösungen.",
+		"solutions": {
+			"title": "Die Lösungen, die wir zusammen kreieren, sind",
+			"operate": "einfach zu betreiben",
+			"adaptable": "leicht zu ändern",
+			"scalable": "skalierbar unter Last",
+			"optimized": "optimiert auf Ihre Geschäftsziele"
+		}
+	},
+	"services": {
+		"nav_item": "Dienstleistungen",
+		"title": "Unsere Dienstleistungen",
+		"body": "Egal, ob Sie ein neues Vorhaben beginnen, eine existierende Idee überarbeiten oder Ihre bestehenden Applikationen transformieren, wir begleiten Ihr Team hands-on, in jeder Iteration Ihres Projekts. Hier sind einige Dienstleistungen, die wir anbieten. Wenn Sie etwas suchen, das nicht auf der Liste ist, lassen Sie es uns wissen. Wir sind immer offen für Innovation.",
+		"timeline": {
+			"assess": {
+				"title": "Bewerten",
+				"body": "Die perfekte Wahl oder zu gut, um wahr zu sein? Wir helfen Ihnen, die richtigen Partner für Ihr Projekt zu finden."
+			},
+			"transform": {
+				"title": "Transformieren",
+				"body": "Jedes Unternehmen hat eine Geschichte. Zusammen analysieren wir Ihre bestehenden Applikationen und machen sie bereit für die Cloud."
+			},
+			"design": {
+				"title": "Designen",
+				"body": "Ein Diagramm sagt mehr als tausend Worte. Wir strukturieren Ihre Geschäftsdomäne und identifizieren die Schlüsselkonzepte."
+			},
+			"build": {
+				"title": "Umsetzen",
+				"body": "Von der Papierserviette zum Source Code. Wir helfen Ihnen bei der Umsetzung Ihrer Ideen als Cloud-basierte Software."
+			},
+			"run": {
+				"title": "Betreiben",
+				"body": "Innovation ohne Unterbruch. Wir helfen Ihnen bei der erfolgreichen Einführung von DevOps in Ihrer Organisation."
+			},
+			"rethink": {
+				"title": "Überdenken",
+				"body": "Im Nachhinein ist alles einfach. Machen wir uns diese Tatsache zunutze und bringen wir Ihre Lösung auf die nächste Stufe!"
+			}
+		}
+	},
+	"customers": {
+		"nav_item": "Kunden",
+		"title": "Unsere Kunden",
+		"body": "Wir arbeiten mit Firmen aus unterschiedlichen Branchen und von unterschiedlicher Grösse, vom Start-up bis zum Grosskonzern. Hier sind einige Firmen, die auf unsere Dienstleistungen vertrauen"
+	},
+	"partners": {
+		"nav_item": "Partner",
+		"title": "Unsere Partner",
+		"body": "Wir sind stolz auf starke Partnerschaften, wenn es um Plattformen und Technologien geht. Hier sind einige Firmen und Organisationen, die wir zu unseren Partnern zählen dürfen"
+	},
+	"technologies": {
+		"nav_item": "Technologien",
+		"title": "Unsere Technologien",
+		"platforms": {
+			"body": {
+				"intro": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis moderner Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von",
+				"platforms": "Plattformen,",
+				"weAreNativeTo": "auf denen wir Experten sind"
+			}
+		},
+		"tools": {
+			"body": {
+				"intro": "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist es nicht unser Ding das Rad neu zu erfinden. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer liebsten",
+				"tools": "Tools"
+			}
+		}
+	},
+	"team": {
+		"nav_item": "Team",
+		"title": "Unser Team",
+		"body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Start-ups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater*innen, einfühlsame Coaches und erfahrene Coder*innen. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
+		"mathis": {
+			"catchphrase": "Keeper of Simple",
+			"body": "Softwarearchitekt und Mitgründer. Spezialisiert auf Microservices, Containertechnologien und Cloud-Native Engineering."
+		},
+		"lena": {
+			"catchphrase": "Head in the Clouds",
+			"body": "Software Engineer und Mitgründerin. Spezialisiert auf Cloud-Dienste, verteilte Systeme und Webentwicklung mit modernen Technologien."
+		},
+		"paulina": {
+			"catchphrase": "Cloud Whisperer",
+			"body": "DevOps und Cloud Solution Architektin. Begeistert von Automatisierung. Spezialisiert auf Systemintegration, CI/CD und Cloud-native Lösungen."
+		},
+		"john": {
+			"catchphrase": "Cloud Wrangler",
+			"body": "Software Architect. Spezialisiert auf Agile Prozesse, CI/CD Lösungen, Infrastructure as Code und Cloud-native Entwicklung."
+		}
+	},
+	"blog": {
+		"nav_item": "Blog"
+	},
+	"jobs": {
+		"nav_item": "Jobs"
+	},
+	"contact": {
+		"nav_item": "Kontakt",
+		"title": "Kontaktieren Sie Uns",
+		"body": "Haben Sie eine Frage? Benötigen Sie eine Offerte? Oder möchten Sie mal auf einen Kaffee oder ein Bier vorbeikommen? In jedem Fall freuen wir uns über Ihre Kontaktaufnahme und melden uns so rasch wie möglich bei Ihnen.",
+		"form": {
+			"nameplaceholder": "Name",
+			"emailplaceholder": "Email",
+			"subjectplaceholder": "Betreff",
+			"messageplaceholder": "Nachricht",
+			"sendbuttonlabel": "Abschicken"
+		}
+	},
+	"gdpr": {
+		"heading": "DSVGO Nachricht",
+		"description": "Wir benutzen Cookies um Ihnen die beste Experience auf unserer Website bieten zu können.",
+		"settingsLabel": "Cookie Einstellungen",
+		"acceptLabel": "Cookies Einstellungen Akzeptieren",
+		"closeLabel": "Einstellungen Schliessen",
+		"analyticsDescription": "Werden für Google Analytics, einem 3rd Party Tool von Google, benutzt um das Verhalten von Nutzer*innen zu analysieren"
+	},
+	"customer_story": {
+		"customer": "Kunde",
+		"background": "Ausgangslage",
+		"goal": "Projektziel",
+		"contribution": "bespinians Rolle",
+		"technologies": "Technologien"
+	}
+}

@@ -1,0 +1,127 @@
+{
+	"subtitle": "Cloud Native Citizens",
+	"mission": {
+		"nav_item": "Mission",
+		"title": "Üsi Mission",
+		"body": "Mir vo bespinian liebe Software. Bsunders, wenn si eifach und effiziänt isch und ihri Aforderige erfüllt. Grossartigi Software wird vo grossartige Teams entwicklet. Darum boue aui üsi Dienstleistige uf ere änge Zämearbeit mit öiem Team uf. Mir füehle üs deheim uf private, hybride und public Clouds. Das macht üs zum ideale Partner für öies Undernähme bim Kreiere vo erstklassige Cloud-basierte Lösige.",
+		"solutions": {
+			"title": "D Lösige, wo mir zäme kreiere, si",
+			"operate": "eifach z betribe",
+			"adaptable": "liecht z ändere",
+			"scalable": "skalierbar unter Last",
+			"optimized": "optimiert uf öji Gschäftzziel"
+		}
+	},
+	"services": {
+		"nav_item": "Dienstleistige",
+		"title": "Üsi Dienstleistige",
+		"body": "Egal, öb dir es nöis Vorhabe aföht, e existierendi Idee überarbeitet oder öji bestehende Applikatione tranformieret, mir begleite öies Team hands-on, i jedere Iteration vo öiem Projekt. Hie si es paar vo de Dienstleistige wo mir abiete. Wenn dir öppis suechet, wo nid uf der Liste isch, löhts üs la wüsse. Mir si immer offe für Innovation.",
+		"timeline": {
+			"assess": {
+				"title": "Bewärte",
+				"body": "Di perfekti Wahl oder z guet um wahr z sii? Mir hälfe öich di richtige Partner für öies Projekt z finde."
+			},
+			"transform": {
+				"title": "Transformiere",
+				"body": "Jedes Unternähme het e Gschicht. Zäme analysiere mr öji bestehende Applikatione und mache se parat für d Cloud."
+			},
+			"design": {
+				"title": "Designe",
+				"body": "Es Diagramm seit meh aus tusig Wort. Mir strukturiere öji Gschäftsdomäne und identifiziere d Schlüsselkonzept."
+			},
+			"build": {
+				"title": "Umsetze",
+				"body": "Vo der Serviette zum Source Code. Mir hälfe öich bi der Umsetzig vo öine Ideene als Cloud-basierti Software."
+			},
+			"run": {
+				"title": "Betribe",
+				"body": "Innovation ohni Unterbruch. Mir hälfe öich bi der erfolgriche Ifüehrig vo DevOps i öier Organisation."
+			},
+			"rethink": {
+				"title": "Überdänke",
+				"body": "Im Nachhinein isch alles eifach. Nütze mr di Tatsach und bringe öji Lösig uf di nächsti Stuefe!"
+			}
+		}
+	},
+	"customers": {
+		"nav_item": "Chunde",
+		"title": "Üsi Chunde",
+		"body": "Mir schaffe mit Firme us unterschidleche Branchene u vo unterschidlecher Grössi, vom Start-up bis zum Grosskonzärn. Die Firme vertroue zum Bispil uf üsi Dienstleistige"
+	},
+	"partners": {
+		"nav_item": "Partner",
+		"title": "Üsi Partner",
+		"body": "Mir si stolz uf starchi Partnerschafte, wes um Plattforme u Technologie geit. Die folgende Firme und Organisatione dörfe mir zum Bispil zu üsne Partner zelle"
+	},
+	"technologies": {
+		"nav_item": "Technologie",
+		"title": "Üsi Technologie",
+		"platforms": {
+			"body": {
+				"intro": "Mir si überzügt, dass Ideene d Technologie söue bestimme und nid umgekehrt. Zäme finde mir Lösige uf Basis vo moderne Technologie wo öiem Team ermögleche meh Zit mitem Erschaffe vo Mehrwärt z verbringe und weniger mitem Betrib vo Infrastruktur. Hie isch e Uswahl vo",
+				"platforms": "Plattforme",
+				"weAreNativeTo": "wo mir Experte druf si"
+			}
+		},
+		"tools": {
+			"body": {
+				"intro": "Ou wenn mir nüt meh liebe als Code z schribe, isches nid üses Ding ds Rad nöi z erfinde. Mir wüsse, wenns besser isch, es existierends Produkt izsetze und mir teile das Wüsse mit öiem Team. Hie si es paar vo üsne liebste",
+				"tools": "Tools"
+			}
+		}
+	},
+	"team": {
+		"nav_item": "Team",
+		"title": "Üses Team",
+		"body": "Mir si Cloud Software Engineers vor erste Stund mit Bruefserfahrig sowohl i Grossundernähme als ou i Start-ups. Mir si stolz uf üsi Fähigkeite als kompetänti Berater*inne, ifühlsami Coaches und erfahreni Coder*inne. Interessiert üs z träffe? De chömet eifach ungeniert über Social Media uf üs zue, träffet üs amne Meetup ir Nechi oder nützet ds Kontaktformular unde.",
+		"mathis": {
+			"catchphrase": "Keeper of Simple",
+			"body": "Softwarearchitekt und Mitgründer. Spezialisert uf Microservices, Containertechnologie and Cloud-Native Engineering."
+		},
+		"lena": {
+			"catchphrase": "Head in the Clouds",
+			"body": "Software Engineer und Mitgründerin. Spezialisiert uf Cloud-Dienste, verteilti System und Webentwicklig mit moderne Technologie."
+		},
+		"paulina": {
+			"catchphrase": "Cloud Whisperer",
+			"body": "DevOps und Cloud Solution Architektin. Begeisteret vo Outomatisierig. Spezialisiert uf Systemintegration, CI/CD und Cloud-native Lösige."
+		},
+		"john": {
+			"catchphrase": "Cloud Wrangler",
+			"body": "Wouche Büezer. Vou wändig u wouchegängig. Spezialischt für Sofort Liffer Prozäss, Infrastruktur aus Beschribig u Wouche Bouerei."
+		}
+	},
+	"blog": {
+		"nav_item": "Blog"
+	},
+	"jobs": {
+		"nav_item": "Jobs"
+	},
+	"contact": {
+		"nav_item": "Kontakt",
+		"title": "Kontaktieret üs",
+		"body": "Heiter e Frag? Bruchet der e Offerte? Oder möchtet der mal ufnes Kafi oder es Bier verbicho? I jedem Fall fröie mir üs über öji Kontaktufnahm und mälde üs so rasch wi möglech bi öich.",
+		"form": {
+			"nameplaceholder": "Name",
+			"emailplaceholder": "Email",
+			"subjectplaceholder": "Beträff",
+			"messageplaceholder": "Nachricht",
+			"sendbuttonlabel": "Abschicke"
+		}
+	},
+	"gdpr": {
+		"heading": "DSVGO Nachricht",
+		"description": "Mir benutze Cookies um öich di besti Experience uf üsere Website chönne z biete.",
+		"settingsLabel": "Cookie Istellige",
+		"acceptLabel": "Cookies Istellige Akzeptiere",
+		"closeLabel": "Istellige Zuemache",
+		"analyticsDescription": "Wärde für Google Analytics, emne 3rd Party Tool vo Google, benutzt um ds Verhalte vo Nutzer*innen z analysiere"
+	},
+	"customer_story": {
+		"customer": "Chund",
+		"background": "Usgangslag",
+		"goal": "Projektziel",
+		"contribution": "Rolle vo bespinian",
+		"technologies": "Technologie"
+	}
+}
