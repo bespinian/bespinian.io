@@ -88,6 +88,11 @@
       "name": "Paulina Grochal",
       "catchphrase": "Cloud Whisperer",
       "body": "DevOps and Cloud Solutions Architect. Automation enthusiast specialized in system integration, CI/CD and cloud-native solutions."
+    },
+    "john": {
+      "name": "John Hutchison",
+      "catchphrase": "Cloud Wrangler",
+      "body": "Software Architect. Specialized in agile processes, CI/CD solutions, infrastructure as code and cloud-native development."
     }
   },
   "blog": {
