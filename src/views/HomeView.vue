@@ -767,6 +767,64 @@
                   </div>
                 </article>
               </div>
+              <div class="tile is-parent is-6">
+                <article class="tile is-child">
+                  <div class="card">
+                    <div class="card-content">
+                      <figure class="image is-128x128">
+                        <img
+                          class="is-rounded"
+                          src="../assets/john.webp"
+                          alt="John M. Hutchison"
+                        />
+                      </figure>
+                      <br />
+                      <p class="title">
+                        {{ $t("team.john.name") }}
+                      </p>
+                      <p class="subtitle">
+                        {{ $t("team.john.catchphrase") }}
+                      </p>
+                      <div class="content">{{ $t("team.john.body") }}</div>
+                    </div>
+                    <footer class="card-footer">
+                      <a
+                        class="card-footer-item"
+                        href="https://github.com/cldmstr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon :icon="['fab', 'github']" />
+                        </span>
+                      </a>
+                      <a
+                        class="card-footer-item"
+                        href="https://www.linkedin.com/in/john-m-hutchison/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon :icon="['fab', 'linkedin']" />
+                        </span>
+                      </a>
+                      <a
+                        class="card-footer-item"
+                        href="https://blog.bespinian.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Blog"
+                      >
+                        <span class="icon">
+                          <font-awesome-icon icon="rss-square" />
+                        </span>
+                      </a>
+                    </footer>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>

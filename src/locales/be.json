@@ -88,6 +88,11 @@
       "name": "Paulina Grochal",
       "catchphrase": "Cloud Whisperer",
       "body": "DevOps und Cloud Solution Architektin. Begeisteret vo Outomatisierig. Spezialisiert uf Systemintegration, CI/CD und Cloud-native Lösige."
+    },
+    "john": {
+      "name": "John Hutchison",
+      "catchphrase": "Cloud Wrangler",
+      "body": "Wouche Büezer. Vou wändig u wouchegängig. Spezialischt für Sofort Liffer Prozäss, Infrastruktur aus Beschribig u Wouche Bouerei."
     }
   },
   "blog": {
