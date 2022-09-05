@@ -1,5 +1,5 @@
 module "homepage" {
-  source = "github.com/cloudlena/terraform-spa?ref=v1.0.5"
+  source = "github.com/cloudlena/terraform-spa?ref=v1.0.6"
   providers = {
     aws.us_east = aws.us_east
   }
