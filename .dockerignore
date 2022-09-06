@@ -1,3 +1,8 @@
-node_modules/
-build/
-infrastructure/
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.vercel
+.output
+/infrastructure
