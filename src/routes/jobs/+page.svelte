@@ -14,7 +14,8 @@
 			aria-label="menu"
 			aria-expanded="false"
 			data-target="navbar-menu"
-			class={`navbar-burger burger ${showNav ? ' is-active' : ''}`}
+			class="navbar-burger burger"
+			class:is-active={showNav}
 			on:click={toggleNav}
 		>
 			<span aria-hidden="true" />
@@ -22,7 +23,7 @@
 			<span aria-hidden="true" />
 		</button>
 	</div>
-	<div id="navbar-menu" class={`navbar-menu ${showNav ? 'is-active' : ''}`} on:click={toggleNav}>
+	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav} on:click={toggleNav}>
 		<div class="navbar-end">
 			<a href="/" class="navbar-item">Home</a>
 			<a href="/jobs" class="navbar-item">{$_('jobs.nav_item')}</a>
