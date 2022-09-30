@@ -79,10 +79,10 @@
 										{#if member.twitter}
 											<a
 												class="card-footer-item"
-												href={`https://twitter.com/${member.twitter}`}
+												href="https://twitter.com/{member.twitter}"
 												target="_blank"
 												rel="noopener noreferrer"
-												aria-label={`${member.name} Twitter`}
+												aria-label="{member.name} Twitter"
 											>
 												<span class="icon"><Fa icon={faTwitter} /></span>
 											</a>
@@ -90,10 +90,10 @@
 										{#if member.github}
 											<a
 												class="card-footer-item"
-												href={`https://github.com/${member.github}`}
+												href="https://github.com/{member.github}"
 												target="_blank"
 												rel="noopener noreferrer"
-												aria-label={`${member.name} GitHub`}
+												aria-label="{member.name} GitHub"
 											>
 												<span class="icon"><Fa icon={faGithub} /></span>
 											</a>
@@ -101,10 +101,10 @@
 										{#if member.linkedIn}
 											<a
 												class="card-footer-item"
-												href={`https://www.linkedin.com/in/${member.linkedIn}/`}
+												href="https://www.linkedin.com/in/{member.linkedIn}/"
 												target="_blank"
 												rel="noopener noreferrer"
-												aria-label={`${member.name} LinkedIn`}
+												aria-label="{member.name} LinkedIn"
 											>
 												<span class="icon"><Fa icon={faLinkedin} /></span>
 											</a>

@@ -42,7 +42,8 @@
 <nav class="navbar is-link is-fixed-top" aria-label="main-navigation">
 	<div class="navbar-brand">
 		<button
-			class={`navbar-burger burger ${showNav ? ' is-active' : ''}`}
+			class="navbar-burger burger"
+			class:is-active={showNav}
 			aria-label="menu"
 			aria-expanded="false"
 			data-target="navbar-menu"
@@ -52,7 +53,7 @@
 			<span aria-hidden="true" />
 		</button>
 	</div>
-	<div id="navbar-menu" class={`navbar-menu ${showNav ? 'is-active' : ''}`} on:click={toggleNav}>
+	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav} on:click={toggleNav}>
 		<div class="navbar-end">
 			<a href="/" class="navbar-item">Home</a>
 			<LanguageSwitcher />
