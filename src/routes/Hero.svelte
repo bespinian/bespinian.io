@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import cloudCity from '$lib/assets/cloudcity.svg';
+	import cloudCity from '$lib/images/cloudcity.svg';
 </script>
 
 <section class="hero is-link is-fullheight">

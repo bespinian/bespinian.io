@@ -8,6 +8,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>bespinian - Jobs</title>
+	<meta name="description" content="bespinian is always looking for talent" />
+</svelte:head>
+
 <nav class="navbar is-link is-fixed-top" aria-label="main-navigation">
 	<div class="navbar-brand">
 		<button

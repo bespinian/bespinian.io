@@ -2,33 +2,9 @@
 	import { _ } from 'svelte-i18n';
 	import { locale } from 'svelte-i18n';
 	import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
+	import type { PageData } from './$types';
 
-	interface Customer {
-		name: string;
-		title: string;
-		customer: string;
-		background: string;
-		goal: string;
-		contribution: {
-			intro: string;
-			topics: {
-				title: string;
-				body: string;
-			}[];
-		};
-		technologies: string[];
-		quote: {
-			stakeholder: {
-				name: string;
-				role: string;
-			};
-			body: string;
-		};
-	}
-
-	export let en: Customer;
-	export let de: Customer;
-	export let logo: string;
+	export let data: PageData;
 
 	let showNav = false;
 
@@ -36,8 +12,13 @@
 		showNav = !showNav;
 	}
 
-	$: customer = $locale?.includes('de-') ? de : en;
+	$: customer = $locale?.includes('de-') ? data.customer.de : data.customer.en;
 </script>
+
+<svelte:head>
+	<title>bespinian - Customer {customer.name}</title>
+	<meta name="description" content="bespinian's success story with our customer {customer.name}" />
+</svelte:head>
 
 <nav class="navbar is-link is-fixed-top" aria-label="main-navigation">
 	<div class="navbar-brand">
@@ -71,7 +52,7 @@
 					{customer.title}
 				</h2>
 				<figure class="image customer-story-logo">
-					<img src={logo} alt={customer.name} />
+					<img src={data.customer.logo} alt={customer.name} />
 				</figure>
 				<br />
 				<p>

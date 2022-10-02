@@ -4,10 +4,10 @@
 	import en from '$lib/locales/en.json';
 	import de from '$lib/locales/de.json';
 	import ch from '$lib/locales/ch.json';
-	import Navigation from '$lib/Navigation.svelte';
-	import Footer from '$lib/Footer.svelte';
-	import Analytics from '$lib/Analytics.svelte';
-	import '../app.css';
+	import Navigation from './Navigation.svelte';
+	import Footer from './Footer.svelte';
+	import Analytics from './Analytics.svelte';
+	import './styles.css';
 
 	addMessages('en-US', en);
 	addMessages('de-DE', de);
