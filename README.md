@@ -1,6 +1,6 @@
 # bespinian.io
 
-The bespinian homepage available at <https://bespinian.io>
+The bespinian homepage available at <https://bespinian.io>. Powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
 ## Developing
 

@@ -3,10 +3,10 @@
 	import Fa from 'svelte-fa';
 	import { faRssSquare } from '@fortawesome/free-solid-svg-icons';
 	import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
-	import mathis from '$lib/assets/mathis.webp';
-	import lena from '$lib/assets/lena.webp';
-	import paulina from '$lib/assets/paulina.webp';
-	import john from '$lib/assets/john.webp';
+	import mathis from '$lib/images/mathis.webp';
+	import lena from '$lib/images/lena.webp';
+	import paulina from '$lib/images/paulina.webp';
+	import john from '$lib/images/john.webp';
 
 	interface Member {
 		tag: string;

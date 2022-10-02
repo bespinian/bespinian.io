@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { onMount, SvelteComponent } from 'svelte';
 	import { _ } from 'svelte-i18n';
-	import aws from '$lib/assets/aws.svg';
-	import openShift from '$lib/assets/openshift.svg';
-	import kubernetes from '$lib/assets/kubernetes.svg';
-	import azure from '$lib/assets/azure.svg';
-	import cloudFoundry from '$lib/assets/cloudfoundry.svg';
-	import technologies from '$lib/assets/technologies.svg';
+	import aws from '$lib/images/aws.svg';
+	import openShift from '$lib/images/openshift.svg';
+	import kubernetes from '$lib/images/kubernetes.svg';
+	import azure from '$lib/images/azure.svg';
+	import cloudFoundry from '$lib/images/cloudfoundry.svg';
+	import technologies from '$lib/images/technologies.svg';
 
 	let Carousel: SvelteComponent;
 	onMount(async () => {

@@ -1,16 +1,16 @@
 <script lang="ts">
 	import { onMount, SvelteComponent } from 'svelte';
 	import { _ } from 'svelte-i18n';
-	import swisscom from '$lib/assets/swisscom.webp';
-	import txGroup from '$lib/assets/tx-group.webp';
-	import ciTechSensors from '$lib/assets/citechsensors.webp';
-	import swissSignGroup from '$lib/assets/swisssigngroup.svg';
-	import emmi from '$lib/assets/emmi.webp';
-	import legalI from '$lib/assets/legal-i.webp';
-	import skoor from '$lib/assets/skoor.webp';
-	import zeilenwerk from '$lib/assets/zeilenwerk.webp';
-	import bfh from '$lib/assets/bfh.webp';
-	import kalaidos from '$lib/assets/kalaidos.webp';
+	import swisscom from '$lib/images/swisscom.webp';
+	import txGroup from '$lib/images/tx-group.webp';
+	import ciTechSensors from '$lib/images/citechsensors.webp';
+	import swissSignGroup from '$lib/images/swisssigngroup.svg';
+	import emmi from '$lib/images/emmi.webp';
+	import legalI from '$lib/images/legal-i.webp';
+	import skoor from '$lib/images/skoor.webp';
+	import zeilenwerk from '$lib/images/zeilenwerk.webp';
+	import bfh from '$lib/images/bfh.webp';
+	import kalaidos from '$lib/images/kalaidos.webp';
 
 	let Carousel: SvelteComponent;
 	onMount(async () => {
@@ -27,8 +27,8 @@
 	const customers: Customer[] = [
 		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
 		{ name: 'TX Group', logo: txGroup, link: 'https://tx.group' },
-		{ name: 'CI Tech Sensors', logo: ciTechSensors, link: '/customers/citechsensors' },
-		{ name: 'SwissSign Group', logo: swissSignGroup, link: '/customers/swisssigngroup' },
+		{ name: 'CI Tech Sensors', logo: ciTechSensors, link: '/customers/citech-sensors' },
+		{ name: 'SwissSign Group', logo: swissSignGroup, link: '/customers/swisssign-group' },
 		{ name: 'Emmi', logo: emmi, link: 'https://group.emmi.com' },
 		{ name: 'legal-i', logo: legalI, link: 'https://legal-i.ch' },
 		{ name: 'Skoor', logo: skoor, link: 'https://www.skoor.com' },

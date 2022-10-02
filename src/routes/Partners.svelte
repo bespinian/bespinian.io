@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { onMount, SvelteComponent } from 'svelte';
 	import { _ } from 'svelte-i18n';
-	import acend from '$lib/assets/acend.webp';
-	import swisscom from '$lib/assets/swisscom.webp';
-	import vshn from '$lib/assets/vshn.svg';
-	import aws from '$lib/assets/aws.webp';
-	import puzzle from '$lib/assets/puzzle.webp';
-	import redHat from '$lib/assets/redhat.webp';
-	import swissMadeSoftware from '$lib/assets/swissmadesoftware.webp';
+	import acend from '$lib/images/acend.webp';
+	import swisscom from '$lib/images/swisscom.webp';
+	import vshn from '$lib/images/vshn.svg';
+	import aws from '$lib/images/aws.webp';
+	import puzzle from '$lib/images/puzzle.webp';
+	import redHat from '$lib/images/redhat.webp';
+	import swissMadeSoftware from '$lib/images/swissmadesoftware.webp';
 
 	let Carousel: SvelteComponent;
 	onMount(async () => {
