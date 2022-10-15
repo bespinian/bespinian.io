@@ -64,7 +64,13 @@
 								<div class="card">
 									<div class="card-content">
 										<figure class="image is-128x128 is-centered">
-											<img class="is-rounded" src={member.portrait} alt={member.name} />
+											<img
+												class="is-rounded"
+												src={member.portrait}
+												alt={member.name}
+												width="128"
+												height="128"
+											/>
 										</figure>
 										<br />
 										<p class="title">

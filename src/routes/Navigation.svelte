@@ -10,6 +10,7 @@
 	}
 
 	function handleClick(section: string) {
+		toggleNav();
 		ga.addEvent('navigate', {
 			section
 		});
@@ -31,7 +32,7 @@
 			<span aria-hidden="true" />
 		</button>
 	</div>
-	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav} on:click={toggleNav}>
+	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav}>
 		<div class="navbar-end">
 			<a
 				href="#mission"
