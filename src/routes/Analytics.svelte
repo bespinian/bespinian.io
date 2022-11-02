@@ -36,4 +36,4 @@
 	on:analytics={initAnalytics}
 />
 
-<GoogleAnalytics bind:this={ga} properties={['UA-132338301-1']} enabled={false} />
+<GoogleAnalytics bind:this={ga} properties={['G-CC9104T46J']} enabled={false} />

@@ -10,8 +10,8 @@
 
 	function handleLocaleChange(key: string) {
 		locale.set(key);
-		ga.addEvent('change_language', {
-			lang: key
+		ga.addEvent('language_change', {
+			language: key
 		});
 	}
 </script>
