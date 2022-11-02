@@ -11,7 +11,7 @@
 
 	function handleClick(section: string) {
 		toggleNav();
-		ga.addEvent('navigate', {
+		ga.addEvent('navigation_click', {
 			section
 		});
 	}
