@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          check-latest: true
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Audit dependencies
@@ -32,6 +35,9 @@ jobs:
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          check-latest: true
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v2
       - name: Checkout repo

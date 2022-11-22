@@ -44,7 +44,7 @@
 
 <br />
 <br />
-<section v-if="customer" class="section customer-story">
+<section class="section customer-story">
 	{#if customer}
 		<div class="columns is-centered columns-section">
 			<div class="column is-half">
