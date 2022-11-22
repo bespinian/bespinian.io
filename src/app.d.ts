@@ -6,6 +6,8 @@ declare module '@beyonk/gdpr-cookie-consent-banner';
 // for information about these interfaces
 // and what to do when importing types
 declare namespace App {
+	// interface Error {}
+	// interface Locals {}
 	interface PageData {
 		customer?: {
 			en: import('$lib/customers/Customer').Customer;
@@ -13,4 +15,5 @@ declare namespace App {
 			logo: string;
 		};
 	}
+	// interface Platform {}
 }
