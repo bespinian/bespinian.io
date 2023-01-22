@@ -39,6 +39,11 @@ body {
 	color: white;
 }
 
+.cookieConsent__Right {
+	display: inherit;
+	align-items: flex-end;
+}
+
 .columns-section {
 	position: relative;
 }
