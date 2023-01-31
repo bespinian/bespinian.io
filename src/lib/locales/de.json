@@ -89,6 +89,10 @@
 		"john": {
 			"catchphrase": "Cloud Wrangler",
 			"body": "Software Architect. Spezialisiert auf Agile Prozesse, CI/CD Lösungen, Infrastructure as Code und Cloud-Native Entwicklung."
+		},
+		"qasim": {
+			"catchphrase": "☁boy 🤠",
+			"body": "Software Engineer. Begeistert von modernen Technologien und Sprachen. Immer auf der Suche nach dem geeignetsten Tool in der Schublade."
 		}
 	},
 	"blog": {
