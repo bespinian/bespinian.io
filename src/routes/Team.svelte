@@ -7,6 +7,7 @@
 	import lena from '$lib/images/lena.webp';
 	import paulina from '$lib/images/paulina.webp';
 	import john from '$lib/images/john.webp';
+	import qasim from '$lib/images/qasim.webp';
 
 	interface Member {
 		tag: string;
@@ -46,6 +47,12 @@
 			portrait: john,
 			github: 'cldmstr',
 			linkedIn: 'john-m-hutchison'
+		},
+		{
+			tag: 'qasim',
+			name: 'Qasim Warraich',
+			portrait: qasim,
+			github: 'qasimwarraich'
 		}
 	];
 </script>
