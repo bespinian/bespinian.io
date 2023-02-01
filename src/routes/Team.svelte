@@ -7,6 +7,7 @@
 	import lena from '$lib/images/lena.webp';
 	import paulina from '$lib/images/paulina.webp';
 	import john from '$lib/images/john.webp';
+	import denis from '$lib/images/denis.webp';
 	import qasim from '$lib/images/qasim.webp';
 
 	interface Member {
@@ -14,7 +15,7 @@
 		name: string;
 		portrait: string;
 		twitter?: string;
-		github?: string;
+		gitHub?: string;
 		linkedIn?: string;
 	}
 
@@ -24,7 +25,7 @@
 			name: 'Mathis Kretz',
 			portrait: mathis,
 			twitter: 'mathis_kretz',
-			github: 'mkretz',
+			gitHub: 'mkretz',
 			linkedIn: 'mathiskretz'
 		},
 		{
@@ -32,7 +33,7 @@
 			name: 'Lena Fuhrimann',
 			portrait: lena,
 			twitter: 'the_cloudlena',
-			github: 'cloudlena',
+			gitHub: 'cloudlena',
 			linkedIn: 'lena-fuhrimann'
 		},
 		{
@@ -45,14 +46,21 @@
 			tag: 'john',
 			name: 'John Hutchison',
 			portrait: john,
-			github: 'cldmstr',
+			gitHub: 'cldmstr',
 			linkedIn: 'john-m-hutchison'
+		},
+		{
+			tag: 'denis',
+			name: 'Denis Kovachevich',
+			portrait: denis,
+			gitHub: 'denis019',
+			linkedIn: 'denis-dev'
 		},
 		{
 			tag: 'qasim',
 			name: 'Qasim Warraich',
 			portrait: qasim,
-			github: 'qasimwarraich'
+			gitHub: 'qasimwarraich'
 		}
 	];
 </script>
@@ -100,10 +108,10 @@
 												<span class="icon"><Fa icon={faTwitter} /></span>
 											</a>
 										{/if}
-										{#if member.github}
+										{#if member.gitHub}
 											<a
 												class="card-footer-item"
-												href="https://github.com/{member.github}"
+												href="https://github.com/{member.gitHub}"
 												target="_blank"
 												rel="noopener noreferrer"
 												aria-label="{member.name} GitHub"
