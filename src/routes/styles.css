@@ -2,12 +2,9 @@
 @import '@fontsource/lato/700.css';
 
 :root {
+	font-family: 'Lato', sans-serif !important;
 	scroll-behavior: smooth;
 	--vc-clr-primary: #3273dc;
-}
-
-body {
-	font-family: 'Lato', sans-serif !important;
 }
 
 .sc-carousel__carousel-container.has-text-centered {
