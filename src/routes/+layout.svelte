@@ -19,12 +19,14 @@
 	});
 </script>
 
-<Navigation />
+<div class="app">
+	<Navigation />
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
 
-<Footer />
+	<Footer />
 
-<Analytics />
+	<Analytics />
+</div>
