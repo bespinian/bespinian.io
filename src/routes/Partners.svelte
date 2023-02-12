@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { onMount, SvelteComponent } from 'svelte';
 	import { _ } from 'svelte-i18n';
+	import Carousel from 'svelte-carousel';
+	import { browser } from '$app/environment';
 	import acend from '$lib/images/acend.webp';
 	import swisscom from '$lib/images/swisscom.webp';
 	import vshn from '$lib/images/vshn.svg';
@@ -8,12 +9,6 @@
 	import puzzle from '$lib/images/puzzle.webp';
 	import redHat from '$lib/images/redhat.webp';
 	import swissMadeSoftware from '$lib/images/swissmadesoftware.webp';
-
-	let Carousel: SvelteComponent;
-	onMount(async () => {
-		const module = await import('svelte-carousel');
-		Carousel = module.default;
-	});
 
 	interface Partner {
 		name: string;
@@ -39,19 +34,21 @@
 			<p>{$_('partners.body')}:</p>
 			<br />
 			<div class="container">
-				<svelte:component this={Carousel} particlesToShow={3} autoplay={true} dots={false}>
-					{#each partners as partner (partner.name)}
-						<div class="has-text-centered">
-							<div class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim">
-								<figure class="image">
-									<img src={partner.logo} alt={partner.name} />
-								</figure>
-								<br />
+				{#if browser}
+					<Carousel particlesToShow={3} autoplay={true} dots={false}>
+						{#each partners as partner (partner.name)}
+							<div class="has-text-centered">
+								<div class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim">
+									<figure class="image">
+										<img src={partner.logo} alt={partner.name} />
+									</figure>
+									<br />
+								</div>
+								<a href={partner.link} target="_blank" rel="noopener noreferrer">{partner.name}</a>
 							</div>
-							<a href={partner.link} target="_blank" rel="noopener noreferrer">{partner.name}</a>
-						</div>
-					{/each}
-				</svelte:component>
+						{/each}
+					</Carousel>
+				{/if}
 			</div>
 		</div>
 	</div>

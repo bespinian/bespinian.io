@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { onMount, SvelteComponent } from 'svelte';
 	import { _ } from 'svelte-i18n';
+	import Carousel from 'svelte-carousel';
+	import { browser } from '$app/environment';
 	import swisscom from '$lib/images/swisscom.webp';
 	import txGroup from '$lib/images/tx-group.webp';
 	import ciTechSensors from '$lib/images/citechsensors.webp';
@@ -11,12 +12,6 @@
 	import zeilenwerk from '$lib/images/zeilenwerk.webp';
 	import bfh from '$lib/images/bfh.webp';
 	import kalaidos from '$lib/images/kalaidos.webp';
-
-	let Carousel: SvelteComponent;
-	onMount(async () => {
-		const module = await import('svelte-carousel');
-		Carousel = module.default;
-	});
 
 	interface Customer {
 		name: string;
@@ -45,23 +40,25 @@
 			<p>{$_('customers.body')}:</p>
 			<br />
 			<div class="container">
-				<svelte:component this={Carousel} particlesToShow={3} autoplay={true} dots={false}>
-					{#each customers as customer (customer.name)}
-						<div class="has-text-centered">
-							<div class="has-image-centered customer-logo">
-								<figure class="image">
-									<img src={customer.logo} alt={customer.name} />
-								</figure>
-								<br />
+				{#if browser}
+					<Carousel particlesToShow={3} autoplay={true} dots={false}>
+						{#each customers as customer (customer.name)}
+							<div class="has-text-centered">
+								<div class="has-image-centered customer-logo">
+									<figure class="image">
+										<img src={customer.logo} alt={customer.name} />
+									</figure>
+									<br />
+								</div>
+								<a
+									href={customer.link}
+									target={customer.link.startsWith('http') ? '_blank' : '_self'}
+									rel="noopener noreferrer">{customer.name}</a
+								>
 							</div>
-							<a
-								href={customer.link}
-								target={customer.link.startsWith('http') ? '_blank' : '_self'}
-								rel="noopener noreferrer">{customer.name}</a
-							>
-						</div>
-					{/each}
-				</svelte:component>
+						{/each}
+					</Carousel>
+				{/if}
 			</div>
 		</div>
 	</div>
