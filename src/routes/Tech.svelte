@@ -1,18 +1,13 @@
 <script lang="ts">
-	import { onMount, SvelteComponent } from 'svelte';
 	import { _ } from 'svelte-i18n';
+	import Carousel from 'svelte-carousel';
+	import { browser } from '$app/environment';
 	import aws from '$lib/images/aws.svg';
 	import openShift from '$lib/images/openshift.svg';
 	import kubernetes from '$lib/images/kubernetes.svg';
 	import azure from '$lib/images/azure.svg';
 	import cloudFoundry from '$lib/images/cloudfoundry.svg';
 	import technologies from '$lib/images/technologies.svg';
-
-	let Carousel: SvelteComponent;
-	onMount(async () => {
-		const module = await import('svelte-carousel');
-		Carousel = module.default;
-	});
 
 	interface Tech {
 		name: string;
@@ -41,19 +36,21 @@
 			<br />
 			<br />
 			<div class="container">
-				<svelte:component this={Carousel} particlesToShow={3} autoplay={true} dots={false}>
-					{#each techs as tech (tech.name)}
-						<div class="has-text-centered">
-							<div class="has-image-centered customer-logo">
-								<figure class="image">
-									<img src={tech.logo} alt={tech.name} />
-								</figure>
-								<br />
+				{#if browser}
+					<Carousel particlesToShow={3} autoplay={true} dots={false}>
+						{#each techs as tech (tech.name)}
+							<div class="has-text-centered">
+								<div class="has-image-centered customer-logo">
+									<figure class="image">
+										<img src={tech.logo} alt={tech.name} />
+									</figure>
+									<br />
+								</div>
+								<a href={tech.link} target="_blank" rel="noopener noreferrer">{tech.name}</a>
 							</div>
-							<a href={tech.link} target="_blank" rel="noopener noreferrer">{tech.name}</a>
-						</div>
-					{/each}
-				</svelte:component>
+						{/each}
+					</Carousel>
+				{/if}
 			</div>
 			<br />
 			<br />
