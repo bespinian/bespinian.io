@@ -9,6 +9,8 @@
 	import puzzle from '$lib/images/puzzle.webp';
 	import redHat from '$lib/images/redhat.webp';
 	import swissMadeSoftware from '$lib/images/swissmadesoftware.webp';
+	import peakscale from '$lib/images/peakscale.svg';
+	import isovalent from '$lib/images/isovalent.svg';
 
 	interface Partner {
 		name: string;
@@ -17,11 +19,13 @@
 	}
 
 	const partners: Partner[] = [
+		{ name: 'Peak Scale', logo: peakscale, link: 'https://peakscale.ch' },
+		{ name: 'Puzzle ITC', logo: puzzle, link: 'https://puzzle.ch' },
+		{ name: 'Isovalent', logo: isovalent, link: 'https://isovalent.com' },
+		{ name: 'VSHN', logo: vshn, link: 'https://vshn.ch' },
 		{ name: 'acend', logo: acend, link: 'https://acend.ch' },
 		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
-		{ name: 'VSHN', logo: vshn, link: 'https://vshn.ch' },
 		{ name: 'AWS Partner Network', logo: aws, link: 'https://aws.amazon.com/partners/' },
-		{ name: 'Puzzle ITC', logo: puzzle, link: 'https://puzzle.ch' },
 		{ name: 'Red Hat', logo: redHat, link: 'https://redhat.com' },
 		{ name: 'Swiss Made Software', logo: swissMadeSoftware, link: 'https://swissmadesoftware.org' }
 	];
