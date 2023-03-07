@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import Carousel from 'svelte-carousel';
-	import { browser } from '$app/environment';
+	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+	import '@splidejs/svelte-splide/css';
 	import acend from '$lib/images/acend.webp';
 	import swisscom from '$lib/images/swisscom.webp';
 	import vshn from '$lib/images/vshn.svg';
@@ -38,21 +38,13 @@
 			<p>{$_('partners.body')}:</p>
 			<br />
 			<div class="container">
-				{#if browser}
-					<Carousel particlesToShow={3} autoplay={true} dots={false}>
-						{#each partners as partner (partner.name)}
-							<div class="has-text-centered">
-								<div class="has-image-centered customer-logo-extra-wide customer-logo-extra-slim">
-									<figure class="image">
-										<img src={partner.logo} alt={partner.name} />
-									</figure>
-									<br />
-								</div>
-								<a href={partner.link} target="_blank" rel="noopener noreferrer">{partner.name}</a>
-							</div>
-						{/each}
-					</Carousel>
-				{/if}
+				<Splide options={{ rewind: true, perPage: 3 }} aria-label="ASDa">
+					{#each partners as partner (partner.name)}
+						<SplideSlide>
+							<img src={partner.logo} alt={partner.name} width="120" height="120" />
+						</SplideSlide>
+					{/each}
+				</Splide>
 			</div>
 		</div>
 	</div>

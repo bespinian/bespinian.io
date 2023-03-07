@@ -13,7 +13,7 @@
 	<title>bespinian - Cloud Native Citizens</title>
 	<meta
 		name="description"
-		content="bespinian offers cloud native consulting based on a wide range of technologies and platforms like Docker, Kubernetes or AWS."
+		content="bespinian offers cloud native consulting and engineering based on a wide range of technologies and platforms like Docker, Kubernetes, OpenShift, AWS, Azure and GCP."
 	/>
 </svelte:head>
 
