@@ -9,6 +9,7 @@
 	import john from '$lib/images/john.webp';
 	import denis from '$lib/images/denis.webp';
 	import qasim from '$lib/images/qasim.webp';
+	import philippe from '$lib/images/philippe.webp';
 
 	interface Member {
 		tag: string;
@@ -32,7 +33,6 @@
 			tag: 'lena',
 			name: 'Lena Fuhrimann',
 			portrait: lena,
-			twitter: 'the_cloudlena',
 			gitHub: 'cloudlena',
 			linkedIn: 'lena-fuhrimann'
 		},
@@ -60,7 +60,15 @@
 			tag: 'qasim',
 			name: 'Qasim Warraich',
 			portrait: qasim,
-			gitHub: 'qasimwarraich'
+			gitHub: 'qasimwarraich',
+			linkedIn: 'qasimwarraich'
+		},
+		{
+			tag: 'philippe',
+			name: 'Philippe Hässig',
+			portrait: philippe,
+			gitHub: 'neckhair',
+			linkedIn: 'philippehaessig'
 		}
 	];
 </script>
