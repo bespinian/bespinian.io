@@ -3,7 +3,7 @@
 	"mission": {
 		"nav_item": "Mission",
 		"title": "Üsi Mission",
-		"body": "Mir vo bespinian liebe Software. Bsunders, wenn si eifach und effiziänt isch und ihri Aforderige erfüllt. Grossartigi Software wird vo grossartige Teams entwicklet. Darum boue aui üsi Dienstleistige uf ere änge Zämearbeit mit öiem Team uf. Mir füehle üs deheim uf private, hybride und public Clouds. Das macht üs zum ideale Partner für öies Undernähme bim Kreiere vo erstklassige Cloud-basierte Lösige.",
+		"body": "Mir vo bespinian liebe Software. Bsunders, wenn si eifach u effiziänt isch u ihri Aforderige erfüllt. Grossartigi Software wird vo grossartige Teams entwicklet. Darum boue aui üsi Dienstleistige uf ere änge Zämearbeit mit öiem Team uf. Mir füehle üs deheim uf private, hybride u public Clouds. Das macht üs zum ideale Partner für öies Undernähme bim Kreiere vo erstklassige Cloud-basierte Lösige.",
 		"solutions": {
 			"title": "D Lösige, wo mir zäme kreiere, si",
 			"operate": "eifach z betribe",
@@ -23,11 +23,11 @@
 			},
 			"transform": {
 				"title": "Transformiere",
-				"body": "Jedes Unternähme het e Gschicht. Zäme analysiere mr öji bestehende Applikatione und mache se parat für d Cloud."
+				"body": "Jedes Unternähme het e Gschicht. Zäme analysiere mr öji bestehende Applikatione u mache se parat für d Cloud."
 			},
 			"design": {
 				"title": "Designe",
-				"body": "Es Diagramm seit meh aus tusig Wort. Mir strukturiere öji Gschäftsdomäne und identifiziere d Schlüsselkonzept."
+				"body": "Es Diagramm seit meh aus tusig Wort. Mir strukturiere öji Gschäftsdomäne u identifiziere d Schlüsselkonzept."
 			},
 			"build": {
 				"title": "Umsetze",
@@ -39,7 +39,7 @@
 			},
 			"rethink": {
 				"title": "Überdänke",
-				"body": "Im Nachhinein isch alles eifach. Nütze mr di Tatsach und bringe öji Lösig uf di nächsti Stuefe!"
+				"body": "Im Nachhinein isch alles eifach. Nütze mr di Tatsach u bringe öji Lösig uf di nächsti Stuefe!"
 			}
 		}
 	},
@@ -51,21 +51,21 @@
 	"partners": {
 		"nav_item": "Partner",
 		"title": "Üsi Partner",
-		"body": "Mir si stolz uf starchi Partnerschafte, wes um Plattforme u Technologie geit. Die folgende Firme und Organisatione dörfe mir zum Bispil zu üsne Partner zelle"
+		"body": "Mir si stolz uf starchi Partnerschafte, wes um Plattforme u Technologie geit. Die folgende Firme u Organisatione dörfe mir zum Bispil zu üsne Partner zelle"
 	},
 	"technologies": {
 		"nav_item": "Technologie",
 		"title": "Üsi Technologie",
 		"platforms": {
 			"body": {
-				"intro": "Mir si überzügt, dass Ideene d Technologie söue bestimme und nid umgekehrt. Zäme finde mir Lösige uf Basis vo moderne Technologie wo öiem Team ermögleche meh Zit mitem Erschaffe vo Mehrwärt z verbringe und weniger mitem Betrib vo Infrastruktur. Hie isch e Uswahl vo",
+				"intro": "Mir si überzügt, dass Ideene d Technologie söue bestimme u nid umgekehrt. Zäme finde mir Lösige uf Basis vo moderne Technologie wo öiem Team ermögleche meh Zit mitem Erschaffe vo Mehrwärt z verbringe u weniger mitem Betrib vo Infrastruktur. Hie isch e Uswahl vo",
 				"platforms": "Plattforme",
 				"weAreNativeTo": "wo mir Experte druf si"
 			}
 		},
 		"tools": {
 			"body": {
-				"intro": "Ou wenn mir nüt meh liebe als Code z schribe, isches nid üses Ding ds Rad nöi z erfinde. Mir wüsse, wenns besser isch, es existierends Produkt izsetze und mir teile das Wüsse mit öiem Team. Hie si es paar vo üsne liebste",
+				"intro": "Ou wenn mir nüt meh liebe als Code z schribe, isches nid üses Ding ds Rad nöi z erfinde. Mir wüsse, wenns besser isch, es existierends Produkt izsetze u mir teile das Wüsse mit öiem Team. Hie si es paar vo üsne liebste",
 				"tools": "Tools"
 			}
 		}
@@ -73,18 +73,18 @@
 	"team": {
 		"nav_item": "Team",
 		"title": "Üses Team",
-		"body": "Mir si Cloud Software Engineers vor erste Stund mit Bruefserfahrig sowohl i Grossundernähme als ou i Start-ups. Mir si stolz uf üsi Fähigkeite als kompetänti Berater*inne, ifühlsami Coaches und erfahreni Coder*inne. Interessiert üs z träffe? De chömet eifach ungeniert über Social Media uf üs zue, träffet üs amne Meetup ir Nechi oder nützet ds Kontaktformular unde.",
+		"body": "Mir si Cloud Software Engineers vor erste Stund mit Bruefserfahrig sowohl i Grossundernähme als ou i Start-ups. Mir si stolz uf üsi Fähigkeite als kompetänti Berater:inne, ifühlsami Coaches u erfahreni Coder:inne. Interessiert üs z träffe? De chömet eifach ungeniert über Social Media uf üs zue, träffet üs amne Meetup ir Nechi oder nützet ds Kontaktformular unde.",
 		"mathis": {
 			"catchphrase": "Keeper of Simple",
-			"body": "Softwarearchitekt und Mitgründer. Spezialisert uf Microservices, Container-Technologie and Cloud-Native Engineering."
+			"body": "Softwarearchitekt u Mitgründer. Spezialisert uf Microservices, Container-Technologie and Cloud-Native Engineering."
 		},
 		"lena": {
 			"catchphrase": "Head in the Clouds",
-			"body": "Software Engineer und Mitgründerin. Spezialisiert uf Cloud-Dienste, verteilti System und Web-Entwicklig mit moderne Technologie."
+			"body": "Software Engineer u Mitgründerin. Spezialisiert uf Cloud-Dienste, verteilti System u Web-Entwicklig mit moderne Technologie."
 		},
 		"paulina": {
 			"catchphrase": "Cloud Whisperer",
-			"body": "DevOps und Cloud Solution Architektin. Begeisteret vo Outomatisierig. Spezialisiert uf Systemintegration, CI/CD und Cloud-Native Lösige."
+			"body": "DevOps u Cloud Solution Architektin. Begeisteret vo Outomatisierig. Spezialisiert uf Systemintegration, CI/CD u Cloud-Native Lösige."
 		},
 		"john": {
 			"catchphrase": "Cloud Wrangler",
@@ -92,11 +92,15 @@
 		},
 		"denis": {
 			"catchphrase": "Cloud Composer",
-			"body": "Software Engineer. Spezialisiert uf verteilti System, Microservices, event-driven Architekture und Container Technologie."
+			"body": "Software Engineer. Spezialisiert uf verteilti System, Microservices, event-driven Architekture u Container Technologie."
 		},
 		"qasim": {
 			"catchphrase": "☁boy 🤠",
-			"body": "Software Engineer. Begeisteret vo moderne Technologie und Sprache. Immer uf dr Suechi nach em geeignetste Tool i dr Schublade."
+			"body": "Software Engineer. Begeisteret vo moderne Technologie u Sprache. Immer uf dr Suechi nach em geeignetste Tool i dr Schublade."
+		},
+		"philippe": {
+			"catchphrase": "Software Wizard",
+			"body": "Erfahrene Software Engineer mit ere Begeisterig für Open Source, Automation, Linux u d Cloud."
 		}
 	},
 	"blog": {
@@ -108,7 +112,7 @@
 	"contact": {
 		"nav_item": "Kontakt",
 		"title": "Kontaktieret üs",
-		"body": "Heiter e Frag? Bruchet der e Offerte? Oder möchtet der mal ufnes Kafi oder es Bier verbicho? I jedem Fall fröie mir üs über öji Kontaktufnahm und mälde üs so rasch wi möglech bi öich.",
+		"body": "Heiter e Frag? Bruchet der e Offerte? Oder möchtet der mal ufnes Kafi oder es Bier verbicho? I jedem Fall fröie mir üs über öji Kontaktufnahm u mälde üs so rasch wi möglech bi öich.",
 		"form": {
 			"nameplaceholder": "Name",
 			"emailplaceholder": "Email",
@@ -123,7 +127,7 @@
 		"settingsLabel": "Cookie Istellige",
 		"acceptLabel": "Cookies Istellige Akzeptiere",
 		"closeLabel": "Istellige Zuemache",
-		"analyticsDescription": "Wärde für Google Analytics, emne 3rd Party Tool vo Google, benutzt um ds Verhalte vo Nutzer*innen z analysiere"
+		"analyticsDescription": "Wärde für Google Analytics, emne 3rd Party Tool vo Google, benutzt um ds Verhalte vo Nutzer:inne z analysiere"
 	},
 	"customer_story": {
 		"customer": "Chund",
