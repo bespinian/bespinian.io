@@ -73,7 +73,7 @@
 	"team": {
 		"nav_item": "Team",
 		"title": "Unser Team",
-		"body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Start-ups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater*innen, einfühlsame Coaches und erfahrene Coder*innen. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
+		"body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Start-ups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater:innen, einfühlsame Coaches und erfahrene Coder:innen. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
 		"mathis": {
 			"catchphrase": "Keeper of Simple",
 			"body": "Softwarearchitekt und Mitgründer. Spezialisiert auf Microservices, Container-Technologien und Cloud-Native Engineering."
@@ -97,6 +97,10 @@
 		"qasim": {
 			"catchphrase": "☁boy 🤠",
 			"body": "Software Engineer. Begeistert von modernen Technologien und Sprachen. Immer auf der Suche nach dem geeignetsten Tool in der Schublade."
+		},
+		"philippe": {
+			"catchphrase": "Software Wizard",
+			"body": "Erfahrener Software Engineer mit einer Begeisterung für Open Source, Automation, Linux und die Cloud."
 		}
 	},
 	"blog": {
@@ -123,7 +127,7 @@
 		"settingsLabel": "Cookie Einstellungen",
 		"acceptLabel": "Cookies Einstellungen Akzeptieren",
 		"closeLabel": "Einstellungen Schliessen",
-		"analyticsDescription": "Werden für Google Analytics, einem 3rd Party Tool von Google, benutzt um das Verhalten von Nutzer*innen zu analysieren"
+		"analyticsDescription": "Werden für Google Analytics, einem 3rd Party Tool von Google, benutzt um das Verhalten von Nutzer:innen zu analysieren"
 	},
 	"customer_story": {
 		"customer": "Kunde",
