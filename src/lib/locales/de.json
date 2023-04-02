@@ -97,6 +97,10 @@
 		"qasim": {
 			"catchphrase": "☁boy 🤠",
 			"body": "Software Engineer. Begeistert von modernen Technologien und Sprachen. Immer auf der Suche nach dem geeignetsten Tool in der Schublade."
+		},
+		"philippe": {
+			"catchphrase": "Software Wizard",
+			"body": "Erfahrener Software Engineer mit einer Begeisterung für Open Source, Automation, Linux und die Cloud."
 		}
 	},
 	"blog": {
