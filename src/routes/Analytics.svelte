@@ -2,9 +2,9 @@
 	import type { SvelteComponent } from 'svelte';
 	import { dev } from '$app/environment';
 	import { _ } from 'svelte-i18n';
-	import '@beyonk/gdpr-cookie-consent-banner/dist/style.css';
+	import '@beyonk/gdpr-cookie-consent-banner/style.css';
 	import { GoogleAnalytics } from '@beyonk/svelte-google-analytics';
-	import GdprBanner from '@beyonk/gdpr-cookie-consent-banner';
+	import { Banner as GdprBanner } from '@beyonk/gdpr-cookie-consent-banner';
 
 	let ga: SvelteComponent;
 

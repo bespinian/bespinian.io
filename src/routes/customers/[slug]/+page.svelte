@@ -66,20 +66,25 @@
 				<br />
 				<br />
 				<h3 class="title is-3">{$_('customer_story.customer')}</h3>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				<p>{@html customer.customer}</p>
 				<br />
 				<h3 class="title is-3">{$_('customer_story.background')}</h3>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				<p>{@html customer.background}</p>
 				<br />
 				<h3 class="title is-3">{$_('customer_story.goal')}</h3>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				<p>{@html customer.goal}</p>
 				<br />
 				<h3 class="title is-3">{$_('customer_story.contribution')}</h3>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				<p>{@html customer.contribution.intro}</p>
 				<br />
 				{#each customer.contribution.topics as topic (topic.title)}
 					<div>
 						<h4 class="title is-4">{topic.title}</h4>
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						<p>{@html topic.body}</p>
 						<br />
 					</div>
