@@ -12,7 +12,7 @@
 		"deploy": "cd infrastructure && terraform init && terraform apply -auto-approve=true && cd .. && aws s3 sync build s3://bespinian.io --delete --exclude '_app/immutable/*' && aws s3 sync build s3://bespinian.io --delete --cache-control 'max-age=31536000' --exclude '*' --include '_app/immutable/*'"
 	},
 	"devDependencies": {
-		"@beyonk/gdpr-cookie-consent-banner": "^9.0.3",
+		"@beyonk/gdpr-cookie-consent-banner": "^10.0.0",
 		"@beyonk/svelte-google-analytics": "^2.6.4",
 		"@fontsource/lato": "^4.5.10",
 		"@fortawesome/free-brands-svg-icons": "^6.1.2",
@@ -24,19 +24,19 @@
 		"bulma": "^0.9.4",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte3": "^4.0.0",
+		"eslint-plugin-svelte": "^2.26.0",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
 		"svelma": "^0.4.5",
 		"svelte": "^3.54.0",
 		"svelte-carousel": "^1.0.19",
-		"svelte-check": "^3.0.3",
+		"svelte-check": "^3.0.1",
 		"svelte-fa": "^3.0.3",
 		"svelte-i18n": "^3.4.0",
 		"svelte-vertical-timeline": "^1.0.0",
 		"tslib": "^2.4.1",
-		"typescript": "^5.0.2",
-		"vite": "^4.0.0"
+		"typescript": "^5.0.0",
+		"vite": "^4.3.0"
 	},
 	"type": "module"
 }

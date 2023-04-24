@@ -5,4 +5,4 @@ apply:
 
 .PHONY: lint
 lint:
-	tflint .
+	tflint
