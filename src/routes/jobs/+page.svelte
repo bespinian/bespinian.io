@@ -59,13 +59,13 @@
 				</li>
 				<li>You are excited about all things DevOps</li>
 				<li>You like to work with multiple customers and technologies</li>
-				<li>You are fluent in English</li>
+				<li>You are fluent in German and English</li>
 				<li>You have worked as a software architect but also as a developing engineer</li>
 			</ul>
 			<br />
 			<h4 class="title is-4">Nice to Have</h4>
 			<ul>
-				<li>You are fluent in German and/or French</li>
+				<li>You speak French</li>
 				<li>You have experience developing front end applications</li>
 				<li>You have experience developing back end applications</li>
 				<li>You have experience developing microservice architectures</li>
