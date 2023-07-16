@@ -3,13 +3,14 @@
 	import Fa from 'svelte-fa';
 	import { faRssSquare } from '@fortawesome/free-solid-svg-icons';
 	import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
-	import mathis from '$lib/images/mathis.webp';
-	import lena from '$lib/images/lena.webp';
-	import paulina from '$lib/images/paulina.webp';
-	import john from '$lib/images/john.webp';
-	import denis from '$lib/images/denis.webp';
-	import qasim from '$lib/images/qasim.webp';
-	import philippe from '$lib/images/philippe.webp';
+	import mathis from '$lib/images/team/mathis.webp';
+	import lena from '$lib/images/team/lena.webp';
+	import paulina from '$lib/images/team/paulina.webp';
+	import john from '$lib/images/team/john.webp';
+	import denis from '$lib/images/team/denis.webp';
+	import qasim from '$lib/images/team/qasim.webp';
+	import philippe from '$lib/images/team/philippe.webp';
+	import joel from '$lib/images/team/joel.webp';
 
 	interface Member {
 		tag: string;
@@ -69,6 +70,13 @@
 			portrait: philippe,
 			gitHub: 'neckhair',
 			linkedIn: 'philippehaessig'
+		},
+		{
+			tag: 'joel',
+			name: 'Joel Graf',
+			portrait: joel,
+			gitHub: 'zhews',
+			linkedIn: 'workwithjoel'
 		}
 	];
 </script>
