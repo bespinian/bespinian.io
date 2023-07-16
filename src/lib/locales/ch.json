@@ -101,6 +101,10 @@
 		"philippe": {
 			"catchphrase": "Software Wizard",
 			"body": "Erfahrene Software Engineer mit ere Begeisterig für Open Source, Automation, Linux u d Cloud."
+		},
+		"joel": {
+			"catchphrase": "Cloud Surfer",
+			"body": "DevOps Engineer. Liebts sicheri, zueverlässigi u skalierbari Services z entwickle u repetitivi Ufgabe z outomatisiere."
 		}
 	},
 	"blog": {

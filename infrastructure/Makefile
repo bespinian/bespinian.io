@@ -5,4 +5,5 @@ apply:
 
 .PHONY: lint
 lint:
-	tflint
+	tflint --init
+	tflint --recursive
