@@ -1,4 +1,7 @@
 import { error } from '@sveltejs/kit';
+import twentyMinDe from '$lib/customers/20minuten-de.json';
+import twentyMinEn from '$lib/customers/20minuten-en.json';
+import twentyMinLogo from '$lib/images/20-minuten.svg';
 import citechEn from '$lib/customers/citechsensors-en.json';
 import citechDe from '$lib/customers/citechsensors-de.json';
 import citechLogo from '$lib/images/citechsensors-wide.webp';
@@ -15,6 +18,14 @@ import type { PageLoad } from './$types';
 
 export const load: PageLoad = ({ params }) => {
 	switch (params.slug) {
+		case '20-minuten':
+			return {
+				customer: {
+					en: twentyMinEn,
+					de: twentyMinDe,
+					logo: twentyMinLogo
+				}
+			};
 		case 'citech-sensors':
 			return {
 				customer: {

@@ -4,6 +4,7 @@
 	import { browser } from '$app/environment';
 	import swisscom from '$lib/images/swisscom.webp';
 	import txGroup from '$lib/images/tx-group.webp';
+	import twentyMins from '$lib/images/20-minuten.svg';
 	import ciTechSensors from '$lib/images/citechsensors.webp';
 	import cometGroup from '$lib/images/comet-group.webp';
 	import swissSignGroup from '$lib/images/swisssigngroup.svg';
@@ -25,6 +26,7 @@
 		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
 		{ name: 'Xovis', logo: xovis, link: '/customers/xovis' },
 		{ name: 'TX Group', logo: txGroup, link: 'https://tx.group' },
+		{ name: '20 Minuten', logo: twentyMins, link: '/customers/20-minuten' },
 		{ name: 'CI Tech Sensors', logo: ciTechSensors, link: '/customers/citech-sensors' },
 		{ name: 'Comet Group', logo: cometGroup, link: '/customers/comet-group' },
 		{ name: 'SwissSign Group', logo: swissSignGroup, link: '/customers/swisssign-group' },
