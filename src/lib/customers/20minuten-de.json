@@ -1,0 +1,54 @@
+{
+	"title": "bespinian unterstützt 20 Minuten bei der Modernisierung der digitalen Produkte",
+	"logo": {
+		"file": "tx-group.webp",
+		"alt": "TX Group"
+	},
+	"customer": "<a href=\"https://www.20min.ch/\" target=\"_blank\">20 Minuten</a> ist die reichweitenstärkste Medienmarke der Schweiz. Sie gehört wie auch das Medienhaus Tamedia und die Werbevermarkterin Goldbach zur TX Group. 20 Minuten zeichnet sich durch ihre Reichweite in allen Sprachregionen und dem Storymix aus News, Unterhaltung und Inspiration aus. Das 20 Minuten Team war und ist für bespinian ein wichtiger Partner in der Zusammenarbeit bezüglich der Migration der digitalen Produkte auf eine neue Infrastruktur, und anderen Projekten im Rahmen von OAuth2, Cloudifizierung, Containerisierung und Modernisierung von Software.",
+	"background": "20 Minuten ist die schweizweit grösste Pendlerzeitung und eine der meistbesuchten Webseiten der Schweiz. Es ist ein Medienportal mit täglichen Beiträgen aus dem Bereich News, Unterhaltung und Inspiration. 20 Minuten hatte 2019 eine grosse Migration ihrer Applikationen weg von der Legacy-Infrastruktur und dem teilweise fast 20-jährigen Applikationscode geplant. Dabei ging es um eine Migration von bestehenden VMs auf eine moderne Kubernetes-basierte Containerinfrastruktur auf AWS. Das Backend sollte von Perl auf Go migriert und containerisiert werden. Das Frontend wurde ebenfalls von Perl gerendert und sollte in eine moderne Next.js Applikation umgewandelt werden. 20 Minuten hat täglich über eine Million Nutzer:innen. Dies macht eine Migration ohne Downtime besonders anspruchsvoll. Zusätzlich, war es wichtig, die Betriebskosten trotz dieses grossen Loads in einem akzeptablen Rahmen zu halten.",
+	"goal": "Das Ziel des Projekts war die Modernisierung des Setups der Applikation. Dabei sollten die Legacykomponenten und der frühere Code abgelöst werden, um das System stabiler und kosteneffizienter zu machen. AWS wurde als Infrastrukturprovider ausgewählt und die Applikation sollten in Go, Node.js und React Microservices auf einem EKS (Kubernetes) Cluster neu implementiert werden.",
+	"contribution": {
+		"intro": "bespinian hatte eine Schlüsselrolle in den folgenden Themen bezüglich der Applikationsmigration im Sinne von Refactoring / Re-architecting aus den 6 Migrationsstrategien von AWS:",
+		"topics": [
+			{
+				"title": "Infrastruktur auf AWS",
+				"body": "bespinian hat massgeblich zur Provisionierung der Infrastruktur auf AWS beigetragen. Dabei hatten wir eine Schlüsselrolle im Schreiben und Anwenden der entsprechenden Terraform-Module und im Aufsetzen der Kubernetes Cluster, auf denen die verschiedenen Microservices gehostet werden. Ein wichtiger Teil war dabei auch das korrekte Konfigurieren des Caching-Layers (Amazon CloudFront), um bei der grossen Zahl von gleichzeitigen Nutzer:innen von 20 Minuten die Kosten in einem akzeptablen Rahmen zu halten. bespinian leistete einen essenziellen Beitrag bei der Umsetzung und Automatisierung, aber auch bei der effizienten Kommunikation zwischen den Entwicklungs- und den Infrastruktur-Teams."
+			},
+			{
+				"title": "Kubernetes- und Container-Konfiguration",
+				"body": "Eine besonders spannende Aufgabe war die Konfiguration des Kubernetes Clusters (auf Amazon EKS). Die Architektur sowie die Umsetzung davon trägt noch heute die Handschrift von bespinian. Im Mittelpunkt dieser Aufgabe standen die Architekturentscheidungen, aber auch um die Umsetzung der Provisionierung und Konfiguration des Clusters über Terraform. Ein weiterer wichtiger Teil dieser Aufgabe war die Automatisierung der Deployments der einzelnen Services über Helm und GitHub Actions. bespinian spielte eine essenzielle Rolle in allen diesen Teilbereichen. Ferner wurden wir auch mit der Koordination der einzelnen Teams und Applikationen im Sinne einer DevOps Migration betraut."
+			},
+			{
+				"title": "Applikationsentwicklung",
+				"body": "Die diversen Microservices des Backends und das Frontend wurden von bespinian einerseits architektonisch, aber auch bezüglich der Softwareentwicklung mitgestaltet. Als erfahrene Go Entwickler:innen spielten wir eine zentrale Rolle bei der Implementation des Applikationscodes selbst, aber auch bei deren Automatisierung, bei Deployments und bei der Kommunikation der Services untereinander."
+			},
+			{
+				"title": "Monitoring und Alerting",
+				"body": "Die Applikationen im Sinne einer DevOps-Transformation zu monitoren war vor allem in der anfänglichen Phase nach der Migration sehr wichtig. Eine grosse Anzahl Nutzer:innen wurde auf die neuen Applikationen migriert und haben teilweise schwer vorhersehbare Zugriffsmuster produziert. Diese Muster mussten von bespinian analysiert und verstanden werden, um entsprechende Ressourcen zu provisionieren und Bugfixes zu produzieren. Dabei spielten Prometheus und Grafana eine grosse Rolle, um eine Übersicht zu erhalten, was passiert und wo welche Requests gemacht werden."
+			},
+			{
+				"title": "Caching",
+				"body": "Eine weitere wichtige Aufgabe von bespinian war die Konfiguration des CloudFront-Caching-Layers. Durch die hohe Anzahl an Requests, die zumeist lesend sind, konnten wir durch geschickte Nutzung des Caches monatlich sehr hohe Beiträge einsparen. Dadurch konnten die Container in relativ geringer Anzahl an Replicas genutzt werden. Die optimale Konfiguration des Caches bei so vielen verschiedenen Zugriffsmustern und Clients (20 Minuten Website, verschiedene Mobile Applikationen und CMS) war eine grosse Herausforderung, die unter der Anleitung von bespinian gemeistert werden konnte."
+			}
+		]
+	},
+	"technologies": [
+		"Amazon Web Services (AWS)",
+		"Terraform",
+		"Kubernetes",
+		"Prometheus / Grafana",
+		"Helm",
+		"Go",
+		"React (Next.js)",
+		"MongoDB",
+		"PostgreSQL",
+		"GitHub Actions"
+	],
+	"quote": {
+		"body": "Die Zusammenarbeit mit bespinian war stets sehr gut. Aufgrund ihrer Expertise hat bespinian einen massgeblichen Anteil an die erfolgreiche Migration der digitalen Produkte von 20 Minuten auf eine neue und moderne Infrastruktur beitragen.",
+		"stakeholder": {
+			"name": "Manuel Sutter",
+			"role": "Product Owner"
+		}
+	}
+}
