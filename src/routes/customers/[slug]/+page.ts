@@ -5,6 +5,9 @@ import citechLogo from '$lib/images/citechsensors-wide.webp';
 import swisssignEn from '$lib/customers/swisssigngroup-en.json';
 import swisssignDe from '$lib/customers/swisssigngroup-de.json';
 import swisssignLogo from '$lib/images/swisssigngroup.svg';
+import xovisEn from '$lib/customers/xovis-en.json';
+import xovisDe from '$lib/customers/xovis-de.json';
+import xovisLogo from '$lib/images/xovis.svg';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = ({ params }) => {
@@ -23,6 +26,14 @@ export const load: PageLoad = ({ params }) => {
 					en: swisssignEn,
 					de: swisssignDe,
 					logo: swisssignLogo
+				}
+			};
+		case 'xovis':
+			return {
+				customer: {
+					en: xovisEn,
+					de: xovisDe,
+					logo: xovisLogo
 				}
 			};
 	}
