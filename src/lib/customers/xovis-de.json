@@ -1,0 +1,59 @@
+{
+	"name": "Xovis",
+	"title": "AERO - bespinian unterstützt Xovis bei der Cloudifizierung ihrer Flughafensoftware",
+	"customer": "<a href=\"https://www.xovis.com\" target=\"_blank\">Xovis</a> ist ein international tätiger Anbieter von Lösungen für intelligentes Personenflussmanagement in Flughäfen, Einzelhandel, dem öffentlichen Verkehr und in der Gebäudeautomation. Das Unternehmen entwickelt die 3D-Sensoren zur Montage vor Ort beim Kunden sowie die Software, die es den Kunden ermöglicht, Personenflussdaten zu analysieren und darauf zu reagieren. Der Hauptsitz von Xovis befindet sich in Zollikofen, Schweiz, und mehr als 130 Mitarbeiter sind in der ganzen Schweiz und den USA für das Unternehmen tätig.",
+	"background": "Die Software für die Xovis-Sensoren ermöglicht es Flughäfen auf der ganzen Welt, Herausforderungen im Personenfluss zu lösen, wie z. B. die Minimierung der Länge von Warteschlangen, die Optimierung der Öffnungszeiten und der Anzahl von Bahnen, Schaltern, Kiosken und Selbstbedienungs-Gepäckabgaben. Da die Sensoren physisch beim Kunden installiert werden, war es in der Vergangenheit am einfachsten, die Flughafensoftware auch vor Ort zu betreiben, wobei Xovis den Teams seiner Kunden Second- und Third-Level-Support leistete. Die Nachfrage der Flughafenkunden von Xovis nach einem Managed Service wächst jedoch stetig. Darüber hinaus generiert die Verwaltung von Installationen vor Ort einen beträchtlichen Betriebsaufwand, den viele Kunden in Zukunft vermeiden möchten. Um diese Anforderungen und Herausforderungen zu bewältigen, beschloss Xovis, AERO einzuführen, eine SaaS-Version ihrer Flughafensoftware, bei der lediglich die Sensoren vor Ort beim Kunden installiert werden und die Software zentral von einem DevOps-Team bei Xovis betrieben wird.",
+	"goal": "Ziel des Projekts war es, die Flughafensoftware von Xovis in ein SaaS-Modell zu überführen, welches auf viele Flughafenkunden skaliert werden kann. Das bedeutet, dass die erforderliche Azure-Infrastruktur für den Betrieb des Produkts sowie das Produkt selbst vollautomatisch bereitgestellt und betrieben werden mussten. Darüber hinaus mussten alle Komponenten der Software auf einer Cloud-Plattform laufen können und eine automatisierte Wartung ohne Ausfallzeiten sowie eine elastische Lastverteilung unterstützen. Da es sich bei dem SaaS-Zielprodukt um ein mandantenfähiges Produkt handelt, mussten alle Sicherheitsmassnahmen für den Cloud-Betrieb gehärtet werden. Ausserdem mussten die Entwicklungs- und Betriebsteams von Xovis dazu befähigt werden, die DevOps-Verantwortung für das SaaS-Produkt zu übernehmen.",
+	"contribution": {
+		"intro": "bespinian spielte in folgenden Bereichen eine Schlüsselrolle:",
+		"topics": [
+			{
+				"title": "Cloud-natives Coaching",
+				"body": "Bevor die Cloudifizierung in Angriff genommen werden konnte, musste Xovis sicherstellen, dass alle Mitglieder der Entwicklungsteams über den gleichen Wissensstand verfügten, der für die Erstellung, Automatisierung und Wartung von Anwendungen in einer Cloud-nativen Art und Weise erforderlich ist. bespinian arbeitete mit den Entwicklungsteams in einer Reihe von interaktiven Workshops zusammen, um sicherzustellen, dass alle Teammitglieder die Grundprinzipien der Cloud-nativen Softwarearchitektur und des Betriebs sowie die technischen Besonderheiten der Bereitstellung von Anwendungen in Kubernetes kennen."
+			},
+			{
+				"title": "Infrastruktur-Automatisierung",
+				"body": "Eine vollständige Automatisierung vom ersten Tag an war für Xovis von grösster Bedeutung, da das SaaS-Produkt an vielen Kundenflughäfen auf der ganzen Welt zur Verfügung gestellt werden sollte. Dies bedeutete, dass der identische Azure-Infrastruktur-Stack bei Bedarf in verschiedenen Azure-Regionen bereitgestellt werden musste, um die Latenzzeiten von Kundenstandorten zu reduzieren. bespinian unterstützte Xovis bei der Konzeption und Implementierung geeigneter Terraform-Module und Azure DevOps-Pipelines, um diesen Bereitstellungsprozess zu automatisieren."
+			},
+			{
+				"title": "Kubernetes-Automatisierung",
+				"body": "Gleichzeitig musste in jeder Region eine beliebige Anzahl von Kundenstandorten automatisch als Sammlung von Kubernetes-Deployments bereitgestellt werden. bespinian arbeitete mit dem Xovis-Team zusammen, um einen GitOps-Prozess auf der Grundlage von Helm und Argo CD zu entwerfen und zu implementieren. Dieser Prozess musste die Kundenstandortbereitstellung vollständig automatisieren, bis zum Punkt, an dem ein neuer Kunde vom Service Delivery-Team von Xovis in einem Hands-off-Prozess aufgesetzt werden konnte."
+			},
+			{
+				"title": "Containerisierung von Applikationen",
+				"body": "Während Xovis bereits Container für Entwicklungszwecke verwendete, bedeutete der Übergang zu einem Cloud-nativen Ansatz, dass Container zu den primären Artefakten des gesamten Entwicklungsprozesses werden mussten. bespinian arbeitete mit dem Xovis-Team zusammen, um bestehende Build-Pipelines in mehrstufige Image-Builds umzuwandeln, was zu maximal effizienten Runtime-Images für alle am SaaS-Produkt beteiligten Komponenten führte."
+			},
+			{
+				"title": "Zero-Downtime-Architektur",
+				"body": "Da viele Komponenten der Flughafensoftware von Xovis stateful Algorithmen, basierend auf Sensoreingaben über die Zeit ausführen, war es eine zusätzliche Herausforderung, diese Komponenten in die Lage zu versetzen, Upgrades und Wartungsarbeiten ohne Ausfallzeiten zu unterstützen. bespinian beriet das Xovis-Team bei der Entwicklung eines Stateful Load Balancing- und Failover-Schemas auf der Grundlage des HashiCorp Consul KV-Speichers und von Sessions, um sicherzustellen, dass einzelne Replikate von Komponenten einen Konsens darüber erzielen können, welche Sensoren verarbeitet werden sollen, und dass sie im Falle von Ausfällen während der Sensorverarbeitung sofort ersetzt werden können."
+			},
+			{
+				"title": "Security-Hardening",
+				"body": "Die Tatsache, dass viele Kunden auf derselben Infrastruktur laufen, stellte Xovis vor neue Sicherheitsthemen, die in der On-Premise-Umgebung nicht relevant waren. Die strikte Trennung von Kundenmandanten im SaaS-Produkt und der sichere Umgang mit Zugangsparametern und anderen sensible Daten mussten angegangen werden. bespinian beriet und unterstützte Xovis bei der Implementierung von Massnahmen zur Security-Härtung in Azure sowie bei der Integration von HashiCorp Vault mit allen Komponenten des SaaS-Produkts, um eine sichere zentrale Verwaltung von sensiblen Daten zu ermöglichen."
+			},
+			{
+				"title": "Monitoring und Alerting",
+				"body": "Bei der Umstellung auf ein SaaS-Modell musste Xovis sicherstellen, dass sein DevOps-Team jederzeit über den Zustand der Cloud-basierten Infrastruktur und Softwarekomponenten informiert ist. Darüber hinaus musste das Team in der Lage sein, schnell auf Vorfälle zu reagieren, bevor sie sich auf Flughafenkunden auf der ganzen Welt auswirken. bespinian unterstützte und beriet Xovis bei der Implementierung eines umfassenden Cloud-nativen Monitorings und einer Alarmierung auf Basis verschiedener Azure-Logging- und Monitoring-Tools."
+			}
+		]
+	},
+	"technologies": [
+		"Terraform (azurerm, azuread, helm, kubernetes, aiven und vault Providers)",
+		"Kubernetes",
+		"Helm",
+		"Argo CD",
+		"Hashicorp Vault",
+		"Hashicorp Consul",
+		"Azure Services (AKS, Azure SQL, Event Hubs, Log Analytics)",
+		"Azure DevOps",
+		"Java",
+		".NET"
+	],
+	"quote": {
+		"body": "Das Fachwissen und die praktischen Fähigkeiten des bespinian Teams in Sachen Cloud-Native waren essenziell dafür, dass unsere Teams unser geschäftskritisches Ziel erreichen konnten, unsere Flughafensoftware auf ein SaaS-Modell zu erweitern und AERO erfolgreich einzuführen.",
+		"stakeholder": {
+			"name": "Jörg Wagner",
+			"role": "CTO, Xovis"
+		}
+	}
+}

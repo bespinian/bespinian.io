@@ -12,6 +12,7 @@
 	import zeilenwerk from '$lib/images/zeilenwerk.webp';
 	import bfh from '$lib/images/bfh.webp';
 	import kalaidos from '$lib/images/kalaidos.webp';
+	import xovis from '$lib/images/xovis.svg';
 
 	interface Customer {
 		name: string;
@@ -21,6 +22,7 @@
 
 	const customers: Customer[] = [
 		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
+		{ name: 'Xovis', logo: xovis, link: '/customers/xovis' },
 		{ name: 'TX Group', logo: txGroup, link: 'https://tx.group' },
 		{ name: 'CI Tech Sensors', logo: ciTechSensors, link: '/customers/citech-sensors' },
 		{ name: 'SwissSign Group', logo: swissSignGroup, link: '/customers/swisssign-group' },
