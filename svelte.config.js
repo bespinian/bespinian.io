@@ -14,20 +14,9 @@ const config = {
 		csp: {
 			directives: {
 				'default-src': ['self'],
-				'script-src': [
-					'unsafe-eval',
-					'unsafe-inline',
-					'self',
-					'https://www.googletagmanager.com',
-					'https://www.google-analytics.com'
-				],
+				'script-src': ['unsafe-eval', 'unsafe-inline', 'self'],
 				'style-src': ['unsafe-inline', 'self'],
-				'img-src': [
-					'self',
-					'data:',
-					'https://www.googletagmanager.com',
-					'https://www.google-analytics.com'
-				],
+				'img-src': ['self', 'data:'],
 				'connect-src': ['*'],
 				'object-src': ['none'],
 				'form-action': ['https://formspree.io']

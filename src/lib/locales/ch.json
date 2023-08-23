@@ -125,14 +125,6 @@
 			"sendbuttonlabel": "Abschicke"
 		}
 	},
-	"gdpr": {
-		"heading": "DSVGO Nachricht",
-		"description": "Mir benutze Cookies um öich di besti Experience uf üsere Website chönne z biete.",
-		"settingsLabel": "Cookie Istellige",
-		"acceptLabel": "Cookies Istellige Akzeptiere",
-		"closeLabel": "Istellige Zuemache",
-		"analyticsDescription": "Wärde für Google Analytics, emne 3rd Party Tool vo Google, benutzt um ds Verhalte vo Nutzer:inne z analysiere"
-	},
 	"customer_story": {
 		"customer": "Chund",
 		"background": "Usgangslag",

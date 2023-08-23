@@ -1,19 +1,11 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import { ga } from '@beyonk/svelte-google-analytics';
 	import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
 
 	let showNav = false;
 
 	function toggleNav() {
 		showNav = !showNav;
-	}
-
-	function handleClick(section: string) {
-		toggleNav();
-		ga.addEvent('navigation_click', {
-			section
-		});
 	}
 </script>
 
@@ -34,58 +26,22 @@
 	</div>
 	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav}>
 		<div class="navbar-end">
-			<a
-				href="#mission"
-				class="navbar-item"
-				on:click={() => {
-					handleClick('mission');
-				}}
-			>
+			<a href="#mission" class="navbar-item" on:click={toggleNav}>
 				{$_('mission.nav_item')}
 			</a>
-			<a
-				href="#services"
-				class="navbar-item"
-				on:click={() => {
-					handleClick('services');
-				}}
-			>
+			<a href="#services" class="navbar-item" on:click={toggleNav}>
 				{$_('services.nav_item')}
 			</a>
-			<a
-				href="#tech"
-				class="navbar-item"
-				on:click={() => {
-					handleClick('tech');
-				}}
-			>
+			<a href="#tech" class="navbar-item" on:click={toggleNav}>
 				{$_('technologies.nav_item')}
 			</a>
-			<a
-				href="#partners"
-				class="navbar-item"
-				on:click={() => {
-					handleClick('partners');
-				}}
-			>
+			<a href="#partners" class="navbar-item" on:click={toggleNav}>
 				{$_('partners.nav_item')}
 			</a>
-			<a
-				href="#customers"
-				class="navbar-item"
-				on:click={() => {
-					handleClick('customers');
-				}}
-			>
+			<a href="#customers" class="navbar-item" on:click={toggleNav}>
 				{$_('customers.nav_item')}
 			</a>
-			<a
-				href="#team"
-				class="navbar-item"
-				on:click={() => {
-					handleClick('team');
-				}}
-			>
+			<a href="#team" class="navbar-item" on:click={toggleNav}>
 				{$_('team.nav_item')}
 			</a>
 			<a
@@ -93,28 +49,14 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				class="navbar-item"
-				on:click={() => {
-					handleClick('blog');
-				}}
+				on:click={toggleNav}
 			>
 				{$_('blog.nav_item')}
 			</a>
-			<a
-				href="/jobs"
-				class="navbar-item"
-				on:click={() => {
-					handleClick('jobs');
-				}}
-			>
+			<a href="/jobs" class="navbar-item" on:click={toggleNav}>
 				{$_('jobs.nav_item')}
 			</a>
-			<a
-				href="#contact"
-				class="navbar-item"
-				on:click={() => {
-					handleClick('contact');
-				}}
-			>
+			<a href="#contact" class="navbar-item" on:click={toggleNav}>
 				{$_('contact.nav_item')}
 			</a>
 			<LanguageSwitcher />

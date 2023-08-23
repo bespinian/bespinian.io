@@ -19,32 +19,6 @@ body {
 	max-height: 60px;
 }
 
-.cookieConsentOperations__Item input[type='checkbox']:checked + label::before {
-	background-color: var(--vc-clr-primary) !important;
-}
-
-.cookieConsentOperations__Item input[type='checkbox']:checked + label::after {
-	background-color: white !important;
-}
-
-.cookieConsent__Button {
-	border-radius: 4px;
-}
-
-.cookieConsent__Button--Close {
-	background-color: var(--vc-clr-primary) !important;
-}
-
-.cookieConsent__Button[type='submit'] {
-	background-color: var(--vc-clr-primary) !important;
-	color: white;
-}
-
-.cookieConsent__Right {
-	display: inherit;
-	align-items: flex-end;
-}
-
 .columns-section {
 	position: relative;
 }
