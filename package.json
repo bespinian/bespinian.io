@@ -12,8 +12,6 @@
 		"deploy": "cd infrastructure && terraform init && terraform apply -auto-approve=true && cd .. && aws s3 sync build s3://bespinian.io --delete --exclude '_app/immutable/*' && aws s3 sync build s3://bespinian.io --delete --cache-control 'max-age=31536000' --exclude '*' --include '_app/immutable/*'"
 	},
 	"devDependencies": {
-		"@beyonk/gdpr-cookie-consent-banner": "^10.0.0",
-		"@beyonk/svelte-google-analytics": "^2.6.4",
 		"@fontsource/lato": "^5.0.0",
 		"@fortawesome/free-brands-svg-icons": "^6.1.2",
 		"@fortawesome/free-solid-svg-icons": "^6.1.2",
@@ -28,7 +26,7 @@
 		"prettier": "^3.0.0",
 		"prettier-plugin-svelte": "^3.0.0",
 		"svelma": "^0.4.5",
-		"svelte": "^3.59.2",
+		"svelte": "^4.2.0",
 		"svelte-carousel": "^1.0.19",
 		"svelte-check": "^3.0.1",
 		"svelte-fa": "^3.0.3",

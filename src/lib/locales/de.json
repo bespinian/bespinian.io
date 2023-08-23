@@ -125,14 +125,6 @@
 			"sendbuttonlabel": "Abschicken"
 		}
 	},
-	"gdpr": {
-		"heading": "DSVGO Nachricht",
-		"description": "Wir benutzen Cookies um Ihnen die beste Experience auf unserer Website bieten zu können.",
-		"settingsLabel": "Cookie Einstellungen",
-		"acceptLabel": "Cookies Einstellungen Akzeptieren",
-		"closeLabel": "Einstellungen Schliessen",
-		"analyticsDescription": "Werden für Google Analytics, einem 3rd Party Tool von Google, benutzt um das Verhalten von Nutzer:innen zu analysieren"
-	},
 	"customer_story": {
 		"customer": "Kunde",
 		"background": "Ausgangslage",
