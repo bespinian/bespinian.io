@@ -6,7 +6,6 @@
 	import ch from '$lib/locales/ch.json';
 	import Navigation from './Navigation.svelte';
 	import Footer from './Footer.svelte';
-	import Analytics from './Analytics.svelte';
 	import './styles.css';
 
 	addMessages('en-US', en);
@@ -27,6 +26,4 @@
 	</main>
 
 	<Footer />
-
-	<Analytics />
 </div>

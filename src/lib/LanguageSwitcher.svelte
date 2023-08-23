@@ -1,19 +1,11 @@
 <script lang="ts">
 	import { locale, locales } from 'svelte-i18n';
-	import { ga } from '@beyonk/svelte-google-analytics';
 
 	const labels: Record<string, string> = {
 		'en-US': 'English',
 		'de-DE': 'Deutsch',
 		'de-CH': 'Bärndütsch'
 	};
-
-	function handleLocaleChange(key: string) {
-		locale.set(key);
-		ga.addEvent('language_change', {
-			language: key
-		});
-	}
 </script>
 
 <div class="navbar-item has-dropdown is-hoverable">
@@ -25,7 +17,7 @@
 				role="button"
 				class="navbar-item"
 				on:click={() => {
-					handleLocaleChange(l);
+					locale.set(l);
 				}}
 			>
 				{labels[l]}

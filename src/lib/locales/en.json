@@ -125,14 +125,6 @@
 			"sendbuttonlabel": "Send"
 		}
 	},
-	"gdpr": {
-		"heading": "GDPR Notice",
-		"description": "We use cookies to ensure you get the best experience on our website.",
-		"settingsLabel": "Cookie Settings",
-		"acceptLabel": "Accept Cookie Settings",
-		"closeLabel": "Close Settings",
-		"analyticsDescription": "Used to control Google Analytics, a 3rd party tool offered by Google, to analyze user behavior"
-	},
 	"customer_story": {
 		"customer": "Customer",
 		"background": "Background",
