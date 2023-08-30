@@ -4,6 +4,9 @@
 :root {
 	--font-body: 'Lato', sans-serif !important;
 	--vc-clr-primary: #3273dc;
+}
+
+html {
 	scroll-behavior: smooth;
 }
 
