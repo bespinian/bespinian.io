@@ -17,6 +17,7 @@ const config = {
 				'script-src': ['unsafe-eval', 'unsafe-inline', 'self'],
 				'style-src': ['unsafe-inline', 'self'],
 				'img-src': ['self', 'data:'],
+				'font-src': ['self', 'data:'],
 				'connect-src': ['*'],
 				'object-src': ['none'],
 				'form-action': ['https://formspree.io']

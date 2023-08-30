@@ -1,0 +1,44 @@
+{
+	"name": "Comet",
+	"title": "bespinian and Comet create the revolutionary IoT device health monitor BLOX",
+	"customer": "<a href=\"https://comet.tech/\" target=\"_blank\">Comet Group</a> develops and produces x-ray and CT systems that enable non destructive testing of materials and industry products. These devices are used in electronics, the aerospace and the automotive industries worldwide. Comet is a Swiss company based in Flamatt employing more than 1700 people around the globe. They are a leading tech company driving innovation in the x-ray and radio frequency areas.",
+	"background": "The x-ray and CT machines Comet has deployed with their customers worldwide require regular maintenance. Knowing what exactly is going on within these devices and how they are being used is crucial for efficiently working with them. With targeted data visualization and preventive alerts, one can recognize usage patterns, detect incorrect usage and prevent outages. That is why Comet wanted to innovate in this space and create a tool for ",
+	"goal": "Ziel des Projektes war es, alle Banknoten-Daten in eine zentrale Verwaltung zu überführen und diese allen Prozessen und Tools von CI Tech Sensors zentral zur Verfügung zu stellen. Neue Banknoten-Daten sollten bei der Aufnahme in die Verwaltung auf Gültigkeit überprüft und anschliessend redundanzfrei abgelegt werden. Jeder Banknoten-Datensatz sollte in der Verwaltung eindeutig adressierbar sein. Zudem sollten alle Banknoten-Daten unveränderbar abgelegt werden, um eine strenge Reproduzierbarkeit aller Prozessschritte bei der Entwicklung und bei der Validierung von Banknoten-Sensoren zu garantieren.",
+	"contribution": {
+		"intro": "bespinian played a key role in the following areas:",
+		"topics": [
+			{
+				"title": "Microservice-Architektur",
+				"body": "In regelmässigen Architektur-Workshops hat bespinian zusammen mit  CI Tech Sensors eine Microservice-Architektur entworfen. Mit der schrittweisen Einführung von klar abgegrenzten und wohldefinierten Services in die Prozesslandschaft konnte das zentrale Notendaten-Management eingeführt werden, ohne das Kerngeschäft von CI Tech Sensors zu beeinträchtigen. Neben der Architekturarbeit hat bespinian auch bei der hands-on Implementation der Microservices Verantwortung übernommen."
+			},
+			{
+				"title": "Kubernetes-Infrastruktur",
+				"body": "Alle Microservices des Notendaten-Managements von CI Tech Sensors werden auf Kubernetes-Infrastruktur betrieben. Hierbei hat bespinian den Lead für die Konfiguration der Kubernetes-Umgebungen und für das automatisierte Deployment der Services übernommen. In einer Mischung aus Schulung, Code-Reviews und Pair-Engineering hat bespinian sichergestellt, dass das Team von CI Tech Sensors das nötige Kubernetes Know-how aufbauen konnte, um die Services betreiben und weiterentwickeln zu können."
+			},
+			{
+				"title": "Monitoring und Alerting",
+				"body": "Die Microservices des zentralen Notendaten-Managements nehmen naturgemäss eine kritische Rolle im Kerngeschäft von CI Tech Sensors ein. Neben der operativen Überwachung der Services spielten auch fachliche Kenngrössen eine wichtige Rolle (z. B. Anzahl defekter Noten-Daten). bespinian erarbeitete zusammen mit CI Tech Sensors ein Konzept für Monitoring und Alerting basierend auf Prometheus und Grafana und übernahm den Lead bei der Implementation der Monitoring-Infrastruktur und Dashboards. Zudem hat bespinian sichergestellt, dass das Team von CI Tech Sensors sein Know-how der eingesetzten Technologien aufbauen konnte, sodass das Monitoring und Alerting zusammen mit den Microservices wachsen konnte."
+			},
+			{
+				"title": "Übergang zum DevOps-Ansatz",
+				"body": "Der Einsatz von Kubernetes und die Entwicklung einer zentralisierten, hochverfügbaren Microservice-Architektur machten den Schritt zu einem DevOps-Ansatz im Entwicklungsteam von CI Tech Sensors unumgänglich. bespinian unterstützte CI Tech Sensors bei diesem Schritt durch Coaching und Beratung der im Prozess involvierten Teams und durch das Etablieren der nötigen Tools und Abläufe."
+			}
+		]
+	},
+	"technologies": [
+		"Python / Flask",
+		"Svelte",
+		"Terraform",
+		"AWS Lambda",
+		"Amazon DynamoDB",
+		"Amazon S3",
+		"Amazon CloudFront"
+	],
+	"quote": {
+		"body": "Merp derp.",
+		"stakeholder": {
+			"name": "Pascal Corbat",
+			"role": "Leiter Software-Entwicklung"
+		}
+	}
+}
