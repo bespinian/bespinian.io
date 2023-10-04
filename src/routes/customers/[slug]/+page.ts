@@ -8,6 +8,9 @@ import swisssignLogo from '$lib/images/swisssigngroup.svg';
 import xovisEn from '$lib/customers/xovis-en.json';
 import xovisDe from '$lib/customers/xovis-de.json';
 import xovisLogo from '$lib/images/xovis.svg';
+import cometGroupEn from '$lib/customers/comet-group-en.json';
+import cometGroupDe from '$lib/customers/comet-group-de.json';
+import cometGroupLogo from '$lib/images/comet-group.webp';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = ({ params }) => {
@@ -34,6 +37,14 @@ export const load: PageLoad = ({ params }) => {
 					en: xovisEn,
 					de: xovisDe,
 					logo: xovisLogo
+				}
+			};
+		case 'comet-group':
+			return {
+				customer: {
+					en: cometGroupEn,
+					de: cometGroupDe,
+					logo: cometGroupLogo
 				}
 			};
 	}

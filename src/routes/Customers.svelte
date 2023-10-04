@@ -5,6 +5,7 @@
 	import swisscom from '$lib/images/swisscom.webp';
 	import txGroup from '$lib/images/tx-group.webp';
 	import ciTechSensors from '$lib/images/citechsensors.webp';
+	import cometGroup from '$lib/images/comet-group.webp';
 	import swissSignGroup from '$lib/images/swisssigngroup.svg';
 	import emmi from '$lib/images/emmi.webp';
 	import legalI from '$lib/images/legal-i.webp';
@@ -25,6 +26,7 @@
 		{ name: 'Xovis', logo: xovis, link: '/customers/xovis' },
 		{ name: 'TX Group', logo: txGroup, link: 'https://tx.group' },
 		{ name: 'CI Tech Sensors', logo: ciTechSensors, link: '/customers/citech-sensors' },
+		{ name: 'Comet Group', logo: cometGroup, link: '/customers/comet-group' },
 		{ name: 'SwissSign Group', logo: swissSignGroup, link: '/customers/swisssign-group' },
 		{ name: 'Emmi', logo: emmi, link: 'https://group.emmi.com' },
 		{ name: 'legal-i', logo: legalI, link: 'https://legal-i.ch' },
