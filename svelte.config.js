@@ -14,12 +14,14 @@ const config = {
 		csp: {
 			directives: {
 				'default-src': ['self'],
-				'script-src': ['unsafe-eval', 'unsafe-inline', 'self'],
+				'script-src': ['unsafe-inline', 'self'],
 				'style-src': ['unsafe-inline', 'self'],
 				'img-src': ['self', 'data:'],
 				'font-src': ['self', 'data:'],
 				'connect-src': ['*'],
 				'object-src': ['none'],
+				'frame-ancestors': ['none'],
+				'base-uri': ['none'],
 				'form-action': ['https://formspree.io']
 			}
 		}
