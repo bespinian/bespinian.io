@@ -9,7 +9,7 @@
 	import emmi from '$lib/images/emmi.webp';
 	import legalI from '$lib/images/legal-i.webp';
 	import skoor from '$lib/images/skoor.webp';
-	import zeilenwerk from '$lib/images/zeilenwerk.webp';
+	import zeilenwerk from '$lib/images/zeilenwerk.svg';
 	import bfh from '$lib/images/bfh.webp';
 	import kalaidos from '$lib/images/kalaidos.webp';
 	import xovis from '$lib/images/xovis.svg';
