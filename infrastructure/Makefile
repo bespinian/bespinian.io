@@ -1,7 +1,7 @@
 .PHONY: apply
 apply:
-	terraform init
-	terraform apply
+	tofu init
+	tofu apply
 
 .PHONY: lint
 lint:
