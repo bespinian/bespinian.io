@@ -8,9 +8,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter({
-			fallback: 'index.html'
-		}),
+		adapter: adapter(),
+		prerender: {
+			entries: ['*', '/customers/citech-sensors', '/customers/swisssign-group', '/customers/xovis']
+		},
 		csp: {
 			directives: {
 				'default-src': ['self'],
