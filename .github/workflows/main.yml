@@ -38,8 +38,8 @@ jobs:
         with:
           node-version: lts/*
           check-latest: true
-      - name: Set up Terraform
-        uses: hashicorp/setup-terraform@v2
+      - name: Set up OpenTofu
+        uses: opentofu/setup-opentofu@v1
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Install dependencies
