@@ -26,22 +26,22 @@
 	</div>
 	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav}>
 		<div class="navbar-end">
-			<a href="#mission" class="navbar-item" on:click={toggleNav}>
+			<a href="/#mission" class="navbar-item" on:click={toggleNav}>
 				{$_('mission.nav_item')}
 			</a>
-			<a href="#services" class="navbar-item" on:click={toggleNav}>
+			<a href="/#services" class="navbar-item" on:click={toggleNav}>
 				{$_('services.nav_item')}
 			</a>
-			<a href="#tech" class="navbar-item" on:click={toggleNav}>
+			<a href="/#tech" class="navbar-item" on:click={toggleNav}>
 				{$_('technologies.nav_item')}
 			</a>
-			<a href="#partners" class="navbar-item" on:click={toggleNav}>
+			<a href="/#partners" class="navbar-item" on:click={toggleNav}>
 				{$_('partners.nav_item')}
 			</a>
-			<a href="#customers" class="navbar-item" on:click={toggleNav}>
+			<a href="/#customers" class="navbar-item" on:click={toggleNav}>
 				{$_('customers.nav_item')}
 			</a>
-			<a href="#team" class="navbar-item" on:click={toggleNav}>
+			<a href="/#team" class="navbar-item" on:click={toggleNav}>
 				{$_('team.nav_item')}
 			</a>
 			<a
@@ -56,7 +56,7 @@
 			<a href="/jobs" class="navbar-item" on:click={toggleNav}>
 				{$_('jobs.nav_item')}
 			</a>
-			<a href="#contact" class="navbar-item" on:click={toggleNav}>
+			<a href="/#contact" class="navbar-item" on:click={toggleNav}>
 				{$_('contact.nav_item')}
 			</a>
 			<LanguageSwitcher />
