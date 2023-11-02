@@ -11,7 +11,7 @@
 	import qasim from '$lib/images/team/qasim.webp';
 	import philippe from '$lib/images/team/philippe.webp';
 	import joel from '$lib/images/team/joel.webp';
-	import matthias form '$lib/images/team/matthias.webp';
+	import matthias from '$lib/images/team/matthias.webp';
 
 	interface Member {
 		tag: string;
