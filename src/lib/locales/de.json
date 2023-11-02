@@ -105,6 +105,10 @@
 		"joel": {
 			"catchphrase": "Cloud Surfer",
 			"body": "DevOps Engineer. Liebt es sichere, zuverlässige und skalierbare Services zu entwickeln und repetitive Aufgaben zu automatisieren."
+		},
+		"matthias": {
+			"catchphrase": "Cloud Ninja",
+			"body": "Cloud Engineer. Bestrebt, zuverlässige Produkte herzustellen und komplexe Systeme in verständliche Konzepte aufzubrechen."
 		}
 	},
 	"blog": {
