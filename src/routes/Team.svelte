@@ -12,6 +12,7 @@
 	import philippe from '$lib/images/team/philippe.webp';
 	import joel from '$lib/images/team/joel.webp';
 	import matthias from '$lib/images/team/matthias.webp';
+	import rika from '$lib/images/team/rika.webp';
 
 	interface Member {
 		tag: string;
@@ -85,6 +86,11 @@
 			portrait: matthias,
 			gitHub: 'busykoala',
 			linkedIn: 'matthias-osswald'
+		},
+		{
+			tag: 'rika',
+			name: 'Rika',
+			portrait: rika
 		}
 	];
 </script>
