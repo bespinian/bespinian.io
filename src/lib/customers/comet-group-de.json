@@ -17,7 +17,7 @@
 			},
 			{
 				"title": "Frontend-Entwicklung",
-				"body": "Für das Frontend, das in den Webbrowsern der Nutzer:innen dargestellt wird, haben wir uns für Svelte und Svelte Kit entschieden. Beides sind relativ neue, aber mächtige Technologien, die es uns ermöglichen, eine sichere und leistungsfähige Browseranwendung zu erstellen, die einfach zu bedienen und leicht zugänglich ist. Für das Hosting dieser Anwendung wurde eine Kombination aus S3 und CloudFront gewählt. Auf diese Weise wird BLOX auf sehr kosteneffiziente Weise bereitgestellt und ist für Comet und seine Kunden rund um den Globus zugänglich."
+				"body": "Für das Frontend, das in den Webbrowsern der Nutzer:innen dargestellt wird, haben wir uns für Svelte und SvelteKit entschieden. Beides sind relativ neue, aber mächtige Technologien, die es uns ermöglichen, eine sichere und leistungsfähige Browseranwendung zu erstellen, die einfach zu bedienen und leicht zugänglich ist. Für das Hosting dieser Anwendung wurde eine Kombination aus S3 und CloudFront gewählt. Auf diese Weise wird BLOX auf sehr kosteneffiziente Weise bereitgestellt und ist für Comet und seine Kunden rund um den Globus zugänglich."
 			},
 			{
 				"title": "Monitoring und Alerting",
