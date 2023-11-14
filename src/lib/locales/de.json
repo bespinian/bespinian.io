@@ -3,43 +3,43 @@
 	"mission": {
 		"nav_item": "Mission",
 		"title": "Unsere Mission",
-		"body": "Wir von bespinian lieben Software. Besonders, wenn sie einfach und effizient ist und ihre Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams entwickelt. Deswegen bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit Ihrem Team auf. Wir sind zu Hause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für Ihr Unternehmen beim Kreieren von erstklassigen Cloud-basierten Lösungen.",
+		"body": "Wir von bespinian lieben Software. Besonders, wenn sie einfach und effizient ist und deine Anforderungen erfüllt. Grossartige Software wird von grossartigen Teams entwickelt. Deswegen bauen alle unsere Dienstleistungen auf einer engen Zusammenarbeit mit dir und deinem Team auf. Wir sind zu Hause in privaten, hybriden und public Clouds. Das macht uns zum idealen Partner für dich beim Kreieren von erstklassigen Cloud-basierten Lösungen.",
 		"solutions": {
 			"title": "Die Lösungen, die wir zusammen kreieren, sind",
 			"operate": "einfach zu betreiben",
 			"adaptable": "leicht zu ändern",
 			"scalable": "skalierbar unter Last",
-			"optimized": "optimiert auf Ihre Geschäftsziele"
+			"optimized": "optimiert auf deine Geschäftsziele"
 		}
 	},
 	"services": {
 		"nav_item": "Dienstleistungen",
 		"title": "Unsere Dienstleistungen",
-		"body": "Egal, ob Sie ein neues Vorhaben beginnen, eine existierende Idee überarbeiten oder Ihre bestehenden Applikationen transformieren, wir begleiten Ihr Team hands-on, in jeder Iteration Ihres Projekts. Hier sind einige Dienstleistungen, die wir anbieten. Wenn Sie etwas suchen, das nicht auf der Liste ist, lassen Sie es uns wissen. Wir sind immer offen für Innovation.",
+		"body": "Egal, ob du ein neues Vorhaben beginnst, eine existierende Idee überarbeitest oder deine bestehenden Applikationen transformierst, wir begleiten dein Team hands-on, in jeder Iteration deines Projekts. Hier sind einige Dienstleistungen, die wir anbieten. Wenn du etwas suchst, das nicht auf der Liste ist, lass es uns wissen. Wir sind immer offen für Innovation.",
 		"timeline": {
 			"assess": {
 				"title": "Bewerten",
-				"body": "Die perfekte Wahl oder zu gut, um wahr zu sein? Wir helfen Ihnen, die richtigen Partner für Ihr Projekt zu finden."
+				"body": "Die perfekte Wahl oder zu gut, um wahr zu sein? Wir helfen dir, die richtigen Partner für dein Projekt zu finden."
 			},
 			"transform": {
 				"title": "Transformieren",
-				"body": "Jedes Unternehmen hat eine Geschichte. Zusammen analysieren wir Ihre bestehenden Applikationen und machen sie bereit für die Cloud."
+				"body": "Jedes Unternehmen hat eine Geschichte. Zusammen analysieren wir deine bestehenden Applikationen und machen sie bereit für die Cloud."
 			},
 			"design": {
 				"title": "Designen",
-				"body": "Ein Diagramm sagt mehr als tausend Worte. Wir strukturieren Ihre Geschäftsdomäne und identifizieren die Schlüsselkonzepte."
+				"body": "Ein Diagramm sagt mehr als tausend Worte. Wir strukturieren deine Geschäftsdomäne und identifizieren die Schlüsselkonzepte."
 			},
 			"build": {
 				"title": "Umsetzen",
-				"body": "Von der Papierserviette zum Source Code. Wir helfen Ihnen bei der Umsetzung Ihrer Ideen als Cloud-basierte Software."
+				"body": "Von der Papierserviette zum Source Code. Wir helfen dir bei der Umsetzung deiner Ideen als Cloud-basierte Software."
 			},
 			"run": {
 				"title": "Betreiben",
-				"body": "Innovation ohne Unterbruch. Wir helfen Ihnen bei der erfolgreichen Einführung von DevOps in Ihrer Organisation."
+				"body": "Innovation ohne Unterbruch. Wir helfen dir bei der erfolgreichen Einführung von DevOps in deiner Organisation."
 			},
 			"rethink": {
 				"title": "Überdenken",
-				"body": "Im Nachhinein ist alles einfach. Machen wir uns diese Tatsache zunutze und bringen wir Ihre Lösung auf die nächste Stufe!"
+				"body": "Im Nachhinein ist alles einfach. Machen wir uns diese Tatsache zunutze und bringen wir deine Lösung auf die nächste Stufe!"
 			}
 		}
 	},
@@ -58,14 +58,14 @@
 		"title": "Unsere Technologien",
 		"platforms": {
 			"body": {
-				"intro": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis moderner Technologien, die Ihrem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von",
+				"intro": "Wir sind überzeugt, dass Ideen die Technologien bestimmen sollen und nicht umgekehrt. Zusammen entwickeln wir Lösungen auf der Basis moderner Technologien, die deinem Team ermöglichen mehr Zeit mit dem Erschaffen von Mehrwert zu verbringen und weniger mit dem Betrieb von Infrastruktur. Hier ist eine Auswahl von",
 				"platforms": "Plattformen,",
-				"weAreNativeTo": "auf denen wir Experten sind"
+				"weAreNativeTo": "auf denen wir Expert:innen sind"
 			}
 		},
 		"tools": {
 			"body": {
-				"intro": "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist es nicht unser Ding das Rad neu zu erfinden. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit Ihrem Team. Hier sind einige unserer liebsten",
+				"intro": "Auch wenn wir nichts mehr lieben als Code zu schreiben, ist es nicht unser Ding das Rad neu zu erfinden. Wir wissen, wann es besser ist, ein existierendes Produkt einzusetzen und wir teilen dieses Wissen mit deinem Team. Hier sind einige unserer liebsten",
 				"tools": "Tools"
 			}
 		}
@@ -73,7 +73,7 @@
 	"team": {
 		"nav_item": "Team",
 		"title": "Unser Team",
-		"body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Start-ups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater:innen, einfühlsame Coaches und erfahrene Coder:innen. Interessiert, uns zu treffen? Dann kommen Sie einfach ungeniert über Social Media auf uns zu, treffen uns an einem Meetup in Ihrer Nähe oder nutzen das Kontaktformular unten.",
+		"body": "Wir sind Cloud Software Engineers der ersten Stunde mit Berufserfahrung sowohl in Grossunternehmen als auch in Start-ups. Wir sind stolz auf unsere Fähigkeiten als kompetente Berater:innen, einfühlsame Coaches und erfahrene Coder:innen. Interessiert, uns zu treffen? Dann komm einfach ungeniert über Social Media auf uns zu, triff uns an einem Meetup in deiner Nähe oder nutze das Kontaktformular unten.",
 		"mathis": {
 			"catchphrase": "Keeper of Simple",
 			"body": "Softwarearchitekt und Mitgründer. Spezialisiert auf Microservices, Container-Technologien und Cloud-Native Engineering."
@@ -92,7 +92,7 @@
 		},
 		"denis": {
 			"catchphrase": "Cloud Composer",
-			"body": "Software Engineer. Spezialisiert auf verteilte Systeme, Microservices, event-driven Architekturen und Container Technologien."
+			"body": "Software Engineer. Spezialisiert auf verteilte Systeme, Microservices, event-basierte Architekturen und Container Technologien."
 		},
 		"qasim": {
 			"catchphrase": "☁boy 🤠",
@@ -104,7 +104,7 @@
 		},
 		"joel": {
 			"catchphrase": "Cloud Surfer",
-			"body": "DevOps Engineer. Liebt es sichere, zuverlässige und skalierbare Services zu entwickeln und repetitive Aufgaben zu automatisieren."
+			"body": "DevOps Engineer. Liebt es, sichere, zuverlässige und skalierbare Services zu entwickeln und repetitive Aufgaben zu automatisieren."
 		},
 		"matthias": {
 			"catchphrase": "Cloud Ninja",
@@ -123,8 +123,8 @@
 	},
 	"contact": {
 		"nav_item": "Kontakt",
-		"title": "Kontaktieren Sie Uns",
-		"body": "Haben Sie eine Frage? Benötigen Sie eine Offerte? Oder möchten Sie mal auf einen Kaffee oder ein Bier vorbeikommen? In jedem Fall freuen wir uns über Ihre Kontaktaufnahme und melden uns so rasch wie möglich bei Ihnen.",
+		"title": "Kontaktiere Uns",
+		"body": "Hast du eine Frage? Benötigst du eine Offerte? Oder möchtest du mal auf einen Kaffee oder ein Bier vorbeikommen? In jedem Fall freuen wir uns über deine Kontaktaufnahme und melden uns so rasch wie möglich bei dir.",
 		"form": {
 			"nameplaceholder": "Name",
 			"emailplaceholder": "Email",
