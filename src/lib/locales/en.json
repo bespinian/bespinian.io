@@ -139,5 +139,13 @@
 		"goal": "Project Goal",
 		"contribution": "bespinian's Role",
 		"technologies": "Technologies"
+	},
+	"imprint": {
+		"title": "Imprint",
+		"contact": "Contact",
+		"email": "Email",
+		"switzerland": "Switzerland",
+		"headquarters": "Headquarters",
+		"bernOffice": "Bern Office"
 	}
 }
