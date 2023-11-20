@@ -139,5 +139,13 @@
 		"goal": "Projektziel",
 		"contribution": "Rolle vo bespinian",
 		"technologies": "Technologie"
+	},
+	"imprint": {
+		"title": "Impressum",
+		"contact": "Kontakt",
+		"email": "E-Mail",
+		"switzerland": "Schwiz",
+		"headquarters": "Houptsitz",
+		"bernOffice": "Büro in Bärn"
 	}
 }

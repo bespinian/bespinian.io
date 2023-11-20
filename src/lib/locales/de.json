@@ -139,5 +139,13 @@
 		"goal": "Projektziel",
 		"contribution": "bespinians Rolle",
 		"technologies": "Technologien"
+	},
+	"imprint": {
+		"title": "Impressum",
+		"contact": "Kontakt",
+		"email": "E-Mail",
+		"switzerland": "Schweiz",
+		"headquarters": "Hauptsitz",
+		"bernOffice": "Büro in Bern"
 	}
 }
