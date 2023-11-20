@@ -12,6 +12,7 @@
 	import swissMadeSoftware from '$lib/images/swissmadesoftware.webp';
 	import peakscale from '$lib/images/peakscale.svg';
 	import isovalent from '$lib/images/isovalent.svg';
+	import rokt from '$lib/images/rokt.svg';
 
 	interface Partner {
 		name: string;
@@ -29,7 +30,8 @@
 		{ name: 'SPOUD', logo: spoud, link: 'https://www.spoud.io' },
 		{ name: 'AWS Partner Network', logo: aws, link: 'https://aws.amazon.com/partners/' },
 		{ name: 'Red Hat', logo: redHat, link: 'https://redhat.com' },
-		{ name: 'Swiss Made Software', logo: swissMadeSoftware, link: 'https://swissmadesoftware.org' }
+		{ name: 'Swiss Made Software', logo: swissMadeSoftware, link: 'https://swissmadesoftware.org' },
+		{ name: 'ROKT', logo: rokt, link: 'https://rokt.cloud' }
 	];
 </script>
 
