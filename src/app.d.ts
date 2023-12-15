@@ -11,6 +11,7 @@ declare global {
 				logo: string;
 			};
 		}
+		// interface PageState {}
 		// interface Platform {}
 	}
 }
