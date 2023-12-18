@@ -1,0 +1,59 @@
+{
+	"name": "Swisscom Health",
+	"title": "bespinian stärkt Swisscom Health mit einer sicheren Service Mesh",
+	"logo": {
+		"file": "swisscom.webp",
+		"alt": "Swisscom health"
+	},
+	"customer": "<a href=\"https://www.swisscom.ch/de/business/enterprise/angebot/health.html\" target=\"_blank\">Swisscom Health</a> bietet eine breite Palette von E-Health-ICT-Produkten und -Dienstleistungen. Dazu gehören Informationssysteme für medizinische Praxen, Abrechnungssysteme, PACS-Bildarchivierungssysteme und Connector-Suiten für den Austausch medizinischer Daten.",
+	"background": "Die Applikationslandschaft von Swisscom Health ist als Microservice-Architektur konzipiert. Aufgrund der hohen Sensibilität der verarbeiteten Patientendaten unterlag die Lösung strengen Sicherheitsanforderungen und regelmässigen Compliance-Zertifizierungen. Zu den prominenten Anforderungen gehörten die End-to-End-Verschlüsselung aller Daten, einschliesslich des Datenverkehrs zwischen den einzelnen Microservices, sowie eine strikte Trennung der Mandanten und eine starke gegenseitige Authentifizierung zwischen allen Microservices. Der Datenverkehr, der in der Anwendung eingeht oder diese verlässt, musste ebenfalls abgesichert werden, was zusätzliche Herausforderungen an die Plattform stellte.",
+	"goal": "Das Hauptziel des Projekts bestand darin, eine technologische Lösung einzuführen, die es Swisscom Health ermöglicht, End-to-End-Verschlüsselung, starke Serviceidentität, Mandantentrennung und Traffic-Routing effizient und skaliert zu verwalten. Darüber hinaus musste das Sicherheitssetup der verschiedenen Applikationen überprüft, Ergebnisse priorisiert und gemäss Schweregrad und Dringlichkeit behoben werden. Nicht alle Workloads konnten in Containern auf Kubernetes ausgeführt werden. Daher musste auch ein separater Automatisierungs- und Überwachungsstack für diese Arten von Workload implementiert werden. Nicht zuletzt musste das Team von Swisscom Health befähigt werden, die neu implementierte Infrastruktur zu betreiben und sich dabei eine DevOps-Kultur anzueignen.",
+	"contribution": {
+		"intro": "bespinian spielte eine entscheidende Rolle bei der Erreichung der Projektziele durch umfassende Beiträge, die sich auf die Bereitstellung einer robusten Service Mesh, die Implementierung einer Zero-Trust-Architektur, Sicherheitsaudits und -härtungen sowie Schulung und Best Practices für Kubernetes und Istio konzentrierten.",
+		"topics": [
+			{
+				"title": "Bereitstellung der Service Mesh",
+				"body": "Wir automatisierten die Konfiguration und die Bereitstellung der Istio-Service-Mesh unter Verwendung von Helm. Dies umfasste die Anpassung der Konfiguration von Istio an die Bedürfnisse von Swisscom Health sowie die deklarative Verwaltung dieser Konfiguration über mehrere Umgebungen hinweg. Besondere Aufmerksamkeit galt Diensten, die ausserhalb von Kubernetes gehostet werden und daher auf dedizierte Weise in die Service Mesh integriert werden mussten, entweder durch das Platzieren eines Istio-Proxys auf der jeweiligen VM oder durch die Integration über Egress- und Ingress-Mutual-TLS-Verbindungen. Ein weiterer wichtiger Aspekt war das Release-Management von Istio und die Sicherstellung, dass die Service Mesh Control Plane und die Sidecars ohne Unterbruch der Gesamtapplikation aktualisiert werden konnten."
+			},
+			{
+				"title": "Zero-Trust-Architektur",
+				"body": "Wir waren verantwortlich für die Einführung einer Zero-Trust-Architektur, basierend auf der Istio-Service-Mesh. Dies umfasste die Einführung von Mutual-TLS zwischen allen Diensten in der Mesh und damit die Realisierung von End-to-End-Verschlüsselung sowie einer starken Serviceidentität. Auf Grundlage der starken Serviceidentität wurden anschliessend feingranulare Traffic-Richtlinien entworfen und implementiert, um sicherzustellen, dass nicht verwandte Dienste verschiedener Mandanten nicht miteinander kommunizieren konnten. Darüber hinaus stellen solche Traffic-Richtlinien sicher, dass laterale Bewegungen eines potenziellen Angreifers verunmöglicht werden, wodurch die Schadensschneise im Falle eines Sicherheitsvorfalls auf den betroffenen Dienst und Mandanten eingeschränkt wird. Ein weiterer wichtiger Teil des Zero-Trust-Setups war das zentrale Secret-Management unter Verwendung von HashiCorp Vault. Dies gewährleistet, dass sensitive Daten wie Datenbankpasswörter und API-Schlüssel nicht in die Control-Plane von Kubernetes gelangen, sondern nur im Arbeitsspeicher der Microservices, die sie benötigten, behandelt werden."
+			},
+			{
+				"title": "Security-Audit und Hardening",
+				"body": "Eine weitere Aufgabe war die Durchführung eines tiefgreifenden Sicherheitsaudits, um potenzielle Risiken wie Schwachstellen in der Cluster-Einrichtung, Lücken in der Namespace- und Mandantentrennung sowie Container-Image-Vulnerabilities anzugehen. Jede entdeckte Schwachstelle wurde hinsichtlich ihres Gesamtrisikos bewertet, in eine Härtungsmassnahme umgewandelt und in der Planung des Kunden priorisiert. Die resultierenden Härtungsmassnahmen verbesserten die Gesamtsicherheit der Architektur der Workloads von Swisscom Health erheblich."
+			},
+			{
+				"title": "Kubernetes-Schulung und Best Practices",
+				"body": "bespinian befähigte Swisscom Health, eine Microservice-Architektur in Kubernetes und Istio-Service-Mesh bereitzustellen und zu betreiben. Dies ermöglichte dem Team, DevOps-Bereitschaft zu erreichen sowie das nötige Vertrauen zu erlangen, die migrierten Applikationen in Produktion zu betreiben."
+			},
+			{
+				"title": "Infrastruktur-Bereitstellung als Code",
+				"body": "Eine zusätzliche Verantwortung von uns bestand darin, die automatisierte Bereitstellung von VM-basierten Diensten und Netzwerkkomponenten als Code in Azure zu ermöglichen. Dies bedeutete, die Erstellung der VMs und Ressourcen selbst zu automatisieren und eine automatisierte und deklarative Konfigurationsverwaltung unter Verwendung von Ansible und Ansible Tower zu implementieren. Diese ermöglichte es Swisscom Health, sich von manuell erstellten Konfigurationen zu lösen und eine vollständig reproduzierbare Provisionierung ihrer VM-basierten Workloads und Netzwerkkomponenten zu erreichen."
+			},
+			{
+				"title": "Health Monitoring",
+				"body": "Parallel zur automatisierten Bereitstellung von VM-basierten Diensten automatisierten wir die Einrichtung des Health Monitoring für diese VMs und Dienste. Dies gewährleistete eine kontinuierliche Sichtbarkeit des Gesundheitszustandes und Leistung des Systems sowie eine rechtzeitige Benachrichtigung des Teams im Falle von Ausfällen oder Unregelmässigkeiten in Metriken oder Protokollen. Dies wiederum ermöglichte es Swisscom Health, die VM-basierten Dienste mit der gleichen Effizienz und Stabilität zu betreiben wie die auf Kubernetes basierenden."
+			}
+		]
+	},
+	"technologies": [
+		"Azure",
+		"Terraform",
+		"Kubernetes (PKS)",
+		"Argo CD",
+		"Istio / Kiali",
+		"Prometheus / Grafana",
+		"Helm",
+		"Kustomize",
+		"Ansible / Ansible Tower",
+		"Icinga"
+	],
+	"quote": {
+		"body": "Mit bespinian sind wir schnell zu einer modernen und auf Best Practices basierenden Infrastruktur und Pipeline gelangt. Dadurch konnten wir unsere internen Ressourcen auf die Weiterentwicklung unserer Applikation und auf die Bedürfnisse unserer Kunden fokussieren.",
+		"stakeholder": {
+			"name": "Federico Marmori",
+			"role": "Head of Product Development"
+		}
+	}
+}

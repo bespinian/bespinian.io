@@ -14,6 +14,9 @@ import xovisLogo from '$lib/images/xovis.svg';
 import cometGroupEn from '$lib/customers/comet-group-en.json';
 import cometGroupDe from '$lib/customers/comet-group-de.json';
 import cometGroupLogo from '$lib/images/comet-group.webp';
+import swisscomHealthDe from '$lib/customers/swisscomhealth-de.json';
+import swisscomHealthEn from '$lib/customers/swisscomhealth-en.json';
+import swisscomLogo from '$lib/images/swisscom.webp';
 import type { PageLoad, EntryGenerator } from './$types';
 
 export const entries: EntryGenerator = () => [
@@ -21,7 +24,8 @@ export const entries: EntryGenerator = () => [
 	{ slug: 'citech-sensors' },
 	{ slug: 'swisssign-group' },
 	{ slug: 'xovis' },
-	{ slug: 'comet-group' }
+	{ slug: 'comet-group' },
+	{ slug: 'swisscom' }
 ];
 
 export const load: PageLoad = ({ params }) => {
@@ -56,6 +60,14 @@ export const load: PageLoad = ({ params }) => {
 					en: xovisEn,
 					de: xovisDe,
 					logo: xovisLogo
+				}
+			};
+		case 'swisscom':
+			return {
+				customer: {
+					en: swisscomHealthEn,
+					de: swisscomHealthDe,
+					logo: swisscomLogo
 				}
 			};
 		case 'comet-group':
