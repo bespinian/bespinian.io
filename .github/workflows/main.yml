@@ -1,6 +1,9 @@
 name: Lint, Build and Deploy
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -27,6 +30,7 @@ jobs:
         run: npm run lint
   build:
     name: Build and Deploy
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     needs: lint
     environment: aws-production
     runs-on: ubuntu-latest
