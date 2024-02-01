@@ -100,7 +100,7 @@
 			name: 'Rafael Wicht',
 			portrait: rafael,
 			gitHub: 'rafiwicht',
-			linkedIn: 'rafael-wicht-3a95b0166',
+			linkedIn: 'rafael-wicht-3a95b0166'
 		},
 		{
 			tag: 'rika',
