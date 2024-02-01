@@ -14,6 +14,7 @@
 	import matthias from '$lib/images/team/matthias.webp';
 	import sandra from '$lib/images/team/sandra.webp';
 	import rika from '$lib/images/team/rika.webp';
+	import rafael from '$lib/images/team/rafael.webp';
 
 	interface Member {
 		tag: string;
@@ -93,6 +94,13 @@
 			name: 'Sandra Hochstein',
 			portrait: sandra,
 			linkedIn: 'sandra-hochstein-873229179'
+		},
+		{
+			tag: 'rafael',
+			name: 'Rafael Wicht',
+			portrait: rafael,
+			gitHub: 'rafiwicht',
+			linkedIn: 'rafael-wicht-3a95b0166'
 		},
 		{
 			tag: 'rika',
