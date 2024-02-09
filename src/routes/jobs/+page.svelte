@@ -70,6 +70,7 @@
 				<li>You have experience developing back end applications</li>
 				<li>You have experience developing microservice architectures</li>
 				<li>You have experience with writing automation and infrastructure as code</li>
+				<li>You have an existing professional network in the Swiss cloud market</li>
 			</ul>
 			<br />
 			<h4 class="title is-4">Tasks</h4>
