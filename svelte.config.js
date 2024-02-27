@@ -18,7 +18,6 @@ const config = {
 				'style-src': ['unsafe-inline', 'self'],
 				'img-src': ['self', 'data:'],
 				'font-src': ['self', 'data:'],
-				'connect-src': ['*'],
 				'object-src': ['none'],
 				'frame-ancestors': ['none'],
 				'base-uri': ['none'],
