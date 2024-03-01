@@ -14,6 +14,7 @@
 	import isovalent from '$lib/images/isovalent.svg';
 	import rokt from '$lib/images/rokt.svg';
 	import begasoft from '$lib/images/begasoft.svg';
+	import nuvibit from '$lib/images/nuvibit.webp';
 
 	interface Partner {
 		name: string;
@@ -22,18 +23,19 @@
 	}
 
 	const partners: Partner[] = [
-		{ name: 'Peak Scale', logo: peakscale, link: 'https://peakscale.ch' },
-		{ name: 'Puzzle ITC', logo: puzzle, link: 'https://puzzle.ch' },
-		{ name: 'Isovalent', logo: isovalent, link: 'https://isovalent.com' },
-		{ name: 'VSHN', logo: vshn, link: 'https://vshn.ch' },
-		{ name: 'acend', logo: acend, link: 'https://acend.ch' },
-		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
-		{ name: 'SPOUD', logo: spoud, link: 'https://www.spoud.io' },
 		{ name: 'AWS Partner Network', logo: aws, link: 'https://aws.amazon.com/partners/' },
 		{ name: 'Red Hat', logo: redHat, link: 'https://redhat.com' },
-		{ name: 'Swiss Made Software', logo: swissMadeSoftware, link: 'https://swissmadesoftware.org' },
+		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
+		{ name: 'Isovalent', logo: isovalent, link: 'https://isovalent.com' },
+		{ name: 'Puzzle ITC', logo: puzzle, link: 'https://puzzle.ch' },
+		{ name: 'VSHN', logo: vshn, link: 'https://vshn.ch' },
+		{ name: 'Nuvibit', logo: nuvibit, link: 'https://nuvibit.com/' },
+		{ name: 'Peak Scale', logo: peakscale, link: 'https://peakscale.ch' },
 		{ name: 'ROKT', logo: rokt, link: 'https://rokt.cloud' },
-		{ name: 'BEGASOFT', logo: begasoft, link: 'https://www.begasoft.ch/' }
+		{ name: 'SPOUD', logo: spoud, link: 'https://www.spoud.io' },
+		{ name: 'BEGASOFT', logo: begasoft, link: 'https://www.begasoft.ch/' },
+		{ name: 'acend', logo: acend, link: 'https://acend.ch' },
+		{ name: 'Swiss Made Software', logo: swissMadeSoftware, link: 'https://swissmadesoftware.org' }
 	];
 </script>
 
