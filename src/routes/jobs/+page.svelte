@@ -43,7 +43,7 @@
 		<div class="column is-half">
 			<h3 class="title is-2 is-spaced">Cloud Solutions Engineer 60-100%</h3>
 			<p>
-				We are looking to extend our team of consulting software engineers. They each advise
+				We are looking to extend our team of software engineers and architects. They each advise
 				multiple customers holistically on different technologies and architectures in various cloud
 				and container environments. If you like to get to know and work with new bleeding edge
 				technologies every day and feel at home in public, private and hybrid cloud environments,
@@ -59,24 +59,24 @@
 				</li>
 				<li>You are excited about all things DevOps</li>
 				<li>You like to work with multiple customers and technologies</li>
-				<li>You are fluent in German and English</li>
 				<li>You have worked as a software architect but also as a developing engineer</li>
+				<li>You are fluent in German and English</li>
 			</ul>
 			<br />
 			<h4 class="title is-4">Nice to Have</h4>
 			<ul>
-				<li>You speak French</li>
 				<li>You have experience developing front end applications</li>
 				<li>You have experience developing back end applications</li>
 				<li>You have experience developing microservice architectures</li>
 				<li>You have experience with writing automation and infrastructure as code</li>
 				<li>You have an existing professional network in the Swiss cloud market</li>
+				<li>You speak French</li>
 			</ul>
 			<br />
 			<h4 class="title is-4">Tasks</h4>
 			<ul>
 				<li>
-					You consult our customers on engineering in and around container orchestration and the
+					You support our customers on engineering in and around container orchestration and the
 					cloud
 				</li>
 				<li>You co-create software architectures with customers</li>
