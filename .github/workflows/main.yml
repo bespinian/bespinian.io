@@ -15,9 +15,6 @@ jobs:
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          check-latest: true
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: Audit dependencies
