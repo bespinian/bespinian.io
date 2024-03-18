@@ -8,6 +8,9 @@ import citechLogo from '$lib/images/citechsensors-wide.webp';
 import swisssignEn from '$lib/customers/swisssigngroup-en.json';
 import swisssignDe from '$lib/customers/swisssigngroup-de.json';
 import swisssignLogo from '$lib/images/swisssigngroup.svg';
+import stgeEn from '$lib/customers/stahl-gerlafingen-en.json';
+import stgeDe from '$lib/customers/stahl-gerlafingen-de.json';
+import stgeLogo from '$lib/images/stahl-gerlafingen.png';
 import xovisEn from '$lib/customers/xovis-en.json';
 import xovisDe from '$lib/customers/xovis-de.json';
 import xovisLogo from '$lib/images/xovis.svg';
@@ -56,6 +59,14 @@ export const load: PageLoad = ({ params }) => {
 					en: cometGroupEn,
 					de: cometGroupDe,
 					logo: cometGroupLogo
+				}
+			};
+		case 'stahl-gerlafingen':
+			return {
+				customer: {
+					en: stgeEn,
+					de: stgeDe,
+					logo: stgeLogo
 				}
 			};
 	}
