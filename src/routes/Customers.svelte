@@ -15,6 +15,7 @@
 	import bfh from '$lib/images/bfh.webp';
 	import kalaidos from '$lib/images/kalaidos.webp';
 	import xovis from '$lib/images/xovis.svg';
+	import stge from '$lib/images/stahl-gerlafingen.png';
 
 	interface Customer {
 		name: string;
@@ -35,7 +36,8 @@
 		{ name: 'Skoor', logo: skoor, link: 'https://www.skoor.com' },
 		{ name: 'Zeilenwerk', logo: zeilenwerk, link: 'https://zeilenwerk.ch' },
 		{ name: 'Berner Fachhochschule', logo: bfh, link: 'https://bfh.ch/' },
-		{ name: 'Kalaidos Fachhochschule', logo: kalaidos, link: 'https://kalaidos-fh.ch' }
+		{ name: 'Kalaidos Fachhochschule', logo: kalaidos, link: 'https://kalaidos-fh.ch' },
+		{ name: 'Stahl Gerlafingen', logo: stge, link: '/customers/stahl-gerlafingen' }
 	];
 </script>
 

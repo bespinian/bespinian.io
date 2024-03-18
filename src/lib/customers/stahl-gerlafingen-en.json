@@ -1,0 +1,45 @@
+{
+	"name": "Stahl Gerlafingen",
+	"title": "Modernisierung einer Python Webapplikation",
+	"logo": {
+		"file": "stahl-gerlafingen.png",
+		"alt": "Stahl Gerlafingen"
+	},
+	"customer": "Die <a href=\"https://www.stahl-gerlafingen.ch/\" target=\"_blank\">Stahl Gerlafingen AG</a> stellt in Gerlafingen im Kanton Solothurn Bewehrungs- und Profilstahl her. Mit rund 540 Mitarbeitenden produziert das Unternehmen jährlich rund 700'000 Tonnen Stahlprodukte für den Bedarf im In- und Ausland und ist damit der grösste Recycling-Stahlproduzent der Schweiz. Die Produkte finden sich in Gebäuden, Brücken, Tunneln, Lastwagen und in einer Vielzahl von Maschinen und Apparaten wieder.",
+	"background": "Vor rund 15 Jahren kam der Bedarf im Werk auf, Daten aus den vielen industriellen Steuerungsanlagen in einer zentralen Stelle zu sammeln und mit weiteren Betriebsdaten, zum Beispiel Produktionsaufträge aus SAP, zusammenzuführen. Dafür wurde mit Python die Webapplikation “Petrinetz” entwickelt, welche die Geräte und Umsysteme ansteuert und die Daten für Benutzende im ganzen Betrieb aufbereitet.  Später wurde die Software erweitert, sodass mit den vorhandenen Daten der ganze Produktionsprozess ab dem Walzwerk gesteuert wird.  Da Petrinetz ein zentraler Teil des Stahlwerks ist, wurde bespinian 2023 angefragt, die Applikation zu modernisieren, bei auftretenden Problemen im Betrieb als Troubleshooter zu helfen und ein robustes Monitoring für Petrinetz und seine Infrastruktur einzurichten.",
+	"goal": "Das Ziel unseres Einsatzes war es, die Software auf eine nachhaltige und pflegbare Basis zu stellen und den Betrieb bis zur Ablösung mit einer Standardlösung in zwei bis drei Jahren zu sichern.  Nebst der Implementierung von anstehenden Änderungsanträgen, sollte die Applikation auf die neuste Python Version migriert, ein Dependency Management eingeführt und ein automatisierter Deployment-Prozess umgesetzt werden.  Ausserdem sollte die Applikation von einem Monitoringsystem überwacht werden. Um Änderungen zuverlässiger umzusetzen, sollten für die ganze Applikation Unittests geschrieben werden.",
+	"contribution": {
+		"intro": "",
+		"topics": [
+			{
+				"title": "Unterstützung beim Betrieb",
+				"body": "Die Applikation Petrinetz ist für den Produktionsbetrieb bei Stahl Gerlafingen zentral. bespinian unterstützt die IT-Abteilung beim Betrieb der Software und springt als Troubleshooter ein, wenn etwas nicht mehr tut, wie es soll. Zudem haben wir einige Change Requests implementiert."
+			},
+			{
+				"title": "Modernisierung der Applikation",
+				"body": "Nach der Einführung von Git zur Versionsverwaltung haben wir über 800 Unittests geschrieben, um das Risiko bei Änderungen am Code zu reduzieren. Diese Tests werden nun vor jedem Deployment in einer GitLab Pipeline automatisiert ausgeführt. Dies hat die Zahl der Incidents nach einem Deployment drastisch reduziert. Danach waren wir in der Lage Python auf die neuste unterstützte Version zu migrieren und einzelne Python Dateien, mit zum Teil über 6000 Zeilen Code, in übersichtliche Module aufzuteilen."
+			},
+			{
+				"title": "Monitoring",
+				"body": "Zur proaktiven Überwachung der Applikation und deren Umgebung setzen wir die Open Source Produkte Prometheus, Grafana und Loki ein. Anstatt auf Meldungen der Benutzenden zu reagieren, können die IT und wir jetzt proaktiv reagieren und mittels übersichtlicher Dashboards und zentralem Logging Probleme untersuchen. Zudem haben wir für Prometheus einen OPC XML Exporter geschrieben, mit dem wir die PLCs (Maschinensteuerungen) überwachen können."
+			}
+		]
+	},
+	"technologies": [
+		"GitLab",
+		"Python",
+		"Prometheus & Grafana",
+		"Loki",
+		"Windows Server",
+		"Microsoft SQL Server",
+		"SAP",
+		"OPC XML – Industrial Communication"
+	],
+	"quote": {
+		"body": "",
+		"stakeholder": {
+			"name": "Andrea Scordia",
+			"role": "Leiter IT"
+		}
+	}
+}
