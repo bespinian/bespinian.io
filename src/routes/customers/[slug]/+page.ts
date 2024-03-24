@@ -14,7 +14,15 @@ import xovisLogo from '$lib/images/xovis.svg';
 import cometGroupEn from '$lib/customers/comet-group-en.json';
 import cometGroupDe from '$lib/customers/comet-group-de.json';
 import cometGroupLogo from '$lib/images/comet-group.webp';
-import type { PageLoad } from './$types';
+import type { PageLoad, EntryGenerator } from './$types';
+
+export const entries: EntryGenerator = () => [
+	{ slug: '20-minuten' },
+	{ slug: 'citech-sensors' },
+	{ slug: 'swisssign-group' },
+	{ slug: 'xovis' },
+	{ slug: 'comet-group' }
+];
 
 export const load: PageLoad = ({ params }) => {
 	switch (params.slug) {
@@ -58,7 +66,7 @@ export const load: PageLoad = ({ params }) => {
 					logo: cometGroupLogo
 				}
 			};
+		default:
+			throw error(404, `Customer ${params.slug} not found`);
 	}
-
-	throw error(404, 'Not found');
 };

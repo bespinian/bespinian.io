@@ -1,12 +1,10 @@
 name: Lint, Build and Deploy
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   lint:
@@ -17,38 +15,45 @@ jobs:
         uses: actions/setup-node@v4
       - name: Checkout repo
         uses: actions/checkout@v4
-      - name: Audit dependencies
-        run: npm audit
       - name: Install dependencies
         run: npm ci
-      - name: Check code
+      - name: Check
         run: npm run check
-      - name: Lint code
+      - name: Lint
         run: npm run lint
+
   build:
-    name: Build and Deploy
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    name: Build
     needs: lint
-    environment: aws-production
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
-    env:
-      AWS_REGION: eu-central-1
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          check-latest: true
-      - name: Set up OpenTofu
-        uses: opentofu/setup-opentofu@v1
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: Install dependencies
         run: npm ci
-      - name: Build application
+      - name: Build
         run: npm run build
-      - name: Deploy to production
-        run: npm run deploy
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
+
+  deploy:
+    name: Deploy
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Configure Deployment
+        uses: actions/configure-pages@v4
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
