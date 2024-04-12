@@ -109,7 +109,11 @@
 				our awesome team of bespinians.
 			</p>
 			<br />
-			<p>PS: We aim to fill this position without the help of recruitment agencies.</p>
+			<p>
+				PS: At this time, we are not able to consider applicants who require a visa sponsorship to
+				work in Switzerland. Furthermore, we aim to fill this position without the help of
+				recruitment agencies.
+			</p>
 		</div>
 	</div>
 </section>
