@@ -49,26 +49,30 @@
 				technologies every day and feel at home in public, private and hybrid cloud environments,
 				bespinian is the right place for you!
 			</p>
+			<p>
+				We are a very trust-based company that uses <a href="https://www.holacracy.org/"
+					>Holacracy</a
+				> as a governance model.
+			</p>
 			<br />
 			<br />
 			<h4 class="title is-4">Requirements</h4>
 			<ul>
-				<li>
-					You have practical experience with Containers, Kubernetes, OpenShift, Terraform, AWS,
-					Azure and/or GCP
-				</li>
-				<li>You are excited about all things DevOps</li>
-				<li>You like to work with multiple customers and technologies</li>
+				<li>You have practical experience with Kubernetes, Terraform, AWS, Azure, or GCP</li>
 				<li>You have worked as a software architect but also as a developing engineer</li>
+				<li>You have practical experience with DevOps, CI/CD, and automation</li>
+				<li>You like to work with multiple customers and technologies</li>
+				<li>
+					You are interested in participating in shaping the company and taking responsibility
+				</li>
 				<li>You are fluent in German and English</li>
 			</ul>
 			<br />
 			<h4 class="title is-4">Nice to Have</h4>
 			<ul>
-				<li>You have experience developing front end applications</li>
-				<li>You have experience developing back end applications</li>
-				<li>You have experience developing microservice architectures</li>
-				<li>You have experience with writing automation and infrastructure as code</li>
+				<li>You have experience developing full stack applications</li>
+				<li>You have experience with microservice architectures</li>
+				<li>You have experience with serverless solutions</li>
 				<li>You have an existing professional network in the Swiss cloud market</li>
 				<li>You speak French</li>
 			</ul>
@@ -87,10 +91,12 @@
 			<br />
 			<h4 class="title is-4">What We Offer</h4>
 			<ul>
-				<li>Flexible ways of working and a lot of responsibility</li>
-				<li>Possibilities meeting various customers and companies</li>
+				<li>Flexible ways of hybrid working and a lot of responsibility</li>
+				<li>Collaboration with various companies, industries and technologies</li>
 				<li>A fast-paced start-up environment</li>
-				<li>A great team of fun people with a similar mindset</li>
+				<li>A great team of fun people with diverse backgrounds</li>
+				<li>A competitive salary and great benefits</li>
+				<li>An awesome office in the heart of Bern</li>
 				<li>Employment level: 60-100%</li>
 				<li>Employment date: Flexible</li>
 			</ul>
@@ -99,10 +105,14 @@
 			<p>
 				Are you interested? We highly value diversity. Drop us a line at
 				<a href="mailto:jobs@bespinian.io">jobs@bespinian.io</a> and tell us why you would like to join
-				our awesome team of architects and engineers.
+				our awesome team of bespinians.
 			</p>
 			<br />
-			<p>PS: We aim to fill this position without the help of recruitment agencies.</p>
+			<p>
+				PS: At this time, we are not able to consider applicants who require a visa sponsorship to
+				work in Switzerland. Furthermore, we aim to fill this position without the help of
+				recruitment agencies.
+			</p>
 		</div>
 	</div>
 </section>
