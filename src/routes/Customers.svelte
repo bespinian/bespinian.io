@@ -23,7 +23,7 @@
 	}
 
 	const customers: Customer[] = [
-		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
+		{ name: 'Swisscom', logo: swisscom, link: '/customers/swisscom' },
 		{ name: 'Xovis', logo: xovis, link: '/customers/xovis' },
 		{ name: 'TX Group', logo: txGroup, link: 'https://tx.group' },
 		{ name: '20 Minuten', logo: twentyMins, link: '/customers/20-minuten' },
