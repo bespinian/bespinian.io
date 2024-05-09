@@ -12,9 +12,10 @@ const config = {
 		csp: {
 			directives: {
 				'default-src': ['self'],
-				'script-src': ['unsafe-inline', 'self'],
+				'script-src': ['unsafe-inline', 'self', 'https://scripts.simpleanalyticscdn.com'],
+				'connect-src': ['self', 'https://queue.simpleanalyticscdn.com'],
 				'style-src': ['unsafe-inline', 'self'],
-				'img-src': ['self', 'data:'],
+				'img-src': ['self', 'data:', 'https://queue.simpleanalyticscdn.com'],
 				'font-src': ['self', 'data:'],
 				'object-src': ['none'],
 				'frame-ancestors': ['none'],
