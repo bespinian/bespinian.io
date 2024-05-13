@@ -65,6 +65,7 @@
 				<li>
 					You are interested in participating in shaping the company and taking responsibility
 				</li>
+				<li>You are currently located in or are willing to relocate to Switzerland</li>
 				<li>You are fluent in German and English</li>
 			</ul>
 			<br />
@@ -108,11 +109,7 @@
 				our awesome team of bespinians.
 			</p>
 			<br />
-			<p>
-				PS: At this time, we are not able to consider applicants who require a visa sponsorship to
-				work in Switzerland. Furthermore, we aim to fill this position without the help of
-				recruitment agencies.
-			</p>
+			<p>PS: We aim to fill this position without the help of recruitment agencies.</p>
 		</div>
 	</div>
 </section>
