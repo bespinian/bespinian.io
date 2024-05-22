@@ -9,7 +9,7 @@
 	import puzzle from '$lib/images/puzzle.webp';
 	import spoud from '$lib/images/spoud.svg';
 	import redHat from '$lib/images/redhat.webp';
-	import swissMadeSoftware from '$lib/images/swissmadesoftware.webp';
+	import swissDigitalServices from '$lib/images/swissdigitalservices.webp';
 	import peakscale from '$lib/images/peakscale.svg';
 	import isovalent from '$lib/images/isovalent.svg';
 	import rokt from '$lib/images/rokt.svg';
@@ -35,7 +35,11 @@
 		{ name: 'SPOUD', logo: spoud, link: 'https://www.spoud.io' },
 		{ name: 'BEGASOFT', logo: begasoft, link: 'https://www.begasoft.ch/' },
 		{ name: 'acend', logo: acend, link: 'https://acend.ch' },
-		{ name: 'Swiss Made Software', logo: swissMadeSoftware, link: 'https://swissmadesoftware.org' }
+		{
+			name: 'swiss digital services',
+			logo: swissDigitalServices,
+			link: 'https://www.swissmadesoftware.org/en/about/swiss-digital-services.html'
+		}
 	];
 </script>
 
