@@ -12,7 +12,7 @@
 	import swissDigitalServices from '$lib/images/swissdigitalservices.webp';
 	import peakscale from '$lib/images/peakscale.svg';
 	import isovalent from '$lib/images/isovalent.svg';
-	import rokt from '$lib/images/rokt.svg';
+	import timKoko from '$lib/images/tim-koko.svg';
 	import begasoft from '$lib/images/begasoft.svg';
 	import nuvibit from '$lib/images/nuvibit.webp';
 
@@ -31,7 +31,7 @@
 		{ name: 'VSHN', logo: vshn, link: 'https://vshn.ch' },
 		{ name: 'Nuvibit', logo: nuvibit, link: 'https://nuvibit.com/' },
 		{ name: 'Peak Scale', logo: peakscale, link: 'https://peakscale.ch' },
-		{ name: 'ROKT', logo: rokt, link: 'https://rokt.cloud' },
+		{ name: 'tim&koko', logo: timKoko, link: 'https://tim-koko.ch' },
 		{ name: 'SPOUD', logo: spoud, link: 'https://www.spoud.io' },
 		{ name: 'BEGASOFT', logo: begasoft, link: 'https://www.begasoft.ch/' },
 		{ name: 'acend', logo: acend, link: 'https://acend.ch' },
