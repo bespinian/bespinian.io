@@ -13,7 +13,9 @@
 			<p>{$_('mission.body')}</p>
 			<div class="content team-content">
 				<div class="columns">
-					<div class="column is-centered is-half-desktop is-offset-one-quarter-desktop">
+					<div
+						class="column is-centered is-10-desktop is-offset-1-desktop is-half-fullhd is-offset-one-quarter-fullhd"
+					>
 						<div class="box">
 							<div class="card-content">
 								<p class="title is-4">
@@ -21,7 +23,7 @@
 								</p>
 								<div class="content">
 									{#each solutions as solution (solution)}
-										<p>
+										<p class="is-flex">
 											<span class="icon has-text-link icon-checkmark">
 												<Fa icon={faCheck} />
 											</span>
