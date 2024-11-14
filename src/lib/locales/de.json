@@ -121,6 +121,10 @@
 		"rika": {
 			"catchphrase": "Cloud auf Vier Pfoten",
 			"body": "Grosses Fellknäuel. Professioneller Bürohund und Maskottchen mit einer Begeisterung für Gebäudesicherheit."
+		},
+		"noe": {
+			"catchphrase": "Cloud Analyst",
+			"body": "Software Engineer. Leidenschaftlicher Troubleshooter, der tief in komplexe Systeme eintaucht, um sie zu entwirren und zu verbessern."
 		}
 	},
 	"blog": {

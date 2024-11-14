@@ -15,6 +15,7 @@
 	import sandra from '$lib/images/team/sandra.webp';
 	import rika from '$lib/images/team/rika.webp';
 	import rafael from '$lib/images/team/rafael.webp';
+	import noe from '$lib/images/team/noe.webp';
 
 	interface Member {
 		tag: string;
@@ -101,6 +102,13 @@
 			portrait: rafael,
 			gitHub: 'rafiwicht',
 			linkedIn: 'rafael-wicht-3a95b0166'
+		},
+		{
+			tag: 'noe',
+			name: 'Noe Thalheim',
+			portrait: noe,
+			gitHub: 'noeleont',
+			linkedIn: 'noe-thalheim-535440217'
 		},
 		{
 			tag: 'rika',
