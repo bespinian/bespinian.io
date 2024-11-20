@@ -16,6 +16,8 @@
 	import rika from '$lib/images/team/rika.webp';
 	import rafael from '$lib/images/team/rafael.webp';
 	import noe from '$lib/images/team/noe.webp';
+	import johannes from '$lib/images/team/johannes.webp';
+	import type { SvelteComponentTyped } from 'svelte';
 
 	interface Member {
 		tag: string;
@@ -109,6 +111,12 @@
 			portrait: noe,
 			gitHub: 'noeleont',
 			linkedIn: 'noe-thalheim-535440217'
+		},
+		{
+			tag: 'johannes',
+			name: 'Johannes Karl',
+            portrait: johannes,
+			gitHub: 'chickenbreeder'
 		},
 		{
 			tag: 'rika',
