@@ -115,7 +115,7 @@
 		{
 			tag: 'johannes',
 			name: 'Johannes Karl',
-            portrait: johannes,
+			portrait: johannes,
 			gitHub: 'chickenbreeder'
 		},
 		{
