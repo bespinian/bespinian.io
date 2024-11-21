@@ -17,7 +17,6 @@
 	import rafael from '$lib/images/team/rafael.webp';
 	import noe from '$lib/images/team/noe.webp';
 	import johannes from '$lib/images/team/johannes.webp';
-	import type { SvelteComponentTyped } from 'svelte';
 
 	interface Member {
 		tag: string;
