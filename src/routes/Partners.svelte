@@ -45,7 +45,7 @@
 
 <section id="partners" class="section">
 	<div class="columns is-centered columns-section">
-		<div class="column is-half">
+		<div class="column is-two-thirds is-half-widescreen">
 			<h3 class="title is-2 is-spaced">{$_('partners.title')}</h3>
 			<p>{$_('partners.body')}:</p>
 			<br />

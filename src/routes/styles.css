@@ -14,6 +14,10 @@ body {
 	font-family: var(--font-body);
 }
 
+section.section > * > * {
+	max-width: 80ch;
+}
+
 .sc-carousel__carousel-container.has-text-centered {
 	flex-direction: column;
 }

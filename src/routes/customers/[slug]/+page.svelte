@@ -47,7 +47,7 @@
 <section class="section customer-story">
 	{#if customer}
 		<div class="columns is-centered columns-section">
-			<div class="column is-half">
+			<div class="column is-two-thirds is-half-widescreen">
 				<h2 class="title is-2 is-spaced">
 					{customer.title}
 				</h2>

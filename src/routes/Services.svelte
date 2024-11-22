@@ -36,7 +36,7 @@
 
 <section id="services" class="section">
 	<div class="columns is-centered columns-section">
-		<div class="column is-half">
+		<div class="column is-two-thirds is-half-widescreen">
 			<h3 class="title is-2 is-spaced">{$_('services.title')}</h3>
 			<p>{$_('services.body')}</p>
 			<div class="content team-content">
