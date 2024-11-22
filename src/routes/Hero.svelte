@@ -7,11 +7,11 @@
 	<div class="hero-body">
 		<div class="container container-cloud-city">
 			<div class="columns">
-				<div class="column is-offset-1-desktop column-main-title">
+				<div class="column is-offset-1-widescreen column-main-title">
 					<h1 class="title is-1 is-spaced">bespinian</h1>
 					<h2 class="subtitle is-4">{$_('subtitle')}</h2>
 				</div>
-				<div class="column is-offset-4-desktop has-text-centered">
+				<div class="column is-offset-4-widescreen has-text-centered">
 					<img class="cloud-city" src={cloudCity} alt="Cloud City" />
 				</div>
 			</div>

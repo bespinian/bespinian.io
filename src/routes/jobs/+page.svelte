@@ -40,7 +40,7 @@
 <br />
 <section class="section">
 	<div class="columns is-centered columns-section">
-		<div class="column is-half">
+		<div class="column is-two-thirds is-half-widescreen">
 			<h3 class="title is-2 is-spaced">Cloud Solutions Engineer 60-100%</h3>
 			<p>
 				We are looking to extend our team of software engineers and architects. They each advise
