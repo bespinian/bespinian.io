@@ -2,17 +2,16 @@
 	import { _ } from 'svelte-i18n';
 	import { locale } from 'svelte-i18n';
 	import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
-	import type { PageData } from './$types';
 
-	export let data: PageData;
+	let { data } = $props();
 
-	let showNav = false;
+	let showNav = $state(false);
 
 	function toggleNav() {
 		showNav = !showNav;
 	}
 
-	$: customer = $locale?.includes('de-') ? data.customer.de : data.customer.en;
+	let customer = $derived($locale?.includes('de-') ? data.customer.de : data.customer.en);
 </script>
 
 <svelte:head>
@@ -28,10 +27,10 @@
 			aria-label="menu"
 			aria-expanded="false"
 			data-target="navbar-menu"
-			on:click={toggleNav}
+			onclick={toggleNav}
 		>
-			<span aria-hidden="true" /> <span aria-hidden="true" />
-			<span aria-hidden="true" />
+			<span aria-hidden="true"></span> <span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
 		</button>
 	</div>
 	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav}>

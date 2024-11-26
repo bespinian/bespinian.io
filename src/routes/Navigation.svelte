@@ -2,7 +2,7 @@
 	import { _ } from 'svelte-i18n';
 	import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
 
-	let showNav = false;
+	let showNav = $state(false);
 
 	function toggleNav() {
 		showNav = !showNav;
@@ -17,31 +17,31 @@
 			data-target="navbar-menu"
 			class="navbar-burger burger"
 			class:is-active={showNav}
-			on:click={toggleNav}
+			onclick={toggleNav}
 		>
-			<span aria-hidden="true" />
-			<span aria-hidden="true" />
-			<span aria-hidden="true" />
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
 		</button>
 	</div>
 	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav}>
 		<div class="navbar-end">
-			<a href="/#mission" class="navbar-item" on:click={toggleNav}>
+			<a href="/#mission" class="navbar-item" onclick={toggleNav}>
 				{$_('mission.nav_item')}
 			</a>
-			<a href="/#services" class="navbar-item" on:click={toggleNav}>
+			<a href="/#services" class="navbar-item" onclick={toggleNav}>
 				{$_('services.nav_item')}
 			</a>
-			<a href="/#tech" class="navbar-item" on:click={toggleNav}>
+			<a href="/#tech" class="navbar-item" onclick={toggleNav}>
 				{$_('technologies.nav_item')}
 			</a>
-			<a href="/#partners" class="navbar-item" on:click={toggleNav}>
+			<a href="/#partners" class="navbar-item" onclick={toggleNav}>
 				{$_('partners.nav_item')}
 			</a>
-			<a href="/#customers" class="navbar-item" on:click={toggleNav}>
+			<a href="/#customers" class="navbar-item" onclick={toggleNav}>
 				{$_('customers.nav_item')}
 			</a>
-			<a href="/#team" class="navbar-item" on:click={toggleNav}>
+			<a href="/#team" class="navbar-item" onclick={toggleNav}>
 				{$_('team.nav_item')}
 			</a>
 			<a
@@ -49,14 +49,14 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				class="navbar-item"
-				on:click={toggleNav}
+				onclick={toggleNav}
 			>
 				{$_('blog.nav_item')}
 			</a>
-			<a href="/jobs" class="navbar-item" on:click={toggleNav}>
+			<a href="/jobs" class="navbar-item" onclick={toggleNav}>
 				{$_('jobs.nav_item')}
 			</a>
-			<a href="/#contact" class="navbar-item" on:click={toggleNav}>
+			<a href="/#contact" class="navbar-item" onclick={toggleNav}>
 				{$_('contact.nav_item')}
 			</a>
 			<LanguageSwitcher />
