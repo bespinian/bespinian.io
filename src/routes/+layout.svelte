@@ -8,7 +8,9 @@
 	import Navigation from './Navigation.svelte';
 	import Footer from './Footer.svelte';
 	import Analytics from './Analytics.svelte';
-	import './styles.css';
+	import '../app.css';
+
+	let { children } = $props();
 
 	addMessages('en-US', en);
 	addMessages('de-DE', de);
@@ -24,7 +26,7 @@
 	<Navigation />
 
 	<main>
-		<slot />
+		{@render children()}
 	</main>
 
 	<Footer />
