@@ -62,7 +62,7 @@
 							placeholder={$_('contact.form.messageplaceholder')}
 							aria-label={$_('contact.form.messageplaceholder')}
 							rows="8"
-						/>
+						></textarea>
 					</div>
 				</div>
 				<div class="field">

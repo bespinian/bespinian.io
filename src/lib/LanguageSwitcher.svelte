@@ -16,7 +16,7 @@
 				href={null}
 				role="button"
 				class="navbar-item"
-				on:click={() => {
+				onclick={() => {
 					locale.set(l);
 				}}
 			>

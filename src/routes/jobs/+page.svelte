@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 
-	let showNav = false;
+	let showNav = $state(false);
 
 	function toggleNav() {
 		showNav = !showNav;
@@ -21,11 +21,11 @@
 			data-target="navbar-menu"
 			class="navbar-burger burger"
 			class:is-active={showNav}
-			on:click={toggleNav}
+			onclick={toggleNav}
 		>
-			<span aria-hidden="true" />
-			<span aria-hidden="true" />
-			<span aria-hidden="true" />
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
 		</button>
 	</div>
 	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav}>
