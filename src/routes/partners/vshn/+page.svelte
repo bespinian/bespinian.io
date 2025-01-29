@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { disableScrollHandling } from '$app/navigation';
 	import { _ } from 'svelte-i18n';
 
 	let showNav = $state(false);
