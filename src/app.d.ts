@@ -8,7 +8,8 @@ declare global {
 			customer?: {
 				en: import('$lib/customers/Customer').Customer;
 				de: import('$lib/customers/Customer').Customer;
-				logo: string;
+				logoDe: string;
+				logoEn: string;
 			};
 		}
 		// interface PageState {}

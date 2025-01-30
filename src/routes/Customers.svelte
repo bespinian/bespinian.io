@@ -15,6 +15,7 @@
 	import bfh from '$lib/images/bfh.webp';
 	import kalaidos from '$lib/images/kalaidos.webp';
 	import xovis from '$lib/images/xovis.svg';
+	import meteoswiss from '$lib/images/meteoswiss-de.webp';
 
 	interface Customer {
 		name: string;
@@ -28,6 +29,7 @@
 		{ name: 'TX Group', logo: txGroup, link: 'https://tx.group' },
 		{ name: '20 Minuten', logo: twentyMins, link: '/customers/20-minuten' },
 		{ name: 'CI Tech Sensors', logo: ciTechSensors, link: '/customers/citech-sensors' },
+		{ name: 'MeteoSchweiz', logo: meteoswiss, link: '/customers/meteoswiss' },
 		{ name: 'Comet Group', logo: cometGroup, link: '/customers/comet-group' },
 		{ name: 'SwissSign Group', logo: swissSignGroup, link: '/customers/swisssign-group' },
 		{ name: 'Emmi', logo: emmi, link: 'https://group.emmi.com' },

@@ -17,6 +17,11 @@ import cometGroupLogo from '$lib/images/comet-group.webp';
 import swisscomHealthDe from '$lib/customers/swisscomhealth-de.json';
 import swisscomHealthEn from '$lib/customers/swisscomhealth-en.json';
 import swisscomLogo from '$lib/images/swisscom.webp';
+import meteoswissDe from '$lib/customers/meteoswiss-de.json';
+import meteoswissEn from '$lib/customers/meteoswiss-en.json';
+import meteoswissLogoDe from '$lib/images/meteoswiss-de.webp';
+import meteoswissLogoEn from '$lib/images/meteoswiss-en.webp';
+
 import type { PageLoad, EntryGenerator } from './$types';
 
 export const entries: EntryGenerator = () => [
@@ -25,7 +30,8 @@ export const entries: EntryGenerator = () => [
 	{ slug: 'swisssign-group' },
 	{ slug: 'xovis' },
 	{ slug: 'comet-group' },
-	{ slug: 'swisscom' }
+	{ slug: 'swisscom' },
+	{ slug: 'meteoswiss' }
 ];
 
 export const load: PageLoad = ({ params }) => {
@@ -35,7 +41,8 @@ export const load: PageLoad = ({ params }) => {
 				customer: {
 					en: twentyMinEn,
 					de: twentyMinDe,
-					logo: twentyMinLogo
+					logoDe: twentyMinLogo,
+					logoEn: twentyMinLogo
 				}
 			};
 		case 'citech-sensors':
@@ -43,7 +50,8 @@ export const load: PageLoad = ({ params }) => {
 				customer: {
 					en: citechEn,
 					de: citechDe,
-					logo: citechLogo
+					logoDe: citechLogo,
+					logoEn: citechLogo
 				}
 			};
 		case 'swisssign-group':
@@ -51,7 +59,8 @@ export const load: PageLoad = ({ params }) => {
 				customer: {
 					en: swisssignEn,
 					de: swisssignDe,
-					logo: swisssignLogo
+					logoDe: swisssignLogo,
+					logoEn: swisssignLogo
 				}
 			};
 		case 'xovis':
@@ -59,7 +68,8 @@ export const load: PageLoad = ({ params }) => {
 				customer: {
 					en: xovisEn,
 					de: xovisDe,
-					logo: xovisLogo
+					logoDe: xovisLogo,
+					logoEn: xovisLogo
 				}
 			};
 		case 'swisscom':
@@ -67,7 +77,8 @@ export const load: PageLoad = ({ params }) => {
 				customer: {
 					en: swisscomHealthEn,
 					de: swisscomHealthDe,
-					logo: swisscomLogo
+					logoDe: swisscomLogo,
+					logoEn: swisscomLogo
 				}
 			};
 		case 'comet-group':
@@ -75,7 +86,17 @@ export const load: PageLoad = ({ params }) => {
 				customer: {
 					en: cometGroupEn,
 					de: cometGroupDe,
-					logo: cometGroupLogo
+					logoDe: cometGroupLogo,
+					logoEn: cometGroupLogo
+				}
+			};
+		case 'meteoswiss':
+			return {
+				customer: {
+					en: meteoswissEn,
+					de: meteoswissDe,
+					logoDe: meteoswissLogoDe,
+					logoEn: meteoswissLogoEn
 				}
 			};
 		default:
