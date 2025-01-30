@@ -12,6 +12,7 @@
 	}
 
 	let customer = $derived($locale?.includes('de-') ? data.customer.de : data.customer.en);
+	let logo = $derived($locale?.includes('de-') ? data.customer.logoDe : data.customer.logoEn);
 </script>
 
 <svelte:head>
@@ -51,7 +52,7 @@
 					{customer.title}
 				</h2>
 				<figure class="image customer-story-logo">
-					<img src={data.customer.logo} alt={customer.name} />
+					<img src={logo} alt={customer.name} />
 				</figure>
 				<br />
 				<p>
