@@ -28,16 +28,28 @@
 		{ name: 'Xovis', logo: xovis, link: '/customers/xovis' },
 		{ name: 'TX Group', logo: txGroup, link: 'https://tx.group' },
 		{ name: '20 Minuten', logo: twentyMins, link: '/customers/20-minuten' },
-		{ name: 'CI Tech Sensors', logo: ciTechSensors, link: '/customers/citech-sensors' },
+		{
+			name: 'CI Tech Sensors',
+			logo: ciTechSensors,
+			link: '/customers/citech-sensors'
+		},
 		{ name: 'MeteoSchweiz', logo: meteoswiss, link: '/customers/meteoswiss' },
 		{ name: 'Comet Group', logo: cometGroup, link: '/customers/comet-group' },
-		{ name: 'SwissSign Group', logo: swissSignGroup, link: '/customers/swisssign-group' },
+		{
+			name: 'SwissSign Group',
+			logo: swissSignGroup,
+			link: '/customers/swisssign-group'
+		},
 		{ name: 'Emmi', logo: emmi, link: 'https://group.emmi.com' },
 		{ name: 'legal-i', logo: legalI, link: 'https://legal-i.ch' },
 		{ name: 'Skoor', logo: skoor, link: 'https://www.skoor.com' },
 		{ name: 'Zeilenwerk', logo: zeilenwerk, link: 'https://zeilenwerk.ch' },
 		{ name: 'Berner Fachhochschule', logo: bfh, link: 'https://bfh.ch/' },
-		{ name: 'Kalaidos Fachhochschule', logo: kalaidos, link: 'https://kalaidos-fh.ch' }
+		{
+			name: 'Kalaidos Fachhochschule',
+			logo: kalaidos,
+			link: 'https://kalaidos-fh.ch'
+		}
 	];
 </script>
 

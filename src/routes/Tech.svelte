@@ -20,7 +20,11 @@
 		{ name: 'OpenShift', logo: openShift, link: 'https://www.openshift.com' },
 		{ name: 'Kubernetes', logo: kubernetes, link: 'https://kubernetes.io' },
 		{ name: 'Azure', logo: azure, link: 'https://azure.microsoft.com' },
-		{ name: 'Cloud Foundry', logo: cloudFoundry, link: 'https://www.cloudfoundry.org' }
+		{
+			name: 'Cloud Foundry',
+			logo: cloudFoundry,
+			link: 'https://www.cloudfoundry.org'
+		}
 	];
 </script>
 

@@ -23,7 +23,11 @@
 	}
 
 	const partners: Partner[] = [
-		{ name: 'AWS Partner Network', logo: aws, link: 'https://aws.amazon.com/partners/' },
+		{
+			name: 'AWS Partner Network',
+			logo: aws,
+			link: 'https://aws.amazon.com/partners/'
+		},
 		{ name: 'Red Hat', logo: redHat, link: 'https://redhat.com' },
 		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
 		{ name: 'Isovalent', logo: isovalent, link: 'https://isovalent.com' },

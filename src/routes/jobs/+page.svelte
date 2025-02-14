@@ -41,7 +41,7 @@
 <section class="section">
 	<div class="columns is-centered columns-section">
 		<div class="column is-two-thirds is-half-widescreen">
-			<h3 class="title is-2 is-spaced">Cloud Solutions Engineer 60-100%</h3>
+			<h3 class="title is-2 is-spaced">Cloud Solutions Engineer 80-100%</h3>
 			<p>
 				We are looking to extend our team of software engineers and architects. They each advise
 				multiple customers holistically on different technologies and architectures in various cloud
@@ -98,7 +98,7 @@
 				<li>A great team of fun people with diverse backgrounds</li>
 				<li>A competitive salary and great benefits</li>
 				<li>An awesome office in the heart of Bern</li>
-				<li>Employment level: 60-100%</li>
+				<li>Employment level: 80-100%</li>
 				<li>Employment date: Flexible</li>
 			</ul>
 			<br />
