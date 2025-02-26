@@ -25,7 +25,7 @@
 			},
 			{
 				"title": "Network Setup and Architecture",
-				"body": "MeteoSwiss’ network architecture is highly complex. The three main locations to be connected include the on-site infrastructure in Kloten and other locations, the CSCS in Lugano, and AWS data centers. In AWS, the Zurich (eu-central-2) and Frankfurt (eu-central-1) regions are primarily used. This results in a hybrid cloud setup capable of processing large data volumes efficiently and bidirectionally. bespinian plays a key role in designing and implementing this infrastructure."
+				"body": "MeteoSwiss’ network architecture is highly complex. The three main locations to be connected include the on-site infrastructure in Kloten and other locations, the CSCS in Lugano, and AWS data centers. In AWS, the Zurich (eu-central-2) and Frankfurt (eu-central-1) regions are primarily used. This results in a hybrid cloud setup capable of processing large data volumes efficiently and bidirectionally. bespinian plays a key role in designing and implementing this infrastructure, together with our strategic partner <a href=\"https://nuvibit.com/\" target=\"_blank\">Nuvibit</a>, who is designing and implementing the underlying AWS platform and networking layer based on <a href=\"https://nuvibit.com/de/nuvibit-terraform-collection/\" target=\"_blank\">NTC</a>."
 			}
 		]
 	},
@@ -33,6 +33,7 @@
 		"AWS",
 		"Swiss National Supercomputing Centre (CSCS)",
 		"Terraform",
+		"Nuvibit Terraform Collection (NTC)",
 		"OpenShift / Kubernetes",
 		"Jenkins",
 		"GitLab",

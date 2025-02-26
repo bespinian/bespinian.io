@@ -25,7 +25,7 @@
 			},
 			{
 				"title": "Netzwerksetup und -architektur",
-				"body": "Die Netzwerkarchitektur der MeteoSchweiz ist hochkomplex. Die drei Hauptstandorte, die es zu verbinden gilt, sind einerseits die bestehende on-site Infrastruktur in Kloten und anderen Standorten, andererseits das CSCS in Lugano und die Rechenzentren von AWS. In AWS werden dabei vor allem die Regionen Zürich (eu-central-2) und Frankfurt (eu-central-1) verwendet. So entsteht ein hybrides Cloud-Setup, das grosse Datenmengen kosteneffizient und multidirektional verarbeiten können muss. bespinian spielt eine Schlüsselrolle bei der Konzeption und Umsetzung dieser Infrastruktur."
+				"body": "Die Netzwerkarchitektur der MeteoSchweiz ist hochkomplex. Die drei Hauptstandorte, die es zu verbinden gilt, sind einerseits die bestehende on-site Infrastruktur in Kloten und anderen Standorten, andererseits das CSCS in Lugano und die Rechenzentren von AWS. In AWS werden dabei vor allem die Regionen Zürich (eu-central-2) und Frankfurt (eu-central-1) verwendet. So entsteht ein hybrides Cloud-Setup, das grosse Datenmengen kosteneffizient und multidirektional verarbeiten können muss. bespinian spielt eine Schlüsselrolle bei der Konzeption und Umsetzung dieser Infrastruktur, zusammen mit unserem strategischen Partner <a href=\"https://nuvibit.com/\" target=\"_blank\">Nuvibit</a>, der die zugrundeliegende AWS Plattform und den Netzwerklayer auf Basis von <a href=\"https://nuvibit.com/de/nuvibit-terraform-collection/\" target=\"_blank\">NTC</a> konzpipiert und umsetzt."
 			}
 		]
 	},
@@ -33,6 +33,7 @@
 		"AWS",
 		"Swiss National Supercomputing Centre (CSCS)",
 		"Terraform",
+		"Nuvibit Terraform Collection (NTC)",
 		"OpenShift / Kubernetes",
 		"Jenkins",
 		"GitLab",
