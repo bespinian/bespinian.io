@@ -9,7 +9,6 @@
 	import john from '$lib/images/team/john.webp';
 	import denis from '$lib/images/team/denis.webp';
 	import qasim from '$lib/images/team/qasim.webp';
-	import philippe from '$lib/images/team/philippe.webp';
 	import joel from '$lib/images/team/joel.webp';
 	import sandra from '$lib/images/team/sandra.webp';
 	import rika from '$lib/images/team/rika.webp';
@@ -68,13 +67,6 @@
 			portrait: qasim,
 			gitHub: 'qasimwarraich',
 			linkedIn: 'qasimwarraich'
-		},
-		{
-			tag: 'philippe',
-			name: 'Philippe Hässig',
-			portrait: philippe,
-			gitHub: 'neckhair',
-			linkedIn: 'philippehaessig'
 		},
 		{
 			tag: 'joel',
