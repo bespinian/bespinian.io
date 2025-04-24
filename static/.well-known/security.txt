@@ -1,0 +1,5 @@
+# Our security address
+Contact: mailto:security@bespinian.io
+
+# Our security policy
+Policy: https://github.com/bespinian/bespinian-member-guides/blob/main/security.md
