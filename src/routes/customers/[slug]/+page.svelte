@@ -2,6 +2,7 @@
 	import { _ } from 'svelte-i18n';
 	import { locale } from 'svelte-i18n';
 	import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
+	import type { Customer } from '$lib/customers/Customer.js';
 
 	let { data } = $props();
 
@@ -11,7 +12,7 @@
 		showNav = !showNav;
 	}
 
-	let customer = $derived($locale?.includes('de-') ? data.customer.de : data.customer.en);
+	let customer: Customer = $derived($locale?.includes('de-') ? data.customer.de : data.customer.en);
 	let logo = $derived($locale?.includes('de-') ? data.customer.logoDe : data.customer.logoEn);
 </script>
 
@@ -74,8 +75,18 @@
 				<p>{@html customer.background}</p>
 				<br />
 				<h3 class="title is-3">{$_('customer_story.goal')}</h3>
-				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-				<p>{@html customer.goal}</p>
+				<p>
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					{@html customer.goal}
+				</p>
+				{#if customer.goalItems}
+					<ul>
+						{#each customer.goalItems as goal (goal)}
+							<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+							<li>{@html goal}</li>
+						{/each}
+					</ul>
+				{/if}
 				<br />
 				<h3 class="title is-3">{$_('customer_story.contribution')}</h3>
 				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
