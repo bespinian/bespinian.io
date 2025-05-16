@@ -4,6 +4,7 @@ export interface Customer {
 	customer: string;
 	background: string;
 	goal: string;
+	goalItems?: string[];
 	contribution: {
 		intro: string;
 		topics: {

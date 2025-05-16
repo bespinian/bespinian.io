@@ -1,0 +1,53 @@
+{
+	"name": "PostFinance",
+	"title": "bespinian supports PostFinance in building an AWS platform",
+	"customer": "PostFinance is a leading bank in Switzerland with high standards for security, stability, and regulatory compliance according to FINMA requirements. As an integral part of the Swiss financial landscape, PostFinance offers a wide range of financial services for both private and business customers. In order to meet increasing demands and to further drive digitalization, PostFinance decided to extend its existing, locally operated IT infrastructure with a modern AWS-based cloud platform.",
+	"background": "<p>As a bank, PostFinance faces the challenge of providing a secure and highly available IT infrastructure that complies with the strict regulatory requirements of FINMA. Although the existing on-premise infrastructure, built with cloud-native technologies, meets these requirements, it reaches its limits in terms of scalability and flexibility for SaaS services. The introduction of an AWS cloud platform is intended not only to enable more dynamic resource usage, but also to provide access to new services within the cloud ecosystem. </p><p>Another important aspect of the project is supporting the application and business teams in migrating to the new platform. This includes the integration of existing solutions such as identity and access management systems, as well as adherence to strict security policies, such as the principle of least privilege. The goal was to build the platform in a way that it meets all regulatory and operational banking requirements while creating a future-ready foundation for the digital transformation of PostFinance.</p>",
+	"goal": "The goal of the project is to build a scalable, secure, and compliant AWS cloud platform that meets the following requirements:",
+	"goalItems": [
+		"Full automation of infrastructure provisioning using Infrastructure as Code",
+		"Clear cost control and cost transparency for individual PostFinance business areas and applications",
+		"Comprehensive monitoring, auditing, and tracing at the platform and application level via Amazon CloudWatch, as well as integration with existing monitoring solutions",
+		"Support for application and business teams in migrating to the new platform",
+		"Ensuring IAM compliance by adhering to the principle of least privilege"
+	],
+	"contribution": {
+		"intro": "bespinian plays a key role in the following areas:",
+		"topics": [
+			{
+				"title": "Infrastructure Automation",
+				"body": "One of the central requirements is provisioning AWS infrastructure using Infrastructure as Code. bespinian, together with PostFinance engineers, is implementing Terraform modules that enable automated and repeatable platform provisioning. This ensures that infrastructure can always be provisioned reproducibly, consistently, and error-free."
+			},
+			{
+				"title": "Identity and Access Management (IAM)",
+				"body": "The project requires the implementation of an IAM concept that consistently applies the principle of least privilege. bespinian is supporting the integration of existing identity and access management systems and ensures that all access is strictly controlled and meets FINMA’s security requirements."
+			},
+			{
+				"title": "Monitoring and Auditing",
+				"body": "bespinian is supporting the implementation of comprehensive monitoring based on Amazon CloudWatch. These solutions are configured to monitor both the platform and the applications running on it. In addition, existing PostFinance monitoring solutions are integrated into the new platform to ensure a unified overview of all systems."
+			},
+			{
+				"title": "Governance and Security",
+				"body": "Establishing robust security and governance structures is of central importance as part of the platform rollout. bespinian is supporting PostFinance in introducing Service Control Policies (SCPs) to enforce organization-wide guidelines for handling AWS resources. Furthermore, bespinian is assisting in the deployment of various AWS security services required to operate a FINMA-compliant platform. Another focus is the setup of a centralized Key Management Service (KMS) for the secure creation and management of encryption keys—a central component in protecting sensitive data within the platform."
+			},
+			{
+				"title": "AWS-Specific Coaching and Team Support",
+				"body": "bespinian is supporting PostFinance's application and business teams on their journey to the cloud. As part of day-to-day operations, the teams are introduced to the principles of AWS-native software architecture, security policies, and the technical aspects of platform usage."
+			}
+		]
+	},
+	"technologies": [
+		"AWS Services (EC2, EKS, S3, CloudWatch, etc.)",
+		"Terraform",
+		"Kubernetes",
+		"Amazon IAM",
+		"Existing monitoring solutions"
+	],
+	"quote": {
+		"body": "Thanks to bespinian’s solid expertise and our close collaboration, we were able to quickly build a secure and scalable AWS foundation. At the same time, our team was sustainably enabled to use AWS services independently and efficiently.",
+		"stakeholder": {
+			"name": "Roger Bigler",
+			"role": "Cluster Lead Deployment, Platform & Security"
+		}
+	}
+}
