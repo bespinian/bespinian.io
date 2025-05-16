@@ -21,6 +21,9 @@ import meteoswissDe from '$lib/customers/meteoswiss-de.json';
 import meteoswissEn from '$lib/customers/meteoswiss-en.json';
 import meteoswissLogoDe from '$lib/images/meteoswiss-de.webp';
 import meteoswissLogoEn from '$lib/images/meteoswiss-en.webp';
+import postfinanceDe from '$lib/customers/postfinance-de.json';
+import postfinanceEn from '$lib/customers/postfinance-en.json';
+import postfinanceLogo from '$lib/images/postfinance.webp';
 
 import type { PageLoad, EntryGenerator } from './$types';
 
@@ -31,7 +34,8 @@ export const entries: EntryGenerator = () => [
 	{ slug: 'xovis' },
 	{ slug: 'comet-group' },
 	{ slug: 'swisscom' },
-	{ slug: 'meteoswiss' }
+	{ slug: 'meteoswiss' },
+	{ slug: 'postfinance' }
 ];
 
 export const load: PageLoad = ({ params }) => {
@@ -97,6 +101,15 @@ export const load: PageLoad = ({ params }) => {
 					de: meteoswissDe,
 					logoDe: meteoswissLogoDe,
 					logoEn: meteoswissLogoEn
+				}
+			};
+		case 'postfinance':
+			return {
+				customer: {
+					en: postfinanceEn,
+					de: postfinanceDe,
+					logoDe: postfinanceLogo,
+					logoEn: postfinanceLogo
 				}
 			};
 		default:

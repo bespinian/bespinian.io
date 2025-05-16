@@ -16,6 +16,7 @@
 	import kalaidos from '$lib/images/kalaidos.webp';
 	import xovis from '$lib/images/xovis.svg';
 	import meteoswiss from '$lib/images/meteoswiss-de.webp';
+	import postfinance from '$lib/images/postfinance.webp';
 
 	interface Customer {
 		name: string;
@@ -34,6 +35,7 @@
 			link: '/customers/citech-sensors'
 		},
 		{ name: 'MeteoSchweiz', logo: meteoswiss, link: '/customers/meteoswiss' },
+		{ name: 'PostFinance', logo: postfinance, link: '/customers/postfinance' },
 		{ name: 'Comet Group', logo: cometGroup, link: '/customers/comet-group' },
 		{
 			name: 'SwissSign Group',
