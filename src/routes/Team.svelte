@@ -112,7 +112,7 @@
 			name: 'Norbert Gruszka',
 			portrait: norbert,
 			linkedIn: 'norbert-gruszka'
-		},
+		}
 	];
 </script>
 
