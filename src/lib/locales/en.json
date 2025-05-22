@@ -114,10 +114,6 @@
 			"catchphrase": "Cloud Tinkerer",
 			"body": "Software Engineer and programming language nerd with a passion for modern technologies and web development."
 		},
-		"rika": {
-			"catchphrase": "Cloud on Four Paws",
-			"body": "Big ball of fur. Professional office dog and mascot with a passion for physical security."
-		},
 		"noe": {
 			"catchphrase": "Cloud Analyst",
 			"body": "Software Engineer. Passionate troubleshooter, diving deep into complex systems to untangle and improve them."
@@ -125,6 +121,10 @@
 		"norbert": {
 			"catchphrase": "Cloud Farmer",
 			"body": "I'm just waiting for AI to take my job so I can start a cabbage farm. Until then, I'll keep working as a DevOps Engineer with a strong focus on Kubernetes and automation."
+		},
+		"rika": {
+			"catchphrase": "Cloud on Four Paws",
+			"body": "Big ball of fur. Professional office dog and mascot with a passion for physical security."
 		}
 	},
 	"blog": {

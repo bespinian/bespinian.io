@@ -103,15 +103,15 @@
 			gitHub: 'chickenbreeder'
 		},
 		{
-			tag: 'rika',
-			name: 'Rika',
-			portrait: rika
-		},
-		{
 			tag: 'norbert',
 			name: 'Norbert Gruszka',
 			portrait: norbert,
 			linkedIn: 'norbert-gruszka'
+		},
+		{
+			tag: 'rika',
+			name: 'Rika',
+			portrait: rika
 		}
 	];
 </script>
