@@ -121,6 +121,10 @@
 		"noe": {
 			"catchphrase": "Cloud Analyst",
 			"body": "Software Engineer. Passionate troubleshooter, diving deep into complex systems to untangle and improve them."
+		},
+		"norbert": {
+			"catchphrase": "Cloud Farmer",
+			"body": "Ich warte nur darauf, dass KI meinen Job übernimmt, damit ich eine Kohlfarm gründen kann. Bis dahin werde ich weiterhin als DevOps Engineer mit Schwerpunkt Kubernetes und Automatisierung arbeiten."
 		}
 	},
 	"blog": {
