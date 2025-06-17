@@ -16,6 +16,7 @@
 	import noe from '$lib/images/team/noe.webp';
 	import johannes from '$lib/images/team/johannes.webp';
 	import norbert from '$lib/images/team/norbert.webp';
+	import marc from '$lib/images/team/marc.webp';
 
 	interface Member {
 		tag: string;
@@ -107,6 +108,13 @@
 			name: 'Norbert Gruszka',
 			portrait: norbert,
 			linkedIn: 'norbert-gruszka'
+		},
+		{
+			tag: 'marc',
+			name: 'Marc Herren',
+			portrait: marc,
+			linkedIn: 'maherren',
+			gitHub: 'remmen-io'
 		},
 		{
 			tag: 'rika',
