@@ -17,6 +17,7 @@
 	import johannes from '$lib/images/team/johannes.webp';
 	import norbert from '$lib/images/team/norbert.webp';
 	import marc from '$lib/images/team/marc.webp';
+	import yannik from '$lib/images/team/yannik.webp';
 
 	interface Member {
 		tag: string;
@@ -115,6 +116,12 @@
 			portrait: marc,
 			linkedIn: 'maherren',
 			gitHub: 'remmen-io'
+		},
+		{
+			tag: 'yannik',
+			name: 'Yannik Dällenbach',
+			portrait: yannik,
+			gitHub: 'ioboi'
 		},
 		{
 			tag: 'rika',
