@@ -11,13 +11,13 @@
 	import qasim from '$lib/images/team/qasim.webp';
 	import joel from '$lib/images/team/joel.webp';
 	import sandra from '$lib/images/team/sandra.webp';
-	import rika from '$lib/images/team/rika.webp';
 	import rafael from '$lib/images/team/rafael.webp';
-	import noe from '$lib/images/team/noe.webp';
 	import johannes from '$lib/images/team/johannes.webp';
+	import noe from '$lib/images/team/noe.webp';
 	import norbert from '$lib/images/team/norbert.webp';
-	import marc from '$lib/images/team/marc.webp';
 	import yannik from '$lib/images/team/yannik.webp';
+	import marc from '$lib/images/team/marc.webp';
+	import rika from '$lib/images/team/rika.webp';
 
 	interface Member {
 		tag: string;
@@ -92,17 +92,17 @@
 			linkedIn: 'rafael-wicht-3a95b0166'
 		},
 		{
+			tag: 'johannes',
+			name: 'Johannes Karl',
+			portrait: johannes,
+			gitHub: 'chickenbreeder'
+		},
+		{
 			tag: 'noe',
 			name: 'Noe Thalheim',
 			portrait: noe,
 			gitHub: 'noeleont',
 			linkedIn: 'noe-thalheim-535440217'
-		},
-		{
-			tag: 'johannes',
-			name: 'Johannes Karl',
-			portrait: johannes,
-			gitHub: 'chickenbreeder'
 		},
 		{
 			tag: 'norbert',
@@ -111,17 +111,17 @@
 			linkedIn: 'norbert-gruszka'
 		},
 		{
+			tag: 'yannik',
+			name: 'Yannik Dällenbach',
+			portrait: yannik,
+			gitHub: 'ioboi'
+		},
+		{
 			tag: 'marc',
 			name: 'Marc Herren',
 			portrait: marc,
 			linkedIn: 'maherren',
 			gitHub: 'remmen-io'
-		},
-		{
-			tag: 'yannik',
-			name: 'Yannik Dällenbach',
-			portrait: yannik,
-			gitHub: 'ioboi'
 		},
 		{
 			tag: 'rika',
