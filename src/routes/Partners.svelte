@@ -15,7 +15,6 @@
 	import timKoko from '$lib/images/tim-koko.svg';
 	import begasoft from '$lib/images/begasoft.svg';
 	import nuvibit from '$lib/images/nuvibit.webp';
-	import friendlyNerds from '$lib/images/friendly-nerds.avif';
 
 	interface Partner {
 		name: string;
@@ -40,7 +39,6 @@
 		{ name: 'SPOUD', logo: spoud, link: 'https://www.spoud.io' },
 		{ name: 'BEGASOFT', logo: begasoft, link: 'https://www.begasoft.ch/' },
 		{ name: 'acend', logo: acend, link: 'https://acend.ch' },
-		{ name: 'Friendly Nerds', logo: friendlyNerds, link: 'https://www.friendlynerds.ch/' },
 		{
 			name: 'swiss digital services',
 			logo: swissDigitalServices,
