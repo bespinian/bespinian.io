@@ -2,7 +2,6 @@
 	import { _ } from 'svelte-i18n';
 	import Carousel from 'svelte-carousel';
 	import { browser } from '$app/environment';
-	import acend from '$lib/images/acend.webp';
 	import swisscom from '$lib/images/swisscom.webp';
 	import vshn from '$lib/images/vshn.svg';
 	import aws from '$lib/images/aws.webp';
@@ -15,6 +14,7 @@
 	import timKoko from '$lib/images/tim-koko.svg';
 	import begasoft from '$lib/images/begasoft.svg';
 	import nuvibit from '$lib/images/nuvibit.webp';
+	import steppingStone from '$lib/images/stepping-stone.svg';
 
 	interface Partner {
 		name: string;
@@ -29,16 +29,16 @@
 			link: 'https://aws.amazon.com/partners/'
 		},
 		{ name: 'Red Hat', logo: redHat, link: 'https://redhat.com' },
+		{ name: 'VSHN', logo: vshn, link: 'https://vshn.ch' },
 		{ name: 'Swisscom', logo: swisscom, link: 'https://www.swisscom.com' },
 		{ name: 'Isovalent', logo: isovalent, link: 'https://isovalent.com' },
 		{ name: 'Puzzle ITC', logo: puzzle, link: 'https://puzzle.ch' },
-		{ name: 'VSHN', logo: vshn, link: 'https://vshn.ch' },
 		{ name: 'Nuvibit', logo: nuvibit, link: 'https://nuvibit.com/' },
 		{ name: 'Peak Scale', logo: peakscale, link: 'https://peakscale.ch' },
 		{ name: 'tim&koko', logo: timKoko, link: 'https://tim-koko.ch' },
 		{ name: 'SPOUD', logo: spoud, link: 'https://www.spoud.io' },
 		{ name: 'BEGASOFT', logo: begasoft, link: 'https://www.begasoft.ch/' },
-		{ name: 'acend', logo: acend, link: 'https://acend.ch' },
+		{ name: 'stepping stone', logo: steppingStone, link: 'https://www.stepping-stone.ch/' },
 		{
 			name: 'swiss digital services',
 			logo: swissDigitalServices,
