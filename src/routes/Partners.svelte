@@ -59,7 +59,7 @@
 						{#each partners as partner (partner.name)}
 							<div class="has-text-centered">
 								<div class="has-image-centered customer-logo">
-									<figure class="image">
+									<figure class="image" style="width:120px">
 										<img src={partner.logo} alt={partner.name} width="120" height="120" />
 									</figure>
 									<br />
