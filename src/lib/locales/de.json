@@ -86,10 +86,6 @@
 			"catchphrase": "Cloud Whisperer",
 			"body": "DevOps und Cloud Solution Architektin. Begeistert von Automatisierung. Spezialisiert auf Systemintegration, CI/CD und Cloud-Native Lösungen."
 		},
-		"john": {
-			"catchphrase": "Cloud Wrangler",
-			"body": "Software Architekt. Spezialisiert auf Agile Prozesse, CI/CD Lösungen, Infrastructure as Code und Cloud-Native Entwicklung."
-		},
 		"denis": {
 			"catchphrase": "Cloud Composer",
 			"body": "Software Engineer. Spezialisiert auf verteilte Systeme, Microservices, event-basierte Architekturen und Container Technologien."

@@ -6,7 +6,6 @@
 	import mathis from '$lib/images/team/mathis.webp';
 	import lena from '$lib/images/team/lena.webp';
 	import paulina from '$lib/images/team/paulina.webp';
-	import john from '$lib/images/team/john.webp';
 	import denis from '$lib/images/team/denis.webp';
 	import qasim from '$lib/images/team/qasim.webp';
 	import joel from '$lib/images/team/joel.webp';
@@ -49,13 +48,6 @@
 			name: 'Paulina Grochal',
 			portrait: paulina,
 			linkedIn: 'paulina-grochal'
-		},
-		{
-			tag: 'john',
-			name: 'John Hutchison',
-			portrait: john,
-			gitHub: 'cldmstr',
-			linkedIn: 'john-m-hutchison'
 		},
 		{
 			tag: 'denis',

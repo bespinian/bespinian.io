@@ -86,10 +86,6 @@
 			"catchphrase": "Cloud Whisperer",
 			"body": "DevOps and Cloud Solutions Architect. Automation enthusiast specialized in system integration, CI/CD and cloud-native solutions."
 		},
-		"john": {
-			"catchphrase": "Cloud Wrangler",
-			"body": "Software Architect. Specialized in agile processes, CI/CD solutions, infrastructure as code and cloud-native development."
-		},
 		"denis": {
 			"catchphrase": "Cloud Composer",
 			"body": "Software Engineer. Specialized in distributed systems, microservices, event-driven architecture and container technologies."
@@ -123,7 +119,7 @@
 			"body": "I'm just waiting for AI to take my job so I can start a cabbage farm. Until then, I'll keep working as a DevOps Engineer with a strong focus on Kubernetes and automation."
 		},
 		"marc": {
-			"catchphrase": "Platform wizard 🧙‍♂️",
+			"catchphrase": "Platform Wizard 🧙‍♂️",
 			"body": "Kubernetes-specialist who makes complex DevSecOps challenges disappear. I conjure secure, scalable platforms while exploring AI-enhanced automation. From container orchestration to CI/CD-spells, I help teams master the art of platform engineering."
 		},
 		"yannik": {

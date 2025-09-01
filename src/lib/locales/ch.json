@@ -86,10 +86,6 @@
 			"catchphrase": "Cloud Whisperer",
 			"body": "DevOps u Cloud Solution Architektin. Begeisteret vo Outomatisierig. Spezialisiert uf Systemintegration, CI/CD u Cloud-Native Lösige."
 		},
-		"john": {
-			"catchphrase": "Cloud Wrangler",
-			"body": "Wouche Büezer. Vou wändig u wouchegängig. Spezialischt für Sofort Lifer Prozäss, Infrastruktur aus Beschribig u Wouche Bouerei."
-		},
 		"denis": {
 			"catchphrase": "Cloud Composer",
 			"body": "Software Engineer. Spezialisiert uf verteilti System, Microservices, event-driven Architekture u Container Technologie."
@@ -123,7 +119,7 @@
 			"body": "I warte nur druf, dass KI mi Job übernimmt, dermit i e Chohlfarm cha gründe. Bis denn wirdeni witerhin als DevOps Engineer mit Schwärpunkt Kubernetes u Outomatisierig bügle."
 		},
 		"marc": {
-			"catchphrase": "Platform wizard 🧙‍♂️",
+			"catchphrase": "Platform Wizard 🧙‍♂️",
 			"body": "Kubernetes-Spezialist, wo komplexi DevSecOps-Herusforderige laht lah verschwinde. I zoubere sicheri, skalierbari Plattforme u erforsche KI-gstützti Outomatisierig. Vo dr Container-Orchestrierig bis zu CI/CD-Zouber hiufeni Teams, d Kunst vom Plattform-Engineering z meistere."
 		},
 		"yannik": {
