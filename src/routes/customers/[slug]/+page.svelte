@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 	import { locale } from 'svelte-i18n';
+	import { resolve } from '$app/paths';
 	import LanguageSwitcher from '$lib/LanguageSwitcher.svelte';
 	import type { Customer } from '$lib/customers/Customer.js';
 
@@ -37,7 +38,7 @@
 	</div>
 	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav}>
 		<div class="navbar-end">
-			<a href="/" class="navbar-item">Home</a>
+			<a href={resolve('/')} class="navbar-item">Home</a>
 			<LanguageSwitcher />
 		</div>
 	</div>

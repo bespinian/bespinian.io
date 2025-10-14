@@ -43,8 +43,8 @@
 		<div class="column is-two-thirds is-half-widescreen">
 			<style>
 				.separateline {
-					border-top: 1px solid #000; /* SCHWARZE LINIE */
-					margin: 1rem 0; /* Abstand oberhalb und unterhalb */
+					border-top: 1px solid #000;
+					margin: 1rem 0;
 				}
 			</style>
 			<div>
@@ -56,8 +56,8 @@
 			<div class="separateline"></div>
 			<style>
 				.separateline {
-					border-top: 1px solid #000; /* SCHWARZE LINIE */
-					margin: 1rem 0; /* Abstand oberhalb und unterhalb */
+					border-top: 1px solid #000;
+					margin: 1rem 0;
 				}
 			</style>
 			<div>
@@ -79,20 +79,15 @@
 				<br />
 				<h4 class="title is-4">Merci im Voraus für die Erstellung der Grafik &hearts;</h4>
 				<style>
-					/* Nur für Listen mit der Klasse .custom-list */
 					.custom-list {
-						list-style-type: disc; /*
-            Bulletpoints */
-						padding-left: 20px; /*
-            Einrückung der Liste */
+						list-style-type: disc;
+						padding-left: 20px;
 					}
 					.custom-list li {
-						margin-bottom: 0.5rem; /*
-            Abstand zwischen den Einträgen */
+						margin-bottom: 0.5rem;
 					}
 					.custom-list li strong {
-						font-weight: bold; /*
-            Fettgedruckter Text */
+						font-weight: bold;
 					}
 				</style>
 				<ul class="custom-list">
@@ -158,10 +153,8 @@
 				<p>Gemeinsam schaffen wir:</p>
 				<br />
 				<style>
-					/* Nur für Listen mit der Klasse .custom-list */
 					.custom-list {
-						list-style-type: disc; /*
-                Bulletpoints */
+						list-style-type: disc;
 					}
 				</style>
 

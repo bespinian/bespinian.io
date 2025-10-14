@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
+	import { resolve } from '$app/paths';
 
 	let showNav = $state(false);
 
@@ -30,8 +31,8 @@
 	</div>
 	<div id="navbar-menu" class="navbar-menu" class:is-active={showNav}>
 		<div class="navbar-end">
-			<a href="/" class="navbar-item">Home</a>
-			<a href="/jobs" class="navbar-item">{$_('jobs.nav_item')}</a>
+			<a href={resolve('/')} class="navbar-item">Home</a>
+			<a href={resolve('/jobs')} class="navbar-item">{$_('jobs.nav_item')}</a>
 		</div>
 	</div>
 </nav>
