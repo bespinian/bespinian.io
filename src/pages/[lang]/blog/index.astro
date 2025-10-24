@@ -1,0 +1,43 @@
+---
+import CollectionPage from "../../../layouts/CollectionPage.astro";
+import BlogCard from "../../../components/BlogCard.astro";
+import { getCollection } from "astro:content";
+import { useI18n } from "../../../i18n/utils";
+import { getLanguagePaths } from "../../../lib/paths";
+import { sortByDateDesc } from "../../../lib/formatters";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const blogPosts = await getCollection("blog");
+const sortedPosts = sortByDateDesc(blogPosts);
+
+const description =
+  "Insights, tutorials, and updates from the bespinian team on cloud-native technologies, Kubernetes, and modern software development.";
+---
+
+<CollectionPage
+  pageTitle="bespinian Blog"
+  title={t("blog.title")}
+  subtitle={t("blog.subtitle")}
+  {description}
+  {lang}
+  isEmpty={sortedPosts.length === 0}
+  emptyMessage={t("blog.empty")}
+>
+  {
+    sortedPosts.map((post) => (
+      <BlogCard
+        title={post.data.title}
+        excerpt={post.data.excerpt}
+        author={post.data.author}
+        date={post.data.date}
+        tags={post.data.tags}
+        slug={post.slug}
+      />
+    ))
+  }
+</CollectionPage>

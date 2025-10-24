@@ -1,0 +1,194 @@
+---
+import { Image } from "astro:assets";
+import ContentDetailPage from "../../../layouts/ContentDetailPage.astro";
+import { getCollectionStaticPaths } from "../../../lib/paths";
+import { useI18n } from "../../../i18n/utils";
+import { formatDate } from "../../../lib/formatters";
+
+export async function getStaticPaths() {
+  return getCollectionStaticPaths("customers");
+}
+
+const { customer } = Astro.props;
+const { Content } = await customer.render();
+
+const { lang, translatePath } = useI18n(Astro.url);
+
+const formattedDate = formatDate(customer.data.date);
+
+const title = customer.data.title;
+const description = `Learn how ${customer.data.company} achieved success with bespinian's support consulting. ${customer.data.results.join(". ")}.`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+---
+
+<ContentDetailPage
+  pageTitle={`${title} | Customers`}
+  {title}
+  {description}
+  {lang}
+  backLink={{
+    href: translatePath("/customers"),
+    text: "← Back to Customers",
+  }}
+  meta={[
+    { label: customer.data.company },
+    { label: formattedDate, datetime: customer.data.date.toISOString() },
+  ]}
+  seoProps={{
+    article: true,
+    publishedTime: customer.data.date.toISOString(),
+    image: customer.data.logo.src,
+    imageAlt: `${customer.data.company} logo`,
+  }}
+  structuredData={{
+    type: "Article",
+    headline: customer.data.title,
+    description: description,
+    datePublished: customer.data.date.toISOString(),
+    author: "bespinian",
+    image: customer.data.logo.src,
+    url: canonicalUrl,
+  }}
+>
+  <div slot="header-before" class="logo-container">
+    <Image
+      src={customer.data.logo}
+      alt={customer.data.company}
+      class="company-logo"
+    />
+  </div>
+
+  <blockquote>
+    <p><em>“{customer.data.quote}”</em></p>
+    <div class="author-info">
+      {
+        customer.data.authorImage && (
+          <Image
+            src={customer.data.authorImage}
+            alt={customer.data.authorName}
+            class="author-portrait"
+          />
+        )
+      }
+      <p>
+        <strong>{customer.data.authorName}</strong>, {customer.data.authorTitle}
+      </p>
+    </div>
+  </blockquote>
+
+  <Content />
+
+  <div slot="footer" class="results-highlight">
+    <h2>Key Results</h2>
+    <ul class="results-list">
+      {customer.data.results.map((result: string) => <li>{result}</li>)}
+    </ul>
+  </div>
+  <p slot="footer" class="date">{formattedDate}</p>
+</ContentDetailPage>
+
+<style>
+  .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .company-logo {
+    width: 100%;
+    max-height: 10rem;
+    margin: var(--spacing-xl);
+  }
+
+  .results-highlight {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .results-highlight h2 {
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .results-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  .results-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+
+  .date {
+    width: 100%;
+    text-align: right;
+    color: var(--color-gray);
+  }
+
+  /* Customer-specific blockquote styles */
+  :global(.content-body blockquote) {
+    background: var(--color-blockquote-bg);
+    padding: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  :global(.content-body blockquote p) {
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.content-body blockquote .author-info) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  :global(.content-body blockquote .author-portrait) {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  :global(.content-body blockquote .author-info p) {
+    margin-bottom: 0;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--color-gray);
+  }
+
+  @media (max-width: 48rem) {
+    .results-highlight {
+      padding: 1.5rem;
+    }
+
+    .results-list {
+      grid-template-columns: 1fr;
+    }
+
+    :global(.content-body blockquote) {
+      font-size: 1.125rem;
+    }
+  }
+</style>

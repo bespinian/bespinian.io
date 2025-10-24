@@ -1,0 +1,72 @@
+---
+import ContentDetailPage from "../../../layouts/ContentDetailPage.astro";
+import { getCollectionStaticPaths } from "../../../lib/paths";
+import { useI18n } from "../../../i18n/utils";
+import { formatDate } from "../../../lib/formatters";
+
+export async function getStaticPaths() {
+  return getCollectionStaticPaths("blog");
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const { lang, translatePath } = useI18n(Astro.url);
+
+const formattedDate = formatDate(post.data.date);
+
+const title = `${post.data.title} | Blog`;
+const description =
+  post.data.excerpt || `Read ${post.data.title} by ${post.data.author}`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+---
+
+<ContentDetailPage
+  pageTitle={title}
+  title={post.data.title}
+  {description}
+  {lang}
+  backLink={{ href: translatePath("/blog"), text: "← Back to Blog" }}
+  meta={[
+    { label: post.data.author },
+    { label: formattedDate, datetime: post.data.date.toISOString() },
+  ]}
+  seoProps={{
+    article: true,
+    publishedTime: post.data.date.toISOString(),
+    author: post.data.author,
+    tags: post.data.tags,
+  }}
+  structuredData={{
+    type: "BlogPosting",
+    headline: post.data.title,
+    description: description,
+    datePublished: post.data.date.toISOString(),
+    author: post.data.author,
+    tags: post.data.tags,
+    url: canonicalUrl,
+  }}
+>
+  <div slot="header-after" class="tags">
+    {post.data.tags.map((tag: string) => <span class="tag">{tag}</span>)}
+  </div>
+
+  <Content />
+</ContentDetailPage>
+
+<style>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background: #f0f0f0;
+    color: var(--color-gray);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+</style>

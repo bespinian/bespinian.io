@@ -1,0 +1,82 @@
+---
+import Link from "../components/Link.astro";
+import cloudSmall from "../assets/cloud-small.svg";
+import cloudLarge from "../assets/cloud-large.svg";
+import cloudDarkMedium from "../assets/cloud-dark-medium.svg";
+import { useI18n } from "../i18n/utils";
+
+const { t, translatePath } = useI18n(Astro.url);
+
+interface Props {
+  service: string;
+}
+const { service } = Astro.props;
+---
+
+<section id="container">
+  <h2>{t("cta.interested")} {service}?</h2>
+  <Link href={translatePath("/contact")} large center secondary>
+    {t("cta.contactUs")}
+  </Link>
+  <img id="cloud-small" src={cloudSmall.src} alt="Cloud" />
+  <img id="cloud-large" src={cloudLarge.src} alt="Cloud" />
+  <img id="cloud-dark-medium" src={cloudDarkMedium.src} alt="Cloud" />
+</section>
+
+<style>
+  #container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 2rem;
+    text-align: center;
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    overflow: hidden;
+  }
+
+  h2 {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 42rem;
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 100;
+  }
+
+  #cloud-small {
+    position: absolute;
+    bottom: -2rem;
+    left: -2rem;
+    max-height: 45%;
+    max-width: calc(50vw - 21rem);
+    z-index: 2;
+  }
+
+  #cloud-large {
+    position: absolute;
+    top: 4rem;
+    right: -2rem;
+    max-height: 35%;
+    max-width: calc(50vw - 21rem);
+    z-index: 2;
+  }
+
+  #cloud-dark-medium {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    max-height: 40%;
+    max-width: 60%;
+    z-index: 1;
+  }
+
+  @media (min-width: 48rem) {
+    h2 {
+      margin: 6rem 2rem;
+      font-size: 4rem;
+    }
+  }
+</style>

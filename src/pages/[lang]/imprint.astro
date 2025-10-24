@@ -1,0 +1,67 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SEO from "../../components/SEO.astro";
+import Title from "../../components/Title.astro";
+import { useI18n } from "../../i18n/utils";
+import { getLanguagePaths } from "../../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("imprint.title");
+const description = t("imprint.description");
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <Title {title} {description} />
+
+  <div class="imprint-content">
+    <section>
+      <h2>{t("imprint.contact")}</h2>
+      <p>{t("imprint.email")}</p>
+    </section>
+
+    <section>
+      <h2>{t("imprint.headquarters")}</h2>
+      <p>{t("imprint.headquarters.address")}</p>
+    </section>
+
+    <section>
+      <h2>{t("imprint.bern")}</h2>
+      <p>{t("imprint.bern.address")}</p>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .imprint-content {
+    max-width: 50rem;
+    min-height: 60vh;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  p {
+    line-height: 1.6;
+  }
+</style>

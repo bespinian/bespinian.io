@@ -1,0 +1,19 @@
+---
+import HomePage from "../components/HomePage.astro";
+import { getLanguagePaths } from "../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+---
+
+<HomePage />
+
+<script>
+  // Detect browser language and redirect German users
+  const browserLang = navigator.language.split("-")[0]; // e.g., 'de' from 'de-DE'
+
+  if (browserLang === "de" && window.location.pathname === "/") {
+    window.location.href = "/de/";
+  }
+</script>

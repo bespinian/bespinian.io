@@ -1,0 +1,56 @@
+---
+import ValueCard from "./ValueCard.astro";
+import values from "../data/values.ts";
+import { useI18n } from "../i18n/utils";
+
+const { t } = useI18n(Astro.url);
+---
+
+<section>
+  <h2>{t("values.title")}</h2>
+  <div class="row">
+    <div class="grid">
+      {
+        values.map((v, i) => (
+          <ValueCard
+            index={i + 1}
+            title={v.title}
+            description={v.description}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    padding: 4rem 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 4rem 0;
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  @media (min-width: 32rem) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

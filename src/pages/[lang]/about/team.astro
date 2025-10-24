@@ -1,0 +1,60 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import SEO from "../../../components/SEO.astro";
+import MemberCard from "../../../components/MemberCard.astro";
+import Title from "../../../components/Title.astro";
+import members from "../../../data/members.ts";
+import { useI18n } from "../../../i18n/utils";
+import { getLanguagePaths } from "../../../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("about.team.title");
+const description = t("about.team.subtitle");
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <Title {title} subtitle={description} />
+
+  <main>
+    {members.map((member) => <MemberCard {member} />)}
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+
+  @media (min-width: 32rem) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 60rem) {
+    main {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (min-width: 100rem) {
+    main {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+</style>

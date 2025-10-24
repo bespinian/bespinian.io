@@ -1,0 +1,101 @@
+---
+import cloudCity from "../assets/cloud-city.svg";
+import Link from "./Link.astro";
+import { useI18n } from "../i18n/utils";
+
+const { t, translatePath } = useI18n(Astro.url);
+---
+
+<section id="container">
+  <h1>{t("hero.title1")}<br />{t("hero.title2")}</h1>
+  <div id="cta">
+    <p>{t("hero.description")}</p>
+    <Link href={translatePath("/workshop")} large secondary
+      >{t("cta.freeWorkshop")}</Link
+    >
+  </div>
+  <img id="cloud-city" src={cloudCity.src} alt="Cloud City" />
+</section>
+
+<style>
+  #container {
+    position: relative;
+    padding: 2rem;
+    height: calc(100vh - 11rem);
+    min-height: 38rem;
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+  }
+
+  h1 {
+    width: 100%;
+    max-width: 86rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    z-index: 100;
+  }
+
+  #cta {
+    position: absolute;
+    bottom: 2rem;
+    width: calc(100vw - 4rem);
+    max-width: 42rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    z-index: 100;
+  }
+
+  #cta p {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  #cloud-city {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 70%;
+    max-width: calc(100vw - 48rem);
+    opacity: 0.7;
+    z-index: 1;
+  }
+
+  @media (min-width: 32rem) {
+    h1 {
+      margin-top: 2rem;
+      font-size: 4rem;
+    }
+
+    #cta {
+      max-width: 48rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    #cloud-city {
+      display: block;
+    }
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    #cta {
+      max-width: 48rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (min-width: 100rem) {
+    h1 {
+      font-size: 6rem;
+    }
+
+    #cta {
+      max-width: 60rem;
+      font-size: 2rem;
+    }
+  }
+</style>

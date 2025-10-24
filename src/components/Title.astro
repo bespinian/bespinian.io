@@ -1,0 +1,78 @@
+---
+import cloudLarge from "../assets/cloud-large.svg";
+import cloudDarkMedium from "../assets/cloud-dark-medium.svg";
+
+const { title, subtitle } = Astro.props;
+---
+
+<section id="container">
+  <h1>{title}</h1>
+  <p>{subtitle}</p>
+  <img id="cloud-dark-medium" src={cloudDarkMedium.src} alt="Cloud" />
+  <img id="cloud-large" src={cloudLarge.src} alt="Cloud" />
+</section>
+
+<style>
+  #container {
+    position: relative;
+    padding: 2rem;
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    overflow: hidden;
+  }
+
+  h1 {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    max-width: 76rem;
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 100;
+  }
+
+  p {
+    position: relative;
+    width: 100%;
+    max-width: 42rem;
+    font-size: 1.3rem;
+    z-index: 100;
+  }
+
+  #cloud-large {
+    position: absolute;
+    top: 4rem;
+    right: -2rem;
+    max-height: 35%;
+    max-width: calc(100vw - 78rem);
+    z-index: 2;
+  }
+
+  #cloud-dark-medium {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    max-height: 40%;
+    max-width: 60%;
+    z-index: 1;
+  }
+
+  @media (min-width: 48rem) {
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 8rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 12rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+</style>

@@ -1,0 +1,47 @@
+---
+import CollectionPage from "../../../layouts/CollectionPage.astro";
+import CustomerCard from "../../../components/CustomerCard.astro";
+import { getCollection } from "astro:content";
+import { useI18n } from "../../../i18n/utils";
+import { getLanguagePaths } from "../../../lib/paths";
+import { sortByDateDesc } from "../../../lib/formatters";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const customers = await getCollection("customers");
+const sortedCustomers = sortByDateDesc(customers);
+
+const title = t("customers.page.title");
+const description = t("customers.page.subtitle");
+---
+
+<CollectionPage
+  pageTitle={title}
+  {title}
+  subtitle={description}
+  {description}
+  {lang}
+  isEmpty={sortedCustomers.length === 0}
+  emptyMessage={t("customers.empty")}
+>
+  {
+    sortedCustomers.map(({ data, slug }) => (
+      <CustomerCard {...data} slug={slug} />
+    ))
+  }
+  <p class="and-more">{t("customers.andMore")}</p>
+</CollectionPage>
+
+<style>
+  .and-more {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--color-gray);
+    margin-top: var(--spacing-lg);
+  }
+</style>

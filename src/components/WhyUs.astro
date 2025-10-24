@@ -1,0 +1,73 @@
+---
+import Link from "./Link.astro";
+import { useI18n } from "../i18n/utils";
+
+const { t, translatePath } = useI18n(Astro.url);
+---
+
+<section>
+  <h2>{t("whyus.belief")}</h2>
+  <div class="columns">
+    <h3>{t("whyus.title")}</h3>
+    <div id="text-container">
+      <p>
+        {t("whyus.description1")}<br /><br />{t("whyus.description2")}<br /><br
+        />{t("whyus.description3")}
+      </p>
+      <Link href={translatePath("/about")}>{t("cta.learnAboutUs")}</Link>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    padding: 6rem 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    max-width: 60rem;
+  }
+
+  h3,
+  p {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
+
+  .columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #text-container {
+    max-width: 55rem;
+  }
+
+  @media (min-width: 48rem) {
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .columns {
+      flex-direction: row;
+    }
+
+    h3,
+    p {
+      font-size: 1.6rem;
+    }
+  }
+</style>

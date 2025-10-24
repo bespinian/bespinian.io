@@ -1,0 +1,46 @@
+:root {
+  /* Colors */
+  --color-primary: #3273dc;
+  --color-secondary: #fff;
+  --color-gray: #666;
+  --color-text-dark: #333;
+  --color-text-light: #ccc;
+  --color-tag-bg: #f0f0f0;
+  --color-background-primary: #275fbd;
+  --color-background-secondary: #ffffff;
+  --color-background-tertiary: #e9f2ff;
+  --color-background-gray: #efefef;
+  --color-blockquote-bg: #f9f9f9;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-2xl: 8rem;
+
+  /* Card dimensions */
+  --card-height: calc(100% - 4rem);
+  --card-border-radius: 0.8rem;
+
+  /* Content widths */
+  --content-max-width: 800px;
+  --content-wide-max-width: 1000px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Shared card hover effect */
+.card-hover-effect {
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

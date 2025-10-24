@@ -1,0 +1,87 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import SEO from "../../../components/SEO.astro";
+import Title from "../../../components/Title.astro";
+import technologies from "../../../data/technologies.ts";
+import { useI18n } from "../../../i18n/utils";
+import { getLanguagePaths } from "../../../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("about.technologies.title");
+const description = t("about.technologies.description");
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <Title {title} subtitle={description} />
+
+  <main>
+    {
+      technologies.map((tech) => (
+        <div class="tech">
+          <div class="logo-container">
+            <img src={tech.logo.src} alt={tech.name} />
+          </div>
+          <span>{tech.name}</span>
+        </div>
+      ))
+    }
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    color: var(--color-gray);
+  }
+
+  .logo-container {
+    height: max-content;
+    margin: auto;
+  }
+
+  img {
+    width: 100%;
+    max-width: 8rem;
+  }
+
+  @media (min-width: 32rem) {
+    main {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+      padding: 6rem 2rem;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    main {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    main {
+      gap: 4rem;
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+</style>

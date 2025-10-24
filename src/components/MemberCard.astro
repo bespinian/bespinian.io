@@ -1,0 +1,115 @@
+---
+import { Image } from "astro:assets";
+import SocialIcons from "./SocialIcons.astro";
+
+const { member } = Astro.props;
+---
+
+<article class="card-container">
+  <div class="card-inner">
+    <div class="card-front">
+      <Image src={member.image} alt={member.name} class="portrait" />
+
+      <div class="body">
+        <h3>{member.name}</h3>
+        <p class="subtitle">{member.title}</p>
+        <SocialIcons linkedIn={member.linkedIn} gitHub={member.gitHub} />
+      </div>
+    </div>
+
+    <div class="card-back">
+      <div class="body">
+        <h3 class="back-title">{member.name}</h3>
+        <p class="subtitle">{member.title}</p>
+        <p class="description">{member.description}</p>
+        <SocialIcons linkedIn={member.linkedIn} gitHub={member.gitHub} />
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .card-container {
+      height: 100%;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .card-container:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      width: 100%;
+      height: auto;
+      backface-visibility: hidden;
+      background-color: var(--color-background-tertiary);
+      border-radius: 0.8rem;
+    }
+
+    .card-front {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .back-title {
+      padding-top: 2rem;
+    }
+
+    .portrait {
+      width: 100%;
+      height: auto;
+      border-radius: 0.8rem 0.8rem 0 0;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .body {
+      padding: 1.5rem;
+    }
+
+    .card-front .body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-back .body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</article>

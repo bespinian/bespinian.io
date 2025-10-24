@@ -1,0 +1,142 @@
+---
+import { Image } from "astro:assets";
+import { useI18n } from "../i18n/utils";
+
+interface Props {
+  title: string;
+  slug: string;
+  company: string;
+  logo: ImageMetadata;
+  quote: string;
+  authorName: string;
+  authorTitle: string;
+  authorImage?: ImageMetadata;
+}
+
+const {
+  title,
+  slug,
+  company,
+  logo,
+  quote,
+  authorName,
+  authorTitle,
+  authorImage,
+} = Astro.props;
+
+const { translatePath } = useI18n(Astro.url);
+---
+
+<a href={translatePath(`/customers/${slug}`)}>
+  <article class="card-hover-effect">
+    <div class="image-container">
+      <Image src={logo} alt={company} class="company-logo" />
+    </div>
+    <h3>{title}</h3>
+    <div class="quote">
+      <p>"{quote}"</p>
+    </div>
+    <div class="author">
+      {
+        authorImage && (
+          <Image src={authorImage} alt={authorName} class="author-portrait" />
+        )
+      }
+      <div class="author-info">
+        <p class="author-name">{authorName}</p>
+        <p class="author-title">{authorTitle}</p>
+      </div>
+    </div>
+  </article>
+
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    article {
+      padding: var(--spacing-md);
+      border-radius: var(--card-border-radius);
+      height: var(--card-height);
+      background-color: var(--color-secondary);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 5rem;
+      margin: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .company-logo {
+      max-height: 100%;
+      max-width: 80%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: var(--color-primary);
+      margin-bottom: 2rem;
+    }
+
+    .quote {
+      flex: 1;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .quote p {
+      font-style: italic;
+      color: var(--color-text-dark);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .author {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .author-portrait {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .author-info {
+      flex: 1;
+    }
+
+    .author-name {
+      font-weight: bold;
+      color: var(--color-primary);
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .author-title {
+      color: var(--color-gray);
+      margin: 0.25rem 0 0 0;
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 32rem) {
+      .quote {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</a>

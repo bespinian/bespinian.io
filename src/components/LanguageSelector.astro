@@ -1,0 +1,118 @@
+---
+import { languages } from "../i18n/ui";
+import { removeLanguagePrefix } from "../lib/paths";
+
+interface Props {
+  currentLang: string;
+  currentPath: string;
+  mobile?: boolean;
+}
+
+const { currentLang, currentPath, mobile = false } = Astro.props;
+const id = mobile ? "lang-selector-mobile" : "lang-selector";
+---
+
+<div class="lang-dropdown">
+  <label for={id} style="display:none">Language</label>
+  <select id={id} class="lang-select">
+    {
+      Object.entries(languages).map(([langCode, langName]) => (
+        <option
+          value={langCode}
+          selected={currentLang === langCode}
+          data-path={`/${langCode}${removeLanguagePrefix(currentPath, currentLang)}`}
+          data-slug={langCode}
+          data-full-name={langName}
+        >
+          {langCode}
+        </option>
+      ))
+    }
+  </select>
+</div>
+
+<script>
+  function setupLanguageSelector(selectorId: string) {
+    const selector = document.getElementById(selectorId) as HTMLSelectElement;
+    if (!selector) return;
+
+    // Show slug for selected option, full names in dropdown
+    const showSlug = () => {
+      const selectedOption = selector.options[selector.selectedIndex];
+      const slug = selectedOption.getAttribute("data-slug");
+      if (slug) {
+        selectedOption.textContent = slug.toUpperCase();
+      }
+    };
+
+    const showFullNames = () => {
+      Array.from(selector.options).forEach((option) => {
+        const fullName = option.getAttribute("data-full-name");
+        if (fullName) {
+          option.textContent = fullName;
+        }
+      });
+    };
+
+    const handleChange = (e: Event) => {
+      const select = e.target as HTMLSelectElement;
+      const selectedOption = select.options[select.selectedIndex];
+      const path = selectedOption.getAttribute("data-path");
+      if (path) {
+        window.location.href = path;
+      }
+    };
+
+    showSlug();
+    selector.addEventListener("focus", showFullNames);
+    selector.addEventListener("mousedown", showFullNames);
+    selector.addEventListener("blur", showSlug);
+    selector.addEventListener("change", handleChange);
+  }
+
+  // Setup both desktop and mobile selectors
+  setupLanguageSelector("lang-selector");
+  setupLanguageSelector("lang-selector-mobile");
+</script>
+
+<style>
+  .lang-dropdown {
+    position: relative;
+  }
+
+  .lang-select {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem 0.5rem 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.15rem center;
+    outline: none;
+  }
+
+  .lang-select:focus,
+  .lang-select:active {
+    border: none;
+    outline: none;
+  }
+
+  .lang-select option {
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+  }
+
+  /* Mobile styling when used in mobile context */
+  :global(#lang-selector-mobile) {
+    color: var(--color-primary);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%232563eb' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  }
+
+  option {
+    cursor: pointer;
+  }
+</style>

@@ -1,0 +1,58 @@
+---
+import Link from "./Link.astro";
+import { useI18n } from "../i18n/utils";
+
+const { t, translatePath } = useI18n(Astro.url);
+
+interface Props {
+  title: string;
+  icon: ImageMetadata;
+  description: string;
+  slug: string;
+}
+const { title, icon, description, slug } = Astro.props;
+---
+
+<article>
+  <div id="content">
+    <img src={icon.src} alt={`${title} icon`} />
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </div>
+  <Link href={translatePath(`/services/${slug}`)}>{t("cta.learnMore")}</Link>
+</article>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-background-secondary);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 6rem;
+  }
+
+  #content {
+    max-width: 40rem;
+    height: 100%;
+  }
+
+  @media (min-width: 32rem) {
+    article {
+      padding: 4rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+</style>

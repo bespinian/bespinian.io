@@ -1,0 +1,41 @@
+---
+import linkedInIcon from "../assets/linkedin-blue.svg";
+import gitHubIcon from "../assets/github-blue.svg";
+
+interface Props {
+  linkedIn?: string;
+  gitHub?: string;
+}
+
+const { linkedIn, gitHub } = Astro.props;
+---
+
+<div class="social-icons">
+  {
+    linkedIn && (
+      <a href={`https://linkedin.com/in/${linkedIn}`} target="_blank">
+        <img src={linkedInIcon.src} alt="LinkedIn" class="social-icon" />
+      </a>
+    )
+  }
+  {
+    gitHub && (
+      <a href={`https://github.com/${gitHub}`} target="_blank">
+        <img src={gitHubIcon.src} alt="GitHub" class="social-icon" />
+      </a>
+    )
+  }
+</div>
+
+<style>
+  .social-icons {
+    height: 2.2rem;
+    display: flex;
+    gap: var(--spacing-xs);
+    padding-top: var(--spacing-md);
+  }
+
+  .social-icon {
+    height: 100%;
+  }
+</style>

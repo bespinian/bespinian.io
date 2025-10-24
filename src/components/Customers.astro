@@ -1,0 +1,76 @@
+---
+import CustomerCard from "./CustomerCard.astro";
+import Link from "./Link.astro";
+import { getCollection } from "astro:content";
+import { useI18n } from "../i18n/utils";
+import { sortByDateDesc } from "../lib/formatters";
+
+const { t, translatePath } = useI18n(Astro.url);
+
+const customers = await getCollection("customers");
+const sortedCustomers = sortByDateDesc(customers);
+---
+
+<section>
+  <h2>{t("customers.title")}</h2>
+
+  <div id="grid">
+    {
+      sortedCustomers
+        .slice(0, 4)
+        .map(({ data, slug }) => <CustomerCard {...data} slug={slug} />)
+    }
+  </div>
+
+  <div id="all-link">
+    <Link href={translatePath("/customers")} secondary>{t("cta.showAll")}</Link>
+  </div>
+</section>
+
+<style>
+  section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  #all-link {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 48rem) {
+    #grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 60rem) {
+    h2 {
+      font-size: 3rem;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    #grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    #grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>

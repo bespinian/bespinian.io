@@ -1,43 +1,22 @@
 {
-	"name": "bespinian.io",
-	"version": "0.0.1",
-	"type": "module",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
-	},
-	"devDependencies": {
-		"@eslint/compat": "^1.4.0",
-		"@eslint/js": "^9.36.0",
-		"@fontsource/lato": "^5.2.7",
-		"@fortawesome/free-brands-svg-icons": "^7.0.0",
-		"@fortawesome/free-solid-svg-icons": "^7.0.0",
-		"@sveltejs/adapter-static": "^3.0.9",
-		"@sveltejs/kit": "^2.43.2",
-		"@sveltejs/vite-plugin-svelte": "^6.2.0",
-		"@types/node": "^24",
-		"bulma": "^0.9.4",
-		"eslint": "^9.36.0",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-svelte": "^3.12.4",
-		"globals": "^16.4.0",
-		"prettier": "^3.6.2",
-		"prettier-plugin-svelte": "^3.4.0",
-		"svelma": "^0.4.5",
-		"svelte": "^5.39.5",
-		"svelte-carousel": "^1.0.19",
-		"svelte-check": "^4.3.2",
-		"svelte-fa": "^4.0.1",
-		"svelte-i18n": "^4.0.0",
-		"svelte-vertical-timeline": "^2.0.0",
-		"typescript": "^5.9.2",
-		"typescript-eslint": "^8.44.1",
-		"vite": "^7.1.7"
-	}
+  "name": "bespinian.io",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "format": "prettier -w .",
+    "lint": "prettier --check .",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.5",
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^5.15.9",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.9.3"
+  }
 }

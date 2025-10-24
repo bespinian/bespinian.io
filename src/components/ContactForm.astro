@@ -1,0 +1,124 @@
+---
+import { useI18n } from "../i18n/utils";
+
+const { t } = useI18n(Astro.url);
+---
+
+<section id="contact-section">
+  <div class="container">
+    <form
+      class="contact-form"
+      action="https://formspree.io/contact@bespinian.io"
+      method="POST"
+    >
+      <div class="field">
+        <input
+          class="input"
+          name="name"
+          placeholder={t("contact.form.nameplaceholder")}
+          aria-label={t("contact.form.nameplaceholder")}
+          required
+        />
+      </div>
+      <div class="field">
+        <input
+          class="input"
+          type="email"
+          name="email"
+          placeholder={t("contact.form.emailplaceholder")}
+          aria-label={t("contact.form.emailplaceholder")}
+          required
+        />
+      </div>
+      <div class="field">
+        <input
+          class="input"
+          name="subject"
+          placeholder={t("contact.form.subjectplaceholder")}
+          aria-label={t("contact.form.subjectplaceholder")}
+          required
+        />
+      </div>
+      <div class="field">
+        <textarea
+          class="textarea"
+          name="message"
+          placeholder={t("contact.form.messageplaceholder")}
+          aria-label={t("contact.form.messageplaceholder")}
+          rows="8"
+          required></textarea>
+      </div>
+      <div class="field">
+        <button type="submit" class="button">
+          {t("contact.form.sendbuttonlabel")}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<style>
+  #contact-section {
+    padding: 4rem 0;
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .field {
+    margin-bottom: 1.5rem;
+  }
+
+  .input,
+  .textarea {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-lato);
+    transition: border-color 0.3s ease;
+  }
+
+  .input:focus,
+  .textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+
+  .textarea {
+    resize: vertical;
+    min-height: 8rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-lato);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: var(--color-background-primary);
+  }
+
+  @media (min-width: 48rem) {
+    .subtitle {
+      font-size: 2rem;
+    }
+  }
+</style>
