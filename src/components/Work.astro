@@ -1,0 +1,102 @@
+---
+import WorkCard from "./WorkCard.astro";
+import Link from "./Link.astro";
+import { getCollection } from "astro:content";
+import { useI18n } from "../i18n/utils";
+
+const { t, translatePath } = useI18n(Astro.url);
+
+interface WorkItem {
+  type: string;
+  title: string;
+  date: Date;
+  slug: string;
+}
+
+const blogPosts = await getCollection("blog");
+const customers = await getCollection("customers");
+
+const workItems: WorkItem[] = [];
+blogPosts.forEach((b) => {
+  workItems.push({
+    type: t("work.type.blog"),
+    title: b.data.title,
+    date: b.data.date,
+    slug: b.slug,
+  });
+});
+customers.forEach((c) => {
+  workItems.push({
+    type: t("work.type.story"),
+    title: c.data.title,
+    date: c.data.date,
+    slug: c.slug,
+  });
+});
+
+const sortedWorkItems = workItems
+  .sort((a, b) => b.date.getTime() - a.date.getTime())
+  .slice(0, 4);
+---
+
+<section>
+  <h2 id="work">{t("work.title")}</h2>
+
+  <div id="grid">
+    {
+      sortedWorkItems.map((item) => (
+        <WorkCard type={item.type} title={item.title} slug={item.slug} />
+      ))
+    }
+  </div>
+
+  <div id="all-link">
+    <Link href={translatePath("/blog")}>{t("cta.showAll")}</Link>
+  </div>
+</section>
+
+<style>
+  section {
+    padding: 6rem 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  #all-link {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 48rem) {
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    #grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    #grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 80rem) {
+    #grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>

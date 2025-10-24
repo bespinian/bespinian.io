@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SEO from "../components/SEO.astro";
+import StructuredData from "../components/StructuredData.astro";
+import Hero from "../components/Hero.astro";
+import WhyUs from "../components/WhyUs.astro";
+import Customers from "../components/Customers.astro";
+import Services from "../components/Services.astro";
+import Work from "../components/Work.astro";
+import { useI18n } from "../i18n/utils";
+
+const { t, lang } = useI18n(Astro.url);
+
+const title = `${t("hero.title1")} ${t("hero.title2")}`;
+const description = t("hero.description");
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <StructuredData
+    slot="head"
+    schema={{
+      type: "Organization",
+      name: "bespinian",
+      url: Astro.site?.toString() || "https://bespinian.io",
+      logo: "/logo.svg",
+      description,
+      sameAs: [
+        "https://github.com/bespinian",
+        "https://www.linkedin.com/company/bespinian",
+      ],
+    }}
+  />
+  <Hero />
+  <WhyUs />
+  <Customers />
+  <Services />
+  <Work />
+</Layout>

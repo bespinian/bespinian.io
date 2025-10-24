@@ -1,0 +1,74 @@
+---
+import ServiceCard from "./ServiceCard.astro";
+import { getCollection } from "astro:content";
+import { useI18n } from "../i18n/utils";
+import cloudNativeEmpowermentIcon from "../assets/cloud-native-empowerment.svg";
+import serverlessApplicationAccelerationIcon from "../assets/serverless-application-acceleration.svg";
+import saaSTransformationIcon from "../assets/saas-transformation.svg";
+import pragmaticAIAdoptionIcon from "../assets/pragmatic-ai-adoption.svg";
+
+const { lang, t } = useI18n(Astro.url);
+
+const iconMap: Record<string, any> = {
+  "cloud-native-empowerment": cloudNativeEmpowermentIcon,
+  "serverless-application-acceleration": serverlessApplicationAccelerationIcon,
+  "saas-transformation": saaSTransformationIcon,
+  "pragmatic-ai-adoption": pragmaticAIAdoptionIcon,
+};
+
+const servicesFromContent = await getCollection("services", ({ id }) => {
+  return id.startsWith(`${lang}/`);
+});
+const services = servicesFromContent.map((service) => ({
+  title: service.data.title,
+  icon: iconMap[service.data.icon] || cloudNativeEmpowermentIcon,
+  description: service.data.description,
+  slug: service.slug.replace(`${lang}/`, ""),
+}));
+---
+
+<section>
+  <h2 id="services">{t("services.title")}</h2>
+
+  <div id="grid">
+    {
+      services.map((service) => (
+        <ServiceCard
+          title={service.title}
+          description={service.description}
+          icon={service.icon}
+          slug={service.slug}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-background-gray);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  @media (min-width: 48rem) {
+    h2 {
+      font-size: 3rem;
+    }
+
+    #grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

@@ -1,0 +1,271 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SEO from "../../components/SEO.astro";
+import Link from "../../components/Link.astro";
+import { useI18n } from "../../i18n/utils";
+import { getLanguagePaths } from "../../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("workshop.title");
+const subtitle = t("workshop.subtitle");
+const description = t("workshop.description");
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>{title}</h1>
+        <h2 class="subtitle">{subtitle}</h2>
+        <p class="description">{description}</p>
+        <div class="cta-container">
+          <Link
+            href="https://calendar.app.google/nsWpQ37rvcevfqBB6"
+            large
+            center
+            secondary
+          >
+            {t("workshop.cta")}
+          </Link>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("workshop.whatyouget.title")}</h2>
+        <ul class="value-list">
+          <li>{t("workshop.whatyouget.item1")}</li>
+          <li>{t("workshop.whatyouget.item2")}</li>
+          <li>{t("workshop.whatyouget.item3")}</li>
+          <li>{t("workshop.whatyouget.item4")}</li>
+          <li>{t("workshop.whatyouget.item5")}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section alternate">
+      <div class="container">
+        <h2 class="section-title">{t("workshop.whothisfor.title")}</h2>
+        <ul class="checklist">
+          <li>{t("workshop.whothisfor.item1")}</li>
+          <li>{t("workshop.whothisfor.item2")}</li>
+          <li>{t("workshop.whothisfor.item3")}</li>
+          <li>{t("workshop.whothisfor.item4")}</li>
+          <li>{t("workshop.whothisfor.item5")}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("workshop.whatyoulearn.title")}</h2>
+        <ul class="value-list">
+          <li>{t("workshop.whatyoulearn.item1")}</li>
+          <li>{t("workshop.whatyoulearn.item2")}</li>
+          <li>{t("workshop.whatyoulearn.item3")}</li>
+          <li>{t("workshop.whatyoulearn.item4")}</li>
+          <li>{t("workshop.whatyoulearn.item5")}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section alternate">
+      <div class="container">
+        <h2 class="section-title">{t("workshop.guarantee.title")}</h2>
+        <p class="guarantee-text">{t("workshop.guarantee.description")}</p>
+      </div>
+    </section>
+
+    <section id="final-cta">
+      <div class="container">
+        <h2 class="cta-title">{t("workshop.title")}</h2>
+        <div class="cta-container">
+          <Link
+            href="https://calendar.app.google/nsWpQ37rvcevfqBB6"
+            large
+            center
+            secondary
+          >
+            {t("workshop.cta")}
+          </Link>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    width: 100%;
+  }
+
+  #hero {
+    min-height: 70vh;
+    background: linear-gradient(
+      135deg,
+      var(--color-background-primary) 0%,
+      var(--color-primary) 100%
+    );
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 56rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+  }
+
+  .description {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    opacity: 0.95;
+  }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 2rem;
+  }
+
+  .content-section.alternate {
+    background-color: var(--color-background-tertiary);
+  }
+
+  .container {
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--color-background-primary);
+    text-align: center;
+  }
+
+  .value-list,
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .value-list li,
+  .checklist li {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    padding-left: 2.5rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .value-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .checklist li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .guarantee-text {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.8;
+    color: var(--color-gray);
+  }
+
+  #final-cta {
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (min-width: 48rem) {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    .subtitle {
+      font-size: 2.2rem;
+    }
+
+    .description {
+      font-size: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .value-list li,
+    .checklist li {
+      font-size: 1.4rem;
+    }
+
+    .guarantee-text {
+      font-size: 1.5rem;
+    }
+
+    .cta-title {
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .subtitle {
+      font-size: 2.5rem;
+    }
+  }
+</style>

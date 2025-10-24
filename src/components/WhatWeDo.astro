@@ -1,0 +1,102 @@
+---
+import Link from "../components/Link.astro";
+import { useI18n } from "../i18n/utils";
+import aws from "../assets/technologies/aws.svg";
+import azure from "../assets/technologies/azure.svg";
+import kubernetes from "../assets/technologies/kubernetes.svg";
+
+const { t, translatePath } = useI18n(Astro.url);
+---
+
+<div class="separator"></div>
+
+<section>
+  <div class="content">
+    <h2 class="h2">{t("whatwedo.title")}</h2>
+    <p>{t("whatwedo.description")}</p>
+    <div class="platforms">
+      <img src={aws.src} alt="AWS" />
+      <img src={azure.src} alt="Azure" />
+      <img src={kubernetes.src} alt="Kubernetes" />
+    </div>
+    <div class="links">
+      <Link href={translatePath("/about/technologies")} secondary
+        >{t("cta.techWeLove")}</Link
+      >
+      <Link href={translatePath("/about/partners")} secondary
+        >{t("cta.meetOurPartners")}</Link
+      >
+    </div>
+  </div>
+</section>
+
+<div class="separator"></div>
+
+<section>
+  <div class="content">
+    <h2>{t("whatwedo.whoweare")}</h2>
+    <p>{t("whatwedo.team.description")}</p>
+    <div class="links">
+      <Link href={translatePath("/about/team")} secondary>
+        {t("cta.meetOurTeam")}
+      </Link>
+      <Link href={translatePath("/about/jobs")} secondary>
+        {t("cta.joinOurTeam")}
+      </Link>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 0;
+  }
+
+  .content {
+    max-width: 80rem;
+  }
+
+  .separator {
+    margin: 2rem 0;
+    border: 1px solid var(--color-background-gray);
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .platforms {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 48rem;
+  }
+
+  img {
+    width: 100%;
+    max-width: 6rem;
+  }
+
+  @media (min-width: 32rem) {
+    .links {
+      flex-direction: row;
+    }
+  }
+</style>

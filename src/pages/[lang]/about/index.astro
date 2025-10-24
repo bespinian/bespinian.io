@@ -1,0 +1,95 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import SEO from "../../../components/SEO.astro";
+import Title from "../../../components/Title.astro";
+import WhatWeDo from "../../../components/WhatWeDo.astro";
+import Values from "../../../components/Values.astro";
+import { useI18n } from "../../../i18n/utils";
+import { getLanguagePaths } from "../../../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("about.mission.title");
+const description = t("about.mission.subtitle");
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <Title {title} subtitle={description} />
+
+  <main>
+    <section>
+      <div class="columns">
+        <h2 class="overview">{t("about.mission.overview")}</h2>
+        <div id="text-container">
+          <p>
+            {t("about.mission.content1")}<br /><br />{
+              t("about.mission.content2")
+            }<br /><br />{t("about.mission.content3")}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <WhatWeDo />
+
+    <div class="separator"></div>
+
+    <Values />
+  </main>
+
+  <style>
+    main {
+      padding: 6rem 2rem;
+    }
+
+    section {
+      margin-bottom: 5rem;
+    }
+
+    .overview {
+      margin: 0;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
+    .columns {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #text-container {
+      max-width: 64rem;
+    }
+
+    #text-container p {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .separator {
+      margin: 2rem 0;
+      border: 1px solid var(--color-background-gray);
+    }
+
+    @media (min-width: 80rem) {
+      .columns {
+        flex-direction: row;
+      }
+    }
+
+    @media (min-width: 100rem) {
+      #text-container {
+        max-width: 80rem;
+      }
+    }
+  </style>
+</Layout>

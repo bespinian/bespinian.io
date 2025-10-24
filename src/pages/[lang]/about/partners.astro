@@ -1,0 +1,77 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import SEO from "../../../components/SEO.astro";
+import PartnerCard from "../../../components/PartnerCard.astro";
+import Title from "../../../components/Title.astro";
+import {
+  strategicPartners,
+  collaborativePartners,
+} from "../../../data/partners.ts";
+import { useI18n } from "../../../i18n/utils";
+import { getLanguagePaths } from "../../../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("about.partners.title");
+const description = t("about.partners.subtitle");
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <Title {title} subtitle={description} />
+
+  <main>
+    <section class="partner-section">
+      <h2 class="section-title">Strategic Partners</h2>
+      <div class="partner-grid">
+        {strategicPartners.map((partner) => <PartnerCard {partner} />)}
+      </div>
+    </section>
+
+    <section class="partner-section">
+      <h2 class="section-title">Collaborative Partners</h2>
+      <div class="partner-grid">
+        {collaborativePartners.map((partner) => <PartnerCard {partner} />)}
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 4rem 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .partner-section {
+    margin: 8rem 0;
+  }
+
+  .partner-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  @media (min-width: 48rem) {
+    .partner-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

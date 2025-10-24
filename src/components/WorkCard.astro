@@ -1,0 +1,51 @@
+---
+import { useI18n } from "../i18n/utils";
+
+const { translatePath } = useI18n(Astro.url);
+
+interface Props {
+  type: string;
+  title: string;
+  slug: string;
+}
+const { type, title, slug } = Astro.props;
+---
+
+<a
+  href={translatePath(
+    `/${type.includes("Blog") ? "blog" : "customers"}/${slug}`,
+  )}
+>
+  <article>
+    <p id="type">{type}</p>
+    <h3>{title}</h3>
+  </article>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  article {
+    padding: var(--spacing-md);
+    border-radius: var(--card-border-radius);
+    height: var(--card-height);
+    background-color: var(--color-background-tertiary);
+    color: var(--color-primary);
+  }
+
+  article:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+
+  #type {
+    margin-bottom: 4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+  }
+</style>

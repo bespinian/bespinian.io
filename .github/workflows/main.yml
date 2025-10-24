@@ -39,7 +39,7 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./build
+          path: ./dist
 
   deploy:
     name: Deploy

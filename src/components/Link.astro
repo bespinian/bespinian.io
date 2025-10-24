@@ -1,0 +1,98 @@
+---
+import arrowBlue from "../assets/button-arrow-blue.svg";
+import arrowWhite from "../assets/button-arrow-white.svg";
+
+interface Props {
+  href: string;
+  secondary?: boolean;
+  transparent?: boolean;
+  large?: boolean;
+  center?: boolean;
+  target?: string;
+}
+
+const { href, secondary, transparent, large, center, target } = Astro.props;
+---
+
+<div class={`container ${center ? "center" : ""}`}>
+  <a
+    {href}
+    target={target}
+    class={`button ${secondary ? "secondary" : "primary"} ${transparent ? "transparent" : ""} ${large ? "large" : ""}`}
+  >
+    <span><slot /></span>
+    <img src={secondary ? arrowBlue.src : arrowWhite.src} alt="arrow" />
+  </a>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: max-content;
+    padding: 0.3rem;
+    border-radius: 999999rem;
+    border-color: transparent;
+    font-family: var(--font-lato);
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: 0.1rem solid var(--color-background-secondary);
+    z-index: 20;
+  }
+
+  .button.secondary {
+    background-color: var(--color-background-secondary);
+    color: var(--color-primary);
+    border-color: var(--color-background-primary);
+  }
+
+  .button.transparent {
+    background-color: transparent;
+  }
+
+  .button.large {
+    padding: 0.4rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .button:hover {
+    background-color: var(--color-background-primary);
+  }
+
+  .button.secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+
+  .button span {
+    margin: 0 1rem;
+  }
+
+  .button.large span {
+    margin-right: 1.8rem;
+  }
+
+  .button.large img {
+    height: 3.5rem;
+  }
+
+  @media (min-width: 48rem) {
+    .container:not(.center) {
+      justify-content: flex-start;
+    }
+
+    .button.large {
+      font-size: 2rem;
+    }
+  }
+</style>

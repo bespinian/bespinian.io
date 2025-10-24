@@ -1,0 +1,89 @@
+---
+import ContentDetailPage from "../../../../layouts/ContentDetailPage.astro";
+import { getCollectionStaticPaths } from "../../../../lib/paths";
+import { useI18n } from "../../../../i18n/utils";
+
+export async function getStaticPaths() {
+  return getCollectionStaticPaths("jobs");
+}
+
+const { job } = Astro.props;
+const { Content } = await job.render();
+
+const { lang, translatePath } = useI18n(Astro.url);
+
+const title = `${job.data.title} | Jobs`;
+const description = `Join bespinian as a ${job.data.title}. ${job.data.location ? "Location: " + job.data.location + "." : ""} ${job.data.employment ? job.data.employment + " position." : ""} We're looking for talented individuals to help companies succeed with cloud-native technologies.`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const metaItems = [];
+if (job.data.location) metaItems.push({ label: job.data.location });
+if (job.data.employment) metaItems.push({ label: job.data.employment });
+---
+
+<ContentDetailPage
+  pageTitle={title}
+  title={job.data.title}
+  {description}
+  {lang}
+  backLink={{
+    href: translatePath("/about/jobs"),
+    text: "← Back to Jobs",
+  }}
+  meta={metaItems}
+  structuredData={{
+    type: "JobPosting",
+    title: job.data.title,
+    description: description,
+    url: canonicalUrl,
+    datePosted: new Date().toISOString(),
+    ...(job.data.employment && { employmentType: job.data.employment }),
+    ...(job.data.location && { jobLocation: job.data.location }),
+    hiringOrganization: {
+      name: "bespinian",
+      url: new URL("/", Astro.site).toString(),
+      logo: "/logo.svg",
+    },
+  }}
+>
+  <Content />
+
+  <div slot="footer" class="apply-section">
+    <h2>Interested in this position?</h2>
+    <p>
+      We highly value diversity. Drop us a line at{" "}
+      <a href="mailto:jobs@bespinian.io">jobs@bespinian.io</a> and tell us why you
+      would like to join our awesome team of bespinians.
+    </p>
+  </div>
+</ContentDetailPage>
+
+<style>
+  .apply-section {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-background-gray);
+    border-radius: var(--card-border-radius);
+    text-align: center;
+  }
+
+  .apply-section h2 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    color: var(--color-primary);
+  }
+
+  .apply-section p {
+    margin: 0;
+    color: #333;
+  }
+
+  .apply-section a {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .apply-section a:hover {
+    text-decoration: none;
+  }
+</style>

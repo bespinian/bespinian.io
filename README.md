@@ -1,26 +1,39 @@
 # bespinian.io
 
-The bespinian homepage available at <https://bespinian.io>. Powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+The bespinian website reachable at [bespinian.io](https://bespinian.io)
 
-## Developing
+## 🚀 Project Structure
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+This is an Astro-based multilingual website with the following structure:
 
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```text
+/
+├── public/              # Static assets (favicon, images, robots.txt)
+├── src/
+│   ├── assets/         # Image assets (logos, team photos, partners, etc.)
+│   ├── components/     # Reusable Astro components
+│   ├── content/        # Content collections (blog posts, customers, jobs, services)
+│   ├── data/           # Data files
+│   ├── i18n/           # Internationalization (translations)
+│   ├── layouts/        # Page layouts
+│   ├── lib/            # Utility functions
+│   ├── pages/          # File-based routing with [lang] dynamic routes
+│   └── styles/         # Global styles
+├── .github/            # GitHub workflows and configuration
+└── package.json
 ```
 
-## Building
+## 🧞 Commands
 
-To create a production version of your app:
+All commands are run from the root of the project, from a terminal:
 
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+| Command             | Action                                           |
+| :------------------ | :----------------------------------------------- |
+| `npm install`       | Installs dependencies                            |
+| `npm run dev`       | Starts local dev server at `localhost:4321`      |
+| `npm run build`     | Build your production site to `./dist/`          |
+| `npm run preview`   | Preview your build locally, before deploying     |
+| `npm run check`     | Run Astro type checking                          |
+| `npm run format`    | Format code with Prettier                        |
+| `npm run lint`      | Check code formatting with Prettier              |
+| `npm run astro ...` | Run CLI commands like `astro add`, `astro check` |

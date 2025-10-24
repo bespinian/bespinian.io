@@ -1,0 +1,39 @@
+---
+import CollectionPage from "../../../../layouts/CollectionPage.astro";
+import JobCard from "../../../../components/JobCard.astro";
+import { getCollection } from "astro:content";
+import { useI18n } from "../../../../i18n/utils";
+import { getLanguagePaths } from "../../../../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const jobs = await getCollection("jobs");
+
+const title = t("jobs.title");
+const description = t("jobs.subtitle");
+---
+
+<CollectionPage
+  pageTitle={title}
+  {title}
+  subtitle={description}
+  {description}
+  {lang}
+  isEmpty={jobs.length === 0}
+  emptyMessage={t("jobs.empty")}
+>
+  {
+    jobs.map((job) => (
+      <JobCard
+        title={job.data.title}
+        location={job.data.location}
+        employment={job.data.employment}
+        slug={job.slug}
+      />
+    ))
+  }
+</CollectionPage>

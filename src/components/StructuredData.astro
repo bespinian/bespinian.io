@@ -1,0 +1,236 @@
+---
+interface BlogPostingSchema {
+  type: "BlogPosting";
+  headline: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  author: string;
+  image?: string;
+  url: string;
+  tags?: string[];
+}
+
+interface OrganizationSchema {
+  type: "Organization";
+  name: string;
+  url: string;
+  logo: string;
+  description: string;
+  sameAs?: string[];
+}
+
+interface ArticleSchema {
+  type: "Article";
+  headline: string;
+  description: string;
+  datePublished: string;
+  dateModified?: string;
+  author: string;
+  image?: string;
+  url: string;
+}
+
+interface JobPostingSchema {
+  type: "JobPosting";
+  title: string;
+  description: string;
+  datePosted: string;
+  url: string;
+  employmentType?: string;
+  jobLocation?: string;
+  hiringOrganization: {
+    name: string;
+    url: string;
+    logo: string;
+  };
+}
+
+interface ServiceSchema {
+  type: "Service";
+  name: string;
+  description: string;
+  provider: {
+    name: string;
+    url: string;
+  };
+  serviceType: string;
+  url: string;
+}
+
+interface BreadcrumbListSchema {
+  type: "BreadcrumbList";
+  items: Array<{
+    name: string;
+    url: string;
+  }>;
+}
+
+type Schema =
+  | BlogPostingSchema
+  | OrganizationSchema
+  | ArticleSchema
+  | JobPostingSchema
+  | ServiceSchema
+  | BreadcrumbListSchema;
+
+interface Props {
+  schema: Schema;
+}
+
+const { schema } = Astro.props;
+
+const generateSchema = (schema: Schema) => {
+  const baseSchema = {
+    "@context": "https://schema.org",
+  };
+
+  switch (schema.type) {
+    case "BlogPosting":
+      return {
+        ...baseSchema,
+        "@type": "BlogPosting",
+        headline: schema.headline,
+        description: schema.description,
+        datePublished: schema.datePublished,
+        ...(schema.dateModified && { dateModified: schema.dateModified }),
+        author: {
+          "@type": "Person",
+          name: schema.author,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "bespinian",
+          logo: {
+            "@type": "ImageObject",
+            url: new URL("/logo.svg", Astro.site).toString(),
+          },
+        },
+        ...(schema.image && {
+          image: {
+            "@type": "ImageObject",
+            url: new URL(schema.image, Astro.site).toString(),
+          },
+        }),
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": schema.url,
+        },
+        ...(schema.tags && { keywords: schema.tags.join(", ") }),
+      };
+
+    case "Organization":
+      return {
+        ...baseSchema,
+        "@type": "Organization",
+        name: schema.name,
+        url: schema.url,
+        logo: {
+          "@type": "ImageObject",
+          url: new URL(schema.logo, Astro.site).toString(),
+        },
+        description: schema.description,
+        ...(schema.sameAs && { sameAs: schema.sameAs }),
+      };
+
+    case "Article":
+      return {
+        ...baseSchema,
+        "@type": "Article",
+        headline: schema.headline,
+        description: schema.description,
+        datePublished: schema.datePublished,
+        ...(schema.dateModified && { dateModified: schema.dateModified }),
+        author: {
+          "@type": "Person",
+          name: schema.author,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "bespinian",
+          logo: {
+            "@type": "ImageObject",
+            url: new URL("/logo.svg", Astro.site).toString(),
+          },
+        },
+        ...(schema.image && {
+          image: {
+            "@type": "ImageObject",
+            url: new URL(schema.image, Astro.site).toString(),
+          },
+        }),
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": schema.url,
+        },
+      };
+
+    case "JobPosting":
+      return {
+        ...baseSchema,
+        "@type": "JobPosting",
+        title: schema.title,
+        description: schema.description,
+        datePosted: schema.datePosted,
+        url: schema.url,
+        ...(schema.employmentType && { employmentType: schema.employmentType }),
+        ...(schema.jobLocation && {
+          jobLocation: {
+            "@type": "Place",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: schema.jobLocation,
+            },
+          },
+        }),
+        hiringOrganization: {
+          "@type": "Organization",
+          name: schema.hiringOrganization.name,
+          url: schema.hiringOrganization.url,
+          logo: {
+            "@type": "ImageObject",
+            url: new URL(schema.hiringOrganization.logo, Astro.site).toString(),
+          },
+        },
+      };
+
+    case "Service":
+      return {
+        ...baseSchema,
+        "@type": "Service",
+        name: schema.name,
+        description: schema.description,
+        serviceType: schema.serviceType,
+        url: schema.url,
+        provider: {
+          "@type": "Organization",
+          name: schema.provider.name,
+          url: schema.provider.url,
+        },
+      };
+
+    case "BreadcrumbList":
+      return {
+        ...baseSchema,
+        "@type": "BreadcrumbList",
+        itemListElement: schema.items.map((item, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: item.name,
+          item: item.url,
+        })),
+      };
+
+    default:
+      return baseSchema;
+  }
+};
+
+const structuredData = generateSchema(schema);
+---
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(structuredData)}
+/>

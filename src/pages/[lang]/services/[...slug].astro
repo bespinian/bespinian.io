@@ -1,0 +1,210 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import SEO from "../../../components/SEO.astro";
+import StructuredData from "../../../components/StructuredData.astro";
+import Title from "../../../components/Title.astro";
+import CTA from "../../../components/CTA.astro";
+import { getCollection } from "astro:content";
+import { languages } from "../../../i18n/ui";
+import { useI18n } from "../../../i18n/utils";
+
+export async function getStaticPaths() {
+  const allServices = await getCollection("services");
+
+  return Object.keys(languages).flatMap((lang) => {
+    const langServices = allServices.filter(({ id }) =>
+      id.startsWith(`${lang}/`),
+    );
+    return langServices.map((service) => ({
+      params: { lang, slug: service.slug.replace(`${lang}/`, "") },
+      props: { service },
+    }));
+  });
+}
+
+const { service } = Astro.props;
+const { Content } = await service.render();
+
+const { lang, translatePath } = useI18n(Astro.url);
+
+const title = service.data.title;
+const description = service.data.description;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <StructuredData
+    slot="head"
+    schema={{
+      type: "Service",
+      name: title,
+      description,
+      serviceType: "Professional Services",
+      url: canonicalUrl,
+      provider: {
+        name: "bespinian",
+        url: new URL("/", Astro.site).toString(),
+      },
+    }}
+  />
+  <Title {title} subtitle={description} />
+
+  <main class="service-page">
+    <article class="container">
+      <header class="service-header">
+        <a href={translatePath("/#services")} class="back-link"
+          >← Back to Services</a
+        >
+      </header>
+
+      <div class="service-content">
+        <Content />
+      </div>
+    </article>
+  </main>
+
+  <CTA service={title} />
+</Layout>
+
+<style>
+  .service-page {
+    padding: var(--spacing-lg) 0;
+    min-height: calc(100vh - 400px);
+  }
+
+  .container {
+    max-width: var(--content-wide-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+  }
+
+  .service-header {
+    margin-bottom: 3rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--color-primary);
+  }
+
+  .service-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .service-content :global(p) {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .service-content :global(h2) {
+    font-size: 2.5rem;
+    margin: 3rem 0 1.5rem 0;
+    color: var(--color-primary);
+  }
+
+  .service-content :global(h3) {
+    font-size: 1.75rem;
+    margin: 2rem 0 1rem 0;
+    color: #333;
+  }
+
+  .service-content :global(ul),
+  .service-content :global(ol) {
+    margin: 0 0 1.5rem 0;
+    padding-left: 2rem;
+  }
+
+  .service-content :global(li) {
+    margin-bottom: 1rem;
+  }
+
+  .service-content :global(strong) {
+    color: #333;
+    font-weight: 600;
+  }
+
+  .service-content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+  }
+
+  .service-content :global(th),
+  .service-content :global(td) {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .service-content :global(th) {
+    background: var(--color-background-tertiary);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  .service-content :global(td) {
+    vertical-align: top;
+  }
+
+  .service-content :global(tbody tr:hover) {
+    background: #f9f9f9;
+  }
+
+  .service-content :global(a) {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .service-content :global(a:hover) {
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .service-page {
+      padding: var(--spacing-md) 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .service-content {
+      font-size: 1rem;
+    }
+
+    .service-content :global(h2) {
+      font-size: 2rem;
+    }
+
+    .service-content :global(h3) {
+      font-size: 1.5rem;
+    }
+
+    .service-content :global(table) {
+      font-size: 0.875rem;
+    }
+
+    .service-content :global(th),
+    .service-content :global(td) {
+      padding: 0.75rem;
+    }
+  }
+</style>
