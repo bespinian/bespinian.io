@@ -10,7 +10,6 @@
 	import qasim from '$lib/images/team/qasim.webp';
 	import joel from '$lib/images/team/joel.webp';
 	import sandra from '$lib/images/team/sandra.webp';
-	import rafael from '$lib/images/team/rafael.webp';
 	import johannes from '$lib/images/team/johannes.webp';
 	import noe from '$lib/images/team/noe.webp';
 	import norbert from '$lib/images/team/norbert.webp';
@@ -75,13 +74,6 @@
 			name: 'Sandra Hochstein',
 			portrait: sandra,
 			linkedIn: 'sandra-hochstein-873229179'
-		},
-		{
-			tag: 'rafael',
-			name: 'Rafael Wicht',
-			portrait: rafael,
-			gitHub: 'rafiwicht',
-			linkedIn: 'rafael-wicht-3a95b0166'
 		},
 		{
 			tag: 'johannes',
