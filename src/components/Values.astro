@@ -14,8 +14,8 @@ const { t } = useI18n(Astro.url);
         values.map((v, i) => (
           <ValueCard
             index={i + 1}
-            title={v.title}
-            description={v.description}
+            title={t(v.titleKey)}
+            description={t(v.descriptionKey)}
           />
         ))
       }
