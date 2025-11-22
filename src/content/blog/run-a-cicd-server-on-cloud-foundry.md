@@ -6,6 +6,7 @@ tags: ["ci-cd", "cloud-foundry", "strider", "automation", "deployment"]
 excerpt:
   "Deploy Strider, an open-source CI/CD server, on Cloud Foundry to
   automatically test, build, and deploy your applications on every git push."
+image: ../../assets/blog/pipes.jpg
 ---
 
 Pushing Apps to Cloud Foundry is as easy as it gets, thanks to the `cf push`

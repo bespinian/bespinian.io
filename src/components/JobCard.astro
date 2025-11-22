@@ -1,18 +1,19 @@
 ---
 import { useI18n } from "../i18n/utils";
 
-const { translatePath } = useI18n(Astro.url);
-
 interface Props {
+  id: string;
   title: string;
   location?: string;
   employment?: string;
-  slug: string;
 }
-const { title, location, employment, slug } = Astro.props;
+
+const { id, title, location, employment } = Astro.props;
+
+const { translatePath } = useI18n(Astro.url);
 ---
 
-<a href={translatePath(`/about/jobs/${slug}`)}>
+<a href={translatePath(`/about/jobs/${id}`)}>
   <article class="job-card">
     <div class="job-card-content">
       <h3>{title}</h3>

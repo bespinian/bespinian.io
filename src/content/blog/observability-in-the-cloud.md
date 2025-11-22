@@ -8,6 +8,7 @@ excerpt:
   "Understand the difference between monitoring and observability, and learn how
   to implement true observability in distributed cloud systems to effectively
   troubleshoot unknown issues."
+image: ../../assets/blog/cloud-observability.jpg
 ---
 
 This blog post aims to explain how observability and monitoring should be

@@ -3,19 +3,19 @@ import { Image } from "astro:assets";
 import { useI18n } from "../i18n/utils";
 
 interface Props {
+  id: string;
   title: string;
-  slug: string;
   company: string;
   logo: ImageMetadata;
   quote: string;
   authorName: string;
   authorTitle: string;
-  authorImage?: ImageMetadata;
+  authorImage?: ImageMetadata | undefined;
 }
 
 const {
+  id,
   title,
-  slug,
   company,
   logo,
   quote,
@@ -27,7 +27,7 @@ const {
 const { translatePath } = useI18n(Astro.url);
 ---
 
-<a href={translatePath(`/customers/${slug}`)}>
+<a href={translatePath(`/customers/${id}`)}>
   <article class="card-hover-effect">
     <div class="image-container">
       <Image src={logo} alt={company} class="company-logo" />

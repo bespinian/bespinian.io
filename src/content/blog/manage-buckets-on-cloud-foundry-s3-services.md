@@ -6,6 +6,7 @@ tags: ["cloud-foundry", "s3", "storage", "buckets"]
 excerpt:
   "Learn how to create and manage S3 buckets on Cloud Foundry using s3cmd or the
   open-source S3 Manager application."
+image: ../../assets/blog/storage.jpg
 ---
 
 [S3](https://aws.amazon.com/s3/) is a great concept to store static files and

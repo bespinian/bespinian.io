@@ -2,6 +2,11 @@
 import cloudLarge from "../assets/cloud-large.svg";
 import cloudDarkMedium from "../assets/cloud-dark-medium.svg";
 
+interface Props {
+  title: string;
+  subtitle?: string;
+}
+
 const { title, subtitle } = Astro.props;
 ---
 

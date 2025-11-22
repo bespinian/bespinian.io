@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import { render } from "astro:content";
 import ContentDetailPage from "../../../layouts/ContentDetailPage.astro";
 import { getCollectionStaticPaths } from "../../../lib/paths";
 import { useI18n } from "../../../i18n/utils";
@@ -9,7 +11,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 
 const { lang, translatePath } = useI18n(Astro.url);
 
@@ -36,6 +38,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     publishedTime: post.data.date.toISOString(),
     author: post.data.author,
     tags: post.data.tags,
+    image: post.data.image?.src,
+    imageAlt: post.data.title,
   }}
   structuredData={{
     type: "BlogPosting",
@@ -45,8 +49,17 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     author: post.data.author,
     tags: post.data.tags,
     url: canonicalUrl,
+    image: post.data.image?.src,
   }}
 >
+  {
+    post.data.image && (
+      <div slot="header-after" class="header-image">
+        <Image src={post.data.image} alt={post.data.title} />
+      </div>
+    )
+  }
+
   <div slot="header-after" class="tags">
     {post.data.tags.map((tag: string) => <span class="tag">{tag}</span>)}
   </div>
@@ -55,6 +68,19 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 </ContentDetailPage>
 
 <style>
+  .header-image {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .tags {
     display: flex;
     flex-wrap: wrap;

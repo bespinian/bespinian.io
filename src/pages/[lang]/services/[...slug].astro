@@ -1,10 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import SEO from "../../../components/SEO.astro";
 import StructuredData from "../../../components/StructuredData.astro";
 import Title from "../../../components/Title.astro";
 import CTA from "../../../components/CTA.astro";
-import { getCollection } from "astro:content";
 import { languages } from "../../../i18n/ui";
 import { useI18n } from "../../../i18n/utils";
 
@@ -12,23 +12,22 @@ export async function getStaticPaths() {
   const allServices = await getCollection("services");
 
   return Object.keys(languages).flatMap((lang) => {
-    const langServices = allServices.filter(({ id }) =>
-      id.startsWith(`${lang}/`),
-    );
-    return langServices.map((service) => ({
-      params: { lang, slug: service.slug.replace(`${lang}/`, "") },
+    const langService = allServices.find(({ id }) => id === lang);
+    if (!langService) return [];
+
+    return langService.data.map((service) => ({
+      params: { slug: service.id, lang },
       props: { service },
     }));
   });
 }
 
 const { service } = Astro.props;
-const { Content } = await service.render();
 
-const { lang, translatePath } = useI18n(Astro.url);
+const { lang, translatePath, t } = useI18n(Astro.url);
 
-const title = service.data.title;
-const description = service.data.description;
+const title = service.title;
+const description = service.description;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
@@ -51,15 +50,67 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   <Title {title} subtitle={description} />
 
   <main class="service-page">
-    <article class="container">
-      <header class="service-header">
-        <a href={translatePath("/#services")} class="back-link"
-          >← Back to Services</a
-        >
-      </header>
+    <article>
+      <div class="container">
+        <header class="service-header">
+          <a href={translatePath("/#services")} class="back-link">
+            ← Back to Services
+          </a>
+        </header>
+      </div>
 
       <div class="service-content">
-        <Content />
+        <section class="container">
+          <h2>{t("services.challenges")}</h2>
+          <p>{service.challenges.description}</p>
+          <ul>
+            {
+              service.challenges.list.map((item) => (
+                <li>
+                  <strong>{item.title}</strong>: {item.description}
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <div class="bg-dark">
+          <section class="container">
+            <h2>{t("services.approach")}</h2>
+            <p>{service.approach.description}</p>
+            <ol>
+              {
+                service.approach.list.map((item) => (
+                  <li>
+                    <strong>{item.title}</strong>: {item.description}
+                  </li>
+                ))
+              }
+            </ol>
+          </section>
+        </div>
+
+        <section class="container">
+          <h2>{t("services.results")}</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>{t("services.result")}</th>
+                <th>{t("services.value")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                service.results.list.map((item) => (
+                  <tr>
+                    <td>{item.title}</td>
+                    <td>{item.description}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </section>
       </div>
     </article>
   </main>
@@ -77,6 +128,17 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     max-width: var(--content-wide-max-width);
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+  }
+
+  .bg-dark {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+  }
+
+  .bg-dark h2 {
+    color: var(--color-secondary);
   }
 
   .service-header {
@@ -132,11 +194,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
   .service-content :global(li) {
     margin-bottom: 1rem;
-  }
-
-  .service-content :global(strong) {
-    color: #333;
-    font-weight: 600;
   }
 
   .service-content :global(table) {

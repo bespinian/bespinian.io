@@ -14,6 +14,7 @@ quote:
   the world of containers, microservices, and DevOps."
 authorName: Lukas Burger
 authorTitle: Head of Software Engineering
+authorImage: ../../assets/customers/citech-lukas.jpeg
 ---
 
 ## Customer

@@ -4,17 +4,16 @@ import { useI18n } from "../i18n/utils";
 const { translatePath } = useI18n(Astro.url);
 
 interface Props {
+  id: string;
   type: string;
   title: string;
-  slug: string;
 }
-const { type, title, slug } = Astro.props;
+
+const { id, type, title } = Astro.props;
 ---
 
 <a
-  href={translatePath(
-    `/${type.includes("Blog") ? "blog" : "customers"}/${slug}`,
-  )}
+  href={translatePath(`/${type.includes("Blog") ? "blog" : "customers"}/${id}`)}
 >
   <article>
     <p id="type">{type}</p>

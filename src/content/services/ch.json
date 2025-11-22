@@ -1,0 +1,278 @@
+[
+  {
+    "id": "saas-transformation",
+    "title": "SaaS Transformation",
+    "description": "SaaS Transformation hiuft dr, dini Software zu eme skalierbaре, sichere u profitable SaaS-Produkt wyterz'entwickle. Zäme modernisiere mir dis Setup, dis Delivery-Modäu u dini Organisation, zum es Produktgschäft ufzboue, wo uf Outomatisiеrig, Gschwindigkeit u ständiger Wärtschöpfig basiert 🔀",
+    "icon": "../../assets/saas-transformation.svg",
+    "challenges": {
+      "description": "Gang mit üs uf d'SaaS Transformation-Reis, we du eini vo dene Usefordrige erläbsch:",
+      "list": [
+        {
+          "title": "Individueui Uslieferig für jede Chund",
+          "description": "Wärde dini Apps bim Chund vor Ort installiert, mit speziäue Wartigszyte, was di dra hinderet, schnäu z'wachse?"
+        },
+        {
+          "title": "Release-Chaos",
+          "description": "Muesch vieli aapassti Releases ungerschtütze, was dech dra hinderet, konstante Mehrwärt z'lifere?"
+        },
+        {
+          "title": "Unklari Priisgschtautig",
+          "description": "Hesch Müeh, Nutzig, Chöschte u Wärt z'verchnüpfe, was es schwär macht, es nachhaltig SaaS-Gschäftsmodäu ufzboue?"
+        },
+        {
+          "title": "Komplexe Operatione",
+          "description": "Si 24/7-Verfüegbarkeit, Monitoring u DevOps-Praktike schwär z'erreiche, we de mit dim aktuelle Setup es SaaS-Modäu übernimmsch?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "Mir kombiniere Strategie, Design u hands-on Engineering, zum dech vo kundespezifischer Software-Uslieferig zu eme modärne SaaS-Business z'füehre. Üsi Reis besteit us vier fokussierte Schritt:",
+      "list": [
+        {
+          "title": "SaaS Readiness Workshop",
+          "description": "Mir luege üs dis aktuelle Produkt, dis Setup u dini Organisation aa, zum z'definiire, was sech mues ändere. Zäme erstöued mir e klare Plan u en MVP, wo technischi, operativi u gschäftlichi Zieu i Iigchlang bringt."
+        },
+        {
+          "title": "SaaS Engineering",
+          "description": "Mir designäd u boued e sicheri, Multi-Tenant, modärni Cloud-Lösig mit Infrastructure as Code, outomatisierte CI/CD-Pipelines u Best Practices für Skalierbarkeit u Compliance."
+        },
+        {
+          "title": "Priisgschtautig-Setup",
+          "description": "Mir verbinded technischi Metrike mit Gschäftswärt, indäm mir dini Lösig für Chosteverfolgig iirichte u dr häufe, profitabli, nutzigsbasierti Priis- u Abrächnugsmodäu z'definiire."
+        },
+        {
+          "title": "SaaS Operations Setup",
+          "description": "Mir richte Monitoring, SLOs u On-Call-Prozäss ii, zum 24/7-Betrieb machbar z'mache. Dini Teams übernähmed DevOps-Praktike u gwinne voui Ownership über ds loufende SaaS-Produkt."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Loufendi SaaS-Lösig",
+          "description": "E sicheri, skalierbar u outomatisierti Lösig, bout für Multi-Tenancy, ständigi Uslieferig u schnäui Iteration."
+        },
+        {
+          "title": "SaaS-bereiti Teams",
+          "description": "Engineers, wo bereit si, dis SaaS säubschtständig mit DevOps Best Practices u moderne Workflows z'lifere u z'betribe."
+        },
+        {
+          "title": "SaaS Business Model",
+          "description": "Klari Priisgschtautig u Abrächnig für nachhaltig Wachstum i eme harte Märit."
+        },
+        {
+          "title": "Zuverlässigi SaaS-Ops",
+          "description": "Kompletöis Monitoring, Outomatisiеrig u On-Call-Bereitschaft für konsischtänti, hochwärtigi Customer Experience."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pragmatic-ai-adoption",
+    "title": "Pragmatic AI Adoption",
+    "description": "Pragmatic AI Adoption hiuft dine Engineering-Teams, AI dört izsetze, wo's würklich Mehrwärt schafft — zum Fokus, Gschwindigkeit u Qualität z'erhöhe, ohni Chaos oder Risike z'schaffe. Zäme reduziere mir d'mentali Lascht, optimiere Workflows u schteue sicher, dass AI verantwortigsvou u effektiv uf aune Skill-Levels igsetzt wird 🤖",
+    "icon": "../../assets/pragmatic-ai-adoption.svg",
+    "challenges": {
+      "description": "Gang mit üs uf d'Pragmatic AI Adoption-Reis, we du eini vo dene Usefordrige erläbsch:",
+      "list": [
+        {
+          "title": "Unklari Use Cases",
+          "description": "Möchtsch \"öppis mit AI mache\", bisch dr aber unsicher über di beschte Use Cases u wie's dine Engineers u Gschäftszieu würklich hiuft?"
+        },
+        {
+          "title": "Schlechti Date",
+          "description": "Si dini Date unordentlich, isoliert oder unvouständig, sodass si für effektivi AI-Modäu unbruuchbar si?"
+        },
+        {
+          "title": "Skill-Lücke",
+          "description": "Hei dini Teammitglieder unterschiedlichi Levels a Begeischterig, Wüsse u Erfahrig mit AI-Tools?"
+        },
+        {
+          "title": "Sicherheitsrisike",
+          "description": "Machsch dr Sorge über Dateschutz, Dateläcks oder ungreglete AI-Isatz i dine Entwickligsprozäss?"
+        },
+        {
+          "title": "Widerschtand gäge Veränderig",
+          "description": "Hesch Müeh, nöii Idee mit Stabilität i Iigchlang z'bringe u sicherzschteue, dass nöii AI-Features bestehendi Workflows nid schtöre?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "Mir wänded e pragmatische, engineering-first Aasatz a, wo AI-Adoption mit dine reale Workflows u Iischränkige i Iigchlang bringt. Üsi Reis besteit us vier fokussierte Schritt:",
+      "list": [
+        {
+          "title": "AI Strategy Workshop",
+          "description": "Mir finge klari Zieu u Use Cases, wo dr Isatz vo AI sinnvou isch, u prüefed, wo's dini Engineering-Teams sinnvou ungerschtütze cha. Mir finge AI-Lösige für echti Problem, nid umgkehrt."
+        },
+        {
+          "title": "AI Tool Adoption",
+          "description": "Zäme setzed mir d'Erchenntniss us em AI Workshop um. Mir füehred di richtige AI-Agente u Tools sorgfautig ii, währed mir dini Engineers mitnähmed, klari Erwartige schaffed, sicheri Nutzigsmuschter etabliere u Training uf aune Skill-Levels bieted."
+        },
+        {
+          "title": "Workflow Outomation",
+          "description": "Als Nöchschts luege mer üs d'Gschäftsprozäss i dine Teams a. Mir finge repetitivi oder manuelli Ufgabe u designä AI-triebeni Workflows, um se z'automatisiere."
+        },
+        {
+          "title": "Internal Data Connection",
+          "description": "Jetz chöi mr dini interne Datequäue sicher mit dine AI-Modäu verbinde. Das erschliesst ihres wahre Potenzial, wo si Kontäxt über dis Unternähme hei u Frage drüber chöi beantworte mithilf vo Retrieval-Augmented Generation (RAG)."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Klari AI Use Cases",
+          "description": "E Reihe klar definierte Use Cases, wo dr Isatz vo AI sinnvou isch. Mir finge AI-Lösige für echti Problem, nid umgkehrt."
+        },
+        {
+          "title": "AI-Powered Engineers",
+          "description": "Engineering-Teams, wo AI u Outomatisiеrig säubschtbewusst nutzed u debii Kontroue, Qualität u Sicherheit ufrechterhautet."
+        },
+        {
+          "title": "Smart Workflows",
+          "description": "Repetitivi, wärtarmi Ufgabe wärde outomatisiert, sodass Engineers sech uf Innovation u Customer Impact chöi konzentriere. Das wird düre RAG u interni Datequäue ermöglicht."
+        },
+        {
+          "title": "Sicheri AI-Nutzig",
+          "description": "Klari Leitplanke u Reguelig, wo Dateschutz, Compliance u ethischi Awändig vo AI-Tools sicherschteue."
+        }
+      ]
+    }
+  },
+  {
+    "id": "serverless-application-acceleration",
+    "title": "Serverless Application Acceleration",
+    "description": "Bi dr Serverless Application Acceleration geits drum, dr Fokus vo dim Team vo dr Infrastruktur uf d'Schaffig vo Gschäftswärt u nöii Idee z'verlagere, indäm d'Chraft vom Serverless Computing gnutzt wird. Mach di parat für es schlanks, hochskalierbars u choschtäsparends App-Modäu 🚀",
+    "icon": "../../assets/serverless-application-acceleration.svg",
+    "challenges": {
+      "description": "Gang mit üs uf d'Serverless Application Acceleration-Reis, we du eini vo dene Usefordrige erläbsch:",
+      "list": [
+        {
+          "title": "Z'viu Betriebsarbet",
+          "description": "Verwauted dini Teams Infrastruktur statt Features z'entwickle?"
+        },
+        {
+          "title": "Verschwendeti Chöschte",
+          "description": "Gisch z'viu Gäud für Infrastruktur us, wo säute gnutzt wird oder nid für d'Produktion verwändet wird?"
+        },
+        {
+          "title": "Langsami Releases",
+          "description": "Verhindred langi Deployment-Zykle u komplexe Infrastruktur, dass dini Teams schnäu iteriere u nöii Features schnäu ufe Märit bringe chöi?"
+        },
+        {
+          "title": "Skalierigsprobleem",
+          "description": "Hei dini bestehende Apps Müeh, unvorhersehbari Laschtspitze z'bewautige?"
+        },
+        {
+          "title": "Unsicher, wo Serverless isetzt wärde söu",
+          "description": "Bisch dr unsicher, wo u wie du Serverless-Technologie am beschte isetzisch, ohni nöii Problem wie Vendor Lock-in, komplexs Design oder \"Serverless Sprawl\" z'schaffe?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "Mir verwände en App-fokussierte Aasatz, wo strategischi Planig mit hands-on Engineering verbindet u sicherschtöut, dass Serverless-Technologie echti Gschäftsergebniss liefered. Mir schaffe Site a Site mit dine Teams, um duurhafti Veränderige z'erreiche. Üsi Reis besteit us drü fokussierte Schritt:",
+      "list": [
+        {
+          "title": "Serverless Readiness Workshop",
+          "description": "Mir prüefed dini bestohende Apps u Zieu, zum z'bestimme, wo Serverless sinnvou isch u wo nid. Mir bewerted s'bescht Gliichgwicht zwüsche Gschwindigkeit, Chöschte u Komplexität, zum e pragmatische Wäg nach vore z'definiere."
+        },
+        {
+          "title": "Serverless Engineering",
+          "description": "Zäme boued oder modernisiered mir dini Apps mit de richtige Serverless-Services u übernähmed d'Design-Muschter, wo si bruuched. Mir reduziere operativi Wartigs-Arbet u outomatisiere jede Schritt vom Wäg."
+        },
+        {
+          "title": "Team Training",
+          "description": "Mir häufed dine Engineers, d'Serverless-Dänkwis mit Zuversicht z'übernäh. Düre Coaching u hands-on Support meischtere dini Teams event-driven Konzept, Outomatisiеrig u operativi Best Practices, um schnäuer, effiziänter u säubschtständiger z'wärde."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Serverless Apps",
+          "description": "Skalierbar, starki u choschtäsparendi Apps, wo dr Infrastruktur-Arbet praktisch eliminiere u dr Betrieb vereinfached."
+        },
+        {
+          "title": "Serverless Engineers",
+          "description": "Teams mit tüüfem Verschtändis vo dr Serverless-Service-Landschaft sowie Design- u Outomatisierigs-Best Practices."
+        },
+        {
+          "title": "Serverless Business Case",
+          "description": "En klare Business Case u Strategie für Serverless-Adoption, wo zu eme vorhersehbare Pay-per-Use-Choschtemodäu füehrt, wo schlanki u effiziänti System atribt."
+        },
+        {
+          "title": "Serverless Speed",
+          "description": "Optimierti Releases i d'Produktion, demit dini Teams weniger Zyt mit Infrastrukturverwaltig u meh Zyt mit nöie Idee u Wärtschöpfig für dini Kunde verbringed."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cloud-native-empowerment",
+    "title": "Cloud Native Empowerment",
+    "description": "Bim Cloud Native Empowerment geits drum, dini Apps z'modernisiere u s'Wüsse, d'Fähigkeite u d Kultur vo dine Engineering-Teams z'entwickle. Mach di parat für modärni Cloud-Apps ☁️",
+    "icon": "../../assets/cloud-native-empowerment.svg",
+    "challenges": {
+      "description": "Gang mit üs uf d'Cloud Native Empowerment-Reis, we du eini vo dene Usefordrige erläbsch:",
+      "list": [
+        {
+          "title": "Z'wenig Zyt",
+          "description": "Möchtsch zur modärne Cloud wächsle, aber dini Teams si z'fescht mit ihre tägliche Arbet beschäftiget?"
+        },
+        {
+          "title": "Wüssenslücke",
+          "description": "Fäut es Teammitglieder a Wüsse oder Erfahrig, wänn's um modärni Cloud-Technologii geit?"
+        },
+        {
+          "title": "Hohi Choschte",
+          "description": "Tribe dini aute Apps u komplexi Infrastruktur d'Choschte i d'Höchi uverbruuched z'viu Zyt vo dine Engineers?"
+        },
+        {
+          "title": "Langsami Releases",
+          "description": "Verhindred grossi, schwerfälligi Apps ulangi Release-Zykle, dass dini Teams schnäu wichtigi Features a dini Chunde usliefere chöi?"
+        },
+        {
+          "title": "Unsicher, wo afah",
+          "description": "Bisch dr unsicher, wo du mit aune dene modärne Cloud-Plattforme, Tools u Technologie wie Kubernetes, AWS, Azure oder GCP söusch afah?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "Mir verwände en App-fokussierte Aasatz, wo Modernisiering mit kultureller Veränderig kombiniert u Site a Site mit dine Teams schaffet. Üsi Reis besteit us drü fokussierte Schritt:",
+      "list": [
+        {
+          "title": "Cloud Readiness Workshop",
+          "description": "Mir erstöued e klare, umsetzbaren App-First-Cloud-Plan, wo dis ideali Ziel-Setup u d'Umgäbig definiert, gstützt düre kompletti Choste-Nutze-Analysä."
+        },
+        {
+          "title": "Team Engineering",
+          "description": "Zäme modernisiere mir hands-on, indäm mir dini Apps i Container packed, CI/CD verbessere u Monitoring hinzuefüeged, zum es skalierbars Setup für schnäus Entwickle z'schaffe."
+        },
+        {
+          "title": "Kulturveränderig",
+          "description": "Mir befähiged dini Teams, DevOps, GitOps u Platform Thinking z'übernäh u fördre e Kultur vo dr Eigeverantwortig u ständige Verbesserig für langfrischtigi Erfolg."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Modärni Cloud-Apps",
+          "description": "Modernisierti Apps u es sicheräs, starks, modärns Cloud-Setup für schnäueri, zuverlässigeri Releases u chürzeri Time-to-Market."
+        },
+        {
+          "title": "Qualifizierti Engineers",
+          "description": "Hochqualifizierti Engineers mit Wüsse, wo uf di Tech Stack, dini Cloud-Plattform u Outomatisierigssystem zuegschnitte isch. Dini Teams si säubschtbewusst für zukünftigi Usefordrige."
+        },
+        {
+          "title": "Cloud-First-Kultur",
+          "description": "Dini Unternähmeskultur het modärni Cloud, DevOps u GitOps i ihrne DNA. Nöii Engineers übernähme die Dänkwis schnäu, u dini bestehende Mitglieder läbe se mit Überzügig."
+        },
+        {
+          "title": "Klari Cloud-Strategie",
+          "description": "E klari Strategie u Plan vo de zukünftige Zieu, wo du mit modärne Cloud möchtsch erreiche, u d Schritt, um dört häre z'cho."
+        }
+      ]
+    }
+  }
+]

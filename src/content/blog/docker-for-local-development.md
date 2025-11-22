@@ -6,6 +6,7 @@ tags: ["docker", "development", "containers", "local-development"]
 excerpt:
   "Learn how to use Docker to quickly set up and tear down backend services for
   local development, keeping your machine clean and your workflows efficient."
+image: ../../assets/blog/development.jpg
 ---
 
 I'm using [Docker](https://www.docker.com/). Daily. It has become a very

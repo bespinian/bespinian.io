@@ -7,12 +7,11 @@ excerpt:
   "Follow Kurt's journey as he learns about essential cloud services including
   object storage, managed databases, serverless runtimes, and message queues
   while running a theater ticket shop."
+image: ../../assets/blog/cloud-journey.jpg
 ---
 
 In this post, we would like to give you an overview of the key services every
 cloud infrastructure provider offers.
-
-<!--more-->
 
 ## Prologue
 

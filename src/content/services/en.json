@@ -1,0 +1,278 @@
+[
+  {
+    "id": "saas-transformation",
+    "title": "SaaS Transformation",
+    "description": "SaaS Transformation helps you grow your software into a scalable, secure, and profitable SaaS product. Together, we modernize your setup, delivery model, and organization to build a product business that thrives on automation, speed, and constant value delivery 🔀",
+    "icon": "../../assets/saas-transformation.svg",
+    "challenges": {
+      "description": "Join us on the SaaS Transformation journey if you face any of these challenges:",
+      "list": [
+        {
+          "title": "Custom Delivery for Each Customer",
+          "description": "Are your apps installed at customer sites, with special maintenance times, stopping you from growing quickly?"
+        },
+        {
+          "title": "Release Chaos",
+          "description": "Do you need to support many customized releases, stopping you from delivering value all the time?"
+        },
+        {
+          "title": "Unclear Pricing",
+          "description": "Do you struggle to connect usage, cost, and value, making it hard to build a lasting SaaS business model?"
+        },
+        {
+          "title": "Complex Operations",
+          "description": "Are 24/7 uptime, monitoring, and DevOps practices hard to achieve when adopting a SaaS model with your current setup?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "We combine strategy, design, and hands-on engineering to guide you from per-customer software delivery to a modern SaaS business. Our journey has four focused steps:",
+      "list": [
+        {
+          "title": "SaaS Readiness Workshop",
+          "description": "We look at your current product, setup, and organization to define what must change. Together, we create a clear plan and an MVP that aligns tech, operations, and business goals."
+        },
+        {
+          "title": "SaaS Engineering",
+          "description": "We design and build a secure, multi-tenant, modern cloud solution using Infrastructure as Code, automated CI/CD pipelines, and best practices for scaling and compliance."
+        },
+        {
+          "title": "Pricing Setup",
+          "description": "We connect tech metrics to business value by setting up your solution for cost tracking, helping you define profitable, usage-based pricing and billing models."
+        },
+        {
+          "title": "SaaS Operations Setup",
+          "description": "We set up monitoring, SLOs, and on-call processes to make 24/7 operations work. Your teams adopt DevOps practices and gain full ownership of the running SaaS product."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Running SaaS Solution",
+          "description": "A secure, scalable, and automated solution built for multi-tenancy, constant delivery, and fast iteration."
+        },
+        {
+          "title": "SaaS-Ready Teams",
+          "description": "Engineers ready to deliver and run your SaaS on their own with DevOps best practices and modern workflows."
+        },
+        {
+          "title": "SaaS Business Model",
+          "description": "Clear pricing and billing for lasting growth in a tough market."
+        },
+        {
+          "title": "Reliable SaaS Ops",
+          "description": "Full monitoring, automation, and on-call readiness for consistent, high-quality customer experience."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pragmatic-ai-adoption",
+    "title": "Pragmatic AI Adoption",
+    "description": "Pragmatic AI Adoption helps your teams use AI where it truly adds value — increasing focus, speed, and quality without creating chaos or risk. Together, we reduce mental load, streamline workflows, and ensure AI is used safely and well across all skill levels 🤖",
+    "icon": "../../assets/pragmatic-ai-adoption.svg",
+    "challenges": {
+      "description": "Join us on the Pragmatic AI Adoption journey if you face any of these challenges:",
+      "list": [
+        {
+          "title": "Unclear Use Cases",
+          "description": "Would you like to \"do something with AI\" but are not sure about the best use cases and how it truly helps your engineers and business goals?"
+        },
+        {
+          "title": "Bad Data",
+          "description": "Is your data messy, siloed, or incomplete, making it hard to use for effective AI models?"
+        },
+        {
+          "title": "Skill Gaps",
+          "description": "Do your team members have different levels of excitement, knowledge, and experience about AI tools?"
+        },
+        {
+          "title": "Security Risks",
+          "description": "Are you worried about privacy, data leaks, or uncontrolled AI usage in your development work?"
+        },
+        {
+          "title": "Change Resistance",
+          "description": "Do you struggle to balance new ideas with keeping things stable, making sure new AI features don't break existing workflows?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "We use a practical, engineering-first approach that aligns AI use with your real-world workflows and limits. Our journey has four focused steps:",
+      "list": [
+        {
+          "title": "AI Strategy Workshop",
+          "description": "We find clear goals and use cases where AI makes sense and check where it can help your engineering teams. We find AI solutions to real problems, not the other way around."
+        },
+        {
+          "title": "AI Tool Adoption",
+          "description": "Together, we use the findings from the AI Workshop. We carefully bring in the right AI agents and tools while keeping your engineers on board, set clear expectations, safe usage patterns, and training across all skill levels."
+        },
+        {
+          "title": "Workflow Automation",
+          "description": "Next, we look at the business processes within your teams. We find repetitive or manual tasks and design AI-driven workflows to automate them."
+        },
+        {
+          "title": "Internal Data Connection",
+          "description": "Now, we can connect your internal data sources safely to your AI models. This unlocks their true power as they have context about your company and can answer questions about it using Retrieval-Augmented Generation (RAG)."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Clear AI Use Cases",
+          "description": "A set of clearly defined use cases where AI makes sense to be used. We find AI solutions to real problems, not the other way around."
+        },
+        {
+          "title": "AI-Empowered Engineers",
+          "description": "Engineering teams that use AI and automation with confidence while keeping control, quality, and security."
+        },
+        {
+          "title": "Smart Workflows",
+          "description": "Repetitive, low-value tasks are automated, freeing engineers to focus on new ideas and customer impact. This is possible through the use of RAG and internal data sources."
+        },
+        {
+          "title": "Safe AI Usage",
+          "description": "Clear guardrails and rules ensuring privacy, compliance, and ethical use of AI tools."
+        }
+      ]
+    }
+  },
+  {
+    "id": "serverless-application-acceleration",
+    "title": "Serverless Application Acceleration",
+    "description": "Serverless Application Acceleration is all about shifting your team's focus from infrastructure to creating business value and new ideas by using the power of serverless computing. Get ready for a lean, highly scalable, and cost-saving app model 🚀",
+    "icon": "../../assets/serverless-application-acceleration.svg",
+    "challenges": {
+      "description": "Join us on the Serverless Application Acceleration journey if you face any of these challenges:",
+      "list": [
+        {
+          "title": "Too Much Operations Work",
+          "description": "Are your teams managing infrastructure instead of building features?"
+        },
+        {
+          "title": "Wasted Costs",
+          "description": "Are you spending too much money on infrastructure that is rarely used or not for production?"
+        },
+        {
+          "title": "Slow Releases",
+          "description": "Do long deployment cycles and complex infrastructure prevent your teams from quickly iterating and getting new features to market fast?"
+        },
+        {
+          "title": "Scaling Problems",
+          "description": "Are your existing apps struggling to handle sudden load spikes?"
+        },
+        {
+          "title": "Unsure Where to Use Serverless",
+          "description": "Are you not sure where and how to best use serverless tech without creating new problems like vendor lock-in, complex design, or \"serverless sprawl\"?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "We use an app-focused approach that blends strategic planning with hands-on engineering, ensuring serverless tech delivers real business results. We work side-by-side with your teams to create lasting change. Our journey has three focused steps:",
+      "list": [
+        {
+          "title": "Serverless Readiness Workshop",
+          "description": "We check your existing apps and goals to find where Serverless makes sense and where it does not. We check the best balance between speed, cost, and complexity to define a practical path forward."
+        },
+        {
+          "title": "Serverless Engineering",
+          "description": "Together, we build or modernize your apps using the right serverless services, adopting the design patterns they need. We reduce operations and maintenance work, automating every step of the way."
+        },
+        {
+          "title": "Team Training",
+          "description": "We help your engineers adopt the serverless mindset with confidence. Through coaching and hands-on support, your teams master event-driven concepts, automation, and operational best practices to become faster, more efficient, and self-sufficient."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Serverless Apps",
+          "description": "Scalable, strong, and cost-saving apps that almost remove infrastructure work and make operations simpler."
+        },
+        {
+          "title": "Serverless Engineers",
+          "description": "Teams with a deep understanding of the serverless service landscape as well as design and automation best practices."
+        },
+        {
+          "title": "Serverless Business Case",
+          "description": "A clear business case and strategy for serverless use, leading to a predictable, pay-per-use cost model that drives lean and efficient systems."
+        },
+        {
+          "title": "Serverless Speed",
+          "description": "Smooth releases to production, letting your teams spend less time managing infrastructure and more time focusing on new ideas and delivering value to your customers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cloud-native-empowerment",
+    "title": "Cloud Native Empowerment",
+    "description": "Cloud Native Empowerment is all about modernizing your apps and building the knowledge, skills, and culture of your teams. Get ready for modern cloud apps ☁️",
+    "icon": "../../assets/cloud-native-empowerment.svg",
+    "challenges": {
+      "description": "Join us on the Cloud Native Empowerment journey if you face any of these challenges:",
+      "list": [
+        {
+          "title": "Not Enough Time",
+          "description": "Do you want to modernize to modern cloud, but your teams are too busy with daily work?"
+        },
+        {
+          "title": "Missing Skills",
+          "description": "Do team members lack know-how or experience with modern cloud computing?"
+        },
+        {
+          "title": "High Costs",
+          "description": "Are your old apps and complex infrastructure driving up costs and taking too much of your engineers' time?"
+        },
+        {
+          "title": "Slow Releases",
+          "description": "Do large, bulky apps and long release cycles stop your teams from quickly delivering key features to your customers?"
+        },
+        {
+          "title": "Unsure Where to Start",
+          "description": "Are you not sure where to begin with all the modern cloud platforms, tools, and tech like Kubernetes, AWS, Azure, or GCP?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "We use an app-focused approach that combines modernization with culture change, working side-by-side with your teams. Our journey has three focused steps:",
+      "list": [
+        {
+          "title": "Cloud Readiness Workshop",
+          "description": "We create a clear, ready-to-use app-first cloud plan that defines your ideal target setup and environment, backed by a full look at costs and benefits."
+        },
+        {
+          "title": "Team Engineering",
+          "description": "Together, we modernize hands-on by putting your apps in containers, improving CI/CD, and adding monitoring to create a setup that scales and lets you build fast."
+        },
+        {
+          "title": "Culture Change",
+          "description": "We help your teams adopt DevOps, GitOps, and Platform Thinking, building a culture of ownership and constant improvement for long-term success."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Modern Cloud Apps",
+          "description": "Modernized apps and a secure, strong, modern cloud setup for faster, more reliable releases and quicker time to market."
+        },
+        {
+          "title": "Skilled Engineers",
+          "description": "Highly skilled engineers with know-how tailored to your tech stack, cloud platform and automation systems. Your teams are confident to tackle future challenges."
+        },
+        {
+          "title": "Cloud-First Culture",
+          "description": "Your company culture has modern cloud, DevOps, and GitOps in its DNA. New engineers adopt this mindset quickly, and your existing members live it with confidence."
+        },
+        {
+          "title": "Clear Cloud Strategy",
+          "description": "A clear strategy and plan of the future goals you want to achieve with modern cloud and the steps to get you there."
+        }
+      ]
+    }
+  }
+]

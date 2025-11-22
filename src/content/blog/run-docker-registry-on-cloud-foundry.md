@@ -6,6 +6,7 @@ tags: ["docker", "cloud-foundry", "registry", "containers", "s3"]
 excerpt:
   "Deploy a private Docker Registry on Cloud Foundry using S3 for storage and
   Redis for caching to securely manage your container images."
+image: ../../assets/blog/containers.jpg
 ---
 
 If you work a lot with [Docker](https://www.docker.com/), you are probably used

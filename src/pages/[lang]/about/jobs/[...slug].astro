@@ -1,4 +1,5 @@
 ---
+import { render } from "astro:content";
 import ContentDetailPage from "../../../../layouts/ContentDetailPage.astro";
 import { getCollectionStaticPaths } from "../../../../lib/paths";
 import { useI18n } from "../../../../i18n/utils";
@@ -8,7 +9,7 @@ export async function getStaticPaths() {
 }
 
 const { job } = Astro.props;
-const { Content } = await job.render();
+const { Content } = await render(job);
 
 const { lang, translatePath } = useI18n(Astro.url);
 

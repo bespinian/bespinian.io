@@ -38,6 +38,11 @@ const en = {
 
   // Services Section
   "services.title": "Our Services",
+  "services.challenges": "The Challenges",
+  "services.approach": "Our Approach",
+  "services.results": "Your Results",
+  "services.result": "Result",
+  "services.value": "The Value You Get",
 
   // Work Section
   "work.title": "Discover Our Work",
@@ -50,21 +55,6 @@ const en = {
 
   // Values Section
   "values.title": "Our Values",
-  "values.empathy.title": "Empathy",
-  "values.empathy.description":
-    "Only by understanding our own and our counterpart's values, perspectives, and feelings can we communicate and collaborate efficiently with them. Empathy drives us to actively listen, support one another, and approach challenges with compassion, whether we're working with teammates, customers, or partners.",
-  "values.transparency.title": "Transparency",
-  "values.transparency.description":
-    "Open communication builds trust. We maintain transparent processes and decisions, ensuring everyone has the information they need. Direct communication helps us resolve conflicts quickly and avoid misunderstandings.",
-  "values.ownership.title": "Ownership",
-  "values.ownership.description":
-    "Taking ownership means embracing end-to-end responsibility for our work and its impact. We empower each member to act as a leader in their roles, driving results with accountability and pride. Ownership is about taking charge, being proactive, learning from mistakes, and continuously improving.",
-  "values.passion.title": "Passion",
-  "values.passion.description":
-    "Our enthusiasm for how we work and the people and technologies we work with fuels innovation and creativity. Whether it's engaging with our community, exploring emerging technologies, advocating for FOSS, or indulging our innate curiosity, our passion keeps us inspired and motivated. We celebrate nerdity and the joy of lifelong learning.",
-  "values.simplicity.title": "Simplicity",
-  "values.simplicity.description":
-    "Be it in our communication, designs, code, or contracts, we eliminate unnecessary complexity in all we do. By focusing on what truly matters and communicating it in simple words, we make it easier for our team, clients, and partners to work together effectively and meaningfully",
 
   // What We Do Section
   "whatwedo.title": "What We Do",

@@ -3,8 +3,8 @@ import linkedInIcon from "../assets/linkedin-blue.svg";
 import gitHubIcon from "../assets/github-blue.svg";
 
 interface Props {
-  linkedIn?: string;
-  gitHub?: string;
+  linkedIn: string | undefined;
+  gitHub: string | undefined;
 }
 
 const { linkedIn, gitHub } = Astro.props;

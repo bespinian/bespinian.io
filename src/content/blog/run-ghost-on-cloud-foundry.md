@@ -6,6 +6,7 @@ tags: ["ghost", "cloud-foundry", "blog", "nodejs", "cms"]
 excerpt:
   "Deploy Ghost, a modern Node.js blogging platform, on Cloud Foundry with
   MariaDB and optional S3 storage for media files."
+image: ../../assets/blog/ghost.jpg
 ---
 
 This blog runs on [Ghost](https://github.com/TryGhost/Ghost). It's a pretty

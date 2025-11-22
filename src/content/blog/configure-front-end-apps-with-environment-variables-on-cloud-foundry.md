@@ -7,6 +7,7 @@ excerpt:
   "Discover how to configure static front-end applications on Cloud Foundry
   using environment variables by exposing configuration through an HTTP endpoint
   with nginx."
+image: ../../assets/blog/code.jpg
 ---
 
 The [12 factor manifest](https://12factor.net/) tells us in point III that apps

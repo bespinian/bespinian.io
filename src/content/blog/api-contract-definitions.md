@@ -7,6 +7,7 @@ excerpt:
   "Explore different technologies for defining service contracts including
   OpenAPI, GraphQL, and gRPC, and learn best practices for maintaining
   specification and implementation in sync."
+image: ../../assets/blog/api-contracts.jpg
 ---
 
 When running one or multiple services, it is essential that they have reliable

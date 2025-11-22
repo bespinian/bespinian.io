@@ -1,7 +1,7 @@
 ---
+import { getCollection } from "astro:content";
 import CollectionPage from "../../../../layouts/CollectionPage.astro";
 import JobCard from "../../../../components/JobCard.astro";
-import { getCollection } from "astro:content";
 import { useI18n } from "../../../../i18n/utils";
 import { getLanguagePaths } from "../../../../lib/paths";
 
@@ -26,14 +26,5 @@ const description = t("jobs.subtitle");
   isEmpty={jobs.length === 0}
   emptyMessage={t("jobs.empty")}
 >
-  {
-    jobs.map((job) => (
-      <JobCard
-        title={job.data.title}
-        location={job.data.location}
-        employment={job.data.employment}
-        slug={job.slug}
-      />
-    ))
-  }
+  {jobs.map(({ id, data }) => <JobCard {id} {...data} />)}
 </CollectionPage>

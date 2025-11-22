@@ -6,6 +6,7 @@ tags: ["linux", "arch-linux", "installation", "encryption", "uefi"]
 excerpt:
   "A concise step-by-step guide to installing Arch Linux on UEFI systems with
   full disk encryption using LUKS."
+image: ../../assets/blog/arch-installation.jpg
 ---
 
 This is a step-by-step guide to installing Arch Linux on

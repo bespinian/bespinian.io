@@ -39,6 +39,11 @@ const de = {
 
   // Services Section
   "services.title": "Unsere Services",
+  "services.challenges": "Die Herausforderungen",
+  "services.approach": "Unser Ansatz",
+  "services.results": "Deine Ergebnisse",
+  "services.result": "Ergebnis",
+  "services.value": "Der Wert, den du bekommst",
 
   // Work Section
   "work.title": "Unsere Arbeit",

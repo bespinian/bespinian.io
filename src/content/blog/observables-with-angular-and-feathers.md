@@ -6,6 +6,7 @@ tags: ["angular", "feathers", "rxjs", "websockets", "observables"]
 excerpt:
   "Learn how to create Angular services that consume Feathers WebSocket APIs
   using RxJS Observables for real-time, reactive data streams."
+image: ../../assets/blog/observe.jpg
 ---
 
 [Feathers](http://feathersjs.com) is a modern API framework for Node.js. It

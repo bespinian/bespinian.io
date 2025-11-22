@@ -7,6 +7,7 @@ excerpt:
   "Learn how to use Cloud Foundry Route Services to add authentication, rate
   limiting, or logging at the route level by intercepting requests before they
   reach your application."
+image: ../../assets/blog/router.jpg
 ---
 
 In Cloud Foundry, we use

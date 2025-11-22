@@ -6,6 +6,7 @@ tags: ["piwik", "analytics", "cloud-foundry", "php", "mysql"]
 excerpt:
   "Deploy Piwik, an open-source analytics platform, on Cloud Foundry as an
   alternative to Google Analytics with full control over your data."
+image: ../../assets/blog/analytics.jpg
 ---
 
 [Piwik](https://piwik.org/) is an open-source analytics platform based on

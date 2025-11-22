@@ -6,25 +6,28 @@ import Link from "./Link.astro";
 import LanguageSelector from "./LanguageSelector.astro";
 import { useI18n } from "../i18n/utils";
 
-const { lang, t, translatePath } = useI18n(Astro.url);
-
-const services = await getCollection("services", ({ id }) => {
-  return id.startsWith(`${lang}/`);
-});
-
 interface MenuItem {
   label: string;
   href: string;
   submenu?: { label: string; href: string }[];
 }
 
+const { lang, t, translatePath } = useI18n(Astro.url);
+
+const servicesFromContent = await getCollection("services", ({ id }) => {
+  return id === lang;
+});
+
+const servicesData =
+  servicesFromContent.length > 0 ? (servicesFromContent[0]?.data ?? []) : [];
+
 const mainItems: MenuItem[] = [
   {
     label: t("nav.services"),
     href: translatePath("/#services"),
-    submenu: services.map((service) => ({
-      label: service.data.title,
-      href: translatePath(service.slug.replace(`${lang}/`, "/services/")),
+    submenu: servicesData.map((service) => ({
+      label: service.title,
+      href: translatePath(`/services/${service.id}`),
     })),
   },
   { label: t("nav.customers"), href: translatePath("/customers") },

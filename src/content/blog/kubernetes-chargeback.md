@@ -8,6 +8,7 @@ excerpt:
   "Learn how to implement cost transparency in Kubernetes clusters using
   Prometheus and other tools to track resource usage, attribute workloads, and
   enable chargebacks."
+image: ../../assets/blog/cost-transparency.jpg
 ---
 
 The cloud promises transparency into the cost of our applications and technical

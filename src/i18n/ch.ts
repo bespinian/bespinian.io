@@ -38,6 +38,11 @@ const ts = {
 
   // Services Section
   "services.title": "Üsi Services",
+  "services.challenges": "D Usefordrige",
+  "services.approach": "Üse Aasatz",
+  "services.results": "Dini Ergäbnis",
+  "services.result": "Ergäbnis",
+  "services.value": "Dr Wärt, wo de bechunsch",
 
   // Work Section
   "work.title": "Üsi Büetz",

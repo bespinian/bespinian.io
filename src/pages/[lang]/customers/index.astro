@@ -1,7 +1,7 @@
 ---
+import { getCollection } from "astro:content";
 import CollectionPage from "../../../layouts/CollectionPage.astro";
 import CustomerCard from "../../../components/CustomerCard.astro";
-import { getCollection } from "astro:content";
 import { useI18n } from "../../../i18n/utils";
 import { getLanguagePaths } from "../../../lib/paths";
 import { sortByDateDesc } from "../../../lib/formatters";
@@ -28,11 +28,7 @@ const description = t("customers.page.subtitle");
   isEmpty={sortedCustomers.length === 0}
   emptyMessage={t("customers.empty")}
 >
-  {
-    sortedCustomers.map(({ data, slug }) => (
-      <CustomerCard {...data} slug={slug} />
-    ))
-  }
+  {sortedCustomers.map(({ id, data }) => <CustomerCard {id} {...data} />)}
   <p class="and-more">{t("customers.andMore")}</p>
 </CollectionPage>
 

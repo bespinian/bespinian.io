@@ -1,24 +1,23 @@
 ---
+import { getEntry } from "astro:content";
 import ValueCard from "./ValueCard.astro";
-import values from "../data/values.ts";
 import { useI18n } from "../i18n/utils";
 
-const { t } = useI18n(Astro.url);
+const { t, lang } = useI18n(Astro.url);
+
+const valuesEntry = await getEntry("values", lang);
+if (!valuesEntry) {
+  throw new Error(`No values found for language ${lang}`);
+}
+
+const values = valuesEntry.data;
 ---
 
 <section>
   <h2>{t("values.title")}</h2>
   <div class="row">
     <div class="grid">
-      {
-        values.map((v, i) => (
-          <ValueCard
-            index={i + 1}
-            title={t(v.titleKey)}
-            description={t(v.descriptionKey)}
-          />
-        ))
-      }
+      {values.map((value, i) => <ValueCard index={i + 1} {...value} />)}
     </div>
   </div>
 </section>
@@ -42,13 +41,13 @@ const { t } = useI18n(Astro.url);
     max-width: 80rem;
   }
 
-  @media (min-width: 32rem) {
+  @media (min-width: 48rem) {
     .grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (min-width: 48rem) {
+  @media (min-width: 64rem) {
     .grid {
       grid-template-columns: repeat(3, 1fr);
     }

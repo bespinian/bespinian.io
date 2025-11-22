@@ -5,12 +5,13 @@ import cloudLarge from "../assets/cloud-large.svg";
 import cloudDarkMedium from "../assets/cloud-dark-medium.svg";
 import { useI18n } from "../i18n/utils";
 
-const { t, translatePath } = useI18n(Astro.url);
-
 interface Props {
   service: string;
 }
+
 const { service } = Astro.props;
+
+const { t, translatePath } = useI18n(Astro.url);
 ---
 
 <section id="container">

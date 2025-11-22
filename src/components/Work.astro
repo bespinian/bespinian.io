@@ -1,17 +1,17 @@
 ---
+import { getCollection } from "astro:content";
 import WorkCard from "./WorkCard.astro";
 import Link from "./Link.astro";
-import { getCollection } from "astro:content";
 import { useI18n } from "../i18n/utils";
 
-const { t, translatePath } = useI18n(Astro.url);
-
 interface WorkItem {
+  id: string;
   type: string;
   title: string;
   date: Date;
-  slug: string;
 }
+
+const { t, translatePath } = useI18n(Astro.url);
 
 const blogPosts = await getCollection("blog");
 const customers = await getCollection("customers");
@@ -19,18 +19,18 @@ const customers = await getCollection("customers");
 const workItems: WorkItem[] = [];
 blogPosts.forEach((b) => {
   workItems.push({
+    id: b.id,
     type: t("work.type.blog"),
     title: b.data.title,
     date: b.data.date,
-    slug: b.slug,
   });
 });
 customers.forEach((c) => {
   workItems.push({
+    id: c.id,
     type: t("work.type.story"),
     title: c.data.title,
     date: c.data.date,
-    slug: c.slug,
   });
 });
 
@@ -43,11 +43,7 @@ const sortedWorkItems = workItems
   <h2 id="work">{t("work.title")}</h2>
 
   <div id="grid">
-    {
-      sortedWorkItems.map((item) => (
-        <WorkCard type={item.type} title={item.title} slug={item.slug} />
-      ))
-    }
+    {sortedWorkItems.map((item) => <WorkCard {...item} />)}
   </div>
 
   <div id="all-link">

@@ -1,9 +1,9 @@
 ---
+import { getEntry } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import SEO from "../../../components/SEO.astro";
 import MemberCard from "../../../components/MemberCard.astro";
 import Title from "../../../components/Title.astro";
-import members from "../../../data/members.ts";
 import { useI18n } from "../../../i18n/utils";
 import { getLanguagePaths } from "../../../lib/paths";
 
@@ -13,6 +13,12 @@ export function getStaticPaths() {
 
 const { lang, t } = useI18n(Astro.url);
 
+const membersEntry = await getEntry("members", "all");
+if (!membersEntry) {
+  throw new Error("members not found");
+}
+
+const members = membersEntry.data;
 const title = t("about.team.title");
 const description = t("about.team.subtitle");
 ---
@@ -22,7 +28,7 @@ const description = t("about.team.subtitle");
   <Title {title} subtitle={description} />
 
   <main>
-    {members.map((member) => <MemberCard {member} />)}
+    {members.map((member) => <MemberCard {...member} />)}
   </main>
 </Layout>
 

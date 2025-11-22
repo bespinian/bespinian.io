@@ -6,7 +6,7 @@ import Title from "../../../components/Title.astro";
 import {
   strategicPartners,
   collaborativePartners,
-} from "../../../data/partners.ts";
+} from "../../../content/partners.ts";
 import { useI18n } from "../../../i18n/utils";
 import { getLanguagePaths } from "../../../lib/paths";
 
@@ -28,14 +28,14 @@ const description = t("about.partners.subtitle");
     <section class="partner-section">
       <h2 class="section-title">Strategic Partners</h2>
       <div class="partner-grid">
-        {strategicPartners.map((partner) => <PartnerCard {partner} />)}
+        {strategicPartners.map((partner) => <PartnerCard {...partner} />)}
       </div>
     </section>
 
     <section class="partner-section">
       <h2 class="section-title">Collaborative Partners</h2>
       <div class="partner-grid">
-        {collaborativePartners.map((partner) => <PartnerCard {partner} />)}
+        {collaborativePartners.map((partner) => <PartnerCard {...partner} />)}
       </div>
     </section>
   </main>

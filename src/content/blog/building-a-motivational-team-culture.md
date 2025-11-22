@@ -7,6 +7,7 @@ excerpt:
   "Discover practical strategies for building a motivated and high-performing
   team based on insights from influential books on team dynamics, motivation,
   and organizational culture."
+image: ../../assets/blog/team-culture.jpg
 ---
 
 Creating a cohesive, motivated, and high-performing team is crucial for

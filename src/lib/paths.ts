@@ -1,5 +1,5 @@
-import { languages } from "../i18n/ui";
 import { getCollection } from "astro:content";
+import { languages } from "../i18n/ui";
 
 /**
  * Generates static paths for all supported languages
@@ -34,7 +34,7 @@ export async function getCollectionStaticPaths<T extends keyof any>(
   const items = await getCollection(collectionName as any);
   return Object.keys(languages).flatMap((lang) =>
     items.map((item: any) => ({
-      params: { lang, slug: item.slug },
+      params: { lang, slug: item.id },
       props: { [getSingularName(collectionName as string)]: item },
     })),
   );

@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { currentLang, currentPath, mobile = false } = Astro.props;
+
 const id = mobile ? "lang-selector-mobile" : "lang-selector";
 ---
 
@@ -39,9 +40,11 @@ const id = mobile ? "lang-selector-mobile" : "lang-selector";
     // Show slug for selected option, full names in dropdown
     const showSlug = () => {
       const selectedOption = selector.options[selector.selectedIndex];
-      const slug = selectedOption.getAttribute("data-slug");
-      if (slug) {
-        selectedOption.textContent = slug.toUpperCase();
+      if (selectedOption) {
+        const slug = selectedOption.getAttribute("data-slug");
+        if (slug) {
+          selectedOption.textContent = slug.toUpperCase();
+        }
       }
     };
 
@@ -57,9 +60,11 @@ const id = mobile ? "lang-selector-mobile" : "lang-selector";
     const handleChange = (e: Event) => {
       const select = e.target as HTMLSelectElement;
       const selectedOption = select.options[select.selectedIndex];
-      const path = selectedOption.getAttribute("data-path");
-      if (path) {
-        window.location.href = path;
+      if (selectedOption) {
+        const path = selectedOption.getAttribute("data-path");
+        if (path) {
+          window.location.href = path;
+        }
       }
     };
 

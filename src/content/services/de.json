@@ -1,0 +1,278 @@
+[
+  {
+    "id": "saas-transformation",
+    "title": "SaaS Transformation",
+    "description": "SaaS Transformation hilft dir, deine Software zu einem skalierbaren, sicheren und profitablen SaaS-Produkt weiterzuentwickeln. Gemeinsam modernisieren wir dein Setup, dein Delivery-Modell und deine Organisation, um ein Produktgeschäft aufzubauen, das auf Automatisierung, Geschwindigkeit und ständiger Wertschöpfung basiert 🔀",
+    "icon": "../../assets/saas-transformation.svg",
+    "challenges": {
+      "description": "Begib dich mit uns auf die SaaS Transformation-Reise, wenn du eine dieser Herausforderungen erlebst:",
+      "list": [
+        {
+          "title": "Individuelle Auslieferung für jeden Kunden",
+          "description": "Werden deine Apps beim Kunden vor Ort installiert, mit speziellen Wartungszeiten, was dich daran hindert, schnell zu wachsen?"
+        },
+        {
+          "title": "Release-Chaos",
+          "description": "Musst du viele angepasste Releases unterstützen, was dich daran hindert, ständig Wert zu liefern?"
+        },
+        {
+          "title": "Unklare Preisgestaltung",
+          "description": "Hast du Schwierigkeiten, Nutzung, Kosten und Wert zu verknüpfen, was es schwer macht, ein nachhaltiges SaaS-Geschäftsmodell aufzubauen?"
+        },
+        {
+          "title": "Komplexe Operationen",
+          "description": "Sind 24/7-Verfügbarkeit, Monitoring und DevOps-Praktiken schwer zu erreichen, wenn du mit deinem aktuellen Setup ein SaaS-Modell übernimmst?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "Wir kombinieren Strategie, Design und hands-on Engineering, um dich von kundenspezifischer Software-Auslieferung zu einem modernen SaaS-Business zu führen. Unsere Reise besteht aus vier fokussierten Schritten:",
+      "list": [
+        {
+          "title": "SaaS Readiness Workshop",
+          "description": "Wir schauen uns dein aktuelles Produkt, dein Setup und deine Organisation an, um zu definieren, was sich ändern muss. Gemeinsam erstellen wir einen klaren Plan und einen MVP, der technische, operative und geschäftliche Ziele in Einklang bringt."
+        },
+        {
+          "title": "SaaS Engineering",
+          "description": "Wir designen und bauen eine sichere, Multi-Tenant, moderne Cloud-Lösung mit Infrastructure as Code, automatisierten CI/CD-Pipelines und Best Practices für Skalierbarkeit und Compliance."
+        },
+        {
+          "title": "Preisgestaltungs-Setup",
+          "description": "Wir verbinden technische Metriken mit Geschäftswert, indem wir deine Lösung für Kostenverfolgung einrichten und dir helfen, profitable, nutzungsbasierte Preis- und Abrechnungsmodelle zu definieren."
+        },
+        {
+          "title": "SaaS Operations Setup",
+          "description": "Wir richten Monitoring, SLOs und On-Call-Prozesse ein, um 24/7-Betrieb machbar zu machen. Deine Teams übernehmen DevOps-Praktiken und gewinnen volle Ownership über das laufende SaaS-Produkt."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Laufende SaaS-Lösung",
+          "description": "Eine sichere, skalierbare und automatisierte Lösung, gebaut für Multi-Tenancy, ständige Auslieferung und schnelle Iteration."
+        },
+        {
+          "title": "SaaS-bereite Teams",
+          "description": "Engineers, die bereit sind, dein SaaS selbstständig mit DevOps Best Practices und modernen Workflows zu liefern und zu betreiben."
+        },
+        {
+          "title": "SaaS Business Model",
+          "description": "Klare Preisgestaltung und Abrechnung für nachhaltiges Wachstum in einem harten Markt."
+        },
+        {
+          "title": "Zuverlässige SaaS-Ops",
+          "description": "Komplettes Monitoring, Automatisierung und On-Call-Bereitschaft für konsistente, hochwertige Customer Experience."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pragmatic-ai-adoption",
+    "title": "Pragmatic AI Adoption",
+    "description": "Pragmatic AI Adoption hilft deinen Teams, AI dort einzusetzen, wo es wirklich Mehrwert schafft — um Fokus, Geschwindigkeit und Qualität zu erhöhen, ohne Chaos oder Risiken zu schaffen. Gemeinsam reduzieren wir die mentale Last, optimieren Workflows und stellen sicher, dass AI sicher und gut auf allen Skill-Levels eingesetzt wird 🤖",
+    "icon": "../../assets/pragmatic-ai-adoption.svg",
+    "challenges": {
+      "description": "Begib dich mit uns auf die Pragmatic AI Adoption-Reise, wenn du eine dieser Herausforderungen erlebst:",
+      "list": [
+        {
+          "title": "Unklare Use Cases",
+          "description": "Möchtest du \"etwas mit AI machen\", bist dir aber unsicher über die besten Use Cases und wie es deinen Engineers und Geschäftszielen wirklich hilft?"
+        },
+        {
+          "title": "Schlechte Daten",
+          "description": "Sind deine Daten unordentlich, isoliert oder unvollständig, sodass sie für effektive AI-Modelle unbrauchbar sind?"
+        },
+        {
+          "title": "Skill-Lücken",
+          "description": "Haben deine Teammitglieder unterschiedliche Levels an Begeisterung, Wissen und Erfahrung mit AI-Tools?"
+        },
+        {
+          "title": "Sicherheitsrisiken",
+          "description": "Machst du dir Sorgen über Datenschutz, Datenlecks oder unkontrollierten AI-Einsatz in deiner Entwicklungsarbeit?"
+        },
+        {
+          "title": "Widerstand gegen Veränderung",
+          "description": "Hast du Schwierigkeiten, neue Ideen mit Stabilität in Einklang zu bringen und sicherzustellen, dass neue AI-Features bestehende Workflows nicht stören?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "Wir wenden einen praktischen, engineering-first Ansatz an, der AI-Einsatz mit deinen echten Workflows und Grenzen in Einklang bringt. Unsere Reise besteht aus vier fokussierten Schritten:",
+      "list": [
+        {
+          "title": "AI Strategy Workshop",
+          "description": "Wir finden klare Ziele und Use Cases, wo AI sinnvoll ist und prüfen, wo es deine Engineering-Teams sinnvoll unterstützen kann. Wir finden AI-Lösungen für echte Probleme, nicht umgekehrt."
+        },
+        {
+          "title": "AI Tool Adoption",
+          "description": "Gemeinsam nutzen wir die Erkenntnisse aus dem AI Workshop. Wir führen die jeweiligen AI-Agenten und Tools sorgfältig ein, während wir deine Engineers mitnehmen, klare Erwartungen schaffen, sichere Nutzungsmuster etablieren und Training auf allen Skill-Levels bieten."
+        },
+        {
+          "title": "Workflow Automation",
+          "description": "Als Nächstes schauen wir uns die Geschäftsprozesse innerhalb deiner Teams an. Wir finden sich wiederholende oder manuelle Aufgaben und designen AI-getriebene Workflows, um sie zu automatisieren."
+        },
+        {
+          "title": "Interne Datenanbindung",
+          "description": "Jetzt können wir deine internen Datenquellen sicher mit deinen AI-Modellen verbinden. Dies erschliesst ihre wahre Kraft, da sie Kontext über dein Unternehmen haben und Fragen darüber beantworten können mithilfe von Retrieval-Augmented Generation (RAG)."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Klare AI Use Cases",
+          "description": "Eine Reihe klar definierter Use Cases, wo AI sinnvoll eingesetzt wird. Wir finden AI-Lösungen für echte Probleme, nicht umgekehrt."
+        },
+        {
+          "title": "AI-gestärkte Engineers",
+          "description": "Engineering-Teams, die AI und Automatisierung selbstbewusst nutzen und dabei Kontrolle, Qualität und Sicherheit aufrechterhalten."
+        },
+        {
+          "title": "Smarte Workflows",
+          "description": "Sich wiederholende, wertarme Aufgaben werden automatisiert, sodass Engineers sich auf neue Ideen und Customer Impact konzentrieren können. Dies wird ermöglicht durch RAG und interne Datenquellen."
+        },
+        {
+          "title": "Sicherer AI-Einsatz",
+          "description": "Klare Leitplanken und Regeln, die Datenschutz, Compliance und ethische Anwendung von AI-Tools sicherstellen."
+        }
+      ]
+    }
+  },
+  {
+    "id": "serverless-application-acceleration",
+    "title": "Serverless Application Acceleration",
+    "description": "Bei Serverless Application Acceleration geht es darum, den Fokus deines Teams von der Infrastruktur auf die Schaffung von Geschäftswert und neue Ideen zu verlagern, indem die Kraft des Serverless Computing genutzt wird. Mach dich bereit für ein schlankes, hochskalierbares und kostensparendes App-Modell 🚀",
+    "icon": "../../assets/serverless-application-acceleration.svg",
+    "challenges": {
+      "description": "Begib dich mit uns auf die Serverless Application Acceleration-Reise, wenn du eine dieser Herausforderungen erlebst:",
+      "list": [
+        {
+          "title": "Zu viel Operations-Arbeit",
+          "description": "Verwalten deine Teams Infrastruktur statt Features zu entwickeln?"
+        },
+        {
+          "title": "Verschwendete Kosten",
+          "description": "Gibst du zu viel Geld für Infrastruktur aus, die selten genutzt wird oder nicht für die Produktion verwendet wird?"
+        },
+        {
+          "title": "Langsame Releases",
+          "description": "Verhindern lange Deployment-Zyklen und komplexe Infrastruktur, dass deine Teams schnell iterieren und neue Features schnell auf den Markt bringen können?"
+        },
+        {
+          "title": "Skalierungsprobleme",
+          "description": "Haben deine bestehenden Apps Schwierigkeiten, unvorhersehbare Lastspitzen zu bewältigen?"
+        },
+        {
+          "title": "Unsicher, wo Serverless nutzen",
+          "description": "Bist du dir unsicher, wo und wie du Serverless-Technologien am besten einsetzt, ohne neue Probleme wie Vendor Lock-in, komplexes Design oder \"Serverless Sprawl\" zu schaffen?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "Wir verwenden einen App-fokussierten Ansatz, der strategische Planung mit hands-on Engineering verbindet und sicherstellt, dass Serverless-Technologien echte Geschäftsergebnisse liefern. Wir arbeiten Seite an Seite mit deinen Teams, um dauerhafte Veränderungen zu erreichen. Unsere Reise besteht aus drei fokussierten Schritten:",
+      "list": [
+        {
+          "title": "Serverless Readiness Workshop",
+          "description": "Wir prüfen deine bestehenden Apps und Ziele, um zu finden, wo Serverless sinnvoll ist und wo nicht. Wir bewerten die beste Balance zwischen Geschwindigkeit, Kosten und Komplexität, um einen praktischen Weg nach vorne zu definieren."
+        },
+        {
+          "title": "Serverless Engineering",
+          "description": "Gemeinsam bauen oder modernisieren wir deine Apps mit den richtigen Serverless-Services und übernehmen die Design-Muster, die sie brauchen. Wir reduzieren operativen und Wartungs-Overhead und automatisieren jeden Schritt."
+        },
+        {
+          "title": "Team Training",
+          "description": "Wir befähigen deine Engineers, die Serverless-Denkweise mit Zuversicht zu übernehmen. Durch Coaching und hands-on Support meistern deine Teams event-driven Konzepte, Automatisierung und operative Best Practices, um schneller, effizienter und selbstständiger zu werden."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Serverless Apps",
+          "description": "Skalierbare, starke und kostensparende Apps, die Infrastruktur-Arbeit praktisch eliminieren und den Betrieb einfacher machen."
+        },
+        {
+          "title": "Serverless Engineers",
+          "description": "Teams mit tiefem Verständnis der Serverless-Service-Landschaft sowie Design- und Automatisierungs-Best Practices."
+        },
+        {
+          "title": "Serverless Business Case",
+          "description": "Ein klarer Business Case und eine Strategie für Serverless-Einsatz, die zu einem vorhersehbaren Pay-per-Use-Kostenmodell führt, das schlanke und effiziente Systeme antreibt."
+        },
+        {
+          "title": "Serverless-Beschleunigung",
+          "description": "Optimierte Releases in die Produktion, damit deine Teams weniger Zeit mit Infrastrukturverwaltung und mehr Zeit mit neuen Ideen und Wertschöpfung für deine Kunden verbringen können."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cloud-native-empowerment",
+    "title": "Cloud Native Empowerment",
+    "description": "Beim Cloud Native Empowerment geht es darum, deine Apps zu modernisieren und das Wissen, die Fähigkeiten und die Kultur deiner Teams zu entwickeln. Mach dich bereit für moderne Cloud-Apps ☁️",
+    "icon": "../../assets/cloud-native-empowerment.svg",
+    "challenges": {
+      "description": "Begib dich mit uns auf die Cloud Native Empowerment-Reise, wenn du eine dieser Herausforderungen erlebst:",
+      "list": [
+        {
+          "title": "Zu wenig Zeit",
+          "description": "Möchtest du zur modernen Cloud wechseln, aber deine Teams sind zu sehr mit ihrer täglichen Arbeit beschäftigt?"
+        },
+        {
+          "title": "Fehlende Fähigkeiten",
+          "description": "Fehlt es Teammitgliedern an Wissen oder Erfahrung, wenn es um moderne Cloud-Technologie geht?"
+        },
+        {
+          "title": "Hohe Kosten",
+          "description": "Treiben deine alten Apps und komplexe Infrastruktur die Kosten in die Höhe und verbrauchen zu viel Zeit deiner Engineers?"
+        },
+        {
+          "title": "Langsame Releases",
+          "description": "Verhindern grosse, schwerfällige Apps und lange Release-Zyklen, dass deine Teams schnell wichtige Features an deine Kunden ausliefern können?"
+        },
+        {
+          "title": "Unsicher, wo anfangen",
+          "description": "Bist du dir unsicher, wo du mit all den modernen Cloud-Plattformen, Tools und Technologien wie Kubernetes, AWS, Azure oder GCP anfangen sollst?"
+        }
+      ]
+    },
+    "approach": {
+      "description": "Wir verwenden einen App-fokussierten Ansatz, der Modernisierung mit kultureller Veränderung kombiniert und Seite an Seite mit deinen Teams arbeitet. Unsere Reise besteht aus drei fokussierten Schritten:",
+      "list": [
+        {
+          "title": "Cloud Readiness Workshop",
+          "description": "Wir erstellen einen klaren, umsetzbaren App-First-Cloud-Plan, der dein ideales Ziel-Setup und die Umgebung definiert, gestützt durch eine komplette Kosten-Nutzen-Analyse."
+        },
+        {
+          "title": "Team Engineering",
+          "description": "Gemeinsam modernisieren wir hands-on, indem wir deine Apps in Container packen, CI/CD verbessern und Monitoring hinzufügen, um ein skalierbares Setup für schnelles Entwickeln zu schaffen."
+        },
+        {
+          "title": "Kulturveränderung",
+          "description": "Wir befähigen deine Teams, DevOps, GitOps und Platform Thinking zu übernehmen und fördern eine Kultur der Eigenverantwortung und ständigen Verbesserung für langfristigen Erfolg."
+        }
+      ]
+    },
+    "results": {
+      "list": [
+        {
+          "title": "Moderne Cloud-Apps",
+          "description": "Modernisierte Apps und ein sicheres, starkes, modernes Cloud-Setup für schnellere, zuverlässigere Releases und kürzere Time-to-Market."
+        },
+        {
+          "title": "Qualifizierte Engineers",
+          "description": "Hochqualifizierte Engineers mit Wissen, das auf deinen Tech Stack, deine Cloud-Plattform und Automatisierungssysteme zugeschnitten ist. Deine Teams sind selbstbewusst für zukünftige Herausforderungen."
+        },
+        {
+          "title": "Cloud-First-Kultur",
+          "description": "Deine Unternehmenskultur hat moderne Cloud, DevOps und GitOps in ihrer DNA. Neue Engineers übernehmen diese Denkweise schnell, und deine bestehenden Mitglieder leben sie mit Überzeugung."
+        },
+        {
+          "title": "Klare Cloud-Strategie",
+          "description": "Eine klare Strategie und ein Plan der zukünftigen Ziele, die du mit moderner Cloud erreichen möchtest, und die Schritte, um dorthin zu gelangen."
+        }
+      ]
+    }
+  }
+]

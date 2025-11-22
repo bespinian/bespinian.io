@@ -2,15 +2,16 @@
 import Link from "./Link.astro";
 import { useI18n } from "../i18n/utils";
 
-const { t, translatePath } = useI18n(Astro.url);
-
 interface Props {
+  id: string;
   title: string;
   icon: ImageMetadata;
   description: string;
-  slug: string;
 }
-const { title, icon, description, slug } = Astro.props;
+
+const { id, title, icon, description } = Astro.props;
+
+const { t, translatePath } = useI18n(Astro.url);
 ---
 
 <article>
@@ -19,7 +20,7 @@ const { title, icon, description, slug } = Astro.props;
     <h3>{title}</h3>
     <p>{description}</p>
   </div>
-  <Link href={translatePath(`/services/${slug}`)}>{t("cta.learnMore")}</Link>
+  <Link href={translatePath(`/services/${id}`)}>{t("cta.learnMore")}</Link>
 </article>
 
 <style>

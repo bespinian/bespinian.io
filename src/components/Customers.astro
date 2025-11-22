@@ -1,7 +1,7 @@
 ---
+import { getCollection } from "astro:content";
 import CustomerCard from "./CustomerCard.astro";
 import Link from "./Link.astro";
-import { getCollection } from "astro:content";
 import { useI18n } from "../i18n/utils";
 import { sortByDateDesc } from "../lib/formatters";
 
@@ -18,7 +18,7 @@ const sortedCustomers = sortByDateDesc(customers);
     {
       sortedCustomers
         .slice(0, 4)
-        .map(({ data, slug }) => <CustomerCard {...data} slug={slug} />)
+        .map(({ id, data }) => <CustomerCard {id} {...data} />)
     }
   </div>
 

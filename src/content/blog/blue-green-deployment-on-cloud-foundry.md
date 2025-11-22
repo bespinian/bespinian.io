@@ -7,6 +7,7 @@ excerpt:
   "Learn how to implement blue-green deployment on Cloud Foundry to achieve
   zero-downtime updates and safely roll back changes using a simple shell
   script."
+image: ../../assets/blog/blue-green.jpg
 ---
 
 Imagine you have one of your apps in production and want to `cf push` an update

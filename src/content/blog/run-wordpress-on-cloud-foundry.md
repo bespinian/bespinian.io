@@ -6,6 +6,7 @@ tags: ["wordpress", "cloud-foundry", "php", "s3", "cms"]
 excerpt:
   "Deploy WordPress on Cloud Foundry with externalized file storage using S3 to
   handle media uploads in a cloud-native way."
+image: ../../assets/blog/wordpress.jpg
 ---
 
 [WordPress](https://wordpress.org/) runs a huge portion of all websites on the

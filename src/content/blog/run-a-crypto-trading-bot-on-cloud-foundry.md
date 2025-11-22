@@ -6,6 +6,7 @@ tags: ["cryptocurrency", "trading", "cloud-foundry", "automation", "zenbot"]
 excerpt:
   "Deploy Zenbot, an open-source cryptocurrency trading bot, to Cloud Foundry to
   automate your crypto trading strategies on platforms like GDAX."
+image: ../../assets/blog/crypto.jpg
 ---
 
 Everybody is talking about [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin) and

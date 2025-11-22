@@ -7,6 +7,7 @@ excerpt:
   "Master efficient navigation in Vim with this comprehensive guide covering
   movement keys, search techniques, and useful plugins to boost your editing
   speed."
+image: ../../assets/blog/vim.jpg
 ---
 
 When editing a file, it is quite crucial that you can navigate your cursor

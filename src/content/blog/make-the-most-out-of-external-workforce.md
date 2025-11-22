@@ -7,6 +7,7 @@ excerpt:
   "Maximize the value of external consultants with effective onboarding, clear
   communication, and well-defined expectations to ensure they contribute
   meaningfully to your project."
+image: ../../assets/blog/external-engineers.jpg
 ---
 
 So, you hired external engineers to help with your project — but now you realize

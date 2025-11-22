@@ -1,7 +1,7 @@
 ---
+import { getCollection } from "astro:content";
 import CollectionPage from "../../../layouts/CollectionPage.astro";
 import BlogCard from "../../../components/BlogCard.astro";
-import { getCollection } from "astro:content";
 import { useI18n } from "../../../i18n/utils";
 import { getLanguagePaths } from "../../../lib/paths";
 import { sortByDateDesc } from "../../../lib/formatters";
@@ -28,16 +28,5 @@ const description =
   isEmpty={sortedPosts.length === 0}
   emptyMessage={t("blog.empty")}
 >
-  {
-    sortedPosts.map((post) => (
-      <BlogCard
-        title={post.data.title}
-        excerpt={post.data.excerpt}
-        author={post.data.author}
-        date={post.data.date}
-        tags={post.data.tags}
-        slug={post.slug}
-      />
-    ))
-  }
+  {sortedPosts.map(({ id, data }) => <BlogCard {id} {...data} />)}
 </CollectionPage>

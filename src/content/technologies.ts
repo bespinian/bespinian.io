@@ -10,11 +10,15 @@ import cilium from "../assets/technologies/cilium.svg";
 import prometheus from "../assets/technologies/prometheus.svg";
 import grafana from "../assets/technologies/grafana.svg";
 import vault from "../assets/technologies/vault.svg";
+import talos from "../assets/technologies/talos.svg";
+import kubevirt from "../assets/technologies/kubevirt.svg";
 import github from "../assets/technologies/github.svg";
 import gitlab from "../assets/technologies/gitlab.svg";
 import go from "../assets/technologies/go.svg";
+import rust from "../assets/technologies/rust.svg";
 import python from "../assets/technologies/python.svg";
 import typescript from "../assets/technologies/typescript.svg";
+import nix from "../assets/technologies/nix.svg";
 
 const technologies = [
   {
@@ -58,6 +62,14 @@ const technologies = [
     logo: vault,
   },
   {
+    name: "Talos Linux",
+    logo: talos,
+  },
+  {
+    name: "KubeVirt",
+    logo: kubevirt,
+  },
+  {
     name: "Prometheus",
     logo: prometheus,
   },
@@ -78,12 +90,20 @@ const technologies = [
     logo: go,
   },
   {
+    name: "Rust",
+    logo: rust,
+  },
+  {
     name: "Python",
     logo: python,
   },
   {
     name: "TypeScript",
     logo: typescript,
+  },
+  {
+    name: "Nix",
+    logo: nix,
   },
 ];
 

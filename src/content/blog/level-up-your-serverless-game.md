@@ -7,6 +7,7 @@ excerpt:
   "Avoid common serverless pitfalls and level up your game with this
   comprehensive guide covering logging, tracing, cold starts, security, and
   deployment strategies."
+image: ../../assets/blog/serverless-game.jpg
 ---
 
 Is your serverless project running into unexpected snags? You're not alone. From
