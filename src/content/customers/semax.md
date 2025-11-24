@@ -27,21 +27,15 @@ compliance with Swiss legal requirements and data security standards.
 
 ## Background
 
-Semax operates an OpenShift cluster managed by VSHN, which already included
-Prometheus for metrics collection as part of the standard cloud-native
-monitoring stack. The company needed to deploy Zabbix as an additional
-monitoring solution to address specific requirements not covered by their
-existing setup, particularly for monitoring external databases and providing a
-more traditional monitoring interface familiar to their operations team.
+Semax operates an OpenShift cluster managed by VSHN, which included Prometheus for metrics collection as part of the standard cloud-native monitoring stack. While this setup worked well for cloud-native workloads, the company needed to deploy Zabbix as an additional monitoring solution for specific requirements: monitoring external databases and providing a traditional monitoring interface familiar to their operations team.
 
-However, Semax lacked the in-house expertise to effectively implement Zabbix in
-a cloud-native environment. The challenge was twofold: finding a deployment
-approach that would integrate well with their existing infrastructure without
-creating unnecessary duplication, and establishing a sustainable maintenance
-model that their operations team could manage independently. A traditional
-Zabbix deployment with Zabbix Agent 2 would have created a fully duplicated
-monitoring stack, collecting the same metrics through two parallel systems and
-significantly increasing operational complexity and resource consumption.
+The company faced several key challenges:
+
+**Limited In-House Expertise**: Semax lacked the internal knowledge to effectively implement Zabbix in a cloud-native environment and integrate it with their existing OpenShift infrastructure.
+
+**Infrastructure Efficiency**: A standard Zabbix deployment using the Kubernetes API integration would create a parallel monitoring system, collecting the same metrics twice and significantly increasing operational complexity and resource consumption.
+
+**Sustainable Operations**: The solution needed to be maintainable by Semax's operations team without requiring deep Zabbix expertise for day-to-day management.
 
 ## Project Goal
 
