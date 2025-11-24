@@ -67,14 +67,9 @@ room for future improvements such as migration to a full GitOps setup.
 
 Rather than using Zabbix's Kubernetes API integration—which would have created a second, parallel metrics collection system—we configured Zabbix to leverage the existing Prometheus infrastructure. We set up Zabbix to query Prometheus directly using PromQL, allowing us to select only the specific metrics needed in Zabbix. This architectural decision balanced monitoring capability with infrastructure simplicity, avoiding unnecessary resource consumption and configuration drift.
 
-### Zabbix Deployment and Configuration
+### Implementation and Configuration
 
-We deployed Zabbix server on the OpenShift cluster using Helm, integrating it
-with OpenShift's native platform features. We configured monitoring items
-specifically for Semax's Kubernetes workloads and external databases, ensuring
-that the monitoring setup addressed their actual operational requirements. The
-configuration was designed to be maintainable by the customer's team while
-following monitoring best practices.
+We deployed Zabbix server on the OpenShift cluster using Helm, integrating it seamlessly with OpenShift's native platform features. The configuration addressed Semax's specific operational requirements, including monitoring for Kubernetes workloads and external databases. Throughout the implementation, we designed the setup to be maintainable by the customer's team while following monitoring best practices.
 
 ### Knowledge Transfer Workshop
 
