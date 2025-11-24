@@ -23,7 +23,7 @@ export async function GET(context: { site: string }) {
       title: story.data.title,
       link: `/en/customers/${story.id}`,
       pubDate: story.data.pubDate,
-      description: story.data.description,
+      description: story.data.quote,
     })),
   );
 

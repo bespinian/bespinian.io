@@ -2,7 +2,7 @@
 title: Deploying Zabbix Monitoring on OpenShift
 company: Semax
 logo: ../../assets/customers/semax.svg
-date: 2025-11-21
+pubDate: 2025-11-21
 results:
   - Deployed Zabbix on existing OpenShift cluster
   - Configured monitoring for Kubernetes workloads and external databases
@@ -27,15 +27,27 @@ compliance with Swiss legal requirements and data security standards.
 
 ## Background
 
-Semax operates an OpenShift cluster managed by VSHN, which included Prometheus for metrics collection as part of the standard cloud-native monitoring stack. While this setup worked well for cloud-native workloads, the company needed to deploy Zabbix as an additional monitoring solution for specific requirements: monitoring external databases and providing a traditional monitoring interface familiar to their operations team.
+Semax operates an OpenShift cluster managed by VSHN, which included Prometheus
+for metrics collection as part of the standard cloud-native monitoring stack.
+While this setup worked well for cloud-native workloads, the company needed to
+deploy Zabbix as an additional monitoring solution for specific requirements:
+monitoring external databases and providing a traditional monitoring interface
+familiar to their operations team.
 
 The company faced several key challenges:
 
-**Limited In-House Expertise**: Semax lacked the internal knowledge to effectively implement Zabbix in a cloud-native environment and integrate it with their existing OpenShift infrastructure.
+**Limited In-House Expertise**: Semax lacked the internal knowledge to
+effectively implement Zabbix in a cloud-native environment and integrate it with
+their existing OpenShift infrastructure.
 
-**Infrastructure Efficiency**: A standard Zabbix deployment using the Kubernetes API integration would create a parallel monitoring system, collecting the same metrics twice and significantly increasing operational complexity and resource consumption.
+**Infrastructure Efficiency**: A standard Zabbix deployment using the Kubernetes
+API integration would create a parallel monitoring system, collecting the same
+metrics twice and significantly increasing operational complexity and resource
+consumption.
 
-**Sustainable Operations**: The solution needed to be maintainable by Semax's operations team without requiring deep Zabbix expertise for day-to-day management.
+**Sustainable Operations**: The solution needed to be maintainable by Semax's
+operations team without requiring deep Zabbix expertise for day-to-day
+management.
 
 ## Project Goal
 
@@ -65,15 +77,31 @@ room for future improvements such as migration to a full GitOps setup.
 
 ### Intelligent Infrastructure Reuse
 
-Rather than using Zabbix's Kubernetes API integration—which would have created a second, parallel metrics collection system—we configured Zabbix to leverage the existing Prometheus infrastructure. We set up Zabbix to query Prometheus directly using PromQL, allowing us to select only the specific metrics needed in Zabbix. This architectural decision balanced monitoring capability with infrastructure simplicity, avoiding unnecessary resource consumption and configuration drift.
+Rather than using Zabbix's Kubernetes API integration—which would have created a
+second, parallel metrics collection system—we configured Zabbix to leverage the
+existing Prometheus infrastructure. We set up Zabbix to query Prometheus
+directly using PromQL, allowing us to select only the specific metrics needed in
+Zabbix. This architectural decision balanced monitoring capability with
+infrastructure simplicity, avoiding unnecessary resource consumption and
+configuration drift.
 
 ### Implementation and Configuration
 
-We deployed Zabbix server on the OpenShift cluster using Helm, integrating it seamlessly with OpenShift's native platform features. The configuration addressed Semax's specific operational requirements, including monitoring for Kubernetes workloads and external databases. Throughout the implementation, we designed the setup to be maintainable by the customer's team while following monitoring best practices.
+We deployed Zabbix server on the OpenShift cluster using Helm, integrating it
+seamlessly with OpenShift's native platform features. The configuration
+addressed Semax's specific operational requirements, including monitoring for
+Kubernetes workloads and external databases. Throughout the implementation, we
+designed the setup to be maintainable by the customer's team while following
+monitoring best practices.
 
 ### Knowledge Transfer Workshop
 
-To ensure the Semax operations team could effectively manage the PromQL-based metrics collection, we conducted a comprehensive workshop. The hands-on training covered practical Zabbix usage, including creating and customizing widgets, configuring discovery rules for automated monitoring of dynamic infrastructure, and applying fundamental monitoring practices. This training empowered the team to extend the monitoring configuration as their needs evolved.
+To ensure the Semax operations team could effectively manage the PromQL-based
+metrics collection, we conducted a comprehensive workshop. The hands-on training
+covered practical Zabbix usage, including creating and customizing widgets,
+configuring discovery rules for automated monitoring of dynamic infrastructure,
+and applying fundamental monitoring practices. This training empowered the team
+to extend the monitoring configuration as their needs evolved.
 
 ## Technologies Used
 
