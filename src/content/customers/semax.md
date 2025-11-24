@@ -78,13 +78,7 @@ following monitoring best practices.
 
 ### Knowledge Transfer Workshop
 
-To address the more complex configuration required when collecting metrics via
-HTTP rather than through dedicated agents, we conducted a comprehensive two-day
-workshop with the Semax operations team. The workshop covered practical Zabbix
-usage, including how to create and customize widgets, configure discovery rules
-for automated monitoring of dynamic infrastructure, and apply basic monitoring
-practices. This hands-on training ensured the team could effectively use Zabbix
-and extend the monitoring configuration as their needs evolved.
+To ensure the Semax operations team could effectively manage the PromQL-based metrics collection, we conducted a comprehensive workshop. The hands-on training covered practical Zabbix usage, including creating and customizing widgets, configuring discovery rules for automated monitoring of dynamic infrastructure, and applying fundamental monitoring practices. This training empowered the team to extend the monitoring configuration as their needs evolved.
 
 ## Technologies Used
 
