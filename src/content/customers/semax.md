@@ -63,19 +63,9 @@ tools and determined that OpenShift's built-in Helm release management
 capabilities would work well for this use case, providing a simple solution with
 room for future improvements such as migration to a full GitOps setup.
 
-### Solving the Dual Monitoring Challenge
+### Intelligent Infrastructure Reuse
 
-A critical architectural decision involved addressing the dual monitoring stack
-problem. Zabbix typically deploys with Zabbix Agent 2 as a tightly integrated
-metrics collector, which would have created parallel monitoring infrastructure
-alongside the existing Prometheus setup. Through collaborative discussions with
-the customer and cluster administrators, we proposed and implemented a solution
-that reused the existing Prometheus infrastructure. Rather than deploying Zabbix
-Agent 2 across the cluster, we configured Zabbix to collect metrics via HTTP
-from Prometheus exporters already in place, particularly leveraging the existing
-Node Exporter deployment. This approach balanced infrastructure simplicity with
-monitoring capability, avoiding unnecessary resource consumption and
-configuration drift.
+Rather than using Zabbix's Kubernetes API integration—which would have created a second, parallel metrics collection system—we configured Zabbix to leverage the existing Prometheus infrastructure. We set up Zabbix to query Prometheus directly using PromQL, allowing us to select only the specific metrics needed in Zabbix. This architectural decision balanced monitoring capability with infrastructure simplicity, avoiding unnecessary resource consumption and configuration drift.
 
 ### Zabbix Deployment and Configuration
 
