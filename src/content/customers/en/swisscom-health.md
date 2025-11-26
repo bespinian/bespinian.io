@@ -1,7 +1,7 @@
 ---
 title: Secure Service Mesh for Swisscom Health
 company: Swisscom
-logo: ../../assets/customers/swisscom.svg
+logo: ../../../assets/customers/swisscom.svg
 date: 2021-05-26
 results:
   - End-to-end encryption across all microservices

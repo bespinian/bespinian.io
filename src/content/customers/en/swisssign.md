@@ -1,7 +1,7 @@
 ---
 title: Migrating SwissID to Kubernetes
 company: SwissSign
-logo: ../../assets/customers/swisssign.svg
+logo: ../../../assets/customers/swisssign.svg
 date: 2021-09-21
 results:
   - Assessed production readiness of all deployments
@@ -14,7 +14,7 @@ quote:
   and alarming landscape."
 authorName: Placi Flury
 authorTitle: Head of DevOps
-authorImage: ../../assets/customers/swisssign-placi.jpeg
+authorImage: ../../../assets/customers/swisssign-placi.jpeg
 ---
 
 ## Customer

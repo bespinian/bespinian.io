@@ -1,9 +1,8 @@
 ---
-import { getCollection } from "astro:content";
 import CollectionPage from "../../../layouts/CollectionPage.astro";
 import CustomerCard from "../../../components/CustomerCard.astro";
 import { useI18n } from "../../../i18n/utils";
-import { getLanguagePaths } from "../../../lib/paths";
+import { getLanguagePaths, getCollectionByLanguage } from "../../../lib/paths";
 import { sortByDateDesc } from "../../../lib/formatters";
 
 export function getStaticPaths() {
@@ -12,7 +11,7 @@ export function getStaticPaths() {
 
 const { lang, t } = useI18n(Astro.url);
 
-const customers = await getCollection("customers");
+const customers = await getCollectionByLanguage("customers", lang);
 const sortedCustomers = sortByDateDesc(customers);
 
 const title = t("customers.page.title");

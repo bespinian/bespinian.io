@@ -1,7 +1,7 @@
 ---
 title: Banknote Data Management Platform
 company: CI Tech Sensors
-logo: ../../assets/customers/citechsensors.svg
+logo: ../../../assets/customers/citechsensors.svg
 date: 2024-01-10
 results:
   - Centralized platform for banknote data
@@ -14,7 +14,7 @@ quote:
   the world of containers, microservices, and DevOps."
 authorName: Lukas Burger
 authorTitle: Head of Software Engineering
-authorImage: ../../assets/customers/citech-lukas.jpeg
+authorImage: ../../../assets/customers/citech-lukas.jpeg
 ---
 
 ## Customer

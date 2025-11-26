@@ -1,7 +1,7 @@
 ---
 title: Building a Secure AWS Platform
 company: PostFinance
-logo: ../../assets/customers/postfinance.svg
+logo: ../../../assets/customers/postfinance.svg
 date: 2025-08-07
 results:
   - Built secure, FINMA-compliant AWS platform
@@ -15,7 +15,7 @@ quote:
   efficiently."
 authorName: Roger Bigler
 authorTitle: Lead Deployment, Platform & Security
-authorImage: ../../assets/customers/postfinance-roger.jpeg
+authorImage: ../../../assets/customers/postfinance-roger.jpeg
 ---
 
 ## Customer

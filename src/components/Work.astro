@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import WorkCard from "./WorkCard.astro";
 import Link from "./Link.astro";
 import { useI18n } from "../i18n/utils";
+import { getCollectionByLanguage } from "../lib/paths";
 
 interface WorkItem {
   id: string;
@@ -11,10 +12,10 @@ interface WorkItem {
   date: Date;
 }
 
-const { t, translatePath } = useI18n(Astro.url);
+const { lang, t, translatePath } = useI18n(Astro.url);
 
 const blogPosts = await getCollection("blog");
-const customers = await getCollection("customers");
+const customers = await getCollectionByLanguage("customers", lang);
 
 const workItems: WorkItem[] = [];
 blogPosts.forEach((b) => {

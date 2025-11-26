@@ -1,7 +1,7 @@
 ---
 title: Modernizing 20 Minuten Application
 company: 20 Minuten
-logo: ../../assets/customers/20-minuten.svg
+logo: ../../../assets/customers/20-minuten.svg
 date: 2022-03-11
 results:
   - Migrated 1M+ daily users without downtime
@@ -15,7 +15,7 @@ quote:
   infrastructure."
 authorName: Manuel Sutter
 authorTitle: Product Owner
-authorImage: ../../assets/customers/20minuten-manuel.jpeg
+authorImage: ../../../assets/customers/20minuten-manuel.jpeg
 ---
 
 ## Customer

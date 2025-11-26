@@ -1,7 +1,7 @@
 ---
 title: Creating IIoT Health Monitor BLOX
 company: Comet X-Ray
-logo: ../../assets/customers/comet.svg
+logo: ../../../assets/customers/comet.svg
 date: 2024-11-06
 results:
   - Built IIoT health monitoring for Xray fleet
@@ -15,7 +15,7 @@ quote:
   preventive maintenance."
 authorName: Pascal Corbat
 authorTitle: Product Manager
-authorImage: ../../assets/customers/comet-pascal.jpeg
+authorImage: ../../../assets/customers/comet-pascal.jpeg
 ---
 
 ## Customer

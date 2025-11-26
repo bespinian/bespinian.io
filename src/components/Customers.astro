@@ -1,13 +1,13 @@
 ---
-import { getCollection } from "astro:content";
 import CustomerCard from "./CustomerCard.astro";
 import Link from "./Link.astro";
 import { useI18n } from "../i18n/utils";
 import { sortByDateDesc } from "../lib/formatters";
+import { getCollectionByLanguage } from "../lib/paths";
 
-const { t, translatePath } = useI18n(Astro.url);
+const { lang, t, translatePath } = useI18n(Astro.url);
 
-const customers = await getCollection("customers");
+const customers = await getCollectionByLanguage("customers", lang);
 const sortedCustomers = sortByDateDesc(customers);
 ---
 

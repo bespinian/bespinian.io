@@ -1,7 +1,7 @@
 ---
 title: Cloudifying Airport Software AERO
 company: Xovis
-logo: ../../assets/customers/xovis.svg
+logo: ../../../assets/customers/xovis.svg
 date: 2024-01-10
 results:
   - Successfully launched AERO SaaS platform
@@ -14,7 +14,7 @@ quote:
   airport software to a SaaS model and successfully launching AERO."
 authorName: Jörg Wagner
 authorTitle: CTO
-authorImage: ../../assets/customers/xovis-joerg.jpeg
+authorImage: ../../../assets/customers/xovis-joerg.jpeg
 ---
 
 ## Customer

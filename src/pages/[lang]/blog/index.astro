@@ -15,14 +15,14 @@ const { lang, t } = useI18n(Astro.url);
 const blogPosts = await getCollection("blog");
 const sortedPosts = sortByDateDesc(blogPosts);
 
-const description =
-  "Insights, tutorials, and updates from the bespinian team on cloud-native technologies, Kubernetes, and modern software development.";
+const title = t("blog.title");
+const description = t("blog.subtitle");
 ---
 
 <CollectionPage
-  pageTitle="bespinian Blog"
-  title={t("blog.title")}
-  subtitle={t("blog.subtitle")}
+  pageTitle={title}
+  {title}
+  subtitle={description}
   {description}
   {lang}
   isEmpty={sortedPosts.length === 0}
