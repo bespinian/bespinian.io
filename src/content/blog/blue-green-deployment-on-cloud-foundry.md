@@ -1,9 +1,9 @@
 ---
 title: Blue Green Deployment on Cloud Foundry
 author: Lena Fuhrimann
-date: 2016-12-12
+pubDate: 2016-12-12
 tags: ["cloud-foundry", "deployment", "devops", "automation"]
-excerpt:
+description:
   "Learn how to implement blue-green deployment on Cloud Foundry to achieve
   zero-downtime updates and safely roll back changes using a simple shell
   script."

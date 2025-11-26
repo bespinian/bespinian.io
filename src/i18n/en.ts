@@ -5,8 +5,6 @@ const en = {
   "nav.about": "About",
   "nav.contact": "Contact",
   "nav.blog": "Blog",
-  "nav.menu": "Menu",
-  "nav.close": "Close",
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Free Workshop",

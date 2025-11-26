@@ -1,9 +1,9 @@
 ---
 title: Manage Buckets on Cloud Foundry S3 Services
 author: Lena Fuhrimann
-date: 2017-03-17
+pubDate: 2017-03-17
 tags: ["cloud-foundry", "s3", "storage", "buckets"]
-excerpt:
+description:
   "Learn how to create and manage S3 buckets on Cloud Foundry using s3cmd or the
   open-source S3 Manager application."
 image: ../../assets/blog/storage.jpg

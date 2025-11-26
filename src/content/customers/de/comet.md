@@ -2,7 +2,7 @@
 title: Entwicklung des IIoT-Gesundheitsmonitors BLOX
 company: Comet X-Ray
 logo: ../../../assets/customers/comet.svg
-date: 2024-11-06
+pubDate: 2024-11-06
 results:
   - IIoT-Gesundheitsüberwachung für Röntgen-Flotte aufgebaut
   - Übergang zu präventiver Wartung ermöglicht

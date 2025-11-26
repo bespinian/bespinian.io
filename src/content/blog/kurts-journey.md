@@ -1,9 +1,9 @@
 ---
 title: Kurt's Cloud Journey
 author: Philippe Hässig
-date: 2023-11-03
+pubDate: 2023-11-03
 tags: ["cloud", "infrastructure", "storage", "scaling", "serverless"]
-excerpt:
+description:
   "Follow Kurt's journey as he learns about essential cloud services including
   object storage, managed databases, serverless runtimes, and message queues
   while running a theater ticket shop."

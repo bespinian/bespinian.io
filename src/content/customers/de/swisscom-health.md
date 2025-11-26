@@ -2,7 +2,7 @@
 title: Sicheres Service Mesh für Swisscom Health
 company: Swisscom
 logo: ../../../assets/customers/swisscom.svg
-date: 2021-05-26
+pubDate: 2021-05-26
 results:
   - Ende-zu-Ende-Verschlüsselung über alle Microservices
   - Zero-Trust-Architektur mit Istio Service Mesh

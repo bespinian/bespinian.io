@@ -14,11 +14,13 @@ export function formatDate(date: Date, locale = "en-US"): string {
 
 /**
  * Sorts an array of items by date in descending order (newest first)
- * @param items - Array of items with a data.date property
+ * @param items - Array of items with a data.pubDate property
  * @returns Sorted array
  */
-export function sortByDateDesc<T extends { data: { date: Date } }>(
+export function sortByDateDesc<T extends { data: { pubDate: Date } }>(
   items: T[],
 ): T[] {
-  return items.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  return items.sort(
+    (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+  );
 }

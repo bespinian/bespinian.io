@@ -1,9 +1,9 @@
 ---
 title: Run a Crypto Trading Bot on Cloud Foundry
 author: Lena Fuhrimann
-date: 2017-12-11
+pubDate: 2017-12-11
 tags: ["cryptocurrency", "trading", "cloud-foundry", "automation", "zenbot"]
-excerpt:
+description:
   "Deploy Zenbot, an open-source cryptocurrency trading bot, to Cloud Foundry to
   automate your crypto trading strategies on platforms like GDAX."
 image: ../../assets/blog/crypto.jpg

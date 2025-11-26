@@ -1,9 +1,9 @@
 ---
 title: What is KubeVirt? Run Virtual Machines on Kubernetes like containers
 author: Christof Lüthi - tim&koko
-date: 2025-10-06
+pubDate: 2025-10-06
 tags: ["kubernetes", "kubevirt", "virtualization", "kvm", "containers"]
-excerpt:
+description:
   "Discover how KubeVirt extends Kubernetes to run and manage virtual machines
   alongside containers using the same APIs, tools, and workflows."
 image: ../../assets/blog/servers.jpg

@@ -1,9 +1,9 @@
 ---
 title: Installing Arch Linux on UEFI with Full Disk Encryption
 author: Lena Fuhrimann
-date: 2021-03-12
+pubDate: 2021-03-12
 tags: ["linux", "arch-linux", "installation", "encryption", "uefi"]
-excerpt:
+description:
   "A concise step-by-step guide to installing Arch Linux on UEFI systems with
   full disk encryption using LUKS."
 image: ../../assets/blog/arch-installation.jpg

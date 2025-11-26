@@ -1,10 +1,10 @@
 ---
 title: Observability in the Cloud
 author: Gabriel Koch
-date: 2022-04-22
+pubDate: 2022-04-22
 tags:
   ["observability", "monitoring", "distributed-systems", "cloud", "telemetry"]
-excerpt:
+description:
   "Understand the difference between monitoring and observability, and learn how
   to implement true observability in distributed cloud systems to effectively
   troubleshoot unknown issues."

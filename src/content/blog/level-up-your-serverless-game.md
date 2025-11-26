@@ -1,9 +1,9 @@
 ---
 title: Level Up Your Serverless Game
 author: Lena Fuhrimann
-date: 2025-09-25
+pubDate: 2025-09-25
 tags: ["serverless", "aws-lambda", "best-practices", "faas", "cloud"]
-excerpt:
+description:
   "Avoid common serverless pitfalls and level up your game with this
   comprehensive guide covering logging, tracing, cold starts, security, and
   deployment strategies."

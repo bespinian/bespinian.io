@@ -1,9 +1,9 @@
 ---
 title: Docker for Local Development
 author: Lena Fuhrimann
-date: 2017-06-08
+pubDate: 2017-06-08
 tags: ["docker", "development", "containers", "local-development"]
-excerpt:
+description:
   "Learn how to use Docker to quickly set up and tear down backend services for
   local development, keeping your machine clean and your workflows efficient."
 image: ../../assets/blog/development.jpg

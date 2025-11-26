@@ -1,9 +1,9 @@
 ---
 title: Building Tough Applications
 author: Lena Fuhrimann
-date: 2025-12-03
+pubDate: 2025-12-03
 tags: ["cloud", "kubernetes", "resiliency", "scaling"]
-excerpt:
+description:
   "Learn how to build strong cloud applications using four simple ideas:
   Tolerance, Fortitude, Resilience, and Adaptability."
 image: ../../assets/blog/tough-applications.jpg
@@ -196,3 +196,7 @@ tolerance) but recover right away (high resilience).
 Understanding these four parts helps you find where your apps are weak. Then you
 can focus on making them stronger. The cloud is not a stable place. Building
 tough apps is not optional.
+
+Do you want to build your own tough applications? Check out our
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=tough-applications)
+service and get your free workshop.

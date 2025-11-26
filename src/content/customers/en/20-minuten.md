@@ -2,7 +2,7 @@
 title: Modernizing 20 Minuten Application
 company: 20 Minuten
 logo: ../../../assets/customers/20-minuten.svg
-date: 2022-03-11
+pubDate: 2022-03-11
 results:
   - Migrated 1M+ daily users without downtime
   - Modernized 20-year-old legacy infrastructure

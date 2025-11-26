@@ -2,7 +2,7 @@
 title: Cloudifying Airport Software AERO
 company: Xovis
 logo: ../../../assets/customers/xovis.svg
-date: 2024-01-10
+pubDate: 2024-01-10
 results:
   - Successfully launched AERO SaaS platform
   - Fully automated multi-region provisioning

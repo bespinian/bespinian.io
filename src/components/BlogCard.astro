@@ -8,28 +8,28 @@ import FlipCard from "./FlipCard.astro";
 interface Props {
   id: string;
   title: string;
-  excerpt: string;
+  description: string;
   author: string;
-  date: Date;
+  pubDate: Date;
   tags: string[];
   image: ImageMetadata;
 }
-const { id, title, excerpt, author, date, tags, image } = Astro.props;
+const { id, title, description, author, pubDate, tags, image } = Astro.props;
 
 const { translatePath } = useI18n(Astro.url);
 
-const formattedDate = formatDate(date);
+const formattedDate = formatDate(pubDate);
 ---
 
 <a href={translatePath(`/blog/${id}`)}>
   <FlipCard>
     <div slot="front" class="front">
       <h3>{title}</h3>
-      <p class="excerpt">{excerpt}</p>
+      <p class="description">{description}</p>
       <div class="meta">
         <span class="author">{author}</span>
         <span class="separator">•</span>
-        <time datetime={date.toISOString()}>{formattedDate}</time>
+        <time datetime={pubDate.toISOString()}>{formattedDate}</time>
       </div>
       <div class="tags">
         {tags.map((tag) => <span class="tag">{tag}</span>)}
@@ -96,7 +96,7 @@ const formattedDate = formatDate(date);
         color: var(--color-primary);
       }
 
-      .excerpt {
+      .description {
         color: var(--color-text-dark);
         margin: 0 0 1rem 0;
         line-height: 1.6;

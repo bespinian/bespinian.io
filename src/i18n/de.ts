@@ -5,8 +5,6 @@ const de = {
   "nav.about": "Über uns",
   "nav.contact": "Kontakt",
   "nav.blog": "Blog",
-  "nav.menu": "Menü",
-  "nav.close": "Schliessen",
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Kostenloser Workshop",

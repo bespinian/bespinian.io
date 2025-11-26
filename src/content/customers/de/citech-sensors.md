@@ -2,7 +2,7 @@
 title: Banknoten-Datenmanagement-Plattform
 company: CI Tech Sensors
 logo: ../../../assets/customers/citechsensors.svg
-date: 2024-01-10
+pubDate: 2024-01-10
 results:
   - Zentrale Plattform für Banknotendaten
   - Unveränderlicher Speicher für vollständige Reproduzierbarkeit

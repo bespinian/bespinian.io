@@ -2,7 +2,7 @@
 title: Aufbau einer sicheren AWS-Plattform
 company: PostFinance
 logo: ../../../assets/customers/postfinance.svg
-date: 2025-08-07
+pubDate: 2025-08-07
 results:
   - Sichere, FINMA-konforme AWS-Plattform aufgebaut
   - Automatisierte Infrastruktur-Bereitstellung mit Terraform

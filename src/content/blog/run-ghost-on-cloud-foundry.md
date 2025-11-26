@@ -1,9 +1,9 @@
 ---
 title: Run Ghost on Cloud Foundry
 author: Lena Fuhrimann
-date: 2017-07-27
+pubDate: 2017-07-27
 tags: ["ghost", "cloud-foundry", "blog", "nodejs", "cms"]
-excerpt:
+description:
   "Deploy Ghost, a modern Node.js blogging platform, on Cloud Foundry with
   MariaDB and optional S3 storage for media files."
 image: ../../assets/blog/ghost.jpg

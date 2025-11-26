@@ -2,7 +2,7 @@
 title: Migrating Weather Apps to Geo-Redundant Cloud
 company: MeteoSwiss
 logo: ../../../assets/customers/swiss-confederation.svg
-date: 2025-01-12
+pubDate: 2025-01-12
 results:
   - Migrated 300+ apps to geo-redundant cloud
   - Modernized critical systems to AWS serverless

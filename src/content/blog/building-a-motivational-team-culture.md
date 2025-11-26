@@ -1,9 +1,9 @@
 ---
 title: "Building a Motivational Team Culture: Strategies for Success"
 author: Matthias Osswald
-date: 2024-10-08
+pubDate: 2024-10-08
 tags: ["team-culture", "leadership", "motivation", "management"]
-excerpt:
+description:
   "Discover practical strategies for building a motivated and high-performing
   team based on insights from influential books on team dynamics, motivation,
   and organizational culture."

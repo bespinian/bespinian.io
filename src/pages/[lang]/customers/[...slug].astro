@@ -15,7 +15,7 @@ const { Content } = await render(customer);
 
 const { lang, translatePath } = useI18n(Astro.url);
 
-const formattedDate = formatDate(customer.data.date);
+const formattedDate = formatDate(customer.data.pubDate);
 
 const title = customer.data.title;
 const description = `Learn how ${customer.data.company} achieved success with bespinian's support consulting. ${customer.data.results.join(". ")}.`;
@@ -33,11 +33,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   }}
   meta={[
     { label: customer.data.company },
-    { label: formattedDate, datetime: customer.data.date.toISOString() },
+    { label: formattedDate, datetime: customer.data.pubDate.toISOString() },
   ]}
   seoProps={{
     article: true,
-    publishedTime: customer.data.date.toISOString(),
+    publishedTime: customer.data.pubDate.toISOString(),
     image: customer.data.logo.src,
     imageAlt: `${customer.data.company} logo`,
   }}
@@ -45,7 +45,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     type: "Article",
     headline: customer.data.title,
     description: description,
-    datePublished: customer.data.date.toISOString(),
+    datePublished: customer.data.pubDate.toISOString(),
     author: "bespinian",
     image: customer.data.logo.src,
     url: canonicalUrl,
@@ -177,6 +177,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     font-style: normal;
     font-size: 1rem;
     color: var(--color-gray);
+  }
+
+  :global(.content-body img) {
+    max-width: 100%;
+    margin: 2rem 0;
   }
 
   @media (max-width: 48rem) {

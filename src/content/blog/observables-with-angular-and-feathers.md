@@ -1,9 +1,9 @@
 ---
 title: Observables With Angular and Feathers
 author: Lena Fuhrimann
-date: 2016-03-14
+pubDate: 2016-03-14
 tags: ["angular", "feathers", "rxjs", "websockets", "observables"]
-excerpt:
+description:
   "Learn how to create Angular services that consume Feathers WebSocket APIs
   using RxJS Observables for real-time, reactive data streams."
 image: ../../assets/blog/observe.jpg

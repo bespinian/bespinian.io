@@ -2,7 +2,7 @@
 title: Modernisierung der 20 Minuten Applikation
 company: 20 Minuten
 logo: ../../../assets/customers/20-minuten.svg
-date: 2022-03-11
+pubDate: 2022-03-11
 results:
   - Migration von über 1 Million täglichen Benutzern ohne Ausfallzeit
   - Modernisierung der fast 20 Jahre alten Legacy-Infrastruktur

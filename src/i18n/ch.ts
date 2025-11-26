@@ -5,8 +5,6 @@ const ts = {
   "nav.about": "Über üs",
   "nav.contact": "Kontakt",
   "nav.blog": "Blog",
-  "nav.menu": "Menü",
-  "nav.close": "Zuemache",
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Gratis Workshop",

@@ -1,9 +1,9 @@
 ---
 title: API Contract Definitions
 author: Lena Fuhrimann
-date: 2022-10-11
+pubDate: 2022-10-11
 tags: ["api", "contracts", "openapi", "graphql", "grpc"]
-excerpt:
+description:
   "Explore different technologies for defining service contracts including
   OpenAPI, GraphQL, and gRPC, and learn best practices for maintaining
   specification and implementation in sync."

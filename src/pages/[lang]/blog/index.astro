@@ -1,10 +1,12 @@
 ---
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import CollectionPage from "../../../layouts/CollectionPage.astro";
 import BlogCard from "../../../components/BlogCard.astro";
 import { useI18n } from "../../../i18n/utils";
 import { getLanguagePaths } from "../../../lib/paths";
 import { sortByDateDesc } from "../../../lib/formatters";
+import rss from "../../../assets/rss.svg";
 
 export function getStaticPaths() {
   return getLanguagePaths();
@@ -29,4 +31,24 @@ const description = t("blog.subtitle");
   emptyMessage={t("blog.empty")}
 >
   {sortedPosts.map(({ id, data }) => <BlogCard {id} {...data} />)}
+
+  <div slot="tail" class="rss-container">
+    <a href="/rss.xml">
+      <Image src={rss} alt="RSS Feed" class="rss-icon" />
+    </a>
+  </div>
 </CollectionPage>
+
+<style>
+  .rss-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+  }
+
+  .rss-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+</style>

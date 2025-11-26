@@ -2,7 +2,7 @@
 title: Migrating SwissID to Kubernetes
 company: SwissSign
 logo: ../../../assets/customers/swisssign.svg
-date: 2021-09-21
+pubDate: 2021-09-21
 results:
   - Assessed production readiness of all deployments
   - Built Prometheus alerting to ops paging system

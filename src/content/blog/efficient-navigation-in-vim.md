@@ -1,9 +1,9 @@
 ---
 title: Efficient Navigation in Vim
 author: Lena Fuhrimann
-date: 2020-07-15
+pubDate: 2020-07-15
 tags: ["vim", "productivity", "editor", "navigation"]
-excerpt:
+description:
   "Master efficient navigation in Vim with this comprehensive guide covering
   movement keys, search techniques, and useful plugins to boost your editing
   speed."

@@ -1,18 +1,21 @@
 ---
+import spaceship1 from "../assets/spaceship1.svg";
 import cloudLarge from "../assets/cloud-large.svg";
 import cloudDarkMedium from "../assets/cloud-dark-medium.svg";
 
 interface Props {
   title: string;
   subtitle?: string;
+  spaceship?: boolean;
 }
 
-const { title, subtitle } = Astro.props;
+const { title, subtitle, spaceship } = Astro.props;
 ---
 
 <section id="container">
   <h1>{title}</h1>
   <p>{subtitle}</p>
+  {spaceship && <img id="spaceship" src={spaceship1.src} alt="Spaceship" />}
   <img id="cloud-dark-medium" src={cloudDarkMedium.src} alt="Cloud" />
   <img id="cloud-large" src={cloudLarge.src} alt="Cloud" />
 </section>
@@ -43,6 +46,15 @@ const { title, subtitle } = Astro.props;
     max-width: 42rem;
     font-size: 1.3rem;
     z-index: 100;
+  }
+
+  #spaceship {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    max-height: 75%;
+    max-width: calc(100vw - 58rem);
+    z-index: 3;
   }
 
   #cloud-large {

@@ -1,9 +1,9 @@
 ---
 title: Configure Front End Apps With Environment Variables on Cloud Foundry
 author: Lena Fuhrimann
-date: 2016-11-20
+pubDate: 2016-11-20
 tags: ["cloud-foundry", "frontend", "configuration", "nginx", "staticfile"]
-excerpt:
+description:
   "Discover how to configure static front-end applications on Cloud Foundry
   using environment variables by exposing configuration through an HTTP endpoint
   with nginx."

@@ -23,7 +23,7 @@ blogPosts.forEach((b) => {
     id: b.id,
     type: t("work.type.blog"),
     title: b.data.title,
-    date: b.data.date,
+    date: b.data.pubDate,
   });
 });
 customers.forEach((c) => {
@@ -31,7 +31,7 @@ customers.forEach((c) => {
     id: c.id,
     type: t("work.type.story"),
     title: c.data.title,
-    date: c.data.date,
+    date: c.data.pubDate,
   });
 });
 

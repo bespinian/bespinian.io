@@ -7,9 +7,9 @@ const blog = defineCollection({
     z.object({
       title: z.string(),
       author: z.string(),
-      date: z.coerce.date(),
+      pubDate: z.coerce.date(),
       tags: z.array(z.string()),
-      excerpt: z.string(),
+      description: z.string(),
       image: image(),
     }),
 });
@@ -21,7 +21,7 @@ const customers = defineCollection({
       title: z.string(),
       company: z.string(),
       logo: image(),
-      date: z.coerce.date(),
+      pubDate: z.coerce.date(),
       results: z.array(z.string()),
       quote: z.string(),
       authorName: z.string(),

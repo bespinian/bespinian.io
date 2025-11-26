@@ -15,11 +15,11 @@ const { Content } = await render(post);
 
 const { lang, translatePath } = useI18n(Astro.url);
 
-const formattedDate = formatDate(post.data.date);
+const formattedDate = formatDate(post.data.pubDate);
 
 const title = `${post.data.title} | Blog`;
 const description =
-  post.data.excerpt || `Read ${post.data.title} by ${post.data.author}`;
+  post.data.description || `Read ${post.data.title} by ${post.data.author}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
@@ -31,11 +31,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   backLink={{ href: translatePath("/blog"), text: "← Back to Blog" }}
   meta={[
     { label: post.data.author },
-    { label: formattedDate, datetime: post.data.date.toISOString() },
+    { label: formattedDate, datetime: post.data.pubDate.toISOString() },
   ]}
   seoProps={{
     article: true,
-    publishedTime: post.data.date.toISOString(),
+    publishedTime: post.data.pubDate.toISOString(),
     author: post.data.author,
     tags: post.data.tags,
     image: post.data.image?.src,
@@ -45,7 +45,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     type: "BlogPosting",
     headline: post.data.title,
     description: description,
-    datePublished: post.data.date.toISOString(),
+    datePublished: post.data.pubDate.toISOString(),
     author: post.data.author,
     tags: post.data.tags,
     url: canonicalUrl,

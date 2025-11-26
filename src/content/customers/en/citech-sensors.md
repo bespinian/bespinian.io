@@ -2,7 +2,7 @@
 title: Banknote Data Management Platform
 company: CI Tech Sensors
 logo: ../../../assets/customers/citechsensors.svg
-date: 2024-01-10
+pubDate: 2024-01-10
 results:
   - Centralized platform for banknote data
   - Immutable storage for full reproducibility

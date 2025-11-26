@@ -1,9 +1,9 @@
 ---
 title: Hired External Engineers? Here's How to Make The Most of Them
 author: Philippe Haessig
-date: 2025-02-20
+pubDate: 2025-02-20
 tags: ["consulting", "onboarding", "team-management", "external-workforce"]
-excerpt:
+description:
   "Maximize the value of external consultants with effective onboarding, clear
   communication, and well-defined expectations to ensure they contribute
   meaningfully to your project."

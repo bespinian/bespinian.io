@@ -1,10 +1,10 @@
 ---
 title: Kubernetes Cost Transparency
 author: Gabriel Koch
-date: 2021-04-09
+pubDate: 2021-04-09
 tags:
   ["kubernetes", "cost-management", "chargeback", "monitoring", "prometheus"]
-excerpt:
+description:
   "Learn how to implement cost transparency in Kubernetes clusters using
   Prometheus and other tools to track resource usage, attribute workloads, and
   enable chargebacks."

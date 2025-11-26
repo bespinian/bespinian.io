@@ -1,9 +1,9 @@
 ---
 title: Run Docker Registry on Cloud Foundry
 author: Lena Fuhrimann
-date: 2017-08-24
+pubDate: 2017-08-24
 tags: ["docker", "cloud-foundry", "registry", "containers", "s3"]
-excerpt:
+description:
   "Deploy a private Docker Registry on Cloud Foundry using S3 for storage and
   Redis for caching to securely manage your container images."
 image: ../../assets/blog/containers.jpg

@@ -1,9 +1,9 @@
 ---
 title: Run WordPress on Cloud Foundry
 author: Lena Fuhrimann
-date: 2017-08-25
+pubDate: 2017-08-25
 tags: ["wordpress", "cloud-foundry", "php", "s3", "cms"]
-excerpt:
+description:
   "Deploy WordPress on Cloud Foundry with externalized file storage using S3 to
   handle media uploads in a cloud-native way."
 image: ../../assets/blog/wordpress.jpg

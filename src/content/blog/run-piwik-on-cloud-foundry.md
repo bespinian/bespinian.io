@@ -1,9 +1,9 @@
 ---
 title: Run Piwik on Cloud Foundry
 author: Lena Fuhrimann
-date: 2016-11-30
+pubDate: 2016-11-30
 tags: ["piwik", "analytics", "cloud-foundry", "php", "mysql"]
-excerpt:
+description:
   "Deploy Piwik, an open-source analytics platform, on Cloud Foundry as an
   alternative to Google Analytics with full control over your data."
 image: ../../assets/blog/analytics.jpg

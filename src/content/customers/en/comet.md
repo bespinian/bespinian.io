@@ -2,7 +2,7 @@
 title: Creating IIoT Health Monitor BLOX
 company: Comet X-Ray
 logo: ../../../assets/customers/comet.svg
-date: 2024-11-06
+pubDate: 2024-11-06
 results:
   - Built IIoT health monitoring for Xray fleet
   - Enabled shift to preventive maintenance

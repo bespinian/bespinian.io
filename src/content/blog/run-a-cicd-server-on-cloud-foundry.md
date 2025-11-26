@@ -1,9 +1,9 @@
 ---
 title: Run a CI/CD Server on Cloud Foundry
 author: Lena Fuhrimann
-date: 2016-02-16
+pubDate: 2016-02-16
 tags: ["ci-cd", "cloud-foundry", "strider", "automation", "deployment"]
-excerpt:
+description:
   "Deploy Strider, an open-source CI/CD server, on Cloud Foundry to
   automatically test, build, and deploy your applications on every git push."
 image: ../../assets/blog/pipes.jpg

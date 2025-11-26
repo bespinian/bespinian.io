@@ -1,9 +1,9 @@
 ---
 title: Cloud Foundry Route Services
 author: Lena Fuhrimann
-date: 2016-10-03
+pubDate: 2016-10-03
 tags: ["cloud-foundry", "route-services", "middleware", "rate-limiting"]
-excerpt:
+description:
   "Learn how to use Cloud Foundry Route Services to add authentication, rate
   limiting, or logging at the route level by intercepting requests before they
   reach your application."
