@@ -376,3 +376,7 @@ reports and start optimizing some workloads.
 To incentivize teams to reduce their cost on a larger scale, make this
 information available easily through dashboards and detailed reports, define a
 pricing model to increase comparability and eventually introduce chargebacks.
+
+Interested in Kubernetes cost transparency? Check out our
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=kubernetes-cost-transparency)
+service and book your free workshop.

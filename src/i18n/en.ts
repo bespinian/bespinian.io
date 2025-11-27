@@ -164,8 +164,14 @@ const en = {
     "A clear step-by-step plan made for your needs",
   "workshop.guarantee.title": "100% Free. No Strings Attached.",
   "workshop.guarantee.description":
-    "This is not a sales call. You'll get a complete plan whether you work with us or not. Our goal is to give you real value.",
+    "This is not a sales meeting. You'll get a complete plan whether you work with us or not. Our goal is to give you real value.",
   "workshop.cta": "Book Your Free Workshop",
+
+  // 404 Page
+  "404.title": "Page Not Found",
+  "404.description1": "This is not the page you're looking for 👋",
+  "404.description2": "It may have been moved or deleted.",
+  "404.home": "Go to Home",
 };
 
 export default en;

@@ -166,6 +166,12 @@ const ts = {
   "workshop.guarantee.description":
     "Das isch kes Verchaufsgspräch. Du bechunsch e komplette Plan, egal öb du mit üs wotsch zämeschaffe oder nid. Üses Ziil isch, dr ächte Mehrwärt z gä.",
   "workshop.cta": "Gratis Workshop bueche",
+
+  // 404 Page
+  "404.title": "Site nid gfunge",
+  "404.description1": "Das isch nid d Site wode suechsch 👋",
+  "404.description2": "Si isch vilicht verschobe oder glösche worde.",
+  "404.home": "Zur Startsite",
 };
 
 export default ts;

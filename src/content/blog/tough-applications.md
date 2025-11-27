@@ -199,4 +199,4 @@ tough apps is not optional.
 
 Do you want to build your own tough applications? Check out our
 [Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=tough-applications)
-service and get your free workshop.
+service and book your free workshop.

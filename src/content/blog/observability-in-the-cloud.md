@@ -147,3 +147,7 @@ The crucial actions which any site reliability engineer should take are
 1. to emit this information in an event at the end
 1. to ensure that a system for collecting and effectively querying these events
    is in place.
+
+Interested in observability? Check out our
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=observability-in-the-cloud)
+service and book your free workshop.

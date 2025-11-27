@@ -3,6 +3,7 @@ import puzzle from "../assets/partners/puzzle.svg";
 import peakscale from "../assets/partners/peakscale.svg";
 import timKoko from "../assets/partners/tim-koko.svg";
 import nuvibit from "../assets/partners/nuvibit.webp";
+import steppingStone from "../assets/partners/stepping-stone.svg";
 
 const strategicPartners = [
   {
@@ -39,6 +40,14 @@ const collaborativePartners = [
       "Puzzle ITC is a leading Swiss IT service provider specializing in open source solutions, container platforms, and agile software development. They deliver innovative solutions for digital transformation.",
     url: "https://www.puzzle.ch",
     logo: puzzle,
+  },
+  {
+    name: "stepping stone",
+    tagline: "Your Cloud Partner",
+    description:
+      "stepping stone is a Swiss IT services company specializing in cloud infrastructure and managed services. They provide personalized managed services with a focus on open-source solutions across their Swiss data centers.",
+    url: "https://www.stepping-stone.ch/",
+    logo: steppingStone,
   },
   {
     name: "tim&koko",

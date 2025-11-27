@@ -182,3 +182,7 @@ out to the rest. If not, you can roll it back quickly, minimizing the impact of
 any errors.
 
 ✅ Minimize deployment risk by gradually rolling out new changes to your users.
+
+Want to level up your serverless game with us? Check out our
+[Serverless Application Acceleration](/en/services/serverless-application-acceleration?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=level-up-your-serverless-game)
+service and book your free workshop.

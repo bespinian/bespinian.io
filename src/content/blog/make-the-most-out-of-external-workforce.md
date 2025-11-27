@@ -59,3 +59,7 @@ a lot of time structuring their work instead of solving your problems.
 These may seem obvious, but in complex, fast-paced environments, they’re often
 overlooked. A little preparation goes a long way in making consultants effective
 and ensuring you get the most out of their expertise.
+
+Interested in hiring external engineers? Check out our
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=make-the-most-out-of-external-workforce)
+service and book your free workshop.

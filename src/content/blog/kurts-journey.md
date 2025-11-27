@@ -146,3 +146,7 @@ scalability, adaptability, and security. These are all important points, which
 usually take quite some effort when you run them yourself.
 
 And a last word: Don't be like Kurt. Enjoy your time off without distractions.
+
+Do you want to embark on your own cloud journey? Check out our
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=kurts-journey)
+service and book your free workshop.

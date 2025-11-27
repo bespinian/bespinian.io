@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SEO from "../components/SEO.astro";
+import { useI18n } from "../i18n/utils";
+import Link from "../components/Link.astro";
+
+const { lang, t, translatePath } = useI18n(Astro.url);
+
+const title = t("404.title");
+const description = `${t("404.description1")} ${t("404.description2")}`;
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <section class="not-found">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">{title}</h2>
+    <p class="error-description">
+      {t("404.description1")}<br />{t("404.description2")}
+    </p>
+    <div class="actions">
+      <Link href={translatePath("/")} center>{t("404.home")}</Link>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .not-found {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .error-code {
+    font-size: 8rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--color-background-primary);
+    line-height: 1;
+  }
+
+  .error-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #333;
+  }
+
+  .error-description {
+    font-size: 1.125rem;
+    color: #666;
+    margin: 1rem 0 6rem;
+    line-height: 1.6;
+  }
+
+  .actions {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  @media (max-width: 48rem) {
+    .error-code {
+      font-size: 5rem;
+    }
+
+    .error-title {
+      font-size: 1.5rem;
+    }
+
+    .error-description {
+      font-size: 1rem;
+    }
+  }
+</style>

@@ -171,6 +171,12 @@ const de = {
   "workshop.guarantee.description":
     "Das ist kein Verkaufsgespräch. Du bekommst einen vollständigen Plan, egal ob du mit uns zusammenarbeiten möchtest oder nicht. Unser Ziel ist, dir echten Mehrwert zu geben.",
   "workshop.cta": "Kostenlosen Workshop buchen",
+
+  // 404 Page
+  "404.title": "Seite nicht gefunden",
+  "404.description1": "Das ist nicht die Seite, die du suchst 👋",
+  "404.description2": "Sie wurde möglicherweise verschoben oder gelöscht.",
+  "404.home": "Zur Startseite",
 };
 
 export default de;
