@@ -90,6 +90,7 @@ const de = {
   "customers.page.subtitle":
     "Erfahre, wie wir über 120 Firmen geholfen haben, ihre Apps in die Cloud zu bringen.",
   "customers.empty": "Noch keine Kunden. Schau bald wieder vorbei!",
+  "customers.success": "hat Erfolg mit bespinian:",
 
   // Jobs Page
   "jobs.title": "Jobs",

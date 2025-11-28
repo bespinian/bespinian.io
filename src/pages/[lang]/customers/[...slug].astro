@@ -13,12 +13,12 @@ export async function getStaticPaths() {
 const { customer } = Astro.props;
 const { Content } = await render(customer);
 
-const { lang, translatePath } = useI18n(Astro.url);
+const { lang, t, translatePath } = useI18n(Astro.url);
 
 const formattedDate = formatDate(customer.data.pubDate);
 
 const title = customer.data.title;
-const description = `Learn how ${customer.data.company} achieved success with bespinian's support consulting. ${customer.data.results.join(". ")}.`;
+const description = `${customer.data.company} ${t("customers.success")} ${customer.data.results.join(". ")}.`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
