@@ -88,6 +88,7 @@ const ts = {
   "customers.page.subtitle":
     "Erfahr, wie mir über 120 Firme ghulfe hei, ihri Apps id Cloud z bringe.",
   "customers.empty": "No keni Chunde. Lueg baud wieder verbi!",
+  "customers.success": "het Erfoug mit bespinian:",
 
   // Jobs Page
   "jobs.title": "Jobs",
