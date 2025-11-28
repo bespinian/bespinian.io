@@ -88,6 +88,7 @@ const en = {
   "customers.page.subtitle":
     "See how we helped over 120 companies modernize their apps to the cloud.",
   "customers.empty": "No customers yet. Check back soon!",
+  "customers.success": "succeeded with bespinian:",
 
   // Jobs Page
   "jobs.title": "Jobs",
