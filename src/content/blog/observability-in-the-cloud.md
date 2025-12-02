@@ -149,5 +149,5 @@ The crucial actions which any site reliability engineer should take are
    is in place.
 
 Interested in observability? Check out our
-[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=observability-in-the-cloud)
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=observability_in_the_cloud)
 service and book your free workshop.

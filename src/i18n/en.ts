@@ -173,6 +173,38 @@ const en = {
   "404.description1": "This is not the page you're looking for 👋",
   "404.description2": "It may have been moved or deleted.",
   "404.home": "Go to Home",
+
+  // IT Roundtable Page
+  "roundtable.title": "IT Leaders Roundtable",
+  "roundtable.subtitle": "Exclusive Exchange Among IT Leaders",
+  "roundtable.description":
+    "A hand-picked group of 10 to 15 IT leaders discussing how modern cloud-native platforms and AI tools are transforming the way our teams work.",
+  "roundtable.cta": "Confirm Invitation",
+  "roundtable.about.title": "About This Event",
+  "roundtable.about.description1":
+    "Together, we discuss how modern cloud-native platforms and AI tools are transforming the way software engineers work, reducing costs, and opening new opportunities.",
+  "roundtable.about.description2":
+    "We explore strategy, team culture, technologies, and the pragmatic use of AI.",
+  "roundtable.about.description3":
+    "Our goal is to illuminate your current key topics together with other leaders and develop innovative strategies to secure competitive advantages.",
+  "roundtable.expect.title": "What to Expect",
+  "roundtable.expect.item1":
+    "Focused exchange on cloud-native and AI transformation",
+  "roundtable.expect.item2": "Hand-picked group of 10-15 IT leaders",
+  "roundtable.expect.item3":
+    "Actionable insights from experts for your organization",
+  "roundtable.expect.item4": "Networking with peers in a relaxed atmosphere",
+  "roundtable.details.title": "Event Details",
+  "roundtable.details.date": "Date",
+  "roundtable.details.time": "Time",
+  "roundtable.details.location": "Location",
+  "roundtable.details.locationValue": "Central Bern",
+  "roundtable.details.cost": "Cost",
+  "roundtable.details.costValue": "Covered by us",
+  "roundtable.photo.title": "Insights",
+  "roundtable.photo.caption": "Impressions from our workshops",
+  "roundtable.finalcta.title": "Interested?",
+  "roundtable.finalcta.description": "Confirm your invitation now",
 };
 
 export default en;

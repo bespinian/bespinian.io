@@ -178,6 +178,40 @@ const de = {
   "404.description1": "Das ist nicht die Seite, die du suchst 👋",
   "404.description2": "Sie wurde möglicherweise verschoben oder gelöscht.",
   "404.home": "Zur Startseite",
+
+  // IT Roundtable Page
+  "roundtable.title": "IT Leaders Roundtable",
+  "roundtable.subtitle":
+    "Exklusiver Austausch unter IT-Führungspersönlichkeiten",
+  "roundtable.description":
+    "Eine handverlesene Runde von 10 bis 15 IT-Führungskräften diskutiert, wie moderne Cloud-Native Plattformen und KI-Tools die Arbeitsweise ihrer Teams transformieren.",
+  "roundtable.cta": "Einladung Bestätigen",
+  "roundtable.about.title": "Über dieses Event",
+  "roundtable.about.description1":
+    "Gemeinsam sprechen wir darüber, wie moderne Cloud-Native Plattformen und KI-Tools die Arbeitsweise von Software Engineers transformieren, Kosten senken und neue Chancen eröffnen.",
+  "roundtable.about.description2":
+    "Dabei betrachten wir Strategie, Teamkultur, Technologien und den pragmatischen Einsatz von KI.",
+  "roundtable.about.description3":
+    "Unser Ziel ist es, Ihre aktuellen zentralen Themen gemeinsam mit anderen Führungskräften zu beleuchten und innovative Strategien zu erarbeiten, um Wettbewerbsvorteile zu sichern.",
+  "roundtable.expect.title": "Was Sie erwartet",
+  "roundtable.expect.item1":
+    "Fokussierter Austausch zu Cloud-Native und KI-Transformation",
+  "roundtable.expect.item2":
+    "Handverlesene Runde von 10-15 IT-Führungspersönlichkeiten",
+  "roundtable.expect.item3":
+    "Umsetzbare Anregungen von Fachleuten für Ihr Unternehmen",
+  "roundtable.expect.item4": "Networking mit Peers in entspannter Atmosphäre",
+  "roundtable.details.title": "Event-Details",
+  "roundtable.details.date": "Datum",
+  "roundtable.details.time": "Zeit",
+  "roundtable.details.location": "Ort",
+  "roundtable.details.locationValue": "Zentral in Bern",
+  "roundtable.details.cost": "Kosten",
+  "roundtable.details.costValue": "Von uns übernommen",
+  "roundtable.photo.title": "Einblick",
+  "roundtable.photo.caption": "Impressionen von unseren Workshops",
+  "roundtable.finalcta.title": "Interesse geweckt?",
+  "roundtable.finalcta.description": "Bestätigen Sie jetzt Ihre Einladung",
 };
 
 export default de;

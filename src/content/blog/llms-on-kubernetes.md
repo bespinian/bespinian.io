@@ -308,5 +308,5 @@ you're willing to manage.
 > Lena F.
 
 Do you want to run your own LLMs on Kubernetes? Check out our
-[Pragmatic AI Adoption](/en/services/pragmatic-ai-adoption?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=llms-on-kubernetes)
+[Pragmatic AI Adoption](/en/services/pragmatic-ai-adoption?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=llms_on_kubernetes)
 service and book your free workshop.

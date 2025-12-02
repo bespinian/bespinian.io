@@ -61,5 +61,5 @@ overlooked. A little preparation goes a long way in making consultants effective
 and ensuring you get the most out of their expertise.
 
 Interested in hiring external engineers? Check out our
-[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=make-the-most-out-of-external-workforce)
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=make_the_most_out_of_external_workforce)
 service and book your free workshop.

@@ -16,9 +16,9 @@ interface Props {
 }
 const { id, title, description, author, pubDate, tags, image } = Astro.props;
 
-const { translatePath } = useI18n(Astro.url);
+const { lang, translatePath } = useI18n(Astro.url);
 
-const formattedDate = formatDate(pubDate);
+const formattedDate = formatDate(pubDate, lang);
 ---
 
 <a href={translatePath(`/blog/${id}`)}>

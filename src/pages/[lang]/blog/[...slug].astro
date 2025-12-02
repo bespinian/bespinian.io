@@ -15,7 +15,7 @@ const { Content } = await render(post);
 
 const { lang, translatePath } = useI18n(Astro.url);
 
-const formattedDate = formatDate(post.data.pubDate);
+const formattedDate = formatDate(post.data.pubDate, lang);
 
 const title = `${post.data.title} | Blog`;
 const description =

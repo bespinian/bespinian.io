@@ -230,5 +230,5 @@ This makes the above technologies excellent choices, and all of them are a great
 step up from simply writing your contract somewhere in a wiki.
 
 Do you want to define your own API contract definitions? Check out our
-[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=api-contract-definitions)
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=api_contract_definitions)
 service and book your free workshop.

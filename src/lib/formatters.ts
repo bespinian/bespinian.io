@@ -4,7 +4,7 @@
  * @param locale - The locale to use (default: "en-US")
  * @returns Formatted date string (e.g., "January 15, 2024")
  */
-export function formatDate(date: Date, locale = "en-US"): string {
+export function formatDate(date: Date, locale: string): string {
   return date.toLocaleDateString(locale, {
     year: "numeric",
     month: "long",

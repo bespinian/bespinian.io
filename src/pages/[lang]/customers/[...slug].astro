@@ -15,7 +15,7 @@ const { Content } = await render(customer);
 
 const { lang, t, translatePath } = useI18n(Astro.url);
 
-const formattedDate = formatDate(customer.data.pubDate);
+const formattedDate = formatDate(customer.data.pubDate, lang);
 
 const title = customer.data.title;
 const description = `${customer.data.company} ${t("customers.success")} ${customer.data.results.join(". ")}.`;

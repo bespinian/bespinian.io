@@ -1,0 +1,348 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import SEO from "../../components/SEO.astro";
+import Title from "../../components/Title.astro";
+import Link from "../../components/Link.astro";
+import { useI18n } from "../../i18n/utils";
+import { getLanguagePaths } from "../../lib/paths";
+import { formatDate } from "../../lib/formatters";
+import spaceship from "../../assets/spaceship3.svg";
+import workshop1 from "../../assets/workshop1.jpeg";
+import workshop2 from "../../assets/workshop2.jpeg";
+import workshop3 from "../../assets/workshop3.jpeg";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("roundtable.title");
+const subtitle = t("roundtable.subtitle");
+const description = t("roundtable.description");
+const date = formatDate(new Date("2026-01-28"), lang);
+const time = "13:30 - 17:00";
+const formLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLScdm1DP65oMbC0n4eabQk_cyj3CAibqtMOqBLrDpk3n5pAAcw/viewform";
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+
+  <Title {title} {subtitle} {spaceship} />
+
+  <main>
+    <section class="intro-section">
+      <div class="container">
+        <p class="intro-text">{description}</p>
+        <div class="cta-container">
+          <Link href={formLink} large center>
+            {t("roundtable.cta")}
+          </Link>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("roundtable.about.title")}</h2>
+        <p class="about-text">{t("roundtable.about.description1")}</p>
+        <p class="about-text">{t("roundtable.about.description2")}</p>
+        <p class="about-text">{t("roundtable.about.description3")}</p>
+      </div>
+    </section>
+
+    <section class="content-section alternate">
+      <div class="container">
+        <h2 class="section-title">{t("roundtable.expect.title")}</h2>
+        <ul class="value-list">
+          <li>{t("roundtable.expect.item1")}</li>
+          <li>{t("roundtable.expect.item2")}</li>
+          <li>{t("roundtable.expect.item3")}</li>
+          <li>{t("roundtable.expect.item4")}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("roundtable.details.title")}</h2>
+        <div class="event-details">
+          <div class="detail-item">
+            <span class="detail-label">{t("roundtable.details.date")}</span>
+            <span class="detail-value">{date}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">{t("roundtable.details.time")}</span>
+            <span class="detail-value">{time}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">{t("roundtable.details.location")}</span>
+            <span class="detail-value"
+              ><a
+                href="https://maps.app.goo.gl/ueTAoj1387b3sWYD6"
+                target="_blank">{t("roundtable.details.locationValue")}</a
+              ></span
+            >
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">{t("roundtable.details.cost")}</span>
+            <span class="detail-value">{t("roundtable.details.costValue")}</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section alternate">
+      <div class="container">
+        <h2 class="section-title">{t("roundtable.photo.title")}</h2>
+        <p class="photo-caption">{t("roundtable.photo.caption")}</p>
+        <div class="photo-grid">
+          <Image
+            src={workshop1}
+            alt="Workshop Lena"
+            class="placeholder-image"
+          />
+          <Image
+            src={workshop2}
+            alt="Workshop This"
+            class="placeholder-image"
+          />
+          <Image
+            src={workshop3}
+            alt="Workshop Food"
+            class="placeholder-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="final-cta">
+      <div class="container">
+        <h2 class="cta-title">{t("roundtable.finalcta.title")}</h2>
+        <p class="cta-description">{t("roundtable.finalcta.description")}</p>
+        <div class="cta-container">
+          <Link href={formLink} large center secondary>
+            {t("roundtable.cta")}
+          </Link>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    width: 100%;
+  }
+
+  .intro-section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+    max-width: 48rem;
+    margin: 0 auto 2rem;
+  }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 2rem;
+  }
+
+  .content-section.alternate {
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    padding-bottom: 6rem;
+  }
+
+  .container {
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--color-background-primary);
+    text-align: center;
+  }
+
+  .content-section.alternate .section-title {
+    color: var(--color-secondary);
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--color-gray);
+    text-align: center;
+  }
+
+  .about-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .value-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .value-list li {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    padding-left: 2.5rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .value-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .event-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  .detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-background-tertiary);
+    border-radius: 0.5rem;
+  }
+
+  .detail-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .detail-value {
+    font-size: 1.2rem;
+    color: var(--color-text-dark);
+  }
+
+  .photo-caption {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .photo-grid img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+  }
+
+  .placeholder-image {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .placeholder-image span {
+    font-size: 1rem;
+    opacity: 0.7;
+    font-style: italic;
+  }
+
+  #final-cta {
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-description {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 48rem) {
+    .intro-text {
+      font-size: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .about-text {
+      font-size: 1.3rem;
+    }
+
+    .value-list li {
+      font-size: 1.4rem;
+    }
+
+    .event-details {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-title {
+      font-size: 3rem;
+    }
+
+    .cta-description {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .event-details {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>

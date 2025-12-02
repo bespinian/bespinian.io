@@ -173,6 +173,39 @@ const ts = {
   "404.description1": "Das isch nid d Site wode suechsch 👋",
   "404.description2": "Si isch vilicht verschobe oder glösche worde.",
   "404.home": "Zur Startsite",
+
+  // IT Roundtable Page
+  "roundtable.title": "IT Leaders Roundtable",
+  "roundtable.subtitle": "Exklusive Uustuusch unter IT-Führigspersonlichkeite",
+  "roundtable.description":
+    "E handverläseni Rundi vo 10 bis 15 IT-Führigschräft diskutiert, wie modärni Cloud-Native Plattforme u KI-Tools d Arbeitswis transformiere.",
+  "roundtable.cta": "Iladig Bestätige",
+  "roundtable.about.title": "Über ds Event",
+  "roundtable.about.description1":
+    "Zäme rede mir drüber, wie modärni Cloud-Native Plattforme u KI-Tools d Arbeitswis vo Software Engineers transformiere, Choschte sänke u neui Chance ufmache.",
+  "roundtable.about.description2":
+    "Drbi luege mir uf Strategie, Teamkultur, Technologie u dr pragmatisch Isatz vo KI.",
+  "roundtable.about.description3":
+    "Üses Ziil isch es, Öii aktuelle zentrale Theme zäme mit angere Führigschräft z belüchte u innovativi Strategie z erarbeite, um Wettbewärbsvorteil z sichere.",
+  "roundtable.expect.title": "Was Öich Erwartet",
+  "roundtable.expect.item1":
+    "Fokussierte Uustuusch zu Cloud-Native u KI-Transformation",
+  "roundtable.expect.item2":
+    "Handverläseni Rundi vo 10-15 IT-Führigspersönlichkeite",
+  "roundtable.expect.item3":
+    "Umsetzbari Aregige vo Fachlüt für Öies Ungernähme",
+  "roundtable.expect.item4": "Networking mit Peers i entspannter Atmosphäre",
+  "roundtable.details.title": "Event-Details",
+  "roundtable.details.date": "Datum",
+  "roundtable.details.time": "Zyt",
+  "roundtable.details.location": "Ort",
+  "roundtable.details.locationValue": "Zentral z Bärn",
+  "roundtable.details.cost": "Choschte",
+  "roundtable.details.costValue": "Vo üs deckt",
+  "roundtable.photo.title": "Iblick",
+  "roundtable.photo.caption": "Impressione vo üsne Workshops",
+  "roundtable.finalcta.title": "Interässe gweckt?",
+  "roundtable.finalcta.description": "Bestätiget jetzt öii Iladig",
 };
 
 export default ts;

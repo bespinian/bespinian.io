@@ -198,5 +198,5 @@ can focus on making them stronger. The cloud is not a stable place. Building
 tough apps is not optional.
 
 Do you want to build your own tough applications? Check out our
-[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=tough-applications)
+[Cloud Native Empowerment](/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=tough_applications)
 service and book your free workshop.
