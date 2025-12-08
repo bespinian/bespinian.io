@@ -31,11 +31,13 @@
   .flip-card-face {
     grid-area: 1 / 1 / 2 / 2;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
   .flip-card-front {
     z-index: 2;
     height: 100%;
+    transform: rotateY(0deg);
   }
 
   .flip-card-back {
