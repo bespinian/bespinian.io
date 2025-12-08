@@ -14,6 +14,8 @@ const { lang, t } = useI18n(Astro.url);
 const title = t("workshop.title");
 const subtitle = t("workshop.subtitle");
 const description = t("workshop.description");
+const formLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLScnp5oz32IkJVVVa6IGeS6ONC2fiC0sFNV133hvobRYeEUFCQ/viewform";
 ---
 
 <Layout>
@@ -26,12 +28,7 @@ const description = t("workshop.description");
         <h2 class="subtitle">{subtitle}</h2>
         <p class="description">{description}</p>
         <div class="cta-container">
-          <Link
-            href="https://calendar.app.google/nsWpQ37rvcevfqBB6"
-            large
-            center
-            secondary
-          >
+          <Link href={formLink} large center secondary>
             {t("workshop.cta")}
           </Link>
         </div>
@@ -88,12 +85,7 @@ const description = t("workshop.description");
       <div class="container">
         <h2 class="cta-title">{t("workshop.title")}</h2>
         <div class="cta-container">
-          <Link
-            href="https://calendar.app.google/nsWpQ37rvcevfqBB6"
-            large
-            center
-            secondary
-          >
+          <Link href={formLink} large center secondary>
             {t("workshop.cta")}
           </Link>
         </div>
