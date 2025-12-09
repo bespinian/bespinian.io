@@ -14,6 +14,7 @@ quote:
   further development of our application and on the needs of our customers."
 authorName: Federico Marmori
 authorTitle: Head of Product Development
+featured: true
 ---
 
 ## Customer

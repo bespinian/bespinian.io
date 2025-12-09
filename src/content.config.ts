@@ -27,6 +27,7 @@ const customers = defineCollection({
       authorName: z.string(),
       authorTitle: z.string(),
       authorImage: image().optional(),
+      featured: z.boolean().optional(),
     }),
 });
 

@@ -15,6 +15,7 @@ quote:
   unserer Kunden zu fokussieren."
 authorName: Federico Marmori
 authorTitle: Head of Product Development
+featured: true
 ---
 
 ## Kunde

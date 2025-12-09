@@ -15,6 +15,7 @@ quote:
 authorName: Andrin Rüedi
 authorTitle: Program Head
 authorImage: ../../../assets/customers/meteoswiss-andrin.jpeg
+featured: true
 ---
 
 ## Customer

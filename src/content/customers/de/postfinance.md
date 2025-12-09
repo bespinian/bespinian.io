@@ -16,6 +16,7 @@ quote:
 authorName: Roger Bigler
 authorTitle: Lead Deployment, Platform & Security
 authorImage: ../../../assets/customers/postfinance-roger.jpeg
+featured: true
 ---
 
 ## Kunde

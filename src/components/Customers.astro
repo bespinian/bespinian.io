@@ -8,7 +8,10 @@ import { getCollectionByLanguage } from "../lib/paths";
 const { lang, t, translatePath } = useI18n(Astro.url);
 
 const customers = await getCollectionByLanguage("customers", lang);
-const sortedCustomers = sortByDateDesc(customers);
+const featuredCustomers = sortByDateDesc(customers).filter(
+  (c) => c.data.featured,
+);
+console.log(customers);
 ---
 
 <section>
@@ -16,7 +19,7 @@ const sortedCustomers = sortByDateDesc(customers);
 
   <div id="grid">
     {
-      sortedCustomers
+      featuredCustomers
         .slice(0, 4)
         .map(({ id, data }) => <CustomerCard {id} {...data} />)
     }
