@@ -42,8 +42,9 @@ All commands are run from the root of the project, from a terminal:
 
 1. Add your blog post to `src/content/blog` with the respective frontmatter
 1. Add a header image from [Pexels](https://www.pexels.com/) to
-   `src/assets/blog` that contains the bespinian logo
-1. Run `mogrify -resize 1600 your-image.jpg` to reduce the image width to 1600px
+   `src/assets/blog`
+1. Run `mogrify -resize 1600 your-image.jpg` to reduce the image width to 1600
+   pixels. This improves loading times and SEO.
 1. Create a PR with your new blog post
 
 ## ✨ Adding a Customer Story
