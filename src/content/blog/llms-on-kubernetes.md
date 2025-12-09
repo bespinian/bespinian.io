@@ -166,7 +166,7 @@ This setup lets you grow from one instance to many without changing your app
 code. The router uses an API that works like OpenAI's, so you can swap it in
 easily.
 
-![Production Stack Architecture](../../assets/blog/vllm-production-stack-architecture.png)
+![Production Stack Architecture](../../assets/blog/llms-on-kubernetes/vllm-production-stack-architecture.png)
 
 ### How to Install
 
