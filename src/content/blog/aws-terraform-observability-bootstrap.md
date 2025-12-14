@@ -14,7 +14,7 @@ tags:
 description:
   "Learn how AWS OAM, StackSets, and Delegated Administration enable fully
   automated cross-account observability across all your AWS workload accounts."
-image: ../../assets/blog/no-account-left-behind.jpg
+image: ../../assets/blog/no-account-left-behind/no-account-left-behind.jpg
 ---
 
 When you're running a multi-account AWS architecture, the question isn't if you
@@ -38,7 +38,7 @@ friction:
 
 ## Solution
 
-![central-monitoring](../../assets/blog/central-monitoring.jpg)
+![central-monitoring](../../assets/blog/no-account-left-behind/central-monitoring.jpg)
 
 Unified "Single Pane of Glass" experience that allows us to view logs, metrics,
 and traces across the entire organization from one place.
@@ -67,7 +67,7 @@ multiple workloads deployed across separate AWS accounts.
 Our Goal: To centralize logs, traces, and metrics into a dedicated Observability
 Account automatically.
 
-![aws-architecture](../../assets/blog/aws-architecture.jpg)
+![aws-architecture](../../assets/blog/no-account-left-behind/aws-architecture.jpg)
 
 The application consists of two core microservices:
 
@@ -239,7 +239,7 @@ In the previous Terraform run, we established a clean, scalable hierarchy.
 Rather than having all accounts into the Root, we created a structure designed
 for security isolation and automated targeting.
 
-![AWS Organization](./../../assets/blog/aws-organization.jpg)
+![AWS Organization](../../assets/blog/no-account-left-behind/aws-organization.jpg)
 
 ### Delegated Administration
 
@@ -440,7 +440,7 @@ aws lambda invoke \
 After invoking the Lambda functions, logs will be available in the observability
 account.
 
-![observability-account-dev-log-groups](../../assets/blog/observability-account-dev-log-groups.jpg)
+![observability-account-dev-log-groups](../../assets/blog/no-account-left-behind/observability-account-dev-log-groups.jpg)
 
 ## Automatically Monitor new accounts within the workload OU
 
@@ -526,7 +526,7 @@ aws lambda invoke \
 
 ### Verify Dev and Staging Logs in Central Observability Account
 
-![observability-account-staging-log-groups](../../assets/blog/observability-account-staging-log-groups.jpg)
+![observability-account-staging-log-groups](../../assets/blog/no-account-left-behind/observability-account-staging-log-groups.jpg)
 
 # Cleanup
 
