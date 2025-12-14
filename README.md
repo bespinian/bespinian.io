@@ -45,6 +45,8 @@ All commands are run from the root of the project, from a terminal:
    `src/assets/blog`
 1. Run `mogrify -resize 1600 your-image.jpg` to reduce the image width to 1600
    pixels. This improves loading times and SEO.
+1. If your blog post features other images, create a folder
+   `src/assets/blog/my-blog-topic` and put them in there
 1. Create a PR with your new blog post
 
 ## ✨ Adding a Customer Story

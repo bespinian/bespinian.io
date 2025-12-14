@@ -131,7 +131,7 @@ one below.
 This Grafana panel shows requests per second hitting all instances of the
 application over 30 minutes using the following query.
 
-```promql
+```txt
 sum by (app) (rate(http_request_duration_seconds_count{app="awesome-node"}[2m]))
 ```
 
@@ -202,7 +202,7 @@ graphs.
 The following query calculates the rate for each bucket and pod, and then sums
 that up by bucket to produce the chart above.
 
-```promql
+```txt
 sum by (le) (rate(http_request_duration_seconds_bucket{kubernetes_namespace="awesome-node"}[3m]))
 ```
 
@@ -218,7 +218,7 @@ than the `le` thresholds.
 
 Use the query below to produce this chart:
 
-```promql
+```txt
 sum by (app, le) (rate(http_request_duration_seconds_count{app="awesome-node"}[3m]) - ignoring (le) group_right rate(http_request_duration_seconds_bucket{le!="+Inf"}[3m]))
 ```
 
@@ -249,7 +249,7 @@ at all, with few exceptions.
 
 The query to produce this heatmap is simple:
 
-```promql
+```txt
 label_replace(sum by (le) (increase(http_request_duration_seconds_bucket{app="awesome-node"}[$__rate_interval])), "le", "Inf", "le", "\\+Inf")
 ```
 
@@ -310,7 +310,7 @@ example), weeks, or months. In our example, the percentage of requests shorter
 than 0.3 seconds over 24 hours would be called a service level indicator (SLI),
 and we want to show it on our dashboard using the following query.
 
-```promql
+```txt
 (sum by (app) (increase(http_request_duration_seconds_bucket{app="awesome-node", le="0.3"}[1d])) / sum by (app) (increase(http_request_duration_seconds_count{app="awesome-node"}[1d]))) * 100
 ```
 
@@ -347,7 +347,7 @@ In this chart, we're showing the memory usage of all pods in the namespace
 >
 > Prometheus supports regex queries for metric labels using the `=~` operator.
 
-```promql
+```txt
 container_memory_working_set_bytes{namespace="awesome-node", pod=~"awesome-node-.*", container=""}
 ```
 
@@ -364,7 +364,7 @@ To display CPU metrics, we also use a graph chart and query a counter, measuring
 CPU seconds used. Since this is a counter, it is useful to use the `rate()`
 function again to get the increase in CPU, as shown in the query below.
 
-```promql
+```txt
 rate(container_cpu_user_seconds_total{pod=~"notification-api-deployment-.*", container=""}[2m])*1000
 ```
 
@@ -385,7 +385,7 @@ state of Kubernetes objects and provides an endpoint for Prometheus to scrape.
 This panel will be empty, if no containers had any restarts within the last 3
 hours, and can be produced using the following query.
 
-```promql
+```txt
 increase(kube_pod_container_status_restarts_total{namespace="awesome-node"}[3h]) > 0
 ```
 

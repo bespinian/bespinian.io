@@ -14,7 +14,7 @@ tags:
 description:
   "Learn how AWS OAM, StackSets, and Delegated Administration enable fully
   automated cross-account observability across all your AWS workload accounts."
-image: ../../assets/blog/no-account-left-behind/no-account-left-behind.jpg
+image: ../../assets/blog/lighthouse.jpg
 ---
 
 When you're running a multi-account AWS architecture, the question isn't if you
@@ -38,7 +38,7 @@ friction:
 
 ## Solution
 
-![central-monitoring](../../assets/blog/no-account-left-behind/central-monitoring.jpg)
+![Central Monitoring](../../assets/blog/no-account-left-behind/central-monitoring.jpg)
 
 Unified "Single Pane of Glass" experience that allows us to view logs, metrics,
 and traces across the entire organization from one place.
@@ -67,7 +67,7 @@ multiple workloads deployed across separate AWS accounts.
 Our Goal: To centralize logs, traces, and metrics into a dedicated Observability
 Account automatically.
 
-![aws-architecture](../../assets/blog/no-account-left-behind/aws-architecture.jpg)
+![AWS Architecture](../../assets/blog/no-account-left-behind/aws-architecture.jpg)
 
 The application consists of two core microservices:
 
@@ -79,7 +79,7 @@ use-case scenario.
 
 Our Organizational Unit (OU) structure looks like this:
 
-```
+```txt
 AWS Organization (r-coffee)
 │
 ├── workloads OU
@@ -120,14 +120,14 @@ https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_creat
 Allow the Delegated Administrator (Observability account) to deploy StackSets to
 member accounts automatically.
 
-```bash
+```shell
 aws organizations enable-aws-service-access \
     --service-principal member.org.stacksets.cloudformation.amazonaws.com
 ```
 
 Activate CloudFormation trusted access with Organizations.
 
-```bash
+```shell
 aws cloudformation activate-organizations-access
 ```
 
@@ -142,7 +142,7 @@ organization structure.
 
 > Use management/root administrator account credentials
 
-```bash
+```shell
 # Get your Root OU ID:
 aws organizations list-roots
 # Create the Archive OU:
@@ -160,14 +160,14 @@ guardrails.
 
 First, find your Organization's Root ID (it starts with r-):
 
-```bash
+```shell
 aws organizations list-roots
 # Output example: "Id": "r-1234"
 ```
 
 Next, use that ID to enable Service Control Policies:
 
-```bash
+```shell
 aws organizations enable-policy-type \
     --root-id ORG_ROOT_ID \
     --policy-type SERVICE_CONTROL_POLICY
@@ -200,7 +200,7 @@ Before we can manage our AWS Organization with Terraform, we face a classic
 
 2. Run the initial deployment:
 
-   ```bash
+   ```shell
    cd 01-org-bootstrap
    cp terraform.tfvars.example terraform.tfvars
    # update terraform.tfvars
@@ -218,12 +218,12 @@ Before we can manage our AWS Organization with Terraform, we face a classic
      to deploy StackSets across all workload accounts
    - **Service Control Policy (SCP)**: Restricts StackSet execution roles to the
      workloads OU only
-   - **S3 bucket**: For storing the terraform state
+   - **S3 bucket**: For storing the Terraform state
 
-3. Copy the output `tf_state_bucket_name` (e.g., org-state-123456789012). into
+3. Copy the output `tf_state_bucket_name` (e.g., org-state-123456789012) into
    `versions.tf` -> `backend.s3.bucket` block, uncomment it, and run:
 
-   ```bash
+   ```shell
    terraform init
    ```
 
@@ -319,7 +319,7 @@ accounts using CloudFormation StackSets.
 - Organization Bootstrap `01-org-bootstrap` Must Be Deployed
 - Get Required Values from Bootstrap, will be used in
   `02-observability/terraform.tfvars`
-  ```bash
+  ```shell
   cd 01-org-bootstrap
   terraform output workloads_ou_id
   terraform output observability_account_id
@@ -330,7 +330,7 @@ accounts using CloudFormation StackSets.
 This configuration must be applied with credentials for the
 `observability account`, not the `management/root` account.
 
-```bash
+```shell
 cd 02-observability
 cp terraform.tfvars.example terraform.tfvars
 terraform init
@@ -357,7 +357,7 @@ This will:
 
 After deployment, use the verification commands from the Terraform outputs:
 
-```bash
+```shell
 terraform output verification_commands
 ```
 
@@ -395,7 +395,7 @@ Shop" Microservices.
 
   > Use coffeeshop-order-dev administrator account credentials
 
-  ```bash
+  ```shell
   cd coffeeshop-order/dev
   terraform init
   terraform plan
@@ -404,7 +404,7 @@ Shop" Microservices.
 
 - coffeeshop-barista-dev
   > Use coffeeshop-barista-dev administrator account credentials
-  ```bash
+  ```shell
   cd coffeeshop-barista/dev
   terraform init
   terraform plan
@@ -421,7 +421,7 @@ Once deployed, you can invoke the Lambda functions to generate logs:
 
 #### Test coffeeshop-order-dev Lambda
 
-```bash
+```shell
 aws lambda invoke \
     --function-name coffeeshop-order-dev \
     /dev/stdout
@@ -429,7 +429,7 @@ aws lambda invoke \
 
 #### Test coffeeshop-barista-dev Lambda
 
-```bash
+```shell
 aws lambda invoke \
     --function-name coffeeshop-barista-dev \
     /dev/stdout
@@ -452,7 +452,7 @@ Update `01-org-bootstrap/terraform.tfvars`
 
 > Use management/root administrator account credentials
 
-```bash
+```shell
 cd 01-org-bootstrap
 terraform init
 terraform plan
@@ -484,7 +484,7 @@ AWS Organization (r-coffee)
 
   > Use coffeeshop-order-staging administrator account credentials
 
-  ```bash
+  ```shell
   cd coffeeshop-order/staging
   terraform init
   terraform plan
@@ -493,7 +493,7 @@ AWS Organization (r-coffee)
 
 - coffeeshop-barista-staging
   > Use coffeeshop-barista-staging administrator account credentials
-  ```bash
+  ```shell
   cd coffeeshop-barista/staging
   terraform init
   terraform plan
@@ -510,7 +510,7 @@ Once deployed, you can invoke the Lambda functions to generate logs:
 
 #### Test coffeeshop-order-staging Lambda
 
-```bash
+```shell
 aws lambda invoke \
     --function-name coffeeshop-order-staging \
     /dev/stdout
@@ -518,7 +518,7 @@ aws lambda invoke \
 
 #### Test coffeeshop-barista-staging Lambda
 
-```bash
+```shell
 aws lambda invoke \
     --function-name coffeeshop-barista-staging \
     /dev/stdout
@@ -534,7 +534,7 @@ aws lambda invoke \
 
   > Use coffeeshop-order-dev administrator account credentials
 
-  ```bash
+  ```shell
   cd 03-workloads/coffeeshop-order/dev/
 
   # migrate terraform state to local
@@ -553,7 +553,7 @@ aws lambda invoke \
 
   > Use observability administrator account credentials
 
-  ```bash
+  ```shell
   cd 02-observability
 
   # migrate terraform state to local
@@ -570,7 +570,7 @@ aws lambda invoke \
 
   > < 100 accounts – You can close up to 10 member accounts
 
-  ```bash
+  ```shell
   cd 01-org-bootstrap
 
   # Move all workload + observability accounts to archive OU
