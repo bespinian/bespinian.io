@@ -7,7 +7,7 @@ const de = {
   "nav.blog": "Blog",
 
   // Buttons & CTAs
-  "cta.freeWorkshop": "Kostenloser Workshop",
+  "cta.freeWorkshop": "Kostenloser Cloud Readiness Workshop",
   "cta.learnMore": "Mehr erfahren",
   "cta.showAll": "Alle anzeigen",
   "cta.learnAboutUs": "Mehr über uns",

@@ -4,6 +4,7 @@ import peakscale from "../assets/partners/peakscale.svg";
 import timKoko from "../assets/partners/tim-koko.svg";
 import nuvibit from "../assets/partners/nuvibit.webp";
 import steppingStone from "../assets/partners/stepping-stone.svg";
+import letsboot from "../assets/partners/letsboot.svg";
 
 const strategicPartners = [
   {
@@ -56,6 +57,14 @@ const collaborativePartners = [
       "tim&koko is a digital innovation partner that helps organizations design and build modern digital products and services with a focus on user experience and technology excellence.",
     url: "https://tim-koko.ch",
     logo: timKoko,
+  },
+  {
+    name: "letsboot",
+    tagline: "Software & Cloud Engineering Training",
+    description:
+      "letsboot provides hands-on training and courses in software development, DevOps, and cloud engineering. With over 50 courses and 40+ experienced trainers, they offer comprehensive learning in modern technologies including Kubernetes, Docker, and cloud-native solutions.",
+    url: "https://www.letsboot.ch/",
+    logo: letsboot,
   },
 ];
 

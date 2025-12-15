@@ -76,7 +76,7 @@
       "description": "Join us on the Cloud Native Empowerment journey if you face any of these challenges:",
       "list": [
         {
-          "title": "Not Enough Time",
+          "title": "Not Enough Capacity",
           "description": "Do you want to migrate to modern cloud, but your teams are too busy with daily work?"
         },
         {
@@ -88,7 +88,7 @@
           "description": "Are your old apps and complex infrastructure driving up costs and taking too much of your engineers' time?"
         },
         {
-          "title": "Slow Releases",
+          "title": "Complicated Releases",
           "description": "Do large, bulky apps and long release cycles stop your teams from quickly delivering key features to your customers?"
         },
         {
@@ -105,7 +105,7 @@
           "description": "We create a clear, ready-to-use app-first cloud plan that defines your ideal target setup and environment, backed by a full look at costs and benefits."
         },
         {
-          "title": "Team Engineering",
+          "title": "Collaborative Engineering",
           "description": "Together, we modernize hands-on by putting your apps in containers, improving CI/CD, and adding monitoring to create a setup that scales and lets you build fast."
         },
         {
@@ -125,12 +125,12 @@
           "description": "Highly skilled engineers with know-how tailored to your tech stack, cloud platform and automation systems. Your teams are confident to tackle future challenges."
         },
         {
-          "title": "Cloud-First Culture",
-          "description": "Your company culture has modern cloud, DevOps, and GitOps in its DNA. New engineers adopt this mindset quickly, and your existing members live it with confidence."
-        },
-        {
           "title": "Clear Cloud Strategy",
           "description": "A clear strategy and plan of the future goals you want to achieve with modern cloud and the steps to get you there."
+        },
+        {
+          "title": "Cloud-First Culture",
+          "description": "Your company culture has modern cloud, DevOps, and GitOps in its DNA. New engineers adopt this mindset quickly, and your existing members live it with confidence."
         }
       ]
     }

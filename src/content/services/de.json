@@ -76,11 +76,11 @@
       "description": "Begib dich mit uns auf die Cloud Native Empowerment-Reise, wenn du eine dieser Herausforderungen erlebst:",
       "list": [
         {
-          "title": "Zu wenig Zeit",
+          "title": "Zu wenig Kapazität",
           "description": "Möchtest du zur modernen Cloud wechseln, aber deine Teams sind zu sehr mit ihrer täglichen Arbeit beschäftigt?"
         },
         {
-          "title": "Fehlende Fähigkeiten",
+          "title": "Fehlende Skills",
           "description": "Fehlt es Teammitgliedern an Wissen oder Erfahrung, wenn es um moderne Cloud-Technologie geht?"
         },
         {
@@ -88,7 +88,7 @@
           "description": "Treiben deine alten Apps und komplexe Infrastruktur die Kosten in die Höhe und verbrauchen zu viel Zeit deiner Engineers?"
         },
         {
-          "title": "Langsame Releases",
+          "title": "Komplizierte Releases",
           "description": "Verhindern grosse, schwerfällige Apps und lange Release-Zyklen, dass deine Teams schnell wichtige Features an deine Kunden ausliefern können?"
         },
         {
@@ -105,7 +105,7 @@
           "description": "Wir erstellen einen klaren, umsetzbaren App-First-Cloud-Plan, der dein ideales Ziel-Setup und die Umgebung definiert, gestützt durch eine komplette Kosten-Nutzen-Analyse."
         },
         {
-          "title": "Team Engineering",
+          "title": "Kollaboratives Engineering",
           "description": "Gemeinsam modernisieren wir hands-on, indem wir deine Apps in Container packen, CI/CD verbessern und Monitoring hinzufügen, um ein skalierbares Setup für schnelles Entwickeln zu schaffen."
         },
         {
@@ -125,12 +125,12 @@
           "description": "Hochqualifizierte Engineers mit Wissen, das auf deinen Tech Stack, deine Cloud-Plattform und Automatisierungssysteme zugeschnitten ist. Deine Teams sind selbstbewusst für zukünftige Herausforderungen."
         },
         {
-          "title": "Cloud-First-Kultur",
-          "description": "Deine Unternehmenskultur hat moderne Cloud, DevOps und GitOps in ihrer DNA. Neue Engineers übernehmen diese Denkweise schnell, und deine bestehenden Mitglieder leben sie mit Überzeugung."
-        },
-        {
           "title": "Klare Cloud-Strategie",
           "description": "Eine klare Strategie und ein Plan der zukünftigen Ziele, die du mit moderner Cloud erreichen möchtest, und die Schritte, um dorthin zu gelangen."
+        },
+        {
+          "title": "Cloud-First-Kultur",
+          "description": "Deine Unternehmenskultur hat moderne Cloud, DevOps und GitOps in ihrer DNA. Neue Engineers übernehmen diese Denkweise schnell, und deine bestehenden Mitglieder leben sie mit Überzeugung."
         }
       ]
     }
