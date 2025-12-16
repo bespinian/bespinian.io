@@ -1,0 +1,658 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SEO from "../../components/SEO.astro";
+import Title from "../../components/Title.astro";
+import { useI18n } from "../../i18n/utils";
+import { getLanguagePaths } from "../../lib/paths";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("pricing.title");
+const description = t("pricing.subtitle");
+
+// Package data
+const packages = [
+  {
+    id: "free",
+    name: t("pricing.free.name"),
+    price: t("pricing.free.price"),
+    credits: t("pricing.free.credits"),
+    hourlyRate: null,
+    monthlyCredits: 8,
+    features: {
+      cloudquest: true,
+      slackChannel: false,
+      exclusiveTeam: false,
+    },
+  },
+  {
+    id: "focused",
+    name: t("pricing.focused.name"),
+    price: t("pricing.focused.price"),
+    credits: t("pricing.focused.credits"),
+    hourlyRate: t("pricing.focused.hourlyRate"),
+    hourlyRateYearly: t("pricing.focused.hourlyRateYearly"),
+    monthlyCredits: 32,
+    features: {
+      cloudquest: true,
+      slackChannel: true,
+      exclusiveTeam: false,
+    },
+  },
+  {
+    id: "engaged",
+    name: t("pricing.engaged.name"),
+    price: t("pricing.engaged.price"),
+    credits: t("pricing.engaged.credits"),
+    hourlyRate: t("pricing.engaged.hourlyRate"),
+    hourlyRateYearly: t("pricing.engaged.hourlyRateYearly"),
+    monthlyCredits: 64,
+    features: {
+      cloudquest: true,
+      slackChannel: true,
+      exclusiveTeam: false,
+    },
+  },
+  {
+    id: "integrated",
+    name: t("pricing.integrated.name"),
+    price: t("pricing.integrated.price"),
+    credits: t("pricing.integrated.credits"),
+    hourlyRate: t("pricing.integrated.hourlyRate"),
+    hourlyRateYearly: t("pricing.integrated.hourlyRateYearly"),
+    monthlyCredits: 128,
+    features: {
+      cloudquest: true,
+      slackChannel: true,
+      exclusiveTeam: true,
+    },
+  },
+];
+
+// Pricing brackets for custom calculator
+const pricingBrackets = [
+  { minHours: 1, pricePerHour: 230, totalPrice: 0, savings: 0 },
+  { minHours: 40, pricePerHour: 220, totalPrice: 8800, savings: 400 },
+  { minHours: 80, pricePerHour: 210, totalPrice: 16800, savings: 1600 },
+  { minHours: 160, pricePerHour: 200, totalPrice: 32000, savings: 4800 },
+  { minHours: 320, pricePerHour: 190, totalPrice: 60800, savings: 12800 },
+  { minHours: 640, pricePerHour: 180, totalPrice: 115200, savings: 32000 },
+];
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+  <Title {title} subtitle={description} />
+
+  <main>
+    <!-- Billing Toggle -->
+    <div class="billing-toggle-container">
+      <button class="billing-option active" data-billing="monthly">
+        {t("pricing.monthly")}
+      </button>
+      <button class="billing-option" data-billing="yearly">
+        {t("pricing.yearly")}
+        <span class="discount-badge">{t("pricing.yearlyDiscount")}</span>
+      </button>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="pricing-grid">
+      {
+        packages.map((pkg) => (
+          <div class="pricing-card">
+            <h3 class="package-name">{pkg.name}</h3>
+            <div class="price-container">
+              <span class="currency">CHF</span>
+              <span class="price" data-monthly={pkg.price}>
+                {pkg.price}
+              </span>
+              <span class="period">{t("pricing.perMonth")}</span>
+            </div>
+            <p
+              class="credits"
+              data-monthly-credits={pkg.monthlyCredits}
+              data-package-id={pkg.id}
+            >
+              {pkg.credits}
+            </p>
+            <div class="features">
+              <div class="feature">
+                <span
+                  class={`feature-icon ${pkg.features.cloudquest ? "included" : "excluded"}`}
+                >
+                  {pkg.features.cloudquest ? "✓" : "×"}
+                </span>
+                <span>{t("pricing.feature.cloudquest")}</span>
+              </div>
+              <div class="feature">
+                <span
+                  class={`feature-icon ${pkg.features.slackChannel ? "included" : "excluded"}`}
+                >
+                  {pkg.features.slackChannel ? "✓" : "×"}
+                </span>
+                <span>{t("pricing.feature.slackChannel")}</span>
+              </div>
+              <div class="feature">
+                <span
+                  class={`feature-icon ${pkg.features.exclusiveTeam ? "included" : "excluded"}`}
+                >
+                  {pkg.features.exclusiveTeam ? "✓" : "×"}
+                </span>
+                <span>{t("pricing.feature.exclusiveTeam")}</span>
+              </div>
+            </div>
+            {pkg.hourlyRate && (
+              <p class="hourly-rate">
+                <span class="hourly-rate-label">
+                  {t("pricing.correspondsTo")}
+                </span>{" "}
+                <span
+                  class="hourly-rate-value"
+                  data-monthly-rate={pkg.hourlyRate}
+                  data-yearly-rate={pkg.hourlyRateYearly}
+                >
+                  {pkg.hourlyRate}
+                </span>
+              </p>
+            )}
+          </div>
+        ))
+      }
+
+      <!-- Custom Pricing Card -->
+      <div class="pricing-card custom-card" id="custom-card">
+        <h3 class="package-name">{t("pricing.custom.name")}</h3>
+        <p class="custom-description">{t("pricing.custom.description")}</p>
+        <button class="show-calculator-btn" id="show-calculator">
+          {t("pricing.calculator.title")}
+        </button>
+      </div>
+    </div>
+
+    <!-- Custom Pricing Calculator (hidden by default) -->
+    <div class="calculator-container" id="calculator" style="display: none;">
+      <h2 class="calculator-title">{t("pricing.calculator.title")}</h2>
+      <p class="calculator-description">
+        {t("pricing.calculator.description")}
+      </p>
+
+      <div class="calculator-input-group">
+        <label for="hours-input">{t("pricing.calculator.hoursLabel")}</label>
+        <input
+          type="number"
+          id="hours-input"
+          min="1"
+          value="1"
+          placeholder="1"
+        />
+      </div>
+
+      <div class="calculator-results" id="calculator-results">
+        <div class="result-row">
+          <span class="result-label"
+            >{t("pricing.calculator.pricePerHour")}:</span
+          >
+          <span class="result-value" id="price-per-hour">CHF 230</span>
+        </div>
+        <div class="result-row total">
+          <span class="result-label">{t("pricing.calculator.totalPrice")}:</span
+          >
+          <span class="result-value" id="total-price">CHF 230</span>
+        </div>
+        <div class="result-row savings" id="savings-row" style="display: none;">
+          <span class="result-label">{t("pricing.calculator.savings")}:</span>
+          <span class="result-value savings-value" id="savings-value"
+            >CHF 0</span
+          >
+        </div>
+        <div class="next-bracket-info" id="next-bracket-info"></div>
+      </div>
+    </div>
+
+    <!-- Credit Explanation -->
+    <div class="credit-explanation">
+      <p>{t("pricing.creditExplanation")}</p>
+    </div>
+  </main>
+
+  <script
+    is:inline
+    define:vars={{
+      pricingBrackets,
+      translations: {
+        nextBracket: t("pricing.calculator.nextBracket"),
+        currentBracket: t("pricing.calculator.currentBracket"),
+        perMonth: t("pricing.perMonth"),
+      },
+    }}
+  >
+    // Billing toggle functionality
+    const billingButtons = document.querySelectorAll(".billing-option");
+    const priceElements = document.querySelectorAll(".price");
+    const periodElements = document.querySelectorAll(".period");
+    const creditElements = document.querySelectorAll(".credits");
+    const hourlyRateElements = document.querySelectorAll(".hourly-rate-value");
+    let currentBilling = "monthly";
+
+    billingButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        billingButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+        currentBilling = button.dataset.billing;
+        updatePrices();
+      });
+    });
+
+    function updatePrices() {
+      priceElements.forEach((priceEl) => {
+        const monthlyPrice = priceEl.dataset.monthly;
+        if (monthlyPrice && monthlyPrice !== "0") {
+          const numericPrice = parseFloat(monthlyPrice.replace(/[,']/g, ""));
+          if (currentBilling === "yearly") {
+            // Show monthly value with yearly discount (10% off)
+            const yearlyPrice = Math.round(numericPrice * 0.9);
+            priceEl.textContent = formatPrice(yearlyPrice);
+          } else {
+            priceEl.textContent = formatPrice(numericPrice);
+          }
+        }
+      });
+
+      // Period text stays as /mo since we always show monthly values
+      periodElements.forEach((periodEl) => {
+        periodEl.textContent = translations.perMonth;
+      });
+
+      // Update hourly rates
+      hourlyRateElements.forEach((rateEl) => {
+        const monthlyRate = rateEl.dataset.monthlyRate;
+        const yearlyRate = rateEl.dataset.yearlyRate;
+        if (monthlyRate && yearlyRate) {
+          rateEl.textContent =
+            currentBilling === "yearly" ? yearlyRate : monthlyRate;
+        }
+      });
+
+      // Credits display doesn't change for monthly vs yearly since days per week is constant
+      // The display text comes directly from translations and remains the same
+    }
+
+    function formatPrice(price) {
+      return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+    }
+
+    // Calculator functionality
+    const showCalculatorBtn = document.getElementById("show-calculator");
+    const calculator = document.getElementById("calculator");
+    const hoursInput = document.getElementById("hours-input");
+
+    showCalculatorBtn.addEventListener("click", () => {
+      calculator.style.display = "block";
+      calculator.scrollIntoView({ behavior: "smooth" });
+    });
+
+    hoursInput.addEventListener("input", calculatePrice);
+
+    function calculatePrice() {
+      const hours = parseInt(hoursInput.value) || 1;
+
+      // Find the applicable pricing bracket
+      let currentBracket = pricingBrackets[0];
+      for (let i = pricingBrackets.length - 1; i >= 0; i--) {
+        if (hours >= pricingBrackets[i].minHours) {
+          currentBracket = pricingBrackets[i];
+          break;
+        }
+      }
+
+      const pricePerHour = currentBracket.pricePerHour;
+      const totalPrice = hours * pricePerHour;
+
+      // Calculate savings compared to base rate
+      const baseRate = pricingBrackets[0].pricePerHour;
+      const savings = hours * (baseRate - pricePerHour);
+
+      // Update display
+      document.getElementById("price-per-hour").textContent =
+        `CHF ${pricePerHour}`;
+      document.getElementById("total-price").textContent =
+        `CHF ${formatPrice(totalPrice)}`;
+
+      const savingsRow = document.getElementById("savings-row");
+      if (savings > 0) {
+        savingsRow.style.display = "flex";
+        document.getElementById("savings-value").textContent =
+          `CHF ${formatPrice(savings)}`;
+      } else {
+        savingsRow.style.display = "none";
+      }
+
+      // Find and display next bracket info
+      const nextBracket = pricingBrackets.find((b) => b.minHours > hours);
+      const nextBracketInfo = document.getElementById("next-bracket-info");
+
+      if (nextBracket) {
+        const hoursNeeded = nextBracket.minHours;
+        const nextSavings =
+          nextBracket.minHours * (baseRate - nextBracket.pricePerHour);
+        const message = translations.nextBracket
+          .replace("{hours}", hoursNeeded)
+          .replace("{price}", nextBracket.pricePerHour)
+          .replace("{savings}", formatPrice(nextSavings));
+        nextBracketInfo.textContent = message;
+        nextBracketInfo.style.display = "block";
+      } else {
+        nextBracketInfo.style.display = "none";
+      }
+    }
+
+    // Initialize calculator
+    calculatePrice();
+  </script>
+
+  <style>
+    main {
+      padding: 6rem 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .credit-explanation {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--color-gray);
+      margin-bottom: 3rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .billing-toggle-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      flex-wrap: wrap;
+    }
+
+    .billing-option {
+      padding: 0.75rem 2rem;
+      border: 2px solid var(--color-background-gray);
+      background: white;
+      border-radius: 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .billing-option:hover {
+      border-color: var(--color-primary);
+    }
+
+    .billing-option.active {
+      background: var(--color-background-primary);
+      color: white;
+      border-color: var(--color-background-primary);
+    }
+
+    .discount-badge {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.25rem 0.5rem;
+      border-radius: 1rem;
+      font-size: 0.85rem;
+    }
+
+    .billing-option.active .discount-badge {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .pricing-card {
+      background: white;
+      border: 2px solid var(--color-background-gray);
+      border-radius: var(--card-border-radius);
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-color: var(--color-primary);
+    }
+
+    .package-name {
+      font-size: 1.5rem;
+      margin: 0 0 1rem 0;
+      color: var(--color-text-dark);
+    }
+
+    .price-container {
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .currency {
+      font-size: 1.25rem;
+      color: var(--color-gray);
+    }
+
+    .price {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--color-text-dark);
+    }
+
+    .period {
+      font-size: 1rem;
+      color: var(--color-gray);
+    }
+
+    .credits {
+      color: var(--color-gray);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    .hourly-rate {
+      color: var(--color-gray);
+      margin-top: 2rem;
+      margin-bottom: 0;
+      font-size: 0.8rem;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .feature-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .feature-icon.included {
+      background: var(--color-background-tertiary);
+      color: var(--color-primary);
+    }
+
+    .feature-icon.excluded {
+      background: var(--color-background-gray);
+      color: var(--color-text-light);
+    }
+
+    .custom-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .custom-description {
+      color: var(--color-gray);
+      margin-bottom: 2rem;
+    }
+
+    .show-calculator-btn {
+      padding: 1rem 2rem;
+      background: transparent;
+      border: 1px solid var(--color-primary);
+      color: var(--color-primary);
+      border-radius: 99999px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: var(--font-lato);
+    }
+
+    .show-calculator-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .calculator-container {
+      background: var(--color-background-tertiary);
+      border-radius: var(--card-border-radius);
+      padding: 3rem 2rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .calculator-title {
+      font-size: 2rem;
+      margin: 0 0 1rem 0;
+      text-align: center;
+      color: var(--color-text-dark);
+    }
+
+    .calculator-description {
+      text-align: center;
+      color: var(--color-gray);
+      margin-bottom: 2rem;
+    }
+
+    .calculator-input-group {
+      max-width: 400px;
+      margin: 0 auto 2rem;
+    }
+
+    .calculator-input-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--color-text-dark);
+    }
+
+    .calculator-input-group input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.25rem;
+      border: 2px solid var(--color-background-gray);
+      border-radius: 0.5rem;
+      transition: border-color 0.3s;
+    }
+
+    .calculator-input-group input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+
+    .calculator-results {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: var(--card-border-radius);
+    }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--color-background-gray);
+    }
+
+    .result-row:last-of-type {
+      border-bottom: none;
+    }
+
+    .result-row.total {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    .result-row.savings {
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .result-label {
+      color: var(--color-gray);
+    }
+
+    .result-value {
+      font-weight: 600;
+      color: var(--color-text-dark);
+    }
+
+    .savings-value {
+      color: var(--color-primary);
+    }
+
+    .next-bracket-info {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: var(--color-background-tertiary);
+      border-radius: 0.5rem;
+      text-align: center;
+      color: var(--color-text-dark);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 4rem 1rem;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .calculator-container {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</Layout>
