@@ -50,7 +50,6 @@ resources:
     cpu: "100m"
   limits:
     memory: "512Mi"
-    cpu: "1000m"
 ```
 
 Apps with low tolerance crash at the first problem. One slow database query uses

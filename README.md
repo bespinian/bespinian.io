@@ -13,7 +13,6 @@ This is an Astro-based multilingual website with the following structure:
 │   ├── assets/         # Image assets (logos, team photos, partners, etc.)
 │   ├── components/     # Reusable Astro components
 │   ├── content/        # Content collections (blog posts, customers, jobs, services)
-│   ├── data/           # Data files
 │   ├── i18n/           # Internationalization (translations)
 │   ├── layouts/        # Page layouts
 │   ├── lib/            # Utility functions

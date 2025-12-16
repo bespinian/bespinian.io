@@ -212,6 +212,51 @@ const de = {
   "roundtable.photo.caption": "Impressionen von unseren Workshops",
   "roundtable.finalcta.title": "Interesse geweckt?",
   "roundtable.finalcta.description": "Bestätigen Sie jetzt Ihre Einladung",
+
+  // Pricing Page
+  "pricing.title": "Preise",
+  "pricing.subtitle": "Wähle den perfekten Plan für deine Bedürfnisse",
+  "pricing.creditExplanation":
+    "Jeder Credit kann gegen eine Stunde Arbeit eines unserer Experten-Engineers eingetauscht werden. Credits haben kein Verfallsdatum.",
+  "pricing.monthly": "Monatliches Commitment",
+  "pricing.yearly": "Jährliches Commitment",
+  "pricing.yearlyDiscount": "10% sparen",
+  "pricing.perMonth": "/Mt.",
+  "pricing.correspondsTo": "Entspricht",
+  "pricing.free.name": "Free",
+  "pricing.free.price": "0",
+  "pricing.free.credits": "8 Credits",
+  "pricing.focused.name": "Focused",
+  "pricing.focused.price": "6'336",
+  "pricing.focused.credits": "32 Credits/Mt.",
+  "pricing.focused.hourlyRate": "CHF 198 pro Credit",
+  "pricing.focused.hourlyRateYearly": "CHF 178 pro Credit",
+  "pricing.engaged.name": "Engaged",
+  "pricing.engaged.price": "12'352",
+  "pricing.engaged.credits": "64 Credits/Mt.",
+  "pricing.engaged.hourlyRate": "CHF 193 pro Credit",
+  "pricing.engaged.hourlyRateYearly": "CHF 174 pro Credit",
+  "pricing.integrated.name": "Integrated",
+  "pricing.integrated.price": "23'936",
+  "pricing.integrated.credits": "128 Credits/Mt.",
+  "pricing.integrated.hourlyRate": "CHF 187 pro Credit",
+  "pricing.integrated.hourlyRateYearly": "CHF 168 pro Credit",
+  "pricing.custom.name": "Custom",
+  "pricing.custom.description": "Flexible Preise",
+  "pricing.feature.cloudquest": "CloudQuest",
+  "pricing.feature.slackChannel": "Direkter Slack Channel",
+  "pricing.feature.exclusiveTeam": "Exklusives Team",
+  "pricing.calculator.title": "Custom Preis-Rechner",
+  "pricing.calculator.description":
+    "Gib die Anzahl der Credits ein, die du benötigst.",
+  "pricing.calculator.hoursLabel": "Anzahl Credits",
+  "pricing.calculator.pricePerHour": "Preis pro Credit",
+  "pricing.calculator.totalPrice": "Gesamtpreis",
+  "pricing.calculator.savings": "Du sparst",
+  "pricing.calculator.nextBracket":
+    "Buche {hours} oder mehr um den Preis auf CHF {price} pro Credit zu reduzieren und CHF {savings} zu sparen.",
+  "pricing.calculator.currentBracket":
+    "Aktueller Tarif: CHF {price} pro Credit",
 };
 
 export default de;
