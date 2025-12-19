@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import Title from "../../components/Title.astro";
+import Location from "../../components/Location.astro";
 import ContactForm from "../../components/ContactForm.astro";
 import { useI18n } from "../../i18n/utils";
 import { getLanguagePaths } from "../../lib/paths";
@@ -19,5 +20,6 @@ const description = t("contact.subtitle");
 <Layout>
   <SEO slot="head" {title} {description} {lang} />
   <Title {title} subtitle={description} />
+  <Location />
   <ContactForm />
 </Layout>

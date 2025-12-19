@@ -4,6 +4,7 @@ import SEO from "../../components/SEO.astro";
 import Title from "../../components/Title.astro";
 import { useI18n } from "../../i18n/utils";
 import { getLanguagePaths } from "../../lib/paths";
+import { formatNumber } from "../../lib/formatters";
 
 export function getStaticPaths() {
   return getLanguagePaths();
@@ -18,11 +19,10 @@ const description = t("pricing.subtitle");
 const packages = [
   {
     id: "free",
-    name: t("pricing.free.name"),
-    price: t("pricing.free.price"),
-    credits: t("pricing.free.credits"),
-    hourlyRate: null,
-    monthlyCredits: 8,
+    name: "Free",
+    price: 0,
+    fixedPrice: true,
+    deliverable: t("pricing.free.credits"),
     features: {
       cloudquest: true,
       slackChannel: false,
@@ -31,12 +31,10 @@ const packages = [
   },
   {
     id: "focused",
-    name: t("pricing.focused.name"),
-    price: t("pricing.focused.price"),
-    credits: t("pricing.focused.credits"),
-    hourlyRate: t("pricing.focused.hourlyRate"),
-    hourlyRateYearly: t("pricing.focused.hourlyRateYearly"),
-    monthlyCredits: 32,
+    name: "Focused",
+    price: 6886,
+    hourlyRate: 198,
+    deliverable: t("pricing.focused.credits"),
     features: {
       cloudquest: true,
       slackChannel: true,
@@ -45,12 +43,10 @@ const packages = [
   },
   {
     id: "engaged",
-    name: t("pricing.engaged.name"),
-    price: t("pricing.engaged.price"),
-    credits: t("pricing.engaged.credits"),
-    hourlyRate: t("pricing.engaged.hourlyRate"),
-    hourlyRateYearly: t("pricing.engaged.hourlyRateYearly"),
-    monthlyCredits: 64,
+    name: "Engaged",
+    price: 13417,
+    deliverable: t("pricing.engaged.credits"),
+    hourlyRate: 193,
     features: {
       cloudquest: true,
       slackChannel: true,
@@ -59,12 +55,10 @@ const packages = [
   },
   {
     id: "integrated",
-    name: t("pricing.integrated.name"),
-    price: t("pricing.integrated.price"),
-    credits: t("pricing.integrated.credits"),
-    hourlyRate: t("pricing.integrated.hourlyRate"),
-    hourlyRateYearly: t("pricing.integrated.hourlyRateYearly"),
-    monthlyCredits: 128,
+    name: "Integrated",
+    price: 25861,
+    deliverable: t("pricing.integrated.credits"),
+    hourlyRate: 187,
     features: {
       cloudquest: true,
       slackChannel: true,
@@ -109,16 +103,14 @@ const pricingBrackets = [
             <div class="price-container">
               <span class="currency">CHF</span>
               <span class="price" data-monthly={pkg.price}>
-                {pkg.price}
+                {formatNumber(pkg.price, lang)}
               </span>
-              <span class="period">{t("pricing.perMonth")}</span>
+              {!pkg.fixedPrice && (
+                <span class="period">{t("pricing.perMonth")}</span>
+              )}
             </div>
-            <p
-              class="credits"
-              data-monthly-credits={pkg.monthlyCredits}
-              data-package-id={pkg.id}
-            >
-              {pkg.credits}
+            <p class="deliverable" data-package-id={pkg.id}>
+              {pkg.deliverable}
             </p>
             <div class="features">
               <div class="feature">
@@ -149,15 +141,15 @@ const pricingBrackets = [
             {pkg.hourlyRate && (
               <p class="hourly-rate">
                 <span class="hourly-rate-label">
-                  {t("pricing.correspondsTo")}
+                  {t("pricing.correspondsTo")} CHF
                 </span>{" "}
                 <span
                   class="hourly-rate-value"
                   data-monthly-rate={pkg.hourlyRate}
-                  data-yearly-rate={pkg.hourlyRateYearly}
                 >
                   {pkg.hourlyRate}
-                </span>
+                </span>{" "}
+                {t("pricing.perHour")}
               </p>
             )}
           </div>
@@ -212,11 +204,10 @@ const pricingBrackets = [
         </div>
         <div class="next-bracket-info" id="next-bracket-info"></div>
       </div>
-    </div>
 
-    <!-- Credit Explanation -->
-    <div class="credit-explanation">
-      <p>{t("pricing.creditExplanation")}</p>
+      <div class="credit-explanation">
+        <p>{t("pricing.creditExplanation")}</p>
+      </div>
     </div>
   </main>
 
@@ -226,7 +217,6 @@ const pricingBrackets = [
       pricingBrackets,
       translations: {
         nextBracket: t("pricing.calculator.nextBracket"),
-        currentBracket: t("pricing.calculator.currentBracket"),
         perMonth: t("pricing.perMonth"),
       },
     }}
@@ -235,7 +225,7 @@ const pricingBrackets = [
     const billingButtons = document.querySelectorAll(".billing-option");
     const priceElements = document.querySelectorAll(".price");
     const periodElements = document.querySelectorAll(".period");
-    const creditElements = document.querySelectorAll(".credits");
+    const creditElements = document.querySelectorAll(".deliverable");
     const hourlyRateElements = document.querySelectorAll(".hourly-rate-value");
     let currentBilling = "monthly";
 
@@ -250,28 +240,22 @@ const pricingBrackets = [
 
     function updatePrices() {
       priceElements.forEach((priceEl) => {
-        const monthlyPrice = priceEl.dataset.monthly;
+        const monthlyPrice = Number(priceEl.dataset.monthly);
         if (monthlyPrice && monthlyPrice !== "0") {
-          const numericPrice = parseFloat(monthlyPrice.replace(/[,']/g, ""));
           if (currentBilling === "yearly") {
             // Show monthly value with yearly discount (10% off)
-            const yearlyPrice = Math.round(numericPrice * 0.9);
+            const yearlyPrice = Math.round(monthlyPrice * 0.9);
             priceEl.textContent = formatPrice(yearlyPrice);
           } else {
-            priceEl.textContent = formatPrice(numericPrice);
+            priceEl.textContent = formatPrice(monthlyPrice);
           }
         }
-      });
-
-      // Period text stays as /mo since we always show monthly values
-      periodElements.forEach((periodEl) => {
-        periodEl.textContent = translations.perMonth;
       });
 
       // Update hourly rates
       hourlyRateElements.forEach((rateEl) => {
         const monthlyRate = rateEl.dataset.monthlyRate;
-        const yearlyRate = rateEl.dataset.yearlyRate;
+        const yearlyRate = Math.round(monthlyRate * 0.9);
         if (monthlyRate && yearlyRate) {
           rateEl.textContent =
             currentBilling === "yearly" ? yearlyRate : monthlyRate;
@@ -283,7 +267,7 @@ const pricingBrackets = [
     }
 
     function formatPrice(price) {
-      return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+      return price.toLocaleString();
     }
 
     // Calculator functionality
@@ -364,9 +348,8 @@ const pricingBrackets = [
 
     .credit-explanation {
       text-align: center;
-      font-size: 1.1rem;
       color: var(--color-gray);
-      margin-bottom: 3rem;
+      margin-top: 6rem;
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
@@ -399,9 +382,9 @@ const pricingBrackets = [
     }
 
     .billing-option.active {
-      background: var(--color-background-primary);
+      background: var(--color-primary);
       color: white;
-      border-color: var(--color-background-primary);
+      border-color: var(--color-primary);
     }
 
     .discount-badge {
@@ -465,7 +448,7 @@ const pricingBrackets = [
       color: var(--color-gray);
     }
 
-    .credits {
+    .deliverable {
       color: var(--color-gray);
       margin-bottom: 2rem;
       font-size: 1rem;
