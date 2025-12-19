@@ -1,7 +1,7 @@
 ---
 title: See You at KubeCon Europe 2026 in Amsterdam
-author: Mathis Kretz
-pubDate: 2025-12-21
+author: Yannik Dällenbach
+pubDate: 2025-12-19
 tags:
   [
     "kubernetes",
