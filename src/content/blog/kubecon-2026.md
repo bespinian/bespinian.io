@@ -1,7 +1,7 @@
 ---
 title: See You at KubeCon Europe 2026 in Amsterdam
-author: Mathis Kretz
-pubDate: 2025-12-21
+author: Yannik Dällenbach
+pubDate: 2025-12-19
 tags:
   [
     "kubernetes",
@@ -15,7 +15,7 @@ description:
   "Join the bespinian team at KubeCon + CloudNativeCon Europe 2026 in Amsterdam
   (March 23-26). Let's discuss Kubernetes migrations, platform engineering,
   cloud security, and building developer-friendly cloud platforms."
-image: ../../assets/blog/cloud-journey.jpg
+image: ../../assets/blog/amsterdam.jpg
 ---
 
 ## We're Heading to Amsterdam
