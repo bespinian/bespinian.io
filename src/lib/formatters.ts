@@ -13,6 +13,16 @@ export function formatDate(date: Date, locale: string): string {
 }
 
 /**
+ * Formats a number to a localized string
+ * @param num - The number
+ * @param locale - The locale to use (default: "en-US")
+ * @returns Formatted number string (e.g., "1,234")
+ */
+export function formatNumber(num: number, locale: string): string {
+  return num.toLocaleString(locale === "en" ? "en-US" : "de-CH");
+}
+
+/**
  * Sorts an array of items by date in descending order (newest first)
  * @param items - Array of items with a data.pubDate property
  * @returns Sorted array

@@ -125,7 +125,11 @@ const de = {
   // Contact Page
   "contact.title": "Kontakt",
   "contact.subtitle":
-    "Du hast eine Frage? Brauchst ein Angebot? Lust auf einen Kaffee? Schreib uns eine Nachricht – wir melden uns bei dir.",
+    "Du hast eine Frage? Brauchst ein Angebot? Lust auf einen Kaffee? Komm vorbei oder schreib uns eine Nachricht – wir melden uns bei dir.",
+  "contact.location.title": "Besuch Uns",
+  "contact.location.mainOffice":
+    "Unser Büro ist in der Nähe des berühmten Zytglogge im Herzen der Altstadt von Bern",
+  "contact.form.title": "Schick Uns eine Nachricht",
   "contact.form.nameplaceholder": "Dein Name",
   "contact.form.emailplaceholder": "Deine E-Mail",
   "contact.form.subjectplaceholder": "Betreff",
@@ -222,29 +226,16 @@ const de = {
   "pricing.yearly": "Jährliches Commitment",
   "pricing.yearlyDiscount": "10% sparen",
   "pricing.perMonth": "/Mt.",
+  "pricing.perHour": "pro Stunde",
   "pricing.correspondsTo": "Entspricht",
-  "pricing.free.name": "Free",
-  "pricing.free.price": "0",
-  "pricing.free.credits": "8 Credits",
-  "pricing.focused.name": "Focused",
-  "pricing.focused.price": "6'336",
-  "pricing.focused.credits": "32 Credits/Mt.",
-  "pricing.focused.hourlyRate": "CHF 198 pro Credit",
-  "pricing.focused.hourlyRateYearly": "CHF 178 pro Credit",
-  "pricing.engaged.name": "Engaged",
-  "pricing.engaged.price": "12'352",
-  "pricing.engaged.credits": "64 Credits/Mt.",
-  "pricing.engaged.hourlyRate": "CHF 193 pro Credit",
-  "pricing.engaged.hourlyRateYearly": "CHF 174 pro Credit",
-  "pricing.integrated.name": "Integrated",
-  "pricing.integrated.price": "23'936",
-  "pricing.integrated.credits": "128 Credits/Mt.",
-  "pricing.integrated.hourlyRate": "CHF 187 pro Credit",
-  "pricing.integrated.hourlyRateYearly": "CHF 168 pro Credit",
+  "pricing.free.credits": "8 Stunden",
+  "pricing.focused.credits": "1 Tag pro Woche",
+  "pricing.engaged.credits": "2 Tage pro Woche",
+  "pricing.integrated.credits": "4 Tage pro Woche",
   "pricing.custom.name": "Custom",
   "pricing.custom.description": "Flexible Preise",
   "pricing.feature.cloudquest": "CloudQuest",
-  "pricing.feature.slackChannel": "Direkter Slack Channel",
+  "pricing.feature.slackChannel": "Direkter Chat Channel",
   "pricing.feature.exclusiveTeam": "Exklusives Team",
   "pricing.calculator.title": "Custom Preis-Rechner",
   "pricing.calculator.description":
@@ -255,8 +246,6 @@ const de = {
   "pricing.calculator.savings": "Du sparst",
   "pricing.calculator.nextBracket":
     "Buche {hours} oder mehr um den Preis auf CHF {price} pro Credit zu reduzieren und CHF {savings} zu sparen.",
-  "pricing.calculator.currentBracket":
-    "Aktueller Tarif: CHF {price} pro Credit",
 };
 
 export default de;

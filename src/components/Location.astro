@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import map from "../assets/map.png";
+import { useI18n } from "../i18n/utils";
+
+const { t } = useI18n(Astro.url);
+---
+
+<section id="location-section">
+  <h2>{t("contact.location.title")}</h2>
+  <p>
+    {t("contact.location.mainOffice")}: <strong>Kramgasse 68, 3011 Bern</strong>
+  </p>
+  <a
+    href="https://maps.app.goo.gl/5o1J1VakRfZxfgdN6"
+    target="_blank"
+    class="map-link"
+  >
+    <Image src={map} alt="Map" class="map" />
+  </a>
+</section>
+
+<style>
+  #location-section {
+    padding: 4rem 2rem;
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
+
+  .map:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+</style>
