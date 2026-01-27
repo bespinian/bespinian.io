@@ -23,7 +23,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
 <ContentDetailPage
-  pageTitle={`${title} | Customers`}
+  pageTitle={`${title} with ${customer.data.company} | Customers`}
   {title}
   {description}
   {lang}
