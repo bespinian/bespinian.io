@@ -1,0 +1,221 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SEO from "../../components/SEO.astro";
+import Title from "../../components/Title.astro";
+import Link from "../../components/Link.astro";
+import { useI18n } from "../../i18n/utils";
+import { getLanguagePaths } from "../../lib/paths";
+import openbaoLogo from "../../assets/openbao.svg";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, t } = useI18n(Astro.url);
+
+const title = t("openbao.title");
+const subtitle = t("openbao.subtitle");
+const description = t("openbao.description");
+const contactLink = `/${lang}/contact#form`;
+---
+
+<Layout>
+  <SEO slot="head" {title} {description} {lang} />
+
+  <Title {title} {subtitle} spaceship={openbaoLogo} />
+
+  <main>
+    <section class="intro-section">
+      <div class="container">
+        <p class="intro-text">{description}</p>
+        <div class="cta-container">
+          <Link href={contactLink} large center>
+            {t("openbao.cta")}
+          </Link>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.about.title")}</h2>
+        <p class="about-text">{t("openbao.about.description1")}</p>
+        <p class="about-text">{t("openbao.about.description2")}</p>
+        <p class="about-text">{t("openbao.about.description3")}</p>
+      </div>
+    </section>
+
+    <section class="content-section alternate">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.features.title")}</h2>
+        <ul class="value-list">
+          <li>{t("openbao.features.item1")}</li>
+          <li>{t("openbao.features.item2")}</li>
+          <li>{t("openbao.features.item3")}</li>
+          <li>{t("openbao.features.item4")}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.benefits.title")}</h2>
+        <p class="about-text">{t("openbao.benefits.description")}</p>
+        <ul class="value-list">
+          <li>{t("openbao.benefits.item1")}</li>
+          <li>{t("openbao.benefits.item2")}</li>
+          <li>{t("openbao.benefits.item3")}</li>
+          <li>{t("openbao.benefits.item4")}</li>
+          <li>{t("openbao.benefits.item5")}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="final-cta">
+      <div class="container">
+        <h2 class="cta-title">{t("openbao.finalcta.title")}</h2>
+        <p class="cta-description">{t("openbao.finalcta.description")}</p>
+        <div class="cta-container">
+          <Link href={contactLink} large center secondary>
+            {t("openbao.cta")}
+          </Link>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    width: 100%;
+  }
+
+  .intro-section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+    max-width: 48rem;
+    margin: 0 auto 2rem;
+  }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 2rem;
+  }
+
+  .content-section.alternate {
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    padding-bottom: 6rem;
+  }
+
+  .container {
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--color-background-primary);
+    text-align: center;
+  }
+
+  .content-section.alternate .section-title {
+    color: var(--color-secondary);
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--color-gray);
+    text-align: center;
+  }
+
+  .about-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .value-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .value-list li {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    padding-left: 2.5rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .value-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  #final-cta {
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-description {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 48rem) {
+    .intro-text {
+      font-size: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .about-text {
+      font-size: 1.3rem;
+    }
+
+    .value-list li {
+      font-size: 1.4rem;
+    }
+
+    .cta-title {
+      font-size: 3rem;
+    }
+
+    .cta-description {
+      font-size: 1.5rem;
+    }
+  }
+</style>
