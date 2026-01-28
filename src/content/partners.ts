@@ -2,7 +2,7 @@ import vshn from "../assets/partners/vshn.svg";
 import puzzle from "../assets/partners/puzzle.svg";
 import peakscale from "../assets/partners/peakscale.svg";
 import timKoko from "../assets/partners/tim-koko.svg";
-import nuvibit from "../assets/partners/nuvibit.webp";
+import nuvibit from "../assets/partners/nuvibit.svg";
 import steppingStone from "../assets/partners/stepping-stone.svg";
 import letsboot from "../assets/partners/letsboot.svg";
 
