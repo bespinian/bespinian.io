@@ -210,6 +210,45 @@ const en = {
   "roundtable.finalcta.title": "Interested?",
   "roundtable.finalcta.description": "Confirm your invitation now",
 
+  // OpenBao Landing Page
+  "openbao.title": "OpenBao",
+  "openbao.subtitle": "Sovereign, Enterprise-Grade Secrets Management",
+  "openbao.description":
+    "Fully managed secrets management built on open standards. Secure your API keys, certificates, and credentials with 24×7 support from Swiss experts.",
+  "openbao.cta": "Get Started with OpenBao",
+  "openbao.about.title": "What is OpenBao?",
+  "openbao.about.description1":
+    "OpenBao on is a secrets management solution that provides enterprise-grade security for sensitive data. It is an open-source, community-driven fork of HashiCorp Vault, that offers sovereign, license-free secrets management.",
+  "openbao.about.description2":
+    "We run OpenBao with VSHN as a fully managed service on Servala, providing 24×7 support for SMEs and enterprises. You get complete cluster scaling, high availability, disaster recovery, upgrades, and maintenance—all handled by our team.",
+  "openbao.about.description3":
+    "Retain full data sovereignty by choosing Swiss or European cloud providers while avoiding vendor lock-in through permissive open-source licensing.",
+  "openbao.features.title": "Key Features",
+  "openbao.features.item1":
+    "Secure Storage: Encryption before data persists to storage",
+  "openbao.features.item2":
+    "Dynamic Credentials: On-demand secret generation for Kubernetes and databases",
+  "openbao.features.item3":
+    "Centralized Encryption: Key management across distributed infrastructure",
+  "openbao.features.item4":
+    "Complete Audit Trails: Track all access and operations",
+  "openbao.benefits.title": "Why Choose OpenBao?",
+  "openbao.benefits.description":
+    "Focus on your business while we handle the complexity of secrets management.",
+  "openbao.benefits.item1":
+    "Fully Managed: No operational overhead—we handle everything",
+  "openbao.benefits.item2":
+    "24×7 Support: Expert Swiss engineers ready to help",
+  "openbao.benefits.item3":
+    "Data Sovereignty: Keep your data in Europe with local cloud providers",
+  "openbao.benefits.item4":
+    "Open Source: No vendor lock-in with MPL-2.0 licensing",
+  "openbao.benefits.item5":
+    "Enterprise-Grade: High availability and disaster recovery built-in",
+  "openbao.finalcta.title": "Ready to Secure Your Secrets?",
+  "openbao.finalcta.description":
+    "Get in touch with our team to learn more about OpenBao",
+
   // Pricing Page
   "pricing.title": "Pricing",
   "pricing.subtitle": "Choose the perfect plan for your needs",

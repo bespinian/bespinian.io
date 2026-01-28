@@ -211,6 +211,46 @@ const ts = {
   "roundtable.finalcta.title": "Interässe gweckt?",
   "roundtable.finalcta.description": "Bestätiget jetzt öii Iladig",
 
+  // OpenBao Landing Page
+  "openbao.title": "OpenBao",
+  "openbao.subtitle":
+    "Digitali Souveränität mit Enterprise-Grade Secrets Management",
+  "openbao.description":
+    "Fully managed Secrets Management uf Open-Source-Basis. Sichere dini API-Keys, Zertifikat u Zuegangsdatä mit 24×7-Support vo Schwiizer Expert:inne.",
+  "openbao.cta": "Mit OpenBao starte",
+  "openbao.about.title": "Was isch OpenBao?",
+  "openbao.about.description1":
+    "OpenBao isch e Secrets-Management-Lösig, wo Enterprise-Grade-Sicherheit für sensibli Datä bietet. Es isch en Open-Source, Community-gstüürte Fork vo HashiCorp Vault, wo souveräns, lizenzfreis Secrets Management bietet.",
+  "openbao.about.description2":
+    "Mir betribe OpenBao mit VSHN als fully managed Service uf Servala u biete 24×7-Support für KMUs u Enterprises. Du bechunnsch kompletts Cluster-Scaling, High Availability, Disaster Recovery, Upgrades u Wartig—alles vo üsem Team verwaltet.",
+  "openbao.about.description3":
+    "Bhaut voui Datasouveränität dür d Wahl vo Schwizer oder europäische Cloud-Provider u vermid Vendor Lock-in dür liberali Open-Source-Lizenzierig.",
+  "openbao.features.title": "Key Features",
+  "openbao.features.item1":
+    "Sicheri Speicherig: Verschlüsselig bevor Datä gspicheret wärde",
+  "openbao.features.item2":
+    "Dynamischi Credentials: On-Demand Secret-Generierig für Kubernetes u Datäbanke",
+  "openbao.features.item3":
+    "Zentralisierti Verschlüsselig: Key Management über verteilti Infrastruktur",
+  "openbao.features.item4":
+    "Vollständigi Audit-Trails: Verfolgig vo allne Zuegriffe u Operatione",
+  "openbao.benefits.title": "Wieso OpenBao?",
+  "openbao.benefits.description":
+    "Konzentrier di uf dis Gschäft, während mir d Komplexität vom Secrets Management übernäh.",
+  "openbao.benefits.item1":
+    "Vollständig verwaltet: Ke operativä Overhead—mir kümmere üs um alles",
+  "openbao.benefits.item2":
+    "24×7-Support: Schwiizer Expertä-Engineers stöh parat",
+  "openbao.benefits.item3":
+    "Datäsouveränität: Datä ir Schwiz bi lokale Cloud-Provider",
+  "openbao.benefits.item4":
+    "Open Source: Ke Vendor Lock-in mit MPL-2.0-Lizenziärig",
+  "openbao.benefits.item5":
+    "Enterprise-Grade: High Availability u Disaster Recovery inklusive",
+  "openbao.finalcta.title": "Bereit, dini Secrets z sichere?",
+  "openbao.finalcta.description":
+    "Kontaktier üses Team, um meh über OpenBao z erfahre",
+
   // Pricing Page
   "pricing.title": "Priise",
   "pricing.subtitle": "Wähl dr perfekt Plan für dini Bedürfniss",
