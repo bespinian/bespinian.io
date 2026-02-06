@@ -65,4 +65,4 @@ Both platforms offer robust secrets management capabilities. Your choice should 
 
 Whichever path you choose, both platforms provide production-ready secrets management. The key is selecting the solution that aligns with your technical requirements, organizational values, and long-term strategy.
 
-If you need guidance for your secrets management journey, get in touch with our team to learn more.
+If you need guidance for your secrets management journey, [get in touch](https://bespinian.io/en/openbao/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=openbao_as_vault_aternative) with our team to learn more.
