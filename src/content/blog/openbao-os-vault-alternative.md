@@ -1,3 +1,19 @@
+---
+title: "OpenBao: When to Choose the Open Source Vault Alternative"
+author: Paulina Grochal
+pubDate: 2026-02-06
+tags:
+  [
+    "openbao",
+    "secrets-management",
+    "hashicorp-vault",
+    "cloud-security",
+    "open-source",
+  ]
+description: "Short comparison of OpenBao and HashiCorp Vault where we will dive into licensing differences, governance models, and feature sets to help you choose the right secrets management platform."
+image: ../../assets/blog/bao.jpg
+---
+
 # OpenBao: When to Choose the Open Source Vault Alternative
 
 In 2023, HashiCorp changed Vault's license from Mozilla Public License (MPL) to Business Source License (BSL) 1.1. Shortly after, the community forked Vault's last MPL version, creating OpenBao — Open Source project under Apache 2.0 licensing. Let's explore the actual differences and features.
