@@ -3,7 +3,7 @@ title:
   Cloud Migration - What Mountains Can Teach Us About Digital Transformation
 author: Paulina Grochal
 pubDate: 2026-02-09
-tags: ["aws", "infrastructure", "migration", "cloud", "cloud"]
+tags: ["cloud-strategy", "infrastructure", "migration", "digital-transformation", "cloud"]
 description:
   "Discover why successful cloud migration can reuse the same strategic approach
   as climbing a mountain and learn more about cloud migration stages."
@@ -78,10 +78,8 @@ attention to details and can bring new challenges.
 - **Build resilience** - Your services are overall stable, however we need to
   prepare for surprises like, for example, service downtime. Make sure you align
   with redundancy strategies and keep your resources highly available.
-
 - **Monitoring and scaling** - Real-time visibility into performance and costs
   is essential for your success as well as scalable archotecture.
-
 - **Continuously refine** - to gain as much benefit from your migration as
   possible, refine regularly your cloud environment and explore deeper the
   possibilities the cloud gives you.
