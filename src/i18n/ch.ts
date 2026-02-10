@@ -216,7 +216,7 @@ const ts = {
   "openbao.subtitle":
     "Digitali Souveränität mit Enterprise-Grade Secrets Management",
   "openbao.description":
-    "Fully managed Secrets Management uf Open-Source-Basis. Sichere dini API-Keys, Zertifikat u Zuegangsdatä mit 24×7-Support vo Schwiizer Expert:inne.",
+    "Fully managed Secrets Management uf Open-Source-Basis. Sichere dini API-Keys, Zertifikat u Zuegangsdatä mit 24×7-Support vo Schwiizer Expert:inne dür Servala und VSHN.",
   "openbao.cta": "Mit OpenBao starte",
   "openbao.about.title": "Was isch OpenBao?",
   "openbao.about.description1":

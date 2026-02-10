@@ -222,7 +222,7 @@ const de = {
   "openbao.subtitle":
     "Digitale Souveränität mit Enterprise-Grade Secrets Management",
   "openbao.description":
-    "Fully managed Secrets Management auf Open-Source-Basis. Sichere deine API-Keys, Zertifikate und Zugangsdaten mit 24×7-Support von Schweizer Expert:innen.",
+    "Fully managed Secrets Management auf Open-Source-Basis. Sichere deine API-Keys, Zertifikate und Zugangsdaten mit 24×7-Support von Schweizer Expert:innen durch Servala und VSHN.",
   "openbao.cta": "Mit OpenBao starten",
   "openbao.about.title": "Was ist OpenBao?",
   "openbao.about.description1":

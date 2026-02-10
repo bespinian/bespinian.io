@@ -214,7 +214,7 @@ const en = {
   "openbao.title": "OpenBao",
   "openbao.subtitle": "Sovereign, Enterprise-Grade Secrets Management",
   "openbao.description":
-    "Fully managed secrets management built on open standards. Secure your API keys, certificates, and credentials with 24×7 support from Swiss experts.",
+    "Fully managed secrets management built on open standards. Secure your API keys, certificates, and credentials with 24×7 support from Swiss experts powered by Servala and VSHN.",
   "openbao.cta": "Get Started with OpenBao",
   "openbao.about.title": "What is OpenBao?",
   "openbao.about.description1":
