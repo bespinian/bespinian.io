@@ -80,6 +80,10 @@ OpenBao includes features that were previously exclusive to Vault Enterprise:
 - **[Namespaces](https://openbao.org/blog/namespaces-announcement/)** -
   Multi-tenancy and workload isolation, is now available in the open source
   version
+- **Horizontal Read Scalability** - HA standby nodes can handle read operations
+  locally, with writes forwarded to the active leader (equivalent to Vault
+  Enterprise's Performance Standby Nodes) _[Added in OpenBao 2.5.0 as of
+  4.02.2026]_
 
 ### Vault Enterprise Exclusive Features
 
@@ -89,7 +93,6 @@ The following features remain available only in Vault Enterprise:
   capabilities
 - **Performance Replication** - Read replicas for geographic distribution and
   improved scalability
-- **Performance Standby Nodes** - Enhanced cluster scalability and throughput
 - **Automated Snapshots** - Built-in backup automation (can be scripted with CLI
   in OpenBao, but not available out-of-the-box)
 - **[Sentinel Policies](https://developer.hashicorp.com/sentinel/docs/vault)** -
