@@ -3,7 +3,14 @@ title:
   Cloud Migration - What Mountains Can Teach Us About Digital Transformation
 author: Paulina Grochal
 pubDate: 2026-02-09
-tags: ["cloud-strategy", "infrastructure", "migration", "digital-transformation", "cloud"]
+tags:
+  [
+    "cloud-strategy",
+    "infrastructure",
+    "migration",
+    "digital-transformation",
+    "cloud",
+  ]
 description:
   "Discover why successful cloud migration can reuse the same strategic approach
   as climbing a mountain and learn more about cloud migration stages."
