@@ -21,14 +21,14 @@ image: ../../assets/blog/bao.jpg
 
 In 2023, HashiCorp changed Vault's license from Mozilla Public License (MPL) to
 Business Source License (BSL) 1.1. Shortly after, the community forked Vault's
-last MPL version, creating OpenBao — Open Source project under Apache 2.0
+last MPL version, creating OpenBao — Open Source project under MPL 2.0
 licensing. Let's explore the actual differences and features.
 
 ## What is OpenBao?
 
 OpenBao is a relatively new open source secrets management platform forked from
 HashiCorp Vault (version 1.14.0) before the license change. It maintains API
-compatibility with Vault while operating under Apache 2.0 licensing and Linux
+compatibility with Vault while operating under MPL 2.0 licensing and Linux
 Foundation governance.
 
 Core features include:
@@ -43,7 +43,7 @@ Core features include:
 
 ## The License Difference
 
-**OpenBao ([Apache 2.0](https://github.com/openbao/openbao/blob/main/LICENSE))**
+**OpenBao ([MPL 2.0](https://github.com/openbao/openbao/blob/main/LICENSE))**
 allows unrestricted use, modification, and redistribution for any purpose,
 including commercial applications and competing services.
 
