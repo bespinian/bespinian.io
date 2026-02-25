@@ -95,7 +95,7 @@ and
 
 ## Attach the Policy
 
-A policy on its own does nothing, you need to attach it to the identity that
+A policy on its own does nothing; you need to attach it to the identity that
 developers use to authenticate.
 
 **If you use AWS SSO (recommended)**, attach the policy to your SSO permission
@@ -343,3 +343,6 @@ for setup instructions.
 - [AWS Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html)
 - [Claude for Enterprise on AWS Marketplace](https://aws.amazon.com/blogs/awsmarketplace/claude-for-enterprise-premium-seats-with-claude-code-now-available-in-aws-marketplace/)
 - [No Account Left Behind: Automating Cross-Account Observability in AWS](/en/blog/no-account-left-behind)
+
+**Interested in running your own Claude Code?** Check out our
+[Pragmatic AI Adoption](https://bespinian.io/en/services/pragmatic-ai-adoption?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=claude_code_using_aws_bedrock).
