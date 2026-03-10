@@ -48,13 +48,11 @@ export default defineConfig({
       redirectToDefaultLocale: false,
     },
   },
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: "Lato",
-        cssVariable: "--font-lato",
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Lato",
+      cssVariable: "--font-lato",
+    },
+  ],
 });
