@@ -15,12 +15,12 @@ We are a very trust-based company that uses Holacracy as a governance model.
 ## Requirements
 
 - You have practical experience with Kubernetes, Terraform, AWS, Azure, or GCP
-- You have worked as a software architect but also as a developing engineer
 - You have practical experience with DevOps, CI/CD, and automation
+- You have worked as a software architect but also as a developing engineer
 - You like to work with multiple customers and technologies
 - You are interested in participating in shaping the company and taking
   responsibility
-- You are currently located in or are willing to relocate to Switzerland
+- You are working from Switzerland
 - You are fluent in German and English
 
 ## Nice to Have
@@ -43,7 +43,7 @@ We are a very trust-based company that uses Holacracy as a governance model.
 ## What We Offer
 
 - Flexible ways of hybrid working and a lot of responsibility
-- Collaboration with various companies, industries and technologies
+- Collaboration with various companies, industries, and technologies
 - A fast-paced start-up environment
 - A great team of fun people with diverse backgrounds
 - A competitive salary and great benefits
