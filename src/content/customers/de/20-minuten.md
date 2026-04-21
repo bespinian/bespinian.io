@@ -15,6 +15,7 @@ quote:
 authorName: Manuel Sutter
 authorTitle: Product Owner
 authorImage: ../../../assets/customers/20minuten-manuel.jpeg
+featured: true
 ---
 
 ## Kunde
