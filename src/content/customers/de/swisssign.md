@@ -15,7 +15,6 @@ quote:
 authorName: Placi Flury
 authorTitle: Head of DevOps
 authorImage: ../../../assets/customers/swisssign-placi.jpeg
-featured: true
 ---
 
 ## Kunde
