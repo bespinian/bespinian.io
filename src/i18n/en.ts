@@ -8,7 +8,6 @@ const en = {
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Free Cloud Readiness Workshop",
-  "cta.learnMore": "Learn More",
   "cta.showAll": "Show All",
   "cta.learnAboutUs": "Learn About Us",
   "cta.techWeLove": "Tech we love",

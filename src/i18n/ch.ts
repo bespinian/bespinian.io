@@ -8,7 +8,6 @@ const ts = {
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Gratis Cloud Readiness Workshop",
-  "cta.learnMore": "Meh erfahre",
   "cta.showAll": "Aui azeige",
   "cta.learnAboutUs": "Meh über üs",
   "cta.techWeLove": "Üsi Technologie",

@@ -8,7 +8,6 @@ const de = {
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Kostenloser Cloud Readiness Workshop",
-  "cta.learnMore": "Mehr erfahren",
   "cta.showAll": "Alle anzeigen",
   "cta.learnAboutUs": "Mehr über uns",
   "cta.techWeLove": "Tech die wir lieben",

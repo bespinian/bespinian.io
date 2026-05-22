@@ -11,7 +11,7 @@ interface Props {
 
 const { id, title, icon, description } = Astro.props;
 
-const { t, translatePath } = useI18n(Astro.url);
+const { translatePath } = useI18n(Astro.url);
 ---
 
 <article>
@@ -20,7 +20,7 @@ const { t, translatePath } = useI18n(Astro.url);
     <h3>{title}</h3>
     <p>{description}</p>
   </div>
-  <Link href={translatePath(`/services/${id}`)}>{t("cta.learnMore")}</Link>
+  <Link href={translatePath(`/services/${id}`)}>{title}</Link>
 </article>
 
 <style>
