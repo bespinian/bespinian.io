@@ -1,6 +1,9 @@
 ---
 import { languages } from "../i18n/ui";
 import { removeLanguagePrefix } from "../lib/paths";
+import { useI18n } from "../i18n/utils";
+
+const { t } = useI18n(Astro.url);
 
 interface Props {
   currentLang: string;
@@ -14,8 +17,7 @@ const id = mobile ? "lang-selector-mobile" : "lang-selector";
 ---
 
 <div class="lang-dropdown">
-  <label for={id} style="display:none">Language</label>
-  <select id={id} class="lang-select">
+  <select id={id} class="lang-select" aria-label={t("nav.language")}>
     {
       Object.entries(languages).map(([langCode, langName]) => (
         <option

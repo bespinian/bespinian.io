@@ -14,26 +14,25 @@ interface WorkItem {
 
 const { lang, t, translatePath } = useI18n(Astro.url);
 
-const blogPosts = await getCollection("blog");
-const customers = await getCollectionByLanguage("customers", lang);
+const [blogPosts, customers] = await Promise.all([
+  getCollection("blog"),
+  getCollectionByLanguage("customers", lang),
+]);
 
-const workItems: WorkItem[] = [];
-blogPosts.forEach((b) => {
-  workItems.push({
+const workItems: WorkItem[] = [
+  ...blogPosts.map((b) => ({
     id: b.id,
     type: t("work.type.blog"),
     title: b.data.title,
     date: b.data.pubDate,
-  });
-});
-customers.forEach((c) => {
-  workItems.push({
+  })),
+  ...customers.map((c) => ({
     id: c.id,
     type: t("work.type.story"),
     title: c.data.title,
     date: c.data.pubDate,
-  });
-});
+  })),
+];
 
 const sortedWorkItems = workItems
   .sort((a, b) => b.date.getTime() - a.date.getTime())
@@ -48,7 +47,7 @@ const sortedWorkItems = workItems
   </div>
 
   <div id="all-link">
-    <Link href={translatePath("/blog")}>{t("cta.showAll")}</Link>
+    <Link href={translatePath("/blog")}>{t("cta.allWork")}</Link>
   </div>
 </section>
 
