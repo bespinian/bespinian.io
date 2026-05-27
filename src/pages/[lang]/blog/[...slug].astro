@@ -5,6 +5,7 @@ import ContentDetailPage from "../../../layouts/ContentDetailPage.astro";
 import { getCollectionStaticPaths } from "../../../lib/paths";
 import { useI18n } from "../../../i18n/utils";
 import { formatDate } from "../../../lib/formatters";
+import Tag from "../../../components/Tag.astro";
 
 export async function getStaticPaths() {
   return getCollectionStaticPaths("blog");
@@ -61,7 +62,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   }
 
   <div slot="header-after" class="tags">
-    {post.data.tags.map((tag: string) => <span class="tag">{tag}</span>)}
+    {post.data.tags.map((tag: string) => <Tag name={tag} />)}
   </div>
 
   <Content />

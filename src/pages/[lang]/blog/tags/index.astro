@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import { useI18n } from "../../../../i18n/utils";
+import ContentDetailPage from "../../../../layouts/ContentDetailPage.astro";
+import { getLanguagePaths } from "../../../../lib/paths";
+import Tag from "../../../../components/Tag.astro";
+
+export function getStaticPaths() {
+  return getLanguagePaths();
+}
+
+const { lang, translatePath } = useI18n(Astro.url);
+const blogPosts = await getCollection("blog");
+
+const tagCounts = blogPosts
+  .flatMap((post: any) => post.data.tags)
+  .reduce((acc: Record<string, number>, tag: string) => {
+    acc[tag] = (acc[tag] || 0) + 1;
+    return acc;
+  }, {});
+
+const tags = Object.entries(tagCounts).sort(([tagA], [tagB]) =>
+  tagA.localeCompare(tagB),
+);
+---
+
+<ContentDetailPage
+  pageTitle="Tags"
+  lang={lang}
+  title="Tags"
+  description="The blog tags"
+  backLink={{ href: translatePath("/blog"), text: "← Back to Blog" }}
+>
+  <div class="tags">
+    {tags.map(([name, _]) => <Tag {name} />)}
+  </div>
+</ContentDetailPage>
+
+<style>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>

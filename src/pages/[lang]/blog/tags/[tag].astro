@@ -1,0 +1,50 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import CollectionPage from "../../../../layouts/CollectionPage.astro";
+import BlogCard from "../../../../components/BlogCard.astro";
+import { useI18n } from "../../../../i18n/utils";
+import { languages } from "../../../../i18n/ui";
+import { sortByDateDesc } from "../../../../lib/formatters";
+
+export const getStaticPaths = (async () => {
+  const allPosts = await getCollection("blog");
+
+  const uniqueTags = [
+    ...new Set(allPosts.flatMap((post) => post.data.tags || [])),
+  ];
+
+  return uniqueTags.flatMap((tag) =>
+    Object.keys(languages).map((lang) => {
+      const filteredPosts = allPosts.filter((post) =>
+        post.data.tags?.includes(tag),
+      );
+      const sortedPosts = sortByDateDesc(filteredPosts);
+
+      return {
+        params: { lang, tag },
+        props: { posts: sortedPosts },
+      };
+    }),
+  );
+}) satisfies GetStaticPaths;
+
+const { lang } = useI18n(Astro.url);
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+const title = "Blog";
+const description = `Tagged "${tag}"`;
+---
+
+<CollectionPage
+  pageTitle={title}
+  {title}
+  subtitle={description}
+  {description}
+  {lang}
+  isEmpty={posts.length === 0}
+  emptyMessage={`No posts found with tag "${tag}"`}
+>
+  {posts.map(({ id, data }) => <BlogCard {id} {...data} />)}
+</CollectionPage>
