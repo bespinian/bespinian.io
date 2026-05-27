@@ -1,0 +1,35 @@
+---
+import { useI18n } from "../i18n/utils";
+
+interface Props {
+  name: string;
+}
+
+const { translatePath } = useI18n(Astro.url);
+
+const { name } = Astro.props;
+---
+
+<a class="tag" href={translatePath(`/blog/tags/${name}`)}>
+  <span>{name}</span>
+  <slot />
+</a>
+
+<style>
+  a.tag {
+    text-decoration: none;
+  }
+
+  a.tag:visited {
+    text-decoration: none;
+  }
+
+  a.tag > span {
+    background: #f0f0f0;
+    color: var(--color-gray);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+</style>
