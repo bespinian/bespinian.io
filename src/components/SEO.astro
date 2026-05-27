@@ -1,4 +1,6 @@
 ---
+import { languages } from "../i18n/ui";
+
 interface Props {
   title: string;
   description: string;
@@ -41,9 +43,6 @@ const fullTitle = title.includes("bespinian") ? title : `${title} | bespinian`;
 // Extract language from URL path
 const pathParts = Astro.url.pathname.split("/").filter(Boolean);
 
-// Supported languages
-const languages = ["en", "de", "ch"];
-
 // Generate alternate URLs for hreflang
 const getAlternateUrl = (language: string) => {
   const pathWithoutLang = pathParts.slice(1).join("/");
@@ -66,7 +65,7 @@ const getAlternateUrl = (language: string) => {
 
 <!-- Hreflang Tags for Internationalization -->
 {
-  languages.map((language) => (
+  Object.keys(languages).map((language) => (
     <link
       rel="alternate"
       hreflang={language === "ch" ? "de-CH" : language}

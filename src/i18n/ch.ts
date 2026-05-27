@@ -5,11 +5,12 @@ const ts = {
   "nav.about": "Über üs",
   "nav.contact": "Kontakt",
   "nav.blog": "Blog",
+  "nav.language": "Sprach",
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Gratis Cloud Readiness Workshop",
-  "cta.learnMore": "Meh erfahre",
-  "cta.showAll": "Aui azeige",
+  "cta.allCustomers": "Aui Chunde",
+  "cta.allWork": "Aui Büetz",
   "cta.learnAboutUs": "Meh über üs",
   "cta.techWeLove": "Üsi Technologie",
   "cta.meetOurPartners": "Üsi Partner",

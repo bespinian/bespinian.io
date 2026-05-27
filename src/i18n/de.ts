@@ -5,11 +5,12 @@ const de = {
   "nav.about": "Über uns",
   "nav.contact": "Kontakt",
   "nav.blog": "Blog",
+  "nav.language": "Sprache",
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Kostenloser Cloud Readiness Workshop",
-  "cta.learnMore": "Mehr erfahren",
-  "cta.showAll": "Alle anzeigen",
+  "cta.allCustomers": "Alle Kunden",
+  "cta.allWork": "Alle Arbeit",
   "cta.learnAboutUs": "Mehr über uns",
   "cta.techWeLove": "Tech die wir lieben",
   "cta.meetOurPartners": "Unsere Partner",

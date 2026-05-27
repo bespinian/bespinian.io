@@ -25,7 +25,9 @@ const featuredCustomers = sortByDateDesc(customers).filter(
   </div>
 
   <div id="all-link">
-    <Link href={translatePath("/customers")} secondary>{t("cta.showAll")}</Link>
+    <Link href={translatePath("/customers")} secondary
+      >{t("cta.allCustomers")}</Link
+    >
   </div>
 </section>
 

@@ -152,21 +152,22 @@ const mainItems: MenuItem[] = [
   const closeButton = document.getElementById("modal-close");
   const modal = document.getElementById("modal");
 
-  openButton?.addEventListener("click", () => {
-    const modal = document.getElementById("modal");
-    modal?.classList.remove("hidden");
-    modal?.classList.remove("closing");
-  });
-
-  closeButton?.addEventListener("click", () => {
+  const closeModal = () => {
     if (modal) {
       modal.classList.add("closing");
       setTimeout(() => {
         modal.classList.add("hidden");
         modal.classList.remove("closing");
-      }, 300); // Match animation duration
+      }, 300);
     }
+  };
+
+  openButton?.addEventListener("click", () => {
+    modal?.classList.remove("hidden");
+    modal?.classList.remove("closing");
   });
+
+  closeButton?.addEventListener("click", closeModal);
 
   // Close modal when any navigation link is clicked
   document.querySelectorAll(".menu-link").forEach((link) => {
@@ -174,7 +175,6 @@ const mainItems: MenuItem[] = [
       const parent = link.parentElement;
       const hasSubmenu = parent?.classList.contains("mobile-dropdown");
 
-      // If this is a dropdown toggle link, prevent default and toggle submenu
       if (hasSubmenu) {
         e.preventDefault();
         const submenu = parent?.querySelector(".mobile-submenu");
@@ -185,14 +185,7 @@ const mainItems: MenuItem[] = [
           arrow?.classList.toggle("expanded");
         }
       } else {
-        // If this is a regular link or submenu link, close the modal
-        if (modal) {
-          modal.classList.add("closing");
-          setTimeout(() => {
-            modal.classList.add("hidden");
-            modal.classList.remove("closing");
-          }, 300);
-        }
+        closeModal();
       }
     });
   });
