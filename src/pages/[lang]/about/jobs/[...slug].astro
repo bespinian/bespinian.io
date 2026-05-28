@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 const { job } = Astro.props;
 const { Content } = await render(job);
 
-const { lang, translatePath } = useI18n(Astro.url);
+const { lang, translatePath, t } = useI18n(Astro.url);
 
 const title = `${job.data.title} | Jobs`;
 const description = `Join bespinian as a ${job.data.title}. ${job.data.location ? "Location: " + job.data.location + "." : ""} ${job.data.employment ? job.data.employment + " position." : ""} We're looking for talented individuals to help companies succeed with cloud-native technologies.`;
@@ -29,7 +29,7 @@ if (job.data.employment) metaItems.push({ label: job.data.employment });
   {lang}
   backLink={{
     href: translatePath("/about/jobs"),
-    text: "← Back to Jobs",
+    text: t("nav.backToJobs"),
   }}
   meta={metaItems}
   structuredData={{

@@ -2,6 +2,7 @@
 import Layout from "./Layout.astro";
 import SEO from "../components/SEO.astro";
 import StructuredData from "../components/StructuredData.astro";
+import BackLink from "../components/BackLink.astro";
 
 interface MetaItem {
   label: string;
@@ -44,7 +45,7 @@ const {
   <main class="content-detail">
     <article class="container">
       <header class="content-header">
-        <a href={backLink.href} class="back-link">{backLink.text}</a>
+        <BackLink href={backLink.href} text={backLink.text} />
         <slot name="header-before" />
         <h1>{title}</h1>
         {
@@ -90,18 +91,6 @@ const {
 
   .content-header {
     margin-bottom: 3rem;
-  }
-
-  .back-link {
-    display: inline-block;
-    color: var(--color-primary);
-    text-decoration: none;
-    margin-bottom: var(--spacing-md);
-    font-weight: 500;
-  }
-
-  .back-link:hover {
-    text-decoration: underline;
   }
 
   h1 {

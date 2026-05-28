@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-const { lang, translatePath } = useI18n(Astro.url);
+const { lang, translatePath, t } = useI18n(Astro.url);
 
 const formattedDate = formatDate(post.data.pubDate, lang);
 
@@ -29,7 +29,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   title={post.data.title}
   {description}
   {lang}
-  backLink={{ href: translatePath("/blog"), text: "← Back to Blog" }}
+  backLink={{ href: translatePath("/blog"), text: t("nav.backToBlog") }}
   meta={[
     { label: post.data.author },
     { label: formattedDate, datetime: post.data.pubDate.toISOString() },
@@ -86,14 +86,5 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-  }
-
-  .tag {
-    background: #f0f0f0;
-    color: var(--color-gray);
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.875rem;
-    font-weight: 500;
   }
 </style>

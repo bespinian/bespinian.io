@@ -29,7 +29,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   {lang}
   backLink={{
     href: translatePath("/customers"),
-    text: "← Back to Customers",
+    text: t("nav.backToCustomers"),
   }}
   meta={[
     { label: customer.data.company },
