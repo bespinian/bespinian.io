@@ -29,22 +29,22 @@ export const getStaticPaths = (async () => {
   );
 }) satisfies GetStaticPaths;
 
-const { lang } = useI18n(Astro.url);
+const { lang, translatePath, t } = useI18n(Astro.url);
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 
-const title = "Blog";
+const title = `Blog | ${tag}`;
 const description = `Tagged "${tag}"`;
 ---
 
 <CollectionPage
   pageTitle={title}
-  {title}
+  title="Blog"
   subtitle={description}
   {description}
   {lang}
   isEmpty={posts.length === 0}
-  emptyMessage={`No posts found with tag "${tag}"`}
+  backLink={{ href: translatePath("/blog"), text: t("nav.backToBlog") }}
 >
   {posts.map(({ id, data }) => <BlogCard {id} {...data} />)}
 </CollectionPage>

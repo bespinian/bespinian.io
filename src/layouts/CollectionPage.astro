@@ -2,6 +2,7 @@
 import Layout from "./Layout.astro";
 import SEO from "../components/SEO.astro";
 import Title from "../components/Title.astro";
+import BackLink from "../components/BackLink.astro";
 
 interface Props {
   pageTitle: string;
@@ -11,10 +12,19 @@ interface Props {
   lang: string;
   isEmpty?: boolean;
   emptyMessage?: string;
+  backLink?: { href: string; text: string };
 }
 
-const { pageTitle, title, subtitle, description, lang, isEmpty, emptyMessage } =
-  Astro.props;
+const {
+  pageTitle,
+  title,
+  subtitle,
+  description,
+  lang,
+  isEmpty,
+  emptyMessage,
+  backLink,
+} = Astro.props;
 ---
 
 <Layout>
@@ -22,6 +32,13 @@ const { pageTitle, title, subtitle, description, lang, isEmpty, emptyMessage } =
   <Title title={title} subtitle={subtitle} />
   <main class="collection-page">
     <div class="container">
+      {
+        backLink && (
+          <div style="margin-bottom: 1em">
+            <BackLink href={backLink.href} text={backLink.text} />
+          </div>
+        )
+      }
       <div class="collection-grid">
         <slot />
       </div>

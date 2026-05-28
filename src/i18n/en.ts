@@ -6,6 +6,10 @@ const en = {
   "nav.contact": "Contact",
   "nav.blog": "Blog",
   "nav.language": "Language",
+  "nav.backToBlog": "Back to Blog",
+  "nav.backToServices": "Back to Services",
+  "nav.backToJobs": "Back to Jobs",
+  "nav.backToCustomers": "Back to Customers",
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Free Cloud Readiness Workshop",

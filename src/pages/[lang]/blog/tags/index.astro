@@ -9,7 +9,7 @@ export function getStaticPaths() {
   return getLanguagePaths();
 }
 
-const { lang, translatePath } = useI18n(Astro.url);
+const { lang, translatePath, t } = useI18n(Astro.url);
 const blogPosts = await getCollection("blog");
 
 const tagCounts = blogPosts
@@ -29,7 +29,7 @@ const tags = Object.entries(tagCounts).sort(([tagA], [tagB]) =>
   lang={lang}
   title="Tags"
   description="The blog tags"
-  backLink={{ href: translatePath("/blog"), text: "← Back to Blog" }}
+  backLink={{ href: translatePath("/blog"), text: t("nav.backToBlog") }}
 >
   <div class="tags">
     {tags.map(([name, _]) => <Tag {name} />)}

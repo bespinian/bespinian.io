@@ -6,6 +6,10 @@ const ts = {
   "nav.contact": "Kontakt",
   "nav.blog": "Blog",
   "nav.language": "Sprach",
+  "nav.backToBlog": "Zrügg zum Blog",
+  "nav.backToServices": "Zrügg zu Services",
+  "nav.backToJobs": "Zrügg zu Jobs",
+  "nav.backToCustomers": "Zrügg zu Chunde",
 
   // Buttons & CTAs
   "cta.freeWorkshop": "Gratis Cloud Readiness Workshop",
