@@ -89,6 +89,7 @@ const de = {
   "blog.subtitle":
     "Tipps, Anleitungen und Best Practices für moderne Cloud-Entwicklung",
   "blog.empty": "Noch keine Blog-Artikel verfügbar. Schau bald wieder vorbei!",
+  "blog.allPosts": "Alle Artikel",
 
   // Customers Page
   "customers.page.title": "Unsere Kunden",

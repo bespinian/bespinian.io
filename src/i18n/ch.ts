@@ -87,6 +87,7 @@ const ts = {
   "blog.title": "Blog",
   "blog.subtitle": "Tipps, Aleitige u Best Practices für modärni Cloud-Büetz",
   "blog.empty": "No keni Blog-Artikel verfüegbar. Lueg gly mau wieder ine!",
+  "blog.allPosts": "Alle Artikel",
 
   // Customers Page
   "customers.page.title": "Üsi Chunde",

@@ -87,6 +87,7 @@ const en = {
   "blog.title": "Blog",
   "blog.subtitle": "Tips, guides, and best practices to work with cloud tech",
   "blog.empty": "No blog posts yet. Check back soon!",
+  "blog.allPosts": "All Posts",
 
   // Customers Page
   "customers.page.title": "Our Customers",
