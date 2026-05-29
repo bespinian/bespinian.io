@@ -5,25 +5,18 @@ interface Props {
   name: string;
 }
 
-const { translatePath } = useI18n(Astro.url);
-
 const { name } = Astro.props;
+
+const { translatePath } = useI18n(Astro.url);
 ---
 
 <a class="tag" href={translatePath(`/blog/tags/${encodeURIComponent(name)}`)}>
-  <span>{name}</span>
+  {name}
 </a>
 
 <style>
   .tag {
     text-decoration: none;
-  }
-
-  .tag:visited {
-    text-decoration: none;
-  }
-
-  .tag > span {
     background: var(--color-gray-light);
     color: var(--color-gray);
     padding: 0.25rem 0.75rem;
@@ -32,7 +25,11 @@ const { name } = Astro.props;
     font-weight: 500;
   }
 
-  .tag > span:hover {
+  .tag:visited {
+    text-decoration: none;
+  }
+
+  .tag:hover {
     background-color: #cecece;
   }
 </style>
