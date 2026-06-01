@@ -13,7 +13,7 @@ const { lang, translatePath, t } = useI18n(Astro.url);
 const blogPosts = await getCollection("blog");
 
 const tagCounts = blogPosts
-  .flatMap((post: any) => post.data.tags)
+  .flatMap((post) => post.data.tags)
   .reduce((acc: Record<string, number>, tag: string) => {
     acc[tag] = (acc[tag] || 0) + 1;
     return acc;

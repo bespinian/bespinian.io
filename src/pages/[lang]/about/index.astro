@@ -21,7 +21,7 @@ const description = t("about.mission.subtitle");
   <SEO slot="head" {title} {description} {lang} />
   <Title {title} subtitle={description} />
 
-  <main>
+  <div class="page-content">
     <section>
       <div class="columns">
         <h2 class="overview">{t("about.mission.overview")}</h2>
@@ -40,10 +40,10 @@ const description = t("about.mission.subtitle");
     <div class="separator"></div>
 
     <Values />
-  </main>
+  </div>
 
   <style>
-    main {
+    .page-content {
       padding: 6rem 2rem;
     }
 

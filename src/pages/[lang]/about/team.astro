@@ -27,13 +27,13 @@ const description = t("about.team.subtitle");
   <SEO slot="head" {title} {description} {lang} />
   <Title {title} subtitle={description} />
 
-  <main>
+  <div class="page-content">
     {members.map((member) => <MemberCard {...member} />)}
-  </main>
+  </div>
 </Layout>
 
 <style>
-  main {
+  .page-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -41,25 +41,25 @@ const description = t("about.team.subtitle");
   }
 
   @media (min-width: 32rem) {
-    main {
+    .page-content {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (min-width: 48rem) {
-    main {
+    .page-content {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
   @media (min-width: 60rem) {
-    main {
+    .page-content {
       grid-template-columns: repeat(4, 1fr);
     }
   }
 
   @media (min-width: 100rem) {
-    main {
+    .page-content {
       grid-template-columns: repeat(6, 1fr);
     }
   }

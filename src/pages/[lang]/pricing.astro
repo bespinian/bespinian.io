@@ -82,7 +82,7 @@ const pricingBrackets = [
   <SEO slot="head" {title} {description} {lang} />
   <Title {title} subtitle={description} />
 
-  <main>
+  <div class="page-content">
     <!-- Billing Toggle -->
     <div class="billing-toggle-container">
       <button class="billing-option active" data-billing="monthly">
@@ -209,7 +209,7 @@ const pricingBrackets = [
         <p>{t("pricing.creditExplanation")}</p>
       </div>
     </div>
-  </main>
+  </div>
 
   <script
     is:inline
@@ -340,7 +340,7 @@ const pricingBrackets = [
   </script>
 
   <style>
-    main {
+    .page-content {
       padding: 6rem 2rem;
       max-width: 1400px;
       margin: 0 auto;
@@ -625,7 +625,7 @@ const pricingBrackets = [
     }
 
     @media (max-width: 768px) {
-      main {
+      .page-content {
         padding: 4rem 1rem;
       }
 

@@ -51,7 +51,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   />
   <Title {title} subtitle={description} {spaceship} />
 
-  <main class="service-page">
+  <div class="service-page">
     <article>
       <div class="container">
         <header class="service-header">
@@ -116,7 +116,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </section>
       </div>
     </article>
-  </main>
+  </div>
 
   <CTA service={title} />
 </Layout>
@@ -148,80 +148,73 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     margin-bottom: 3rem;
   }
 
-  h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
-    margin: 0;
-    color: var(--color-primary);
-  }
-
   .service-content {
     font-size: 1.125rem;
     line-height: 1.8;
-    color: #333;
+    color: var(--color-text-dark);
   }
 
-  .service-content :global(p) {
+  .service-content p {
     margin: 0 0 1.5rem 0;
   }
 
-  .service-content :global(h2) {
+  .service-content h2 {
     font-size: 2.5rem;
     margin: 3rem 0 1.5rem 0;
     color: var(--color-primary);
   }
 
-  .service-content :global(h3) {
+  .service-content h3 {
     font-size: 1.75rem;
     margin: 2rem 0 1rem 0;
-    color: #333;
+    color: var(--color-text-dark);
   }
 
-  .service-content :global(ul),
-  .service-content :global(ol) {
+  .service-content ul,
+  .service-content ol {
     margin: 0 0 1.5rem 0;
     padding-left: 2rem;
   }
 
-  .service-content :global(li) {
+  .service-content li {
     margin-bottom: 1rem;
   }
 
-  .service-content :global(table) {
+  .service-content table {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
     font-size: 1rem;
   }
 
-  .service-content :global(th),
-  .service-content :global(td) {
+  .service-content th,
+  .service-content td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid #e0e0e0;
   }
 
-  .service-content :global(th) {
+  .service-content th {
     background: var(--color-background-tertiary);
     color: var(--color-primary);
     font-weight: 600;
     font-size: 1.125rem;
   }
 
-  .service-content :global(td) {
+  .service-content td {
     vertical-align: top;
   }
 
-  .service-content :global(tbody tr:hover) {
+  .service-content tbody tr:hover {
     background: #f9f9f9;
   }
 
-  .service-content :global(a) {
+  .service-content a {
     color: var(--color-primary);
     text-decoration: underline;
   }
 
-  .service-content :global(a:hover) {
+  .service-content a:hover {
     text-decoration: none;
   }
 
@@ -230,28 +223,24 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
       padding: var(--spacing-md) 0;
     }
 
-    h1 {
-      font-size: 2.5rem;
-    }
-
     .service-content {
       font-size: 1rem;
     }
 
-    .service-content :global(h2) {
+    .service-content h2 {
       font-size: 2rem;
     }
 
-    .service-content :global(h3) {
+    .service-content h3 {
       font-size: 1.5rem;
     }
 
-    .service-content :global(table) {
+    .service-content table {
       font-size: 0.875rem;
     }
 
-    .service-content :global(th),
-    .service-content :global(td) {
+    .service-content th,
+    .service-content td {
       padding: 0.75rem;
     }
   }

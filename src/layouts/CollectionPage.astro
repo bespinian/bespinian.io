@@ -30,11 +30,11 @@ const {
 <Layout>
   <SEO slot="head" title={pageTitle} {description} {lang} />
   <Title title={title} subtitle={subtitle} />
-  <main class="collection-page">
+  <div class="collection-page">
     <div class="container">
       {
         backLink && (
-          <div style="margin-bottom: 1em">
+          <div class="back-link-wrapper">
             <BackLink href={backLink.href} text={backLink.text} />
           </div>
         )
@@ -52,7 +52,7 @@ const {
       }
       <slot name="tail" />
     </div>
-  </main>
+  </div>
 </Layout>
 
 <style>
@@ -63,8 +63,13 @@ const {
   }
 
   .container {
+    max-width: var(--content-wide-max-width);
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+  }
+
+  .back-link-wrapper {
+    margin-bottom: 1em;
   }
 
   .collection-grid {

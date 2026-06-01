@@ -24,7 +24,7 @@ const description = t("about.partners.subtitle");
   <SEO slot="head" {title} {description} {lang} />
   <Title {title} subtitle={description} />
 
-  <main>
+  <div class="page-content">
     <section class="partner-section">
       <h2 class="section-title">Strategic Partners</h2>
       <div class="partner-grid">
@@ -38,11 +38,11 @@ const description = t("about.partners.subtitle");
         {collaborativePartners.map((partner) => <PartnerCard {...partner} />)}
       </div>
     </section>
-  </main>
+  </div>
 </Layout>
 
 <style>
-  main {
+  .page-content {
     padding: 4rem 2rem;
     max-width: 80rem;
     margin: 0 auto;

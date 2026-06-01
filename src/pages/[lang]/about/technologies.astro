@@ -20,7 +20,7 @@ const description = t("about.technologies.description");
   <SEO slot="head" {title} {description} {lang} />
   <Title {title} subtitle={description} />
 
-  <main>
+  <div class="page-content">
     {
       technologies.map((tech) => (
         <div class="tech">
@@ -31,11 +31,11 @@ const description = t("about.technologies.description");
         </div>
       ))
     }
-  </main>
+  </div>
 </Layout>
 
 <style>
-  main {
+  .page-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -65,7 +65,7 @@ const description = t("about.technologies.description");
   }
 
   @media (min-width: 32rem) {
-    main {
+    .page-content {
       grid-template-columns: repeat(4, 1fr);
       gap: 3rem;
       padding: 6rem 2rem;
@@ -73,13 +73,13 @@ const description = t("about.technologies.description");
   }
 
   @media (min-width: 48rem) {
-    main {
+    .page-content {
       grid-template-columns: repeat(6, 1fr);
     }
   }
 
   @media (min-width: 64rem) {
-    main {
+    .page-content {
       gap: 4rem;
       grid-template-columns: repeat(8, 1fr);
     }

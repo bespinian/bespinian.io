@@ -3,6 +3,7 @@ import Layout from "./Layout.astro";
 import SEO from "../components/SEO.astro";
 import StructuredData from "../components/StructuredData.astro";
 import BackLink from "../components/BackLink.astro";
+import type { Schema } from "../lib/structured-data";
 
 interface MetaItem {
   label: string;
@@ -24,7 +25,7 @@ interface Props {
     image?: string;
     imageAlt?: string;
   };
-  structuredData?: any;
+  structuredData?: Schema;
 }
 
 const {
@@ -42,7 +43,7 @@ const {
 <Layout>
   <SEO slot="head" title={pageTitle} {description} {lang} {...seoProps} />
   {structuredData && <StructuredData slot="head" schema={structuredData} />}
-  <main class="content-detail">
+  <div class="content-detail">
     <article class="container">
       <header class="content-header">
         <BackLink href={backLink.href} text={backLink.text} />
@@ -74,7 +75,7 @@ const {
 
       <slot name="footer" />
     </article>
-  </main>
+  </div>
 </Layout>
 
 <style>
@@ -97,7 +98,7 @@ const {
     font-size: 2.5rem;
     line-height: 1.2;
     margin: 0 0 1rem 0;
-    color: #333;
+    color: var(--color-text-dark);
   }
 
   .meta {
@@ -118,13 +119,13 @@ const {
   }
 
   .separator {
-    color: #ccc;
+    color: var(--color-text-light);
   }
 
   .content-body {
     font-size: 1.125rem;
     line-height: 1.8;
-    color: #333;
+    color: var(--color-text-dark);
   }
 
   /* Shared markdown content styles */
@@ -143,13 +144,13 @@ const {
   .content-body :global(h3) {
     font-size: 1.5rem;
     margin: 1.75rem 0 0.75rem 0;
-    color: #333;
+    color: var(--color-text-dark);
   }
 
   .content-body :global(h4) {
     font-size: 1.25rem;
     margin: 1.5rem 0 0.75rem 0;
-    color: #333;
+    color: var(--color-text-dark);
   }
 
   .content-body :global(p) {
@@ -235,7 +236,7 @@ const {
 
   .content-body :global(table th) {
     font-weight: 600;
-    color: #333;
+    color: var(--color-text-dark);
   }
 
   .content-body :global(table tr:hover) {
