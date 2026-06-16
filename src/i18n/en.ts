@@ -188,7 +188,7 @@ const en = {
   "roundtable.title": "IT Leaders Roundtable",
   "roundtable.subtitle": "Exclusive Exchange Among IT Leaders",
   "roundtable.description":
-    "A hand-picked group of 10 to 15 IT leaders discussing how modern cloud-native platforms and AI tools are transforming the way our teams work.",
+    "A hand-picked group of IT leaders discussing how modern cloud-native platforms and AI tools are transforming the way our teams work.",
   "roundtable.cta": "Confirm Invitation",
   "roundtable.about.title": "About This Event",
   "roundtable.about.description1":
@@ -200,7 +200,7 @@ const en = {
   "roundtable.expect.title": "What to Expect",
   "roundtable.expect.item1":
     "Focused exchange on cloud-native and AI transformation",
-  "roundtable.expect.item2": "Hand-picked group of 10-15 IT leaders",
+  "roundtable.expect.item2": "Small hand-picked group of IT leaders",
   "roundtable.expect.item3":
     "Actionable insights from experts for your organization",
   "roundtable.expect.item4": "Networking with peers in a relaxed atmosphere",

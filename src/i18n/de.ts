@@ -194,7 +194,7 @@ const de = {
   "roundtable.subtitle":
     "Exklusiver Austausch unter IT-Führungspersönlichkeiten",
   "roundtable.description":
-    "Eine handverlesene Runde von 10 bis 15 IT-Führungskräften diskutiert, wie moderne Cloud-Native Plattformen und KI-Tools die Arbeitsweise ihrer Teams transformieren.",
+    "Eine handverlesene Runde von IT-Führungskräften diskutiert, wie moderne Cloud-Native Plattformen und KI-Tools die Arbeitsweise ihrer Teams transformieren.",
   "roundtable.cta": "Einladung Bestätigen",
   "roundtable.about.title": "Über dieses Event",
   "roundtable.about.description1":
@@ -207,7 +207,7 @@ const de = {
   "roundtable.expect.item1":
     "Fokussierter Austausch zu Cloud-Native und KI-Transformation",
   "roundtable.expect.item2":
-    "Handverlesene Runde von 10-15 IT-Führungspersönlichkeiten",
+    "Handverlesene kleine Runde von IT-Führungspersönlichkeiten",
   "roundtable.expect.item3":
     "Umsetzbare Anregungen von Fachleuten für Ihr Unternehmen",
   "roundtable.expect.item4": "Networking mit Peers in entspannter Atmosphäre",

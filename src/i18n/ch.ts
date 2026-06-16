@@ -188,7 +188,7 @@ const ts = {
   "roundtable.title": "IT Leaders Roundtable",
   "roundtable.subtitle": "Exklusive Uustuusch unter IT-Führigspersonlichkeite",
   "roundtable.description":
-    "E handverläseni Rundi vo 10 bis 15 IT-Führigschräft diskutiert, wie modärni Cloud-Native Plattforme u KI-Tools d Arbeitswis transformiere.",
+    "E handverläseni Rundi vo IT-Führigschräft diskutiert, wie modärni Cloud-Native Plattforme u KI-Tools d Arbeitswis transformiere.",
   "roundtable.cta": "Iladig Bestätige",
   "roundtable.about.title": "Über ds Event",
   "roundtable.about.description1":
@@ -201,7 +201,7 @@ const ts = {
   "roundtable.expect.item1":
     "Fokussierte Uustuusch zu Cloud-Native u KI-Transformation",
   "roundtable.expect.item2":
-    "Handverläseni Rundi vo 10-15 IT-Führigspersönlichkeite",
+    "Handverläseni chlini Rundi vo IT-Führigspersönlichkeite",
   "roundtable.expect.item3":
     "Umsetzbari Aregige vo Fachlüt für Öies Ungernähme",
   "roundtable.expect.item4": "Networking mit Peers i entspannter Atmosphäre",
