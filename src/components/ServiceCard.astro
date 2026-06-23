@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Link from "./Link.astro";
 import { useI18n } from "../i18n/utils";
 
@@ -16,7 +17,7 @@ const { translatePath } = useI18n(Astro.url);
 
 <article>
   <div id="content">
-    <img src={icon.src} alt={`${title} icon`} />
+    <Image src={icon} alt={`${title} icon`} />
     <h3>{title}</h3>
     <p>{description}</p>
   </div>

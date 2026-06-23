@@ -116,7 +116,11 @@ const mainItems: MenuItem[] = [
       {
         mainItems.map((i) => (
           <li class={i.submenu ? "mobile-dropdown" : ""}>
-            <a href={i.href} class="menu-link">
+            <a
+              href={i.href}
+              class="menu-link"
+              aria-expanded={i.submenu ? "false" : undefined}
+            >
               {i.label}
               {i.submenu && <span class="dropdown-arrow">▼</span>}
             </a>
@@ -183,6 +187,8 @@ const mainItems: MenuItem[] = [
         if (submenu) {
           submenu.classList.toggle("expanded");
           arrow?.classList.toggle("expanded");
+          const expanded = link.getAttribute("aria-expanded") === "true";
+          link.setAttribute("aria-expanded", expanded ? "false" : "true");
         }
       } else {
         closeModal();
