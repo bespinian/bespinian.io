@@ -27,7 +27,7 @@ const en = {
   "hero.title1": "Cut Infrastructure Costs,",
   "hero.title2": "Ship Features Faster",
   "hero.description":
-    "Our Swiss-based engineers help you modernize your apps with platforms like AWS, Azure, and Kubernetes, using serverless and AI tools. Together, we cut costs, ship features faster, and boost team productivity.",
+    "Swiss engineers help you modernize apps on AWS, Azure, and Kubernetes with serverless and AI tools — reducing costs, shipping faster, and boosting productivity.",
 
   // Why Us Section
   "whyus.belief": "We believe apps should drive new ideas and growth.",

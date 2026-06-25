@@ -27,7 +27,7 @@ const de = {
   "hero.title1": "Infrastrukturkosten Senken,",
   "hero.title2": "Features Schneller Liefern",
   "hero.description":
-    "Unsere Engineers in der Schweiz helfen dir, deine Apps mit Plattformen wie AWS, Azure und Kubernetes zu modernisieren, indem wir Serverless und KI-Tools einsetzen. Gemeinsam senken wir Kosten, liefern Features schneller aus und steigern die Produktivität deines Teams.",
+    "Unsere Schweizer Engineers helfen dir, deine Apps mit AWS, Azure und Kubernetes zu modernisieren – mit Serverless und KI. Wir senken Kosten, liefern schneller und steigern die Produktivität deines Teams.",
 
   // Why Us Section
   "whyus.belief":

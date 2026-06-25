@@ -27,7 +27,7 @@ const ts = {
   "hero.title1": "Infrastrukturchöste Sänke,",
   "hero.title2": "Features Schneuer Lifere",
   "hero.description":
-    "Üsi Engineers i dr Schwiiz häufe dr, dini Apps mit Plattforme wie AWS, Azure u Kubernetes z modernisiere, indäm mir Serverless u KI-Tools isetze. Zäme sänke mr Choschte, lifere Features schneuer us u steigere d Produktivität vo dine Teams.",
+    "Üsi Schwiizer Engineers häufe dr, dini Apps uf AWS, Azure u Kubernetes z modernisiere mit Serverless u KI – mir sänke Choschte, liefere schneuer u steigere d Produktivität vo dim Team.",
 
   // Why Us Section
   "whyus.belief": "Mir gloube, dass Apps Innovation u Wachstum voratrybe söue.",
