@@ -9,9 +9,9 @@ results:
   - Infrastruktur-Provisionierung mit Terraform automatisiert
   - React-Management-App mit Go-API-Backend ausgeliefert
 quote:
-  "Wir haben eine robuste Datenpipeline auf AWS implementiert, die einen
-  zuverlässigen Datenfluss von Geräten durch die Kernplattform zu Kunden
-  gewährleistet."
+  "Das AWS- und Infrastructure-as-Code-Know-how von bespinian war entscheidend
+  für die Schaffung einer soliden Grundlage für unseren Multi-Vendor-Geräte-
+  Interoperabilitätshub in der Fernbetreuung."
 authorName: Gilles Lunzenfichter
 authorTitle: CEO
 authorImage: ../../../assets/customers/medisante-gilles.jpeg

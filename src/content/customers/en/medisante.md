@@ -9,8 +9,9 @@ results:
   - Automated infrastructure provisioning with Terraform
   - Delivered React management app with Go API backend
 quote:
-  "We implemented a robust data pipeline on AWS that ensures reliable data flow
-  from devices through the core platform to customers."
+  "bespinian's expertise on AWS and Infrastructure as Code was instrumental in
+  creating a robust foundation for our multi-vendor device interoperability hub
+  in remote care."
 authorName: Gilles Lunzenfichter
 authorTitle: CEO
 authorImage: ../../../assets/customers/medisante-gilles.jpeg
