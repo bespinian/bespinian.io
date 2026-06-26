@@ -22,7 +22,7 @@ const { href, secondary, transparent, large, center, target } = Astro.props;
     class={`button ${secondary ? "secondary" : "primary"} ${transparent ? "transparent" : ""} ${large ? "large" : ""}`}
   >
     <span><slot /></span>
-    <img src={secondary ? arrowBlue.src : arrowWhite.src} alt="arrow" />
+    <img src={secondary ? arrowBlue.src : arrowWhite.src} alt="" />
   </a>
 </div>
 

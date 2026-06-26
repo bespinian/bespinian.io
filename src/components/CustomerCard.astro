@@ -39,7 +39,13 @@ const { translatePath } = useI18n(Astro.url);
     <div class="author">
       {
         authorImage && (
-          <Image src={authorImage} alt={authorName} class="author-portrait" />
+          <Image
+            src={authorImage}
+            alt=""
+            width={96}
+            height={96}
+            class="author-portrait"
+          />
         )
       }
       <div class="author-info">

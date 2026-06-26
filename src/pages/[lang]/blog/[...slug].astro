@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import { render } from "astro:content";
 import ContentDetailPage from "../../../layouts/ContentDetailPage.astro";
 import { getCollectionStaticPaths } from "../../../lib/paths";
@@ -23,6 +23,10 @@ const title = `${post.data.title} | Blog`;
 const description =
   post.data.description || `Read ${post.data.title} by ${post.data.author}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+// Resize through Astro's image pipeline so the OG/social image isn't the
+// full-resolution source (which can be several MB for blog headers).
+const ogImage = (await getImage({ src: post.data.image, width: 1200 })).src;
 ---
 
 <ContentDetailPage
@@ -40,7 +44,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     publishedTime: post.data.pubDate.toISOString(),
     author: post.data.author,
     tags: post.data.tags,
-    image: post.data.image?.src,
+    image: ogImage,
     imageAlt: post.data.title,
   }}
   structuredData={{
@@ -51,13 +55,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     author: post.data.author,
     tags: post.data.tags,
     url: canonicalUrl,
-    image: post.data.image?.src,
+    image: ogImage,
   }}
 >
   {
     post.data.image && (
       <div slot="header-after" class="header-image">
-        <Image src={post.data.image} alt={post.data.title} />
+        <Image
+          src={post.data.image}
+          alt={post.data.title}
+          loading="eager"
+          fetchpriority="high"
+        />
       </div>
     )
   }
@@ -70,7 +79,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   <div class="actions">
     <a href={translatePath("/blog")} class="btn">{t("blog.allPosts")}</a>
     <a href="/rss.xml" class="btn rss">
-      <img width="10" src={rss.src} alt="RSS Feed" />
+      <img width="10" src={rss.src} alt="" />
       RSS
     </a>
   </div>

@@ -13,14 +13,22 @@ const { linkedIn, gitHub } = Astro.props;
 <div class="social-icons">
   {
     linkedIn && (
-      <a href={`https://linkedin.com/in/${linkedIn}`} target="_blank">
+      <a
+        href={`https://linkedin.com/in/${linkedIn}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={linkedInIcon.src} alt="LinkedIn" class="social-icon" />
       </a>
     )
   }
   {
     gitHub && (
-      <a href={`https://github.com/${gitHub}`} target="_blank">
+      <a
+        href={`https://github.com/${gitHub}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={gitHubIcon.src} alt="GitHub" class="social-icon" />
       </a>
     )

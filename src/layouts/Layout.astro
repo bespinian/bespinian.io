@@ -5,11 +5,12 @@ import Footer from "../components/Footer.astro";
 import { useI18n } from "../i18n/utils";
 import "../styles/global.css";
 
-const { lang } = useI18n(Astro.url);
+const { htmlLang } = useI18n(Astro.url);
+const hasHeadSlot = Astro.slots.has("head");
 ---
 
 <!doctype html>
-<html {lang}>
+<html lang={htmlLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -23,10 +24,8 @@ const { lang } = useI18n(Astro.url);
     <Font cssVariable="--font-lato" preload />
 
     <!-- SEO and meta tags slot -->
-    <slot name="head">
-      <!-- Fallback title if no SEO component is provided -->
-      <title>bespinian</title>
-    </slot>
+    <slot name="head" />
+    {!hasHeadSlot && <title>bespinian</title>}
   </head>
   <body>
     <Navigation />

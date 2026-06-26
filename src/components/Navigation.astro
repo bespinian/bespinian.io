@@ -62,7 +62,13 @@ const mainItems: MenuItem[] = [
     {
       mainItems.map((i) => (
         <li class={i.submenu ? "dropdown" : ""}>
-          <a href={i.href}>{i.label}</a>
+          <a
+            href={i.href}
+            aria-haspopup={i.submenu ? "true" : undefined}
+            aria-expanded={i.submenu ? "false" : undefined}
+          >
+            {i.label}
+          </a>
           {i.submenu && (
             <ul class="dropdown-menu">
               {i.submenu.map((subItem) => (
@@ -92,14 +98,26 @@ const mainItems: MenuItem[] = [
     </li>
   </ul>
 
-  <button id="modal-open" aria-label="Open menu" class="button hamburger">
+  <button
+    id="modal-open"
+    aria-label="Open menu"
+    aria-expanded="false"
+    aria-controls="modal"
+    class="button hamburger"
+  >
     <span></span>
     <span></span>
     <span></span>
   </button>
 </nav>
 
-<div id="modal" class="hidden">
+<div
+  id="modal"
+  class="hidden"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Mobile menu"
+>
   <div id="modal-head">
     <a href={translatePath("/")}>
       <img id="modal-logo" src={bespinianBlue.src} alt="bespinian logo" />
@@ -122,7 +140,11 @@ const mainItems: MenuItem[] = [
               aria-expanded={i.submenu ? "false" : undefined}
             >
               {i.label}
-              {i.submenu && <span class="dropdown-arrow">▼</span>}
+              {i.submenu && (
+                <span class="dropdown-arrow" aria-hidden="true">
+                  ▼
+                </span>
+              )}
             </a>
             {i.submenu && (
               <ul class="mobile-submenu">
@@ -156,22 +178,93 @@ const mainItems: MenuItem[] = [
   const closeButton = document.getElementById("modal-close");
   const modal = document.getElementById("modal");
 
+  const setBackgroundInert = (isInert: boolean) => {
+    if (!modal) return;
+    Array.from(document.body.children).forEach((el) => {
+      if (el === modal) return;
+      if (isInert) {
+        el.setAttribute("inert", "");
+      } else {
+        el.removeAttribute("inert");
+      }
+    });
+  };
+
   const closeModal = () => {
     if (modal) {
       modal.classList.add("closing");
+      openButton?.setAttribute("aria-expanded", "false");
+      setBackgroundInert(false);
       setTimeout(() => {
         modal.classList.add("hidden");
         modal.classList.remove("closing");
       }, 300);
+      openButton?.focus();
     }
   };
 
   openButton?.addEventListener("click", () => {
     modal?.classList.remove("hidden");
     modal?.classList.remove("closing");
+    openButton.setAttribute("aria-expanded", "true");
+    setBackgroundInert(true);
+    closeButton?.focus();
   });
 
   closeButton?.addEventListener("click", closeModal);
+
+  const getFocusableElements = () => {
+    if (!modal) return [];
+    return Array.from(
+      modal.querySelectorAll<HTMLElement>("a[href], button:not([disabled])"),
+    ).filter((el) => el.offsetParent !== null);
+  };
+
+  document.addEventListener("keydown", (e) => {
+    if (!modal || modal.classList.contains("hidden")) return;
+
+    if (e.key === "Escape") {
+      closeModal();
+      return;
+    }
+
+    if (e.key === "Tab") {
+      const focusable = getFocusableElements();
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last?.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first?.focus();
+      }
+    }
+  });
+
+  // Sync aria-expanded on desktop dropdown triggers with hover/focus state
+  document
+    .querySelectorAll<HTMLElement>(".nav-desktop .dropdown")
+    .forEach((dropdown) => {
+      const trigger = dropdown.querySelector<HTMLAnchorElement>(":scope > a");
+      if (!trigger) return;
+
+      const setExpanded = (expanded: boolean) => {
+        trigger.setAttribute("aria-expanded", String(expanded));
+      };
+
+      dropdown.addEventListener("mouseenter", () => setExpanded(true));
+      dropdown.addEventListener("mouseleave", () => setExpanded(false));
+      dropdown.addEventListener("focusin", () => setExpanded(true));
+      dropdown.addEventListener("focusout", (e) => {
+        if (!dropdown.contains(e.relatedTarget as Node)) {
+          setExpanded(false);
+        }
+      });
+    });
 
   // Close modal when any navigation link is clicked
   document.querySelectorAll(".menu-link").forEach((link) => {
@@ -390,7 +483,8 @@ const mainItems: MenuItem[] = [
     z-index: 1000;
   }
 
-  .dropdown:hover .dropdown-menu {
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
     display: block;
   }
 

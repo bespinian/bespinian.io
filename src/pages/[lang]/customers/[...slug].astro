@@ -56,6 +56,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
       src={customer.data.logo}
       alt={customer.data.company}
       class="company-logo"
+      loading="eager"
+      fetchpriority="high"
     />
   </div>
 
@@ -66,7 +68,9 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
         customer.data.authorImage && (
           <Image
             src={customer.data.authorImage}
-            alt={customer.data.authorName}
+            alt=""
+            width={112}
+            height={112}
             class="author-portrait"
           />
         )
