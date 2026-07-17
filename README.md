@@ -2,6 +2,12 @@
 
 The bespinian website reachable at [bespinian.io](https://bespinian.io)
 
+## Setup
+
+The project uses a [Nix Flake](https://wiki.nixos.org/wiki/Flakes). To get
+started, install Nix and run `nix develop`. This will provide you with a shell
+and all the necessary tools to run and develop the app.
+
 ## 🚀 Project Structure
 
 This is an Astro-based multilingual website with the following structure:
@@ -24,16 +30,17 @@ This is an Astro-based multilingual website with the following structure:
 
 All commands are run from the root of the project, from a terminal:
 
-| Command             | Action                                           |
-| :------------------ | :----------------------------------------------- |
-| `npm install`       | Installs dependencies                            |
-| `npm run dev`       | Starts local dev server at `localhost:4321`      |
-| `npm run build`     | Build your production site to `./dist/`          |
-| `npm run preview`   | Preview your build locally, before deploying     |
-| `npm run check`     | Run Astro type checking                          |
-| `npm run format`    | Format code with Prettier                        |
-| `npm run lint`      | Check code formatting with Prettier              |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro check` |
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run check`           | Run Astro type checking                          |
+| `npm run format`          | Format code with Prettier                        |
+| `npm run lint`            | Check code formatting with Prettier              |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 ## 👱‍♀️Adding a Yourself as a Member
 

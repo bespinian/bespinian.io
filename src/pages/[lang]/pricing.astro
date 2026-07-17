@@ -157,7 +157,7 @@ const pricingBrackets = [
       }
 
       <!-- Custom Pricing Card -->
-      <div class="pricing-card custom-card" id="custom-card">
+      <div class="pricing-card custom-card" id="custom">
         <h3 class="package-name">{t("pricing.custom.name")}</h3>
         <p class="custom-description">{t("pricing.custom.description")}</p>
         <button class="show-calculator-btn" id="show-calculator">
@@ -281,6 +281,12 @@ const pricingBrackets = [
     });
 
     hoursInput.addEventListener("input", calculatePrice);
+
+    // Auto-open the calculator when linked to directly, e.g. #custom
+    if (window.location.hash === "#custom") {
+      calculator.style.display = "block";
+      calculator.scrollIntoView({ behavior: "smooth" });
+    }
 
     function calculatePrice() {
       const hours = parseInt(hoursInput.value) || 1;
