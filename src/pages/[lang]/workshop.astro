@@ -28,7 +28,7 @@ const formLink =
         <h2 class="subtitle">{subtitle}</h2>
         <p class="description">{description}</p>
         <div class="cta-container">
-          <Link href={formLink} large center secondary>
+          <Link href={formLink} large center secondary class="workshop-cta">
             {t("workshop.cta")}
           </Link>
         </div>
@@ -85,13 +85,45 @@ const formLink =
       <div class="container">
         <h2 class="cta-title">{t("workshop.title")}</h2>
         <div class="cta-container">
-          <Link href={formLink} large center secondary>
+          <Link href={formLink} large center secondary class="workshop-cta">
             {t("workshop.cta")}
           </Link>
         </div>
       </div>
     </section>
   </div>
+
+  <script>
+    declare global {
+      interface Window {
+        gtag?: (...args: unknown[]) => void;
+      }
+    }
+
+    for (const link of document.querySelectorAll<HTMLAnchorElement>(
+      "a.workshop-cta",
+    )) {
+      link.addEventListener("click", (event) => {
+        if (typeof window.gtag !== "function") return;
+
+        event.preventDefault();
+
+        let navigated = false;
+        const navigateOnce = () => {
+          if (navigated) return;
+          navigated = true;
+          window.location.href = link.href;
+        };
+
+        window.gtag("event", "conversion", {
+          send_to: "AW-18327942303/4D1SCPb_-dccEJ_puKNE",
+          event_callback: navigateOnce,
+        });
+        // Fallback in case gtag is blocked or the callback never fires.
+        setTimeout(navigateOnce, 1000);
+      });
+    }
+  </script>
 </Layout>
 
 <style>

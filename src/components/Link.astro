@@ -9,9 +9,18 @@ interface Props {
   large?: boolean;
   center?: boolean;
   target?: "_blank" | "_self" | "_parent" | "_top";
+  class?: string;
 }
 
-const { href, secondary, transparent, large, center, target } = Astro.props;
+const {
+  href,
+  secondary,
+  transparent,
+  large,
+  center,
+  target,
+  class: className,
+} = Astro.props;
 ---
 
 <div class={`container ${center ? "center" : ""}`}>
@@ -19,7 +28,7 @@ const { href, secondary, transparent, large, center, target } = Astro.props;
     {href}
     target={target}
     rel={target === "_blank" ? "noopener noreferrer" : undefined}
-    class={`button ${secondary ? "secondary" : "primary"} ${transparent ? "transparent" : ""} ${large ? "large" : ""}`}
+    class={`button ${secondary ? "secondary" : "primary"} ${transparent ? "transparent" : ""} ${large ? "large" : ""} ${className ?? ""}`}
   >
     <span><slot /></span>
     <img src={secondary ? arrowBlue.src : arrowWhite.src} alt="" />
