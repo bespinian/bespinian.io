@@ -1,9 +1,11 @@
 ---
-title: Garage and Deuxfleurs
+title: "Garage: Self-Hosted Object Storage"
 author: Johannes Karl
 pubDate: 2026-07-30
 tags: ["s3", "sovereignty", "devops", "rust"]
-description: "Introduction to Garage and the organization behind it."
+description:
+  "An introduction to a simple, self-hosted, S3-compatible storage and the
+  organization behind it."
 image: ../../assets/blog/garage.jpg
 ---
 
@@ -12,9 +14,9 @@ image: ../../assets/blog/garage.jpg
 Garage is an S3-compatible, distributed object-storage solution that can be
 easily self-hosted on very limited hardware. The project was started by
 [Deuxfleurs](#deuxfleurs) to create a service that is free from the influence of
-corporations. A service, that allows one to host their personal data without
+corporations. A service that allows one to host their personal data without
 relying on any cloud services but instead just on the hardware that people own.\
-You can even run Garage on a Raspberry Pi, if that's what floats your boat.
+You can even run Garage on a Raspberry Pi if that's what floats your boat.
 
 Some of the core design goals are to
 
@@ -29,13 +31,13 @@ storage backend for tools such as
 [`restic`](https://github.com/restic/restic) and
 [more](https://garagehq.deuxfleurs.fr/documentation/design/goals/#use-cases).
 And while it is compatible with most S3 tooling and features, it does not
-attempt to support all of them to keep the scope manageable. Here a quick
+attempt to support all of them to keep the scope manageable. Here's a quick
 overview of the features it does/does not support:
 
 | Feature                                                                                                                       | Supported |
 | ----------------------------------------------------------------------------------------------------------------------------- | --------- |
 | Presigned URLs                                                                                                                | Yes       |
-| [Server side encryption (SSE-C)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerSideEncryptionCustomerKeys.html) | Yes       |
+| [Server-side encryption (SSE-C)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerSideEncryptionCustomerKeys.html) | Yes       |
 | Bucket versioning                                                                                                             | _No_      |
 | [Path-style requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#path-style-access)            | Yes       |
 | Virtual-hosted-style requests                                                                                                 | Yes       |
@@ -45,7 +47,7 @@ overview of the features it does/does not support:
 
 ### Geo-Distribution
 
-One of the key aspects of Garage is the ease in which it can provide a
+One of the key aspects of Garage is the ease with which it can provide a
 geo-distributed object storage, which allows the storage and replication in
 multiple geographical locations. To offer more flexibility, the way Garage
 replicates the data
