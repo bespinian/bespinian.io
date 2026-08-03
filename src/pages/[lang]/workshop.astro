@@ -1,9 +1,13 @@
 ---
+import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import Link from "../../components/Link.astro";
 import { useI18n } from "../../i18n/utils";
-import { getLanguagePaths } from "../../lib/paths";
+import { getLanguagePaths, getCollectionByLanguage } from "../../lib/paths";
+import sessionPhoto from "../../assets/workshop2.jpeg";
+import spaceship from "../../assets/spaceship1.svg";
 
 export function getStaticPaths() {
   return getLanguagePaths();
@@ -11,86 +15,271 @@ export function getStaticPaths() {
 
 const { lang, t } = useI18n(Astro.url);
 
+// The page title stays keyword-shaped for search and ads; the H1 leads with
+// the outcome instead.
 const title = t("workshop.title");
-const subtitle = t("workshop.subtitle");
+const heading = t("workshop.heading");
 const description = t("workshop.description");
-const formLink =
-  "https://docs.google.com/forms/d/e/1FAIpQLScnp5oz32IkJVVVa6IGeS6ONC2fiC0sFNV133hvobRYeEUFCQ/viewform";
+
+// Logos shown as social proof, in the order they should appear. Ids that no
+// longer exist in the customers collection are simply skipped.
+const LOGO_IDS = [
+  "postfinance",
+  "20-minuten",
+  "meteoswiss",
+  "swisscom-health",
+  "bernmobil",
+  "comet",
+];
+// The customer whose quote is closest to what this workshop delivers. It is
+// still about an engagement rather than a session, though: replace it as soon
+// as we have a quote from someone who only did the workshop.
+const TESTIMONIAL_ID = "20-minuten";
+// The people who run the sessions, in the order they should appear.
+const HOST_NAMES = ["Mathis Kretz", "Lena Fuhrimann"];
+
+const customers = await getCollectionByLanguage("customers", lang);
+const logos = LOGO_IDS.map((id) => customers.find((c) => c.id === id)).filter(
+  (c) => c !== undefined,
+);
+const testimonial = customers.find((c) => c.id === TESTIMONIAL_ID);
+
+const membersEntry = await getEntry("members", "all");
+if (!membersEntry) {
+  throw new Error("members not found");
+}
+const hosts = HOST_NAMES.map((name) =>
+  membersEntry.data.find((m) => m.name === name),
+).filter((m) => m !== undefined);
 ---
 
-<Layout>
+<Layout minimalNav>
   <SEO slot="head" {title} {description} {lang} />
 
   <div class="page-content">
     <section id="hero">
+      <img id="hero-spaceship" src={spaceship.src} alt="" />
       <div class="hero-content">
-        <h1>{title}</h1>
-        <h2 class="subtitle">{subtitle}</h2>
-        <p class="description">{description}</p>
-        <div class="cta-container">
-          <Link href={formLink} large center secondary class="workshop-cta">
+        <p class="eyebrow">{t("workshop.eyebrow")}</p>
+        <h1>{heading}</h1>
+        <p class="lede">{t("workshop.lede")}</p>
+        <div class="cta-container" data-cta-position="hero">
+          <Link href="#book" large center secondary class="workshop-cta">
             {t("workshop.cta")}
           </Link>
         </div>
       </div>
     </section>
 
-    <section class="content-section">
+    <section class="why-section">
       <div class="container">
-        <h2 class="section-title">{t("workshop.whatyouget.title")}</h2>
-        <ul class="value-list">
-          <li>{t("workshop.whatyouget.item1")}</li>
-          <li>{t("workshop.whatyouget.item2")}</li>
-          <li>{t("workshop.whatyouget.item3")}</li>
-          <li>{t("workshop.whatyouget.item4")}</li>
-          <li>{t("workshop.whatyouget.item5")}</li>
-        </ul>
+        <p class="why">{t("workshop.why")}</p>
       </div>
     </section>
 
-    <section class="content-section alternate">
+    {
+      logos.length > 0 && (
+        <section class="logo-section">
+          <div class="container">
+            <p class="logo-title">{t("workshop.trustedby.title")}</p>
+            <div class="logo-strip">
+              {logos.map((customer) => (
+                <Image
+                  src={customer.data.logo}
+                  alt={customer.data.company}
+                  class="customer-logo"
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    <section class="content-section">
       <div class="container">
         <h2 class="section-title">{t("workshop.whothisfor.title")}</h2>
         <ul class="checklist">
           <li>{t("workshop.whothisfor.item1")}</li>
           <li>{t("workshop.whothisfor.item2")}</li>
           <li>{t("workshop.whothisfor.item3")}</li>
-          <li>{t("workshop.whothisfor.item4")}</li>
-          <li>{t("workshop.whothisfor.item5")}</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container">
-        <h2 class="section-title">{t("workshop.whatyoulearn.title")}</h2>
-        <ul class="value-list">
-          <li>{t("workshop.whatyoulearn.item1")}</li>
-          <li>{t("workshop.whatyoulearn.item2")}</li>
-          <li>{t("workshop.whatyoulearn.item3")}</li>
-          <li>{t("workshop.whatyoulearn.item4")}</li>
-          <li>{t("workshop.whatyoulearn.item5")}</li>
         </ul>
       </div>
     </section>
 
     <section class="content-section alternate">
       <div class="container">
-        <h2 class="section-title">{t("workshop.guarantee.title")}</h2>
-        <p class="guarantee-text">{t("workshop.guarantee.description")}</p>
-      </div>
-    </section>
-
-    <section id="final-cta">
-      <div class="container">
-        <h2 class="cta-title">{t("workshop.title")}</h2>
-        <div class="cta-container">
-          <Link href={formLink} large center secondary class="workshop-cta">
+        <h2 class="section-title">{t("workshop.outcome.title")}</h2>
+        <ul class="value-list">
+          <li>{t("workshop.outcome.item1")}</li>
+          <li>{t("workshop.outcome.item2")}</li>
+          <li>{t("workshop.outcome.item3")}</li>
+          <li>{t("workshop.outcome.item4")}</li>
+          <li>{t("workshop.outcome.item5")}</li>
+        </ul>
+        <div class="cta-container mid" data-cta-position="outcome">
+          <Link href="#book" large center class="workshop-cta">
             {t("workshop.cta")}
           </Link>
         </div>
       </div>
     </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("workshop.hosts.title")}</h2>
+        <p class="hosts-description">{t("workshop.hosts.description")}</p>
+        <div class="hosts">
+          {
+            hosts.map((host) => (
+              <div class="host">
+                <Image src={host.image} alt="" class="host-portrait" />
+                <div class="host-info">
+                  <p class="host-name">{host.name}</p>
+                  <p class="host-title">{host.title}</p>
+                  <p class="host-bio">{host.description}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+        <Image
+          src={sessionPhoto}
+          alt="A bespinian session in our Bern office, with a small group around one table"
+          class="session-photo"
+        />
+      </div>
+    </section>
+
+    <section class="content-section alternate">
+      <div class="container">
+        <h2 class="section-title">{t("workshop.swiss.title")}</h2>
+        <p class="swiss-description">{t("workshop.swiss.description")}</p>
+        <ul class="value-list">
+          <li>{t("workshop.swiss.item1")}</li>
+          <li>{t("workshop.swiss.item2")}</li>
+          <li>{t("workshop.swiss.item3")}</li>
+        </ul>
+      </div>
+    </section>
+
+    {
+      testimonial && (
+        <section class="testimonial-section">
+          <div class="container">
+            <blockquote class="testimonial-quote">
+              {`"${testimonial.data.quote}"`}
+            </blockquote>
+            <div class="testimonial-author">
+              {testimonial.data.authorImage && (
+                <Image
+                  src={testimonial.data.authorImage}
+                  alt=""
+                  width={96}
+                  height={96}
+                  class="author-portrait"
+                />
+              )}
+              <div>
+                <p class="author-name">{testimonial.data.authorName}</p>
+                <p class="author-title">
+                  {testimonial.data.authorTitle}, {testimonial.data.company}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("workshop.faq.title")}</h2>
+        <dl class="faq">
+          <dt>{t("workshop.faq.q1")}</dt>
+          <dd>{t("workshop.faq.a1")}</dd>
+          <dt>{t("workshop.faq.q2")}</dt>
+          <dd>{t("workshop.faq.a2")}</dd>
+          <dt>{t("workshop.faq.q3")}</dt>
+          <dd>{t("workshop.faq.a3")}</dd>
+          <dt>{t("workshop.faq.q4")}</dt>
+          <dd>{t("workshop.faq.a4")}</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="container">
+        <h2 class="section-title">{t("workshop.form.title")}</h2>
+        <p class="form-description">{t("workshop.form.description")}</p>
+
+        <form
+          id="workshop-form"
+          action="https://formspree.io/f/mojgggre"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Cloud Readiness Workshop request"
+          />
+          <input type="hidden" name="language" value={lang} />
+          <input type="text" name="_gotcha" class="gotcha" tabindex="-1" />
+
+          <div class="field">
+            <input
+              class="input"
+              name="name"
+              placeholder={t("workshop.form.nameplaceholder")}
+              aria-label={t("workshop.form.nameplaceholder")}
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="field">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder={t("workshop.form.emailplaceholder")}
+              aria-label={t("workshop.form.emailplaceholder")}
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="field">
+            <input
+              class="input"
+              name="company"
+              placeholder={t("workshop.form.companyplaceholder")}
+              aria-label={t("workshop.form.companyplaceholder")}
+              autocomplete="organization"
+              required
+            />
+          </div>
+          <div class="field">
+            <textarea
+              class="textarea"
+              name="context"
+              placeholder={t("workshop.form.contextplaceholder")}
+              aria-label={t("workshop.form.contextplaceholder")}
+              rows="4"></textarea>
+          </div>
+          <div class="field">
+            <button type="submit" class="submit-button">
+              {t("workshop.form.submitlabel")}
+            </button>
+            <p class="reassurance">{t("workshop.form.reassurance")}</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Mobile only: keeps the CTA reachable without scrolling back up. Hidden
+       once the form itself is on screen. -->
+  <div id="sticky-cta" class="sticky-cta" data-cta-position="sticky">
+    <a href="#book" class="sticky-cta-link workshop-cta">{t("workshop.cta")}</a>
   </div>
 
   <script>
@@ -100,29 +289,92 @@ const formLink =
       }
     }
 
+    // Which CTA sends people to the form. Not a conversion on its own, but it
+    // tells us whether the hero or a later section does the convincing.
     for (const link of document.querySelectorAll<HTMLAnchorElement>(
       "a.workshop-cta",
     )) {
-      link.addEventListener("click", (event) => {
-        if (typeof window.gtag !== "function") return;
-
-        event.preventDefault();
-
-        let navigated = false;
-        const navigateOnce = () => {
-          if (navigated) return;
-          navigated = true;
-          window.location.href = link.href;
-        };
-
-        window.gtag("event", "conversion", {
-          send_to: "AW-18327942303/4D1SCPb_-dccEJ_puKNE",
-          event_callback: navigateOnce,
+      link.addEventListener("click", () => {
+        const position =
+          link
+            .closest("[data-cta-position]")
+            ?.getAttribute("data-cta-position") ?? "unknown";
+        window.gtag?.("event", "workshop_cta_click", {
+          cta_position: position,
         });
-        // Fallback in case gtag is blocked or the callback never fires.
-        setTimeout(navigateOnce, 1000);
       });
     }
+
+    // The sticky mobile bar is only useful between the hero CTA scrolling out
+    // of view and the form coming into it. Anywhere else it just covers copy.
+    const stickyCta = document.getElementById("sticky-cta");
+    const heroCta = document.querySelector("#hero .cta-container");
+    const bookSection = document.getElementById("book");
+
+    if (stickyCta && heroCta && bookSection) {
+      let heroCtaVisible = true;
+      let formVisible = false;
+
+      const updateStickyCta = () => {
+        stickyCta.classList.toggle("visible", !heroCtaVisible && !formVisible);
+      };
+
+      const observe = (target: Element, onChange: (visible: boolean) => void) =>
+        new IntersectionObserver(([entry]) => {
+          onChange(entry?.isIntersecting ?? false);
+          updateStickyCta();
+        }).observe(target);
+
+      observe(heroCta, (visible) => (heroCtaVisible = visible));
+      observe(bookSection, (visible) => (formVisible = visible));
+    }
+
+    // How far people read before leaving, to tell "nobody scrolls past the
+    // hero" apart from "they read everything and still didn't book".
+    const reportedDepths = new Set<number>();
+    const trackScrollDepth = () => {
+      const scrollable = document.body.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const percent = ((window.scrollY / scrollable) * 100) | 0;
+
+      for (const depth of [50, 90]) {
+        if (percent >= depth && !reportedDepths.has(depth)) {
+          reportedDepths.add(depth);
+          window.gtag?.("event", "workshop_scroll_depth", { percent: depth });
+        }
+      }
+      if (reportedDepths.size === 2) {
+        window.removeEventListener("scroll", trackScrollDepth);
+      }
+    };
+    window.addEventListener("scroll", trackScrollDepth, { passive: true });
+
+    // The actual conversion: a submitted request, not a click on a link.
+    const form = document.getElementById(
+      "workshop-form",
+    ) as HTMLFormElement | null;
+
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      let submitted = false;
+      const submitOnce = () => {
+        if (submitted) return;
+        submitted = true;
+        form.submit();
+      };
+
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-18327942303/4D1SCPb_-dccEJ_puKNE",
+          event_callback: submitOnce,
+        });
+        // Fallback in case gtag is blocked or the callback never fires.
+        setTimeout(submitOnce, 1000);
+      } else {
+        submitOnce();
+      }
+    });
   </script>
 </Layout>
 
@@ -132,6 +384,8 @@ const formLink =
   }
 
   #hero {
+    position: relative;
+    overflow: hidden;
     min-height: 70vh;
     background: linear-gradient(
       135deg,
@@ -147,27 +401,58 @@ const formLink =
   }
 
   .hero-content {
+    position: relative;
     max-width: 56rem;
+    z-index: 2;
   }
 
+  /* Same decorative art as the other page headers. Anchored to the right of the
+     centered content box rather than to the viewport, so it can never land on
+     the copy, and only shown once there is room beside it. */
+  #hero-spaceship {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: calc(50% + 29rem);
+    bottom: 3rem;
+    max-height: 40%;
+    max-width: calc(50vw - 31rem);
+  }
+
+  .eyebrow {
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+    opacity: 0.9;
+  }
+
+  /* The headline is a full sentence rather than a short title, so it stays
+     smaller than a display heading would be. */
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    line-height: 1.2;
+    line-height: 1.25;
   }
 
-  .subtitle {
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    line-height: 1.4;
-  }
-
-  .description {
+  .lede {
     font-size: 1.3rem;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem;
     opacity: 0.95;
+  }
+
+  .why-section {
+    padding: 3rem 2rem;
+    background-color: var(--color-background-tertiary);
+  }
+
+  .why {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color-background-primary);
   }
 
   .cta-container {
@@ -175,6 +460,17 @@ const formLink =
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+
+  .cta-container.mid {
+    margin-top: 3rem;
+  }
+
+  /* The shared button turns solid blue on hover, which makes it dissolve into
+     the blue hero and leaves a blue arrow on a blue background. */
+  #hero :global(a.workshop-cta:hover) {
+    background-color: var(--color-background-tertiary);
+    color: var(--color-background-primary);
   }
 
   .content-section {
@@ -196,6 +492,35 @@ const formLink =
     margin-bottom: 2rem;
     color: var(--color-background-primary);
     text-align: center;
+  }
+
+  .logo-section {
+    padding: 3rem 2rem;
+  }
+
+  .logo-title {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray);
+    margin: 0 0 2rem;
+  }
+
+  .logo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 3rem;
+  }
+
+  .customer-logo {
+    max-height: 2.5rem;
+    max-width: 8rem;
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 
   .value-list,
@@ -232,36 +557,244 @@ const formLink =
     font-size: 1.5rem;
   }
 
-  .guarantee-text {
-    font-size: 1.3rem;
+  .hosts-description,
+  .swiss-description {
+    font-size: 1.2rem;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.6;
+    color: var(--color-gray);
+    margin: 0 0 3rem;
+  }
+
+  .swiss-description {
+    margin-bottom: 1rem;
+  }
+
+  .hosts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .host {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .host-portrait {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .host-info {
+    flex: 1;
+  }
+
+  .host-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-background-primary);
+    margin: 0;
+  }
+
+  .host-title {
+    color: var(--color-gray);
+    margin: 0.25rem 0 0.75rem;
+  }
+
+  .host-bio {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .session-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    border-radius: var(--card-border-radius);
+  }
+
+  .testimonial-section {
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    padding: 4rem 2rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .author-portrait {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .author-name {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .author-title {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+
+  .faq {
+    margin: 0;
+  }
+
+  .faq dt {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-background-primary);
+    margin-top: 2rem;
+  }
+
+  .faq dd {
+    margin: 0.75rem 0 0;
+    line-height: 1.7;
+    font-size: 1.1rem;
+  }
+
+  #book {
+    background-color: var(--color-background-tertiary);
+    padding: 4rem 2rem 5rem;
+    scroll-margin-top: 2rem;
+  }
+
+  .form-description {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-gray);
+    margin: 0 auto 3rem;
+    max-width: 40rem;
+  }
+
+  .field {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Honeypot: hidden from people, tempting to bots. */
+  .gotcha {
+    display: none;
+  }
+
+  .input,
+  .textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-lato);
+    transition: border-color 0.3s ease;
+  }
+
+  .input:focus,
+  .textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+
+  .textarea {
+    resize: vertical;
+    min-height: 6rem;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--font-lato);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color: var(--color-background-primary);
+  }
+
+  .reassurance {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
     color: var(--color-gray);
   }
 
-  #final-cta {
-    background-color: var(--color-background-primary);
-    color: var(--color-secondary);
-    padding: 5rem 2rem;
-    text-align: center;
+  .sticky-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+    background-color: var(--color-secondary);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
   }
 
-  .cta-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2.5rem;
+  .sticky-cta-link {
+    display: block;
+    padding: 0.9rem 1rem;
+    border-radius: 999999rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* Mobile only: on wider screens the form is a short scroll away anyway. */
+  @media (max-width: 47.999rem) {
+    .sticky-cta.visible {
+      display: block;
+    }
   }
 
   @media (min-width: 48rem) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 2.75rem;
     }
 
-    .subtitle {
-      font-size: 2.2rem;
+    .eyebrow {
+      font-size: 1.1rem;
     }
 
-    .description {
+    .lede {
+      font-size: 1.5rem;
+    }
+
+    .why {
       font-size: 1.5rem;
     }
 
@@ -274,22 +807,30 @@ const formLink =
       font-size: 1.4rem;
     }
 
-    .guarantee-text {
-      font-size: 1.5rem;
+    .hosts {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    .cta-title {
-      font-size: 3rem;
+    .host {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .testimonial-quote {
+      font-size: 1.6rem;
     }
   }
 
   @media (min-width: 64rem) {
     h1 {
-      font-size: 4rem;
+      font-size: 3.25rem;
     }
+  }
 
-    .subtitle {
-      font-size: 2.5rem;
+  @media (min-width: 80rem) {
+    #hero-spaceship {
+      display: block;
     }
   }
 </style>

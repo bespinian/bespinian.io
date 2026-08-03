@@ -144,44 +144,72 @@ const de = {
 
   // Workshop Page
   "workshop.title": "Kostenloser Cloud Readiness Workshop",
-  "workshop.subtitle":
-    "Erfahre, wie du deine Infrastrukturkosten senkst und Features schneller lieferst",
+  "workshop.eyebrow":
+    "Kostenlose 90-Minuten-Session mit erfahrenen Cloud Engineers",
+  "workshop.heading":
+    "Ein schriftlicher Plan, um deine komplexesten Applikationen zu modernisieren",
   "workshop.description":
-    "Erhalte einen klaren, umsetzbaren Plan für deine Cloud-Modernisierung – völlig kostenlos. Kein Verkaufsgespräch. Nur Experten-Hilfe speziell für deine Apps.",
-  "workshop.whatyouget.title":
-    "Was du erhältst (Wert 660 CHF, für dich kostenlos)",
-  "workshop.whatyouget.item1":
-    "90-minütige Strategie-Session mit erfahrenen Cloud Engineers",
-  "workshop.whatyouget.item2": "Massgeschneiderte Cloud-Analyse für deine Apps",
-  "workshop.whatyouget.item3":
-    "Klarer Modernisierungsplan mit Kosten und Nutzen",
-  "workshop.whatyouget.item4":
-    "Tech-Empfehlungen (AWS, Azure, Kubernetes, Serverless)",
-  "workshop.whatyouget.item5": "Risiko-Check und Wege, um Risiken zu senken",
-  "workshop.whothisfor.title": "Dieser Workshop ist ideal, wenn du:",
-  "workshop.whothisfor.item1": "Zu viel für alte Infrastruktur bezahlst",
+    "90 Minuten mit erfahrenen Cloud Engineers. Du erhältst einen schriftlichen Plan: deine Applikationen priorisiert, Kostenschätzungen und einen ersten Schritt, den du nächste Woche angehen kannst. Der Plan gehört dir, egal ob du mit uns zusammenarbeitest oder nicht.",
+  "workshop.lede":
+    "Der Plan gehört dir, egal ob du mit uns zusammenarbeitest oder nicht.",
+  "workshop.why":
+    "Die meisten Cloud-Migrationen scheitern, weil jemand die Plattform ausgewählt hat, bevor irgendwer die Applikationen verstanden hat. Wir fangen bei deinen Applikationen an.",
+  "workshop.cta": "Session anfragen",
+  "workshop.trustedby.title": "Diese Arbeit haben wir gemacht für",
+  "workshop.whothisfor.title": "Das ist etwas für dich, wenn",
+  "workshop.whothisfor.item1":
+    "Du zu viel für Infrastruktur bezahlst, die du nicht herunterskalieren kannst – und die Rechnung immer nur wächst",
   "workshop.whothisfor.item2":
-    "Releases hast, die Stunden oder Tage statt Minuten dauern",
+    "Du modernisieren möchtest, aber nicht weisst, mit welcher Applikation du anfangen sollst",
   "workshop.whothisfor.item3":
-    "Modernisieren möchtest, aber nicht weisst, wo du anfangen sollst",
-  "workshop.whothisfor.item4":
-    "Deine Apps skalieren musst, ohne mehr auszugeben",
-  "workshop.whothisfor.item5":
-    "Möchtest, dass deine Teams Features entwickeln, nicht Infrastruktur verwalten",
-  "workshop.whatyoulearn.title": "Was du lernst",
-  "workshop.whatyoulearn.item1":
-    "Welche Apps du zuerst modernisieren solltest für den grössten Impact",
-  "workshop.whatyoulearn.item2":
-    "Wie du zwischen AWS, Azure, Kubernetes oder Serverless entscheidest",
-  "workshop.whatyoulearn.item3":
-    "Echte Kosten-Schätzungen und Return-on-Investment",
-  "workshop.whatyoulearn.item4": "Häufige Fehler und wie du sie vermeidest",
-  "workshop.whatyoulearn.item5":
-    "Einen klaren Schritt-für-Schritt-Modernisierungsplan für deine Anforderungen",
-  "workshop.guarantee.title": "100% kostenlos. Keine Verpflichtung.",
-  "workshop.guarantee.description":
-    "Das ist kein Verkaufsgespräch. Du bekommst einen vollständigen Plan, egal ob du mit uns zusammenarbeiten möchtest oder nicht. Unser Ziel ist, dir echten Mehrwert zu geben.",
-  "workshop.cta": "Kostenlosen Workshop buchen",
+    "Deine Teams mehr Zeit damit verbringen, Infrastruktur am Leben zu halten, als Features zu liefern",
+  "workshop.outcome.title": "Was du bekommst",
+  "workshop.outcome.item1":
+    "Deine Applikationen priorisiert danach, wie viel eine Modernisierung sparen würde",
+  "workshop.outcome.item2":
+    "Eine Empfehlung – AWS, Azure, Kubernetes oder Serverless – und warum die anderen nicht zu dir passen",
+  "workshop.outcome.item3":
+    "Kostenschätzungen und eine realistische Amortisationsdauer",
+  "workshop.outcome.item4":
+    "Die Risiken, die spezifisch für dein Setup sind, und wie du mit jedem umgehst",
+  "workshop.outcome.item5":
+    "Einen konkreten ersten Schritt, klein genug, um nächste Woche zu starten",
+  "workshop.hosts.title": "Mit wem du sprichst",
+  "workshop.hosts.description":
+    "Erfahrene Cloud Engineers führen die Session – dieselben Leute, die auch die Arbeit machen würden.",
+  "workshop.swiss.title": "Schweizerisch – und das bleibt so",
+  "workshop.swiss.description":
+    "Wir sind ein Schweizer Unternehmen mit Sitz in Bern. Deine Daten und die Engineers, die daran arbeiten, bleiben in der Schweiz.",
+  "workshop.swiss.item1":
+    "Deine Daten bleiben in der Schweiz, in schweizerischen oder europäischen Cloud-Regionen",
+  "workshop.swiss.item2":
+    "Unsere Engineers bleiben in der Schweiz – keine Offshore-Teams, keine Subunternehmer, die du nie zu Gesicht bekommst",
+  "workshop.swiss.item3":
+    "Schweizer Firma, Schweizer Recht, deine Zeitzone – und nah genug, um bei dir im Büro zu sitzen",
+  "workshop.faq.title": "Bevor du fragst",
+  "workshop.faq.q1": "Ist das ein Verkaufsgespräch?",
+  "workshop.faq.a1":
+    "Nein. Du bekommst den schriftlichen Plan, egal ob du uns beauftragst oder nicht. Manchmal ist die ehrliche Antwort, dass du uns nicht brauchst – das sagen wir dir dann auch.",
+  "workshop.faq.q2": "Wie schnell können wir das machen?",
+  "workshop.faq.a2":
+    "Wir melden uns innerhalb von zwei Arbeitstagen mit ein paar Terminvorschlägen. Die Session findet remote oder bei dir im Büro statt, ganz wie du möchtest.",
+  "workshop.faq.q3": "Was müssen wir vorbereiten?",
+  "workshop.faq.a3":
+    "Nichts Formelles. Eine Architekturskizze und eine aktuelle Infrastrukturrechnung machen die Session präziser, aber es geht auch ohne.",
+  "workshop.faq.q4": "Wer sollte von deiner Seite dabei sein?",
+  "workshop.faq.a4":
+    "Wer die Systeme kennt und wer das Budget verantwortet. Zwei bis vier Personen funktionieren am besten – mehr, und es wird eine Präsentation.",
+  "workshop.form.title": "Session anfragen",
+  "workshop.form.description":
+    "Sag uns, wie wir dich erreichen, und wir melden uns innerhalb von zwei Arbeitstagen mit ein paar Terminvorschlägen. Kein Newsletter, keine Follow-up-Serie.",
+  "workshop.form.nameplaceholder": "Dein Name",
+  "workshop.form.emailplaceholder": "Geschäftliche E-Mail",
+  "workshop.form.companyplaceholder": "Unternehmen",
+  "workshop.form.contextplaceholder":
+    "Was möchtest du aus der Session mitnehmen? (optional)",
+  "workshop.form.submitlabel": "Session anfragen",
+  "workshop.form.reassurance":
+    "Kostenlos, unverbindlich, kein Newsletter. Wir antworten innerhalb von zwei Arbeitstagen.",
 
   // 404 Page
   "404.title": "Seite nicht gefunden",

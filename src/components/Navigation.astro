@@ -12,6 +12,14 @@ interface MenuItem {
   submenu?: { label: string; href: string }[];
 }
 
+interface Props {
+  // Landing-page mode: logo and language selector only. Paid traffic gets no
+  // exits, not even the logo link back to the home page.
+  minimal?: boolean;
+}
+
+const { minimal = false } = Astro.props;
+
 const { lang, t, translatePath } = useI18n(Astro.url);
 
 const servicesFromContent = await getCollection("services", ({ id }) => {
@@ -54,41 +62,53 @@ const mainItems: MenuItem[] = [
 ---
 
 <nav>
-  <a href={translatePath("/")}>
-    <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
-  </a>
+  {
+    minimal ? (
+      <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
+    ) : (
+      <a href={translatePath("/")}>
+        <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
+      </a>
+    )
+  }
 
-  <ul class="nav-desktop">
+  {
+    !minimal && (
+      <ul class="nav-desktop">
+        {mainItems.map((i) => (
+          <li class={i.submenu ? "dropdown" : ""}>
+            <a
+              href={i.href}
+              aria-haspopup={i.submenu ? "true" : undefined}
+              aria-expanded={i.submenu ? "false" : undefined}
+            >
+              {i.label}
+            </a>
+            {i.submenu && (
+              <ul class="dropdown-menu">
+                {i.submenu.map((subItem) => (
+                  <li>
+                    <a href={subItem.href}>{subItem.label}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <ul class={minimal ? "nav-utility" : "nav-desktop"}>
     {
-      mainItems.map((i) => (
-        <li class={i.submenu ? "dropdown" : ""}>
-          <a
-            href={i.href}
-            aria-haspopup={i.submenu ? "true" : undefined}
-            aria-expanded={i.submenu ? "false" : undefined}
-          >
-            {i.label}
-          </a>
-          {i.submenu && (
-            <ul class="dropdown-menu">
-              {i.submenu.map((subItem) => (
-                <li>
-                  <a href={subItem.href}>{subItem.label}</a>
-                </li>
-              ))}
-            </ul>
-          )}
+      !minimal && (
+        <li>
+          <Link href={translatePath("/workshop")} secondary>
+            {t("cta.freeWorkshop")}
+          </Link>
         </li>
-      ))
+      )
     }
-  </ul>
-
-  <ul class="nav-desktop">
-    <li>
-      <Link href={translatePath("/workshop")} secondary
-        >{t("cta.freeWorkshop")}</Link
-      >
-    </li>
     <li>
       <LanguageSelector
         currentLang={lang}
@@ -98,80 +118,90 @@ const mainItems: MenuItem[] = [
     </li>
   </ul>
 
-  <button
-    id="modal-open"
-    aria-label="Open menu"
-    aria-expanded="false"
-    aria-controls="modal"
-    class="button hamburger"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+  {
+    !minimal && (
+      <button
+        id="modal-open"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="modal"
+        class="button hamburger"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+    )
+  }
 </nav>
 
-<div
-  id="modal"
-  class="hidden"
-  role="dialog"
-  aria-modal="true"
-  aria-label="Mobile menu"
->
-  <div id="modal-head">
-    <a href={translatePath("/")}>
-      <img id="modal-logo" src={bespinianBlue.src} alt="bespinian logo" />
-    </a>
-    <button id="modal-close" aria-label="Close menu" class="button hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
+{
+  !minimal && (
+    <div
+      id="modal"
+      class="hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile menu"
+    >
+      <div id="modal-head">
+        <a href={translatePath("/")}>
+          <img id="modal-logo" src={bespinianBlue.src} alt="bespinian logo" />
+        </a>
+        <button
+          id="modal-close"
+          aria-label="Close menu"
+          class="button hamburger"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
 
-  <div id="modal-main">
-    <ul>
-      {
-        mainItems.map((i) => (
-          <li class={i.submenu ? "mobile-dropdown" : ""}>
-            <a
-              href={i.href}
-              class="menu-link"
-              aria-expanded={i.submenu ? "false" : undefined}
-            >
-              {i.label}
+      <div id="modal-main">
+        <ul>
+          {mainItems.map((i) => (
+            <li class={i.submenu ? "mobile-dropdown" : ""}>
+              <a
+                href={i.href}
+                class="menu-link"
+                aria-expanded={i.submenu ? "false" : undefined}
+              >
+                {i.label}
+                {i.submenu && (
+                  <span class="dropdown-arrow" aria-hidden="true">
+                    ▼
+                  </span>
+                )}
+              </a>
               {i.submenu && (
-                <span class="dropdown-arrow" aria-hidden="true">
-                  ▼
-                </span>
+                <ul class="mobile-submenu">
+                  {i.submenu.map((subItem) => (
+                    <li>
+                      <a href={subItem.href} class="menu-link">
+                        {subItem.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               )}
-            </a>
-            {i.submenu && (
-              <ul class="mobile-submenu">
-                {i.submenu.map((subItem) => (
-                  <li>
-                    <a href={subItem.href} class="menu-link">
-                      {subItem.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))
-      }
-    </ul>
+            </li>
+          ))}
+        </ul>
 
-    <div class="modal-footer">
-      <Link href={translatePath("/workshop")}>{t("cta.freeWorkshop")}</Link>
-      <LanguageSelector
-        currentLang={lang}
-        currentPath={Astro.url.pathname}
-        mobile={true}
-      />
+        <div class="modal-footer">
+          <Link href={translatePath("/workshop")}>{t("cta.freeWorkshop")}</Link>
+          <LanguageSelector
+            currentLang={lang}
+            currentPath={Astro.url.pathname}
+            mobile={true}
+          />
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  )
+}
 
 <script>
   const openButton = document.getElementById("modal-open");
@@ -310,6 +340,17 @@ const mainItems: MenuItem[] = [
     display: none;
     gap: 2rem;
     list-style-type: none;
+  }
+
+  /* Minimal mode has no hamburger to hold the language selector, so it stays
+     visible at every width. */
+  .nav-utility {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   a {

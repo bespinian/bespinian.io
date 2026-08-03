@@ -5,6 +5,14 @@ import Footer from "../components/Footer.astro";
 import { useI18n } from "../i18n/utils";
 import "../styles/global.css";
 
+interface Props {
+  // Strips the navigation down to the logo and language selector, for landing
+  // pages where every other link is just a way to leave.
+  minimalNav?: boolean;
+}
+
+const { minimalNav = false } = Astro.props;
+
 const { htmlLang } = useI18n(Astro.url);
 const hasHeadSlot = Astro.slots.has("head");
 ---
@@ -45,7 +53,7 @@ const hasHeadSlot = Astro.slots.has("head");
     {!hasHeadSlot && <title>bespinian</title>}
   </head>
   <body>
-    <Navigation />
+    <Navigation minimal={minimalNav} />
     <main>
       <slot />
     </main>

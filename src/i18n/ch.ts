@@ -142,41 +142,71 @@ const ts = {
 
   // Workshop Page
   "workshop.title": "Gratis Cloud Readiness Workshop",
-  "workshop.subtitle":
-    "Erfahr, wie de dini Infrastrukturchöste sänksch u Features schneuer liferisch",
+  "workshop.eyebrow": "Gratis 90-Minute-Session mit erfahrnige Cloud Engineers",
+  "workshop.heading":
+    "E gschribne Plan, wie de dini komplexischte Applikatione modernisiersch",
   "workshop.description":
-    "Hie bechunnsch e klare, umsetzbare Plan für dini Cloud-Migration – komplett gratis. Kes Verchoufsgspräch. Nur Experte-Hilf speziell für dini Apps.",
-  "workshop.whatyouget.title": "Was du bechunsch (Wärt 660 CHF, für di gratis)",
-  "workshop.whatyouget.item1":
-    "90-minütigi Strategie-Session mit erfahrnige Cloud Engineers",
-  "workshop.whatyouget.item2": "Massgeschniderti Cloud-Analyse für dini Apps",
-  "workshop.whatyouget.item3": "Klare Migrationsplan mit Choschte u Nutze",
-  "workshop.whatyouget.item4":
-    "Tech-Empfählige (AWS, Azure, Kubernetes, Serverless)",
-  "workshop.whatyouget.item5": "Risiko-Check u Massnahme, um Risike z sänke",
-  "workshop.whothisfor.title": "Dä Workshop isch ideal, we du:",
-  "workshop.whothisfor.item1": "Z viu für auti Infrastruktur usgihsch",
+    "90 Minute mit erfahrnige Cloud Engineers. Du bechunnsch e gschribne Plan: dini Applikatione priorisiert, Choschteschätzige u ne erschte Schritt, wode nächscht Wuche chasch afah. Dä Plan ghört dir, egal öb du mit üs zämeschaffsch oder nid.",
+  "workshop.lede":
+    "Dä Plan ghört dir, egal öb du mit üs zämeschaffsch oder nid.",
+  "workshop.why":
+    "Di meischte Cloud-Migratione göh schief, wüu öpper d Plattform usgsuecht het, bevor öpper d Applikatione verstande het. Mir föh bi dine Applikatione a.",
+  "workshop.cta": "Session afrage",
+  "workshop.trustedby.title": "Die Arbeit hei mir gmacht für",
+  "workshop.whothisfor.title": "Das isch öppis für di, we",
+  "workshop.whothisfor.item1":
+    "Du z viu für Infrastruktur zahlsch, wode nid chasch abeskaliere – u d Rächnig geit immer nume ufe",
   "workshop.whothisfor.item2":
-    "Releases hesch, wo Schtunde oder Täg statt Minute duure",
+    "Du modernisiere wotsch, aber nid weisch, bi welere Applikation afah",
   "workshop.whothisfor.item3":
-    "Modernisiere wotsch, aber nid sicher bisch, wo afah",
-  "workshop.whothisfor.item4": "Dini Apps müessch wachse lah, ohni meh uszgä",
-  "workshop.whothisfor.item5":
-    "Möchtsch, dass dini Teams Features entwickle, nid Infrastruktur verwaute",
-  "workshop.whatyoulearn.title": "Was du lernsch",
-  "workshop.whatyoulearn.item1":
-    "Weli Apps de zersch söusch migriere für de gröschte Nutze",
-  "workshop.whatyoulearn.item2":
-    "Wie du zwüsche AWS, Azure, Kubernetes oder Serverless entscheidsch",
-  "workshop.whatyoulearn.item3": "Echti Choschte-Schätzig u ROI",
-  "workshop.whatyoulearn.item4":
-    "Hüüfigi Migrationsfähler u wie de se vermidisch",
-  "workshop.whatyoulearn.item5":
-    "E klare Schritt-für-Schritt-Migrationsplan für dini Bedürfnis",
-  "workshop.guarantee.title": "100% gratis. Kei Verpflichtig.",
-  "workshop.guarantee.description":
-    "Das isch kes Verchaufsgspräch. Du bechunsch e komplette Plan, egal öb du mit üs wotsch zämeschaffe oder nid. Üses Ziil isch, dr ächte Mehrwärt z gä.",
-  "workshop.cta": "Gratis Workshop bueche",
+    "Dini Teams meh Ziit bruche, Infrastruktur am Läbe z haute, aus Features z liefere",
+  "workshop.outcome.title": "Was du bechunnsch",
+  "workshop.outcome.item1":
+    "Dini Applikatione priorisiert nach däm, wie viu e Modernisierig würd spare",
+  "workshop.outcome.item2":
+    "E Empfählig – AWS, Azure, Kubernetes oder Serverless – u wieso di andere nid zu dir passe",
+  "workshop.outcome.item3":
+    "Choschteschätzige u ne realistischi Amortisationsduur",
+  "workshop.outcome.item4":
+    "Di Risike, wo spezifisch für dis Setup si, u wie de mit jedem umgahsch",
+  "workshop.outcome.item5":
+    "E konkrete erschte Schritt, chlii gnue, um nächscht Wuche z schtarte",
+  "workshop.hosts.title": "Mit wäm du redsch",
+  "workshop.hosts.description":
+    "Erfahrni Cloud Engineers führe d Session – genau di Lüt, wo o d Arbeit würde mache.",
+  "workshop.swiss.title": "Schwiizerisch – u das bliibt so",
+  "workshop.swiss.description":
+    "Mir si ne Schwiizer Firma mit Sitz z Bärn. Dini Date u d Engineers, wo dranne schaffe, bliibe i dr Schwiz.",
+  "workshop.swiss.item1":
+    "Dini Date bliibe i dr Schwiz, i schwiizerische oder europäische Cloud-Regione",
+  "workshop.swiss.item2":
+    "Üsi Engineers bliibe i dr Schwiz – kei Offshore-Teams, kei Subunternähmer, wode nie z Gsicht bechunnsch",
+  "workshop.swiss.item3":
+    "Schwiizer Firma, Schwiizer Rächt, dini Zytzone – u nach gnue, um bi dir im Büro z hocke",
+  "workshop.faq.title": "Bevor du frägsch",
+  "workshop.faq.q1": "Isch das es Verchoufsgspräch?",
+  "workshop.faq.a1":
+    "Nei. Du bechunnsch dä gschribne Plan, egal öb du üs beuftragsch oder nid. Mängisch isch di ehrlechi Antwort, dass du üs nid bruchsch – das säge mir dir de o.",
+  "workshop.faq.q2": "Wie schnäu chöi mir das mache?",
+  "workshop.faq.a2":
+    "Mir mäude üs innerhaub vo zwe Arbeitstäg mit es paar Termivorschläg. D Session isch remote oder bi dir im Büro, ganz wie de wotsch.",
+  "workshop.faq.q3": "Was müesse mir vorbereite?",
+  "workshop.faq.a3":
+    "Nüt Formeus. E Architekturskizze u ne aktuelli Infrastrukturrächnig mache d Session präziser, aber es geit o ohni.",
+  "workshop.faq.q4": "Wär söu vo dir Site derbi si?",
+  "workshop.faq.a4":
+    "Wär d Systeme kennt u wär s Budget verantwortet. Zwe bis vier Persone funktioniere am beschte – meh, u de wird es e Präsentation.",
+  "workshop.form.title": "Session afrage",
+  "workshop.form.description":
+    "Sag üs, wie mir di erreiche, u mir mäude üs innerhaub vo zwe Arbeitstäg mit es paar Termivorschläg. Keni Newsletter, kei Follow-up-Serie.",
+  "workshop.form.nameplaceholder": "Dis Name",
+  "workshop.form.emailplaceholder": "Gschäftlechi E-Mail",
+  "workshop.form.companyplaceholder": "Firma",
+  "workshop.form.contextplaceholder":
+    "Was wotsch us dr Session mitnäh? (optional)",
+  "workshop.form.submitlabel": "Session afrage",
+  "workshop.form.reassurance":
+    "Gratis, unverbindlech, keni Newsletter. Mir antworte innerhaub vo zwe Arbeitstäg.",
 
   // 404 Page
   "404.title": "Site nid gfunge",

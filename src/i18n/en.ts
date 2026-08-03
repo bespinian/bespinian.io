@@ -142,41 +142,72 @@ const en = {
 
   // Workshop Page
   "workshop.title": "Free Cloud Readiness Workshop",
-  "workshop.subtitle":
-    "Learn How to Cut Infrastructure Costs and Ship Features Faster",
+  "workshop.eyebrow": "Free 90-minute session with senior cloud engineers",
+  "workshop.heading":
+    "A written plan for modernizing your most complex applications",
+  // Search snippet only. The hero uses the shorter lede, since the eyebrow and
+  // the headline already say the rest.
   "workshop.description":
-    "Get a clear, ready-to-go plan for migrating to the cloud—totally free. No sales pitch. Just expert help for your apps.",
-  "workshop.whatyouget.title": "What You Get (Worth 660 CHF, Free for you)",
-  "workshop.whatyouget.item1":
-    "90-minute strategy session with senior cloud engineers",
-  "workshop.whatyouget.item2": "Custom cloud check for your apps",
-  "workshop.whatyouget.item3": "Clear plan with costs and benefits",
-  "workshop.whatyouget.item4":
-    "Tech advice (AWS, Azure, Kubernetes, Serverless)",
-  "workshop.whatyouget.item5": "Risk check and ways to reduce risks",
-  "workshop.whothisfor.title": "This Workshop Is Perfect If You:",
-  "workshop.whothisfor.item1": "Pay too much for old tech",
+    "90 minutes with senior cloud engineers. You get a written plan: your applications ranked, cost estimates, and a first step you can start next week. The plan is yours to keep, whether you work with us or not.",
+  "workshop.lede":
+    "The plan is yours to keep, whether you work with us or not.",
+  "workshop.why":
+    "Most cloud migrations fail because someone picked the platform before anyone understood the applications. We start with your applications.",
+  "workshop.cta": "Request a session",
+  "workshop.trustedby.title": "We've done this work for",
+  "workshop.whothisfor.title": "This is for you if",
+  "workshop.whothisfor.item1":
+    "You pay too much for infrastructure you can't scale down, and the bill only ever grows",
   "workshop.whothisfor.item2":
-    "Have releases that take hours or days instead of minutes",
+    "You want to modernize but don't know which application to start with",
   "workshop.whothisfor.item3":
-    "Want to modernize but don't know where to start",
-  "workshop.whothisfor.item4": "Need to scale your apps without spending more",
-  "workshop.whothisfor.item5":
-    "Want your teams to develop features, not manage infrastructure",
-  "workshop.whatyoulearn.title": "What You'll Learn",
-  "workshop.whatyoulearn.item1":
-    "Which apps to modernize first for the biggest impact",
-  "workshop.whatyoulearn.item2":
-    "How to choose between AWS, Azure, Kubernetes, or Serverless",
-  "workshop.whatyoulearn.item3": "Real cost estimates and return on investment",
-  "workshop.whatyoulearn.item4":
-    "Common modernization mistakes and how to avoid them",
-  "workshop.whatyoulearn.item5":
-    "A clear step-by-step plan made for your needs",
-  "workshop.guarantee.title": "100% Free. No Strings Attached.",
-  "workshop.guarantee.description":
-    "This is not a sales meeting. You'll get a complete plan whether you work with us or not. Our goal is to give you real value.",
-  "workshop.cta": "Book Your Free Workshop",
+    "Your teams spend more time keeping infrastructure alive than shipping features",
+  "workshop.outcome.title": "What you get",
+  "workshop.outcome.item1":
+    "Your applications ranked by how much modernizing each one would save",
+  "workshop.outcome.item2":
+    "A recommendation — AWS, Azure, Kubernetes or Serverless — and why the others don't fit you",
+  "workshop.outcome.item3": "Cost estimates and a realistic payback period",
+  "workshop.outcome.item4":
+    "The risks specific to your setup, and how to handle each one",
+  "workshop.outcome.item5":
+    "A concrete first step, small enough to start next week",
+  "workshop.hosts.title": "Who you'll be talking to",
+  "workshop.hosts.description":
+    "Senior cloud engineers run the session — the same people who would do the work.",
+  "workshop.swiss.title": "Swiss, and staying that way",
+  "workshop.swiss.description":
+    "We're a Swiss company based in Bern. Your data and the engineers working on it stay in Switzerland.",
+  "workshop.swiss.item1":
+    "Your data stays in Switzerland, on Swiss or European cloud regions",
+  "workshop.swiss.item2":
+    "Our engineers stay in Switzerland — no offshore delivery teams, no subcontractors you never meet",
+  "workshop.swiss.item3":
+    "Swiss company, Swiss law, your time zone, and close enough to sit in your office",
+  "workshop.faq.title": "Before you ask",
+  "workshop.faq.q1": "Is this a sales pitch?",
+  "workshop.faq.a1":
+    "No. You get the written plan whether you hire us or not. Sometimes the honest answer is that you don't need us, and we'll tell you that too.",
+  "workshop.faq.q2": "How soon can we do this?",
+  "workshop.faq.a2":
+    "We'll come back to you within two working days with a few slots. Sessions run remotely or at your office, whichever you prefer.",
+  "workshop.faq.q3": "What do we need to prepare?",
+  "workshop.faq.a3":
+    "Nothing formal. An architecture sketch and a recent infrastructure bill make the session sharper, but we can work without either.",
+  "workshop.faq.q4": "Who should join from your side?",
+  "workshop.faq.a4":
+    "Whoever knows the systems and whoever owns the budget. Two to four people work best — more than that and it turns into a presentation.",
+  "workshop.form.title": "Request your session",
+  "workshop.form.description":
+    "Tell us where to reach you and we'll reply within two working days with a few slots. No newsletter, no follow-up sequence.",
+  "workshop.form.nameplaceholder": "Your Name",
+  "workshop.form.emailplaceholder": "Work Email",
+  "workshop.form.companyplaceholder": "Company",
+  "workshop.form.contextplaceholder":
+    "What would you like to get out of the session? (optional)",
+  "workshop.form.submitlabel": "Request Session",
+  "workshop.form.reassurance":
+    "No cost, no obligation, no newsletter. We reply within two working days.",
 
   // 404 Page
   "404.title": "Page Not Found",
