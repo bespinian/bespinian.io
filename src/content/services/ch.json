@@ -3,6 +3,8 @@
     "id": "serverless-application-acceleration",
     "title": "Serverless Application Acceleration",
     "description": "Bi dr Serverless Application Acceleration geits drum, dr Fokus vo dim Team vo dr Infrastruktur uf d'Schaffig vo Gschäftswärt u nöii Idee z'verlagere, indäm d'Chraft vom Serverless Computing gnutzt wird. Mach di parat für es schlanks, hochskalierbars u choschtäsparends App-Modäu 🚀",
+    "heading": "Features lifere statt Server verwaute",
+    "lede": "Mir bringe dini Apps uf serverlosi AWS- u Azure-Services, so dass dini Engineers am Produkt schaffe u du keni Infrastruktur meh zahlsch, wo nume umeschteit.",
     "icon": "../../assets/serverless-application-acceleration.svg",
     "challenges": {
       "description": "Gang mit üs uf d'Serverless Application Acceleration-Reis, we du eini vo dene Usefordrige erläbsch:",
@@ -71,6 +73,8 @@
     "id": "cloud-native-empowerment",
     "title": "Cloud Native Empowerment",
     "description": "Bim Cloud Native Empowerment geits drum, dini Apps z'modernisiere u s'Wüsse, d'Fähigkeite u d Kultur vo dine Engineering-Teams z'entwickle. Mach di parat für modärni Cloud-Apps ☁️",
+    "heading": "Modärni Cloud-Apps u nes Team, wo si cha betriebe",
+    "lede": "Mir modernisiere dini Apps uf Kubernetes u i dr Public Cloud – u dini Engineers chöi si nachhär ohni üs souverän betriebe.",
     "icon": "../../assets/cloud-native-empowerment.svg",
     "challenges": {
       "description": "Gang mit üs uf d'Cloud Native Empowerment-Reis, we du eini vo dene Usefordrige erläbsch:",
@@ -139,6 +143,8 @@
     "id": "saas-transformation",
     "title": "SaaS Transformation",
     "description": "SaaS Transformation hiuft dr, dini Software zu eme skalierbaре, sichere u profitable SaaS-Produkt wyterz'entwickle. Zäme modernisiere mir dis Setup, dis Delivery-Modäu u dini Organisation, zum es Produktgschäft ufzboue, wo uf Outomatisiеrig, Gschwindigkeit u ständiger Wärtschöpfig basiert 🔀",
+    "heading": "Mach us dinere Software es SaaS-Produkt, wo skaliert",
+    "lede": "Mir erneuere, wie dis Produkt uusglifert, betriebe u verchouft wird, so dass du neui Chunde ohni zusätzlechi Stelle onboarde chasch.",
     "icon": "../../assets/saas-transformation.svg",
     "challenges": {
       "description": "Gang mit üs uf d'SaaS Transformation-Reis, we du eini vo dene Usefordrige erläbsch:",
@@ -207,6 +213,8 @@
     "id": "pragmatic-ai-adoption",
     "title": "Pragmatic AI Adoption",
     "description": "Pragmatic AI Adoption hiuft dine Engineering-Teams, AI dört izsetze, wo's würklich Mehrwärt schafft — zum Fokus, Gschwindigkeit u Qualität z'erhöhe, ohni Chaos oder Risike z'schaffe. Zäme reduziere mir dr Mental Load, optimiere Workflows u schteue sicher, dass AI verantwortigsvou u effektiv uf aune Skill-Levels igsetzt wird 🤖",
+    "heading": "Setz AI dört i, wo si sech würklech uszahlt",
+    "lede": "Mir häufe dine Engineers, AI für die Büetz z'bruuche, wo würklech drvo profitiert – mit Leitlinie, wo Codequalität, Sicherheit u Reviews sicherstöue.",
     "icon": "../../assets/pragmatic-ai-adoption.svg",
     "challenges": {
       "description": "Gang mit üs uf d'Pragmatic AI Adoption-Reis, we du eini vo dene Usefordrige erläbsch:",

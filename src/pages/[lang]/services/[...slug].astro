@@ -1,12 +1,15 @@
 ---
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import SEO from "../../../components/SEO.astro";
 import StructuredData from "../../../components/StructuredData.astro";
 import Title from "../../../components/Title.astro";
-import CTA from "../../../components/CTA.astro";
+import ServiceForm from "../../../components/ServiceForm.astro";
 import { languages } from "../../../i18n/ui";
 import { useI18n } from "../../../i18n/utils";
+import { getCollectionByLanguage } from "../../../lib/paths";
+import { serviceProof } from "../../../lib/serviceProof";
 import spaceship from "../../../assets/spaceship1.svg";
 import BackLink from "../../../components/BackLink.astro";
 
@@ -31,6 +34,17 @@ const { lang, translatePath, t } = useI18n(Astro.url);
 const title = service.title;
 const description = service.description;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+// Social proof for this service. Ids that no longer exist in the customers
+// collection are simply skipped.
+const proof = serviceProof[service.id];
+const customers = await getCollectionByLanguage("customers", lang);
+const logos = (proof?.logoIds ?? [])
+  .map((id) => customers.find((c) => c.id === id))
+  .filter((c) => c !== undefined);
+const testimonial = proof?.testimonialId
+  ? customers.find((c) => c.id === proof.testimonialId)
+  : undefined;
 ---
 
 <Layout>
@@ -49,76 +63,160 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
       },
     }}
   />
-  <Title {title} subtitle={description} {spaceship} />
+  <Title
+    title={service.heading}
+    subtitle={service.lede}
+    eyebrow={title}
+    {spaceship}
+  />
 
-  <div class="service-page">
+  <div class="service-page" data-service={title}>
     <article>
-      <div class="container">
-        <header class="service-header">
-          <BackLink
-            href={translatePath("/#services")}
-            text={t("nav.backToServices")}
-          />
-        </header>
-      </div>
+      {
+        logos.length > 0 && (
+          <section class="logo-section">
+            <div class="container">
+              <p class="logo-title">{t("services.trustedby")}</p>
+              <div class="logo-strip">
+                {logos.map((customer) => (
+                  <Image
+                    src={customer.data.logo}
+                    alt={customer.data.company}
+                    class="customer-logo"
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        )
+      }
 
       <div class="service-content">
+        <!-- Outcome first: an ad click arrives cold and wants to know what it
+             gets before it reads about its own problems. -->
         <section class="container">
-          <h2>{t("services.challenges")}</h2>
-          <p>{service.challenges.description}</p>
-          <ul>
+          <h2>{t("services.results")}</h2>
+          <div class="result-cards">
             {
-              service.challenges.list.map((item) => (
-                <li>
-                  <strong>{item.title}</strong>: {item.description}
-                </li>
+              service.results.list.map((item) => (
+                <div class="result-card">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
               ))
             }
-          </ul>
+          </div>
         </section>
 
         <div class="bg-dark">
           <section class="container">
-            <h2>{t("services.approach")}</h2>
-            <p>{service.approach.description}</p>
-            <ol>
+            <h2>{t("services.challenges")}</h2>
+            <p>{service.challenges.description}</p>
+            <ul>
               {
-                service.approach.list.map((item) => (
+                service.challenges.list.map((item) => (
                   <li>
                     <strong>{item.title}</strong>: {item.description}
                   </li>
                 ))
               }
-            </ol>
+            </ul>
           </section>
         </div>
 
         <section class="container">
-          <h2>{t("services.results")}</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>{t("services.result")}</th>
-                <th>{t("services.value")}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                service.results.list.map((item) => (
-                  <tr>
-                    <td>{item.title}</td>
-                    <td>{item.description}</td>
-                  </tr>
-                ))
-              }
-            </tbody>
-          </table>
+          <h2>{t("services.approach")}</h2>
+          <p>{service.approach.description}</p>
+          <ol>
+            {
+              service.approach.list.map((item) => (
+                <li>
+                  <strong>{item.title}</strong>: {item.description}
+                </li>
+              ))
+            }
+          </ol>
         </section>
       </div>
     </article>
   </div>
 
-  <CTA service={title} />
+  {
+    testimonial && (
+      <section class="testimonial-section">
+        <div class="container">
+          <blockquote class="testimonial-quote">
+            {`"${testimonial.data.quote}"`}
+          </blockquote>
+          <div class="testimonial-author">
+            {testimonial.data.authorImage && (
+              <Image
+                src={testimonial.data.authorImage}
+                alt=""
+                width={96}
+                height={96}
+                class="author-portrait"
+              />
+            )}
+            <div>
+              <p class="author-name">{testimonial.data.authorName}</p>
+              <p class="author-title">
+                {testimonial.data.authorTitle}, {testimonial.data.company}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <ServiceForm service={title} />
+
+  <!-- Below the form on purpose: it is a way out of the page, so it should not
+       sit in the reading path of someone who arrived from a search ad. -->
+  <footer class="service-footer">
+    <div class="container">
+      <BackLink
+        href={translatePath("/#services")}
+        text={t("nav.backToServices")}
+      />
+    </div>
+  </footer>
+
+  <script>
+    declare global {
+      interface Window {
+        gtag?: (...args: unknown[]) => void;
+      }
+    }
+
+    const service =
+      document.querySelector<HTMLElement>("[data-service]")?.dataset.service ??
+      "unknown";
+
+    // How far people read before leaving, to tell "nobody scrolls past the
+    // hero" apart from "they read everything and still didn't get in touch".
+    const reportedDepths = new Set<number>();
+    const trackScrollDepth = () => {
+      const scrollable = document.body.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const percent = ((window.scrollY / scrollable) * 100) | 0;
+
+      for (const depth of [50, 90]) {
+        if (percent >= depth && !reportedDepths.has(depth)) {
+          reportedDepths.add(depth);
+          window.gtag?.("event", "service_scroll_depth", {
+            percent: depth,
+            service,
+          });
+        }
+      }
+      if (reportedDepths.size === 2) {
+        window.removeEventListener("scroll", trackScrollDepth);
+      }
+    };
+    window.addEventListener("scroll", trackScrollDepth, { passive: true });
+  </script>
 </Layout>
 
 <style>
@@ -144,8 +242,37 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     color: var(--color-secondary);
   }
 
-  .service-header {
-    margin-bottom: 3rem;
+  .service-footer {
+    padding: 3rem 0;
+  }
+
+  .logo-section {
+    padding-bottom: 1rem;
+  }
+
+  .logo-title {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray);
+    margin: 0 0 2rem;
+  }
+
+  .logo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 3rem;
+  }
+
+  .customer-logo {
+    max-height: 2.5rem;
+    max-width: 8rem;
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 
   .service-content {
@@ -180,33 +307,78 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     margin-bottom: 1rem;
   }
 
-  .service-content table {
-    width: 100%;
-    border-collapse: collapse;
+  /* Was a two-column table, which shrinks to 0.875rem on phones — where most
+   ad clicks come from. Cards stack instead of squeezing. */
+  .result-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
     margin: 2rem 0;
-    font-size: 1rem;
   }
 
-  .service-content th,
-  .service-content td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  .service-content th {
+  .result-card {
+    padding: 1.5rem;
     background: var(--color-background-tertiary);
+    border-radius: var(--card-border-radius);
+  }
+
+  .service-content .result-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
     color: var(--color-primary);
-    font-weight: 600;
-    font-size: 1.125rem;
   }
 
-  .service-content td {
-    vertical-align: top;
+  .service-content .result-card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
-  .service-content tbody tr:hover {
-    background: #f9f9f9;
+  .testimonial-section {
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    padding: 4rem 0;
+    margin-top: 4rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .author-portrait {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .author-name {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .author-title {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+
+  @media (min-width: 48rem) {
+    .result-cards {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .service-content a {
@@ -235,13 +407,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
       font-size: 1.5rem;
     }
 
-    .service-content table {
-      font-size: 0.875rem;
-    }
-
-    .service-content th,
-    .service-content td {
-      padding: 0.75rem;
+    .testimonial-quote {
+      font-size: 1.2rem;
     }
   }
 </style>

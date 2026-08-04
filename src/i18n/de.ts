@@ -45,8 +45,12 @@ const de = {
   "services.challenges": "Die Herausforderungen",
   "services.approach": "Unser Ansatz",
   "services.results": "Deine Ergebnisse",
-  "services.result": "Ergebnis",
-  "services.value": "Der Wert, den du bekommst",
+  "services.trustedby": "Diese Arbeit haben wir gemacht für",
+  "services.form.subjectprefix": "Ich interessiere mich für",
+  "services.form.companyplaceholder": "Unternehmen",
+  "services.form.messageplaceholder": "Was möchtest du erreichen? (optional)",
+  "services.form.reassurance":
+    "Kostenlos, unverbindlich, kein Newsletter. Wir antworten innerhalb von zwei Arbeitstagen.",
 
   // Work Section
   "work.title": "Unsere Arbeit",
