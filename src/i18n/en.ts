@@ -44,8 +44,13 @@ const en = {
   "services.challenges": "The Challenges",
   "services.approach": "Our Approach",
   "services.results": "Your Results",
-  "services.result": "Result",
-  "services.value": "The Value You Get",
+  "services.trustedby": "We've done this work for",
+  "services.form.subjectprefix": "I'm interested in",
+  "services.form.companyplaceholder": "Company",
+  "services.form.messageplaceholder":
+    "What are you trying to get done? (optional)",
+  "services.form.reassurance":
+    "No cost, no obligation, no newsletter. We reply within two working days.",
 
   // Work Section
   "work.title": "Discover Our Work",

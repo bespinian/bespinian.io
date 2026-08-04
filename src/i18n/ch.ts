@@ -44,8 +44,12 @@ const ts = {
   "services.challenges": "D Usefordrige",
   "services.approach": "Üse Aasatz",
   "services.results": "Dini Ergäbnis",
-  "services.result": "Ergäbnis",
-  "services.value": "Dr Wärt, wo de bechunsch",
+  "services.trustedby": "Die Arbeit hei mir gmacht für",
+  "services.form.subjectprefix": "I interessiere mi für",
+  "services.form.companyplaceholder": "Firma",
+  "services.form.messageplaceholder": "Was wettsch du erreiche? (optional)",
+  "services.form.reassurance":
+    "Gratis, unverbindlech, keni Newsletter. Mir antworte innerhaub vo zwe Arbeitstäg.",
 
   // Work Section
   "work.title": "Üsi Büetz",

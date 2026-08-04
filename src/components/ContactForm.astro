@@ -11,7 +11,7 @@ const { t } = useI18n(Astro.url);
     <form
       id="contact-form"
       class="contact-form"
-      action="https://formspree.io/contact@bespinian.io"
+      action="https://formspree.io/f/mojgggre"
       method="POST"
     >
       <div class="field">
@@ -58,40 +58,6 @@ const { t } = useI18n(Astro.url);
       </div>
     </form>
   </div>
-
-  <script>
-    declare global {
-      interface Window {
-        gtag?: (...args: unknown[]) => void;
-      }
-    }
-
-    const form = document.getElementById(
-      "contact-form",
-    ) as HTMLFormElement | null;
-
-    form?.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      let submitted = false;
-      const submitOnce = () => {
-        if (submitted) return;
-        submitted = true;
-        form.submit();
-      };
-
-      if (typeof window.gtag === "function") {
-        window.gtag("event", "conversion", {
-          send_to: "AW-18327942303/qHd6CO2SwtMcEJ_puKNE",
-          event_callback: submitOnce,
-        });
-        // Fallback in case gtag is blocked or the callback never fires.
-        setTimeout(submitOnce, 1000);
-      } else {
-        submitOnce();
-      }
-    });
-  </script>
 
   <style>
     #contact-section {

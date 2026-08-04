@@ -3,6 +3,8 @@
     "id": "serverless-application-acceleration",
     "title": "Serverless Application Acceleration",
     "description": "Serverless Application Acceleration is all about shifting your team's focus from infrastructure to creating business value and new ideas by using the power of serverless computing. Get ready for a lean, highly scalable, and cost-saving app model 🚀",
+    "heading": "Ship features instead of managing servers",
+    "lede": "We move your apps onto serverless AWS and Azure services, so your engineers spend their time on your product and you stop paying for infrastructure that sits idle.",
     "icon": "../../assets/serverless-application-acceleration.svg",
     "challenges": {
       "description": "Join us on the Serverless Application Acceleration journey if you face any of these challenges:",
@@ -71,6 +73,8 @@
     "id": "cloud-native-empowerment",
     "title": "Cloud Native Empowerment",
     "description": "Cloud Native Empowerment is all about modernizing your apps and building the knowledge, skills, and culture of your teams. Get ready for modern cloud apps ☁️",
+    "heading": "Modern cloud apps, and a team that can run them",
+    "lede": "We modernize your apps on Kubernetes and the public cloud, and leave your engineers able to operate them confidently without us.",
     "icon": "../../assets/cloud-native-empowerment.svg",
     "challenges": {
       "description": "Join us on the Cloud Native Empowerment journey if you face any of these challenges:",
@@ -139,6 +143,8 @@
     "id": "saas-transformation",
     "title": "SaaS Transformation",
     "description": "SaaS Transformation helps you grow your software into a scalable, secure, and profitable SaaS product. Together, we modernize your setup, delivery model, and organization to build a product business that thrives on automation, speed, and constant value delivery 🔀",
+    "heading": "Turn your software into a SaaS product that scales",
+    "lede": "We rebuild how your product is deployed, operated, and sold, so you can onboard new customers without adding headcount.",
     "icon": "../../assets/saas-transformation.svg",
     "challenges": {
       "description": "Join us on the SaaS Transformation journey if you face any of these challenges:",
@@ -207,6 +213,8 @@
     "id": "pragmatic-ai-adoption",
     "title": "Pragmatic AI Adoption",
     "description": "Pragmatic AI Adoption helps your teams use AI where it truly adds value — increasing focus, speed, and quality without creating chaos or risk. Together, we reduce mental load, streamline workflows, and ensure AI is used safely and well across all skill levels 🤖",
+    "heading": "Put AI to work where it actually pays off",
+    "lede": "We help your engineers use AI on the work that genuinely benefits from it, with the guardrails that keep code quality, security, and review standards intact.",
     "icon": "../../assets/pragmatic-ai-adoption.svg",
     "challenges": {
       "description": "Join us on the Pragmatic AI Adoption journey if you face any of these challenges:",

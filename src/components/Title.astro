@@ -6,16 +6,20 @@ import cloudDarkMedium from "../assets/cloud-dark-medium.svg";
 interface Props {
   title: string;
   subtitle?: string;
+  // Small line above the headline. On landing pages it carries the phrase the
+  // visitor searched or clicked on, while the headline leads with the outcome.
+  eyebrow?: string;
   spaceship?: ImageMetadata;
 }
 
-const { title, subtitle, spaceship } = Astro.props;
+const { title, subtitle, eyebrow, spaceship } = Astro.props;
 ---
 
 <section id="container">
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
   <h1>{title}</h1>
   <p>{subtitle}</p>
-  {spaceship && <img id="spaceship" src={spaceship.src} alt="Spaceship" />}
+  {spaceship && <img id="spaceship" src={spaceship.src} alt="" />}
   <img id="cloud-dark-medium" src={cloudDarkMedium.src} alt="" />
   <img id="cloud-large" src={cloudLarge.src} alt="" />
 </section>
@@ -27,6 +31,21 @@ const { title, subtitle, spaceship } = Astro.props;
     background-color: var(--color-background-primary);
     color: var(--color-secondary);
     overflow: hidden;
+  }
+
+  .eyebrow {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.9;
+    z-index: 100;
+  }
+
+  .eyebrow + h1 {
+    margin-top: 0.75rem;
   }
 
   h1 {

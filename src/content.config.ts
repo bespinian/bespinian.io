@@ -62,8 +62,15 @@ const services = defineCollection({
     z.array(
       z.object({
         id: z.string(),
+        // Keyword-shaped, for search, ads and the service card. The landing
+        // page leads with `heading` instead and keeps `title` as the eyebrow,
+        // so an ad click still recognizes the phrase it clicked on.
         title: z.string(),
+        // Long form, for meta descriptions and social previews.
         description: z.string(),
+        // Outcome-shaped H1 and a short lede, for the landing page hero.
+        heading: z.string(),
+        lede: z.string(),
         icon: image(),
         challenges: z.object({
           description: z.string(),

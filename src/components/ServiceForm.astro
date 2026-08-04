@@ -1,0 +1,218 @@
+---
+import { useI18n } from "../i18n/utils";
+
+interface Props {
+  service: string;
+}
+
+const { service } = Astro.props;
+
+const { lang, t } = useI18n(Astro.url);
+
+const subject = `${t("services.form.subjectprefix")} ${service}`;
+---
+
+<section id="service-form">
+  <div class="container">
+    <h2 class="section-title">{t("cta.interested")} {service}?</h2>
+
+    <form
+      id="service-contact-form"
+      action="https://formspree.io/f/mvkppzno"
+      method="POST"
+    >
+      <!-- Tells us which service page the request came from, even if the
+           visitor rewrites the subject line. -->
+      <input type="hidden" name="service" value={service} />
+      <input type="hidden" name="language" value={lang} />
+      <input type="text" name="_gotcha" class="gotcha" tabindex="-1" />
+
+      <div class="field">
+        <input
+          class="input"
+          name="name"
+          placeholder={t("contact.form.nameplaceholder")}
+          aria-label={t("contact.form.nameplaceholder")}
+          autocomplete="name"
+          required
+        />
+      </div>
+      <div class="field">
+        <input
+          class="input"
+          type="email"
+          name="email"
+          placeholder={t("contact.form.emailplaceholder")}
+          aria-label={t("contact.form.emailplaceholder")}
+          autocomplete="email"
+          required
+        />
+      </div>
+      <div class="field">
+        <input
+          class="input"
+          name="company"
+          placeholder={t("services.form.companyplaceholder")}
+          aria-label={t("services.form.companyplaceholder")}
+          autocomplete="organization"
+          required
+        />
+      </div>
+      <div class="field">
+        <!-- Formspree uses `_subject` as the mail subject, so prefilling it
+             keeps the service visible in the inbox while staying editable. -->
+        <input
+          class="input"
+          name="_subject"
+          value={subject}
+          placeholder={t("contact.form.subjectplaceholder")}
+          aria-label={t("contact.form.subjectplaceholder")}
+          required
+        />
+      </div>
+      <div class="field">
+        <!-- Optional: a free-text box is the field people abandon on, and we
+             already know which service they are asking about. -->
+        <textarea
+          class="textarea"
+          name="message"
+          placeholder={t("services.form.messageplaceholder")}
+          aria-label={t("services.form.messageplaceholder")}
+          rows="4"></textarea>
+      </div>
+      <div class="field">
+        <button type="submit" class="submit-button">
+          {t("contact.form.sendbuttonlabel")}
+        </button>
+        <p class="reassurance">{t("services.form.reassurance")}</p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    declare global {
+      interface Window {
+        gtag?: (...args: unknown[]) => void;
+      }
+    }
+
+    const form = document.getElementById(
+      "service-contact-form",
+    ) as HTMLFormElement | null;
+
+    const service = form?.querySelector<HTMLInputElement>(
+      'input[name="service"]',
+    )?.value;
+
+    // Started but not submitted is the gap worth seeing: it separates "the page
+    // never convinced anyone" from "the form itself loses them".
+    form?.addEventListener(
+      "focusin",
+      () => {
+        window.gtag?.("event", "service_form_start", { service });
+      },
+      { once: true },
+    );
+
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      let submitted = false;
+      const submitOnce = () => {
+        if (submitted) return;
+        submitted = true;
+        form.submit();
+      };
+
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-18327942303/qHd6CO2SwtMcEJ_puKNE",
+          event_callback: submitOnce,
+        });
+        // Fallback in case gtag is blocked or the callback never fires.
+        setTimeout(submitOnce, 1000);
+      } else {
+        submitOnce();
+      }
+    });
+  </script>
+
+  <style>
+    #service-form {
+      background-color: var(--color-background-tertiary);
+      padding: 4rem 2rem 5rem;
+      scroll-margin-top: 2rem;
+    }
+
+    .container {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 0 3rem;
+      color: var(--color-background-primary);
+      text-align: center;
+    }
+
+    .field {
+      margin-bottom: 1.5rem;
+    }
+
+    /* Honeypot: hidden from people, tempting to bots. */
+    .gotcha {
+      display: none;
+    }
+
+    .input,
+    .textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: var(--font-lato);
+      transition: border-color 0.3s ease;
+    }
+
+    .input:focus,
+    .textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+
+    .textarea {
+      resize: vertical;
+      min-height: 6rem;
+    }
+
+    .submit-button {
+      width: 100%;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      font-family: var(--font-lato);
+      color: var(--color-secondary);
+      background-color: var(--color-primary);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: var(--color-background-primary);
+    }
+
+    .reassurance {
+      margin: 1rem 0 0;
+      text-align: center;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--color-gray);
+    }
+  </style>
+</section>
