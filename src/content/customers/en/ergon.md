@@ -1,7 +1,7 @@
 ---
 title: Enterprise Secrets Management with HCP Vault Dedicated
 company: Ergon Informatik AG
-logo: TODO
+logo: ../../../assets/customers/ergon.svg
 pubDate: 2026-02-27
 results:
   - |
@@ -17,7 +17,7 @@ results:
 quote: "TODO"
 authorName: TODO
 authorTitle: TODO
-authorImage: TODO
+authorImage: ../../../assets/customers/ergon.svg
 ---
 
 ## Customer
