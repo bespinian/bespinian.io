@@ -1,7 +1,7 @@
 ---
 title: Deploying Zabbix Monitoring on OpenShift
 company: Semax
-logo: ../../assets/customers/semax.svg
+logo: ../../../assets/customers/semax.png
 pubDate: 2025-11-21
 results:
   - Deployed Zabbix on existing OpenShift cluster
