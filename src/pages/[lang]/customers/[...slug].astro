@@ -103,6 +103,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     width: 100%;
     max-height: 10rem;
     margin: var(--spacing-xl);
+    object-fit: scale-down;
+    object-position: center;
   }
 
   .results-highlight {
