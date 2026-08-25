@@ -95,7 +95,13 @@ export async function getCollectionStaticPaths<T extends CollectionKey>(
 
         return {
           params: { lang, slug: baseSlug },
-          props: { [getSingularName(collectionName)]: item },
+          props: {
+            [getSingularName(collectionName)]: item,
+            // Which languages this entry is actually written in. A page that
+            // only falls back to English must not tell search engines it is a
+            // translation, or the three copies compete with each other.
+            translatedLangs: Array.from(langItems.keys()),
+          },
         };
       }),
   );

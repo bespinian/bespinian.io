@@ -1,5 +1,5 @@
 ---
-import { languages } from "../i18n/ui";
+import { languages, defaultLang } from "../i18n/ui";
 
 interface Props {
   title: string;
@@ -13,6 +13,13 @@ interface Props {
   tags?: string[];
   noindex?: boolean;
   lang?: string;
+  // Languages this page genuinely exists in. Anything not listed serves the
+  // default-language text and is treated as a duplicate of it. Defaults to all
+  // languages, which is right for pages built from the i18n dictionaries.
+  translatedLangs?: string[];
+  // Absolute path to point the canonical at, for pages reachable under more
+  // than one URL. Overrides the self-referencing default.
+  canonicalPath?: string;
 }
 
 const {
@@ -27,10 +34,34 @@ const {
   tags,
   noindex = false,
   lang = "en",
+  translatedLangs = Object.keys(languages),
+  canonicalPath,
 } = Astro.props;
 
-// Get the canonical URL from the current page
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// Extract language from URL path
+const pathParts = Astro.url.pathname.split("/").filter(Boolean);
+const hasTrailingSlash = Astro.url.pathname.endsWith("/");
+
+// Build a URL for this same page in another language. Trailing slashes are
+// preserved: canonical and hreflang have to agree exactly, or Google discards
+// the annotation.
+const getAlternateUrl = (language: string) => {
+  const pathWithoutLang = pathParts.slice(1).join("/");
+  const suffix = pathWithoutLang ? `/${pathWithoutLang}` : "";
+  const path = `/${language}${suffix}${hasTrailingSlash ? "/" : ""}`;
+  return new URL(path, Astro.site).toString();
+};
+
+// A page that only exists in the default language is served under every
+// language prefix. Pointing those copies at the default-language URL keeps the
+// ranking signals on one page instead of splitting them three ways.
+const isUntranslatedCopy = !translatedLangs.includes(lang);
+
+const canonicalURL = canonicalPath
+  ? new URL(canonicalPath, Astro.site).toString()
+  : isUntranslatedCopy
+    ? getAlternateUrl(defaultLang)
+    : new URL(Astro.url.pathname, Astro.site).toString();
 
 // Default social image if none provided
 const socialImage = image
@@ -40,17 +71,12 @@ const socialImage = image
 // Full title with site name
 const fullTitle = title.includes("bespinian") ? title : `${title} | bespinian`;
 
-// Extract language from URL path
-const pathParts = Astro.url.pathname.split("/").filter(Boolean);
-
-// Generate alternate URLs for hreflang
-const getAlternateUrl = (language: string) => {
-  const pathWithoutLang = pathParts.slice(1).join("/");
-  return new URL(
-    `/${language}${pathWithoutLang ? "/" + pathWithoutLang : ""}`,
-    Astro.site,
-  ).toString();
-};
+// hreflang describes a set of genuine translations. On an untranslated copy it
+// would only contradict the canonical, so it is left off entirely and the
+// canonical target carries the cluster.
+const alternates = isUntranslatedCopy
+  ? []
+  : translatedLangs.filter((language) => language in languages);
 ---
 
 <!-- Primary Meta Tags -->
@@ -58,14 +84,18 @@ const getAlternateUrl = (language: string) => {
 <meta name="description" content={description} />
 <meta name="author" content="bespinian" />
 <meta name="theme-color" content="#3273dc" />
-{noindex && <meta name="robots" content="noindex, nofollow" />}
+{
+  /* `follow` on purpose: these pages are kept out of the index, but the links
+    they carry into the real content should still be crawled. */
+}
+{noindex && <meta name="robots" content="noindex, follow" />}
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Hreflang Tags for Internationalization -->
 {
-  Object.keys(languages).map((language) => (
+  alternates.map((language) => (
     <link
       rel="alternate"
       hreflang={language === "ch" ? "de-CH" : language}
@@ -73,7 +103,15 @@ const getAlternateUrl = (language: string) => {
     />
   ))
 }
-<link rel="alternate" hreflang="x-default" href={getAlternateUrl("en")} />
+{
+  alternates.includes(defaultLang) && (
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={getAlternateUrl(defaultLang)}
+    />
+  )
+}
 
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content={canonicalURL} />

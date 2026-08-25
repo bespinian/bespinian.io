@@ -60,7 +60,7 @@ bespinian spielte eine Schlüsselrolle in den folgenden Bereichen:
 bespinian richtete die Infrastruktur von BLOX ein, indem mehrere separate
 Umgebungen mit Terraform in AWS bereitgestellt wurden. Diese Infrastruktur
 musste resilient, einfach zu warten und kosteneffizient sein. Durch die Wahl
-hochgradig verwalteter serverloser Technologien wie AWS Lambda, Amazon DynamoDB
+hochgradig verwalteter serverless Technologien wie AWS Lambda, Amazon DynamoDB
 oder Amazon S3 für verschiedene Teile der Applikation konnte ein Grossteil der
 Infrastruktur-Setup- und Wartungsarbeit an den Cloud-Provider delegiert werden.
 Die Verwendung von Infrastructure as Code ermöglicht es uns, mehrere Umgebungen

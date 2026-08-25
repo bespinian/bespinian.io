@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
+import StructuredData from "../../components/StructuredData.astro";
 import Link from "../../components/Link.astro";
 import { useI18n } from "../../i18n/utils";
 import { getLanguagePaths, getCollectionByLanguage } from "../../lib/paths";
@@ -44,6 +45,14 @@ const logos = LOGO_IDS.map((id) => customers.find((c) => c.id === id)).filter(
 );
 const testimonial = customers.find((c) => c.id === TESTIMONIAL_ID);
 
+// Single source for the FAQ list and its FAQPage markup, so the two can't drift
+// apart. Answers shown on the page but missing from the schema are what gets a
+// rich result revoked.
+const faq = ([1, 2, 3, 4] as const).map((n) => ({
+  question: t(`workshop.faq.q${n}`),
+  answer: t(`workshop.faq.a${n}`),
+}));
+
 const membersEntry = await getEntry("members", "all");
 if (!membersEntry) {
   throw new Error("members not found");
@@ -55,6 +64,7 @@ const hosts = HOST_NAMES.map((name) =>
 
 <Layout minimalNav>
   <SEO slot="head" {title} {description} {lang} />
+  <StructuredData slot="head" schema={{ type: "FAQPage", questions: faq }} />
 
   <div class="page-content">
     <section id="hero">
@@ -196,14 +206,14 @@ const hosts = HOST_NAMES.map((name) =>
       <div class="container">
         <h2 class="section-title">{t("workshop.faq.title")}</h2>
         <dl class="faq">
-          <dt>{t("workshop.faq.q1")}</dt>
-          <dd>{t("workshop.faq.a1")}</dd>
-          <dt>{t("workshop.faq.q2")}</dt>
-          <dd>{t("workshop.faq.a2")}</dd>
-          <dt>{t("workshop.faq.q3")}</dt>
-          <dd>{t("workshop.faq.a3")}</dd>
-          <dt>{t("workshop.faq.q4")}</dt>
-          <dd>{t("workshop.faq.a4")}</dd>
+          {
+            faq.map((item) => (
+              <>
+                <dt>{item.question}</dt>
+                <dd>{item.answer}</dd>
+              </>
+            ))
+          }
         </dl>
       </div>
     </section>

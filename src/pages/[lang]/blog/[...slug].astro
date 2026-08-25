@@ -6,13 +6,14 @@ import { getCollectionStaticPaths } from "../../../lib/paths";
 import { useI18n } from "../../../i18n/utils";
 import { formatDate } from "../../../lib/formatters";
 import Tag from "../../../components/Tag.astro";
+import CtaBanner from "../../../components/CtaBanner.astro";
 import rss from "../../../assets/rss.svg";
 
 export async function getStaticPaths() {
   return getCollectionStaticPaths("blog");
 }
 
-const { post } = Astro.props;
+const { post, translatedLangs } = Astro.props;
 const { Content } = await render(post);
 
 const { lang, translatePath, t } = useI18n(Astro.url);
@@ -35,6 +36,7 @@ const ogImage = (await getImage({ src: post.data.image, width: 1200 })).src;
   {description}
   {lang}
   backLink={{ href: translatePath("/blog"), text: t("nav.backToBlog") }}
+  breadcrumb={{ name: t("blog.title"), href: translatePath("/blog") }}
   meta={[
     { label: post.data.author },
     { label: formattedDate, datetime: post.data.pubDate.toISOString() },
@@ -46,6 +48,7 @@ const ogImage = (await getImage({ src: post.data.image, width: 1200 })).src;
     tags: post.data.tags,
     image: ogImage,
     imageAlt: post.data.title,
+    translatedLangs,
   }}
   structuredData={{
     type: "BlogPosting",
@@ -76,7 +79,16 @@ const ogImage = (await getImage({ src: post.data.image, width: 1200 })).src;
   </div>
 
   <Content />
-  <div class="actions">
+
+  <!-- Both live in the footer slot rather than the content slot: the markdown
+       image rules in the layout style every `img` inside `.content-body`, which
+       would resize the button and RSS icons along with them. -->
+
+  <!-- Blog posts are where most organic traffic lands, and until now the only
+       way onward was back to the listing. -->
+  <CtaBanner slot="footer" source="blog" />
+
+  <div slot="footer" class="actions">
     <a href={translatePath("/blog")} class="btn">{t("blog.allPosts")}</a>
     <a href="/rss.xml" class="btn rss">
       <img width="10" src={rss.src} alt="" />

@@ -23,6 +23,16 @@ const en = {
   "cta.contactUs": "Contact us",
   "cta.interested": "Interested in your own",
 
+  // Closing CTA, shown at the end of pages people reach from search
+  "cta.banner.title": "Get the same plan for your own applications",
+  "cta.banner.description":
+    "90 minutes with senior cloud engineers. You leave with your applications ranked, cost estimates, and a first step small enough to start next week.",
+  "cta.banner.reassurance":
+    "Free, no obligation, no newsletter. We reply within two working days.",
+  "cta.banner.customer.title": "Want results like these?",
+  "cta.banner.customer.description":
+    "Every engagement on this page started with one session. Tell us about your applications and we'll write you the same kind of plan.",
+
   // Hero Section
   "hero.title1": "Cut Infrastructure Costs,",
   "hero.title2": "Ship Features Faster",
@@ -75,6 +85,13 @@ const en = {
   // Footer
   "footer.copyright": "© bespinian {year}",
   "footer.imprint": "Imprint",
+  "footer.tagline":
+    "Swiss cloud-native engineers. We modernize applications on AWS, Azure and Kubernetes.",
+  "footer.services": "Services",
+  "footer.company": "Company",
+  "footer.contact": "Contact",
+  "footer.follow": "Follow",
+  "footer.office": "Bern Office",
 
   // Imprint Page
   "imprint.title": "Imprint",
@@ -100,6 +117,7 @@ const en = {
     "See how we helped over 120 companies modernize their apps to the cloud.",
   "customers.empty": "No customers yet. Check back soon!",
   "customers.success": "succeeded with bespinian:",
+  "customers.keyResults": "Key Results",
 
   // Jobs Page
   "jobs.title": "Jobs",
@@ -144,6 +162,8 @@ const en = {
   "contact.form.subjectplaceholder": "Subject",
   "contact.form.messageplaceholder": "Your Message",
   "contact.form.sendbuttonlabel": "Send Message",
+  "contact.form.reassurance":
+    "We reply within two working days. No newsletter, no follow-up sequence.",
 
   // Workshop Page
   "workshop.title": "Free Cloud Readiness Workshop",

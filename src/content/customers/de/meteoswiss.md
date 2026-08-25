@@ -47,7 +47,7 @@ Daten, spezialisierter Applikationen und Automatisierungslösungen zu
 modernisieren, geo-redundant zu machen und in die Cloud zu migrieren (primär AWS
 und das Swiss National Supercomputing Centre, [CSCS](https://www.cscs.ch/)).
 Einige Komponenten, die bereits containerisiert sind, können einfach auf
-serverlosen Plattformen deployed werden. Andere, die auf traditioneller
+serverless Plattformen deployed werden. Andere, die auf traditioneller
 VM-basierter Infrastruktur laufen, benötigen erhebliche Modernisierung, bevor
 sie auf AWS betriebsbereit sind.
 

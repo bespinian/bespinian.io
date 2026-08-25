@@ -30,7 +30,7 @@ Verkehrsunternehmen in der Schweiz zählen zu ihren Kunden.
 BERNMOBIL betreibt einen OpenShift Cluster im eigenen Rechenzentrum und stellt
 darauf diverse Applikationen für den internen und externen Gebrauch zur
 Verfügung. Bisher wurden Konfigurationsänderungen manuell über das OpenShift UI
-vorgenommen – ein Ansatz, der mit wachsender Komplexität nicht skaliert.
+vorgenommen - ein Ansatz, der mit wachsender Komplexität nicht skaliert.
 
 ## Projektziel
 
@@ -42,7 +42,7 @@ automatisierten, reproduzierbaren Deployment-Prozess mit Argo CD.
 ### Unterstützung Migration öV Plus Website
 
 bespinian begleitete das BERNMOBIL-Team bei der Migration der öV Plus Website
-auf die OpenShift-Plattform. Dabei stand der Wissenstransfer im Vordergrund –
+auf die OpenShift-Plattform. Dabei stand der Wissenstransfer im Vordergrund -
 durch aktive Mitarbeit im Projekt lernte das Team die Best Practices für
 containerisierte Deployments auf OpenShift direkt in der Praxis kennen.
 

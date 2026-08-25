@@ -65,10 +65,19 @@ export interface BreadcrumbListSchema {
   }>;
 }
 
+export interface FAQPageSchema {
+  type: "FAQPage";
+  questions: Array<{
+    question: string;
+    answer: string;
+  }>;
+}
+
 export type Schema =
   | BlogPostingSchema
   | OrganizationSchema
   | ArticleSchema
   | JobPostingSchema
   | ServiceSchema
-  | BreadcrumbListSchema;
+  | BreadcrumbListSchema
+  | FAQPageSchema;

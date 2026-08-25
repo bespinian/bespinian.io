@@ -1,0 +1,80 @@
+---
+// Organization and WebSite markup for every page. Kept separate from
+// StructuredData.astro, which describes a single page: this describes the
+// company and is what search engines assemble a knowledge panel from.
+//
+// The addresses have to match the imprint and any external listing (Google
+// Business Profile, LinkedIn) character for character — inconsistent NAP is
+// what stops a local business from ranking for "cloud consulting Bern".
+const site = Astro.site?.toString() ?? "https://bespinian.io/";
+const url = (path: string) => new URL(path, site).toString();
+
+const organization = {
+  "@type": "Organization",
+  "@id": url("/#organization"),
+  name: "bespinian",
+  legalName: "bespinian GmbH",
+  url: site,
+  logo: {
+    "@type": "ImageObject",
+    url: url("/logo.svg"),
+  },
+  image: url("/og-default.jpg"),
+  description:
+    "Swiss cloud-native consultancy in Bern. We modernize applications on AWS, Azure and Kubernetes, cut infrastructure costs and help engineering teams ship faster.",
+  email: "info@bespinian.io",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Sonnenweg 9",
+    postalCode: "3073",
+    addressLocality: "Gümligen",
+    addressRegion: "BE",
+    addressCountry: "CH",
+  },
+  location: {
+    "@type": "Place",
+    name: "bespinian Bern",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Kramgasse 68",
+      postalCode: "3011",
+      addressLocality: "Bern",
+      addressRegion: "BE",
+      addressCountry: "CH",
+    },
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "Switzerland",
+  },
+  knowsLanguage: ["de-CH", "de", "en"],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "sales",
+    email: "info@bespinian.io",
+    availableLanguage: ["German", "English"],
+    areaServed: "CH",
+  },
+  sameAs: [
+    "https://github.com/bespinian",
+    "https://www.linkedin.com/company/bespinian",
+    "https://www.youtube.com/@bespinian-io",
+  ],
+};
+
+const website = {
+  "@type": "WebSite",
+  "@id": url("/#website"),
+  url: site,
+  name: "bespinian",
+  publisher: { "@id": url("/#organization") },
+  inLanguage: ["en", "de", "de-CH"],
+};
+
+const graph = {
+  "@context": "https://schema.org",
+  "@graph": [organization, website],
+};
+---
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(graph)} />

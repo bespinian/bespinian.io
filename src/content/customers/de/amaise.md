@@ -1,10 +1,10 @@
 ---
-title: Serverlose AWS-Infrastruktur für KI-Schadenplattform
+title: Serverless AWS-Infrastruktur für KI-Schadenplattform
 company: amaise
 logo: ../../../assets/customers/amaise.svg
 pubDate: 2024-08-09
 results:
-  - Serverlose Architektur implementiert, die Betriebskosten deutlich reduziert
+  - Serverless Architektur implementiert, die Betriebskosten deutlich reduziert
   - Nahezu kein Wartungsaufwand, sodass sich das Team auf die KI-Entwicklung
     konzentrieren kann
   - Flexible Infrastruktur, die automatisch mit den Workload-Anforderungen
@@ -28,7 +28,7 @@ authorImage: ../../../assets/customers/amaise-markus.jpeg
 KI-gestützte Claims-Intelligence-Plattform für die Versicherungsbranche
 entwickelt hat. Die Plattform hilft Versicherern, Personenschadenfälle
 schneller, präziser und kostengünstiger zu bearbeiten, indem sie komplette
-Fallakten analysiert – nicht nur medizinische Unterlagen. Die agentische
+Fallakten analysiert - nicht nur medizinische Unterlagen. Die agentische
 KI-Technologie von amaise wandelt unstrukturierte medizinische und rechtliche
 Dokumente in verwertbare Erkenntnisse um und ermöglicht Schadenteams
 Effizienzsteigerungen von bis zu 84% sowie deutlich kürzere Abwicklungszeiten.
@@ -73,11 +73,11 @@ Durch einen Serverless-First-Ansatz haben wir eine Architektur entworfen, die
 automatisch mit der Nachfrage skaliert und die Notwendigkeit der
 Serververwaltung eliminiert.
 
-### Serverlose Architektur
+### Serverless Architektur
 
-Der serverlose Ansatz war zentral für das Infrastrukturdesign. Diese Architektur
+Der serverless Ansatz war zentral für das Infrastrukturdesign. Diese Architektur
 ermöglicht es den KI-Workloads von amaise, elastisch basierend auf dem
-Verarbeitungsbedarf zu skalieren – ob ein einzelnes Dokument oder Tausende von
+Verarbeitungsbedarf zu skalieren - ob ein einzelnes Dokument oder Tausende von
 Seiten über mehrere Schadenfälle hinweg bearbeitet werden. Bei Nichtnutzung
 sinken die Kosten auf nahezu null, was besonders wertvoll für ein wachsendes
 Startup ist.

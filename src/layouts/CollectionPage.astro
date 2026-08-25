@@ -13,6 +13,7 @@ interface Props {
   isEmpty?: boolean;
   emptyMessage?: string;
   backLink?: { href: string; text: string };
+  noindex?: boolean;
 }
 
 const {
@@ -24,11 +25,12 @@ const {
   isEmpty,
   emptyMessage,
   backLink,
+  noindex = false,
 } = Astro.props;
 ---
 
 <Layout>
-  <SEO slot="head" title={pageTitle} {description} {lang} />
+  <SEO slot="head" title={pageTitle} {description} {lang} {noindex} />
   <Title title={title} subtitle={subtitle} />
   <div class="collection-page">
     <div class="container">

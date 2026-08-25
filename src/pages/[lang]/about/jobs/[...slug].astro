@@ -8,7 +8,7 @@ export async function getStaticPaths() {
   return getCollectionStaticPaths("jobs");
 }
 
-const { job } = Astro.props;
+const { job, translatedLangs } = Astro.props;
 const { Content } = await render(job);
 
 const { lang, translatePath, t } = useI18n(Astro.url);
@@ -31,7 +31,9 @@ if (job.data.employment) metaItems.push({ label: job.data.employment });
     href: translatePath("/about/jobs"),
     text: t("nav.backToJobs"),
   }}
+  breadcrumb={{ name: t("jobs.title"), href: translatePath("/about/jobs") }}
   meta={metaItems}
+  seoProps={{ translatedLangs }}
   structuredData={{
     type: "JobPosting",
     title: job.data.title,

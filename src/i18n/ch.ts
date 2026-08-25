@@ -23,11 +23,21 @@ const ts = {
   "cta.contactUs": "Kontaktier üs",
   "cta.interested": "Interessiert di",
 
+  // Closing CTA, shown at the end of pages people reach from search
+  "cta.banner.title": "Hol dir dä glich Plan für dini Applikatione",
+  "cta.banner.description":
+    "90 Minute mit erfahrene Cloud Engineers. Du gasch use mit ere Rangliste vo dine Applikatione, Konteschätzige u me erschte Schritt, wo chli gnue isch, für nächschti Wuche z starte.",
+  "cta.banner.reassurance":
+    "Gratis, unverbindlech, keni Newsletter. Mir antworte innerhaub vo zwe Arbeitstäg.",
+  "cta.banner.customer.title": "Wottsch settigi Resultat o?",
+  "cta.banner.customer.description":
+    "Jedes Projäkt uf dere Site het mit ere einzige Session agfange. Verzeu üs vo dine Applikatione u mir schriibe dir dä glich Plan.",
+
   // Hero Section
   "hero.title1": "Infrastrukturchöste Sänke,",
   "hero.title2": "Features Schneuer Lifere",
   "hero.description":
-    "Üsi Schwiizer Engineers häufe dr, dini Apps uf AWS, Azure u Kubernetes z modernisiere mit Serverless u KI – mir sänke Choschte, liefere schneuer u steigere d Produktivität vo dim Team.",
+    "Üsi Schwiizer Engineers häufe dr, dini Apps uf AWS, Azure u Kubernetes z modernisiere mit Serverless u KI - mir sänke Choschte, liefere schneuer u steigere d Produktivität vo dim Team.",
 
   // Why Us Section
   "whyus.belief": "Mir gloube, dass Apps Innovation u Wachstum voratrybe söue.",
@@ -69,16 +79,23 @@ const ts = {
     "Mir bügle mit modärne Cloud-Plattforme wie AWS, Azure u Kubernetes.",
   "whatwedo.whoweare": "Wär mir si",
   "whatwedo.team.description":
-    "Mir si es Team vo erfahrne Engineers, wo mit Lideschaft modärni Cloud-Lösige entwickle. Mit Sitz i dr Schwiiz hei mir starchi technischi Fähigkeite u verstöh gschäftlechi Aforderige. Mir modernisiere nid nur dini Apps – mir verändere d Arbeitswiis vo dine Teams.",
+    "Mir si es Team vo erfahrne Engineers, wo mit Lideschaft modärni Cloud-Lösige entwickle. Mit Sitz i dr Schwiiz hei mir starchi technischi Fähigkeite u verstöh gschäftlechi Aforderige. Mir modernisiere nid nur dini Apps - mir verändere d Arbeitswiis vo dine Teams.",
 
   // Footer
   "footer.copyright": "© bespinian {year}",
+  "footer.tagline":
+    "Schwiizer Cloud-Native Engineers. Mir modernisiere Applikatione uf AWS, Azure u Kubernetes.",
+  "footer.services": "Services",
+  "footer.company": "Firma",
+  "footer.contact": "Kontakt",
+  "footer.follow": "Folge",
+  "footer.office": "Büro Bärn",
   "footer.imprint": "Impressum",
 
   // Imprint Page
   "imprint.title": "Impressum",
   "imprint.description":
-    "Kontakt- u Rächtsinformatione zu bespinian – Cloud-native Beratig u Software-Entwicklig i dr Schwiiz.",
+    "Kontakt- u Rächtsinformatione zu bespinian - Cloud-native Beratig u Software-Entwicklig i dr Schwiiz.",
   "imprint.contact": "Kontaktinformatione",
   "imprint.email": "E-Mail: info@bespinian.io",
   "imprint.headquarters": "Houptsitz",
@@ -99,6 +116,7 @@ const ts = {
     "Erfahr, wie mir über 120 Firme ghulfe hei, ihri Apps id Cloud z bringe.",
   "customers.empty": "No keni Chunde. Lueg baud wieder verbi!",
   "customers.success": "het Erfoug mit bespinian:",
+  "customers.keyResults": "Wichtigschti Resultat",
 
   // Jobs Page
   "jobs.title": "Jobs",
@@ -120,7 +138,7 @@ const ts = {
 
   "about.team.title": "Team",
   "about.team.subtitle":
-    "Mir häufe Teams, starchi Cloud-Plattforme besser z nutze. Üsi Engineers gäh dr nid nur Lösige – si häufe dine Teams, erfolgriich z sii.",
+    "Mir häufe Teams, starchi Cloud-Plattforme besser z nutze. Üsi Engineers gäh dr nid nur Lösige - si häufe dine Teams, erfolgriich z sii.",
 
   "about.technologies.title": "Technologiä",
   "about.technologies.description":
@@ -133,7 +151,7 @@ const ts = {
   // Contact Page
   "contact.title": "Kontakt",
   "contact.subtitle":
-    "Hesch e Frag? Bruchsch es Agebot? Luscht ufne Kafi? Chum verby oder schrib üs e Nachricht – mir mäudenis bi dir.",
+    "Hesch e Frag? Bruchsch es Agebot? Luscht ufne Kafi? Chum verby oder schrib üs e Nachricht - mir mäudenis bi dir.",
   "contact.location.title": "Bsuech Üs",
   "contact.location.mainOffice":
     "Üses Büro isch ir nechi vom Zytglogge im Härze vor Autstadt vo Bärn",
@@ -143,6 +161,8 @@ const ts = {
   "contact.form.subjectplaceholder": "Beträff",
   "contact.form.messageplaceholder": "Dini Nachricht",
   "contact.form.sendbuttonlabel": "Nachricht schicke",
+  "contact.form.reassurance":
+    "Mir antworte innerhaub vo zwe Arbeitstäg. Ke Newsletter, keni Follow-up-Sequenz.",
 
   // Workshop Page
   "workshop.title": "Gratis Cloud Readiness Workshop",
@@ -159,7 +179,7 @@ const ts = {
   "workshop.trustedby.title": "Die Arbeit hei mir gmacht für",
   "workshop.whothisfor.title": "Das isch öppis für di, we",
   "workshop.whothisfor.item1":
-    "Du z viu für Infrastruktur zahlsch, wode nid chasch abeskaliere – u d Rächnig geit immer nume ufe",
+    "Du z viu für Infrastruktur zahlsch, wode nid chasch abeskaliere - u d Rächnig geit immer nume ufe",
   "workshop.whothisfor.item2":
     "Du modernisiere wotsch, aber nid weisch, bi welere Applikation afah",
   "workshop.whothisfor.item3":
@@ -168,7 +188,7 @@ const ts = {
   "workshop.outcome.item1":
     "Dini Applikatione priorisiert nach däm, wie viu e Modernisierig würd spare",
   "workshop.outcome.item2":
-    "E Empfählig – AWS, Azure, Kubernetes oder Serverless – u wieso di andere nid zu dir passe",
+    "E Empfählig - AWS, Azure, Kubernetes oder Serverless - u wieso di andere nid zu dir passe",
   "workshop.outcome.item3":
     "Choschteschätzige u ne realistischi Amortisationsduur",
   "workshop.outcome.item4":
@@ -177,20 +197,20 @@ const ts = {
     "E konkrete erschte Schritt, chlii gnue, um nächscht Wuche z schtarte",
   "workshop.hosts.title": "Mit wäm du redsch",
   "workshop.hosts.description":
-    "Erfahrni Cloud Engineers führe d Session – genau di Lüt, wo o d Arbeit würde mache.",
-  "workshop.swiss.title": "Schwiizerisch – u das bliibt so",
+    "Erfahrni Cloud Engineers führe d Session - genau di Lüt, wo o d Arbeit würde mache.",
+  "workshop.swiss.title": "Schwiizerisch - u das bliibt so",
   "workshop.swiss.description":
     "Mir si ne Schwiizer Firma mit Sitz z Bärn. Dini Date u d Engineers, wo dranne schaffe, bliibe i dr Schwiz.",
   "workshop.swiss.item1":
     "Dini Date bliibe i dr Schwiz, i schwiizerische oder europäische Cloud-Regione",
   "workshop.swiss.item2":
-    "Üsi Engineers bliibe i dr Schwiz – kei Offshore-Teams, kei Subunternähmer, wode nie z Gsicht bechunnsch",
+    "Üsi Engineers bliibe i dr Schwiz - kei Offshore-Teams, kei Subunternähmer, wode nie z Gsicht bechunnsch",
   "workshop.swiss.item3":
-    "Schwiizer Firma, Schwiizer Rächt, dini Zytzone – u nach gnue, um bi dir im Büro z hocke",
+    "Schwiizer Firma, Schwiizer Rächt, dini Zytzone - u nach gnue, um bi dir im Büro z hocke",
   "workshop.faq.title": "Bevor du frägsch",
   "workshop.faq.q1": "Isch das es Verchoufsgspräch?",
   "workshop.faq.a1":
-    "Nei. Du bechunnsch dä gschribne Plan, egal öb du üs beuftragsch oder nid. Mängisch isch di ehrlechi Antwort, dass du üs nid bruchsch – das säge mir dir de o.",
+    "Nei. Du bechunnsch dä gschribne Plan, egal öb du üs beuftragsch oder nid. Mängisch isch di ehrlechi Antwort, dass du üs nid bruchsch - das säge mir dir de o.",
   "workshop.faq.q2": "Wie schnäu chöi mir das mache?",
   "workshop.faq.a2":
     "Mir mäude üs innerhaub vo zwe Arbeitstäg mit es paar Termivorschläg. D Session isch remote oder bi dir im Büro, ganz wie de wotsch.",
@@ -199,7 +219,7 @@ const ts = {
     "Nüt Formeus. E Architekturskizze u ne aktuelli Infrastrukturrächnig mache d Session präziser, aber es geit o ohni.",
   "workshop.faq.q4": "Wär söu vo dir Site derbi si?",
   "workshop.faq.a4":
-    "Wär d Systeme kennt u wär s Budget verantwortet. Zwe bis vier Persone funktioniere am beschte – meh, u de wird es e Präsentation.",
+    "Wär d Systeme kennt u wär s Budget verantwortet. Zwe bis vier Persone funktioniere am beschte - meh, u de wird es e Präsentation.",
   "workshop.form.title": "Session afrage",
   "workshop.form.description":
     "Sag üs, wie mir di erreiche, u mir mäude üs innerhaub vo zwe Arbeitstäg mit es paar Termivorschläg. Keni Newsletter, kei Follow-up-Serie.",

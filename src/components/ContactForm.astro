@@ -55,9 +55,46 @@ const { t } = useI18n(Astro.url);
         <button type="submit" class="button">
           {t("contact.form.sendbuttonlabel")}
         </button>
+        <p class="reassurance">{t("contact.form.reassurance")}</p>
       </div>
     </form>
   </div>
+
+  <script>
+    declare global {
+      interface Window {
+        gtag?: (...args: unknown[]) => void;
+      }
+    }
+
+    const form = document.getElementById(
+      "contact-form",
+    ) as HTMLFormElement | null;
+
+    // Mirrors the service form: the general contact form is a conversion too,
+    // and without this it is invisible in the ads reporting.
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      let submitted = false;
+      const submitOnce = () => {
+        if (submitted) return;
+        submitted = true;
+        form.submit();
+      };
+
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-18327942303/qHd6CO2SwtMcEJ_puKNE",
+          event_callback: submitOnce,
+        });
+        // Fallback in case gtag is blocked or the callback never fires.
+        setTimeout(submitOnce, 1000);
+      } else {
+        submitOnce();
+      }
+    });
+  </script>
 
   <style>
     #contact-section {
@@ -77,6 +114,13 @@ const { t } = useI18n(Astro.url);
 
     .field {
       margin-bottom: 1.5rem;
+    }
+
+    .reassurance {
+      margin: 1rem 0 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--color-gray);
     }
 
     .input,

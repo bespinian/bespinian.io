@@ -23,11 +23,21 @@ const de = {
   "cta.contactUs": "Kontaktiere uns",
   "cta.interested": "Interessiert dich",
 
+  // Closing CTA, shown at the end of pages people reach from search
+  "cta.banner.title": "Hol dir denselben Plan für deine Applikationen",
+  "cta.banner.description":
+    "90 Minuten mit erfahrenen Cloud Engineers. Du gehst raus mit einer Rangliste deiner Applikationen, Kostenschätzungen und einem ersten Schritt, der klein genug ist, um nächste Woche zu starten.",
+  "cta.banner.reassurance":
+    "Kostenlos, unverbindlich, kein Newsletter. Wir antworten innerhalb von zwei Arbeitstagen.",
+  "cta.banner.customer.title": "Willst du solche Resultate auch?",
+  "cta.banner.customer.description":
+    "Jedes Projekt auf dieser Seite hat mit einer einzigen Session angefangen. Erzähl uns von deinen Applikationen und wir schreiben dir denselben Plan.",
+
   // Hero Section
   "hero.title1": "Infrastrukturkosten Senken,",
   "hero.title2": "Features Schneller Liefern",
   "hero.description":
-    "Unsere Schweizer Engineers helfen dir, deine Apps auf AWS, Azure und Kubernetes zu modernisieren – mit Serverless und KI. Wir senken Kosten, liefern schneller und steigern die Produktivität deines Teams.",
+    "Unsere Schweizer Engineers helfen dir, deine Apps auf AWS, Azure und Kubernetes zu modernisieren - mit Serverless und KI. Wir senken Kosten, liefern schneller und steigern die Produktivität deines Teams.",
 
   // Why Us Section
   "whyus.belief":
@@ -70,16 +80,23 @@ const de = {
     "Wir arbeiten mit modernen Cloud-Plattformen wie AWS, Azure und Kubernetes.",
   "whatwedo.whoweare": "Wer wir sind",
   "whatwedo.team.description":
-    "Wir sind ein Team erfahrener Engineers, die mit Leidenschaft moderne Cloud-Lösungen entwickeln. Mit Sitz in der Schweiz kombinieren wir fundierte technische Expertise mit tiefem Verständnis für geschäftliche Anforderungen. Wir modernisieren nicht nur eure Apps – wir verändern die Arbeitsweise deiner Teams.",
+    "Wir sind ein Team erfahrener Engineers, die mit Leidenschaft moderne Cloud-Lösungen entwickeln. Mit Sitz in der Schweiz kombinieren wir fundierte technische Expertise mit tiefem Verständnis für geschäftliche Anforderungen. Wir modernisieren nicht nur eure Apps - wir verändern die Arbeitsweise deiner Teams.",
 
   // Footer
   "footer.copyright": "© bespinian {year}",
+  "footer.tagline":
+    "Schweizer Cloud-Native Engineers. Wir modernisieren Applikationen auf AWS, Azure und Kubernetes.",
+  "footer.services": "Services",
+  "footer.company": "Unternehmen",
+  "footer.contact": "Kontakt",
+  "footer.follow": "Folgen",
+  "footer.office": "Büro Bern",
   "footer.imprint": "Impressum",
 
   // Imprint Page
   "imprint.title": "Impressum",
   "imprint.description":
-    "Kontakt- und Rechtsinformationen zu bespinian – Cloud-native Beratung und Software-Entwicklung in der Schweiz.",
+    "Kontakt- und Rechtsinformationen zu bespinian - Cloud-native Beratung und Software-Entwicklung in der Schweiz.",
   "imprint.contact": "Kontaktinformationen",
   "imprint.email": "E-Mail: info@bespinian.io",
   "imprint.headquarters": "Hauptsitz",
@@ -101,6 +118,7 @@ const de = {
     "Erfahre, wie wir über 120 Firmen geholfen haben, ihre Apps in die Cloud zu bringen.",
   "customers.empty": "Noch keine Kunden. Schau bald wieder vorbei!",
   "customers.success": "hat Erfolg mit bespinian:",
+  "customers.keyResults": "Wichtigste Resultate",
 
   // Jobs Page
   "jobs.title": "Jobs",
@@ -122,7 +140,7 @@ const de = {
 
   "about.team.title": "Team",
   "about.team.subtitle":
-    "Wir helfen Teams, Cloud-Plattformen effizienter zu nutzen. Unsere Engineers geben dir nicht nur Lösungen – sie helfen deinen Teams, erfolgreich zu sein.",
+    "Wir helfen Teams, Cloud-Plattformen effizienter zu nutzen. Unsere Engineers geben dir nicht nur Lösungen - sie helfen deinen Teams, erfolgreich zu sein.",
 
   "about.technologies.title": "Technologien",
   "about.technologies.description":
@@ -135,7 +153,7 @@ const de = {
   // Contact Page
   "contact.title": "Kontakt",
   "contact.subtitle":
-    "Du hast eine Frage? Brauchst ein Angebot? Lust auf einen Kaffee? Komm vorbei oder schreib uns eine Nachricht – wir melden uns bei dir.",
+    "Du hast eine Frage? Brauchst ein Angebot? Lust auf einen Kaffee? Komm vorbei oder schreib uns eine Nachricht - wir melden uns bei dir.",
   "contact.location.title": "Besuch Uns",
   "contact.location.mainOffice":
     "Unser Büro ist in der Nähe des berühmten Zytglogge im Herzen der Altstadt von Bern",
@@ -145,6 +163,8 @@ const de = {
   "contact.form.subjectplaceholder": "Betreff",
   "contact.form.messageplaceholder": "Deine Nachricht",
   "contact.form.sendbuttonlabel": "Nachricht senden",
+  "contact.form.reassurance":
+    "Wir antworten innerhalb von zwei Arbeitstagen. Kein Newsletter, keine Follow-up-Sequenz.",
 
   // Workshop Page
   "workshop.title": "Kostenloser Cloud Readiness Workshop",
@@ -162,7 +182,7 @@ const de = {
   "workshop.trustedby.title": "Diese Arbeit haben wir gemacht für",
   "workshop.whothisfor.title": "Das ist etwas für dich, wenn",
   "workshop.whothisfor.item1":
-    "Du zu viel für Infrastruktur bezahlst, die du nicht herunterskalieren kannst – und die Rechnung immer nur wächst",
+    "Du zu viel für Infrastruktur bezahlst, die du nicht herunterskalieren kannst - und die Rechnung immer nur wächst",
   "workshop.whothisfor.item2":
     "Du modernisieren möchtest, aber nicht weisst, mit welcher Applikation du anfangen sollst",
   "workshop.whothisfor.item3":
@@ -171,7 +191,7 @@ const de = {
   "workshop.outcome.item1":
     "Deine Applikationen priorisiert danach, wie viel eine Modernisierung sparen würde",
   "workshop.outcome.item2":
-    "Eine Empfehlung – AWS, Azure, Kubernetes oder Serverless – und warum die anderen nicht zu dir passen",
+    "Eine Empfehlung - AWS, Azure, Kubernetes oder Serverless - und warum die anderen nicht zu dir passen",
   "workshop.outcome.item3":
     "Kostenschätzungen und eine realistische Amortisationsdauer",
   "workshop.outcome.item4":
@@ -180,20 +200,20 @@ const de = {
     "Einen konkreten ersten Schritt, klein genug, um nächste Woche zu starten",
   "workshop.hosts.title": "Mit wem du sprichst",
   "workshop.hosts.description":
-    "Erfahrene Cloud Engineers führen die Session – dieselben Leute, die auch die Arbeit machen würden.",
-  "workshop.swiss.title": "Schweizerisch – und das bleibt so",
+    "Erfahrene Cloud Engineers führen die Session - dieselben Leute, die auch die Arbeit machen würden.",
+  "workshop.swiss.title": "Schweizerisch - und das bleibt so",
   "workshop.swiss.description":
     "Wir sind ein Schweizer Unternehmen mit Sitz in Bern. Deine Daten und die Engineers, die daran arbeiten, bleiben in der Schweiz.",
   "workshop.swiss.item1":
     "Deine Daten bleiben in der Schweiz, in schweizerischen oder europäischen Cloud-Regionen",
   "workshop.swiss.item2":
-    "Unsere Engineers bleiben in der Schweiz – keine Offshore-Teams, keine Subunternehmer, die du nie zu Gesicht bekommst",
+    "Unsere Engineers bleiben in der Schweiz - keine Offshore-Teams, keine Subunternehmer, die du nie zu Gesicht bekommst",
   "workshop.swiss.item3":
-    "Schweizer Firma, Schweizer Recht, deine Zeitzone – und nah genug, um bei dir im Büro zu sitzen",
+    "Schweizer Firma, Schweizer Recht, deine Zeitzone - und nah genug, um bei dir im Büro zu sitzen",
   "workshop.faq.title": "Bevor du fragst",
   "workshop.faq.q1": "Ist das ein Verkaufsgespräch?",
   "workshop.faq.a1":
-    "Nein. Du bekommst den schriftlichen Plan, egal ob du uns beauftragst oder nicht. Manchmal ist die ehrliche Antwort, dass du uns nicht brauchst – das sagen wir dir dann auch.",
+    "Nein. Du bekommst den schriftlichen Plan, egal ob du uns beauftragst oder nicht. Manchmal ist die ehrliche Antwort, dass du uns nicht brauchst - das sagen wir dir dann auch.",
   "workshop.faq.q2": "Wie schnell können wir das machen?",
   "workshop.faq.a2":
     "Wir melden uns innerhalb von zwei Arbeitstagen mit ein paar Terminvorschlägen. Die Session findet remote oder bei dir im Büro statt, ganz wie du möchtest.",
@@ -202,7 +222,7 @@ const de = {
     "Nichts Formelles. Eine Architekturskizze und eine aktuelle Infrastrukturrechnung machen die Session präziser, aber es geht auch ohne.",
   "workshop.faq.q4": "Wer sollte von deiner Seite dabei sein?",
   "workshop.faq.a4":
-    "Wer die Systeme kennt und wer das Budget verantwortet. Zwei bis vier Personen funktionieren am besten – mehr, und es wird eine Präsentation.",
+    "Wer die Systeme kennt und wer das Budget verantwortet. Zwei bis vier Personen funktionieren am besten - mehr, und es wird eine Präsentation.",
   "workshop.form.title": "Session anfragen",
   "workshop.form.description":
     "Sag uns, wie wir dich erreichen, und wir melden uns innerhalb von zwei Arbeitstagen mit ein paar Terminvorschlägen. Kein Newsletter, keine Follow-up-Serie.",

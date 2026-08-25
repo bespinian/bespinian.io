@@ -1,0 +1,110 @@
+---
+import Link from "./Link.astro";
+import { useI18n } from "../i18n/utils";
+import cloudSmall from "../assets/cloud-small.svg";
+
+interface Props {
+  // Where the click is counted from, so the analytics event can tell a blog
+  // reader apart from someone who finished a customer story.
+  source: string;
+  title?: string;
+  description?: string;
+}
+
+const { source, title, description } = Astro.props;
+
+const { t, translatePath } = useI18n(Astro.url);
+---
+
+<aside class="cta-banner" data-cta-source={source}>
+  <img class="cta-cloud" src={cloudSmall.src} alt="" />
+  <div class="cta-copy">
+    <p class="cta-title">{title ?? t("cta.banner.title")}</p>
+    <p class="cta-description">{description ?? t("cta.banner.description")}</p>
+  </div>
+  <!-- `center` is required: Link left-aligns itself from 48rem up unless told
+       otherwise, which would leave the button off-axis under centered copy. -->
+  <Link href={translatePath("/workshop")} center class="cta-banner-link">
+    {t("cta.freeWorkshop")}
+  </Link>
+  <p class="cta-reassurance">{t("cta.banner.reassurance")}</p>
+</aside>
+
+<script>
+  declare global {
+    interface Window {
+      gtag?: (...args: unknown[]) => void;
+    }
+  }
+
+  // Which page types actually send people to the workshop. Without this the
+  // banner is indistinguishable from the nav link in the funnel report.
+  for (const banner of document.querySelectorAll<HTMLElement>(
+    "[data-cta-source]",
+  )) {
+    banner.querySelector("a")?.addEventListener("click", () =>
+      window.gtag?.("event", "cta_banner_click", {
+        cta_source: banner.dataset.ctaSource ?? "unknown",
+      }),
+    );
+  }
+</script>
+
+<style>
+  .cta-banner {
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+    text-align: center;
+  }
+
+  .cta-cloud {
+    position: absolute;
+    right: -2rem;
+    bottom: -1.5rem;
+    width: 12rem;
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  .cta-copy {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-title {
+    margin: 0 0 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .cta-description {
+    margin: 0 auto var(--spacing-md);
+    max-width: 34rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .cta-reassurance {
+    position: relative;
+    z-index: 1;
+    margin: 1rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+
+  @media (min-width: 48rem) {
+    .cta-banner {
+      padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .cta-title {
+      font-size: 1.9rem;
+    }
+  }
+</style>

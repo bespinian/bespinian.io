@@ -13,7 +13,7 @@ results:
 quote:
   "Die Zusammenarbeit mit bespinian verlief reibungslos, engagiert und
   bemerkenswert schnell. Ihre Fähigkeit, unsere Herausforderungen zu verstehen
-  und sofort ins Handeln zu kommen – selbst bei knappen Zeitplänen – machte den
+  und sofort ins Handeln zu kommen - selbst bei knappen Zeitplänen - machte den
   entscheidenden Unterschied. Das ist genau die Art von Partnerschaft, die wir
   suchen, um schnell, nachhaltig und pragmatisch voranzukommen."
 authorName: Laurent Vuarraz Voisin

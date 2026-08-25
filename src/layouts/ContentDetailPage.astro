@@ -24,8 +24,13 @@ interface Props {
     tags?: string[];
     image?: string;
     imageAlt?: string;
+    translatedLangs?: string[];
+    noindex?: boolean;
   };
   structuredData?: Schema;
+  // The listing page this entry belongs to. Used to emit a breadcrumb trail,
+  // which is what search results show in place of the bare URL.
+  breadcrumb?: { name: string; href: string };
 }
 
 const {
@@ -37,12 +42,27 @@ const {
   meta = [],
   seoProps = {},
   structuredData,
+  breadcrumb,
 } = Astro.props;
+
+const absolute = (path: string) => new URL(path, Astro.site).toString();
+
+const breadcrumbSchema: Schema | undefined = breadcrumb
+  ? {
+      type: "BreadcrumbList",
+      items: [
+        { name: "bespinian", url: absolute(`/${lang}/`) },
+        { name: breadcrumb.name, url: absolute(breadcrumb.href) },
+        { name: title, url: absolute(Astro.url.pathname) },
+      ],
+    }
+  : undefined;
 ---
 
 <Layout>
   <SEO slot="head" title={pageTitle} {description} {lang} {...seoProps} />
   {structuredData && <StructuredData slot="head" schema={structuredData} />}
+  {breadcrumbSchema && <StructuredData slot="head" schema={breadcrumbSchema} />}
   <div class="content-detail">
     <article class="container">
       <header class="content-header">

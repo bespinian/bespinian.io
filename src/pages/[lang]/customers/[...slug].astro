@@ -5,12 +5,13 @@ import ContentDetailPage from "../../../layouts/ContentDetailPage.astro";
 import { getCollectionStaticPaths } from "../../../lib/paths";
 import { useI18n } from "../../../i18n/utils";
 import { formatDate } from "../../../lib/formatters";
+import CtaBanner from "../../../components/CtaBanner.astro";
 
 export async function getStaticPaths() {
   return getCollectionStaticPaths("customers");
 }
 
-const { customer } = Astro.props;
+const { customer, translatedLangs } = Astro.props;
 const { Content } = await render(customer);
 
 const { lang, t, translatePath } = useI18n(Astro.url);
@@ -23,13 +24,17 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
 <ContentDetailPage
-  pageTitle={`${title} with ${customer.data.company} | Customers`}
+  pageTitle={`${title} - ${customer.data.company} | ${t("customers.page.title")}`}
   {title}
   {description}
   {lang}
   backLink={{
     href: translatePath("/customers"),
     text: t("nav.backToCustomers"),
+  }}
+  breadcrumb={{
+    name: t("customers.page.title"),
+    href: translatePath("/customers"),
   }}
   meta={[
     { label: customer.data.company },
@@ -40,6 +45,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     publishedTime: customer.data.pubDate.toISOString(),
     image: customer.data.logo.src,
     imageAlt: `${customer.data.company} logo`,
+    translatedLangs,
   }}
   structuredData={{
     type: "Article",
@@ -84,12 +90,21 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   <Content />
 
   <div slot="footer" class="results-highlight">
-    <h2>Key Results</h2>
+    <h2>{t("customers.keyResults")}</h2>
     <ul class="results-list">
       {customer.data.results.map((result: string) => <li>{result}</li>)}
     </ul>
   </div>
   <p slot="footer" class="date">{formattedDate}</p>
+
+  <!-- A reader who got this far has just read proof that the work pays off.
+       That is the moment to ask, not the top of the page. -->
+  <CtaBanner
+    slot="footer"
+    source="customer-story"
+    title={t("cta.banner.customer.title")}
+    description={t("cta.banner.customer.description")}
+  />
 </ContentDetailPage>
 
 <style>

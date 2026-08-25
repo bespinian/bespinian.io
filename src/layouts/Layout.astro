@@ -2,12 +2,13 @@
 import { Font } from "astro:assets";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+import SiteStructuredData from "../components/SiteStructuredData.astro";
 import { useI18n } from "../i18n/utils";
 import "../styles/global.css";
 
 interface Props {
-  // Strips the navigation down to the logo and language selector, for landing
-  // pages where every other link is just a way to leave.
+  // Strips the navigation and footer down to the essentials, for landing pages
+  // where every other link is just a way to leave.
   minimalNav?: boolean;
 }
 
@@ -21,7 +22,7 @@ const hasHeadSlot = Astro.slots.has("head");
 <html lang={htmlLang}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
@@ -51,13 +52,15 @@ const hasHeadSlot = Astro.slots.has("head");
     <!-- SEO and meta tags slot -->
     <slot name="head" />
     {!hasHeadSlot && <title>bespinian</title>}
+
+    <SiteStructuredData />
   </head>
   <body>
     <Navigation minimal={minimalNav} />
     <main>
       <slot />
     </main>
-    <Footer />
+    <Footer minimal={minimalNav} />
 
     <script
       is:inline

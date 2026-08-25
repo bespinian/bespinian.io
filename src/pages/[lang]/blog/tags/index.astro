@@ -29,6 +29,7 @@ const tags = Object.entries(tagCounts).sort(([tagA], [tagB]) =>
   lang={lang}
   title="Tags"
   description="The blog tags"
+  seoProps={{ noindex: true }}
   backLink={{ href: translatePath("/blog"), text: t("nav.backToBlog") }}
 >
   <div class="tags">

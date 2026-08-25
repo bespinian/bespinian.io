@@ -20,7 +20,7 @@ image: ../../assets/blog/amsterdam.jpg
 
 ## We're Heading to Amsterdam
 
-**March 23-26, 2026** – We'll be packing our bags for Amsterdam. KubeCon +
+**March 23-26, 2026** - We'll be packing our bags for Amsterdam. KubeCon +
 CloudNativeCon Europe is back, and the bespinian team will be there.
 
 This is where the cloud native community gathers. Thousands of engineers,

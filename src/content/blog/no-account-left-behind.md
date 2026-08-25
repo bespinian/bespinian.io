@@ -243,7 +243,7 @@ for security isolation and automated targeting.
 
 ### Delegated Administration
 
-Delegated administration allows you to assign specific AWS Organization–wide
+Delegated administration allows you to assign specific AWS Organization-wide
 responsibilities to a trusted member account instead of relying on the
 management (root) account.
 
@@ -568,7 +568,7 @@ aws lambda invoke \
 
   > Use management/root administrator account credentials
 
-  > < 100 accounts – You can close up to 10 member accounts
+  > < 100 accounts - You can close up to 10 member accounts
 
   ```shell
   cd 01-org-bootstrap

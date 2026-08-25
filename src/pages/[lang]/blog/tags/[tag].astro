@@ -37,12 +37,16 @@ const title = `Blog | ${tag}`;
 const description = `Tagged "${tag}"`;
 ---
 
+<!-- Kept out of the index: every tag page is a subset of the blog listing,
+     repeated once per language, and adds nothing a searcher would want to
+     land on. The links out of it are still followed. -->
 <CollectionPage
   pageTitle={title}
   title={t("blog.title")}
   subtitle={description}
   {description}
   {lang}
+  noindex
   isEmpty={posts.length === 0}
   backLink={{ href: translatePath("/blog"), text: t("nav.backToBlog") }}
 >

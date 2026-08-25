@@ -25,7 +25,7 @@ authorImage: ../../../assets/customers/beltrame-martina.jpeg
 Die [AFV Beltrame Group](https://gruppobeltrame.com/en/), die in der Schweiz
 über die
 [Stahl Gerlafingen AG](https://gruppobeltrame.com/en/stahl-gerlafingen-ag/)
-tätig ist, ist auf die Herstellung von Langstahlprodukten spezialisiert – in
+tätig ist, ist auf die Herstellung von Langstahlprodukten spezialisiert - in
 erster Linie Bewehrungsstahl für Beton und Baustahl-Profile. Mit einer
 Belegschaft von rund 2'900 Mitarbeitenden verfügt die Gruppe über eine jährliche
 Produktionskapazität von rund 3 Millionen Tonnen und beliefert sowohl den
