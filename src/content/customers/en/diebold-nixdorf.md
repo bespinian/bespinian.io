@@ -1,7 +1,7 @@
 ---
 title: Banknote Data Management Platform
-company: CI Tech Sensors
-logo: ../../../assets/customers/citechsensors.svg
+company: Diebold Nixdorf
+logo: ../../../assets/customers/diebold-nixdorf.svg
 pubDate: 2024-01-10
 results:
   - Centralized platform for banknote data
@@ -14,17 +14,19 @@ quote:
   the world of containers, microservices, and DevOps."
 authorName: Lukas Burger
 authorTitle: Head of Software Engineering
-authorImage: ../../../assets/customers/citech-lukas.jpeg
+authorImage: ../../../assets/customers/dieboldnixdorf-lukas.jpeg
 ---
 
 ## Customer
 
-[CI Tech Sensors](https://www.citechsensors.com/) is a development,
-manufacturing and service provider for banknote sensors, which are used in ATMs,
-automatic deposit machines as well as cash counting and sorting machines. CI
-Tech Sensors is a joint subsidiary of Diebold-Nixdorf and Giesecke+Devirent. The
-company has approximately 100 employees working at their location in Burgdorf,
-Switzerland.
+[Diebold Nixdorf](https://www.dieboldnixdorf.com/) is a global provider of
+technology and services for the banking and retail industries, ranging from ATMs
+and self-service terminals to the software and services that keep them running.
+Its site in Burgdorf, Switzerland, with approximately 100 employees, develops,
+manufactures and services banknote sensors, which are used in ATMs, automatic
+deposit machines as well as cash counting and sorting machines. The site was
+previously operated as CI Tech Sensors, a joint venture of Diebold Nixdorf and
+Giesecke+Devrient, and has since been fully integrated into Diebold Nixdorf.
 
 ## Background
 
