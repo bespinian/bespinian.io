@@ -57,13 +57,6 @@
       "gitHub": "SandraHoch"
     },
     {
-      "name": "Johannes Karl",
-      "title": "Cloud Tinkerer",
-      "description": "Software Engineer and programming language nerd with a passion for modern technologies and web development.",
-      "image": "../../assets/team/johannes.webp",
-      "gitHub": "chickenbreeder"
-    },
-    {
       "name": "Norbert Gruszka",
       "title": "Cloud Farmer",
       "description": "DevOps Engineer specializing in Kubernetes and automation. Passionate about streamlining infrastructure and dreaming of eventually trading servers for a cabbage farm.",
