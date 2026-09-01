@@ -12,6 +12,9 @@ const blog = defineCollection({
       tags: z.array(z.string()),
       description: z.string(),
       image: image(),
+      // Drafts show up on the dev server but are left out of the production
+      // build entirely — no page, no listing, no sitemap entry.
+      draft: z.boolean().optional(),
     }),
 });
 
@@ -29,6 +32,8 @@ const customers = defineCollection({
       authorTitle: z.string(),
       authorImage: image().optional(),
       featured: z.boolean().optional(),
+      // See the blog collection: dev-only until the flag is removed.
+      draft: z.boolean().optional(),
     }),
 });
 

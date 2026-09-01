@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import CollectionPage from "../../../layouts/CollectionPage.astro";
 import BlogCard from "../../../components/BlogCard.astro";
 import { useI18n } from "../../../i18n/utils";
-import { getLanguagePaths } from "../../../lib/paths";
+import { getLanguagePaths, isPublished } from "../../../lib/paths";
 import { sortByDateDesc } from "../../../lib/formatters";
 import rss from "../../../assets/rss.svg";
 
@@ -14,7 +14,7 @@ export function getStaticPaths() {
 
 const { lang, t } = useI18n(Astro.url);
 
-const blogPosts = await getCollection("blog");
+const blogPosts = await getCollection("blog", isPublished);
 const sortedPosts = sortByDateDesc(blogPosts);
 
 const title = t("blog.title");

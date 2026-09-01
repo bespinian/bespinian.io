@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import WorkCard from "./WorkCard.astro";
 import Link from "./Link.astro";
 import { useI18n } from "../i18n/utils";
-import { getCollectionByLanguage } from "../lib/paths";
+import { getCollectionByLanguage, isPublished } from "../lib/paths";
 
 interface WorkItem {
   id: string;
@@ -15,7 +15,7 @@ interface WorkItem {
 const { lang, t, translatePath } = useI18n(Astro.url);
 
 const [blogPosts, customers] = await Promise.all([
-  getCollection("blog"),
+  getCollection("blog", isPublished),
   getCollectionByLanguage("customers", lang),
 ]);
 

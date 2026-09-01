@@ -30,6 +30,38 @@ export function removeLanguagePrefix(
 }
 
 /**
+ * True for entries that belong in the production build.
+ *
+ * Drafts render on the dev server so they can be reviewed in place, and are
+ * left out of `astro build` entirely: no detail page, no listing entry and, as
+ * a consequence of the page never being generated, no sitemap entry either.
+ *
+ * Pass it to `getCollection()` wherever a collection is read directly.
+ */
+export function isPublished(entry: { data: any }): boolean {
+  return import.meta.env.DEV || !entry.data?.draft;
+}
+
+/**
+ * Drops the base slugs that are drafts.
+ *
+ * An entry counts as a draft as soon as any of its language variants says so.
+ * Flagging a single file therefore hides the whole story instead of leaving the
+ * other languages pointing at a fallback that no longer exists.
+ */
+function withoutDrafts(
+  itemsByBaseSlug: Map<string, Map<string, any>>,
+): Map<string, Map<string, any>> {
+  if (import.meta.env.DEV) return itemsByBaseSlug;
+
+  return new Map(
+    Array.from(itemsByBaseSlug).filter(([, langItems]) =>
+      Array.from(langItems.values()).every(isPublished),
+    ),
+  );
+}
+
+/**
  * Parses collection items and groups them by base slug and language
  * Handles both language-specific subdirectories (en/file.md) and legacy files (file.md)
  */
@@ -79,7 +111,7 @@ export async function getCollectionStaticPaths<T extends CollectionKey>(
   collectionName: T,
 ) {
   const items = await getCollection(collectionName);
-  const itemsByBaseSlug = groupItemsByLanguage(items);
+  const itemsByBaseSlug = withoutDrafts(groupItemsByLanguage(items));
 
   // Generate paths for all languages
   return Array.from(itemsByBaseSlug.entries()).flatMap(
@@ -130,7 +162,7 @@ export async function getCollectionByLanguage<T extends CollectionKey>(
   lang: string,
 ) {
   const items = await getCollection(collectionName);
-  const itemsByBaseSlug = groupItemsByLanguage(items);
+  const itemsByBaseSlug = withoutDrafts(groupItemsByLanguage(items));
 
   // Return items for the requested language, falling back to English
   // Normalize the ID to use the base slug (without language prefix)

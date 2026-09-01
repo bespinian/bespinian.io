@@ -6,9 +6,10 @@ import BlogCard from "../../../../components/BlogCard.astro";
 import { useI18n } from "../../../../i18n/utils";
 import { languages } from "../../../../i18n/ui";
 import { sortByDateDesc } from "../../../../lib/formatters";
+import { isPublished } from "../../../../lib/paths";
 
 export const getStaticPaths = (async () => {
-  const allPosts = await getCollection("blog");
+  const allPosts = await getCollection("blog", isPublished);
 
   const uniqueTags = [
     ...new Set(allPosts.flatMap((post) => post.data.tags || [])),

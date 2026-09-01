@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import { useI18n } from "../../../../i18n/utils";
 import ContentDetailPage from "../../../../layouts/ContentDetailPage.astro";
-import { getLanguagePaths } from "../../../../lib/paths";
+import { getLanguagePaths, isPublished } from "../../../../lib/paths";
 import Tag from "../../../../components/Tag.astro";
 
 export function getStaticPaths() {
@@ -10,7 +10,7 @@ export function getStaticPaths() {
 }
 
 const { lang, translatePath, t } = useI18n(Astro.url);
-const blogPosts = await getCollection("blog");
+const blogPosts = await getCollection("blog", isPublished);
 
 const tagCounts = blogPosts
   .flatMap((post) => post.data.tags)

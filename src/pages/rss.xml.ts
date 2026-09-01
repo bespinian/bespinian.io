@@ -1,10 +1,10 @@
 import rss, { type RSSFeedItem } from "@astrojs/rss";
 import { getCollection } from "astro:content";
-import { getCollectionByLanguage } from "../lib/paths.ts";
+import { getCollectionByLanguage, isPublished } from "../lib/paths.ts";
 import en from "../i18n/en.ts";
 
 export async function GET(context: { site: string }) {
-  const blog = await getCollection("blog");
+  const blog = await getCollection("blog", isPublished);
   const customers = await getCollectionByLanguage("customers", "en");
 
   const items: RSSFeedItem[] = [];
