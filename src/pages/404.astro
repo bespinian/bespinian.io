@@ -16,10 +16,14 @@ const description = `${t("404.description1")} ${t("404.description2")}`;
     <h1 class="error-code">404</h1>
     <h2 class="error-title">{title}</h2>
     <p class="error-description">
-      {t("404.description1")}<br />{t("404.description2")}
+      {t("404.description1")}
+      <br />
+      {t("404.description2")}
     </p>
     <div class="actions">
-      <Link href={translatePath("/")} center>{t("404.home")}</Link>
+      <Link href={translatePath("/")} center>
+        {t("404.home")}
+      </Link>
     </div>
   </section>
 </Layout>

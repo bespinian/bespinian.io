@@ -34,97 +34,85 @@ const company = [
 <footer>
   <div class={`container ${minimal ? "minimal" : ""}`}>
     <div class="column brand">
-      {
-        minimal ? (
+      {minimal ? (
+        <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
+      ) : (
+        <a href={translatePath("/")}>
           <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
-        ) : (
-          <a href={translatePath("/")}>
-            <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
-          </a>
-        )
-      }
+        </a>
+      )}
       <p class="tagline">{t("footer.tagline")}</p>
     </div>
 
-    {
-      services.length > 0 && (
-        <nav class="column" aria-label={t("footer.services")}>
-          <p class="column-title">{t("footer.services")}</p>
-          {services.map((service) => (
-            <a href={translatePath(`/services/${service.id}`)}>
-              {service.title}
-            </a>
-          ))}
-        </nav>
-      )
-    }
+    {services.length > 0 && (
+      <nav class="column" aria-label={t("footer.services")}>
+        <p class="column-title">{t("footer.services")}</p>
+        {services.map((service) => (
+          <a href={translatePath(`/services/${service.id}`)}>{service.title}</a>
+        ))}
+      </nav>
+    )}
 
-    {
-      !minimal && (
-        <nav class="column" aria-label={t("footer.company")}>
-          <p class="column-title">{t("footer.company")}</p>
-          {company.map((item) => (
-            <a href={item.href}>{item.label}</a>
-          ))}
-        </nav>
-      )
-    }
+    {!minimal && (
+      <nav class="column" aria-label={t("footer.company")}>
+        <p class="column-title">{t("footer.company")}</p>
+        {company.map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))}
+      </nav>
+    )}
 
     <div class="column">
       <p class="column-title">{t("footer.contact")}</p>
-      {
-        /* Marked up so the address is machine-readable and matches the
-          Organization schema and the imprint word for word. */
-      }
+      {/* Marked up so the address is machine-readable and matches the
+          Organization schema and the imprint word for word. */}
       <address>
         <span class="office">{t("footer.office")}</span>
-        Kramgasse 68<br />
-        3011 Bern<br />
+        Kramgasse 68
+        <br />
+        3011 Bern
+        <br />
         Switzerland
       </address>
       <a href="mailto:info@bespinian.io">info@bespinian.io</a>
       {!minimal && <a href={translatePath("/contact")}>{t("nav.contact")}</a>}
     </div>
 
-    {
-      !minimal && (
-        <nav class="column" aria-label={t("footer.follow")}>
-          <p class="column-title">{t("footer.follow")}</p>
-          <a
-            href="https://www.linkedin.com/company/19074419"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://www.youtube.com/@bespinian-io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            YouTube
-          </a>
-          <a
-            href="https://github.com/bespinian"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a href="/rss.xml">RSS</a>
-        </nav>
-      )
-    }
+    {!minimal && (
+      <nav class="column" aria-label={t("footer.follow")}>
+        <p class="column-title">{t("footer.follow")}</p>
+        <a
+          href="https://www.linkedin.com/company/19074419"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://www.youtube.com/@bespinian-io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </a>
+        <a
+          href="https://github.com/bespinian"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a href="/rss.xml">RSS</a>
+      </nav>
+    )}
   </div>
 
   <div class="legal">
     <p>
-      {
-        t("footer.copyright").replace(
-          "{year}",
-          new Date().getFullYear().toString(),
-        )
-      }
+      {t("footer.copyright").replace(
+        "{year}",
+        new Date().getFullYear().toString(),
+      )}
     </p>
     <a href={translatePath("/imprint")}>{t("footer.imprint")}</a>
   </div>

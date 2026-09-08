@@ -7,7 +7,9 @@ interface Props {
 const { href, text } = Astro.props;
 ---
 
-<a class="back-link" {href}>{text}</a>
+<a class="back-link" {href}>
+  {text}
+</a>
 
 <style>
   .back-link::before {

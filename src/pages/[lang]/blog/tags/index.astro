@@ -33,7 +33,9 @@ const tags = Object.entries(tagCounts).sort(([tagA], [tagB]) =>
   backLink={{ href: translatePath("/blog"), text: t("nav.backToBlog") }}
 >
   <div class="tags">
-    {tags.map(([name, _]) => <Tag {name} />)}
+    {tags.map(([name, _]) => (
+      <Tag {name} />
+    ))}
   </div>
 </ContentDetailPage>
 

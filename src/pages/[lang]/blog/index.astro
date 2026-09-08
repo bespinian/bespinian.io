@@ -30,7 +30,9 @@ const description = t("blog.subtitle");
   isEmpty={sortedPosts.length === 0}
   emptyMessage={t("blog.empty")}
 >
-  {sortedPosts.map(({ id, data }) => <BlogCard {id} {...data} />)}
+  {sortedPosts.map(({ id, data }) => (
+    <BlogCard {id} {...data} />
+  ))}
 
   <div slot="tail" class="rss-container">
     <a href="/rss.xml">

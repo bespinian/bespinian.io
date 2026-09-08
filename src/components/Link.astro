@@ -30,7 +30,9 @@ const {
     rel={target === "_blank" ? "noopener noreferrer" : undefined}
     class={`button ${secondary ? "secondary" : "primary"} ${transparent ? "transparent" : ""} ${large ? "large" : ""} ${className ?? ""}`}
   >
-    <span><slot /></span>
+    <span>
+      <slot />
+    </span>
     <img src={secondary ? arrowBlue.src : arrowWhite.src} alt="" />
   </a>
 </div>

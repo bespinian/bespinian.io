@@ -51,5 +51,7 @@ const description = `Tagged "${tag}"`;
   isEmpty={posts.length === 0}
   backLink={{ href: translatePath("/blog"), text: t("nav.backToBlog") }}
 >
-  {posts.map(({ id, data }) => <BlogCard {id} {...data} />)}
+  {posts.map(({ id, data }) => (
+    <BlogCard {id} {...data} />
+  ))}
 </CollectionPage>

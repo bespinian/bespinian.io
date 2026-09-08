@@ -11,8 +11,13 @@ const { t, translatePath } = useI18n(Astro.url);
     <h3>{t("whyus.title")}</h3>
     <div id="text-container">
       <p>
-        {t("whyus.description1")}<br /><br />{t("whyus.description2")}<br /><br
-        />{t("whyus.description3")}
+        {t("whyus.description1")}
+        <br />
+        <br />
+        {t("whyus.description2")}
+        <br />
+        <br />
+        {t("whyus.description3")}
       </p>
       <Link href={translatePath("/about")}>{t("cta.learnAboutUs")}</Link>
     </div>

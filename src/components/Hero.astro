@@ -7,12 +7,16 @@ const { t, translatePath } = useI18n(Astro.url);
 ---
 
 <section id="container">
-  <h1>{t("hero.title1")}<br />{t("hero.title2")}</h1>
+  <h1>
+    {t("hero.title1")}
+    <br />
+    {t("hero.title2")}
+  </h1>
   <div id="cta">
     <p>{t("hero.description")}</p>
-    <Link href={translatePath("/workshop")} large secondary
-      >{t("cta.freeWorkshop")}</Link
-    >
+    <Link href={translatePath("/workshop")} large secondary>
+      {t("cta.freeWorkshop")}
+    </Link>
   </div>
   <img id="cloud-city" src={cloudCity.src} alt="" />
 </section>

@@ -68,19 +68,19 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   </div>
 
   <blockquote>
-    <p><em>“{customer.data.quote}”</em></p>
+    <p>
+      <em>“{customer.data.quote}”</em>
+    </p>
     <div class="author-info">
-      {
-        customer.data.authorImage && (
-          <Image
-            src={customer.data.authorImage}
-            alt=""
-            width={112}
-            height={112}
-            class="author-portrait"
-          />
-        )
-      }
+      {customer.data.authorImage && (
+        <Image
+          src={customer.data.authorImage}
+          alt=""
+          width={112}
+          height={112}
+          class="author-portrait"
+        />
+      )}
       <p>
         <strong>{customer.data.authorName}</strong>, {customer.data.authorTitle}
       </p>
@@ -92,10 +92,14 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   <div slot="footer" class="results-highlight">
     <h2>{t("customers.keyResults")}</h2>
     <ul class="results-list">
-      {customer.data.results.map((result: string) => <li>{result}</li>)}
+      {customer.data.results.map((result: string) => (
+        <li>{result}</li>
+      ))}
     </ul>
   </div>
-  <p slot="footer" class="date">{formattedDate}</p>
+  <p slot="footer" class="date">
+    {formattedDate}
+  </p>
 
   <!-- A reader who got this far has just read proof that the work pays off.
        That is the moment to ask, not the top of the page. -->

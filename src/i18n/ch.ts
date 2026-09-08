@@ -272,44 +272,174 @@ const ts = {
   "roundtable.finalcta.description": "Bestätiget jetzt öii Iladig",
 
   // OpenBao Landing Page
-  "openbao.title": "OpenBao",
-  "openbao.subtitle":
-    "Digitali Souveränität mit Enterprise-Grade Secrets Management",
+  // Keyword-förmig für Suech u Ads. D H1 füehrt mit em Outcome u behautet dä
+  // Begriff aus Eyebrow, damit e Ad-Klick ne wiedererkennt.
+  "openbao.title": "OpenBao Secrets Management",
+  "openbao.eyebrow": "OpenBao-Migration u Managed Operations",
+  "openbao.heading": "HashiCorp isch proprietär worde. Dis Vault muess es nid.",
+  "openbao.lede":
+    "Wächsle zu OpenBao — s glychi API, di glyche Workflows, keni Lizenzchoschte — u mir migriere, boue u betribe s mit dir uf schwiizerischer Infrastruktur.",
+  // Nume fürs Suechergebnis. Im Hero steit di chürzeri Lede.
   "openbao.description":
-    "Fully managed Secrets Management uf Open-Source-Basis. Sichere dini API-Keys, Zertifikat u Zuegangsdatä mit 24×7-Support vo Schwiizer Expert:inne dür Servala und VSHN.",
-  "openbao.cta": "Mit OpenBao starte",
-  "openbao.about.title": "Was isch OpenBao?",
-  "openbao.about.description1":
-    "OpenBao isch e Secrets-Management-Lösig, wo Enterprise-Grade-Sicherheit für sensibli Datä bietet. Es isch en Open-Source, Community-gstüürte Fork vo HashiCorp Vault, wo souveräns, lizenzfreis Secrets Management bietet.",
-  "openbao.about.description2":
-    "Mir betribe OpenBao mit VSHN als fully managed Service uf Servala u biete 24×7-Support für KMUs u Enterprises. Du bechunnsch kompletts Cluster-Scaling, High Availability, Disaster Recovery, Upgrades u Wartig—alles vo üsem Team verwaltet.",
-  "openbao.about.description3":
-    "Bhaut voui Datasouveränität dür d Wahl vo Schwizer oder europäische Cloud-Provider u vermid Vendor Lock-in dür liberali Open-Source-Lizenzierig.",
-  "openbao.features.title": "Key Features",
-  "openbao.features.item1":
-    "Sicheri Speicherig: Verschlüsselig bevor Datä gspicheret wärde",
-  "openbao.features.item2":
-    "Dynamischi Credentials: On-Demand Secret-Generierig für Kubernetes u Datäbanke",
-  "openbao.features.item3":
-    "Zentralisierti Verschlüsselig: Key Management über verteilti Infrastruktur",
-  "openbao.features.item4":
-    "Vollständigi Audit-Trails: Verfolgig vo allne Zuegriffe u Operatione",
-  "openbao.benefits.title": "Wieso OpenBao?",
-  "openbao.benefits.description":
-    "Konzentrier di uf dis Gschäft, während mir d Komplexität vom Secrets Management übernäh.",
-  "openbao.benefits.item1":
-    "Vollständig verwaltet: Ke operativä Overhead—mir kümmere üs um alles",
-  "openbao.benefits.item2":
-    "24×7-Support: Schwiizer Expertä-Engineers stöh parat",
-  "openbao.benefits.item3":
-    "Datäsouveränität: Datä ir Schwiz bi lokale Cloud-Provider",
-  "openbao.benefits.item4":
-    "Open Source: Ke Vendor Lock-in mit MPL-2.0-Lizenziärig",
-  "openbao.benefits.item5":
-    "Enterprise-Grade: High Availability u Disaster Recovery inklusive",
-  "openbao.finalcta.title": "Bereit, dini Secrets z sichere?",
-  "openbao.finalcta.description":
-    "Kontaktier üses Team, um meh über OpenBao z erfahre",
+    "Vault-zu-OpenBao-Migration, Architektur u 24×7 Managed Operations vo Schwiizer Engineers. S glychi API wie HashiCorp Vault, keni Per-Client-Gebühre, keni Feature-Gates — u dini Secrets bliibe under schwiizerischem Rächt.",
+  "openbao.cta": "Migrations-Assessment afrage",
+  "openbao.why":
+    "OpenBao isch e Drop-in-Fork vo HashiCorp Vault under MPL 2.0, verwautet vo dr Linux Foundation. D Software säuber isch gratis. D Arbeit isch, s Bestehende z migriere, es z härte u es am Loufe z haute — o am dreu am Morge.",
+  "openbao.stats.item1.value": "Null",
+  "openbao.stats.item1.label": "Lizenzchoschte, kes Zäue vo Clients",
+  "openbao.stats.item2.value": "S glychi API",
+  "openbao.stats.item2.label": "dini Vault-Clients u dis Terraform loufe wyter",
+  "openbao.stats.item3.value": "24×7",
+  "openbao.stats.item3.label": "Betrib uf schwiizerischer Cloud-Infrastruktur",
+  // Bewusst nid "Vertroue vo": das si Platform- u Security-Projäkt, keni
+  // OpenBao-Deployments. Umbenäme, sobaud sich das änderet.
+  "openbao.trustedby.title": "Platform- u Security-Arbeit hei mir gmacht für",
+  "openbao.whothisfor.title": "Das isch öppis für di, we",
+  "openbao.whothisfor.item1":
+    "dini Vault-Enterprise-Verlängerig pro Client-Identität verrächnet wird u niemer säge cha, was s nächscht Jahr choschtet",
+  "openbao.whothisfor.item2":
+    "du nach em BSL-Lizenzwächsu uf Community-Vault fescht hanged u bi Security-Fixes zrüggfausch",
+  "openbao.whothisfor.item3":
+    "dini Secrets i CI-Variable, Config-Files u irgend eim Passwort-Manager liege u nes Audit asteit",
+  "openbao.whothisfor.item4":
+    "du Vault oder OpenBao säuber betribsch u niemer im Team nachts wott ufsteh, we s sich versiegelet",
+  "openbao.offering.title": "Was mir mache",
+  "openbao.offering.description":
+    "Vom eitägige Architektur-Review bis zur ganze Migration mit 24×7-Betrib nachhär. Zäme mit VSHN decke mir dä ganz Wäg ab.",
+  "openbao.offering.item1.title": "Migration vo Vault zu OpenBao",
+  "openbao.offering.item1.description":
+    "Mir mappe dini Secrets Engines, Policies u Auth-Methode uf OpenBao, betribe beidi Systeme parallel u prüefe, dass jedes Secret erreichbar isch, bevor s aute Vault abgschautet wird. Dini Clients, Integratione u Terraform-Provider loufe ohni Codeänderige wyter.",
+  "openbao.offering.item2.title": "Architektur u Deployment",
+  "openbao.offering.item2.description":
+    "Hochverfüegbari Cluster mit drü Replicas u Auto-Unseal, verschlüsslete Storage, Least-Privilege-Policies u vollständigs Audit-Logging — uf cloudscale.ch, Exoscale, APPUiO, Managed OpenShift oder i dim eigete Rächezentrum. HSM-Key-Custody louft über PKCS#11, inklusiv Securosys Primus us dr Schwiz.",
+  "openbao.offering.item3.title": "Managed Operations, 24×7",
+  "openbao.offering.item3.description":
+    "Kes Telefon-Support-Abo. Zäme mit VSHN designe, deploye u betribe mir s Cluster, fahre automatisierti Backups, überwache d Gsundheit u reagiere rund um d Uhr uf Incidents. Höersch du uf, mit üs z schaffe, louft dis OpenBao unveränderet wyter.",
+  "openbao.offering.item4.title": "Integration u Enablement",
+  "openbao.offering.item4.description":
+    "Dynamischi Datebank- u Cloud-Credentials, PKI-Zertifikat, Encryption as a Service u OIDC-basierte Zuegriff für GitLab, GitHub Actions u Kubernetes-Workloads. Mir übergäh d Plattform mit dr Dokumentation u em Training, wo dis Team bruucht, um si säuber z bsitze.",
+  "openbao.included.title": "I jedem Engagement dinne",
+  "openbao.included.item1":
+    "Architektur-Design u Deployment-Planig für OpenBao",
+  "openbao.included.item2":
+    "Migration vo Vault zu OpenBao: Secrets Engines, Policies, Auth-Methode",
+  "openbao.included.item3":
+    "High-Availability-Setup mit drü Replicas u Auto-Unseal",
+  "openbao.included.item4":
+    "Verschlüsslete Storage, strikti Zuegriffskontrolle u vollständigi Audit-Trails",
+  "openbao.included.item5":
+    "Integration i dini CI/CD-Pipelines, Kubernetes u dis Identity Provider",
+  "openbao.included.item6":
+    "Deployment uf schwiizerischer Cloud, Private Cloud oder on-premises — dini Wahl",
+  "openbao.included.item7": "Loufende 24×7-Betribssupport u Incident Response",
+  "openbao.included.item8":
+    "Direkte Zuegang zu dene Engineers, wo dr OpenBao-Sourcecode läse — keni Ticket-Queue",
+  "openbao.comparison.title": "OpenBao mit üs vs. Vault Enterprise",
+  "openbao.comparison.description":
+    "OpenBao isch e Fork vo Vault, kes Rewrite. Was sich änderet: wäm d Lizenz, d Rächnig u dr Betrib ghöre.",
+  "openbao.comparison.aspect": "",
+  "openbao.comparison.vault": "Vault Enterprise",
+  "openbao.comparison.openbao": "OpenBao mit üs",
+  "openbao.comparison.row1.aspect": "Lizenz",
+  "openbao.comparison.row1.vault":
+    "Business Source License, über d Relizenzierig entscheidet ei einzelne Abieter",
+  "openbao.comparison.row1.openbao":
+    "MPL 2.0, verwautet vo dr Linux Foundation",
+  "openbao.comparison.row2.aspect": "Choschtemodäu",
+  "openbao.comparison.row2.vault":
+    "Pro Client-Identität oder Managed Secret — wachst mit dyner Plattform",
+  "openbao.comparison.row2.openbao":
+    "Keni Lizenzchoschte, kes Metering — du zahlsch für Engineering u Betrib",
+  "openbao.comparison.row3.aspect": "Features",
+  "openbao.comparison.row3.vault": "Nach Subscription-Tier freigschautet",
+  "openbao.comparison.row3.openbao":
+    "Aui Features für aui, HSM-Support über PKCS#11 inklusiv",
+  "openbao.comparison.row4.aspect": "API u Tooling",
+  "openbao.comparison.row4.vault": "Vault-API u Terraform-Provider",
+  "openbao.comparison.row4.openbao":
+    "S glychi API — bestehendi Clients u Terraform-Code loufe unveränderet",
+  "openbao.comparison.row5.aspect": "Rächtsruum",
+  "openbao.comparison.row5.vault":
+    "US-Abieter, exponiert gägenüber em US CLOUD Act",
+  "openbao.comparison.row5.openbao":
+    "Schwiizer Cloud oder eigets Rächezentrum, Schwiizer Rächt, Schwiizer Engineers",
+  "openbao.comparison.row6.aspect": "We de uussteigsch",
+  "openbao.comparison.row6.vault":
+    "D Subscription lauft us u d Plattform geit mit",
+  "openbao.comparison.row6.openbao":
+    "Dis Cluster louft unveränderet wyter, es git nüt z migriere",
+  "openbao.sovereignty.title": "Schwiizerisch — u das bliibt so",
+  "openbao.sovereignty.description":
+    "Secrets Management isch das eint System, wo dr Rächtsruum kes Detail isch. Dyne bliibt dert, wo de ne hisetzsch.",
+  "openbao.sovereignty.item1":
+    "Deployment bi schwiizerische Cloud-Provider wie cloudscale.ch u Exoscale, i dyner Private Cloud oder on-premises i dim eigete Rächezentrum",
+  "openbao.sovereignty.item2":
+    "Schwiizer Firme, Schwiizer Rächt, kei uusländischi Muettergsellschaft u kei Exponierig gägenüber em US CLOUD Act",
+  "openbao.sovereignty.item3":
+    "Schwiizer Engineers i dyner Zytzone — kei Offshore-Teams, kei Subunternähmer, wode nie z Gsicht bechunnsch",
+  "openbao.partner.title": "Mit wäm du schaffsch",
+  "openbao.partner.description1":
+    "bespinian isch dr Engineering-Partner vom OpenBao Competence Center Switzerland, zäme mit VSHN — The DevOps Company. Mir bringe s Go- u Security-Engineering: dr OpenBao-Sourcecode läse, debugge, erwytere u i dini Plattform integriere.",
+  "openbao.partner.description2":
+    "VSHN bringt d Betribssite mit ISO-27001-zertifizierte Prozäss, ISAE-3402-Type-II-Bricht für regulierti Chunde u 24×7-Pikett. E vollständig gmanagete OpenBao-Service im VSHN Application Catalog isch i Entwicklig, mit automatisiertem Provisioning, Backups, Monitoring u SLAs bis 99.99% Verfüegbarkeit — frag üs nach Early Access.",
+  "openbao.pricing.title": "Was es choschtet",
+  "openbao.pricing.description":
+    "OpenBao säuber isch gratis u bliibt gratis, egal wie viu Applikatione Secrets bezieh. Du zahlsch für Engineering u Betrib — u gsehsch beidi Zahle, bevor de di festleisch.",
+  "openbao.pricing.item1":
+    "Es gratis erschts Gspräch, um usezfinde, öb OpenBao überhoupt zu dim Setup passt",
+  "openbao.pricing.item2":
+    "E gschribne Scope u ne Choschteschätzig i CHF, i dr Regu innerhaub vo eim Arbeitstag nach däm Gspräch",
+  "openbao.pricing.item3":
+    "Planbari Monatsrate für e loufende Betrib, ohni dini Secrets oder Client-Identitäte z zäue",
+  "openbao.pricing.item4":
+    "Keni Verpflichtig i dr Scoping-Phase — we de üs nid bruchsch, de säge mir das",
+  "openbao.faq.title": "Bevor du frägsch",
+  "openbao.faq.q1": "Was isch OpenBao genau?",
+  "openbao.faq.a1":
+    "OpenBao isch e Open-Source-Plattform für Secrets Management, ghostet vo dr Linux Foundation u gforket vo HashiCorp Vault, wo Vault vo dr MPL zur Business Source License gwächslet het. Si deckt s Glyche ab: Key-Value-Secrets, dynamischi Datebank- u Cloud-Credentials, PKI-Zertifikat, Encryption as a Service, identitätsbasierti Zuegriffskontrolle u Audit-Logging. S API bliibt vollständig Vault-kompatibel, bestehendi Integratione u Tools funktioniere wyter.",
+  "openbao.faq.q2": "Wie risikant isch d Migration vo Vault?",
+  "openbao.faq.a2":
+    "Weniger risikant, aus di meischte Teams erwarte, wüu OpenBao s API u s Protokoll vo Vault behautet. Mir mappe Secrets Engines, Policies u Auth-Methode, betribe beidi Systeme während dr Umstellig parallel u verifiziere, dass jedes Secret über OpenBao erreichbar isch, bevor s aute Vault abbout wird. I de meischte Fäu bruche dini Applikatione u dis Terraform gar keni Änderige.",
+  "openbao.faq.q3":
+    "Mir bruche GitLab. Söue mir uf dr GitLab Secrets Manager warte?",
+  "openbao.faq.a3":
+    "GitLab het sy Secrets Manager uf OpenBao bout, was öppis drüber seit, wo s Ökosystem häre geit. Zwöi Sache entscheide s für di. Ersches louft er aus Cloud-native Komponänte: bi self-managed GitLab betribsch du wyterhin es Kubernetes-Cluster, e Datebank, e TLS-Ändpunkt, Key-Custody u Backups. Zwöiters haltet er Credentials für GitLab-Pipelines, während di meischte Teams o Secrets für Applikatione, Datebanke u Infrastruktur usserhaub vo CI bruche. Es dedizierts OpenBao deckt beides ab, u dini GitLab-Jobs erreiche s mit CI-ID-Tokens über OIDC.",
+  "openbao.faq.q4":
+    "Was isch dr Unterschid zwüsche Support u Managed Operations?",
+  "openbao.faq.a4":
+    "Es Support-Abo git dir öpper zum Alüte, we öppis kaputt isch — Architektur, Deployment, Patching u Betrib machsch du wyterhin säuber. Managed Operations heisst: mir designe d Architektur, deploye s HA-Cluster, konfiguriere Auto-Unseal, fahre d Backups, luege ufs Monitoring u übernäh Incidents 24×7. I beidne Fäu ghört s Deployment dir: höersch du uf, mit üs z schaffe, louft es unveränderet wyter.",
+  "openbao.faq.q5": "Cha aues i dr Schwiz bliibe?",
+  "openbao.faq.a5":
+    "Ja, u das isch dr Standard. OpenBao louft bi schwiizerische Cloud-Provider wie cloudscale.ch u Exoscale, wo ihri Rächezentre uusschliesslech i dr Schwiz betribe, oder uf APPUiO, Managed OpenShift, i dyner Private Cloud oder on-premises i dim eigete Rächezentrum. D Verträg unterstöh schwiizerischem Rächt, u di Engineers, wo dranne schaffe, si hie.",
+  "openbao.faq.q6": "Hilft das bi üsem Audit?",
+  "openbao.faq.a6":
+    "I dr Regu ja. OpenBao lat sich mehrere Aforderige vo de CIS Controls v8 zuenordne: Encryption as a Service u AES-256-GCM-Storage-Verschlüsselig für Data Protection, Policy-basierte Least-Privilege-Zuegriff u dynamischi Credentials mit automatischem Ablouf für Access Control, u nes Audit-Log über jede Secret-Zuegriff aus Nachwyis. Uf dr Betribssite füehrt VSHN OpenBao mit ISO-27001-zertifizierte Prozäss u liferet ISAE-3402-Type-II-Bricht für regulierti Chunde.",
+  "openbao.faq.q7": "Wie schnäu chöi mir schtarte?",
+  "openbao.faq.a7":
+    "Mir mäude üs innerhaub vo zwe Arbeitstäg für nes erschts Gspräch. E Architektur-Review isch nachhär e Frag vo Täg, e ganzi Migration duuret meischtens es paar Wuche — je nach däm, wie viu Secrets Engines u Konsumänte im Spiu si.",
+  "openbao.form.title": "Migrations-Assessment afrage",
+  "openbao.form.description":
+    "Verzeu üs, was du hüt betribsch, u mir mäude üs innerhaub vo zwe Arbeitstäg. Keni Newsletter, kei Follow-up-Serie.",
+  "openbao.form.nameplaceholder": "Dis Name",
+  "openbao.form.emailplaceholder": "Gschäftlechi E-Mail",
+  "openbao.form.companyplaceholder": "Firma",
+  "openbao.form.roleplaceholder": "Dini Roue (optional)",
+  "openbao.form.interestlabel": "Womit chöi mir hälfe?",
+  "openbao.form.interest.placeholder": "Womit chöi mir hälfe?",
+  "openbao.form.interest.migration": "Migration vo HashiCorp Vault",
+  "openbao.form.interest.deployment": "Nöis OpenBao-Deployment",
+  "openbao.form.interest.review": "Architektur-Review",
+  "openbao.form.interest.operations":
+    "Managed Operations für nes bestehends Setup",
+  "openbao.form.interest.comparison": "Choschtevergliich Vault vs. OpenBao",
+  "openbao.form.interest.managed": "Managed OpenBao Service (Early Access)",
+  "openbao.form.interest.other": "Öppis anders",
+  "openbao.form.contextplaceholder":
+    "Was betribsch du hüt? Vault-Version, ungfähri Azahl Secrets u Konsumänte, wo s ghostet isch. (optional)",
+  "openbao.form.submitlabel": "Assessment afrage",
+  "openbao.form.reassurance":
+    "Gratis, unverbindlech, keni Newsletter. Mir antworte innerhaub vo zwe Arbeitstäg.",
+  "openbao.bloglink": "Läs üse Vergliich vo OpenBao u HashiCorp Vault",
 
   // Pricing Page
   "pricing.title": "Priise",

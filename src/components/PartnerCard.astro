@@ -15,20 +15,20 @@ const { name, tagline, description, url, logo } = Astro.props;
 
 <article class="partner-card">
   <div class="card-body">
-    {
-      logo && (
-        <div class="logo-container">
-          <img src={logo.src} alt="" class="partner-logo" />
-        </div>
-      )
-    }
+    {logo && (
+      <div class="logo-container">
+        <img src={logo.src} alt="" class="partner-logo" />
+      </div>
+    )}
 
     <h3 class="partner-name">{name}</h3>
     <p class="tagline">{tagline}</p>
     <p class="description">{description}</p>
 
     <div class="link-container">
-      <Link href={url} target="_blank">Visit Website</Link>
+      <Link href={url} target="_blank">
+        Visit Website
+      </Link>
     </div>
   </div>
 </article>

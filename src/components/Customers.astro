@@ -17,17 +17,15 @@ const featuredCustomers = sortByDateDesc(customers).filter(
   <h2>{t("customers.title")}</h2>
 
   <div id="grid">
-    {
-      featuredCustomers
-        .slice(0, 4)
-        .map(({ id, data }) => <CustomerCard {id} {...data} />)
-    }
+    {featuredCustomers.slice(0, 4).map(({ id, data }) => (
+      <CustomerCard {id} {...data} />
+    ))}
   </div>
 
   <div id="all-link">
-    <Link href={translatePath("/customers")} secondary
-      >{t("cta.allCustomers")}</Link
-    >
+    <Link href={translatePath("/customers")} secondary>
+      {t("cta.allCustomers")}
+    </Link>
   </div>
 </section>
 

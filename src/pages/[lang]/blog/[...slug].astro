@@ -61,21 +61,21 @@ const ogImage = (await getImage({ src: post.data.image, width: 1200 })).src;
     image: ogImage,
   }}
 >
-  {
-    post.data.image && (
-      <div slot="header-after" class="header-image">
-        <Image
-          src={post.data.image}
-          alt={post.data.title}
-          loading="eager"
-          fetchpriority="high"
-        />
-      </div>
-    )
-  }
+  {post.data.image && (
+    <div slot="header-after" class="header-image">
+      <Image
+        src={post.data.image}
+        alt={post.data.title}
+        loading="eager"
+        fetchpriority="high"
+      />
+    </div>
+  )}
 
   <div slot="header-after" class="tags">
-    {post.data.tags.map((tag: string) => <Tag name={tag} />)}
+    {post.data.tags.map((tag: string) => (
+      <Tag name={tag} />
+    ))}
   </div>
 
   <Content />
@@ -89,7 +89,9 @@ const ogImage = (await getImage({ src: post.data.image, width: 1200 })).src;
   <CtaBanner slot="footer" source="blog" />
 
   <div slot="footer" class="actions">
-    <a href={translatePath("/blog")} class="btn">{t("blog.allPosts")}</a>
+    <a href={translatePath("/blog")} class="btn">
+      {t("blog.allPosts")}
+    </a>
     <a href="/rss.xml" class="btn rss">
       <img width="10" src={rss.src} alt="" />
       RSS

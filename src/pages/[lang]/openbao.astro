@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
+import StructuredData from "../../components/StructuredData.astro";
 import Title from "../../components/Title.astro";
 import Link from "../../components/Link.astro";
 import { useI18n } from "../../i18n/utils";
-import { getLanguagePaths } from "../../lib/paths";
+import { getLanguagePaths, getCollectionByLanguage } from "../../lib/paths";
 import openbaoLogo from "../../assets/openbao.svg";
 
 export function getStaticPaths() {
@@ -13,76 +15,513 @@ export function getStaticPaths() {
 
 const { lang, t } = useI18n(Astro.url);
 
+// The page title stays keyword-shaped for search and ads; the H1 leads with
+// what the visitor gets out of it instead.
 const title = t("openbao.title");
-const subtitle = t("openbao.subtitle");
+const heading = t("openbao.heading");
 const description = t("openbao.description");
-const contactLink = `/${lang}/contact#form`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const blogUrl = `/${lang}/blog/openbao-os-vault-alternative`;
+
+// Logos shown as social proof. Labelled as platform and security work rather
+// than as OpenBao deployments, because that is what these engagements were.
+// Ids that no longer exist in the customers collection are simply skipped.
+const LOGO_IDS = [
+  "swisssign",
+  "postfinance",
+  "swisscom-health",
+  "bernmobil",
+  "meteoswiss",
+];
+// The engagement closest to this offering: a Swiss trust service provider that
+// had to keep its security standards intact through a platform migration.
+const TESTIMONIAL_ID = "swisssign";
+
+const customers = await getCollectionByLanguage("customers", lang);
+const logos = LOGO_IDS.map((id) => customers.find((c) => c.id === id)).filter(
+  (c) => c !== undefined,
+);
+const testimonial = customers.find((c) => c.id === TESTIMONIAL_ID);
+
+const stats = ([1, 2, 3] as const).map((n) => ({
+  value: t(`openbao.stats.item${n}.value`),
+  label: t(`openbao.stats.item${n}.label`),
+}));
+
+const offerings = ([1, 2, 3, 4] as const).map((n) => ({
+  title: t(`openbao.offering.item${n}.title`),
+  description: t(`openbao.offering.item${n}.description`),
+}));
+
+const comparisonRows = ([1, 2, 3, 4, 5, 6] as const).map((n) => ({
+  aspect: t(`openbao.comparison.row${n}.aspect`),
+  vault: t(`openbao.comparison.row${n}.vault`),
+  openbao: t(`openbao.comparison.row${n}.openbao`),
+}));
+
+// Single source for the FAQ list and its FAQPage markup, so the two can't drift
+// apart. Answers shown on the page but missing from the schema are what gets a
+// rich result revoked.
+const faq = ([1, 2, 3, 4, 5, 6, 7] as const).map((n) => ({
+  question: t(`openbao.faq.q${n}`),
+  answer: t(`openbao.faq.a${n}`),
+}));
+
+// English values regardless of the visitor's language, so the request lands in
+// the inbox in one shape no matter which version of the page it came from.
+const interests = [
+  { value: "Vault migration", label: t("openbao.form.interest.migration") },
+  { value: "New deployment", label: t("openbao.form.interest.deployment") },
+  { value: "Architecture review", label: t("openbao.form.interest.review") },
+  { value: "Managed operations", label: t("openbao.form.interest.operations") },
+  { value: "Cost comparison", label: t("openbao.form.interest.comparison") },
+  { value: "Managed service", label: t("openbao.form.interest.managed") },
+  { value: "Other", label: t("openbao.form.interest.other") },
+];
 ---
 
 <Layout>
   <SEO slot="head" {title} {description} {lang} />
+  <StructuredData slot="head" schema={{ type: "FAQPage", questions: faq }} />
+  <StructuredData
+    slot="head"
+    schema={{
+      type: "Service",
+      name: title,
+      description,
+      serviceType: "Secrets Management Consulting and Managed Operations",
+      url: canonicalUrl,
+      provider: {
+        name: "bespinian",
+        url: new URL("/", Astro.site).toString(),
+      },
+    }}
+  />
 
-  <Title {title} {subtitle} spaceship={openbaoLogo} />
+  <Title
+    title={heading}
+    subtitle={t("openbao.lede")}
+    eyebrow={t("openbao.eyebrow")}
+    spaceship={openbaoLogo}
+    spaceshipIsLogo
+  />
 
   <div class="page-content">
     <section class="intro-section">
       <div class="container">
-        <p class="intro-text">{description}</p>
-        <div class="cta-container">
-          <Link href={contactLink} large center>
+        <p class="intro-text">{t("openbao.why")}</p>
+        <div class="cta-container" data-cta-position="hero">
+          <Link href="#openbao-form" large center class="openbao-cta">
             {t("openbao.cta")}
           </Link>
         </div>
       </div>
     </section>
 
+    <section class="stats-section">
+      <div class="container">
+        <ul class="stats">
+          {stats.map((stat) => (
+            <li class="stat">
+              <span class="stat-value">{stat.value}</span>
+              <span class="stat-label">{stat.label}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    {logos.length > 0 && (
+      <section class="logo-section">
+        <div class="container">
+          <p class="logo-title">{t("openbao.trustedby.title")}</p>
+          <div class="logo-strip">
+            {logos.map((customer) => (
+              <Image
+                src={customer.data.logo}
+                alt={customer.data.company}
+                class="customer-logo"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
     <section class="content-section">
       <div class="container">
-        <h2 class="section-title">{t("openbao.about.title")}</h2>
-        <p class="about-text">{t("openbao.about.description1")}</p>
-        <p class="about-text">{t("openbao.about.description2")}</p>
-        <p class="about-text">{t("openbao.about.description3")}</p>
+        <h2 class="section-title">{t("openbao.whothisfor.title")}</h2>
+        <ul class="checklist">
+          <li>{t("openbao.whothisfor.item1")}</li>
+          <li>{t("openbao.whothisfor.item2")}</li>
+          <li>{t("openbao.whothisfor.item3")}</li>
+          <li>{t("openbao.whothisfor.item4")}</li>
+        </ul>
       </div>
     </section>
 
     <section class="content-section alternate">
       <div class="container">
-        <h2 class="section-title">{t("openbao.features.title")}</h2>
-        <ul class="value-list">
-          <li>{t("openbao.features.item1")}</li>
-          <li>{t("openbao.features.item2")}</li>
-          <li>{t("openbao.features.item3")}</li>
-          <li>{t("openbao.features.item4")}</li>
-        </ul>
+        <h2 class="section-title">{t("openbao.offering.title")}</h2>
+        <p class="lead-text">{t("openbao.offering.description")}</p>
+        <div class="offering-cards">
+          {offerings.map((offering) => (
+            <div class="offering-card">
+              <h3>{offering.title}</h3>
+              <p>{offering.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
 
     <section class="content-section">
       <div class="container">
-        <h2 class="section-title">{t("openbao.benefits.title")}</h2>
-        <p class="about-text">{t("openbao.benefits.description")}</p>
+        <h2 class="section-title">{t("openbao.included.title")}</h2>
         <ul class="value-list">
-          <li>{t("openbao.benefits.item1")}</li>
-          <li>{t("openbao.benefits.item2")}</li>
-          <li>{t("openbao.benefits.item3")}</li>
-          <li>{t("openbao.benefits.item4")}</li>
-          <li>{t("openbao.benefits.item5")}</li>
+          <li>{t("openbao.included.item1")}</li>
+          <li>{t("openbao.included.item2")}</li>
+          <li>{t("openbao.included.item3")}</li>
+          <li>{t("openbao.included.item4")}</li>
+          <li>{t("openbao.included.item5")}</li>
+          <li>{t("openbao.included.item6")}</li>
+          <li>{t("openbao.included.item7")}</li>
+          <li>{t("openbao.included.item8")}</li>
         </ul>
-      </div>
-    </section>
-
-    <section id="final-cta">
-      <div class="container">
-        <h2 class="cta-title">{t("openbao.finalcta.title")}</h2>
-        <p class="cta-description">{t("openbao.finalcta.description")}</p>
-        <div class="cta-container">
-          <Link href={contactLink} large center secondary>
+        <div class="cta-container mid" data-cta-position="included">
+          <Link href="#openbao-form" large center class="openbao-cta">
             {t("openbao.cta")}
           </Link>
         </div>
       </div>
     </section>
+
+    <section class="content-section alternate">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.comparison.title")}</h2>
+        <p class="lead-text">{t("openbao.comparison.description")}</p>
+        <!-- Scrolls inside its own box on phones rather than shrinking the
+             type until the comparison is unreadable. -->
+        <div class="table-scroll">
+          <table class="comparison">
+            <thead>
+              <tr>
+                <th scope="col">{t("openbao.comparison.aspect")}</th>
+                <th scope="col">{t("openbao.comparison.vault")}</th>
+                <th scope="col" class="ours">
+                  {t("openbao.comparison.openbao")}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparisonRows.map((row) => (
+                <tr>
+                  <th scope="row">{row.aspect}</th>
+                  <td>{row.vault}</td>
+                  <td class="ours">{row.openbao}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.sovereignty.title")}</h2>
+        <p class="lead-text">{t("openbao.sovereignty.description")}</p>
+        <ul class="value-list">
+          <li>{t("openbao.sovereignty.item1")}</li>
+          <li>{t("openbao.sovereignty.item2")}</li>
+          <li>{t("openbao.sovereignty.item3")}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section alternate">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.partner.title")}</h2>
+        <p class="about-text">{t("openbao.partner.description1")}</p>
+        <p class="about-text">{t("openbao.partner.description2")}</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.pricing.title")}</h2>
+        <p class="lead-text">{t("openbao.pricing.description")}</p>
+        <ul class="value-list">
+          <li>{t("openbao.pricing.item1")}</li>
+          <li>{t("openbao.pricing.item2")}</li>
+          <li>{t("openbao.pricing.item3")}</li>
+          <li>{t("openbao.pricing.item4")}</li>
+        </ul>
+      </div>
+    </section>
+
+    {testimonial && (
+      <section class="testimonial-section">
+        <div class="container">
+          <blockquote class="testimonial-quote">
+            {`"${testimonial.data.quote}"`}
+          </blockquote>
+          <div class="testimonial-author">
+            {testimonial.data.authorImage && (
+              <Image
+                src={testimonial.data.authorImage}
+                alt=""
+                width={96}
+                height={96}
+                class="author-portrait"
+              />
+            )}
+            <div>
+              <p class="author-name">{testimonial.data.authorName}</p>
+              <p class="author-title">
+                {testimonial.data.authorTitle}, {testimonial.data.company}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="content-section">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.faq.title")}</h2>
+        <!-- Native disclosure widgets: keyboard and screen reader behaviour
+             come for free, and the answers stay in the DOM for the FAQPage
+             markup even while they are collapsed. -->
+        <div class="faq">
+          {faq.map((item) => (
+            <details class="faq-item">
+              <summary>{item.question}</summary>
+              <p>{item.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="openbao-form">
+      <div class="container">
+        <h2 class="section-title">{t("openbao.form.title")}</h2>
+        <p class="form-description">{t("openbao.form.description")}</p>
+
+        <form
+          id="openbao-lead-form"
+          action="https://formspree.io/f/mgaenjeq"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="OpenBao migration assessment request"
+          />
+          <!-- Tells us which page and language the request came from, so the
+               same endpoint can serve more than one entry point. -->
+          <input type="hidden" name="page" value="openbao" />
+          <input type="hidden" name="language" value={lang} />
+          <input type="text" name="_gotcha" class="gotcha" tabindex="-1" />
+
+          <div class="field">
+            <input
+              class="input"
+              name="name"
+              placeholder={t("openbao.form.nameplaceholder")}
+              aria-label={t("openbao.form.nameplaceholder")}
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="field">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder={t("openbao.form.emailplaceholder")}
+              aria-label={t("openbao.form.emailplaceholder")}
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="field">
+            <input
+              class="input"
+              name="company"
+              placeholder={t("openbao.form.companyplaceholder")}
+              aria-label={t("openbao.form.companyplaceholder")}
+              autocomplete="organization"
+              required
+            />
+          </div>
+          <div class="field">
+            <!-- Optional: useful for the first call, but not worth losing a
+                 lead over. -->
+            <input
+              class="input"
+              name="role"
+              placeholder={t("openbao.form.roleplaceholder")}
+              aria-label={t("openbao.form.roleplaceholder")}
+              autocomplete="organization-title"
+            />
+          </div>
+          <div class="field">
+            <!-- Qualifies the lead in one click, and tells us which of the
+                 offerings above actually gets requested. -->
+            <select
+              class="input select"
+              name="interest"
+              aria-label={t("openbao.form.interestlabel")}
+              required
+            >
+              <option value="" selected>
+                {t("openbao.form.interest.placeholder")}
+              </option>
+              {interests.map((interest) => (
+                <option value={interest.value}>{interest.label}</option>
+              ))}
+            </select>
+          </div>
+          <div class="field">
+            <textarea
+              class="textarea"
+              name="context"
+              placeholder={t("openbao.form.contextplaceholder")}
+              aria-label={t("openbao.form.contextplaceholder")}
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="field">
+            <button type="submit" class="submit-button">
+              {t("openbao.form.submitlabel")}
+            </button>
+            <p class="reassurance">{t("openbao.form.reassurance")}</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Below the form on purpose: it is a way out of the page, so it should
+         not sit in the reading path of someone who arrived from an ad. -->
+    <footer class="page-footer">
+      <div class="container">
+        <a href={blogUrl}>{t("openbao.bloglink")}</a>
+      </div>
+    </footer>
   </div>
+
+  <!-- Mobile only: keeps the CTA reachable without scrolling back up. Hidden
+       once the form itself is on screen. -->
+  <div id="sticky-cta" class="sticky-cta" data-cta-position="sticky">
+    <a href="#openbao-form" class="sticky-cta-link openbao-cta">
+      {t("openbao.cta")}
+    </a>
+  </div>
+
+  <script>
+    declare global {
+      interface Window {
+        gtag?: (...args: unknown[]) => void;
+      }
+    }
+
+    // Which CTA sends people to the form. Not a conversion on its own, but it
+    // tells us whether the hero or a later section does the convincing.
+    for (const link of document.querySelectorAll<HTMLAnchorElement>(
+      "a.openbao-cta",
+    )) {
+      link.addEventListener("click", () => {
+        const position =
+          link
+            .closest("[data-cta-position]")
+            ?.getAttribute("data-cta-position") ?? "unknown";
+        window.gtag?.("event", "openbao_cta_click", { cta_position: position });
+      });
+    }
+
+    // The sticky mobile bar is only useful between the hero CTA scrolling out
+    // of view and the form coming into it. Anywhere else it just covers copy.
+    const stickyCta = document.getElementById("sticky-cta");
+    const heroCta = document.querySelector(".intro-section .cta-container");
+    const formSection = document.getElementById("openbao-form");
+
+    if (stickyCta && heroCta && formSection) {
+      let heroCtaVisible = true;
+      let formVisible = false;
+
+      const updateStickyCta = () => {
+        stickyCta.classList.toggle("visible", !heroCtaVisible && !formVisible);
+      };
+
+      const observe = (target: Element, onChange: (visible: boolean) => void) =>
+        new IntersectionObserver(([entry]) => {
+          onChange(entry?.isIntersecting ?? false);
+          updateStickyCta();
+        }).observe(target);
+
+      observe(heroCta, (visible) => (heroCtaVisible = visible));
+      observe(formSection, (visible) => (formVisible = visible));
+    }
+
+    // How far people read before leaving, to tell "nobody scrolls past the
+    // hero" apart from "they read everything and still didn't get in touch".
+    const reportedDepths = new Set<number>();
+    const trackScrollDepth = () => {
+      const scrollable = document.body.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const percent = ((window.scrollY / scrollable) * 100) | 0;
+
+      for (const depth of [50, 90]) {
+        if (percent >= depth && !reportedDepths.has(depth)) {
+          reportedDepths.add(depth);
+          window.gtag?.("event", "openbao_scroll_depth", { percent: depth });
+        }
+      }
+      if (reportedDepths.size === 2) {
+        window.removeEventListener("scroll", trackScrollDepth);
+      }
+    };
+    window.addEventListener("scroll", trackScrollDepth, { passive: true });
+
+    const form = document.getElementById(
+      "openbao-lead-form",
+    ) as HTMLFormElement | null;
+
+    // Started but not submitted is the gap worth seeing: it separates "the page
+    // never convinced anyone" from "the form itself loses them".
+    form?.addEventListener(
+      "focusin",
+      () => {
+        window.gtag?.("event", "openbao_form_start");
+      },
+      { once: true },
+    );
+
+    // The actual conversion: a submitted request, not a click on a link.
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      let submitted = false;
+      const submitOnce = () => {
+        if (submitted) return;
+        submitted = true;
+        form.submit();
+      };
+
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-18327942303/6ftmCPaMjvEcEJ_puKNE",
+          event_callback: submitOnce,
+        });
+        // Fallback in case gtag is blocked or the callback never fires.
+        setTimeout(submitOnce, 1000);
+      } else {
+        submitOnce();
+      }
+    });
+  </script>
 </Layout>
 
 <style>
@@ -110,14 +549,76 @@ const contactLink = `/${lang}/contact#form`;
     gap: 1rem;
   }
 
+  .cta-container.mid {
+    margin-top: 3rem;
+  }
+
+  .stats-section {
+    padding: 2rem;
+    background-color: var(--color-background-primary);
+    color: var(--color-secondary);
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .stat-label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  .logo-section {
+    padding: 3rem 2rem;
+  }
+
+  .logo-title {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gray);
+    margin: 0 0 2rem;
+  }
+
+  .logo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 3rem;
+  }
+
+  .customer-logo {
+    max-height: 2.5rem;
+    max-width: 8rem;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
   .content-section {
     padding: 4rem 2rem;
   }
 
   .content-section.alternate {
-    background-color: var(--color-background-primary);
-    color: var(--color-secondary);
-    padding-bottom: 6rem;
+    background-color: var(--color-background-tertiary);
   }
 
   .container {
@@ -133,30 +634,36 @@ const contactLink = `/${lang}/contact#form`;
     text-align: center;
   }
 
-  .content-section.alternate .section-title {
-    color: var(--color-secondary);
+  .lead-text {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+    color: var(--color-gray);
+    margin: 0 auto 3rem;
+    max-width: 44rem;
   }
 
   .about-text {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: var(--color-gray);
-    text-align: center;
+    margin: 0 0 1.5rem;
+    color: var(--color-text-dark);
   }
 
   .about-text:last-child {
     margin-bottom: 0;
   }
 
-  .value-list {
+  .value-list,
+  .checklist {
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  .value-list li {
-    font-size: 1.2rem;
+  .value-list li,
+  .checklist li {
+    font-size: 1.15rem;
     padding: 1rem 0;
     padding-left: 2.5rem;
     position: relative;
@@ -167,30 +674,323 @@ const contactLink = `/${lang}/contact#form`;
     content: "✓";
     position: absolute;
     left: 0;
+    color: var(--color-primary);
     font-weight: bold;
     font-size: 1.5rem;
   }
 
-  #final-cta {
+  .checklist li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .offering-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .offering-card {
+    padding: 1.75rem;
+    background-color: var(--color-background-secondary);
+    border-radius: var(--card-border-radius);
+  }
+
+  .offering-card h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.35rem;
+    color: var(--color-primary);
+  }
+
+  .offering-card p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-text-dark);
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  .comparison {
+    width: 100%;
+    min-width: 40rem;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .comparison th,
+  .comparison td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(39, 95, 189, 0.2);
+    vertical-align: top;
+  }
+
+  .comparison thead th {
+    font-size: 1.1rem;
+    color: var(--color-background-primary);
+  }
+
+  .comparison tbody th {
+    width: 9rem;
+    color: var(--color-text-dark);
+  }
+
+  .comparison td {
+    color: var(--color-gray);
+  }
+
+  /* Our column carries the answer, so it reads as the default rather than as
+     one of three equally weighted options. */
+  .comparison .ours {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-dark);
+    font-weight: 600;
+  }
+
+  .testimonial-section {
     background-color: var(--color-background-primary);
     color: var(--color-secondary);
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 2rem;
     text-align: center;
   }
 
-  .cta-title {
-    font-size: 2.5rem;
-    font-weight: 700;
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .author-portrait {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .author-name {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .author-title {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+
+  .faq {
+    margin: 0;
+    border-top: 1px solid rgba(39, 95, 189, 0.2);
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(39, 95, 189, 0.2);
+  }
+
+  .faq-item summary {
+    /* Both are needed to drop the built-in triangle: `list-style` for current
+       browsers, the pseudo-element for older WebKit. */
+    list-style: none;
+    position: relative;
+    padding: 1.5rem 3rem 1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: var(--color-background-primary);
+    cursor: pointer;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary:hover {
+    color: var(--color-primary);
+  }
+
+  /* A chevron drawn from two borders, pointing down when closed and up when
+     open, so the state is visible without another asset. */
+  .faq-item summary::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right: 0.15rem solid currentColor;
+    border-bottom: 0.15rem solid currentColor;
+    transform: translateY(-75%) rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item[open] summary::after {
+    transform: translateY(-25%) rotate(-135deg);
+  }
+
+  .faq-item p {
+    margin: 0 0 1.5rem;
+    padding-right: 3rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: var(--color-text-dark);
+  }
+
+  #openbao-form {
+    background-color: var(--color-background-tertiary);
+    padding: 4rem 2rem 5rem;
+    scroll-margin-top: 2rem;
+  }
+
+  #openbao-form .container {
+    max-width: 40rem;
+  }
+
+  .form-description {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-gray);
+    margin: 0 auto 3rem;
+    max-width: 40rem;
+  }
+
+  .field {
     margin-bottom: 1.5rem;
   }
 
-  .cta-description {
-    font-size: 1.3rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.95;
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
+  /* Honeypot: hidden from people, tempting to bots. */
+  .gotcha {
+    display: none;
+  }
+
+  .input,
+  .textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-lato);
+    transition: border-color 0.3s ease;
+  }
+
+  .input:focus,
+  .textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+
+  /* Matches the text inputs, which a native select does not do on its own. */
+  .select {
+    height: 3.4rem;
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-dark);
+    appearance: none;
+    background-image:
+      linear-gradient(45deg, transparent 50%, #666 50%),
+      linear-gradient(135deg, #666 50%, transparent 50%);
+    background-position:
+      calc(100% - 1.4rem) 1.5rem,
+      calc(100% - 1rem) 1.5rem;
+    background-size:
+      0.4rem 0.4rem,
+      0.4rem 0.4rem;
+    background-repeat: no-repeat;
+  }
+
+  .select:invalid {
+    color: var(--color-gray);
+  }
+
+  .textarea {
+    resize: vertical;
+    min-height: 6rem;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--font-lato);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color: var(--color-background-primary);
+  }
+
+  .reassurance {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-gray);
+  }
+
+  .page-footer {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .page-footer a {
+    color: var(--color-primary);
+    font-size: 1.05rem;
+  }
+
+  .sticky-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+    background-color: var(--color-secondary);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .sticky-cta-link {
+    display: block;
+    padding: 0.9rem 1rem;
+    border-radius: 999999rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* Mobile only: on wider screens the form is a short scroll away anyway. */
+  @media (max-width: 47.999rem) {
+    .sticky-cta.visible {
+      display: block;
+    }
   }
 
   @media (min-width: 48rem) {
@@ -198,24 +998,33 @@ const contactLink = `/${lang}/contact#form`;
       font-size: 1.5rem;
     }
 
+    .stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+    }
+
     .section-title {
       font-size: 2.5rem;
     }
 
-    .about-text {
+    .value-list li,
+    .checklist li {
       font-size: 1.3rem;
     }
 
-    .value-list li {
-      font-size: 1.4rem;
+    .offering-cards {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    .cta-title {
-      font-size: 3rem;
+    .comparison {
+      font-size: 1.05rem;
     }
 
-    .cta-description {
-      font-size: 1.5rem;
+    .testimonial-quote {
+      font-size: 1.6rem;
     }
   }
 </style>

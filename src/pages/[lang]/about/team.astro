@@ -28,7 +28,9 @@ const description = t("about.team.subtitle");
   <Title {title} subtitle={description} />
 
   <div class="page-content">
-    {members.map((member) => <MemberCard {...member} />)}
+    {members.map((member) => (
+      <MemberCard {...member} />
+    ))}
   </div>
 </Layout>
 

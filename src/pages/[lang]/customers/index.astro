@@ -27,7 +27,9 @@ const description = t("customers.page.subtitle");
   isEmpty={sortedCustomers.length === 0}
   emptyMessage={t("customers.empty")}
 >
-  {sortedCustomers.map(({ id, data }) => <CustomerCard {id} {...data} />)}
+  {sortedCustomers.map(({ id, data }) => (
+    <CustomerCard {id} {...data} />
+  ))}
   <p class="and-more">{t("customers.andMore")}</p>
 </CollectionPage>
 

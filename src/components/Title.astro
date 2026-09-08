@@ -10,16 +10,27 @@ interface Props {
   // visitor searched or clicked on, while the headline leads with the outcome.
   eyebrow?: string;
   spaceship?: ImageMetadata;
+  // The spaceship slot also carries product logos. Those are wider and denser
+  // than the decorative art, so they need a tighter cap to stay a mark in the
+  // corner instead of filling the header on a wide screen.
+  spaceshipIsLogo?: boolean;
 }
 
-const { title, subtitle, eyebrow, spaceship } = Astro.props;
+const { title, subtitle, eyebrow, spaceship, spaceshipIsLogo } = Astro.props;
 ---
 
 <section id="container">
   {eyebrow && <p class="eyebrow">{eyebrow}</p>}
   <h1>{title}</h1>
   <p>{subtitle}</p>
-  {spaceship && <img id="spaceship" src={spaceship.src} alt="" />}
+  {spaceship && (
+    <img
+      id="spaceship"
+      class={spaceshipIsLogo ? "logo" : undefined}
+      src={spaceship.src}
+      alt=""
+    />
+  )}
   <img id="cloud-dark-medium" src={cloudDarkMedium.src} alt="" />
   <img id="cloud-large" src={cloudLarge.src} alt="" />
 </section>
@@ -74,6 +85,13 @@ const { title, subtitle, eyebrow, spaceship } = Astro.props;
     max-height: 75%;
     max-width: calc(100vw - 58rem);
     z-index: 3;
+  }
+
+  /* Keeps the same "only if there is room beside the copy" behaviour, with an
+     absolute ceiling once the viewport is wide enough for the cap to bite. */
+  #spaceship.logo {
+    max-height: 55%;
+    max-width: min(22rem, calc(100vw - 58rem));
   }
 
   #cloud-large {

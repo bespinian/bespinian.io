@@ -24,7 +24,9 @@ const services =
   <h2 id="services">{t("services.title")}</h2>
 
   <div id="grid">
-    {services.map((service) => <ServiceCard {...service} />)}
+    {services.map((service) => (
+      <ServiceCard {...service} />
+    ))}
   </div>
 </section>
 

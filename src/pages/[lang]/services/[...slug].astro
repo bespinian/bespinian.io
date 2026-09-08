@@ -72,24 +72,22 @@ const testimonial = proof?.testimonialId
 
   <div class="service-page" data-service={title}>
     <article>
-      {
-        logos.length > 0 && (
-          <section class="logo-section">
-            <div class="container">
-              <p class="logo-title">{t("services.trustedby")}</p>
-              <div class="logo-strip">
-                {logos.map((customer) => (
-                  <Image
-                    src={customer.data.logo}
-                    alt={customer.data.company}
-                    class="customer-logo"
-                  />
-                ))}
-              </div>
+      {logos.length > 0 && (
+        <section class="logo-section">
+          <div class="container">
+            <p class="logo-title">{t("services.trustedby")}</p>
+            <div class="logo-strip">
+              {logos.map((customer) => (
+                <Image
+                  src={customer.data.logo}
+                  alt={customer.data.company}
+                  class="customer-logo"
+                />
+              ))}
             </div>
-          </section>
-        )
-      }
+          </div>
+        </section>
+      )}
 
       <div class="service-content">
         <!-- Outcome first: an ad click arrives cold and wants to know what it
@@ -97,14 +95,12 @@ const testimonial = proof?.testimonialId
         <section class="container">
           <h2>{t("services.results")}</h2>
           <div class="result-cards">
-            {
-              service.results.list.map((item) => (
-                <div class="result-card">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              ))
-            }
+            {service.results.list.map((item) => (
+              <div class="result-card">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -113,13 +109,11 @@ const testimonial = proof?.testimonialId
             <h2>{t("services.challenges")}</h2>
             <p>{service.challenges.description}</p>
             <ul>
-              {
-                service.challenges.list.map((item) => (
-                  <li>
-                    <strong>{item.title}</strong>: {item.description}
-                  </li>
-                ))
-              }
+              {service.challenges.list.map((item) => (
+                <li>
+                  <strong>{item.title}</strong>: {item.description}
+                </li>
+              ))}
             </ul>
           </section>
         </div>
@@ -128,47 +122,43 @@ const testimonial = proof?.testimonialId
           <h2>{t("services.approach")}</h2>
           <p>{service.approach.description}</p>
           <ol>
-            {
-              service.approach.list.map((item) => (
-                <li>
-                  <strong>{item.title}</strong>: {item.description}
-                </li>
-              ))
-            }
+            {service.approach.list.map((item) => (
+              <li>
+                <strong>{item.title}</strong>: {item.description}
+              </li>
+            ))}
           </ol>
         </section>
       </div>
     </article>
   </div>
 
-  {
-    testimonial && (
-      <section class="testimonial-section">
-        <div class="container">
-          <blockquote class="testimonial-quote">
-            {`"${testimonial.data.quote}"`}
-          </blockquote>
-          <div class="testimonial-author">
-            {testimonial.data.authorImage && (
-              <Image
-                src={testimonial.data.authorImage}
-                alt=""
-                width={96}
-                height={96}
-                class="author-portrait"
-              />
-            )}
-            <div>
-              <p class="author-name">{testimonial.data.authorName}</p>
-              <p class="author-title">
-                {testimonial.data.authorTitle}, {testimonial.data.company}
-              </p>
-            </div>
+  {testimonial && (
+    <section class="testimonial-section">
+      <div class="container">
+        <blockquote class="testimonial-quote">
+          {`"${testimonial.data.quote}"`}
+        </blockquote>
+        <div class="testimonial-author">
+          {testimonial.data.authorImage && (
+            <Image
+              src={testimonial.data.authorImage}
+              alt=""
+              width={96}
+              height={96}
+              class="author-portrait"
+            />
+          )}
+          <div>
+            <p class="author-name">{testimonial.data.authorName}</p>
+            <p class="author-title">
+              {testimonial.data.authorTitle}, {testimonial.data.company}
+            </p>
           </div>
         </div>
-      </section>
-    )
-  }
+      </div>
+    </section>
+  )}
 
   <ServiceForm service={title} />
 

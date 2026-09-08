@@ -20,12 +20,12 @@ const { t, translatePath } = useI18n(Astro.url);
       <img src={kubernetes.src} alt="Kubernetes" />
     </div>
     <div class="links">
-      <Link href={translatePath("/about/technologies")} secondary
-        >{t("cta.techWeLove")}</Link
-      >
-      <Link href={translatePath("/about/partners")} secondary
-        >{t("cta.meetOurPartners")}</Link
-      >
+      <Link href={translatePath("/about/technologies")} secondary>
+        {t("cta.techWeLove")}
+      </Link>
+      <Link href={translatePath("/about/partners")} secondary>
+        {t("cta.meetOurPartners")}
+      </Link>
     </div>
   </div>
 </section>

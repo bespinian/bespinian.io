@@ -69,22 +69,20 @@ const breadcrumbSchema: Schema | undefined = breadcrumb
         <BackLink href={backLink.href} text={backLink.text} />
         <slot name="header-before" />
         <h1>{title}</h1>
-        {
-          meta.length > 0 && (
-            <div class="meta">
-              {meta.map((item, index) => (
-                <>
-                  {item.datetime ? (
-                    <time datetime={item.datetime}>{item.label}</time>
-                  ) : (
-                    <span>{item.label}</span>
-                  )}
-                  {index < meta.length - 1 && <span class="separator">•</span>}
-                </>
-              ))}
-            </div>
-          )
-        }
+        {meta.length > 0 && (
+          <div class="meta">
+            {meta.map((item, index) => (
+              <>
+                {item.datetime ? (
+                  <time datetime={item.datetime}>{item.label}</time>
+                ) : (
+                  <span>{item.label}</span>
+                )}
+                {index < meta.length - 1 && <span class="separator">•</span>}
+              </>
+            ))}
+          </div>
+        )}
         <slot name="quote" />
         <slot name="header-after" />
       </header>

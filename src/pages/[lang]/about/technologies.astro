@@ -21,16 +21,14 @@ const description = t("about.technologies.description");
   <Title {title} subtitle={description} />
 
   <div class="page-content">
-    {
-      technologies.map((tech) => (
-        <div class="tech">
-          <div class="logo-container">
-            <img src={tech.logo.src} alt="" />
-          </div>
-          <span>{tech.name}</span>
+    {technologies.map((tech) => (
+      <div class="tech">
+        <div class="logo-container">
+          <img src={tech.logo.src} alt="" />
         </div>
-      ))
-    }
+        <span>{tech.name}</span>
+      </div>
+    ))}
   </div>
 </Layout>
 

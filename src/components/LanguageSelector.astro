@@ -18,19 +18,17 @@ const id = mobile ? "lang-selector-mobile" : "lang-selector";
 
 <div class="lang-dropdown">
   <select id={id} class="lang-select" aria-label={t("nav.language")}>
-    {
-      Object.entries(languages).map(([langCode, langName]) => (
-        <option
-          value={langCode}
-          selected={currentLang === langCode}
-          data-path={`/${langCode}${removeLanguagePrefix(currentPath, currentLang)}`}
-          data-slug={langCode}
-          data-full-name={langName}
-        >
-          {langCode}
-        </option>
-      ))
-    }
+    {Object.entries(languages).map(([langCode, langName]) => (
+      <option
+        value={langCode}
+        selected={currentLang === langCode}
+        data-path={`/${langCode}${removeLanguagePrefix(currentPath, currentLang)}`}
+        data-slug={langCode}
+        data-full-name={langName}
+      >
+        {langCode}
+      </option>
+    ))}
   </select>
 </div>
 

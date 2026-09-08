@@ -43,7 +43,9 @@ const sortedWorkItems = workItems
   <h2 id="work">{t("work.title")}</h2>
 
   <div id="grid">
-    {sortedWorkItems.map((item) => <WorkCard {...item} />)}
+    {sortedWorkItems.map((item) => (
+      <WorkCard {...item} />
+    ))}
   </div>
 
   <div id="all-link">

@@ -17,7 +17,9 @@ const values = valuesEntry.data;
   <h2>{t("values.title")}</h2>
   <div class="row">
     <div class="grid">
-      {values.map((value, i) => <ValueCard index={i + 1} {...value} />)}
+      {values.map((value, i) => (
+        <ValueCard index={i + 1} {...value} />
+      ))}
     </div>
   </div>
 </section>

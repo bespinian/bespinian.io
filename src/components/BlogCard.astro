@@ -32,22 +32,22 @@ const formattedDate = formatDate(pubDate, lang);
         <time datetime={pubDate.toISOString()}>{formattedDate}</time>
       </div>
       <div class="tags">
-        {tags.map((tag) => <span class="tag">{tag}</span>)}
+        {tags.map((tag) => (
+          <span class="tag">{tag}</span>
+        ))}
       </div>
     </div>
     <div slot="back" class="back">
-      {
-        image ? (
-          <Image src={image} alt={title} class="image" />
-        ) : (
-          <div class="placeholder">
-            <p>
-              Read about
-              <br />"{title}"
-            </p>
-          </div>
-        )
-      }
+      {image ? (
+        <Image src={image} alt={title} class="image" />
+      ) : (
+        <div class="placeholder">
+          <p>
+            Read about
+            <br />"{title}"
+          </p>
+        </div>
+      )}
     </div>
 
     <style>
@@ -131,5 +131,5 @@ const formattedDate = formatDate(pubDate, lang);
         font-weight: 500;
       }
     </style>
-  </FlipCard></a
->
+  </FlipCard>
+</a>

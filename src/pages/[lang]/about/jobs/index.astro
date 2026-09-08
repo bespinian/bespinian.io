@@ -26,5 +26,7 @@ const description = t("jobs.subtitle");
   isEmpty={jobs.length === 0}
   emptyMessage={t("jobs.empty")}
 >
-  {jobs.map(({ id, data }) => <JobCard {id} {...data} />)}
+  {jobs.map(({ id, data }) => (
+    <JobCard {id} {...data} />
+  ))}
 </CollectionPage>

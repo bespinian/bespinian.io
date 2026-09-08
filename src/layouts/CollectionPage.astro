@@ -34,24 +34,20 @@ const {
   <Title title={title} subtitle={subtitle} />
   <div class="collection-page">
     <div class="container">
-      {
-        backLink && (
-          <div class="back-link-wrapper">
-            <BackLink href={backLink.href} text={backLink.text} />
-          </div>
-        )
-      }
+      {backLink && (
+        <div class="back-link-wrapper">
+          <BackLink href={backLink.href} text={backLink.text} />
+        </div>
+      )}
       <div class="collection-grid">
         <slot />
       </div>
 
-      {
-        isEmpty && (
-          <div class="empty-state">
-            <p>{emptyMessage}</p>
-          </div>
-        )
-      }
+      {isEmpty && (
+        <div class="empty-state">
+          <p>{emptyMessage}</p>
+        </div>
+      )}
       <slot name="tail" />
     </div>
   </div>

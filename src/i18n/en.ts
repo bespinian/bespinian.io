@@ -273,43 +273,174 @@ const en = {
   "roundtable.finalcta.description": "Confirm your invitation now",
 
   // OpenBao Landing Page
-  "openbao.title": "OpenBao",
-  "openbao.subtitle": "Sovereign, Enterprise-Grade Secrets Management",
+  // Keyword-shaped for search and ads. The H1 leads with the outcome instead,
+  // and keeps this phrase as the eyebrow so an ad click recognizes it.
+  "openbao.title": "OpenBao Secrets Management",
+  "openbao.eyebrow": "OpenBao migration and managed operations",
+  "openbao.heading": "HashiCorp went proprietary. Your Vault doesn't have to.",
+  "openbao.lede":
+    "Move to OpenBao — same API, same workflows, no license fees — and let us migrate, build and run it with you on Swiss infrastructure.",
+  // Search snippet only. The hero uses the shorter lede.
   "openbao.description":
-    "Fully managed secrets management built on open standards. Secure your API keys, certificates, and credentials with 24×7 support from Swiss experts powered by Servala and VSHN.",
-  "openbao.cta": "Get Started with OpenBao",
-  "openbao.about.title": "What is OpenBao?",
-  "openbao.about.description1":
-    "OpenBao on is a secrets management solution that provides enterprise-grade security for sensitive data. It is an open-source, community-driven fork of HashiCorp Vault, that offers sovereign, license-free secrets management.",
-  "openbao.about.description2":
-    "We run OpenBao with VSHN as a fully managed service on Servala, providing 24×7 support for SMEs and enterprises. You get complete cluster scaling, high availability, disaster recovery, upgrades, and maintenance—all handled by our team.",
-  "openbao.about.description3":
-    "Retain full data sovereignty by choosing Swiss or European cloud providers while avoiding vendor lock-in through permissive open-source licensing.",
-  "openbao.features.title": "Key Features",
-  "openbao.features.item1":
-    "Secure Storage: Encryption before data persists to storage",
-  "openbao.features.item2":
-    "Dynamic Credentials: On-demand secret generation for Kubernetes and databases",
-  "openbao.features.item3":
-    "Centralized Encryption: Key management across distributed infrastructure",
-  "openbao.features.item4":
-    "Complete Audit Trails: Track all access and operations",
-  "openbao.benefits.title": "Why Choose OpenBao?",
-  "openbao.benefits.description":
-    "Focus on your business while we handle the complexity of secrets management.",
-  "openbao.benefits.item1":
-    "Fully Managed: No operational overhead—we handle everything",
-  "openbao.benefits.item2":
-    "24×7 Support: Expert Swiss engineers ready to help",
-  "openbao.benefits.item3":
-    "Data Sovereignty: Keep your data in Europe with local cloud providers",
-  "openbao.benefits.item4":
-    "Open Source: No vendor lock-in with MPL-2.0 licensing",
-  "openbao.benefits.item5":
-    "Enterprise-Grade: High availability and disaster recovery built-in",
-  "openbao.finalcta.title": "Ready to Secure Your Secrets?",
-  "openbao.finalcta.description":
-    "Get in touch with our team to learn more about OpenBao",
+    "Vault-to-OpenBao migration, architecture and 24×7 managed operations by Swiss engineers. Same API as HashiCorp Vault, no per-client fees, no feature gates, and your secrets stay under Swiss jurisdiction.",
+  "openbao.cta": "Request a migration assessment",
+  "openbao.why":
+    "OpenBao is a drop-in fork of HashiCorp Vault under MPL 2.0, governed by the Linux Foundation. The software itself is free. Migrating what you already have, hardening it, and keeping it running at 3am — that's the work.",
+  "openbao.stats.item1.value": "Zero",
+  "openbao.stats.item1.label": "license fees, no per-client counting",
+  "openbao.stats.item2.value": "Same API",
+  "openbao.stats.item2.label":
+    "your Vault clients and Terraform code keep working",
+  "openbao.stats.item3.value": "24×7",
+  "openbao.stats.item3.label": "operations on Swiss cloud infrastructure",
+  // Deliberately not "trusted by": these are platform and security
+  // engagements, not OpenBao deployments. Relabel the day that changes.
+  "openbao.trustedby.title": "Platform and security work we've done for",
+  "openbao.whothisfor.title": "This is for you if",
+  "openbao.whothisfor.item1":
+    "Your Vault Enterprise renewal is priced per client identity, and nobody can tell you what next year costs",
+  "openbao.whothisfor.item2":
+    "You're stuck on community Vault after the BSL license change, and falling behind on security fixes",
+  "openbao.whothisfor.item3":
+    "Your secrets live in CI variables, config files and someone's password manager, and an audit is coming",
+  "openbao.whothisfor.item4":
+    "You already run Vault or OpenBao yourself, and nobody on the team wants to be paged when it seals",
+  "openbao.offering.title": "What we do",
+  "openbao.offering.description":
+    "From a one-day architecture review to a full migration with 24×7 operations afterwards. Together with VSHN, we cover the whole path.",
+  "openbao.offering.item1.title": "Vault to OpenBao migration",
+  "openbao.offering.item1.description":
+    "We map your secrets engines, policies and auth methods onto OpenBao, run both systems in parallel, and validate that every secret is reachable before the old Vault is switched off. Your clients, integrations and Terraform providers keep working without code changes.",
+  "openbao.offering.item2.title": "Architecture and deployment",
+  "openbao.offering.item2.description":
+    "Highly available clusters with three replicas and auto-unseal, encrypted storage, least-privilege policies and full audit logging — on cloudscale.ch, Exoscale, APPUiO, Managed OpenShift or your own data center. HSM key custody goes through PKCS#11, including the Swiss Securosys Primus.",
+  "openbao.offering.item3.title": "Managed operations, 24×7",
+  "openbao.offering.item3.description":
+    "Not a phone-support subscription. Together with VSHN we design, deploy and operate the cluster, run automated backups, monitor its health and respond to incidents around the clock. Stop working with us and your OpenBao keeps running unchanged.",
+  "openbao.offering.item4.title": "Integration and enablement",
+  "openbao.offering.item4.description":
+    "Dynamic database and cloud credentials, PKI certificate issuance, encryption as a service, and OIDC-based access for GitLab, GitHub Actions and Kubernetes workloads. We hand the platform over with the documentation and training your team needs to own it.",
+  "openbao.included.title": "What every engagement includes",
+  "openbao.included.item1":
+    "Architecture design and deployment planning for OpenBao",
+  "openbao.included.item2":
+    "Vault to OpenBao migration: secrets engines, policies, auth methods",
+  "openbao.included.item3":
+    "High-availability setup with three replicas and auto-unseal",
+  "openbao.included.item4":
+    "Encrypted storage, strict access controls and complete audit trails",
+  "openbao.included.item5":
+    "Integration with your CI/CD pipelines, Kubernetes and identity provider",
+  "openbao.included.item6":
+    "Deployment on Swiss cloud, private cloud or on-premises — your choice",
+  "openbao.included.item7":
+    "Ongoing 24×7 operational support and incident response",
+  "openbao.included.item8":
+    "Direct access to the engineers who read the OpenBao source, not a ticket queue",
+  "openbao.comparison.title": "OpenBao with us vs. Vault Enterprise",
+  "openbao.comparison.description":
+    "OpenBao is a fork of Vault, not a rewrite. What changes is who owns the license, the bill and the operations.",
+  "openbao.comparison.aspect": "",
+  "openbao.comparison.vault": "Vault Enterprise",
+  "openbao.comparison.openbao": "OpenBao with us",
+  "openbao.comparison.row1.aspect": "License",
+  "openbao.comparison.row1.vault":
+    "Business Source License, relicensing decided by a single vendor",
+  "openbao.comparison.row1.openbao":
+    "MPL 2.0, governed by the Linux Foundation",
+  "openbao.comparison.row2.aspect": "Cost model",
+  "openbao.comparison.row2.vault":
+    "Per client identity or managed secret, growing as your platform grows",
+  "openbao.comparison.row2.openbao":
+    "No license fees and no metering — you pay for engineering and operations",
+  "openbao.comparison.row3.aspect": "Features",
+  "openbao.comparison.row3.vault": "Gated by subscription tier",
+  "openbao.comparison.row3.openbao":
+    "Every feature available to everyone, HSM support via PKCS#11 included",
+  "openbao.comparison.row4.aspect": "API and tooling",
+  "openbao.comparison.row4.vault": "Vault API and Terraform provider",
+  "openbao.comparison.row4.openbao":
+    "The same API — existing clients and Terraform code work unchanged",
+  "openbao.comparison.row5.aspect": "Jurisdiction",
+  "openbao.comparison.row5.vault": "US vendor, exposure to the US CLOUD Act",
+  "openbao.comparison.row5.openbao":
+    "Swiss cloud or your own data center, Swiss law, Swiss engineers",
+  "openbao.comparison.row6.aspect": "If you walk away",
+  "openbao.comparison.row6.vault":
+    "The subscription ends and the platform goes with it",
+  "openbao.comparison.row6.openbao":
+    "Your cluster keeps running unchanged, with nothing to migrate",
+  "openbao.sovereignty.title": "Swiss, and staying that way",
+  "openbao.sovereignty.description":
+    "Secrets management is the one system where jurisdiction isn't a detail. Yours stays where you put it.",
+  "openbao.sovereignty.item1":
+    "Deployed on Swiss cloud providers such as cloudscale.ch and Exoscale, on your private cloud, or on-premises in your own data center",
+  "openbao.sovereignty.item2":
+    "Swiss companies, Swiss law, no foreign parent company and no exposure to the US CLOUD Act",
+  "openbao.sovereignty.item3":
+    "Swiss engineers in your time zone — no offshore delivery teams, no subcontractors you never meet",
+  "openbao.partner.title": "Who you're working with",
+  "openbao.partner.description1":
+    "bespinian is the engineering partner of the OpenBao Competence Center Switzerland, together with VSHN — The DevOps Company. We bring the Go and security engineering: reading the OpenBao source, debugging it, extending it and integrating it into your platform.",
+  "openbao.partner.description2":
+    "VSHN brings the operations side, with ISO 27001-certified processes, ISAE 3402 Type II reports for regulated customers, and 24×7 on-call. A fully managed OpenBao service on the VSHN Application Catalog is in development, with automated provisioning, backups, monitoring and SLAs up to 99.99% availability — ask us for early access.",
+  "openbao.pricing.title": "What it costs",
+  "openbao.pricing.description":
+    "OpenBao itself is free, and stays free no matter how many applications consume secrets. You pay for the engineering and the operations, and you see both numbers before you commit.",
+  "openbao.pricing.item1":
+    "A free first call to work out whether OpenBao fits your setup at all",
+  "openbao.pricing.item2":
+    "A written scope and a cost estimate in CHF, usually within one working day of that call",
+  "openbao.pricing.item3":
+    "Predictable monthly rates for ongoing operations, without metering your secrets or client identities",
+  "openbao.pricing.item4":
+    "No commitment at the scoping stage — if the answer is that you don't need us, we'll say so",
+  "openbao.faq.title": "Before you ask",
+  "openbao.faq.q1": "What exactly is OpenBao?",
+  "openbao.faq.a1":
+    "OpenBao is an open-source secrets management platform hosted by the Linux Foundation, forked from HashiCorp Vault when Vault moved from the MPL to the Business Source License. It covers the same ground: key-value secrets, dynamic database and cloud credentials, PKI certificates, encryption as a service, identity-based access control and audit logging. It keeps full API compatibility with Vault, so existing integrations and tooling continue to work.",
+  "openbao.faq.q2": "How risky is the migration from Vault?",
+  "openbao.faq.a2":
+    "Lower than most teams expect, because OpenBao keeps Vault's API and protocol. We map secrets engines, policies and auth methods, run the two systems in parallel during the transition, and verify that every secret is reachable from OpenBao before the old Vault is decommissioned. In most cases your applications and Terraform code need no changes at all.",
+  "openbao.faq.q3": "We use GitLab. Should we wait for GitLab Secrets Manager?",
+  "openbao.faq.a3":
+    "GitLab built its Secrets Manager on OpenBao, which says something about where the ecosystem is going, but two things decide it for you. It runs as a cloud-native component, so on self-managed GitLab you still operate a Kubernetes cluster, a database, a TLS endpoint, key custody and backups. And it holds credentials for GitLab pipelines, while most teams also need secrets for applications, databases and infrastructure outside CI. A dedicated OpenBao covers both, and your GitLab jobs reach it with CI ID tokens over OIDC.",
+  "openbao.faq.q4":
+    "What's the difference between support and managed operations?",
+  "openbao.faq.a4":
+    "A support subscription gives you someone to call when it breaks — you still architect, deploy, patch and operate it yourself. Managed operations means we design the architecture, deploy the HA cluster, configure auto-unseal, run the backups, watch the monitoring and handle incidents 24×7. Either way the deployment is yours: if you stop working with us, it keeps running unchanged.",
+  "openbao.faq.q5": "Can everything stay in Switzerland?",
+  "openbao.faq.a5":
+    "Yes, and that's the default. OpenBao runs on Swiss cloud providers such as cloudscale.ch and Exoscale, both operating their data centers exclusively in Switzerland, or on APPUiO, Managed OpenShift, your private cloud, or on-premises in your own data center. Contracts are governed by Swiss law, and the engineers working on it are here.",
+  "openbao.faq.q6": "Does this help with our audit?",
+  "openbao.faq.a6":
+    "It usually does. OpenBao maps onto several CIS Controls v8 requirements: encryption as a service and AES-256-GCM storage encryption for data protection, policy-based least-privilege access and dynamic credentials with automatic expiry for access control, and an audit log of every secret access as evidence. On the operations side, VSHN runs OpenBao with ISO 27001-certified processes and provides ISAE 3402 Type II reports for regulated customers.",
+  "openbao.faq.q7": "How quickly can we start?",
+  "openbao.faq.a7":
+    "We reply within two working days with a first call. From there, an architecture review is a matter of days, and a full migration usually runs a few weeks depending on how many secrets engines and consumers are involved.",
+  "openbao.form.title": "Request a migration assessment",
+  "openbao.form.description":
+    "Tell us what you run today and we'll come back within two working days. No newsletter, no follow-up sequence.",
+  "openbao.form.nameplaceholder": "Your Name",
+  "openbao.form.emailplaceholder": "Work Email",
+  "openbao.form.companyplaceholder": "Company",
+  "openbao.form.roleplaceholder": "Your Role (optional)",
+  "openbao.form.interestlabel": "What can we help with?",
+  "openbao.form.interest.placeholder": "What can we help with?",
+  "openbao.form.interest.migration": "Migrate from HashiCorp Vault",
+  "openbao.form.interest.deployment": "New OpenBao deployment",
+  "openbao.form.interest.review": "Architecture review",
+  "openbao.form.interest.operations":
+    "Managed operations for an existing setup",
+  "openbao.form.interest.comparison": "A Vault vs. OpenBao cost comparison",
+  "openbao.form.interest.managed": "Managed OpenBao service (early access)",
+  "openbao.form.interest.other": "Something else",
+  "openbao.form.contextplaceholder":
+    "What do you run today? Vault version, rough number of secrets and consumers, where it's hosted. (optional)",
+  "openbao.form.submitlabel": "Request Assessment",
+  "openbao.form.reassurance":
+    "No cost, no obligation, no newsletter. We reply within two working days.",
+  "openbao.bloglink": "Read our comparison of OpenBao and HashiCorp Vault",
 
   // Pricing Page
   "pricing.title": "Pricing",

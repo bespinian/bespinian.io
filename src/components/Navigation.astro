@@ -62,53 +62,47 @@ const mainItems: MenuItem[] = [
 ---
 
 <nav>
-  {
-    minimal ? (
+  {minimal ? (
+    <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
+  ) : (
+    <a href={translatePath("/")}>
       <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
-    ) : (
-      <a href={translatePath("/")}>
-        <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
-      </a>
-    )
-  }
+    </a>
+  )}
 
-  {
-    !minimal && (
-      <ul class="nav-desktop">
-        {mainItems.map((i) => (
-          <li class={i.submenu ? "dropdown" : ""}>
-            <a
-              href={i.href}
-              aria-haspopup={i.submenu ? "true" : undefined}
-              aria-expanded={i.submenu ? "false" : undefined}
-            >
-              {i.label}
-            </a>
-            {i.submenu && (
-              <ul class="dropdown-menu">
-                {i.submenu.map((subItem) => (
-                  <li>
-                    <a href={subItem.href}>{subItem.label}</a>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
-      </ul>
-    )
-  }
+  {!minimal && (
+    <ul class="nav-desktop">
+      {mainItems.map((i) => (
+        <li class={i.submenu ? "dropdown" : ""}>
+          <a
+            href={i.href}
+            aria-haspopup={i.submenu ? "true" : undefined}
+            aria-expanded={i.submenu ? "false" : undefined}
+          >
+            {i.label}
+          </a>
+          {i.submenu && (
+            <ul class="dropdown-menu">
+              {i.submenu.map((subItem) => (
+                <li>
+                  <a href={subItem.href}>{subItem.label}</a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+    </ul>
+  )}
 
   <ul class={minimal ? "nav-utility" : "nav-desktop"}>
-    {
-      !minimal && (
-        <li>
-          <Link href={translatePath("/workshop")} secondary>
-            {t("cta.freeWorkshop")}
-          </Link>
-        </li>
-      )
-    }
+    {!minimal && (
+      <li>
+        <Link href={translatePath("/workshop")} secondary>
+          {t("cta.freeWorkshop")}
+        </Link>
+      </li>
+    )}
     <li>
       <LanguageSelector
         currentLang={lang}
@@ -118,90 +112,82 @@ const mainItems: MenuItem[] = [
     </li>
   </ul>
 
-  {
-    !minimal && (
-      <button
-        id="modal-open"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="modal"
-        class="button hamburger"
-      >
+  {!minimal && (
+    <button
+      id="modal-open"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="modal"
+      class="button hamburger"
+    >
+      <span />
+      <span />
+      <span />
+    </button>
+  )}
+</nav>
+
+{!minimal && (
+  <div
+    id="modal"
+    class="hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Mobile menu"
+  >
+    <div id="modal-head">
+      <a href={translatePath("/")}>
+        <img id="modal-logo" src={bespinianBlue.src} alt="bespinian logo" />
+      </a>
+      <button id="modal-close" aria-label="Close menu" class="button hamburger">
         <span />
         <span />
         <span />
       </button>
-    )
-  }
-</nav>
+    </div>
 
-{
-  !minimal && (
-    <div
-      id="modal"
-      class="hidden"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Mobile menu"
-    >
-      <div id="modal-head">
-        <a href={translatePath("/")}>
-          <img id="modal-logo" src={bespinianBlue.src} alt="bespinian logo" />
-        </a>
-        <button
-          id="modal-close"
-          aria-label="Close menu"
-          class="button hamburger"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-      </div>
-
-      <div id="modal-main">
-        <ul>
-          {mainItems.map((i) => (
-            <li class={i.submenu ? "mobile-dropdown" : ""}>
-              <a
-                href={i.href}
-                class="menu-link"
-                aria-expanded={i.submenu ? "false" : undefined}
-              >
-                {i.label}
-                {i.submenu && (
-                  <span class="dropdown-arrow" aria-hidden="true">
-                    ▼
-                  </span>
-                )}
-              </a>
+    <div id="modal-main">
+      <ul>
+        {mainItems.map((i) => (
+          <li class={i.submenu ? "mobile-dropdown" : ""}>
+            <a
+              href={i.href}
+              class="menu-link"
+              aria-expanded={i.submenu ? "false" : undefined}
+            >
+              {i.label}
               {i.submenu && (
-                <ul class="mobile-submenu">
-                  {i.submenu.map((subItem) => (
-                    <li>
-                      <a href={subItem.href} class="menu-link">
-                        {subItem.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                <span class="dropdown-arrow" aria-hidden="true">
+                  ▼
+                </span>
               )}
-            </li>
-          ))}
-        </ul>
+            </a>
+            {i.submenu && (
+              <ul class="mobile-submenu">
+                {i.submenu.map((subItem) => (
+                  <li>
+                    <a href={subItem.href} class="menu-link">
+                      {subItem.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
 
-        <div class="modal-footer">
-          <Link href={translatePath("/workshop")}>{t("cta.freeWorkshop")}</Link>
-          <LanguageSelector
-            currentLang={lang}
-            currentPath={Astro.url.pathname}
-            mobile={true}
-          />
-        </div>
+      <div class="modal-footer">
+        <Link href={translatePath("/workshop")}>{t("cta.freeWorkshop")}</Link>
+        <LanguageSelector
+          currentLang={lang}
+          currentPath={Astro.url.pathname}
+          mobile={true}
+        />
       </div>
     </div>
-  )
-}
+  </div>
+)}
 
 <script>
   const openButton = document.getElementById("modal-open");

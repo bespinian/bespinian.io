@@ -87,24 +87,22 @@ const hosts = HOST_NAMES.map((name) =>
       </div>
     </section>
 
-    {
-      logos.length > 0 && (
-        <section class="logo-section">
-          <div class="container">
-            <p class="logo-title">{t("workshop.trustedby.title")}</p>
-            <div class="logo-strip">
-              {logos.map((customer) => (
-                <Image
-                  src={customer.data.logo}
-                  alt={customer.data.company}
-                  class="customer-logo"
-                />
-              ))}
-            </div>
+    {logos.length > 0 && (
+      <section class="logo-section">
+        <div class="container">
+          <p class="logo-title">{t("workshop.trustedby.title")}</p>
+          <div class="logo-strip">
+            {logos.map((customer) => (
+              <Image
+                src={customer.data.logo}
+                alt={customer.data.company}
+                class="customer-logo"
+              />
+            ))}
           </div>
-        </section>
-      )
-    }
+        </div>
+      </section>
+    )}
 
     <section class="content-section">
       <div class="container">
@@ -140,18 +138,16 @@ const hosts = HOST_NAMES.map((name) =>
         <h2 class="section-title">{t("workshop.hosts.title")}</h2>
         <p class="hosts-description">{t("workshop.hosts.description")}</p>
         <div class="hosts">
-          {
-            hosts.map((host) => (
-              <div class="host">
-                <Image src={host.image} alt="" class="host-portrait" />
-                <div class="host-info">
-                  <p class="host-name">{host.name}</p>
-                  <p class="host-title">{host.title}</p>
-                  <p class="host-bio">{host.description}</p>
-                </div>
+          {hosts.map((host) => (
+            <div class="host">
+              <Image src={host.image} alt="" class="host-portrait" />
+              <div class="host-info">
+                <p class="host-name">{host.name}</p>
+                <p class="host-title">{host.title}</p>
+                <p class="host-bio">{host.description}</p>
               </div>
-            ))
-          }
+            </div>
+          ))}
         </div>
         <Image
           src={sessionPhoto}
@@ -173,47 +169,43 @@ const hosts = HOST_NAMES.map((name) =>
       </div>
     </section>
 
-    {
-      testimonial && (
-        <section class="testimonial-section">
-          <div class="container">
-            <blockquote class="testimonial-quote">
-              {`"${testimonial.data.quote}"`}
-            </blockquote>
-            <div class="testimonial-author">
-              {testimonial.data.authorImage && (
-                <Image
-                  src={testimonial.data.authorImage}
-                  alt=""
-                  width={96}
-                  height={96}
-                  class="author-portrait"
-                />
-              )}
-              <div>
-                <p class="author-name">{testimonial.data.authorName}</p>
-                <p class="author-title">
-                  {testimonial.data.authorTitle}, {testimonial.data.company}
-                </p>
-              </div>
+    {testimonial && (
+      <section class="testimonial-section">
+        <div class="container">
+          <blockquote class="testimonial-quote">
+            {`"${testimonial.data.quote}"`}
+          </blockquote>
+          <div class="testimonial-author">
+            {testimonial.data.authorImage && (
+              <Image
+                src={testimonial.data.authorImage}
+                alt=""
+                width={96}
+                height={96}
+                class="author-portrait"
+              />
+            )}
+            <div>
+              <p class="author-name">{testimonial.data.authorName}</p>
+              <p class="author-title">
+                {testimonial.data.authorTitle}, {testimonial.data.company}
+              </p>
             </div>
           </div>
-        </section>
-      )
-    }
+        </div>
+      </section>
+    )}
 
     <section class="content-section">
       <div class="container">
         <h2 class="section-title">{t("workshop.faq.title")}</h2>
         <dl class="faq">
-          {
-            faq.map((item) => (
-              <>
-                <dt>{item.question}</dt>
-                <dd>{item.answer}</dd>
-              </>
-            ))
-          }
+          {faq.map((item) => (
+            <>
+              <dt>{item.question}</dt>
+              <dd>{item.answer}</dd>
+            </>
+          ))}
         </dl>
       </div>
     </section>
@@ -273,7 +265,8 @@ const hosts = HOST_NAMES.map((name) =>
               name="context"
               placeholder={t("workshop.form.contextplaceholder")}
               aria-label={t("workshop.form.contextplaceholder")}
-              rows="4"></textarea>
+              rows="4"
+            ></textarea>
           </div>
           <div class="field">
             <button type="submit" class="submit-button">
@@ -289,7 +282,9 @@ const hosts = HOST_NAMES.map((name) =>
   <!-- Mobile only: keeps the CTA reachable without scrolling back up. Hidden
        once the form itself is on screen. -->
   <div id="sticky-cta" class="sticky-cta" data-cta-position="sticky">
-    <a href="#book" class="sticky-cta-link workshop-cta">{t("workshop.cta")}</a>
+    <a href="#book" class="sticky-cta-link workshop-cta">
+      {t("workshop.cta")}
+    </a>
   </div>
 
   <script>
@@ -376,7 +371,7 @@ const hosts = HOST_NAMES.map((name) =>
 
       if (typeof window.gtag === "function") {
         window.gtag("event", "conversion", {
-          send_to: "AW-18327942303/4D1SCPb_-dccEJ_puKNE",
+          send_to: "AW-18327942303/8e8bCITLjvEcEJ_puKNE",
           event_callback: submitOnce,
         });
         // Fallback in case gtag is blocked or the callback never fires.

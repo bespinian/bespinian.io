@@ -49,7 +49,8 @@ const { t } = useI18n(Astro.url);
           placeholder={t("contact.form.messageplaceholder")}
           aria-label={t("contact.form.messageplaceholder")}
           rows="8"
-          required></textarea>
+          required
+        ></textarea>
       </div>
       <div class="field">
         <button type="submit" class="button">
@@ -95,7 +96,6 @@ const { t } = useI18n(Astro.url);
       }
     });
   </script>
-
   <style>
     #contact-section {
       padding: 2rem 2rem 4rem;
