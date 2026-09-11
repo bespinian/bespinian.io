@@ -23,7 +23,7 @@ authorImage: ../../../assets/customers/beltrame-martina.jpeg
 
 [AFV Beltrame Group](https://gruppobeltrame.com/en/), operating through
 [Stahl Gerlafingen AG](https://gruppobeltrame.com/en/stahl-gerlafingen-ag/) in
-Switzerland, specializes in manufacturing long steel products—primarily
+Switzerland, specializes in manufacturing long steel products-primarily
 reinforcing steel for concrete and structural steel profiles. With a workforce
 of approximately 2,900 employees, the Group maintains an annual production
 capacity of around 3 million tonnes, serving both domestic and broader European

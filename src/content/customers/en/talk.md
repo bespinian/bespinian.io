@@ -10,8 +10,8 @@ results:
   - Enhanced operational efficiency and long-term infrastructure sustainability
 quote:
   "The collaboration with bespinian was smooth, committed, and remarkably fast.
-  Their ability to understand our challenges and move immediately into action —
-  even when timelines were tight — made all the difference. This is exactly the
+  Their ability to understand our challenges and move immediately into action -
+  even when timelines were tight - made all the difference. This is exactly the
   type of partnership we look for to move forward quickly, in a sustainable and
   pragmatic way."
 authorName: Laurent Vuarraz Voisin

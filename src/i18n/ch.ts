@@ -278,13 +278,13 @@ const ts = {
   "openbao.eyebrow": "OpenBao-Migration u Managed Operations",
   "openbao.heading": "HashiCorp isch proprietär worde. Dis Vault muess es nid.",
   "openbao.lede":
-    "Wächsle zu OpenBao — s glychi API, di glyche Workflows, keni Lizenzchoschte — u mir migriere, boue u betribe s mit dir uf schwiizerischer Infrastruktur.",
+    "Wächsle zu OpenBao - s glychi API, di glyche Workflows, keni Lizenzchoschte - u mir migriere, boue u betribe s mit dir uf schwiizerischer Infrastruktur.",
   // Nume fürs Suechergebnis. Im Hero steit di chürzeri Lede.
   "openbao.description":
-    "Vault-zu-OpenBao-Migration, Architektur u 24×7 Managed Operations vo Schwiizer Engineers. S glychi API wie HashiCorp Vault, keni Per-Client-Gebühre, keni Feature-Gates — u dini Secrets bliibe under schwiizerischem Rächt.",
+    "Vault-zu-OpenBao-Migration, Architektur u 24×7 Managed Operations vo Schwiizer Engineers. S glychi API wie HashiCorp Vault, keni Per-Client-Gebühre, keni Feature-Gates - u dini Secrets bliibe under schwiizerischem Rächt.",
   "openbao.cta": "Migrations-Assessment afrage",
   "openbao.why":
-    "OpenBao isch e Drop-in-Fork vo HashiCorp Vault under MPL 2.0, verwautet vo dr Linux Foundation. D Software säuber isch gratis. D Arbeit isch, s Bestehende z migriere, es z härte u es am Loufe z haute — o am dreu am Morge.",
+    "OpenBao isch e Drop-in-Fork vo HashiCorp Vault under MPL 2.0, verwautet vo dr Linux Foundation. D Software säuber isch gratis. D Arbeit isch, s Bestehende z migriere, es z härte u es am Loufe z haute - o am dreu am Morge.",
   "openbao.stats.item1.value": "Null",
   "openbao.stats.item1.label": "Lizenzchoschte, kes Zäue vo Clients",
   "openbao.stats.item2.value": "S glychi API",
@@ -311,7 +311,7 @@ const ts = {
     "Mir mappe dini Secrets Engines, Policies u Auth-Methode uf OpenBao, betribe beidi Systeme parallel u prüefe, dass jedes Secret erreichbar isch, bevor s aute Vault abgschautet wird. Dini Clients, Integratione u Terraform-Provider loufe ohni Codeänderige wyter.",
   "openbao.offering.item2.title": "Architektur u Deployment",
   "openbao.offering.item2.description":
-    "Hochverfüegbari Cluster mit drü Replicas u Auto-Unseal, verschlüsslete Storage, Least-Privilege-Policies u vollständigs Audit-Logging — uf cloudscale.ch, Exoscale, APPUiO, Managed OpenShift oder i dim eigete Rächezentrum. HSM-Key-Custody louft über PKCS#11, inklusiv Securosys Primus us dr Schwiz.",
+    "Hochverfüegbari Cluster mit drü Replicas u Auto-Unseal, verschlüsslete Storage, Least-Privilege-Policies u vollständigs Audit-Logging - uf cloudscale.ch, Exoscale, APPUiO, Managed OpenShift oder i dim eigete Rächezentrum. HSM-Key-Custody louft über PKCS#11, inklusiv Securosys Primus us dr Schwiz.",
   "openbao.offering.item3.title": "Managed Operations, 24×7",
   "openbao.offering.item3.description":
     "Kes Telefon-Support-Abo. Zäme mit VSHN designe, deploye u betribe mir s Cluster, fahre automatisierti Backups, überwache d Gsundheit u reagiere rund um d Uhr uf Incidents. Höersch du uf, mit üs z schaffe, louft dis OpenBao unveränderet wyter.",
@@ -330,10 +330,10 @@ const ts = {
   "openbao.included.item5":
     "Integration i dini CI/CD-Pipelines, Kubernetes u dis Identity Provider",
   "openbao.included.item6":
-    "Deployment uf schwiizerischer Cloud, Private Cloud oder on-premises — dini Wahl",
+    "Deployment uf schwiizerischer Cloud, Private Cloud oder on-premises - dini Wahl",
   "openbao.included.item7": "Loufende 24×7-Betribssupport u Incident Response",
   "openbao.included.item8":
-    "Direkte Zuegang zu dene Engineers, wo dr OpenBao-Sourcecode läse — keni Ticket-Queue",
+    "Direkte Zuegang zu dene Engineers, wo dr OpenBao-Sourcecode läse - keni Ticket-Queue",
   "openbao.comparison.title": "OpenBao mit üs vs. Vault Enterprise",
   "openbao.comparison.description":
     "OpenBao isch e Fork vo Vault, kes Rewrite. Was sich änderet: wäm d Lizenz, d Rächnig u dr Betrib ghöre.",
@@ -347,9 +347,9 @@ const ts = {
     "MPL 2.0, verwautet vo dr Linux Foundation",
   "openbao.comparison.row2.aspect": "Choschtemodäu",
   "openbao.comparison.row2.vault":
-    "Pro Client-Identität oder Managed Secret — wachst mit dyner Plattform",
+    "Pro Client-Identität oder Managed Secret - wachst mit dyner Plattform",
   "openbao.comparison.row2.openbao":
-    "Keni Lizenzchoschte, kes Metering — du zahlsch für Engineering u Betrib",
+    "Keni Lizenzchoschte, kes Metering - du zahlsch für Engineering u Betrib",
   "openbao.comparison.row3.aspect": "Features",
   "openbao.comparison.row3.vault": "Nach Subscription-Tier freigschautet",
   "openbao.comparison.row3.openbao":
@@ -357,7 +357,7 @@ const ts = {
   "openbao.comparison.row4.aspect": "API u Tooling",
   "openbao.comparison.row4.vault": "Vault-API u Terraform-Provider",
   "openbao.comparison.row4.openbao":
-    "S glychi API — bestehendi Clients u Terraform-Code loufe unveränderet",
+    "S glychi API - bestehendi Clients u Terraform-Code loufe unveränderet",
   "openbao.comparison.row5.aspect": "Rächtsruum",
   "openbao.comparison.row5.vault":
     "US-Abieter, exponiert gägenüber em US CLOUD Act",
@@ -368,7 +368,7 @@ const ts = {
     "D Subscription lauft us u d Plattform geit mit",
   "openbao.comparison.row6.openbao":
     "Dis Cluster louft unveränderet wyter, es git nüt z migriere",
-  "openbao.sovereignty.title": "Schwiizerisch — u das bliibt so",
+  "openbao.sovereignty.title": "Schwiizerisch - u das bliibt so",
   "openbao.sovereignty.description":
     "Secrets Management isch das eint System, wo dr Rächtsruum kes Detail isch. Dyne bliibt dert, wo de ne hisetzsch.",
   "openbao.sovereignty.item1":
@@ -376,15 +376,15 @@ const ts = {
   "openbao.sovereignty.item2":
     "Schwiizer Firme, Schwiizer Rächt, kei uusländischi Muettergsellschaft u kei Exponierig gägenüber em US CLOUD Act",
   "openbao.sovereignty.item3":
-    "Schwiizer Engineers i dyner Zytzone — kei Offshore-Teams, kei Subunternähmer, wode nie z Gsicht bechunnsch",
+    "Schwiizer Engineers i dyner Zytzone - kei Offshore-Teams, kei Subunternähmer, wode nie z Gsicht bechunnsch",
   "openbao.partner.title": "Mit wäm du schaffsch",
   "openbao.partner.description1":
-    "bespinian isch dr Engineering-Partner vom OpenBao Competence Center Switzerland, zäme mit VSHN — The DevOps Company. Mir bringe s Go- u Security-Engineering: dr OpenBao-Sourcecode läse, debugge, erwytere u i dini Plattform integriere.",
+    "bespinian isch dr Engineering-Partner vom OpenBao Competence Center Switzerland, zäme mit VSHN - The DevOps Company. Mir bringe s Go- u Security-Engineering: dr OpenBao-Sourcecode läse, debugge, erwytere u i dini Plattform integriere.",
   "openbao.partner.description2":
-    "VSHN bringt d Betribssite mit ISO-27001-zertifizierte Prozäss, ISAE-3402-Type-II-Bricht für regulierti Chunde u 24×7-Pikett. E vollständig gmanagete OpenBao-Service im VSHN Application Catalog isch i Entwicklig, mit automatisiertem Provisioning, Backups, Monitoring u SLAs bis 99.99% Verfüegbarkeit — frag üs nach Early Access.",
+    "VSHN bringt d Betribssite mit ISO-27001-zertifizierte Prozäss, ISAE-3402-Type-II-Bricht für regulierti Chunde u 24×7-Pikett. E vollständig gmanagete OpenBao-Service im VSHN Application Catalog isch i Entwicklig, mit automatisiertem Provisioning, Backups, Monitoring u SLAs bis 99.99% Verfüegbarkeit - frag üs nach Early Access.",
   "openbao.pricing.title": "Was es choschtet",
   "openbao.pricing.description":
-    "OpenBao säuber isch gratis u bliibt gratis, egal wie viu Applikatione Secrets bezieh. Du zahlsch für Engineering u Betrib — u gsehsch beidi Zahle, bevor de di festleisch.",
+    "OpenBao säuber isch gratis u bliibt gratis, egal wie viu Applikatione Secrets bezieh. Du zahlsch für Engineering u Betrib - u gsehsch beidi Zahle, bevor de di festleisch.",
   "openbao.pricing.item1":
     "Es gratis erschts Gspräch, um usezfinde, öb OpenBao überhoupt zu dim Setup passt",
   "openbao.pricing.item2":
@@ -392,7 +392,7 @@ const ts = {
   "openbao.pricing.item3":
     "Planbari Monatsrate für e loufende Betrib, ohni dini Secrets oder Client-Identitäte z zäue",
   "openbao.pricing.item4":
-    "Keni Verpflichtig i dr Scoping-Phase — we de üs nid bruchsch, de säge mir das",
+    "Keni Verpflichtig i dr Scoping-Phase - we de üs nid bruchsch, de säge mir das",
   "openbao.faq.title": "Bevor du frägsch",
   "openbao.faq.q1": "Was isch OpenBao genau?",
   "openbao.faq.a1":
@@ -407,7 +407,7 @@ const ts = {
   "openbao.faq.q4":
     "Was isch dr Unterschid zwüsche Support u Managed Operations?",
   "openbao.faq.a4":
-    "Es Support-Abo git dir öpper zum Alüte, we öppis kaputt isch — Architektur, Deployment, Patching u Betrib machsch du wyterhin säuber. Managed Operations heisst: mir designe d Architektur, deploye s HA-Cluster, konfiguriere Auto-Unseal, fahre d Backups, luege ufs Monitoring u übernäh Incidents 24×7. I beidne Fäu ghört s Deployment dir: höersch du uf, mit üs z schaffe, louft es unveränderet wyter.",
+    "Es Support-Abo git dir öpper zum Alüte, we öppis kaputt isch - Architektur, Deployment, Patching u Betrib machsch du wyterhin säuber. Managed Operations heisst: mir designe d Architektur, deploye s HA-Cluster, konfiguriere Auto-Unseal, fahre d Backups, luege ufs Monitoring u übernäh Incidents 24×7. I beidne Fäu ghört s Deployment dir: höersch du uf, mit üs z schaffe, louft es unveränderet wyter.",
   "openbao.faq.q5": "Cha aues i dr Schwiz bliibe?",
   "openbao.faq.a5":
     "Ja, u das isch dr Standard. OpenBao louft bi schwiizerische Cloud-Provider wie cloudscale.ch u Exoscale, wo ihri Rächezentre uusschliesslech i dr Schwiz betribe, oder uf APPUiO, Managed OpenShift, i dyner Private Cloud oder on-premises i dim eigete Rächezentrum. D Verträg unterstöh schwiizerischem Rächt, u di Engineers, wo dranne schaffe, si hie.",
@@ -416,7 +416,7 @@ const ts = {
     "I dr Regu ja. OpenBao lat sich mehrere Aforderige vo de CIS Controls v8 zuenordne: Encryption as a Service u AES-256-GCM-Storage-Verschlüsselig für Data Protection, Policy-basierte Least-Privilege-Zuegriff u dynamischi Credentials mit automatischem Ablouf für Access Control, u nes Audit-Log über jede Secret-Zuegriff aus Nachwyis. Uf dr Betribssite füehrt VSHN OpenBao mit ISO-27001-zertifizierte Prozäss u liferet ISAE-3402-Type-II-Bricht für regulierti Chunde.",
   "openbao.faq.q7": "Wie schnäu chöi mir schtarte?",
   "openbao.faq.a7":
-    "Mir mäude üs innerhaub vo zwe Arbeitstäg für nes erschts Gspräch. E Architektur-Review isch nachhär e Frag vo Täg, e ganzi Migration duuret meischtens es paar Wuche — je nach däm, wie viu Secrets Engines u Konsumänte im Spiu si.",
+    "Mir mäude üs innerhaub vo zwe Arbeitstäg für nes erschts Gspräch. E Architektur-Review isch nachhär e Frag vo Täg, e ganzi Migration duuret meischtens es paar Wuche - je nach däm, wie viu Secrets Engines u Konsumänte im Spiu si.",
   "openbao.form.title": "Migrations-Assessment afrage",
   "openbao.form.description":
     "Verzeu üs, was du hüt betribsch, u mir mäude üs innerhaub vo zwe Arbeitstäg. Keni Newsletter, kei Follow-up-Serie.",
