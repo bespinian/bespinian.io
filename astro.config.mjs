@@ -9,7 +9,7 @@ const DEFAULT_LANG = "en";
 /**
  * Collections whose entries are not translated into every language. Content
  * lives either in a language subdirectory (`en/xovis.md`) or flat in the
- * collection root, in which case it is English only — the same rule
+ * collection root, in which case it is English only - the same rule
  * `src/lib/paths.ts` uses to build the routes.
  *
  * Astro still renders those entries under every language prefix, but the copies

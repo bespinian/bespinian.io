@@ -37,7 +37,7 @@ const en = {
   "hero.title1": "Cut Infrastructure Costs,",
   "hero.title2": "Ship Features Faster",
   "hero.description":
-    "Swiss engineers help you modernize apps on AWS, Azure, and Kubernetes with serverless and AI tools — reducing costs, shipping faster, and boosting productivity.",
+    "Swiss engineers help you modernize apps on AWS, Azure, and Kubernetes with serverless and AI tools - reducing costs, shipping faster, and boosting productivity.",
 
   // Why Us Section
   "whyus.belief": "We believe apps should drive new ideas and growth.",
@@ -80,7 +80,7 @@ const en = {
     "We work with modern cloud systems like AWS, Azure, and Kubernetes.",
   "whatwedo.whoweare": "Who We Are",
   "whatwedo.team.description":
-    "We are a team of skilled engineers who love building cloud solutions. Based in Switzerland, we have strong tech skills and understand business needs. We don't just modernize your apps—we help your teams work better.",
+    "We are a team of skilled engineers who love building cloud solutions. Based in Switzerland, we have strong tech skills and understand business needs. We don't just modernize your apps-we help your teams work better.",
 
   // Footer
   "footer.copyright": "© bespinian {year}",
@@ -139,7 +139,7 @@ const en = {
 
   "about.team.title": "Team",
   "about.team.subtitle":
-    "We help teams use powerful cloud platforms better. Our engineers don't just give you solutions—they help your team succeed.",
+    "We help teams use powerful cloud platforms better. Our engineers don't just give you solutions-they help your team succeed.",
 
   "about.technologies.title": "Technologies",
   "about.technologies.description":
@@ -191,7 +191,7 @@ const en = {
   "workshop.outcome.item1":
     "Your applications ranked by how much modernizing each one would save",
   "workshop.outcome.item2":
-    "A recommendation — AWS, Azure, Kubernetes or Serverless — and why the others don't fit you",
+    "A recommendation - AWS, Azure, Kubernetes or Serverless - and why the others don't fit you",
   "workshop.outcome.item3": "Cost estimates and a realistic payback period",
   "workshop.outcome.item4":
     "The risks specific to your setup, and how to handle each one",
@@ -199,14 +199,14 @@ const en = {
     "A concrete first step, small enough to start next week",
   "workshop.hosts.title": "Who you'll be talking to",
   "workshop.hosts.description":
-    "Senior cloud engineers run the session — the same people who would do the work.",
+    "Senior cloud engineers run the session - the same people who would do the work.",
   "workshop.swiss.title": "Swiss, and staying that way",
   "workshop.swiss.description":
     "We're a Swiss company based in Bern. Your data and the engineers working on it stay in Switzerland.",
   "workshop.swiss.item1":
     "Your data stays in Switzerland, on Swiss or European cloud regions",
   "workshop.swiss.item2":
-    "Our engineers stay in Switzerland — no offshore delivery teams, no subcontractors you never meet",
+    "Our engineers stay in Switzerland - no offshore delivery teams, no subcontractors you never meet",
   "workshop.swiss.item3":
     "Swiss company, Swiss law, your time zone, and close enough to sit in your office",
   "workshop.faq.title": "Before you ask",
@@ -221,7 +221,7 @@ const en = {
     "Nothing formal. An architecture sketch and a recent infrastructure bill make the session sharper, but we can work without either.",
   "workshop.faq.q4": "Who should join from your side?",
   "workshop.faq.a4":
-    "Whoever knows the systems and whoever owns the budget. Two to four people work best — more than that and it turns into a presentation.",
+    "Whoever knows the systems and whoever owns the budget. Two to four people work best - more than that and it turns into a presentation.",
   "workshop.form.title": "Request your session",
   "workshop.form.description":
     "Tell us where to reach you and we'll reply within two working days with a few slots. No newsletter, no follow-up sequence.",
@@ -279,13 +279,13 @@ const en = {
   "openbao.eyebrow": "OpenBao migration and managed operations",
   "openbao.heading": "HashiCorp went proprietary. Your Vault doesn't have to.",
   "openbao.lede":
-    "Move to OpenBao — same API, same workflows, no license fees — and let us migrate, build and run it with you on Swiss infrastructure.",
+    "Move to OpenBao - same API, same workflows, no license fees - and let us migrate, build and run it with you on Swiss infrastructure.",
   // Search snippet only. The hero uses the shorter lede.
   "openbao.description":
     "Vault-to-OpenBao migration, architecture and 24×7 managed operations by Swiss engineers. Same API as HashiCorp Vault, no per-client fees, no feature gates, and your secrets stay under Swiss jurisdiction.",
   "openbao.cta": "Request a migration assessment",
   "openbao.why":
-    "OpenBao is a drop-in fork of HashiCorp Vault under MPL 2.0, governed by the Linux Foundation. The software itself is free. Migrating what you already have, hardening it, and keeping it running at 3am — that's the work.",
+    "OpenBao is a drop-in fork of HashiCorp Vault under MPL 2.0, governed by the Linux Foundation. The software itself is free. Migrating what you already have, hardening it, and keeping it running at 3am - that's the work.",
   "openbao.stats.item1.value": "Zero",
   "openbao.stats.item1.label": "license fees, no per-client counting",
   "openbao.stats.item2.value": "Same API",
@@ -313,7 +313,7 @@ const en = {
     "We map your secrets engines, policies and auth methods onto OpenBao, run both systems in parallel, and validate that every secret is reachable before the old Vault is switched off. Your clients, integrations and Terraform providers keep working without code changes.",
   "openbao.offering.item2.title": "Architecture and deployment",
   "openbao.offering.item2.description":
-    "Highly available clusters with three replicas and auto-unseal, encrypted storage, least-privilege policies and full audit logging — on cloudscale.ch, Exoscale, APPUiO, Managed OpenShift or your own data center. HSM key custody goes through PKCS#11, including the Swiss Securosys Primus.",
+    "Highly available clusters with three replicas and auto-unseal, encrypted storage, least-privilege policies and full audit logging - on cloudscale.ch, Exoscale, APPUiO, Managed OpenShift or your own data center. HSM key custody goes through PKCS#11, including the Swiss Securosys Primus.",
   "openbao.offering.item3.title": "Managed operations, 24×7",
   "openbao.offering.item3.description":
     "Not a phone-support subscription. Together with VSHN we design, deploy and operate the cluster, run automated backups, monitor its health and respond to incidents around the clock. Stop working with us and your OpenBao keeps running unchanged.",
@@ -332,7 +332,7 @@ const en = {
   "openbao.included.item5":
     "Integration with your CI/CD pipelines, Kubernetes and identity provider",
   "openbao.included.item6":
-    "Deployment on Swiss cloud, private cloud or on-premises — your choice",
+    "Deployment on Swiss cloud, private cloud or on-premises - your choice",
   "openbao.included.item7":
     "Ongoing 24×7 operational support and incident response",
   "openbao.included.item8":
@@ -352,7 +352,7 @@ const en = {
   "openbao.comparison.row2.vault":
     "Per client identity or managed secret, growing as your platform grows",
   "openbao.comparison.row2.openbao":
-    "No license fees and no metering — you pay for engineering and operations",
+    "No license fees and no metering - you pay for engineering and operations",
   "openbao.comparison.row3.aspect": "Features",
   "openbao.comparison.row3.vault": "Gated by subscription tier",
   "openbao.comparison.row3.openbao":
@@ -360,7 +360,7 @@ const en = {
   "openbao.comparison.row4.aspect": "API and tooling",
   "openbao.comparison.row4.vault": "Vault API and Terraform provider",
   "openbao.comparison.row4.openbao":
-    "The same API — existing clients and Terraform code work unchanged",
+    "The same API - existing clients and Terraform code work unchanged",
   "openbao.comparison.row5.aspect": "Jurisdiction",
   "openbao.comparison.row5.vault": "US vendor, exposure to the US CLOUD Act",
   "openbao.comparison.row5.openbao":
@@ -378,12 +378,12 @@ const en = {
   "openbao.sovereignty.item2":
     "Swiss companies, Swiss law, no foreign parent company and no exposure to the US CLOUD Act",
   "openbao.sovereignty.item3":
-    "Swiss engineers in your time zone — no offshore delivery teams, no subcontractors you never meet",
+    "Swiss engineers in your time zone - no offshore delivery teams, no subcontractors you never meet",
   "openbao.partner.title": "Who you're working with",
   "openbao.partner.description1":
-    "bespinian is the engineering partner of the OpenBao Competence Center Switzerland, together with VSHN — The DevOps Company. We bring the Go and security engineering: reading the OpenBao source, debugging it, extending it and integrating it into your platform.",
+    "bespinian is the engineering partner of the OpenBao Competence Center Switzerland, together with VSHN - The DevOps Company. We bring the Go and security engineering: reading the OpenBao source, debugging it, extending it and integrating it into your platform.",
   "openbao.partner.description2":
-    "VSHN brings the operations side, with ISO 27001-certified processes, ISAE 3402 Type II reports for regulated customers, and 24×7 on-call. A fully managed OpenBao service on the VSHN Application Catalog is in development, with automated provisioning, backups, monitoring and SLAs up to 99.99% availability — ask us for early access.",
+    "VSHN brings the operations side, with ISO 27001-certified processes, ISAE 3402 Type II reports for regulated customers, and 24×7 on-call. A fully managed OpenBao service on the VSHN Application Catalog is in development, with automated provisioning, backups, monitoring and SLAs up to 99.99% availability - ask us for early access.",
   "openbao.pricing.title": "What it costs",
   "openbao.pricing.description":
     "OpenBao itself is free, and stays free no matter how many applications consume secrets. You pay for the engineering and the operations, and you see both numbers before you commit.",
@@ -394,7 +394,7 @@ const en = {
   "openbao.pricing.item3":
     "Predictable monthly rates for ongoing operations, without metering your secrets or client identities",
   "openbao.pricing.item4":
-    "No commitment at the scoping stage — if the answer is that you don't need us, we'll say so",
+    "No commitment at the scoping stage - if the answer is that you don't need us, we'll say so",
   "openbao.faq.title": "Before you ask",
   "openbao.faq.q1": "What exactly is OpenBao?",
   "openbao.faq.a1":
@@ -408,7 +408,7 @@ const en = {
   "openbao.faq.q4":
     "What's the difference between support and managed operations?",
   "openbao.faq.a4":
-    "A support subscription gives you someone to call when it breaks — you still architect, deploy, patch and operate it yourself. Managed operations means we design the architecture, deploy the HA cluster, configure auto-unseal, run the backups, watch the monitoring and handle incidents 24×7. Either way the deployment is yours: if you stop working with us, it keeps running unchanged.",
+    "A support subscription gives you someone to call when it breaks - you still architect, deploy, patch and operate it yourself. Managed operations means we design the architecture, deploy the HA cluster, configure auto-unseal, run the backups, watch the monitoring and handle incidents 24×7. Either way the deployment is yours: if you stop working with us, it keeps running unchanged.",
   "openbao.faq.q5": "Can everything stay in Switzerland?",
   "openbao.faq.a5":
     "Yes, and that's the default. OpenBao runs on Swiss cloud providers such as cloudscale.ch and Exoscale, both operating their data centers exclusively in Switzerland, or on APPUiO, Managed OpenShift, your private cloud, or on-premises in your own data center. Contracts are governed by Swiss law, and the engineers working on it are here.",

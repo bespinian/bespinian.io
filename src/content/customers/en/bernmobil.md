@@ -28,7 +28,7 @@ Switzerland count among its customers.
 
 BERNMOBIL operates an OpenShift cluster in its own data center and hosts a
 variety of applications on it for internal and external use. Previously,
-configuration changes were made manually via the OpenShift UI — an approach that
+configuration changes were made manually via the OpenShift UI - an approach that
 does not scale as complexity grows.
 
 ## Project Goal
@@ -41,7 +41,7 @@ automated, reproducible deployment process using Argo CD.
 ### Supporting the Migration of the öV Plus Website
 
 bespinian guided the BERNMOBIL team through the migration of the öV Plus website
-onto the OpenShift platform. The focus was on knowledge transfer — through
+onto the OpenShift platform. The focus was on knowledge transfer - through
 active involvement in the project, the team learned best practices for
 containerized deployments on OpenShift directly in practice.
 

@@ -283,10 +283,10 @@ const de = {
   "openbao.heading":
     "HashiCorp ist proprietär geworden. Dein Vault muss es nicht.",
   "openbao.lede":
-    "Wechsle zu OpenBao — gleiches API, gleiche Workflows, keine Lizenzkosten — und wir migrieren, bauen und betreiben es mit dir auf Schweizer Infrastruktur.",
+    "Wechsle zu OpenBao - gleiches API, gleiche Workflows, keine Lizenzkosten - und wir migrieren, bauen und betreiben es mit dir auf Schweizer Infrastruktur.",
   // Nur für das Suchergebnis. Im Hero steht die kürzere Lede.
   "openbao.description":
-    "Vault-zu-OpenBao-Migration, Architektur und 24×7 Managed Operations von Schweizer Engineers. Gleiches API wie HashiCorp Vault, keine Per-Client-Gebühren, keine Feature-Gates — und deine Secrets bleiben unter Schweizer Recht.",
+    "Vault-zu-OpenBao-Migration, Architektur und 24×7 Managed Operations von Schweizer Engineers. Gleiches API wie HashiCorp Vault, keine Per-Client-Gebühren, keine Feature-Gates - und deine Secrets bleiben unter Schweizer Recht.",
   "openbao.cta": "Migrations-Assessment anfragen",
   "openbao.why":
     "OpenBao ist ein Drop-in-Fork von HashiCorp Vault unter MPL 2.0, verwaltet von der Linux Foundation. Die Software selbst ist gratis. Die Arbeit ist, das Bestehende zu migrieren, es zu härten und es um 3 Uhr morgens am Laufen zu halten.",
@@ -318,7 +318,7 @@ const de = {
     "Wir mappen deine Secrets Engines, Policies und Auth-Methoden auf OpenBao, betreiben beide Systeme parallel und prüfen, dass jedes Secret erreichbar ist, bevor das alte Vault abgeschaltet wird. Deine Clients, Integrationen und Terraform-Provider laufen ohne Codeänderungen weiter.",
   "openbao.offering.item2.title": "Architektur und Deployment",
   "openbao.offering.item2.description":
-    "Hochverfügbare Cluster mit drei Replicas und Auto-Unseal, verschlüsselter Storage, Least-Privilege-Policies und vollständiges Audit-Logging — auf cloudscale.ch, Exoscale, APPUiO, Managed OpenShift oder in deinem eigenen Rechenzentrum. HSM-Key-Custody läuft über PKCS#11, inklusive Securosys Primus aus der Schweiz.",
+    "Hochverfügbare Cluster mit drei Replicas und Auto-Unseal, verschlüsselter Storage, Least-Privilege-Policies und vollständiges Audit-Logging - auf cloudscale.ch, Exoscale, APPUiO, Managed OpenShift oder in deinem eigenen Rechenzentrum. HSM-Key-Custody läuft über PKCS#11, inklusive Securosys Primus aus der Schweiz.",
   "openbao.offering.item3.title": "Managed Operations, 24×7",
   "openbao.offering.item3.description":
     "Kein Telefon-Support-Abo. Gemeinsam mit VSHN designen, deployen und betreiben wir das Cluster, fahren automatisierte Backups, überwachen die Gesundheit und reagieren rund um die Uhr auf Incidents. Hörst du auf, mit uns zu arbeiten, läuft dein OpenBao unverändert weiter.",
@@ -337,11 +337,11 @@ const de = {
   "openbao.included.item5":
     "Integration in deine CI/CD-Pipelines, Kubernetes und deinen Identity Provider",
   "openbao.included.item6":
-    "Deployment auf Schweizer Cloud, Private Cloud oder on-premises — deine Wahl",
+    "Deployment auf Schweizer Cloud, Private Cloud oder on-premises - deine Wahl",
   "openbao.included.item7":
     "Laufender 24×7-Betriebssupport und Incident Response",
   "openbao.included.item8":
-    "Direkter Zugang zu den Engineers, die den OpenBao-Sourcecode lesen — keine Ticket-Queue",
+    "Direkter Zugang zu den Engineers, die den OpenBao-Sourcecode lesen - keine Ticket-Queue",
   "openbao.comparison.title": "OpenBao mit uns vs. Vault Enterprise",
   "openbao.comparison.description":
     "OpenBao ist ein Fork von Vault, kein Rewrite. Was sich ändert: wem die Lizenz, die Rechnung und der Betrieb gehören.",
@@ -355,9 +355,9 @@ const de = {
     "MPL 2.0, verwaltet von der Linux Foundation",
   "openbao.comparison.row2.aspect": "Kostenmodell",
   "openbao.comparison.row2.vault":
-    "Pro Client-Identität oder Managed Secret — wächst mit deiner Plattform",
+    "Pro Client-Identität oder Managed Secret - wächst mit deiner Plattform",
   "openbao.comparison.row2.openbao":
-    "Keine Lizenzkosten, kein Metering — du zahlst für Engineering und Betrieb",
+    "Keine Lizenzkosten, kein Metering - du zahlst für Engineering und Betrieb",
   "openbao.comparison.row3.aspect": "Features",
   "openbao.comparison.row3.vault": "Nach Subscription-Tier freigeschaltet",
   "openbao.comparison.row3.openbao":
@@ -365,7 +365,7 @@ const de = {
   "openbao.comparison.row4.aspect": "API und Tooling",
   "openbao.comparison.row4.vault": "Vault-API und Terraform-Provider",
   "openbao.comparison.row4.openbao":
-    "Dasselbe API — bestehende Clients und Terraform-Code laufen unverändert",
+    "Dasselbe API - bestehende Clients und Terraform-Code laufen unverändert",
   "openbao.comparison.row5.aspect": "Rechtsraum",
   "openbao.comparison.row5.vault":
     "US-Anbieter, Exponierung gegenüber dem US CLOUD Act",
@@ -384,15 +384,15 @@ const de = {
   "openbao.sovereignty.item2":
     "Schweizer Firmen, Schweizer Recht, keine ausländische Muttergesellschaft und keine Exponierung gegenüber dem US CLOUD Act",
   "openbao.sovereignty.item3":
-    "Schweizer Engineers in deiner Zeitzone — keine Offshore-Delivery-Teams, keine Subunternehmer, die du nie zu Gesicht bekommst",
+    "Schweizer Engineers in deiner Zeitzone - keine Offshore-Delivery-Teams, keine Subunternehmer, die du nie zu Gesicht bekommst",
   "openbao.partner.title": "Mit wem du arbeitest",
   "openbao.partner.description1":
-    "bespinian ist der Engineering-Partner des OpenBao Competence Center Switzerland, gemeinsam mit VSHN — The DevOps Company. Wir bringen das Go- und Security-Engineering: den OpenBao-Sourcecode lesen, debuggen, erweitern und in deine Plattform integrieren.",
+    "bespinian ist der Engineering-Partner des OpenBao Competence Center Switzerland, gemeinsam mit VSHN - The DevOps Company. Wir bringen das Go- und Security-Engineering: den OpenBao-Sourcecode lesen, debuggen, erweitern und in deine Plattform integrieren.",
   "openbao.partner.description2":
-    "VSHN bringt die Betriebsseite mit ISO-27001-zertifizierten Prozessen, ISAE-3402-Type-II-Berichten für regulierte Kunden und 24×7-Pikett. Ein vollständig gemanagter OpenBao-Service im VSHN Application Catalog ist in Entwicklung, mit automatisiertem Provisioning, Backups, Monitoring und SLAs bis 99.99% Verfügbarkeit — frag uns nach Early Access.",
+    "VSHN bringt die Betriebsseite mit ISO-27001-zertifizierten Prozessen, ISAE-3402-Type-II-Berichten für regulierte Kunden und 24×7-Pikett. Ein vollständig gemanagter OpenBao-Service im VSHN Application Catalog ist in Entwicklung, mit automatisiertem Provisioning, Backups, Monitoring und SLAs bis 99.99% Verfügbarkeit - frag uns nach Early Access.",
   "openbao.pricing.title": "Was es kostet",
   "openbao.pricing.description":
-    "OpenBao selbst ist gratis und bleibt gratis, egal wie viele Applikationen Secrets beziehen. Du zahlst für Engineering und Betrieb — und siehst beide Zahlen, bevor du dich festlegst.",
+    "OpenBao selbst ist gratis und bleibt gratis, egal wie viele Applikationen Secrets beziehen. Du zahlst für Engineering und Betrieb - und siehst beide Zahlen, bevor du dich festlegst.",
   "openbao.pricing.item1":
     "Ein kostenloses Erstgespräch, um herauszufinden, ob OpenBao überhaupt zu deinem Setup passt",
   "openbao.pricing.item2":
@@ -400,7 +400,7 @@ const de = {
   "openbao.pricing.item3":
     "Planbare Monatsraten für den laufenden Betrieb, ohne deine Secrets oder Client-Identitäten zu zählen",
   "openbao.pricing.item4":
-    "Keine Verpflichtung in der Scoping-Phase — wenn du uns nicht brauchst, sagen wir das",
+    "Keine Verpflichtung in der Scoping-Phase - wenn du uns nicht brauchst, sagen wir das",
   "openbao.faq.title": "Bevor du fragst",
   "openbao.faq.q1": "Was genau ist OpenBao?",
   "openbao.faq.a1":
@@ -415,7 +415,7 @@ const de = {
   "openbao.faq.q4":
     "Was ist der Unterschied zwischen Support und Managed Operations?",
   "openbao.faq.a4":
-    "Ein Support-Abo gibt dir jemanden zum Anrufen, wenn etwas kaputt ist — Architektur, Deployment, Patching und Betrieb machst du weiterhin selbst. Managed Operations heisst: wir designen die Architektur, deployen das HA-Cluster, konfigurieren Auto-Unseal, fahren die Backups, schauen aufs Monitoring und übernehmen Incidents 24×7. In beiden Fällen gehört das Deployment dir: hörst du auf, mit uns zu arbeiten, läuft es unverändert weiter.",
+    "Ein Support-Abo gibt dir jemanden zum Anrufen, wenn etwas kaputt ist - Architektur, Deployment, Patching und Betrieb machst du weiterhin selbst. Managed Operations heisst: wir designen die Architektur, deployen das HA-Cluster, konfigurieren Auto-Unseal, fahren die Backups, schauen aufs Monitoring und übernehmen Incidents 24×7. In beiden Fällen gehört das Deployment dir: hörst du auf, mit uns zu arbeiten, läuft es unverändert weiter.",
   "openbao.faq.q5": "Kann alles in der Schweiz bleiben?",
   "openbao.faq.a5":
     "Ja, und das ist der Standard. OpenBao läuft bei Schweizer Cloud-Providern wie cloudscale.ch und Exoscale, die ihre Rechenzentren ausschliesslich in der Schweiz betreiben, oder auf APPUiO, Managed OpenShift, in deiner Private Cloud oder on-premises in deinem eigenen Rechenzentrum. Die Verträge unterstehen Schweizer Recht, und die Engineers, die daran arbeiten, sind hier.",
@@ -424,7 +424,7 @@ const de = {
     "In der Regel ja. OpenBao lässt sich mehreren Anforderungen der CIS Controls v8 zuordnen: Encryption as a Service und AES-256-GCM-Storage-Verschlüsselung für Data Protection, Policy-basierter Least-Privilege-Zugriff und dynamische Credentials mit automatischem Ablauf für Access Control, und ein Audit-Log über jeden Secret-Zugriff als Nachweis. Auf der Betriebsseite führt VSHN OpenBao mit ISO-27001-zertifizierten Prozessen und liefert ISAE-3402-Type-II-Berichte für regulierte Kunden.",
   "openbao.faq.q7": "Wie schnell können wir starten?",
   "openbao.faq.a7":
-    "Wir melden uns innerhalb von zwei Arbeitstagen für ein erstes Gespräch. Ein Architektur-Review ist danach eine Frage von Tagen, eine vollständige Migration dauert meist einige Wochen — abhängig davon, wie viele Secrets Engines und Konsumenten im Spiel sind.",
+    "Wir melden uns innerhalb von zwei Arbeitstagen für ein erstes Gespräch. Ein Architektur-Review ist danach eine Frage von Tagen, eine vollständige Migration dauert meist einige Wochen - abhängig davon, wie viele Secrets Engines und Konsumenten im Spiel sind.",
   "openbao.form.title": "Migrations-Assessment anfragen",
   "openbao.form.description":
     "Erzähl uns, was du heute betreibst, und wir melden uns innerhalb von zwei Arbeitstagen. Kein Newsletter, keine Follow-up-Sequenz.",

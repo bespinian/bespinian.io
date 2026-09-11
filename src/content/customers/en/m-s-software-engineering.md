@@ -37,7 +37,7 @@ model on Microsoft Azure, with Azure Kubernetes Service (AKS) as the runtime
 platform and Terraform as the basis for infrastructure automation. The
 engineering teams bring deep domain knowledge and a long track record of
 building robust software, and they wanted an experienced sparring partner to
-help them make the right platform decisions early — rather than discovering them
+help them make the right platform decisions early - rather than discovering them
 the expensive way, in production.
 
 ## Project Goal
@@ -70,7 +70,7 @@ full context.
 All Azure resources are described declaratively in Terraform. We advise on
 module structure, state management, and how to keep environments reproducible
 and in parity with each other. The aim is a codebase that a team of this size
-can maintain comfortably over years — favoring clarity and a small number of
+can maintain comfortably over years - favoring clarity and a small number of
 well-understood patterns over maximum abstraction.
 
 ### GitOps and Deployment Workflows
@@ -80,12 +80,12 @@ repository into a running cluster. We work with the M&S teams on adopting GitOps
 as the deployment standard: Git as the single source of truth for the desired
 state of the platform, automated reconciliation instead of manual interventions,
 and a clear separation between application code and deployment configuration.
-This gives M&S traceable, reviewable, and reversible changes — a property that
+This gives M&S traceable, reviewable, and reversible changes - a property that
 matters a great deal in a regulated domain.
 
 ### Observability with the LGTM Stack
 
-For monitoring and observability, M&S uses the open source LGTM stack — Loki for
+For monitoring and observability, M&S uses the open source LGTM stack - Loki for
 logs, Grafana for visualization, Tempo for traces, and Mimir with Prometheus for
 metrics. bespinian supports the teams in designing this setup: what to
 instrument, how to structure metrics and labels, how to keep retention and cost
@@ -107,10 +107,11 @@ The collaboration is deliberately structured as a series of interactive
 workshops complemented by regular Q&A sessions. The workshops cover a specific
 topic in depth and end with concrete decisions. The Q&A sessions give the M&S
 engineers a low-threshold way to bring up whatever they are currently working on
-— a review of a Terraform module, a question about a Kubernetes behavior, a
-second opinion on a design idea. This format keeps the knowledge transfer
-continuous instead of front-loaded, and lets M&S draw on outside expertise
-exactly when it is needed.
+
+- a review of a Terraform module, a question about a Kubernetes behavior, a
+  second opinion on a design idea. This format keeps the knowledge transfer
+  continuous instead of front-loaded, and lets M&S draw on outside expertise
+  exactly when it is needed.
 
 ## Technologies Used
 

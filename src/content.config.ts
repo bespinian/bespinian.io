@@ -13,7 +13,7 @@ const blog = defineCollection({
       description: z.string(),
       image: image(),
       // Drafts show up on the dev server but are left out of the production
-      // build entirely — no page, no listing, no sitemap entry.
+      // build entirely - no page, no listing, no sitemap entry.
       draft: z.boolean().optional(),
     }),
 });
