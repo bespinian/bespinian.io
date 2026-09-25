@@ -2,7 +2,7 @@
 title: Concept for a Multi-Tenant Kubernetes Platform
 company: BISON Group
 logo: ../../../assets/customers/bison.png
-pubDate: 2026-08-31
+pubDate: 2026-09-28
 results:
   - |
     Developed a holistic concept for a scalable multi-tenant Kubernetes
@@ -11,10 +11,15 @@ results:
     Defined a binding technical target architecture including automation and operating processes
   - |
     Established the organizational framework for future platform operations
-quote: "TODO"
-authorName: TODO
-authorTitle: Technical Project Lead Infrastructure
-authorImage: ../../../assets/customers/bison.png
+quote:
+  "With the new Kubernetes platform, we are creating a common foundation for
+  development and operations. It helps us provide applications faster, more
+  securely, and in a more standardized way going forward, and it opens up room
+  for further automation. Key to this progress was the outstanding collaboration
+  between the project team, the Bison business units, PeakScale, and bespinian."
+authorName: Vittorio Clerici
+authorTitle: Project Manager IT Infrastructure
+authorImage: ../../../assets/customers/bison-vittorio.jpeg
 ---
 
 ## Customer
