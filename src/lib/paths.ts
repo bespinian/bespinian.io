@@ -1,5 +1,5 @@
 import { getCollection, type CollectionKey } from "astro:content";
-import { languages } from "../i18n/ui";
+import { languages, resolveContentLang } from "../i18n/ui";
 
 const LANGUAGE_CODE_PATTERN = /^[a-z]{2}$/;
 
@@ -100,12 +100,31 @@ function groupItemsByLanguage(items: any[]): Map<string, Map<string, any>> {
 }
 
 /**
+ * Picks the variant of an entry to show in `lang`: the entry's own translation
+ * if it has one, otherwise the closest fallback (Swiss German falls back to
+ * German, everything falls back to English).
+ */
+function getItemForLang(
+  baseSlug: string,
+  langItems: Map<string, any>,
+  lang: string,
+): any {
+  const contentLang = resolveContentLang(lang, langItems.keys());
+  const item = contentLang && langItems.get(contentLang);
+  if (!item) {
+    throw new Error(`No content found for ${baseSlug} in ${lang} or fallbacks`);
+  }
+  return item;
+}
+
+/**
  * Generates static paths for a collection across all languages
  * Use this for detail pages like [lang]/blog/[...slug].astro
  *
  * This function supports language-specific content files organized in subdirectories:
  * - Language-specific files are in subdirectories: en/axpo.md, de/axpo.md, ch/axpo.md
- * - If no language-specific file exists, it falls back to the English version
+ * - If no language-specific file exists, it falls back to the closest language
+ *   that has one (ch -> de -> en)
  */
 export async function getCollectionStaticPaths<T extends CollectionKey>(
   collectionName: T,
@@ -117,13 +136,7 @@ export async function getCollectionStaticPaths<T extends CollectionKey>(
   return Array.from(itemsByBaseSlug.entries()).flatMap(
     ([baseSlug, langItems]) =>
       Object.keys(languages).map((lang) => {
-        // Try to get the language-specific item, fall back to English
-        const item = langItems.get(lang) || langItems.get("en");
-        if (!item) {
-          throw new Error(
-            `No content found for ${baseSlug} in ${lang} or fallback (en)`,
-          );
-        }
+        const item = getItemForLang(baseSlug, langItems, lang);
 
         return {
           params: { lang, slug: baseSlug },
@@ -154,7 +167,7 @@ function getSingularName(collectionName: string): string {
 
 /**
  * Gets collection items for a specific language
- * Returns language-specific versions if available, otherwise falls back to English
+ * Returns language-specific versions if available, otherwise the closest fallback
  * Removes duplicate entries (base slug appears only once per language)
  */
 export async function getCollectionByLanguage<T extends CollectionKey>(
@@ -164,15 +177,10 @@ export async function getCollectionByLanguage<T extends CollectionKey>(
   const items = await getCollection(collectionName);
   const itemsByBaseSlug = withoutDrafts(groupItemsByLanguage(items));
 
-  // Return items for the requested language, falling back to English
+  // Return items for the requested language, falling back where missing
   // Normalize the ID to use the base slug (without language prefix)
   return Array.from(itemsByBaseSlug.entries()).map(([baseSlug, langItems]) => {
-    const item = langItems.get(lang) || langItems.get("en");
-    if (!item) {
-      throw new Error(
-        `No content found for ${baseSlug} in ${lang} or fallback (en)`,
-      );
-    }
+    const item = getItemForLang(baseSlug, langItems, lang);
     return {
       ...item,
       id: baseSlug, // Use base slug as ID for consistent URLs

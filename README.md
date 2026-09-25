@@ -38,11 +38,11 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run check`           | Run Astro type checking                          |
 | `npm run format`          | Format code with Prettier                        |
-| `npm run lint`            | Check code formatting with Prettier              |
+| `npm run lint`            | Check formatting (Prettier) and lint (ESLint)    |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👱‍♀️Adding a Yourself as a Member
+## 👱‍♀️ Adding Yourself as a Member
 
 1. Add your portrait to `src/assets/team`.
 1. Add your information to `src/content/members/members.json`.
@@ -50,7 +50,9 @@ All commands are run from the root of the project, from a terminal:
 
 ## 📝 Adding a Blog Post
 
-1. Add your blog post to `src/content/blog` with the respective frontmatter.
+1. Add your blog post to `src/content/blog/en/my-blog-topic.md` with the
+   respective frontmatter, and its German translation under the same file name
+   in `src/content/blog/de/`.
 1. Add a header image from [Pexels](https://www.pexels.com/) to
    `src/assets/blog`.
 1. Run `magick mogrify -resize 1600 your-image.jpg` to reduce the image width to
@@ -58,14 +60,26 @@ All commands are run from the root of the project, from a terminal:
    tool of [ImageMagick](https://imagemagick.org/script/mogrify.php).
 1. If your blog post features other images, create a folder
    `src/assets/blog/my-blog-topic` and put them in there.
-1. Create a PR with your new blog post.
+1. Create a PR with your new blog post. Set `draft: true` in the frontmatter to
+   merge it without publishing it yet: drafts only show up on the dev server.
 
 ## ✨ Adding a Customer Story
 
-1. Add your customer story to `src/content/customers` with the respective
-   frontmatter.
-1. Add the customer's logo (preferably as an SVG).
+1. Add your customer story to `src/content/customers/en/my-customer.md` with the
+   respective frontmatter.
+1. Add the customer's logo (preferably as an SVG) to `src/assets/customers`.
 1. Send the story to the customer for review and get their quote.
-1. Translate the story to English/German.
+1. Add the German translation under the same file name in
+   `src/content/customers/de/`.
 1. If they are OK with us publishing it, create a PR with your new customer
-   story.
+   story. Until then, keep `draft: true` in the frontmatter of both files.
+
+## 🌍 Languages
+
+The site is available in English (`en`), German (`de`) and Bernese Swiss German
+(`ch`). Blog posts and customer stories live in one subdirectory per language
+(`en/`, `de/`, `ch/`); files placed directly in a collection folder, like the
+jobs, are English only. Where a translation is missing, the page falls back to
+the closest language that has one: Swiss German falls back to German, and
+everything falls back to English. Such fallback pages point their canonical URL
+at the page they copy and are left out of the sitemap.

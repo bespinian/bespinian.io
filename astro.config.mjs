@@ -13,7 +13,8 @@ const DEFAULT_LANG = "en";
  * `src/lib/paths.ts` uses to build the routes.
  *
  * Astro still renders those entries under every language prefix, but the copies
- * canonicalize to the English URL. Listing a URL in the sitemap while telling
+ * canonicalize to the URL of the language they fall back to (German for Swiss
+ * German, English otherwise - see `resolveContentLang` in `src/i18n/ui.ts`). Listing a URL in the sitemap while telling
  * crawlers to prefer a different one is a contradiction, and Search Console
  * reports every instance of it, so they are filtered out here.
  */

@@ -34,3 +34,17 @@ export function sortByDateDesc<T extends { data: { pubDate: Date } }>(
     (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
   );
 }
+
+/**
+ * Builds a one-paragraph summary of a customer story from its results, for
+ * meta descriptions and feeds (customer stories have no description field)
+ * @param data - The customer story's frontmatter
+ * @param successLabel - The translated "succeeded with bespinian:" phrase
+ * @returns Summary string (e.g., "Xovis succeeded with bespinian: A. B.")
+ */
+export function summarizeCustomerStory(
+  data: { company: string; results: string[] },
+  successLabel: string,
+): string {
+  return `${data.company} ${successLabel} ${data.results.join(". ")}.`;
+}

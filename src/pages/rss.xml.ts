@@ -1,6 +1,7 @@
 import rss, { type RSSFeedItem } from "@astrojs/rss";
 import { getCollectionByLanguage } from "../lib/paths.ts";
 import en from "../i18n/en.ts";
+import { summarizeCustomerStory } from "../lib/formatters.ts";
 
 export async function GET(context: { site: string }) {
   const blog = await getCollectionByLanguage("blog", "en");
@@ -22,7 +23,7 @@ export async function GET(context: { site: string }) {
       title: story.data.title,
       link: `/en/customers/${story.id}`,
       pubDate: story.data.pubDate,
-      description: story.data.description,
+      description: summarizeCustomerStory(story.data, en["customers.success"]),
     })),
   );
 

@@ -4,7 +4,7 @@ import { render } from "astro:content";
 import ContentDetailPage from "../../../layouts/ContentDetailPage.astro";
 import { getCollectionStaticPaths } from "../../../lib/paths";
 import { useI18n } from "../../../i18n/utils";
-import { formatDate } from "../../../lib/formatters";
+import { formatDate, summarizeCustomerStory } from "../../../lib/formatters";
 import CtaBanner from "../../../components/CtaBanner.astro";
 
 export async function getStaticPaths() {
@@ -19,7 +19,10 @@ const { lang, t, translatePath } = useI18n(Astro.url);
 const formattedDate = formatDate(customer.data.pubDate, lang);
 
 const title = customer.data.title;
-const description = `${customer.data.company} ${t("customers.success")} ${customer.data.results.join(". ")}.`;
+const description = summarizeCustomerStory(
+  customer.data,
+  t("customers.success"),
+);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 

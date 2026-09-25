@@ -63,9 +63,11 @@ const ogImage = (await getImage({ src: post.data.image, width: 1200 })).src;
 >
   {post.data.image && (
     <div slot="header-after" class="header-image">
+      {/* Decorative stock photo: the post title is right above it, so
+          repeating it as alt text would only make screen readers say it twice. */}
       <Image
         src={post.data.image}
-        alt={post.data.title}
+        alt=""
         loading="eager"
         fetchpriority="high"
       />

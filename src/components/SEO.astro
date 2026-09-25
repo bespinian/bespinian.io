@@ -1,5 +1,5 @@
 ---
-import { languages, defaultLang } from "../i18n/ui";
+import { languages, defaultLang, resolveContentLang } from "../i18n/ui";
 
 interface Props {
   title: string;
@@ -14,7 +14,8 @@ interface Props {
   noindex?: boolean;
   lang?: string;
   // Languages this page genuinely exists in. Anything not listed serves the
-  // default-language text and is treated as a duplicate of it. Defaults to all
+  // text of its fallback language (see `resolveContentLang`) and is treated as
+  // a duplicate of that page. Defaults to all
   // languages, which is right for pages built from the i18n dictionaries.
   translatedLangs?: string[];
   // Absolute path to point the canonical at, for pages reachable under more
@@ -52,15 +53,17 @@ const getAlternateUrl = (language: string) => {
   return new URL(path, Astro.site).toString();
 };
 
-// A page that only exists in the default language is served under every
-// language prefix. Pointing those copies at the default-language URL keeps the
-// ranking signals on one page instead of splitting them three ways.
-const isUntranslatedCopy = !translatedLangs.includes(lang);
+// A page missing a translation is served under its language prefix anyway,
+// showing the text of its fallback language (German for Swiss German, English
+// otherwise). Pointing those copies at the URL of the language they actually
+// show keeps the ranking signals on one page instead of splitting them.
+const contentLang = resolveContentLang(lang, translatedLangs) ?? defaultLang;
+const isUntranslatedCopy = contentLang !== lang;
 
 const canonicalURL = canonicalPath
   ? new URL(canonicalPath, Astro.site).toString()
   : isUntranslatedCopy
-    ? getAlternateUrl(defaultLang)
+    ? getAlternateUrl(contentLang)
     : new URL(Astro.url.pathname, Astro.site).toString();
 
 // Default social image if none provided
@@ -70,6 +73,12 @@ const socialImage = image
 
 // Full title with site name
 const fullTitle = title.includes("bespinian") ? title : `${title} | bespinian`;
+
+const ogLocales: Record<string, string> = {
+  en: "en_US",
+  de: "de_DE",
+  ch: "de_CH",
+};
 
 // hreflang describes a set of genuine translations. On an untranslated copy it
 // would only contradict the canonical, so it is left off entirely and the
@@ -114,10 +123,7 @@ const alternates = isUntranslatedCopy
 <meta property="og:description" content={description} />
 <meta property="og:image" content={socialImage} />
 {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
-<meta
-  property="og:locale"
-  content={lang === "de" || lang === "ch" ? "de_DE" : "en_US"}
-/>
+<meta property="og:locale" content={ogLocales[lang] ?? "en_US"} />
 <meta property="og:site_name" content="bespinian" />
 
 {article && publishedTime && (
