@@ -2,7 +2,7 @@
 title: Konzept für eine mandantenfähige Kubernetes Plattform
 company: BISON Group
 logo: ../../../assets/customers/bison.png
-pubDate: 2026-08-31
+pubDate: 2026-09-28
 results:
   - |
     Ganzheitliches Konzept für eine skalierbare
@@ -13,10 +13,16 @@ results:
   - |
     Organisatorische Rahmenbedingungen für den künftigen Plattformbetrieb
     geschaffen
-quote: "TODO"
-authorName: TODO
-authorTitle: Technischer Projektleiter Infrastruktur
-authorImage: ../../../assets/customers/bison.png
+quote:
+  "Mit der neuen Kubernetes-Plattform schaffen wir eine gemeinsame Grundlage für
+  Entwicklung und Betrieb. Sie hilft uns, Anwendungen künftig schneller,
+  sicherer und standardisierter bereitzustellen, und eröffnet Raum für weitere
+  Automatisierung. Entscheidend für diesen Fortschritt war die herausragende
+  Zusammenarbeit zwischen Projektteam, Bison-Fachbereichen, PeakScale und
+  bespinian."
+authorName: Vittorio Clerici
+authorTitle: Projektleiter IT-Infrastruktur
+authorImage: ../../../assets/customers/bison-vittorio.jpeg
 ---
 
 ## Kunde
