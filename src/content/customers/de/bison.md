@@ -18,7 +18,7 @@ quote:
   Entwicklung und Betrieb. Sie hilft uns, Anwendungen künftig schneller,
   sicherer und standardisierter bereitzustellen, und eröffnet Raum für weitere
   Automatisierung. Entscheidend für diesen Fortschritt war die herausragende
-  Zusammenarbeit zwischen Projektteam, Bison-Fachbereichen, PeakScale und
+  Zusammenarbeit zwischen Projektteam, Bison-Fachbereichen, Peak Scale und
   bespinian."
 authorName: Vittorio Clerici
 authorTitle: Projektleiter IT-Infrastruktur
