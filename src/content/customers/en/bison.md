@@ -16,7 +16,7 @@ quote:
   development and operations. It helps us provide applications faster, more
   securely, and in a more standardized way going forward, and it opens up room
   for further automation. Key to this progress was the outstanding collaboration
-  between the project team, the Bison business units, PeakScale, and bespinian."
+  between the project team, the Bison business units, Peak Scale, and bespinian."
 authorName: Vittorio Clerici
 authorTitle: Project Manager IT Infrastructure
 authorImage: ../../../assets/customers/bison-vittorio.jpeg
