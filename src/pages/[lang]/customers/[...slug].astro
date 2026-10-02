@@ -74,20 +74,23 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     <p>
       <em>“{customer.data.quote}”</em>
     </p>
-    <div class="author-info">
-      {customer.data.authorImage && (
-        <Image
-          src={customer.data.authorImage}
-          alt=""
-          width={112}
-          height={112}
-          class="author-portrait"
-        />
-      )}
-      <p>
-        <strong>{customer.data.authorName}</strong>, {customer.data.authorTitle}
-      </p>
-    </div>
+    {customer.data.authorName && (
+      <div class="author-info">
+        {customer.data.authorImage && (
+          <Image
+            src={customer.data.authorImage}
+            alt=""
+            width={112}
+            height={112}
+            class="author-portrait"
+          />
+        )}
+        <p>
+          <strong>{customer.data.authorName}</strong>
+          {customer.data.authorTitle && `, ${customer.data.authorTitle}`}
+        </p>
+      </div>
+    )}
   </blockquote>
 
   <Content />
