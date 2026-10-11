@@ -68,18 +68,20 @@ export default defineConfig({
   site: SITE,
   integrations: [
     sitemap({
-      // A sitemap should only list canonical, indexable pages. Tag pages are
-      // noindexed and `/` canonicalizes to `/en/`, so listing either just
-      // sends crawlers somewhere we've told them not to keep.
+      // A sitemap should only list canonical, indexable pages. Tag pages and
+      // Swiss German (see `unindexedLangs` in `src/i18n/ui.ts`) are noindexed
+      // and `/` canonicalizes to `/en/`, so listing any of them just sends
+      // crawlers somewhere we've told them not to keep.
       filter: (page) =>
         !page.includes("/404") &&
+        !page.startsWith(`${SITE}/ch/`) &&
         !page.includes("/blog/tags") &&
         page !== `${SITE}/` &&
         !isUntranslatedCopy(page),
       customPages: [],
       serialize(item) {
         // Set priority and changefreq based on URL patterns
-        if (item.url.match(/\/(en|de|ch)\/?$/)) {
+        if (item.url.match(/\/(en|de)\/?$/)) {
           // Homepage for each language
           item.priority = 1.0;
           item.changefreq = ChangeFreqEnum.WEEKLY;

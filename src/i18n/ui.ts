@@ -10,6 +10,13 @@ export const languages = {
 
 export const defaultLang = "en";
 
+// Languages kept out of search results. Bärndütsch is a fun extra for people
+// who find it through the language switcher, not something to rank with. In
+// particular it must not claim `de-CH` in hreflang, or Google would show it
+// instead of the German site to German-speaking searchers in Switzerland.
+// `astro.config.mjs` drops the same prefixes from the sitemap.
+export const unindexedLangs: readonly string[] = ["ch"];
+
 // Languages to serve content in, most preferred first, when an entry has no
 // version in the requested one. Swiss German readers are better served by
 // standard German than by English.

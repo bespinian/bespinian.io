@@ -1,5 +1,10 @@
 ---
-import { languages, defaultLang, resolveContentLang } from "../i18n/ui";
+import {
+  languages,
+  defaultLang,
+  resolveContentLang,
+  unindexedLangs,
+} from "../i18n/ui";
 
 interface Props {
   title: string;
@@ -58,7 +63,11 @@ const getAlternateUrl = (language: string) => {
 // otherwise). Pointing those copies at the URL of the language they actually
 // show keeps the ranking signals on one page instead of splitting them.
 const contentLang = resolveContentLang(lang, translatedLangs) ?? defaultLang;
-const isUntranslatedCopy = contentLang !== lang;
+const isUnindexedLang = unindexedLangs.includes(lang);
+// An unindexed language keeps its self-referencing canonical: noindex combined
+// with a canonical to another URL is a mixed signal Google may resolve either
+// way.
+const isUntranslatedCopy = contentLang !== lang && !isUnindexedLang;
 
 const canonicalURL = canonicalPath
   ? new URL(canonicalPath, Astro.site).toString()
@@ -82,10 +91,16 @@ const ogLocales: Record<string, string> = {
 
 // hreflang describes a set of genuine translations. On an untranslated copy it
 // would only contradict the canonical, so it is left off entirely and the
-// canonical target carries the cluster.
-const alternates = isUntranslatedCopy
-  ? []
-  : translatedLangs.filter((language) => language in languages);
+// canonical target carries the cluster. Unindexed languages are left out of
+// the cluster too, since hreflang may only point at indexable pages.
+const alternates =
+  isUntranslatedCopy || isUnindexedLang
+    ? []
+    : translatedLangs.filter(
+        (language) =>
+          language in languages && !unindexedLangs.includes(language),
+      );
+const robotsNoindex = noindex || isUnindexedLang;
 ---
 
 <!-- Primary Meta Tags -->
@@ -95,7 +110,7 @@ const alternates = isUntranslatedCopy
 <meta name="theme-color" content="#3273dc" />
 {/* `follow` on purpose: these pages are kept out of the index, but the links
     they carry into the real content should still be crawled. */}
-{noindex && <meta name="robots" content="noindex, follow" />}
+{robotsNoindex && <meta name="robots" content="noindex, follow" />}
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
