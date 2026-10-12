@@ -108,5 +108,5 @@ Diese Vorteile setzen aber Engagement für den ganzen Weg voraus – es geht nic
 nur darum, die Cloud zu erreichen, sondern dort kontinuierlich zu optimieren.
 
 **Bist du bereit, deine Cloud-Expedition zu starten?** Schau dir unseren Service
-[Cloud Native Empowerment](https://bespinian.io/de/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=cloud_migration_ascent)
+[Cloud Native Empowerment](https://bespinian.io/de/services/cloud-native-empowerment/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=cloud_migration_ascent)
 an.

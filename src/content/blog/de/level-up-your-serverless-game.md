@@ -197,5 +197,5 @@ Nutzenden ausrollst.
 
 Willst du dein Serverless-Game gemeinsam mit uns aufs nächste Level bringen?
 Schau dir unseren Service
-[Serverless Application Acceleration](/de/services/serverless-application-acceleration?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=level_up_your_serverless_game)
+[Serverless Application Acceleration](/de/services/serverless-application-acceleration/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=level_up_your_serverless_game)
 an und buche deinen kostenlosen Workshop.

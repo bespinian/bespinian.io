@@ -394,5 +394,5 @@ definiere ein Preismodell für bessere Vergleichbarkeit und führe schliesslich
 Chargebacks ein.
 
 Interessiert an Kostentransparenz in Kubernetes? Schau dir unseren Service
-[Cloud Native Empowerment](/de/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=kubernetes_cost_transparency)
+[Cloud Native Empowerment](/de/services/cloud-native-empowerment/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=kubernetes_cost_transparency)
 an und buche deinen kostenlosen Workshop.

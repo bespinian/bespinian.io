@@ -598,4 +598,4 @@ aws lambda invoke \
 [aws-terraform-observability-bootstrap](https://github.com/bespinian/aws-terraform-observability-bootstrap)
 
 Interested in a similar setup? Check out our
-[Serverless Application Acceleration](/en/services/serverless-application-acceleration?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=no_account_left_behind).
+[Serverless Application Acceleration](/en/services/serverless-application-acceleration/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=no_account_left_behind).

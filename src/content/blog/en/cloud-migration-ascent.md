@@ -101,4 +101,4 @@ commitment to the journey-not just reaching the cloud, but optimizing
 continuously once there.
 
 **Are you ready to begin your cloud expedition?** Check out our
-[Cloud Native Empowerment](https://bespinian.io/en/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=cloud_migration_ascent).
+[Cloud Native Empowerment](https://bespinian.io/en/services/cloud-native-empowerment/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=cloud_migration_ascent).

@@ -297,7 +297,7 @@ AWS Organization
 
 If you are already running a multi-account AWS architecture, the organizational
 setup, StackSets, and automation patterns we described in
-[No Account Left Behind: Automating Cross-Account Observability in AWS](/en/blog/no-account-left-behind)
+[No Account Left Behind: Automating Cross-Account Observability in AWS](/en/blog/no-account-left-behind/)
 translate well to this use case. The Terraform in that post handles account
 provisioning and OU structure that you can reuse when creating dedicated Bedrock
 accounts.
@@ -342,7 +342,7 @@ for setup instructions.
 - [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/)
 - [AWS Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html)
 - [Claude for Enterprise on AWS Marketplace](https://aws.amazon.com/blogs/awsmarketplace/claude-for-enterprise-premium-seats-with-claude-code-now-available-in-aws-marketplace/)
-- [No Account Left Behind: Automating Cross-Account Observability in AWS](/en/blog/no-account-left-behind)
+- [No Account Left Behind: Automating Cross-Account Observability in AWS](/en/blog/no-account-left-behind/)
 
 **Interested in running your own Claude Code?** Check out our
-[Pragmatic AI Adoption](https://bespinian.io/en/services/pragmatic-ai-adoption?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=claude_code_using_aws_bedrock).
+[Pragmatic AI Adoption](https://bespinian.io/en/services/pragmatic-ai-adoption/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=claude_code_using_aws_bedrock).

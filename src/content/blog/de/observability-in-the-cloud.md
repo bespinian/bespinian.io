@@ -158,5 +158,5 @@ sind:
    Events vorhanden ist.
 
 Interessiert an Observability? Schau dir unseren Service
-[Cloud Native Empowerment](/de/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=observability_in_the_cloud)
+[Cloud Native Empowerment](/de/services/cloud-native-empowerment/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=observability_in_the_cloud)
 an und buche deinen kostenlosen Workshop.

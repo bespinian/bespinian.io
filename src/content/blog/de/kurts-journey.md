@@ -153,5 +153,5 @@ Und ein letztes Wort: Sei nicht wie Kurt. Geniess deine Freizeit ohne
 Ablenkungen.
 
 Willst du deine eigene Cloud-Reise antreten? Schau dir unseren Service
-[Cloud Native Empowerment](/de/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=kurts_journey)
+[Cloud Native Empowerment](/de/services/cloud-native-empowerment/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=kurts_journey)
 an und buche deinen kostenlosen Workshop.

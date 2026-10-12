@@ -208,5 +208,5 @@ Dann kannst du dich darauf konzentrieren, sie stärker zu machen. Die Cloud ist
 kein stabiler Ort. Robuste Apps zu bauen, ist keine Option, sondern Pflicht.
 
 Willst du deine eigenen robusten Applikationen bauen? Schau dir unseren Service
-[Cloud Native Empowerment](/de/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=tough_applications)
+[Cloud Native Empowerment](/de/services/cloud-native-empowerment/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=tough_applications)
 an und buche deinen kostenlosen Workshop.

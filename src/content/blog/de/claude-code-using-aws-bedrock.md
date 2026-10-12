@@ -310,7 +310,7 @@ AWS Organization
 
 Wenn du bereits eine Multi-Account-AWS-Architektur betreibst, lassen sich das
 Organisations-Setup, die StackSets und die Automatisierungs-Patterns, die wir in
-[No Account Left Behind: Cross-Account-Observability in AWS automatisieren](/de/blog/no-account-left-behind)
+[No Account Left Behind: Cross-Account-Observability in AWS automatisieren](/de/blog/no-account-left-behind/)
 beschrieben haben, gut auf diesen Anwendungsfall übertragen. Das Terraform in
 jenem Beitrag deckt Account-Provisioning und OU-Struktur ab, die du beim
 Erstellen dedizierter Bedrock-Accounts wiederverwenden kannst.
@@ -355,8 +355,8 @@ Eine Anleitung zur Einrichtung findest du in der
 - [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/)
 - [AWS Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html)
 - [Claude for Enterprise on AWS Marketplace](https://aws.amazon.com/blogs/awsmarketplace/claude-for-enterprise-premium-seats-with-claude-code-now-available-in-aws-marketplace/)
-- [No Account Left Behind: Cross-Account-Observability in AWS automatisieren](/de/blog/no-account-left-behind)
+- [No Account Left Behind: Cross-Account-Observability in AWS automatisieren](/de/blog/no-account-left-behind/)
 
 **Willst du dein eigenes Claude Code betreiben?** Schau dir unseren Service
-[Pragmatic AI Adoption](https://bespinian.io/de/services/pragmatic-ai-adoption?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=claude_code_using_aws_bedrock)
+[Pragmatic AI Adoption](https://bespinian.io/de/services/pragmatic-ai-adoption/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=claude_code_using_aws_bedrock)
 an.

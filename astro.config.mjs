@@ -66,6 +66,9 @@ const isUntranslatedCopy = (page) => {
 // https://astro.build/config
 export default defineConfig({
   site: SITE,
+  // Matches how GitHub Pages serves the build, so a link without the slash
+  // already 404s on the dev server instead of only redirecting in production.
+  trailingSlash: "always",
   integrations: [
     sitemap({
       // A sitemap should only list canonical, indexable pages. Tag pages and

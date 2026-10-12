@@ -320,5 +320,5 @@ wie viel Komplexität du verwalten willst.
 > Lena F.
 
 Willst du deine eigenen LLMs auf Kubernetes betreiben? Schau dir unseren Service
-[Pragmatic AI Adoption](/de/services/pragmatic-ai-adoption?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=llms_on_kubernetes)
+[Pragmatic AI Adoption](/de/services/pragmatic-ai-adoption/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=llms_on_kubernetes)
 an und buche deinen kostenlosen Workshop.

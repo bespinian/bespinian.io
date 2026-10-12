@@ -14,8 +14,12 @@ function useTranslations(lang: keyof typeof ui) {
 
 function useTranslatedPath(lang: keyof typeof ui) {
   return function translatePath(path: string, l: string = lang) {
-    // Always add language prefix
-    return `/${l}${path}`;
+    // Always add language prefix, and end the path in a slash: GitHub Pages
+    // redirects `/en/about` to `/en/about/`, and every internal link that has
+    // to take that detour shows up in Search Console as a "Page with redirect".
+    const [, pathname = "", suffix = ""] = path.match(/^([^?#]*)(.*)$/) ?? [];
+    const withSlash = pathname.endsWith("/") ? pathname : `${pathname}/`;
+    return `/${l}${withSlash}${suffix}`;
   };
 }
 

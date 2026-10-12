@@ -241,5 +241,5 @@ in einem Wiki.
 
 Willst du deine eigenen API-Contract-Definitionen erstellen? Schau dir unseren
 Service
-[Cloud Native Empowerment](/de/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=api_contract_definitions)
+[Cloud Native Empowerment](/de/services/cloud-native-empowerment/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=api_contract_definitions)
 an und buche deinen kostenlosen Workshop.

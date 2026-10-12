@@ -66,5 +66,5 @@ Umgebungen geht es oft vergessen. Ein wenig Vorbereitung trägt viel dazu bei,
 dass Consultants effektiv sind und du das Maximum aus ihrer Expertise holst.
 
 Interessiert daran, externe Engineers zu engagieren? Schau dir unseren Service
-[Cloud Native Empowerment](/de/services/cloud-native-empowerment?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=make_the_most_out_of_external_workforce)
+[Cloud Native Empowerment](/de/services/cloud-native-empowerment/?utm_source=bespinian_blog&utm_medium=blog&utm_campaign=make_the_most_out_of_external_workforce)
 an und buche deinen kostenlosen Workshop.
