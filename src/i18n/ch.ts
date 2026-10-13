@@ -101,6 +101,7 @@ const ts = {
   "imprint.headquarters": "Houptsitz",
   "imprint.headquarters.address":
     "bespinian GmbH, Sonnenweg 9, 3073 Gümligen, Schweiz",
+  "imprint.register": "Itreit im Handelsregischter vom Kanton Bärn",
   "imprint.bern": "Büro Bärn",
   "imprint.bern.address": "bespinian, Kramgasse 68, 3011 Bern, Schweiz",
 

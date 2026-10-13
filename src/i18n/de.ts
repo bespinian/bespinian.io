@@ -102,6 +102,7 @@ const de = {
   "imprint.headquarters": "Hauptsitz",
   "imprint.headquarters.address":
     "bespinian GmbH, Sonnenweg 9, 3073 Gümligen, Schweiz",
+  "imprint.register": "Eingetragen im Handelsregister des Kantons Bern",
   "imprint.bern": "Büro Bern",
   "imprint.bern.address": "bespinian, Kramgasse 68, 3011 Bern, Schweiz",
 
