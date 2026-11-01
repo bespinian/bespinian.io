@@ -1,5 +1,5 @@
 ---
-title: Share Network and Organization Info with AWS Landing Zone Member Accounts
+title: Share Network and Organization Info Across AWS Accounts
 author: Philippe Haessig
 pubDate: 2024-07-04
 tags: ["aws", "infrastructure", "terraform", "networking", "cloud"]

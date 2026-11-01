@@ -1,6 +1,5 @@
 ---
-title:
-  "OpenBao: Wann die Open-Source-Alternative zu Vault die richtige Wahl ist"
+title: "OpenBao: Wann sich die Vault-Alternative lohnt"
 author: Paulina Grochal
 pubDate: 2026-02-06
 tags:
@@ -17,8 +16,6 @@ description:
   richtige Secrets-Management-Plattform wählen kannst."
 image: ../../../assets/blog/bao.jpg
 ---
-
-# OpenBao: Wann die Open-Source-Alternative zu Vault die richtige Wahl ist
 
 2023 änderte HashiCorp die Lizenz von Vault von der Mozilla Public License (MPL)
 zur Business Source License (BSL) 1.1. Kurz darauf forkte die Community die

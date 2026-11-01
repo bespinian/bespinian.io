@@ -1,6 +1,5 @@
 ---
-title:
-  Arch Linux auf UEFI mit vollständiger Festplattenverschlüsselung installieren
+title: Arch Linux mit Full Disk Encryption installieren
 author: Lena Fuhrimann
 pubDate: 2021-03-12
 tags: ["linux", "arch-linux", "installation", "encryption", "uefi"]

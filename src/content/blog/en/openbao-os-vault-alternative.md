@@ -17,8 +17,6 @@ description:
 image: ../../../assets/blog/bao.jpg
 ---
 
-# OpenBao: When to Choose the Open Source Vault Alternative
-
 In 2023, HashiCorp changed Vault's license from Mozilla Public License (MPL) to
 Business Source License (BSL) 1.1. Shortly after, the community forked Vault's
 last MPL version, creating OpenBao - Open Source project under MPL 2.0

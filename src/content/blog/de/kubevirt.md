@@ -1,6 +1,5 @@
 ---
-title:
-  Was ist KubeVirt? Virtuelle Maschinen auf Kubernetes betreiben wie Container
+title: "KubeVirt: Virtuelle Maschinen auf Kubernetes betreiben"
 author: Christof Lüthi - tim&koko
 pubDate: 2025-10-06
 tags: ["kubernetes", "kubevirt", "virtualization", "kvm", "containers"]

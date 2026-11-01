@@ -10,8 +10,6 @@ description:
 image: ../../../assets/blog/claude-code-using-aws-bedrock/landwasser-viaduct.jpg
 ---
 
-# Claude Code auf AWS Bedrock nutzen
-
 Claude Code funktioniert out of the box mit der Anthropic-API, aber viele Teams
 brauchen mehr:
 
