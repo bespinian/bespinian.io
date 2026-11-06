@@ -27,8 +27,6 @@ const hasHeadSlot = Astro.slots.has("head");
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Preconnect to external domains for performance -->
-    <link rel="preconnect" href="https://scripts.simpleanalyticscdn.com" />
-    <link rel="dns-prefetch" href="https://scripts.simpleanalyticscdn.com" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
@@ -48,6 +46,7 @@ const hasHeadSlot = Astro.slots.has("head");
       gtag("js", new Date());
 
       gtag("config", "AW-18327942303");
+      gtag("config", "G-CC9104T46J");
     </script>
     <!-- SEO and meta tags slot -->
     <slot name="head" />
@@ -61,12 +60,6 @@ const hasHeadSlot = Astro.slots.has("head");
       <slot />
     </main>
     <Footer minimal={minimalNav} />
-
-    <script
-      is:inline
-      async
-      src="https://scripts.simpleanalyticscdn.com/latest.js"
-    ></script>
   </body>
 </html>
 
