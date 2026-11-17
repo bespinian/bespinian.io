@@ -247,22 +247,22 @@ const de = {
   "roundtable.subtitle":
     "Exklusiver Austausch unter IT-Führungspersönlichkeiten",
   "roundtable.description":
-    "Eine handverlesene Runde von IT-Führungskräften diskutiert, wie moderne Cloud-Native Plattformen und KI-Tools die Arbeitsweise ihrer Teams transformieren.",
+    "Eine handverlesene Runde von IT-Führungskräften diskutiert, wie Unternehmen eine wirksame AI Governance etablieren und dabei Innovation, Sicherheit und regulatorische Anforderungen in Einklang bringen können.",
   "roundtable.cta": "Einladung Bestätigen",
   "roundtable.about.title": "Über dieses Event",
   "roundtable.about.description1":
-    "Gemeinsam sprechen wir darüber, wie moderne Cloud-Native Plattformen und KI-Tools die Arbeitsweise von Software Engineers transformieren, Kosten senken und neue Chancen eröffnen.",
+    "Gemeinsam sprechen wir darüber, wie Unternehmen durch klare Governance-Strukturen den verantwortungsvollen Einsatz von KI ermöglichen, ohne Innovation und Agilität einzuschränken.",
   "roundtable.about.description2":
-    "Dabei betrachten wir Strategie, Teamkultur, Technologien und den pragmatischen Einsatz von KI.",
+    "Dabei betrachten wir strategische, organisatorische und technologische Aspekte – von Compliance und Datensicherheit bis hin zu Verantwortlichkeiten und der Kontrolle von KI-Systemen.",
   "roundtable.about.description3":
-    "Unser Ziel ist es, Ihre aktuellen zentralen Themen gemeinsam mit anderen Führungskräften zu beleuchten und innovative Strategien zu erarbeiten, um Wettbewerbsvorteile zu sichern.",
+    "Unser Ziel ist es, aktuelle Herausforderungen gemeinsam mit anderen Führungskräften zu beleuchten, Erfahrungen auszutauschen und praxisnahe Ansätze für einen sicheren und erfolgreichen KI-Einsatz zu entwickeln.",
   "roundtable.expect.title": "Was Sie erwartet",
   "roundtable.expect.item1":
-    "Fokussierter Austausch zu Cloud-Native und KI-Transformation",
+    "Fokussierter Austausch zu AI Governance, Sicherheit und verantwortungsvollem KI-Einsatz",
   "roundtable.expect.item2":
     "Handverlesene kleine Runde von IT-Führungspersönlichkeiten",
   "roundtable.expect.item3":
-    "Umsetzbare Anregungen von Fachleuten für Ihr Unternehmen",
+    "Praxisnahe Impulse für die Umsetzung von AI Governance in Ihrem Unternehmen",
   "roundtable.expect.item4": "Networking mit Peers in entspannter Atmosphäre",
   "roundtable.details.title": "Event-Details",
   "roundtable.details.date": "Datum",

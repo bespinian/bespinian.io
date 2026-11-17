@@ -246,21 +246,21 @@ const en = {
   "roundtable.title": "IT Leaders Roundtable",
   "roundtable.subtitle": "Exclusive Exchange Among IT Leaders",
   "roundtable.description":
-    "A hand-picked group of IT leaders discussing how modern cloud-native platforms and AI tools are transforming the way our teams work.",
+    "A hand-picked group of IT leaders discussing how organizations can establish effective AI governance while balancing innovation, security, and regulatory requirements.",
   "roundtable.cta": "Confirm Invitation",
   "roundtable.about.title": "About This Event",
   "roundtable.about.description1":
-    "Together, we discuss how modern cloud-native platforms and AI tools are transforming the way software engineers work, reducing costs, and opening new opportunities.",
+    "Together, we discuss how clear governance structures enable organizations to use AI responsibly without constraining innovation and agility.",
   "roundtable.about.description2":
-    "We explore strategy, team culture, technologies, and the pragmatic use of AI.",
+    "We look at strategic, organizational, and technological aspects – from compliance and data security to accountability and the oversight of AI systems.",
   "roundtable.about.description3":
-    "Our goal is to illuminate your current key topics together with other leaders and develop innovative strategies to secure competitive advantages.",
+    "Our goal is to explore current challenges together with other leaders, share experiences, and develop practical approaches for the safe and successful use of AI.",
   "roundtable.expect.title": "What to Expect",
   "roundtable.expect.item1":
-    "Focused exchange on cloud-native and AI transformation",
+    "Focused exchange on AI governance, security, and the responsible use of AI",
   "roundtable.expect.item2": "Small hand-picked group of IT leaders",
   "roundtable.expect.item3":
-    "Actionable insights from experts for your organization",
+    "Practical input for implementing AI governance in your organization",
   "roundtable.expect.item4": "Networking with peers in a relaxed atmosphere",
   "roundtable.details.title": "Event Details",
   "roundtable.details.date": "Date",

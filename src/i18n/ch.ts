@@ -243,22 +243,22 @@ const ts = {
   "roundtable.title": "IT Leaders Roundtable",
   "roundtable.subtitle": "Exklusive Uustuusch unter IT-Führigspersonlichkeite",
   "roundtable.description":
-    "E handverläseni Rundi vo IT-Führigschräft diskutiert, wie modärni Cloud-Native Plattforme u KI-Tools d Arbeitswis transformiere.",
+    "E handverläseni Rundi vo IT-Führigschräft diskutiert, wie Ungernähme e wirksami AI Governance chöi etabliere u drbi Innovation, Sicherheit u regulatorischi Aforderige under ei Huet bringe.",
   "roundtable.cta": "Iladig Bestätige",
   "roundtable.about.title": "Über ds Event",
   "roundtable.about.description1":
-    "Zäme rede mir drüber, wie modärni Cloud-Native Plattforme u KI-Tools d Arbeitswis vo Software Engineers transformiere, Choschte sänke u neui Chance ufmache.",
+    "Zäme rede mir drüber, wie Ungernähme mit klare Governance-Strukture dr verantwortigsvoll Isatz vo KI ermögleche, ohni Innovation u Agilität izschränke.",
   "roundtable.about.description2":
-    "Drbi luege mir uf Strategie, Teamkultur, Technologie u dr pragmatisch Isatz vo KI.",
+    "Drbi luege mir uf strategischi, organisatorischi u technologischi Aspekt – vo Compliance u Datesicherheit bis zu Verantwortlechkeite u dr Kontrolle vo KI-Systeme.",
   "roundtable.about.description3":
-    "Üses Ziil isch es, Öii aktuelle zentrale Theme zäme mit angere Führigschräft z belüchte u innovativi Strategie z erarbeite, um Wettbewärbsvorteil z sichere.",
+    "Üses Ziil isch es, aktuelli Useforderige zäme mit angere Führigschräft z belüchte, Erfahrige usztuusche u praxisnachi Asätz für ne sichere u erfougriiche KI-Isatz z entwickle.",
   "roundtable.expect.title": "Was Öich Erwartet",
   "roundtable.expect.item1":
-    "Fokussierte Uustuusch zu Cloud-Native u KI-Transformation",
+    "Fokussierte Uustuusch zu AI Governance, Sicherheit u verantwortigsvollem KI-Isatz",
   "roundtable.expect.item2":
     "Handverläseni chlini Rundi vo IT-Führigspersönlichkeite",
   "roundtable.expect.item3":
-    "Umsetzbari Aregige vo Fachlüt für Öies Ungernähme",
+    "Praxisnachi Impulse für d Umsetzig vo AI Governance i Öiem Ungernähme",
   "roundtable.expect.item4": "Networking mit Peers i entspannter Atmosphäre",
   "roundtable.details.title": "Event-Details",
   "roundtable.details.date": "Datum",
