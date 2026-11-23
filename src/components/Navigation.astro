@@ -62,13 +62,9 @@ const mainItems: MenuItem[] = [
 ---
 
 <nav>
-  {minimal ? (
+  <a href={translatePath("/")}>
     <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
-  ) : (
-    <a href={translatePath("/")}>
-      <img id="logo" src={bespinianWhite.src} alt="bespinian logo" />
-    </a>
-  )}
+  </a>
 
   {!minimal && (
     <ul class="nav-desktop">
